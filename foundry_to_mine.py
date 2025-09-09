@@ -40,9 +40,9 @@ def main():
             print(f"⚠️ Skipping {json_file}, no 'name' field found")
             continue
 
-        # if creature_name in index_names:
-        #     print(f"✔ Skipping {creature_name}, already in index")
-        #     continue
+        if creature_name in index_names:
+            print(f"✔ Skipping {creature_name}, already in index")
+            continue
 
         # transform
         tracker_json = transform_foundry_to_tracker(foundry_data)
