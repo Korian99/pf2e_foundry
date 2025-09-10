@@ -52,7 +52,7 @@ def main():
 
             with open(out_path, "w", encoding="utf-8") as f:
                 json.dump(tracker_json, f, indent=2, ensure_ascii=False)
-            if creature_name == "Temteki":
+            if creature_name == "Tree of Dreadful Dreams":
                 print(f"✅ Wrote {out_path}")
 
 if __name__ == "__main__":

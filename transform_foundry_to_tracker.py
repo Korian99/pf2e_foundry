@@ -1,5 +1,17 @@
 import re
+import json
+from pathlib import Path
 
+BASE_DIR = Path(__file__).resolve().parent
+lang_file = BASE_DIR / "static" / "lang" / "en.json"
+with open(lang_file, encoding="utf-8") as f:
+    lang_json = json.load(f)
+compendium_file = BASE_DIR / "compendium.json"
+with open(compendium_file, encoding="utf-8") as f:
+    compendium = json.load(f)
+saving_throws = {
+    "fortitude", "reflex", "will"
+}
 skills = {
     "acrobatics": "dexterity",
     "arcana": "intelligence",
@@ -80,18 +92,49 @@ excluded_abilities = {
     "telepathy",
     "status to all saves",
 }
+
+
+
+uuid_pattern = re.compile(r"@UUID\[(?P<key>[^\]]+)\]")
+check_pattern = re.compile(r"@Check\[(?P<skill>[a-zA-Z]+)\|dc:(?P<dc>\d+)(?:\|[^\]]+)?\]")
+localize_pattern = re.compile(r"@Localize\[(?P<key>[^\]]+)\]")
+def get_nested(data, dotted_key: str, default=None):
+    """Walk through nested dicts using dot notation."""
+    current = data
+    for part in dotted_key.split("."):
+        if isinstance(current, dict) and part in current:
+            current = current[part]
+        else:
+            return default
+    return current
+
 def simplify_uuid(text: str) -> str:
     def repl(match):
         inside = match.group(1)          # everything inside [ ... ]
         last_part = inside.split(".")[-1]  # take the last piece
         return last_part
+    def replace_uuid(text: str) -> str:
+        def replacer(match):
+
+            full_key = match.group("key")
+            last_key = full_key.split(".")[-1]
+            return compendium.get(last_key, last_key)  
+        return uuid_pattern.sub(replacer, text)
     def replace_check(text: str) -> str:
-        pattern = re.compile(
-            r"@Check\[(?P<skill>[a-zA-Z]+)\|dc:(?P<dc>\d+)(?:\|name:[^\]]+)?\]"
-        )
-        return pattern.sub(lambda m: f"DC {m.group('dc')} {m.group('skill').capitalize()} Check", text)
+        basic = "Basic "  if "basic" in text else ""
+        return replace_uuid(check_pattern.sub(lambda m: f"{basic}DC {m.group('dc')} {m.group('skill').capitalize()} {'Saving Throw' if m.group('skill') in saving_throws else ''}", text))
+    def localize(text: str) -> str:
+        def replacer(match):
+            key = match.group("key")
+            localized_value = get_nested(lang_json, key, key)
+            return (
+                f"<details><summary>See rules...</summary>\n"
+                f"<p>{localized_value}</p></details>"
+            )
+        
+        return replace_check(localize_pattern.sub(replacer, text))
     if text:
-        return re.sub(r"@\w+\[([^\]]+)\]", repl, replace_check(text))
+        return re.sub(r"@\w+\[([^\]]+)\]", repl, localize(text))
     return text
 
 def clean_uuid(text: str) -> str:
@@ -251,6 +294,8 @@ def get_common_0(npc, foundry_json, npc_type, lores=[]):
             init_bonus = skill_dict["mod"]
         elif "base" in skill_dict:
             init_bonus = skill_dict["base"]
+    elif "stealth" in sys["attributes"]:
+        init_bonus = sys["attributes"]["stealth"]["value"]
     size = sys["traits"]["size"]["value"]
     match size:
         case "sm": size = "Small"
@@ -383,7 +428,7 @@ def hazard_data(foundry_json):
         "stealth": {"value": attributes["stealth"]["value"], "note": attributes["stealth"]["details"].replace("<p>", "").replace("</p>", "")},
         "description": simplify_uuid(sys["details"]["description"]),
         "disable": simplify_uuid(sys["details"]["disable"]),
-        "disable": simplify_uuid(sys["details"]["disable"]),
+        "reset": simplify_uuid(sys["details"]["reset"]),
         "routine": simplify_uuid(sys["details"]["routine"]),
     })
     npc = get_common_1(npc, foundry_json)
