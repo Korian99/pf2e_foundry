@@ -75,13 +75,25 @@ skill_by_tradition = {
     "Time": "Occultism",
     "Undead": "Religion",
 }
-
+excluded_abilities = {
+    "tremorsense",
+    "telepathy",
+    "status to all saves",
+}
 def simplify_uuid(text: str) -> str:
     def repl(match):
         inside = match.group(1)          # everything inside [ ... ]
         last_part = inside.split(".")[-1]  # take the last piece
         return last_part
-    return re.sub(r"@\w+\[([^\]]+)\]", repl, text)
+    def replace_check(text: str) -> str:
+        pattern = re.compile(
+            r"@Check\[(?P<skill>[a-zA-Z]+)\|dc:(?P<dc>\d+)(?:\|name:[^\]]+)?\]"
+        )
+        return pattern.sub(lambda m: f"DC {m.group('dc')} {m.group('skill').capitalize()} Check", text)
+    if text:
+        return re.sub(r"@\w+\[([^\]]+)\]", repl, replace_check(text))
+    return text
+
 def clean_uuid(text: str) -> str:
     first = re.sub(r"@UUID\[Compendium\.pf2e\.spell-effects[^\]]*\]", "", text)
     return simplify_uuid(first)
@@ -147,7 +159,7 @@ def get_spellcasting(items):
             spell_type = "cantrip" if "cantrip" in item_detail["traits"]["value"] else "spell"
             save_type = ""
             if item_detail.get("defense", None) and item_detail["defense"].get("save", None):
-                save_type = ("Basic" if item_detail["defense"]["save"]["basic"]
+                save_type = ("Basic " if item_detail["defense"]["save"]["basic"]
                              else "") + item_detail["defense"]["save"]["statistic"]
             sustain = "Sustained up to " if item_detail["duration"]["sustained"] else ""
             traits = [t for t in item_detail["traits"]
@@ -202,6 +214,9 @@ def get_spellcasting(items):
 
 def get_abilities(items, ability_type):
     # TODO CHECK
+    def should_include(item):
+        name = item["name"].lower()
+        return all(excluded.lower() not in name for excluded in excluded_abilities)
     def get_actions(item):
         action_type = item["actionType"]["value"]
         action_number = item["actions"]["value"]
@@ -212,7 +227,7 @@ def get_abilities(items, ability_type):
     return [{"name": item["name"], "actions": get_actions(item["system"]), "traits": item["system"]["traits"]["value"],
              "description": simplify_uuid(item["system"]["description"]["value"]), "collapsed": False}
             for item in items
-            if "category" in item["system"] and item["type"] == "action" and (
+            if "category" in item["system"] and item["type"] == "action" and should_include(item) and (
                 (ability_type and item["system"]["category"] == ability_type) or
                 (not ability_type and item["system"]["category"] not in (
                     "offensive", "defensive"))
@@ -289,8 +304,9 @@ def get_common_1(npc, foundry_json):
                      "note": sys["saves"]["reflex"].get("saveDetail"), "usedAttribute": "dexterity", "modifications": []}
     npc["will"] = {"value": sys["saves"]["will"]["value"],
                    "note": sys["saves"]["will"].get("saveDetail"), "usedAttribute": "wisdom", "modifications": []}
-    
     npc["savenote"] = ""
+    if attributes.get("allSaves", None):
+        npc["savenote"] = attributes["allSaves"]["value"]
 
     npc["hp"] = {
         "value": attributes["hp"]["value"],
@@ -365,10 +381,10 @@ def hazard_data(foundry_json):
     npc = get_common_0(npc, foundry_json, "Hazard")
     npc.update({
         "stealth": {"value": attributes["stealth"]["value"], "note": attributes["stealth"]["details"].replace("<p>", "").replace("</p>", "")},
-        "description": sys["details"]["description"],
-        "disable": sys["details"]["disable"],
-        "disable": sys["details"]["disable"],
-        "routine": sys["details"]["routine"],
+        "description": simplify_uuid(sys["details"]["description"]),
+        "disable": simplify_uuid(sys["details"]["disable"]),
+        "disable": simplify_uuid(sys["details"]["disable"]),
+        "routine": simplify_uuid(sys["details"]["routine"]),
     })
     npc = get_common_1(npc, foundry_json)
 
