@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 from transform_foundry_to_tracker import transform_foundry_to_tracker
+from create_compendium import create_compendium
 
 BASE_DIR = Path(__file__).resolve().parent
 packs_dir = BASE_DIR / "packs"
@@ -60,4 +61,5 @@ def main():
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(database_json, f, indent=2, ensure_ascii=False)
 if __name__ == "__main__":
+    create_compendium()
     main()

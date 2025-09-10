@@ -31,7 +31,7 @@ skills = {
     "thievery": "dexterity",
 }
 actions_type = {
-    "free action": 0,
+    "free": 0,
     "reaction": -1,
 }
 dc_by_level = {

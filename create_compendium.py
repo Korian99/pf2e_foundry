@@ -1,6 +1,5 @@
 import json
 from pathlib import Path
-from transform_foundry_to_tracker import transform_foundry_to_tracker
 
 BASE_DIR = Path(__file__).resolve().parent
 packs_dir = BASE_DIR / "packs"
@@ -10,7 +9,7 @@ def iter_json_files(root: Path):
     for path in root.rglob("*.json"):
         yield path
 
-def main():
+def create_compendium():
     tracker_json = {}  # list of dicts
 
     for json_file in iter_json_files(packs_dir):
@@ -30,4 +29,4 @@ def main():
     print(f"Saved {len(tracker_json)} entries to {out_path}")
 
 if __name__ == "__main__":
-    main()
+    create_compendium()
