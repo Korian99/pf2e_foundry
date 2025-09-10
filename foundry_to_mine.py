@@ -22,6 +22,7 @@ def iter_json_files(root: Path):
             yield path
 
 def main():
+    database_json = []
     for json_file in iter_json_files(packs_dir):
         try:
             with open(json_file, encoding="utf-8") as f:
@@ -49,11 +50,14 @@ def main():
             # safe filename
             out_name = creature_name.replace(" ", "_").replace("/", "_").replace('"', "'")+".json"
             out_path = jsons_dir / out_name
-
+            database_json.append({"name":tracker_json["name"],"level":tracker_json["level"]})
             with open(out_path, "w", encoding="utf-8") as f:
                 json.dump(tracker_json, f, indent=2, ensure_ascii=False)
-            if creature_name == "Tree of Dreadful Dreams":
+            if creature_name == "Spawn of Dahak":
                 print(f"✅ Wrote {out_path}")
 
+    out_path = BASE_DIR / "database_index_new.json"
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(database_json, f, indent=2, ensure_ascii=False)
 if __name__ == "__main__":
     main()

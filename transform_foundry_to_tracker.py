@@ -91,6 +91,8 @@ excluded_abilities = {
     "tremorsense",
     "telepathy",
     "status to all saves",
+    "constant spell",
+    "darkvision",
 }
 
 
@@ -214,6 +216,12 @@ def get_spellcasting(items):
             uses = 1
             if item_detail["location"].get("uses", None):
                 uses = item_detail["location"]["uses"].get("max", 1)
+            ritual = item_detail.get("ritual", None)
+            if ritual:
+                primaryCheck = ritual["primary"]["check"]
+                secondaryCasters = ritual["secondary"]["casters"]
+                secondaryCheck = ritual["secondary"]["checks"]
+                spell_type = "ritual"
             spells.append(
                 {"name": item["name"],
                  "type": spell_type,
@@ -231,9 +239,9 @@ def get_spellcasting(items):
                  "cast": False,
                  "cost": item_detail["cost"]["value"],
                  # TODO RITUAL
-                 "primaryCheck": "",
-                 "secondaryCasters": "",
-                 "secondaryChecks": "",
+                 "primaryCheck": primaryCheck if ritual else "",
+                 "secondaryCasters":  secondaryCasters if ritual else "",
+                 "secondaryChecks":  secondaryCheck if ritual else "",
                  "id": item["_id"]
                  }
             )
@@ -454,7 +462,7 @@ def npc_data(foundry_json):
     # Perception
     npc["senses"] = []
     for sense in sys["perception"]["senses"]:
-        s = sense.get("type", "")
+        s = sense.get("type", "").replace("-", " ").capitalize()
         if sense.get("range", ""):
             s += f" {str(sense.get('range'))}ft"
         if sense.get("acuity", None):
@@ -474,7 +482,7 @@ def npc_data(foundry_json):
     # Languages
     npc["languages"] = [lang.capitalize()
                         for lang in sys["details"]["languages"]["value"]]
-    if "details" in sys["details"]["languages"]:
+    if sys["details"]["languages"].get("details", "") != "":
         npc["languages"].append(sys["details"]["languages"]["details"])
     # Skills
     def get_special(data):
