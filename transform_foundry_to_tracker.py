@@ -97,9 +97,15 @@ excluded_abilities = {
 
 
 
+macro_pattern = re.compile(r"\[\[\/[^\]]+\]\]\{(?P<val>[^\}]+)\}")
+clean_pattern = re.compile(r"@\w+\[[^\]]+\]\{(?P<val>[^\}]+)\}")
 uuid_pattern = re.compile(r"@UUID\[(?P<key>[^\]]+)\]")
 check_pattern = re.compile(r"@Check\[(?P<skill>[a-zA-Z]+)\|dc:(?P<dc>\d+)(?:\|[^\]]+)?\]")
 localize_pattern = re.compile(r"@Localize\[(?P<key>[^\]]+)\]")
+damage_pattern = re.compile(r"@Damage\[(?P<dice>[^\[]+)\[(?P<element>[^\]]+)\].*?\]")
+template_pattern = re.compile(r"@Template\[(?P<type>[^\|]+)\|distance:(?P<dist>\d+)\]")
+
+
 def get_nested(data, dotted_key: str, default=None):
     """Walk through nested dicts using dot notation."""
     current = data
@@ -125,6 +131,20 @@ def simplify_uuid(text: str) -> str:
     def replace_check(text: str) -> str:
         basic = "Basic "  if "basic" in text else ""
         return replace_uuid(check_pattern.sub(lambda m: f"{basic}DC {m.group('dc')} {m.group('skill').capitalize()} {'Saving Throw' if m.group('skill') in saving_throws else ''}", text))
+    def replace_template(text: str) -> str:
+        def repl(match):
+            t_type = match.group("type").capitalize()  # e.g., "burst"
+            dist = match.group("dist")
+            return f"{dist}ft {t_type}"
+        
+        return replace_check(template_pattern.sub(repl, text))
+    def replace_damage(text: str) -> str:
+        def repl(match):
+            dice = match.group("dice")  # e.g., "9d6"
+            element = match.group("element").capitalize()  # e.g., "fire" → "Fire"
+            return f"{dice} {element} Damage"
+        
+        return replace_template(damage_pattern.sub(repl, text))
     def localize(text: str) -> str:
         def replacer(match):
             key = match.group("key")
@@ -133,9 +153,10 @@ def simplify_uuid(text: str) -> str:
                 f"<details><summary>See rules...</summary>\n"
                 f"<p>{localized_value}</p></details>"
             )
-        
-        return replace_check(localize_pattern.sub(replacer, text))
+        return replace_damage(localize_pattern.sub(replacer, text))
     if text:
+        text = clean_pattern.sub(lambda m: m.group("val"), text)
+        text = macro_pattern.sub(lambda m: m.group("val"), text)
         return re.sub(r"@\w+\[([^\]]+)\]", repl, localize(text))
     return text
 
