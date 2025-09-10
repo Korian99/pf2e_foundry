@@ -59,7 +59,8 @@ def main():
 
     out_path = BASE_DIR / "database_index_new.json"
     with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(database_json, f, indent=2, ensure_ascii=False)
+        sorted_database = sorted(database_json, key=lambda x: (x["level"], x["name"]))
+        json.dump(sorted_database, f, indent=2, ensure_ascii=False)
 if __name__ == "__main__":
     create_compendium()
     main()
