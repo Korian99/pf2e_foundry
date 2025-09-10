@@ -1,3 +1,5 @@
+import re
+
 skills = {
     "acrobatics": "dexterity",
     "arcana": "intelligence",
@@ -51,21 +53,38 @@ dc_by_level = {
     25: "DC 50",
 }
 skill_by_tradition = {
-    "Construct": "Arcana or Crafting",
-    "Elemental": "Arcana",
-    "Beast": "Arcana or Nature",
-    "Animal": "Nature",
-    "Fey": "Nature",
-    "Fungus": "Nature",
-    "Plant": "Nature",
     "Aberration": "Occultism",
-    "Spirit": "Occultism",
-    "Ooze": "Occultism",
+    "Animal": "Nature",
+    "Astral": "Occultism",
+    "Beast": "Arcana or Nature",
     "Celestial": "Religion",
+    "Construct": "Arcana or Crafting",
+    "Dragon": "Arcana",
+    "Dream": "Occultism",
+    "Elemental": "Arcana or Nature",
+    "Ethereal": "Occultism",
+    "Fey": "Nature",
     "Fiend": "Religion",
+    "Fungus": "Nature",
+    "Humanoid": "Society",
+    "Monitor": "Religion",
+    "Ooze": "Occultism",
+    "Plant": "Nature",
+    "Shade": "Religion",
+    "Spirit": "Occultism",
+    "Time": "Occultism",
     "Undead": "Religion",
 }
 
+def simplify_uuid(text: str) -> str:
+    def repl(match):
+        inside = match.group(1)          # everything inside [ ... ]
+        last_part = inside.split(".")[-1]  # take the last piece
+        return last_part
+    return re.sub(r"@\w+\[([^\]]+)\]", repl, text)
+def clean_uuid(text: str) -> str:
+    first = re.sub(r"@UUID\[Compendium\.pf2e\.spell-effects[^\]]*\]", "", text)
+    return simplify_uuid(first)
 
 def get_spellcasting(items):
     traditions = []
@@ -98,8 +117,7 @@ def get_spellcasting(items):
                  "bonus": item_detail["spelldc"]["value"],
                  "dc": item_detail["spelldc"]["dc"],
                  "focusPoints": focusPoints,
-                 # TODO
-                 "autoHeightenLevel": item_detail["spelldc"]["dc"],
+                 "autoHeightenLevel": 1,
                  "cantrips": [],
                  "lv1spells": [],
                  "lv2spells": [],
@@ -124,6 +142,7 @@ def get_spellcasting(items):
                  "lv10slots": get_slots(item_detail_slots, "slot10"),
                  }
             )
+            
         elif item["type"] == "spell":
             spell_type = "cantrip" if "cantrip" in item_detail["traits"]["value"] else "spell"
             save_type = ""
@@ -137,10 +156,15 @@ def get_spellcasting(items):
             if item_detail["area"] and item_detail["area"]["value"]:
                 area = str(item_detail["area"]["value"]) + \
                     "ft " + item_detail["area"]["type"]
+            uses = 1
+            if item_detail["location"].get("uses", None):
+                uses = item_detail["location"]["uses"].get("max", 1)
             spells.append(
                 {"name": item["name"],
                  "type": spell_type,
                  "level": item_detail["level"]["value"],
+                 "heightenedLevel": item_detail["location"].get("heightenedLevel", item_detail["level"]["value"]),
+                 "timesPrepared": uses,
                  "traits": traits,
                  "castingTime": item_detail["time"]["value"],
                  "duration": f"{sustain}{item_detail['duration']['value']}",
@@ -148,7 +172,7 @@ def get_spellcasting(items):
                  "area": area,
                  "targets": item_detail["target"]["value"],
                  "save": save_type,
-                 "description": item_detail["description"]["value"],
+                 "description": clean_uuid(item_detail["description"]["value"]),
                  "cast": False,
                  "cost": item_detail["cost"]["value"],
                  # TODO RITUAL
@@ -165,10 +189,14 @@ def get_spellcasting(items):
             tradition_type = ["spontaneous", "prepared", "innate"]
         dict_name = spell["type"] + "s"
         if dict_name == "spells":
-            dict_name = "lv"+str(spell["level"])+"spells"
+            dict_name = "lv"+str(spell["heightenedLevel"])+"spells"
         for tradition in traditions:
             if tradition["type"] in tradition_type:
-                tradition[dict_name].append(spell)
+                i = 0
+                while i < spell["timesPrepared"]:
+                    i+=1
+                    tradition[dict_name].append(spell)
+                    tradition["autoHeightenLevel"] = max(spell["heightenedLevel"], tradition["autoHeightenLevel"])
     return traditions
 
 
@@ -182,7 +210,7 @@ def get_abilities(items, ability_type):
         else:
             return actions_type.get(action_type, None)
     return [{"name": item["name"], "actions": get_actions(item["system"]), "traits": item["system"]["traits"]["value"],
-             "description": item["system"]["description"]["value"], "collapsed": False}
+             "description": simplify_uuid(item["system"]["description"]["value"]), "collapsed": False}
             for item in items
             if "category" in item["system"] and item["type"] == "action" and (
                 (ability_type and item["system"]["category"] == ability_type) or
@@ -272,9 +300,10 @@ def get_common_1(npc, foundry_json):
     }
 
     for st in ["immunities", "resistances", "weaknesses"]:
+        npc[st] = []
         if st in attributes:
-            npc[st] = [s for s in attributes[st]]
-    
+            npc[st] = [s["type"] if not s.get("value", None) else s for s in attributes[st]]
+        
         # DefensiveAbilities
     npc["defensiveAbilities"] = get_abilities(
         foundry_json["items"], "defensive")
@@ -282,10 +311,10 @@ def get_common_1(npc, foundry_json):
     # Speed
     npc["speed"] = ""
     if attributes.get("speed", None):
-        other_speeds = [speed["type"]+": " +
+        other_speeds = [speed["type"]+" " +
                         str(speed["value"])+"ft" for speed in sys['attributes']['speed']['otherSpeeds']]
         other_speeds = ", ".join(other_speeds)
-        npc["speed"] = f"{sys['attributes']['speed']['value']} ft," + other_speeds
+        npc["speed"] = f"{sys['attributes']['speed']['value']} ft, " + other_speeds
 
     # Strikes (melee/ranged)
     npc["strikes"] = []
@@ -315,7 +344,7 @@ def get_common_1(npc, foundry_json):
         foundry_json["items"], "offensive")
 
     # TODO IMPROVE
-    npc["spellCasting"] = get_spellcasting(foundry_json["items"])
+    npc["spellcastingEntries"] = get_spellcasting(foundry_json["items"])
 
     traits =  [t.capitalize() for t in sys["traits"]["value"]]
     rk_skills = []
@@ -362,8 +391,14 @@ def npc_data(foundry_json):
     npc = get_common_0(npc, foundry_json, "Creature", lores)
 
     # Perception
-    npc["senses"] = [sense.get("type", "")
-                     for sense in sys["perception"]["senses"]]
+    npc["senses"] = []
+    for sense in sys["perception"]["senses"]:
+        s = sense.get("type", "")
+        if sense.get("range", ""):
+            s += f" {str(sense.get('range'))}ft"
+        if sense.get("acuity", None):
+            s += f" {sense.get('acuity')}"
+        npc["senses"].append(s)
     note = npc["senses"]
     if sys["perception"]["details"] != "":
         note.append(sys["perception"]["details"])
@@ -378,14 +413,15 @@ def npc_data(foundry_json):
     # Languages
     npc["languages"] = [lang.capitalize()
                         for lang in sys["details"]["languages"]["value"]]
-
+    if "details" in sys["details"]["languages"]:
+        npc["languages"].append(sys["details"]["languages"]["details"])
     # Skills
     def get_special(data):
         specials = []
         if "special" in data:
             for special in data["special"]:
                 specials.append(special["label"]+" " + str(special["base"]))
-        return ", ".join(specials)
+        return specials
 
     npc["skills"] = [
         {
