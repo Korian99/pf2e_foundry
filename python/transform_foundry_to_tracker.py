@@ -242,7 +242,7 @@ def get_common_1(npc, foundry_json):
     npc["ac"] = {"value": attributes["ac"]["value"],
                  "note": attributes["ac"].get("details"), "usedAttribute": "dexterity", "modifications": []}
     if attributes.get("hardness", None):
-        npc["hardness"] = {"value": attributes["hardness"]}
+        npc["hardness"] = {"value": attributes["hardness"].get("value") if isinstance(attributes["hardness"], dict) else attributes["hardness"]}
     npc["fortitude"] = {"value": sys["saves"]["fortitude"]["value"],
                         "note": sys["saves"]["fortitude"].get("saveDetail"), "usedAttribute": "constitution", "modifications": []}
     npc["reflex"] = {"value": sys["saves"]["reflex"]["value"],
