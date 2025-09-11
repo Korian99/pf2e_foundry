@@ -1,172 +1,10 @@
-import re
-import json
-from pathlib import Path
-
-BASE_DIR = Path(__file__).resolve().parent
-lang_file = BASE_DIR / "static" / "lang" / "en.json"
-with open(lang_file, encoding="utf-8") as f:
-    lang_json = json.load(f)
-compendium_file = BASE_DIR / "compendium.json"
-with open(compendium_file, encoding="utf-8") as f:
-    compendium = json.load(f)
-saving_throws = {
-    "fortitude", "reflex", "will"
-}
-skills = {
-    "acrobatics": "dexterity",
-    "arcana": "intelligence",
-    "athletics": "strength",
-    "crafting": "intelligence",
-    "deception": "charisma",
-    "diplomacy": "charisma",
-    "intimidation": "charisma",
-    "medicine": "wisdom",
-    "nature": "wisdom",
-    "occultism": "intelligence",
-    "performance": "charisma",
-    "religion": "wisdom",
-    "society": "intelligence",
-    "stealth": "dexterity",
-    "survival": "wisdom",
-    "thievery": "dexterity",
-}
-actions_type = {
-    "free": 0,
-    "reaction": -1,
-}
-dc_by_level = {
-    -2: "DC 12",
-    -1: "DC 13",
-    0: "DC 14",
-    1: "DC 15",
-    2: "DC 16",
-    3: "DC 18",
-    4: "DC 19",
-    5: "DC 20",
-    6: "DC 22",
-    7: "DC 23",
-    8: "DC 24",
-    9: "DC 26",
-    10: "DC 27",
-    11: "DC 28",
-    12: "DC 30",
-    13: "DC 31",
-    14: "DC 32",
-    15: "DC 34",
-    16: "DC 35",
-    17: "DC 36",
-    18: "DC 38",
-    19: "DC 39",
-    20: "DC 40",
-    21: "DC 42",
-    22: "DC 44",
-    23: "DC 46",
-    24: "DC 48",
-    25: "DC 50",
-}
-skill_by_tradition = {
-    "Aberration": "Occultism",
-    "Animal": "Nature",
-    "Astral": "Occultism",
-    "Beast": "Arcana or Nature",
-    "Celestial": "Religion",
-    "Construct": "Arcana or Crafting",
-    "Dragon": "Arcana",
-    "Dream": "Occultism",
-    "Elemental": "Arcana or Nature",
-    "Ethereal": "Occultism",
-    "Fey": "Nature",
-    "Fiend": "Religion",
-    "Fungus": "Nature",
-    "Humanoid": "Society",
-    "Monitor": "Religion",
-    "Ooze": "Occultism",
-    "Plant": "Nature",
-    "Shade": "Religion",
-    "Spirit": "Occultism",
-    "Time": "Occultism",
-    "Undead": "Religion",
-}
-excluded_abilities = {
-    "tremorsense",
-    "telepathy",
-    "status to all saves",
-    "constant spell",
-    "darkvision",
-}
-
-
-
-macro_pattern = re.compile(r"\[\[\/[^\]]+\]\]\{(?P<val>[^\}]+)\}")
-clean_pattern = re.compile(r"@\w+\[[^\]]+\]\{(?P<val>[^\}]+)\}")
-uuid_pattern = re.compile(r"@UUID\[(?P<key>[^\]]+)\]")
-check_pattern = re.compile(r"@Check\[(?P<skill>[a-zA-Z]+)\|dc:(?P<dc>\d+)(?:\|[^\]]+)?\]")
-localize_pattern = re.compile(r"@Localize\[(?P<key>[^\]]+)\]")
-damage_pattern = re.compile(r"@Damage\[(?P<dice>[^\[]+)\[(?P<element>[^\]]+)\].*?\]")
-template_pattern = re.compile(r"@Template\[(?P<type>[^\|]+)\|distance:(?P<dist>\d+)\]")
-
-
-def get_nested(data, dotted_key: str, default=None):
-    """Walk through nested dicts using dot notation."""
-    current = data
-    for part in dotted_key.split("."):
-        if isinstance(current, dict) and part in current:
-            current = current[part]
-        else:
-            return default
-    return current
-
-def simplify_uuid(text: str) -> str:
-    def repl(match):
-        inside = match.group(1)          # everything inside [ ... ]
-        last_part = inside.split(".")[-1]  # take the last piece
-        return last_part
-    def replace_uuid(text: str) -> str:
-        def replacer(match):
-
-            full_key = match.group("key")
-            last_key = full_key.split(".")[-1]
-            return compendium.get(last_key, last_key)  
-        return uuid_pattern.sub(replacer, text)
-    def replace_check(text: str) -> str:
-        basic = "Basic "  if "basic" in text else ""
-        return replace_uuid(check_pattern.sub(lambda m: f"{basic}DC {m.group('dc')} {m.group('skill').capitalize()} {'Saving Throw' if m.group('skill') in saving_throws else ''}", text))
-    def replace_template(text: str) -> str:
-        def repl(match):
-            t_type = match.group("type").capitalize()  # e.g., "burst"
-            dist = match.group("dist")
-            return f"{dist}ft {t_type}"
-        
-        return replace_check(template_pattern.sub(repl, text))
-    def replace_damage(text: str) -> str:
-        def repl(match):
-            dice = match.group("dice")  # e.g., "9d6"
-            element = match.group("element").capitalize()  # e.g., "fire" → "Fire"
-            return f"{dice} {element} Damage"
-        
-        return replace_template(damage_pattern.sub(repl, text))
-    def localize(text: str) -> str:
-        def replacer(match):
-            key = match.group("key")
-            localized_value = get_nested(lang_json, key, key)
-            return (
-                f"<details><summary>See rules...</summary>\n"
-                f"<p>{localized_value}</p></details>"
-            )
-        return replace_damage(localize_pattern.sub(replacer, text))
-    if text:
-        text = clean_pattern.sub(lambda m: m.group("val"), text)
-        text = macro_pattern.sub(lambda m: m.group("val"), text)
-        return re.sub(r"@\w+\[([^\]]+)\]", repl, localize(text))
-    return text
-
-def clean_uuid(text: str) -> str:
-    first = re.sub(r"@UUID\[Compendium\.pf2e\.spell-effects[^\]]*\]", "", text)
-    return simplify_uuid(first)
+from dicts import skills, excluded_abilities, actions_type, dc_by_level, skill_by_tradition, saving_throws
+from regex import clean_uuid, simplify_uuid
 
 def get_spellcasting(items):
     traditions = []
     spells = []
+    max_level = 1
     for item in items:
         item_detail = item["system"]
         if item["type"] == "spellcastingEntry":
@@ -188,6 +26,12 @@ def get_spellcasting(items):
                     "current": 0,
                     "max": 0
                 }
+
+            def get_prepared_spells_id(detail, slot):
+                if slot in detail and detail[slot].get("prepared", None):
+                    return detail[slot].get("prepared", [])
+                return []
+            
             item_detail_slots = item_detail["slots"]
             traditions.append(
                 {"name": item["name"],
@@ -196,17 +40,17 @@ def get_spellcasting(items):
                  "dc": item_detail["spelldc"]["dc"],
                  "focusPoints": focusPoints,
                  "autoHeightenLevel": 1,
-                 "cantrips": [],
-                 "lv1spells": [],
-                 "lv2spells": [],
-                 "lv3spells": [],
-                 "lv4spells": [],
-                 "lv5spells": [],
-                 "lv6spells": [],
-                 "lv7spells": [],
-                 "lv8spells": [],
-                 "lv9spells": [],
-                 "lv10spells": [],
+                 "cantrips": get_prepared_spells_id(item_detail_slots, "slot0"),
+                 "lv1spells": get_prepared_spells_id(item_detail_slots, "slot1"),
+                 "lv2spells": get_prepared_spells_id(item_detail_slots, "slot2"),
+                 "lv3spells": get_prepared_spells_id(item_detail_slots, "slot3"),
+                 "lv4spells": get_prepared_spells_id(item_detail_slots, "slot4"),
+                 "lv5spells": get_prepared_spells_id(item_detail_slots, "slot5"),
+                 "lv6spells": get_prepared_spells_id(item_detail_slots, "slot6"),
+                 "lv7spells": get_prepared_spells_id(item_detail_slots, "slot7"),
+                 "lv8spells": get_prepared_spells_id(item_detail_slots, "slot8"),
+                 "lv9spells": get_prepared_spells_id(item_detail_slots, "slot9"),
+                 "lv10spells": get_prepared_spells_id(item_detail_slots, "slot10"),
                  "rituals": [],
                  "lv1slots": get_slots(item_detail_slots, "slot1"),
                  "lv2slots": get_slots(item_detail_slots, "slot2"),
@@ -220,7 +64,7 @@ def get_spellcasting(items):
                  "lv10slots": get_slots(item_detail_slots, "slot10"),
                  }
             )
-            
+
         elif item["type"] == "spell":
             spell_type = "cantrip" if "cantrip" in item_detail["traits"]["value"] else "spell"
             save_type = ""
@@ -266,11 +110,33 @@ def get_spellcasting(items):
                  "id": item["_id"]
                  }
             )
+            max_level = max(max_level, item_detail["level"]["value"])
+    spells = sorted(
+            spells, key=lambda x: (x["level"], x["name"]))
+    for tradition in traditions:
+        if tradition["type"] == 'prepared':
+            i = 0
+            while i < 11:
+                dict_name = "lv"+str(i)+"spells"
+                if i == 0:
+                    dict_name = "cantrips"
+                new_spells = []
+                for spell_dict in tradition.get(dict_name, []):
+                    _id = spell_dict["id"]
+                    match = next((spell for spell in spells if spell["id"] == _id), None)
+                    if match:
+                        match["heightenedLevel"] = i
+                        new_spells.append(match)
+                        tradition["autoHeightenLevel"] = max(
+                            i, tradition["autoHeightenLevel"])
+                tradition[dict_name] = new_spells
+                i += 1
     for spell in spells:
         if "focus" in spell["traits"]:
             tradition_type = ["focus"]
+            spell["heightenedLevel"] = max_level
         else:
-            tradition_type = ["spontaneous", "prepared", "innate"]
+            tradition_type = ["spontaneous", "innate"]
         dict_name = spell["type"] + "s"
         if dict_name == "spells":
             dict_name = "lv"+str(spell["heightenedLevel"])+"spells"
@@ -278,9 +144,10 @@ def get_spellcasting(items):
             if tradition["type"] in tradition_type:
                 i = 0
                 while i < spell["timesPrepared"]:
-                    i+=1
+                    i += 1
                     tradition[dict_name].append(spell)
-                    tradition["autoHeightenLevel"] = max(spell["heightenedLevel"], tradition["autoHeightenLevel"])
+                    tradition["autoHeightenLevel"] = max(
+                        spell["heightenedLevel"], tradition["autoHeightenLevel"])
     return traditions
 
 
@@ -289,6 +156,7 @@ def get_abilities(items, ability_type):
     def should_include(item):
         name = item["name"].lower()
         return all(excluded.lower() not in name for excluded in excluded_abilities)
+
     def get_actions(item):
         action_type = item["actionType"]["value"]
         action_number = item["actions"]["value"]
@@ -306,8 +174,9 @@ def get_abilities(items, ability_type):
     )
     ]
 
+
 def get_common_0(npc, foundry_json, npc_type, lores=[]):
-    
+
     sys = foundry_json["system"]
     init_bonus = 0
     if "initiative" in sys:
@@ -348,10 +217,12 @@ def get_common_0(npc, foundry_json, npc_type, lores=[]):
     })
 
     return npc
+
+
 def get_common_1(npc, foundry_json):
     sys = foundry_json["system"]
     attributes = sys["attributes"]
-     # TODO CHECK SPECIAL
+    # TODO CHECK SPECIAL
     npc["items"] = [
         {
             "name": item["name"],
@@ -392,8 +263,9 @@ def get_common_1(npc, foundry_json):
     for st in ["immunities", "resistances", "weaknesses"]:
         npc[st] = []
         if st in attributes:
-            npc[st] = [s["type"] if not s.get("value", None) else s for s in attributes[st]]
-        
+            npc[st] = [s["type"] if not s.get(
+                "value", None) else s for s in attributes[st]]
+
         # DefensiveAbilities
     npc["defensiveAbilities"] = get_abilities(
         foundry_json["items"], "defensive")
@@ -416,9 +288,9 @@ def get_common_1(npc, foundry_json):
                 "name": item["name"],
                 "bonus": item["system"]["bonus"]["value"],
                 "traits": item["system"]["traits"]["value"],
-                "damageRolls": [{"roll": d["damage"], "type": d["damageType"]}
+                "damageRolls": [{"roll": d["damage"], "type": f"{d.get('category','')+' ' if d.get('category', None) else ''}" +d["damageType"]}
                                 for d in item["system"]["damageRolls"].values()],
-                "critRolls": [{"roll": f"({d['damage']})*2", "type": d["damageType"]}
+                "critRolls": [{"roll": f"({d['damage']})*2", "type": f"{d.get('category','')+' ' if d.get('category', None) else ''}" + d["damageType"]}
                               for d in item["system"]["damageRolls"].values()],
                 # TODO WHAT IS THIS
                 "effects": item["system"]["attackEffects"]["value"],
@@ -436,7 +308,7 @@ def get_common_1(npc, foundry_json):
     # TODO IMPROVE
     npc["spellcastingEntries"] = get_spellcasting(foundry_json["items"])
 
-    traits =  [t.capitalize() for t in sys["traits"]["value"]]
+    traits = [t.capitalize() for t in sys["traits"]["value"]]
     rk_skills = []
     for trait in traits:
         if trait in skill_by_tradition:
@@ -469,13 +341,13 @@ def npc_data(foundry_json):
     npc = {}
     sys = foundry_json["system"]
     lores = [{
-            "name": item["name"],
-            "modifier": item["system"]["mod"]["value"],
-            "note": "",
-            "usedAttribute": "intelligence",
-            # TODO SEE IF ANYTHING ELSE
-            "modifications": []
-        }
+        "name": item["name"],
+        "modifier": item["system"]["mod"]["value"],
+        "note": "",
+        "usedAttribute": "intelligence",
+        # TODO SEE IF ANYTHING ELSE
+        "modifications": []
+    }
         for item in foundry_json["items"]
         if item["type"] == "lore"]
     npc = get_common_0(npc, foundry_json, "Creature", lores)
@@ -506,6 +378,7 @@ def npc_data(foundry_json):
     if sys["details"]["languages"].get("details", "") != "":
         npc["languages"].append(sys["details"]["languages"]["details"])
     # Skills
+
     def get_special(data):
         specials = []
         if "special" in data:
@@ -522,7 +395,7 @@ def npc_data(foundry_json):
             # TODO SEE IF ANYTHING ELSE
             "modifications": []
         }
-        for name, data in sys.get("skills",{}).items()
+        for name, data in sys.get("skills", {}).items()
         for attr in [  # attribute mapping and lore by default
             skills.get(name, "intelligence")]
     ]

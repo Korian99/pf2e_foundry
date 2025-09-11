@@ -4,7 +4,7 @@ from transform_foundry_to_tracker import transform_foundry_to_tracker
 from create_compendium import create_compendium
 
 BASE_DIR = Path(__file__).resolve().parent
-packs_dir = BASE_DIR / "packs"
+packs_dir = BASE_DIR.parent / "packs"
 jsons_dir = BASE_DIR / "jsons"
 jsons_dir.mkdir(exist_ok=True)
 
@@ -15,12 +15,14 @@ with open(BASE_DIR / "database_index.json", encoding="utf-8") as f:
 # set of names already in index
 index_names = {entry["name"] for entry in db_index}
 
+
 def iter_json_files(root: Path):
     """Recursively yield .json files from folders containing 'bestiary' or 'core'."""
     for path in root.rglob("*.json"):
         # check if any part of the path contains the substring
         if any("bestiary" in part.lower() or "core" in part.lower() for part in path.parts):
             yield path
+
 
 def main():
     database_json = []
@@ -49,9 +51,11 @@ def main():
         tracker_json = transform_foundry_to_tracker(foundry_data)
         if tracker_json:
             # safe filename
-            out_name = creature_name.replace(" ", "_").replace("/", "_").replace('"', "'")+".json"
+            out_name = creature_name.replace(" ", "_").replace(
+                "/", "_").replace('"', "'")+".json"
             out_path = jsons_dir / out_name
-            database_json.append({"name":tracker_json["name"],"level":tracker_json["level"]})
+            database_json.append(
+                {"name": tracker_json["name"], "level": tracker_json["level"]})
             with open(out_path, "w", encoding="utf-8") as f:
                 json.dump(tracker_json, f, indent=2, ensure_ascii=False)
             if creature_name == "Spawn of Dahak":
@@ -59,8 +63,11 @@ def main():
 
     out_path = BASE_DIR / "database_index_new.json"
     with open(out_path, "w", encoding="utf-8") as f:
-        sorted_database = sorted(database_json, key=lambda x: (x["level"], x["name"]))
+        sorted_database = sorted(
+            database_json, key=lambda x: (x["level"], x["name"]))
         json.dump(sorted_database, f, indent=2, ensure_ascii=False)
+
+
 if __name__ == "__main__":
     create_compendium()
     main()
