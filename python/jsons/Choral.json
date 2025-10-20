@@ -1,0 +1,581 @@
+{
+  "initiative": 0,
+  "initiativebonus": 14,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Choral",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Common",
+    "Small",
+    "Angel",
+    "Celestial",
+    "Holy"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 14,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Diabolic",
+    "Draconic",
+    "Empyrean",
+    "Truespeech"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "performance",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 3
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "At-Will Spells",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>The monster can cast its at-will spells any number of times without using up spell slots.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+1 status to all saves vs. magic",
+  "hp": {
+    "value": 100,
+    "max": 100,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "type": "sonic",
+      "value": 5
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "unholy",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Harmonizing Aura",
+      "actions": null,
+      "traits": [
+        "aura",
+        "divine",
+        "sonic"
+      ],
+      "description": "<p>20 feet.</p>\n<p>Allies in the aura gain a +2 status bonus to sonic damage rolls and a +1 status bonus to AC and all saves against effects with the auditory or sonic trait. Enemies in the aura take a –2 status penalty to sonic damage rolls and a –1 status penalty to AC and all saves against sonic and auditory effects.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, fly 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "holy",
+        "magical",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+5)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Piercing Hymn",
+      "bonus": 17,
+      "traits": [
+        "holy",
+        "magical",
+        "range-90",
+        "sonic"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d6",
+          "type": "sonic"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d6)*2",
+          "type": "sonic"
+        }
+      ],
+      "effects": [
+        "deafening-aria"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Deafening Aria",
+      "actions": null,
+      "traits": [],
+      "description": "<p>On a critical hit with piercing hymn, the target is Deafened for one minute.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Harmonize",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "divine",
+        "sonic"
+      ],
+      "description": "<p>The choral angel lends their harmony to a choral angel ally within their harmonizing aura.</p>\n<p>The ally can, on their next turn, expend their 3rd-rank Noise Blast to instead cast Calm, Heroism, or 4th-rank <em>noise blast</em>.</p>\n<p>If the ally is benefiting from 5 or more chorals' Harmonize actions, they can instead choose Divine Decree.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Divine Innate Spells",
+      "type": "innate",
+      "bonus": 15,
+      "dc": 23,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 5,
+      "cantrips": [
+        {
+          "name": "Courageous Anthem",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "bard",
+            "composition",
+            "concentrate",
+            "emotion",
+            "mental"
+          ],
+          "castingTime": "1",
+          "duration": "1 round",
+          "range": "",
+          "area": "60ft emanation",
+          "targets": "",
+          "save": "",
+          "description": "<p>You inspire yourself and your allies with words or tunes of encouragement. You and all allies in the area gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "r8LujUFkxLRB6emz"
+        },
+        {
+          "name": "Uplifting Overture",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "bard",
+            "composition",
+            "concentrate",
+            "emotion",
+            "mental"
+          ],
+          "castingTime": "1",
+          "duration": "1 round",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 ally",
+          "save": "",
+          "description": "<p>Your performance makes allies feel they can succeed at anything. This counts as having prepared to Aid your ally on a skill check of your choice. When you later use the Aid reaction, you can roll Performance instead of the normal skill check, and if you roll a failure, you get a success instead. If you are legendary in Performance, you automatically critically succeed.</p>\n<p>The GM might rule that you can't use this ability if the act of encouraging your ally would interfere with the skill check (such as a check to Sneak quietly or maintain a disguise).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "3LvRDRcpBKsijueR"
+        }
+      ],
+      "lv1spells": [
+        {
+          "name": "Counter Performance (At Will)",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "bard",
+            "composition",
+            "concentrate",
+            "fortune",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "reaction",
+          "duration": "",
+          "range": "",
+          "area": "60ft emanation",
+          "targets": "",
+          "save": "",
+          "description": "<p><strong>Trigger</strong> You or an ally within 60 feet rolls a saving throw against an auditory or visual effect.</p>\n<hr />\n<p>Your performance protects you and your allies. Roll a Performance check for a type you know—it must be an auditory performance if the trigger was auditory or a visual one for a visual trigger, and this action gains the traits for the type of performance. You and allies in the area can use the better result between your Performance check and the saving throw.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "XFR7l2CTQXGBp5D1"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Invisibility (At Will) (Self Only)",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "illusion",
+            "manipulate",
+            "subtle"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "self",
+          "save": "",
+          "description": "<p>Illusions bend light around the target, rendering it Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "MVjgUWTNAKH8RZrY"
+        },
+        {
+          "name": "Noise Blast (At Will)",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "sonic"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "10ft burst",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>A cacophonous noise blasts out, dealing 2d10 sonic damage. Each creature must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Deafened for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is deafened for 1 minute, and is Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "dYZSCcbxcmGEfPdC"
+        }
+      ],
+      "lv3spells": [
+        {
+          "name": "Heal",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "healing",
+            "manipulate",
+            "vitality"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 willing living creature or 1 undead",
+          "save": "Basic fortitude",
+          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse vital energy in a 30ft Emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "T5pJtpdkElkUimci"
+        },
+        {
+          "name": "Cleanse Affliction",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "healing",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>Gentle restorative magic pushes back the effects of toxins and more complex maladies. Choose an affliction on the target, such as a curse, disease, or poison. If it has advanced past stage one, reduce the stage by one. This reduction can be applied only once to a given case of an affliction, with the case ending when it's completely cured. Although the reduction can't occur again, heightened versions of this spell attempt to counteract with each casting.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> Attempt to counteract the affliction if it is a disease or poison.</p>\n<p><strong>Heightened (4th)</strong> Attempt to counteract the affliction if it is a curse, disease, or poison.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "qiU6wSlx0cvr2SnE"
+        },
+        {
+          "name": "Clear Mind (At Will)",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "healing",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>You drive mental contamination from the target's mind. Attempt to counteract an effect of your choice imposing one of these conditions on the target: Fleeing, Frightened, and Stupefied. If you failed to counteract the effect but you would have if its counteract rank were 2 lower, instead suppress the effect until the beginning of your next turn. The effect's duration doesn't elapse while it's suppressed. This spell can't counteract or suppress conditions that are part of curses, diseases, or a natural state of the target.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> Add Confused, Controlled, and Slowed to the list of conditions.</p>\n<p><strong>Heightened (6th)</strong> Add Doomed to the list of conditions.</p>\n<p><strong>Heightened (8th)</strong> Add Stunned to the list of conditions.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "iXIb76K7ZsaYUorA"
+        },
+        {
+          "name": "Noise Blast",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "sonic"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "10ft burst",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>A cacophonous noise blasts out, dealing 2d10 sonic damage. Each creature must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Deafened for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is deafened for 1 minute, and is Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "UF1xjy8thLLeAFU7"
+        }
+      ],
+      "lv4spells": [],
+      "lv5spells": [
+        {
+          "name": "Truespeech (Constant)",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "vWIFbh2Je9EY0c6H"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [
+        {
+          "name": "Angelic Messenger",
+          "type": "ritual",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [],
+          "castingTime": "1 day",
+          "duration": "",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You transport yourself to either a celestial plane or a world in the Universe where worshippers of your patron can be found. You must be of no higher level than double angelic messenger's spell rank.</p>\n<hr />\n<p><strong>Critical Success</strong> As success, but if you've never visited that plane or world before, you appear right in front of the message's intended recipient.</p>\n<p><strong>Success</strong> You arrive on the target plane or world at the last location you visited on that plane or world, or to a random location within 10d10 #miles off miles of your message's intended recipient if you've never visited that plane or world before.</p>\n<p><strong>Failure</strong> You don't travel.</p>\n<p><strong>Critical Failure</strong> You accidentally travel to the wrong plane, possibly a dangerous plane.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "Religion (expert; you must be an angel)",
+          "secondaryCasters": 0,
+          "secondaryChecks": "",
+          "id": "CXC8mHzNup8lz6gy"
+        }
+      ],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Religion, DC 22"
+}

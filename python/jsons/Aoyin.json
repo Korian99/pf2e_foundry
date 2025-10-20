@@ -1,0 +1,228 @@
+{
+  "initiative": 0,
+  "initiativebonus": 19,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Aoyin",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Rare",
+    "Large",
+    "Animal"
+  ],
+  "source": "Pathfinder Lost Omens Tian Xia World Guide",
+  "senses": [
+    "Low light vision",
+    "Scent 30ft precise",
+    "bloodsense (precise) 60 feet"
+  ],
+  "perception": {
+    "value": 19,
+    "note": "Low light vision, Scent 30ft precise, bloodsense (precise) 60 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 19,
+      "note": [
+        "in mountains 21"
+      ],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": -2
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Scent (Precise) 30 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>Scent involves sensing creatures or objects by smell, and is usually a vague sense. The range is listed in the ability, and it functions only if the creature or object being detected emits an aroma (for instance, incorporeal creatures usually do not exude an aroma).</p>\n<p>If a creature emits a heavy aroma or is upwind, the GM can double or even triple the range of scent abilities used to detect that creature, and the GM can reduce the range if a creature is downwind.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Bloodsense (Precise) 60 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p>An aoyin can detect exposed blood as a precise sense at the listed range, including from creatures taking persistent bleed damage.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Low-Light Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>The monster can see in dim light as though it were bright light, so it ignores the Concealed condition due to dim light.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 210,
+    "max": 210,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Driven by Hunger",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The aoyin fails or succeeds at a save against an emotion effect</p>\n<hr />\n<p><strong>Effect</strong> The aoyin's hunger is powerful enough to blot out any other emotion. The aoyin critically succeeds at the save instead. If a creature within 40 feet is taking persistent bleed damage, the aoyin can also Stride up to its Speed in a straight line toward that target as it seeks out the closest source of food.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "40 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Horn",
+      "bonus": 21,
+      "traits": [
+        "deadly-d12",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6",
+          "type": "persistent bleed"
+        },
+        {
+          "roll": "2d12+7",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6)*2",
+          "type": "persistent bleed"
+        },
+        {
+          "roll": "(2d12+7)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Hoof",
+      "bonus": 21,
+      "traits": [
+        "agile",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+7)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Horn Toss",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The aoyin Strides and makes a horn Strike. If the Strike hits, the target is flung 20 feet in a direction of the aoyin's choice.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Mountain Stride",
+      "actions": null,
+      "traits": [],
+      "description": "<p>An aoyin isn't impeded by difficult terrain caused by snow or mountainous terrain, nor does it need to Balance to move over uneven ground created by those conditions.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Trample",
+      "actions": 3,
+      "traits": [],
+      "description": "<p>Medium, Hoof, Basic DC 29 Reflex Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 27"
+}

@@ -1,0 +1,428 @@
+{
+  "initiative": 0,
+  "initiativebonus": 17,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Coarti",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Common",
+    "Medium",
+    "Devil",
+    "Fiend",
+    "Unholy"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Greater darkvision"
+  ],
+  "perception": {
+    "value": 17,
+    "note": "Greater darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Diabolic",
+    "Draconic",
+    "Empyrean",
+    "Telepathy 100 feet, Truespeech"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "Legal Lore",
+      "modifier": 14,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 3
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [
+    {
+      "name": "Morningstar",
+      "quantity": 1,
+      "description": "<p>This weapon has a short shaft ending in a metal ball studded with spikes.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": [
+        "versatile-p"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+1 status to all saves vs. magic",
+  "hp": {
+    "value": 110,
+    "max": 110,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "fire"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [
+        "silver"
+      ],
+      "type": "physical",
+      "value": 5
+    },
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "poison",
+      "value": 5
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "holy",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Blood Contract",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When the coarti takes damage from their holy weakness, blood flows freely from their eyes and the contract carved into their skin. They take 1d6 Persistent,bleed Damage damage and are Dazzled as long as the persistent damage continues, but their Despairing Shriek recharges.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, fly 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Morningstar",
+      "bonus": 18,
+      "traits": [
+        "magical",
+        "unholy",
+        "versatile-p"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+10",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "1d6",
+          "type": "spirit"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+10)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "spirit"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Wing",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "unholy",
+        "versatile-p"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "fire"
+        },
+        {
+          "roll": "1d6+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(1d6+7)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Despairing Shriek",
+      "actions": 2,
+      "traits": [
+        "divine",
+        "sonic",
+        "unholy"
+      ],
+      "description": "<p>The coarti lets out a terrible cry, dealing 4d6 Sonic Damage damage to all creatures in a 30ft Emanation with a Basic DC 25 Will Saving Throw save. Holy creatures that fail this save are also Frightened 2; this added effect has the emotion, fear, and mental traits.</p>\n<p>The coarti can't use Despairing Shriek again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Wing Snap",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per turn</p>\n<hr />\n<p><strong>Effect</strong> The coarti makes two wing Strikes, then falls if it's flying. It can't Fly until the end of its turn.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Divine Innate Spells",
+      "type": "innate",
+      "bonus": 17,
+      "dc": 25,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 5,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [
+        {
+          "name": "Darkness",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "darkness",
+            "manipulate"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create a shroud of darkness that prevents light from penetrating or emanating within the area. Light does not enter the area and any non-magical light sources, such as a torch or lantern, do not emanate any light while inside the area, even if their light radius would extend beyond the darkness. This also suppresses magical light of your darkness spell's rank or lower. Light can't pass through, so creatures in the area can't see outside. From outside, it appears as a globe of pure darkness.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> Even creatures with darkvision (but not greater darkvision) can barely see through the darkness. They treat targets seen through the darkness as Concealed.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Z360JnlJkZaMXJ8J"
+        },
+        {
+          "name": "Translocate (At Will)",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "4iDW62MHu5dB6921"
+        }
+      ],
+      "lv5spells": [
+        {
+          "name": "Truespeech (Constant)",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "uhfCEwfrsrn3pavt"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [
+        {
+          "name": "Diabolic Pact",
+          "type": "ritual",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "unholy"
+          ],
+          "castingTime": "1 day",
+          "duration": "",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You make an appeal to a powerful devil, asking them to bind some of their subordinates to your service. If you succeed, the devil sends you their choice of one devil of level 2 or lower, two devils of level 0 or lower, or three devils of level –1 or lower.</p>\n<hr />\n<p><strong>Critical Success</strong> The devils are sent to you and serve you for 1d4 weeks.</p>\n<p><strong>Success</strong> The devils are sent to you and serve you for 1d4 days.</p>\n<p><strong>Failure</strong> Your request is denied.</p>\n<p><strong>Critical Failure</strong> Not only is your request denied, but the powerful devil sends word of its displeasure to your master.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the level of devil sent to you by 1 for each option.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "Religion (expert; you must be a devil)",
+          "secondaryCasters": 0,
+          "secondaryChecks": "",
+          "id": "BGEJhpK5vRg51hQE"
+        }
+      ],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Religion, DC 23"
+}

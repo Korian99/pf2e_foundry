@@ -1,0 +1,286 @@
+{
+  "initiative": 0,
+  "initiativebonus": 14,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Rocketeer",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 13,
+      "note": [
+        "to Maneuver in Flight 17"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "performance",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "Engineering Lore",
+      "modifier": 14,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Heavy Wrench (Functions as a Mace)",
+      "quantity": 1,
+      "description": "<p>With a stout haft and a heavy metal head, a mace is sturdy and allows its wielder to deliver powerful blows and dent armor.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": [
+        "shove"
+      ]
+    },
+    {
+      "name": "Alchemist's Fire (Moderate)",
+      "quantity": 4,
+      "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<hr />\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2d8 fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>",
+      "level": 3,
+      "price": "10 gp",
+      "traits": [
+        "alchemical",
+        "bomb",
+        "consumable",
+        "fire",
+        "splash"
+      ]
+    },
+    {
+      "name": "Slide Pistol",
+      "quantity": 1,
+      "description": "<p>Also known as a harmonica gun, this weapon is essentially a stock, trigger, and firing mechanism attached to a sliding brace of barrels that can each hold a round of ammunition.</p>",
+      "level": 1,
+      "price": "16 gp",
+      "traits": [
+        "capacity-5",
+        "concussive",
+        "fatal-d10"
+      ]
+    },
+    {
+      "name": "Flight Suit (Functions as Leather Armor)",
+      "quantity": 1,
+      "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": []
+    },
+    {
+      "name": "Artisan's Toolkit (Rocketry)",
+      "quantity": 1,
+      "description": "<p>You need these tools to create items from raw materials with the Craft skill. Different sets are needed for different work, as determined by the GM; for example, a blacksmith's toolkit differs from a woodworker's toolkit. If you wear your artisan's toolkit, you can draw and replace it as part of the action that uses it.</p>",
+      "level": 0,
+      "price": "4 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 85,
+    "max": 85,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Fuel Tank Vulnerability",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When the rocketeer is struck by a critical hit that deals piercing or fire damage, they must attempt a DC 5 Flat . On a failure, the rocketeer's fuel tank explodes, dealing 6d6 Fire Damage damage to the rocketeer and all creatures in a 20ft Type:emanation and knocking the rocketeer Prone. The rocketeer loses their fly Speed and can't use Explosive Liftoff, Mid-air Collision, or Rocketing Strafe until they repair their jet pack, which requires an appropriate set of artisan's tools and takes 2 hours.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Heavy Wrench",
+      "bonus": 14,
+      "traits": [
+        "shove"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+8)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+8)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Slide Pistol",
+      "bonus": 17,
+      "traits": [
+        "capacity-5",
+        "concussive",
+        "fatal-d10",
+        "range-increment-30",
+        "reload-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+6",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+6)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Explosive Liftoff",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Requirements</strong> The rocketeer is standing on a horizontal surface</p><hr /><p><strong>Effect</strong> The rocketeer unleashes the full strength of their jets to launch themself into the air, dealing 7d6 Fire Damage|options:area-damage] damage to all creatures in a 15ft Type:emanation with a Basic DC 24 Reflex Saving Throw save. The rocketeer Flies twice, straight up into the air.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Mid-air Collision",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The rocketeer Flies twice, then attempts to Trip options=mid air collision or Shove options=mid air collision another flying creature. If they roll a success on the Athletics check, they get a critical success instead.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rocketing Strafe",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The rocketeer Flies and makes two melee Strikes at any point during that movement. Each Strike must target a different creature. The rocketeer can forgo the melee Strikes to instead make one slide pistol Strike at any point during that movement and Interact to select the next loaded chamber of their slide pistol; they can do these in either order. Any Strike made as part of a Rocketing Strafe deals an additional 2d6 damage and takes the normal multiple attack penalty.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 22"
+}

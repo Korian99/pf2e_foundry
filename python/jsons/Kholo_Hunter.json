@@ -1,0 +1,250 @@
+{
+  "initiative": 0,
+  "initiativebonus": 7,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Kholo Hunter",
+  "type": "Creature",
+  "level": 2,
+  "traits": [
+    "Common",
+    "Medium",
+    "Gnoll",
+    "Humanoid"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 7,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Kholo",
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 4,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Battle Axe",
+      "quantity": 1,
+      "description": "<p>These axes are designed explicitly as weapons, rather than tools. They typically weigh less, with a shaft reinforced with metal bands or bolts, and have a sharper blade, making them ideal for chopping limbs rather than wood.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": [
+        "sweep"
+      ]
+    },
+    {
+      "name": "Shortbow",
+      "quantity": 1,
+      "description": "<p>This smaller bow is made of a single piece of wood and favored by skirmishers and cavalry.</p>",
+      "level": 0,
+      "price": "3 gp",
+      "traits": [
+        "deadly-d10"
+      ]
+    },
+    {
+      "name": "Leather Armor",
+      "quantity": 1,
+      "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 29,
+    "max": 29,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Battle Axe",
+      "bonus": 10,
+      "traits": [
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+4",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+4)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+2",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+2)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Shortbow",
+      "bonus": 10,
+      "traits": [
+        "deadly-d10",
+        "range-increment-60"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Pack Attack",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A kholo hunter deals 1d4 extra damage to any creature that's within reach of at least two of the kholo hunter's allies.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rugged Travel",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A kholo ignores the first square of difficult terrain they move into each time they Step or Stride.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 16"
+}

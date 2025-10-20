@@ -1,0 +1,264 @@
+{
+  "initiative": 0,
+  "initiativebonus": 25,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Frost Roc",
+  "type": "Creature",
+  "level": 14,
+  "traits": [
+    "Rare",
+    "Gargantuan",
+    "Beast",
+    "Cold"
+  ],
+  "source": "Pathfinder Adventure: Prey for Death",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 25,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 29,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 9
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Mist Sight",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A frost roc can see through clouds, fog, mists, and other water vapors.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 34,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 300,
+    "max": 300,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "cold"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "electricity",
+      "value": 15
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [],
+  "speed": "15 ft, fly 60ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Wing",
+      "bonus": 29,
+      "traits": [
+        "agile",
+        "reach-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d4+15",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d4+15)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "improved-push"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Beak",
+      "bonus": 29,
+      "traits": [
+        "reach-15",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d12+15",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+15)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Talon",
+      "bonus": 29,
+      "traits": [
+        "agile",
+        "reach-15",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+15",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+15)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "improved-grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Flying Strafe",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The frost roc Flies up to its Speed and makes two talon Strikes at any point during that movement. Each Strike must target a different creature. Each attack takes the normal multiple attack penalty.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Frozen Feathers",
+      "actions": 2,
+      "traits": [
+        "cold",
+        "primal"
+      ],
+      "description": "<p>The frost roc spreads its wings and then flaps them furiously, unleashing a blast of ice-rimed feathers in a 60ft Cone. All creatures in the area must attempt a DC 34 Reflex Saving Throw save. The frost roc can't use Frozen Feathers again for 1d4 rounds.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes 3d6 Piercing Damage|options:area-damage]{3d6 piercing damage and 5d6 cold damage}.</p>\n<p><strong>Failure</strong> The creature takes 5d6 Piercing Damage|options:area-damage]{5d6 piercing damage and 10d6 cold damage}.</p>\n<p><strong>Critical Failure</strong> The creature takes 8d6 Piercing Damage|options:area-damage]{8d6 piercing and 15d6 cold damage}, and is Slowed 1 for 1 minute.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Snack",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A frost roc gains a +2 circumstance bonus to hit with its beak Strike if the target is grabbed or restrained in its talon.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Snatch",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A frost roc can Fly at half Speed while it has a creature Grabbed or Restrained in either or both of its talons, carrying that creature along with it.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Wing Rebuff",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature moves into the reach of the frost roc's wing</p><hr /><p><strong>Effect</strong> The frost roc makes a wing Strike against the triggering creature. If the frost roc Pushes the creature, it disrupts the triggering move action.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Improved Grab",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Improved Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with as a free action. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead spend an action to use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Improved Push",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>The monster can use Push as a free action triggered by a hit with its initial attack.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 32"
+}

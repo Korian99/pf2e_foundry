@@ -1,0 +1,246 @@
+{
+  "initiative": 0,
+  "initiativebonus": 24,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Gruasha",
+  "type": "Creature",
+  "level": 11,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Giant",
+    "Humanoid",
+    "Shadow"
+  ],
+  "source": "Pathfinder Society Scenario #6-09: The Power of Legends",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 24,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Jotun",
+    "Shadowtongue"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 22,
+      "note": [
+        "to Hide in dim light 24"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 8
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [
+    {
+      "name": "Spiked Chain",
+      "quantity": 1,
+      "description": "<p>This 4-foot-long length of chain is covered with barbs and has spikes on one or both ends. Some feature metal hoops used as handgrips.</p>",
+      "level": 0,
+      "price": "3 gp",
+      "traits": [
+        "disarm",
+        "finesse",
+        "trip"
+      ]
+    },
+    {
+      "name": "Breastplate",
+      "quantity": 1,
+      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.Half Plate] armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
+      "level": 0,
+      "price": "8 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 31,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 195,
+    "max": 195,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "35 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Spiked Chain",
+      "bonus": 24,
+      "traits": [
+        "disarm",
+        "reach-10",
+        "trip"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+16",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+16)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "pall-of-shadow"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 23,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+16",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+16)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "pall-of-shadow"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Pall of Shadow",
+      "actions": null,
+      "traits": [
+        "divine",
+        "shadow"
+      ],
+      "description": "<p>When a shadow giant hits with a melee attack, the target must succeed at a DC 27 Fortitude Saving Throw save or become Drained 1 and take a –1 status penalty to Perception checks involving sight as long as they remain drained. On a critical failure, this condition doesn't heal naturally and can be removed only with magic.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Shadow Chain",
+      "actions": 2,
+      "traits": [
+        "divine",
+        "shadow",
+        "teleportation"
+      ],
+      "description": "<p>Shadows extend the giant's chain as they make a spiked chain Strike, increasing their reach to 60 feet for that Strike. If this hits, the target must succeed at a DC 30 Will Saving Throw save or be teleported to an empty space within the shadow giant's normal reach.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Shadowcloak",
+      "actions": 1,
+      "traits": [
+        "divine",
+        "shadow"
+      ],
+      "description": "<p>The shadow giant gains the effect of the Blur spell for 1 minute or until they are exposed to direct sunlight, whichever comes first.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 28"
+}

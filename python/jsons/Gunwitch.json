@@ -1,0 +1,895 @@
+{
+  "initiative": 0,
+  "initiativebonus": 13,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Gunwitch",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Rare",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "occultism",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "Patron Lore",
+      "modifier": 15,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 0
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 4
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [
+    {
+      "name": "Musket Staff of Force",
+      "quantity": 1,
+      "description": "<p>A stock carved of enchanted wood forms the base for a <em>musket staff</em>, a magic weapon used by a gunwitch as both a powerful firearm and magical staff. Many other variants exist with different spells. This <em>+1 flintlock musket</em> has a @UUID[Compendium.pf2e.equipment-srd.Item.Reinforced Stock] permanently attached to it, and the musket's <em>weapon potency</em> rune (and any other runes) applies to Strikes with the stock as well. The <em>musket staff</em> also contains spells and can be prepared following the same rules as a staff.</p><ul><li><p><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.Shield]</p></li><li><p><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.Force Barrage]</p></li></ul>",
+      "level": 4,
+      "price": "100 gp",
+      "traits": [
+        "concussive",
+        "fatal-d10",
+        "force",
+        "magical",
+        "staff"
+      ]
+    },
+    {
+      "name": "Reinforced Stock",
+      "quantity": 1,
+      "description": "<p>A reinforced stock is a weighted crossbow, firearm haft, or grip customized for striking in melee.</p>",
+      "level": 0,
+      "price": "2 sp",
+      "traits": [
+        "attached-to-crossbow-or-firearm",
+        "finesse",
+        "two-hand-d8"
+      ]
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Firearm Familiar",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The gunwitch's firearm acts as their familiar but remains a mindless item with no actions. The master abilities it grants are included in the stat block.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 90,
+    "max": 90,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Acrobatic Dodge",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> An attacker the gunwitch can observe targets them with an attack</p><hr /><p><strong>Effect</strong> The gunwitch gains a +2 circumstance bonus to AC against the triggering attack, and after the attack the gunwitch Leaps.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Musket Staff",
+      "bonus": 15,
+      "traits": [
+        "finesse",
+        "magical",
+        "two-hand-d6"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+6",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "1d6",
+          "type": "force"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+6)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "force"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+6)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Musket Staff",
+      "bonus": 18,
+      "traits": [
+        "concussive",
+        "fatal-d10",
+        "magical",
+        "range-increment-70",
+        "reload-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+6",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d6",
+          "type": "force"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+6)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "force"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Betwitched Shot",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The gunwitch is wielding their firearm familiar and has a hex bullet loaded in it (see Hex Bullet)</p><hr /><p><strong>Effect</strong> The gunwitch Casts a Spell that takes 1 or 2 actions to cast into their bullet, then Strikes with their firearm familiar, shooting the magic bullet. This counts as two attacks for the gunwitch's multiple attack penalty. On a hit, the target is also affected by the spell, though the target gets any normal defenses allowed by the spell.</p>\n<p>If the spell is targeted, it targets the creature that was hit and no one else. If the spell is an area, the target must be in the area. A burst is centered on a corner of the target's square if the target is Medium or smaller or the corner of a square closest to the creature's center if it's Large or larger. A cone or line emits from a square of the gunwitch's choice adjacent to the target.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Bullet Storm",
+      "actions": 2,
+      "traits": [
+        "concentrate",
+        "occult"
+      ],
+      "description": "<p><strong>Requirements</strong> The gunwitch is wielding their firearm familiar and has a hex bullet loaded into it (see Hex Bullet)</p><hr /><p><strong>Effect</strong> The gunwitch unleashes a flurry of projectiles. Each creature in a 60ft Type:emanation takes 8d6 Piercing Damage damage with a Basic DC 25 Reflex Saving Throw save.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Hex Bullet",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "occult"
+      ],
+      "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The gunwitch conjures a magical hex bullet in their firearm. It can be used as a normal bullet or for the Bewitched Shot and Bullet Storm abilities. The bullet vanishes if not fired by the end of the turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Recall Firearm",
+      "actions": 3,
+      "traits": [
+        "concentrate",
+        "occult",
+        "teleportation"
+      ],
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> The gunwitch's firearm familiar is within 1 mile</p><hr /><p><strong>Effect</strong> The gunwitch summons their firearm into their hand or hands.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Occult Prepared Spells",
+      "type": "prepared",
+      "bonus": 17,
+      "dc": 25,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 4,
+      "cantrips": [
+        {
+          "name": "Daze",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental",
+            "nonlethal"
+          ],
+          "castingTime": "2",
+          "duration": "1 round",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "Basic will",
+          "description": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals 1d6 mental damage, with a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "zvaEUHM6cBHzBEtb"
+        },
+        {
+          "name": "Detect Magic",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft emanation",
+          "targets": "",
+          "save": "",
+          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "xauKusNY0UUGnYnX"
+        },
+        {
+          "name": "Light",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "light",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "until your next daily preparations",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "7BMJfUVD2ZLMPU2c"
+        },
+        {
+          "name": "Read Aura",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "1 minute",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 object",
+          "save": "",
+          "description": "<p>You focus on the target object, opening your mind to perceive magical auras. When the casting is complete, you know whether that item is magical. You or anyone you advise about the aura gains a +2 circumstance bonus to Identify Magic on the item. If the object is illusory, you detect this only if the effect's rank is lower than the rank of your <em>read aura</em> spell.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to 10 objects.</p>\n<p><strong>Heightened (6th)</strong> You can target any number of objects.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "QN6RGV9n6OoidXag"
+        },
+        {
+          "name": "Telekinetic Projectile",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal 2d6 bludgeoning, piercing, or slashing damage—as appropriate for the object you hurled. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "g1GZcNkTKXN8Cxee"
+        }
+      ],
+      "lv1spells": [
+        {
+          "name": "Enfeeble",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "fortitude",
+          "description": "<p>You sap the target's strength, depending on its Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Enfeebled 1 until the start of your next turn.</p>\n<p><strong>Failure</strong> The target is Enfeebled 2 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Enfeebled 3 for 1 minute.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "e6XVJgFTeTXbxfrW"
+        },
+        {
+          "name": "Enfeeble",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "fortitude",
+          "description": "<p>You sap the target's strength, depending on its Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Enfeebled 1 until the start of your next turn.</p>\n<p><strong>Failure</strong> The target is Enfeebled 2 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Enfeebled 3 for 1 minute.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "e6XVJgFTeTXbxfrW"
+        },
+        {
+          "name": "Sure Strike",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "fortune"
+          ],
+          "castingTime": "1",
+          "duration": "until the end of your turn",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>The next time you make an attack roll before the end of your turn, roll it twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden. You are then temporarily immune to <em>sure strike</em> for 10 minutes.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "UVS2ug1lkk2Fx8r7"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Invisibility",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "illusion",
+            "manipulate",
+            "subtle"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>Illusions bend light around the target, rendering it Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "kRs7TUXTtBtzqxgA"
+        },
+        {
+          "name": "Telekinetic Maneuver",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "force",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>With a rush of telekinetic power, you move a foe or something they carry. You can attempt to Disarm, Shove, Reposition, or Trip the target using a spell attack roll instead of an Athletics check.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "1wYlZTCZpBluZIu5"
+        },
+        {
+          "name": "Telekinetic Maneuver",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "force",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>With a rush of telekinetic power, you move a foe or something they carry. You can attempt to Disarm, Shove, Reposition, or Trip the target using a spell attack roll instead of an Athletics check.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "1wYlZTCZpBluZIu5"
+        }
+      ],
+      "lv3spells": [
+        {
+          "name": "Haste",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>Magic empowers the target to act faster. It gains the Quickened condition and can use the extra action each round only for Strike and Stride actions.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> You can target up to 6 creatures.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "8yNL8luFmdfjvtF1"
+        },
+        {
+          "name": "Paralyze",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "incapacitation",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You block the target's motor impulses before they can leave its mind, threatening to freeze the target in place. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Stunned 1.</p>\n<p><strong>Failure</strong> The target is Paralyzed for 1 round.</p>\n<p><strong>Critical Failure</strong> The target is Paralyzed for 4 rounds. At the end of each of its turns, it can attempt a new Will save to reduce the remaining duration by 1 round, or end it entirely on a critical success.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> You can target up to 10 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "yMUkNWJpprHdUOC2"
+        },
+        {
+          "name": "Slow",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "fortitude",
+          "description": "<p>You dilate the flow of time around the target, slowing its actions.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Slowed 1 for 1 round.</p>\n<p><strong>Failure</strong> The target is Slowed 1 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Slowed 2 for 1 minute.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "16AEMDgALxCUzPaU"
+        }
+      ],
+      "lv4spells": [
+        {
+          "name": "Confusion",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "emotion",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You befuddle your target with strange impulses, causing it to act randomly. The effects are determined by the target's Will save. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target babbles incoherently and is Stunned 1.</p>\n<p><strong>Failure</strong> The target is Confused for 1 minute. It can attempt a new save at the end of each of its turns to end the confusion.</p>\n<p><strong>Critical Failure</strong> The target is Confused for 1 minute, with no save to end early.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "kSMDy8bLpMPFJYIW"
+        },
+        {
+          "name": "Flicker",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You flicker quickly between your current plane and another. You gain resistance 5 to all damage, except force. At the end of each of your turns, you automatically teleport 10 feet in a random direction, as determined by the GM. You can Sustain the spell to teleport in this way.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+2)</strong> The resistance increases by 3.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "QpBFmT8fnD0I9ncG"
+        },
+        {
+          "name": "Phantom Pain",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "illusion",
+            "manipulate",
+            "mental",
+            "nonlethal"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and (@item.level)d4 Persistent,mental Damage damage. The target must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is Sickened 1. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is Sickened 2.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "x15m4P3bETaObrSH"
+        }
+      ],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv2slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv3slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv4slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    },
+    {
+      "name": "Witch Hex Spells",
+      "type": "focus",
+      "bonus": 17,
+      "dc": 25,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 4,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [
+        {
+          "name": "Needle of Vengeance",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "focus",
+            "hex",
+            "manipulate",
+            "mental",
+            "witch"
+          ],
+          "castingTime": "1",
+          "duration": "Sustained up to 1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 enemy",
+          "save": "Basic will",
+          "description": "<p>A long, jagged needle jabs into the target foe's psyche whenever it tries to attack a creature your patron holds in special regard. Name yourself or one of your allies. The target takes 2 mental damage any time it uses a hostile action against the named creature, with a basic Will save.</p><hr /><p><strong>Heightened (+1)</strong> Increase the damage by 2.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "hobyJXvkxektZT6A"
+        }
+      ],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Society, DC 23"
+}

@@ -1,0 +1,461 @@
+{
+  "initiative": 0,
+  "initiativebonus": 25,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Divine Living Rune",
+  "type": "Creature",
+  "level": 13,
+  "traits": [
+    "Rare",
+    "Small",
+    "Construct"
+  ],
+  "source": "Pathfinder Adventure: Prey for Death",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 25,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "truescript"
+  ],
+  "skills": [
+    {
+      "name": "deception",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 25,
+      "note": [
+        "to Hide or Sneak among inscriptions 31"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 8
+  },
+  "wisdom": {
+    "value": 8
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Truescript",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A living rune can't speak, but it can sculpt its form into complicated scripts and pictographs that can be understood by any creature with the ability to read written language. A living rune can also understand any written or spoken language.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 34,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 245,
+    "max": 245,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Backdrop",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When a creature attempts to Strike a living rune and critically misses, the attacker hits the surface (a canvas, wall, or so on) behind the living rune. This might damage the surface or the attacker's weapon, at the GM's discretion.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Surface-Bound",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A living rune can move only along flat surfaces. If the surface it's on is destroyed (such as a portrait hit by a Fireball spell or a wall being smashed), the rune takes 7d6 damage and is shunted to the nearest flat surface. If there is no flat surface within 5 feet, the rune is destroyed.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Electrical Blast",
+      "bonus": 25,
+      "traits": [
+        "electricity",
+        "range-increment-60"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d12",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d12)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [],
+  "spellcastingEntries": [
+    {
+      "name": "Divine Innate Spells",
+      "type": "innate",
+      "bonus": 27,
+      "dc": 35,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 7,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [
+        {
+          "name": "Blood Vendetta",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "curse"
+          ],
+          "castingTime": "reaction",
+          "duration": "varies",
+          "range": "30 feet",
+          "area": "",
+          "targets": "The triggering creature",
+          "save": "will",
+          "description": "<p><strong>Requirements</strong> You can bleed.</p>\n<p><strong>Trigger</strong> A creature deals piercing, slashing, or persistent bleed damage to you.</p>\n<hr />\n<p>You curse the target, punishing it for having the audacity to spill your blood. The target takes 2d6 persistent bleed damage and must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half the persistent bleed damage.</p>\n<p><strong>Failure</strong> The target takes the full persistent bleed damage. Until the bleeding stops, the target has weakness 1 to piercing and slashing damage. </p>\n<p><strong>Critical Failure</strong> As failure, but the target takes double the persistent bleed damage.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The persistent bleed damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "M1Dlh11ucJvYuTzX"
+        },
+        {
+          "name": "Divine Wrath",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 5,
+          "timesPrepared": 2,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "sanctified",
+            "spirit"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>You channel the fury of divinity against your foes. You deal 4d10 spirit damage to enemies in the area, depending on their Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Sickened 1.</p>\n<p><strong>Critical Failure</strong> The creature takes full damage and is Sickened 2; while it's sickened, it's also Slowed 1.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "4Hpdy52KTSrYMB4I"
+        },
+        {
+          "name": "Divine Wrath",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 5,
+          "timesPrepared": 2,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "sanctified",
+            "spirit"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>You channel the fury of divinity against your foes. You deal 4d10 spirit damage to enemies in the area, depending on their Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Sickened 1.</p>\n<p><strong>Critical Failure</strong> The creature takes full damage and is Sickened 2; while it's sickened, it's also Slowed 1.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "4Hpdy52KTSrYMB4I"
+        }
+      ],
+      "lv6spells": [
+        {
+          "name": "Harm",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 living creature or 1 willing undead creature",
+          "save": "Basic fortitude",
+          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "cXmLRQAgpMsdfeXy"
+        },
+        {
+          "name": "Divine Immolation",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 6,
+          "timesPrepared": 2,
+          "traits": [
+            "concentrate",
+            "fire",
+            "manipulate",
+            "sanctified",
+            "spirit"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>Divine flames scour creatures within the area. Creatures take 6d6 fire damage and (@item.level -3)d6 Persistent,fire Damage damage. The divine power within the flames scorches the spirit as well; a creature takes spirit damage instead of fire damage from divine immolation if that would be more detrimental to the creature (as determined by the GM).</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and no persistent damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and persistent damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and double persistent damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6 and persistent damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "3dhE5q4zPoSpyGEv"
+        },
+        {
+          "name": "Divine Immolation",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 6,
+          "timesPrepared": 2,
+          "traits": [
+            "concentrate",
+            "fire",
+            "manipulate",
+            "sanctified",
+            "spirit"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>Divine flames scour creatures within the area. Creatures take 6d6 fire damage and (@item.level -3)d6 Persistent,fire Damage damage. The divine power within the flames scorches the spirit as well; a creature takes spirit damage instead of fire damage from divine immolation if that would be more detrimental to the creature (as determined by the GM).</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and no persistent damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and persistent damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and double persistent damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6 and persistent damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "3dhE5q4zPoSpyGEv"
+        },
+        {
+          "name": "Sawtooth Terrain",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "earth",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "reflex",
+          "description": "<p>You cause long, serrated mantis limbs to appear, swiping at and obstructing creatures in the area. The area is difficult terrain. Each creature in the area when the spell is cast and who end their turn within the area take 3d6 slashing damage and (floor((@item.level -1)/2)d6) Bleed Damage damage, as determined by its Reflex save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and no persistent damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and a –10-foot circumstance penalty to their Speed until they receive magical healing or benefit from a successful Medicine check against your spell DC to Administer First Aid.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and a –15-foot circumstance penalty to their Speed until they receive magical healing or benefit from a successful Medicine check against your spell DC to administer First Aid.</p><hr /><p><strong>Heightened (+2)</strong> The damage increases by 3d6, and the persistent bleed damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "TGZhhrCS4C8MjkgF"
+        }
+      ],
+      "lv7spells": [
+        {
+          "name": "Mantis's Grasp",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "force",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "reflex",
+          "description": "<p>You cause red, ghostly mantis arms to sprout from a nearby surface and crush a creature, dealing 8d6 force damage and attempting to pin the target in place. The effects are determined by the creature's Reflex save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage and is Immobilized for 1 round.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is immobilized for 1 minute. At the end of each of its turns, the target can attempt to Escape. The Escape DC is equal to your spell DC.</p><hr /><p><strong>Heightened (7th)</strong> You can target up to 5 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "hyFVvwo0res5kz0S"
+        },
+        {
+          "name": "Execute",
+          "type": "spell",
+          "level": 7,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "death",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "Basic fortitude",
+          "description": "<p>You point at a creature and invoke the demise of all things. The target takes 70 void damage with a basic Fortitude save. If the target is undead or otherwise has void healing, the spell loses the death and void traits and gains the vitality trait, and the target takes 70 vitality damage with a basic Fortitude save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 10.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "PzKC0pIXopCu1ctq"
+        }
+      ],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Arcana or Crafting, DC 31"
+}

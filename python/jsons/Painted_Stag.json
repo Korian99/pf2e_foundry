@@ -1,0 +1,209 @@
+{
+  "initiative": 0,
+  "initiativebonus": 21,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Painted Stag",
+  "type": "Creature",
+  "level": 9,
+  "traits": [
+    "Common",
+    "huge",
+    "Elemental",
+    "Plant",
+    "Wood"
+  ],
+  "source": "Pathfinder Rage of Elements",
+  "senses": [],
+  "perception": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 175,
+    "max": 175,
+    "note": "regeneration 10 (deactivated by fire)",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "axe-vulnerability",
+      "value": 10
+    },
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Regeneration 10 (Deactivated by Fire)",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster regains the listed number of Hit Points each round at the beginning of its turn. Its Dying condition never increases beyond Dying 3 as long as its regeneration is active. However, if it takes damage of a type listed in the regeneration entry, its regeneration deactivates until the end of its next turn. Deactivate the regeneration before applying any damage of a listed type, since that damage might kill the monster by bringing it to Dying 4.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "45 ft, climb 60ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Antler",
+      "bonus": 20,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d12+7",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+7)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Hooves",
+      "bonus": 20,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d10+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+7)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Mauler",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A painted stag gains a +5 circumstance bonus to damage rolls against creatures it has grabbed.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Painted Dance",
+      "actions": 2,
+      "traits": [
+        "auditory",
+        "mental",
+        "plant",
+        "primal",
+        "visual"
+      ],
+      "description": "<p>The stag shakes the wooden plating along its body in a cacophonous clatter that sets its painted patterns dancing. All creatures within 60 feet of the painted stag who can see or hear it must attempt a DC 28 Will Saving Throw save; a creature Grabbed by the stag takes a –4 circumstance penalty to its save. Regardless of the result of its save, each creature is temporarily immune for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Fascinated by the painted stag for 1 round.</p>\n<p><strong>Failure</strong> The creature is Stunned 2 and fascinated by the painted stag for as long as it's stunned.</p>\n<p><strong>Critical Failure</strong> As failure, except Stunned 4.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature or Nature, DC 26"
+}

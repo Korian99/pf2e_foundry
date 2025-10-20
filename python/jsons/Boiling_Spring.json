@@ -1,0 +1,217 @@
+{
+  "initiative": 0,
+  "initiativebonus": 23,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Boiling Spring",
+  "type": "Creature",
+  "level": 13,
+  "traits": [
+    "Common",
+    "Large",
+    "Aquatic",
+    "Elemental",
+    "Fire",
+    "Water"
+  ],
+  "source": "Pathfinder Rage of Elements",
+  "senses": [
+    "Darkvision",
+    "steam vision"
+  ],
+  "perception": {
+    "value": 23,
+    "note": "Darkvision, steam vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Thalassic"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 26,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 26,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 7
+  },
+  "constitution": {
+    "value": 7
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Steam Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The boiling spring ignores the Concealed condition from mist and steam.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 34,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 255,
+    "max": 255,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "fire",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "cold",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Evaporate",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> An effect would deal fire damage to the boiling spring, even if they would ignore the damage</p>\n<hr />\n<p><strong>Effect</strong> The boiling spring evaporates into the air. Until the beginning of the boiling spring's next turn, they can't be attacked or targeted. They still occupy their space, and their auras still function as normal.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sweltering Heat",
+      "actions": null,
+      "traits": [
+        "aura",
+        "fire"
+      ],
+      "description": "<p>25 feet. The boiling spring radiates heat, raising the air temperature around them. A creature that starts its turn in the emanation must succeed at a DC 33 Fortitude Saving Throw save or become Fatigued while it remains in the area; creatures immune to environmental heat effects or with any fire resistance are immune.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft, fly 30ft, swim 80ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Blistering Fist",
+      "bonus": 27,
+      "traits": [
+        "fire"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+13",
+          "type": "fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+13)*2",
+          "type": "fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Heat Wave",
+      "bonus": 27,
+      "traits": [
+        "fire",
+        "range-increment-50"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d12",
+          "type": "fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12)*2",
+          "type": "fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Freeze and Shatter",
+      "actions": null,
+      "traits": [],
+      "description": "<p>If the boiling spring is destroyed with cold damage, their body freezes over and explodes, sending out a wave of frigid air and ice shards that deal 4d6 Piercing Damage|options:area-damage]{4d6 piercing damage plus 4d6 cold damage} to creatures in a 20ft Emanation (Basic DC 36 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Scalding Breath",
+      "actions": 2,
+      "traits": [
+        "fire",
+        "primal"
+      ],
+      "description": "<p>The boiling spring breathes out a cloud of steam in a 30ft Cone that deals 14d6 Fire Damage damage to each creature in the area (Basic DC 33 Reflex Saving Throw save). The boiling spring can't use Scalding Breath again for 1d4 rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 31"
+}

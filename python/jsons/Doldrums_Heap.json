@@ -1,0 +1,191 @@
+{
+  "initiative": 0,
+  "initiativebonus": 15,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Doldrums Heap",
+  "type": "Creature",
+  "level": 9,
+  "traits": [
+    "Common",
+    "huge",
+    "Amphibious",
+    "Plant"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Wavesense 120ft precise"
+  ],
+  "perception": {
+    "value": 15,
+    "note": "Wavesense 120ft precise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Wavesense (Precise) 120 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This sense allows a monster to feel vibrations caused by movement through a liquid. It's an imprecise sense with a limited range (listed in the ability). Wavesense functions only if monster and the subject are in the same body of liquid, and only if the subject is moving through the liquid.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 300,
+    "max": 300,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "critical-hits",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "cold",
+      "value": 10
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "slashing",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Mirage Spores",
+      "actions": null,
+      "traits": [
+        "aura",
+        "incapacitation",
+        "mental"
+      ],
+      "description": "<p>300 feet.</p>\n<p>The sargassum heap constantly produces a field of hallucinogenic spores that causes those affected to see the monster as whatever they desire most. Each creature within the emanation must succeed a DC 27 Will Saving Throw save or become Fascinated with the sargassum heap and compelled to move toward it on the creature's turn. Creatures fascinated this way are also Off-Guard. If the sargassum heap attacks, the fascinated condition ends only for the creature that is attacked. On a successful save, a creature is temporarily immune to mirage spores for 24 hours.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, climb 20ft, swim 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Tendrils",
+      "bonus": 21,
+      "traits": [
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+10)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Constrict",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>(1d12+10) Bludgeoning Damage, Basic DC 28 Fortitude Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Draw In",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The doldrums heap attempts to Reposition up to three creatures it has Grabbed or Restrained. These attempts neither apply nor count toward the heap's multiple attack penalty.</p>\n<p>It can move them into its own space, dealing (1d12+10) Bludgeoning Damage damage.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 26"
+}

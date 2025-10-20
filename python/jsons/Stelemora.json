@@ -1,0 +1,231 @@
+{
+  "initiative": 0,
+  "initiativebonus": 17,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Stelemora",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Fey",
+    "Plant"
+  ],
+  "source": "Pathfinder Claws of the Tyrant",
+  "senses": [
+    "Low light vision"
+  ],
+  "perception": {
+    "value": 17,
+    "note": "Low light vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Fey"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 15,
+      "note": [
+        "in forests 18"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 6
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 188,
+    "max": 188,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "cold-iron",
+      "value": 10
+    },
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Regeneration 20 (Deactivated by Fire)",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster regains the listed number of Hit Points each round at the beginning of its turn. Its Dying condition never increases beyond Dying 3 as long as its regeneration is active. However, if it takes damage of a type listed in the regeneration entry, its regeneration deactivates until the end of its next turn. Deactivate the regeneration before applying any damage of a listed type, since that damage might kill the monster by bringing it to Dying 4.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Vine",
+      "bonus": 17,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+8)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Seed Pod",
+      "bonus": 17,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d10+8",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+8)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Constrict",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>(1d8+8) Bludgeoning Damage, Basic DC 25 Fortitude Saving Throw</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Flurry of Vines",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The stelemora makes two vine Strikes at a –2 penalty, each against a different target. These attacks count toward the stelemora's multiple attack penalty, but the multiple attack penalty doesn't increase until after they make all their attacks.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Slithering Vine",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The stelemora increases the reach of their vine Strike by 10 feet until the end of their turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sow and Sprout",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The stelemora implants a seed inside a creature they're grappling. The target must attempt a DC 25 Fortitude Saving Throw save.</p>\n<p><strong>Success</strong> The stelemora fails to implant a seed, and the target is unaffected.</p>\n<p><strong>Failure</strong> The target is Sickened 1. While sickened, the target also takes 4d6 Persistent,piercing Damage damage as flowering vines sprout through its flesh. The target can't end the persistent damage until it recovers from the sickened condition.</p>\n<p><strong>Critical Failure</strong> As failure, except the target is Sickened 2.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Tangle of Vines",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p>Until the next time they act, the stelemora appears to be a normal tangle of flowering vines. They have an automatic result of 35 (38 in forests) on Deception checks and DCs to pass as a non-creature plant.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature or Nature, DC 23"
+}

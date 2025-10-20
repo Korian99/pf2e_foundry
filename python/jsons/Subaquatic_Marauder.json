@@ -1,0 +1,229 @@
+{
+  "initiative": 0,
+  "initiativebonus": 12,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Subaquatic Marauder",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "Ocean Lore",
+      "modifier": 12,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Gauntlet",
+      "quantity": 1,
+      "description": "<p>A pair of these metal gloves comes with full plate, half plate, and splint armor; they can also be purchased separately and worn with other types of armor. They not only protect your hands but also transform your hands into lethal weapons.</p>",
+      "level": 0,
+      "price": "2 sp",
+      "traits": [
+        "agile",
+        "free-hand"
+      ]
+    },
+    {
+      "name": "Javelin",
+      "quantity": 1,
+      "description": "<p>This thin spear is well balanced for throwing but is not designed for melee use.</p>",
+      "level": 0,
+      "price": "1 sp",
+      "traits": [
+        "thrown"
+      ]
+    },
+    {
+      "name": "Diving Suit (Functions as Half Plate)",
+      "quantity": 1,
+      "description": "<p>Half plate consists of most of the upper body plates used in full plate, with lighter or sparser steel plate protection for the arms and legs. This provides some of the protection of full plate with greater flexibility and speed. A suit of this armor comes with an undercoat of @UUID[Compendium.pf2e.equipment-srd.Item.Padded Armor] and a pair of @UUID[Compendium.pf2e.equipment-srd.Item.Gauntlet]{gauntlets}.</p>",
+      "level": 1,
+      "price": "18 gp",
+      "traits": []
+    },
+    {
+      "name": "Chain (30 feet)",
+      "quantity": 1,
+      "description": "<p>30 feet of chain.</p>",
+      "level": 0,
+      "price": "12 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Sealed Diving Suit",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The marauder's diving suit is a technological marvel. When sealed, it provides 1 hour of fresh air and protects the wearer from exposure to inhaled threats. Personalized modifications and a need for constant tinkering mean that other creatures are unable to take advantage of the special abilities of the diving suit and treat it as an ordinary suit of half plate.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 60,
+    "max": 60,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "20 ft, swim 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Gauntlet",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "free-hand"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+8)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Javelin",
+      "bonus": 15,
+      "traits": [
+        "tethered",
+        "thrown-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+8",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+8)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Depth Charge",
+      "actions": 2,
+      "traits": [
+        "air",
+        "manipulate",
+        "sonic"
+      ],
+      "description": "<p>The marauder pulls a release valve on their suit, expelling a pressure wave that deals 3d6 Sonic Damage|options:area-damage] damage (Basic DC 22 Fortitude Saving Throw save) to all creatures in a 10ft Type:emanation. Creatures that fail the save take a –2 circumstance penalty to Acrobatics checks to Balance and Athletics checks to Swim for 1 minute as their inner ear is impaired. Creatures that critically fail the save are also Deafened for 1 minute. The marauder can't use Depth Charge again for 1d4 rounds.</p>\n<p>Effect: Depth Charge</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Retract",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The marauder's last action was a successful javelin strike</p><hr /><p><strong>Effect</strong> The marauder reels in a chain connected to the javelin, pulling the target up to 10 feet closer. They then Interact to return the javelin to their hand.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 20"
+}

@@ -1,0 +1,566 @@
+{
+  "initiative": 0,
+  "initiativebonus": 19,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Rekhep",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Common",
+    "Large",
+    "Archon",
+    "Celestial",
+    "Holy"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 19,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Diabolic",
+    "Draconic",
+    "Empyrean",
+    "Utopian",
+    "Truespeech"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 1
+  },
+  "constitution": {
+    "value": 7
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [
+    {
+      "name": "Lance",
+      "quantity": 1,
+      "description": "<p>This spear-like weapon is used by a mounted creature to deal a great deal of damage.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": [
+        "deadly-d8",
+        "jousting-d6",
+        "reach"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 31,
+    "note": "all-around vision",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+1 status to all saves vs. magic",
+  "hp": {
+    "value": 150,
+    "max": 150,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "fear-effects"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "unholy",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "All-Around Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster can see in all directions simultaneously and therefore can't be flanked.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Archon's Protection",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> An enemy damages the archon's ally and both are within 15 feet of the archon</p>\n<hr />\n<p><strong>Effect</strong> The ally gains resistance 15 to all damage against the triggering damage and the archon can make a Strike against the enemy.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, fly 60ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Holy Lance",
+      "bonus": 22,
+      "traits": [
+        "deadly-d8",
+        "divine",
+        "holy",
+        "jousting-d6",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+11",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d4",
+          "type": "spirit"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+11)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d4)*2",
+          "type": "spirit"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Archon's Pursuit",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> The rekhep saw another creature teleport within the last round and has at least one Translocate spell remaining</p>\n<hr />\n<p><strong>Effect</strong> The rekhep casts one of their <em>translocate</em> spells, which is heightened to 5th rank and causes the qarna to arrive in an unoccupied space it chooses within 30 feet of the creature it's pursuing. If the creature is too far away, the rekhep arrives as close as possible.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Courageous Switch",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When a rekhep uses their Translocate innate spell, they can choose to move into the space of a willing ally they can see within range. If they do, the ally switches places with the archon, appearing in the space the archon just vacated, as if it too had cast <em>translocate</em>.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Holy Armament",
+      "actions": null,
+      "traits": [
+        "divine",
+        "holy"
+      ],
+      "description": "<p>Any weapon gains the <em>Holy</em> rune while the rekhep wields it.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Living Shield",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The rekhep grants an adjacent ally a +2 circumstance bonus to AC until they're no longer adjacent or until the start of the archon's next turn, whichever comes first. When the rekhep uses Archon's Protection against an attack against the shielded ally, the rekhep gains the resistance and takes the damage rather than the ally.</p>\n<hr />\n<p>Effect: Living Shield</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Terrifying Smite",
+      "actions": 2,
+      "traits": [
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>The rekhep makes a Strike against an enemy that has one of the rekhep's allies within its reach. On a hit, the target takes an additional 2d8 mental damage and is Frightened 2. The extra damage and frightened value are doubled on a critical hit.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Divine Innate Spells",
+      "type": "innate",
+      "bonus": 19,
+      "dc": 27,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 5,
+      "cantrips": [
+        {
+          "name": "Divine Lance",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate",
+            "sanctified",
+            "spirit"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You unleash a beam of divine energy. Make a ranged spell attack against the target's AC. On a hit, the target takes 2d4 spirit damage (double damage on a critical hit).</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "D65PPPbYeD22bkC2"
+        },
+        {
+          "name": "Message",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "auditory",
+            "concentrate",
+            "illusion",
+            "linguistic",
+            "mental",
+            "subtle"
+          ],
+          "castingTime": "1",
+          "duration": "see below",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You mouth words quietly, but instead of coming out of your mouth, they're transferred directly to the ears of the target. While others can't hear your words any better than if you normally mouthed them, the target can hear your words as if they were standing next to you. The target can give a brief response as a reaction, or as a free action on their next turn if they wish, but they must be able to see you and be within range to do so. If they respond, their response is delivered directly to your ear, just like the original message.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The spell's range increases to 500 feet.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "3FS3RjwSiWItEj8z"
+        }
+      ],
+      "lv1spells": [
+        {
+          "name": "Sure Strike",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "fortune"
+          ],
+          "castingTime": "1",
+          "duration": "until the end of your turn",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>A glimpse into the future ensures your next blow strikes true. The next time you make an attack roll before the end of your turn, roll the attack twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "j7GcVZryM57Th8wV"
+        },
+        {
+          "name": "Sure Strike",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "fortune"
+          ],
+          "castingTime": "1",
+          "duration": "until the end of your turn",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>A glimpse into the future ensures your next blow strikes true. The next time you make an attack roll before the end of your turn, roll the attack twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "j7GcVZryM57Th8wV"
+        },
+        {
+          "name": "Sure Strike",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "fortune"
+          ],
+          "castingTime": "1",
+          "duration": "until the end of your turn",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>A glimpse into the future ensures your next blow strikes true. The next time you make an attack roll before the end of your turn, roll the attack twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "j7GcVZryM57Th8wV"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Share Life",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You forge a temporary link between the target's life essence and your own. The target takes half damage from all effects that deal Hit Point damage, and you take the remainder of the damage. When you take damage through this link, you don't apply any resistances, weaknesses, or other abilities you have to that damage; you simply take that amount of damage. The spell ends if the target is ever more than 30 feet away from you. If either you or the target is reduced to 0 Hit Points, any damage from this spell is resolved and then the spell ends.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "dLbVJljTXLDPYcUo"
+        },
+        {
+          "name": "Share Life",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You forge a temporary link between the target's life essence and your own. The target takes half damage from all effects that deal Hit Point damage, and you take the remainder of the damage. When you take damage through this link, you don't apply any resistances, weaknesses, or other abilities you have to that damage; you simply take that amount of damage. The spell ends if the target is ever more than 30 feet away from you. If either you or the target is reduced to 0 Hit Points, any damage from this spell is resolved and then the spell ends.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "dLbVJljTXLDPYcUo"
+        },
+        {
+          "name": "Share Life",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You forge a temporary link between the target's life essence and your own. The target takes half damage from all effects that deal Hit Point damage, and you take the remainder of the damage. When you take damage through this link, you don't apply any resistances, weaknesses, or other abilities you have to that damage; you simply take that amount of damage. The spell ends if the target is ever more than 30 feet away from you. If either you or the target is reduced to 0 Hit Points, any damage from this spell is resolved and then the spell ends.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "dLbVJljTXLDPYcUo"
+        }
+      ],
+      "lv3spells": [],
+      "lv4spells": [
+        {
+          "name": "Translocate (At Will)",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "b8cCd84ht1aq1oSc"
+        }
+      ],
+      "lv5spells": [
+        {
+          "name": "Truespeech (Constant)",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "mOJoO2hzQPXZRysf"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Religion, DC 27"
+}

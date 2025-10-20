@@ -1,0 +1,253 @@
+{
+  "initiative": 0,
+  "initiativebonus": 7,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Combat Engineer",
+  "type": "Creature",
+  "level": 1,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "Engineering Lore",
+      "modifier": 15,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "Warfare Lore",
+      "modifier": 13,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 4
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [
+    {
+      "name": "Entrenching Tool (Functions as a Pick)",
+      "quantity": 1,
+      "description": "<p>A pick designed solely for combat has a sturdy wooden shaft and a heavy, pointed head to deliver devastating blows.</p>",
+      "level": 0,
+      "price": "7 sp",
+      "traits": [
+        "fatal-d10"
+      ]
+    },
+    {
+      "name": "Heavy Crossbow",
+      "quantity": 1,
+      "description": "<p>This large crossbow is harder to load and more substantial than a regular crossbow, but it packs a greater punch.</p>",
+      "level": 0,
+      "price": "4 gp",
+      "traits": []
+    },
+    {
+      "name": "Studded Leather Armor",
+      "quantity": 1,
+      "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>",
+      "level": 0,
+      "price": "3 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Logistics Specialist",
+      "actions": null,
+      "traits": [],
+      "description": "<p>In situations involving battlefield engineering or logistics, the combat engineer is a 5th-level challenge.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 5,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 20,
+    "max": 20,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Entrenching Tool",
+      "bonus": 8,
+      "traits": [
+        "fatal-d10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+3)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+3)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Heavy Crossbow",
+      "bonus": 7,
+      "traits": [
+        "range-increment-120",
+        "reload-2"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d10",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d10)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Fortify",
+      "actions": null,
+      "traits": [
+        "concentrate",
+        "exploration",
+        "manipulate"
+      ],
+      "description": "<p>The combat engineer digs trenches and constructs earthen barricades at a rate of one 5-foot cube per hour. A combat engineer can instead direct the work of four allied Small or larger creatures to quadruple this rate.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Improvised Barricade",
+      "actions": 2,
+      "traits": [
+        "manipulate"
+      ],
+      "description": "<p><strong>Requirements</strong> The combat engineer has at least 5 Bulk of loose items or material within reach</p><hr /><p><strong>Effect</strong> The combat engineer slaps together a 5-foot high barrier in an adjacent square. The barrier is an object with 10 Hit Points, 5 Hardness, AC 10, and it provides standard cover. After 1 minute, the barrier collapses under its own weight.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 15"
+}

@@ -1,0 +1,289 @@
+{
+  "initiative": 0,
+  "initiativebonus": 20,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Pitborn Fire Giant Cavalry",
+  "type": "Creature",
+  "level": 11,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Fiend",
+    "Fire",
+    "Giant",
+    "Humanoid"
+  ],
+  "source": "Pathfinder Society Scenario #6-19: What Walks Again",
+  "senses": [
+    "Low light vision"
+  ],
+  "perception": {
+    "value": 20,
+    "note": "Low light vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Chthonian",
+    "Jotun",
+    "Pyric"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 26,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 0
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [
+    {
+      "name": "Greataxe",
+      "quantity": 1,
+      "description": "<p>This large battle axe is too heavy to wield with only one hand. Many greataxes incorporate two blades, and they are often \"bearded,\" having a hook at the bottom to increase the strength of their chopping power.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": [
+        "sweep"
+      ]
+    },
+    {
+      "name": "Half Plate",
+      "quantity": 1,
+      "description": "<p>Half plate consists of most of the upper body plates used in full plate, with lighter or sparser steel plate protection for the arms and legs. This provides some of the protection of full plate with greater flexibility and speed. A suit of this armor comes with an undercoat of @UUID[Compendium.pf2e.equipment-srd.Item.Padded Armor] and a pair of @UUID[Compendium.pf2e.equipment-srd.Item.Gauntlet]{gauntlets}.</p>",
+      "level": 1,
+      "price": "18 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 32,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 200,
+    "max": 200,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "fire"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "cold",
+      "value": 10
+    },
+    {
+      "exceptions": [],
+      "type": "cold-iron",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 24,
+      "traits": [
+        "agile",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "fire"
+        },
+        {
+          "roll": "2d8+15",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(2d8+15)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Greataxe",
+      "bonus": 25,
+      "traits": [
+        "magical",
+        "reach-10",
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "fire"
+        },
+        {
+          "roll": "2d12+15",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(2d12+15)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Flame",
+      "bonus": 22,
+      "traits": [
+        "fire",
+        "primal",
+        "range-120"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d6",
+          "type": "fire"
+        },
+        {
+          "roll": "2d4",
+          "type": "persistent fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d6)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(2d4)*2",
+          "type": "persistent fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Intimidating Charge",
+      "actions": 2,
+      "traits": [
+        "emotion",
+        "fear"
+      ],
+      "description": "<p>The pitborn cavalry commands his mount to Stride twice directly toward a creature. The creature must attempt a DC 27 Will Saving Throw save. Regardless of the results of the save, the pitborn cavalry makes an axe Strike at the creature.</p><hr /><p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is Frightened 1 and Off-Guard to the giant until the start of the giant's next turn.</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 2 for 1 minute and off-guard to the giant until the start of the giant's next turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Mounted Combat",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A pitborn fire giant cavalry automatically succeeds at attempts to Command their mounts. They can wield their greataxes one-handed while mounted. While doing so they cannot use their fist or flame Strikes.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion or Society, DC 28"
+}

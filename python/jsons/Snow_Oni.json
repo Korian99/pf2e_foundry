@@ -1,0 +1,381 @@
+{
+  "initiative": 0,
+  "initiativebonus": 26,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Snow Oni",
+  "type": "Creature",
+  "level": 13,
+  "traits": [
+    "Common",
+    "Large",
+    "Cold",
+    "Giant",
+    "Humanoid",
+    "Oni"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Greater darkvision",
+    "snow vision"
+  ],
+  "perception": {
+    "value": 26,
+    "note": "Greater darkvision, snow vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 8
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 8
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Snow Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Snow doesn't impair the snow oni's vision; they ignore concealment from snowfall.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 290,
+    "max": 290,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "cold"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "spirit",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Bean Panic",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Oni are curiously afraid of beans, especially as the seasons begin to change. If a creature Interacts to throw a handful of beans at the oni, the oni becomes Frightened 2. While frightened this way, their weakness to spirit damage is increased by 5. The oni then becomes immune to bean panic for 24 hours.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Icy Deflection",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The snow oni is targeted by a ranged Strike or spell attack roll that doesn't have the fire trait</p>\n<hr />\n<p><strong>Effect</strong> The snow oni creates a reflective blockade of ice, gaining a +4 circumstance bonus to AC against the triggering attack roll. If the attack misses, the snow oni redirects the attack to another creature within 20 feet of the snow oni. The attacker rerolls the attack roll against the new target.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "40 ft, fly 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 27,
+      "traits": [
+        "agile",
+        "magical",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+16",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "2d6",
+          "type": "cold"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+16)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "cold"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 27,
+      "traits": [
+        "magical",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+16",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d6",
+          "type": "persistent bleed"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+16)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "persistent bleed"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Ice Dart",
+      "bonus": 25,
+      "traits": [
+        "cold",
+        "magical",
+        "range-increment-60"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+4",
+          "type": "cold"
+        },
+        {
+          "roll": "1d6",
+          "type": "spirit"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+4)*2",
+          "type": "cold"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "spirit"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Change Shape",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "polymorph"
+      ],
+      "description": "<p>The snow oni can take on the appearance of any Medium or Large humanoid creature. This doesn't change their Speed or their attack and damage bonuses with their Strikes but might change the damage type their Strikes deal (typically to bludgeoning).</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster changes its shape indefinitely. It can use this action again to return to its natural shape or adopt a new shape. Unless otherwise noted, a monster cannot use Change Shape to appear as a specific individual. Using Change Shape counts as creating a disguise for the Impersonate use of Deception. The monster's transformation automatically defeats Perception DCs to determine whether the creature is a member of the ancestry or creature type into which it transformed, and it gains a +4 status bonus to its Deception DC to prevent others from seeing through its disguise. Change Shape abilities specify what shapes the monster can adopt. The monster doesn't gain any special abilities of the new shape, only its physical form. For example, in each shape, it replaces its normal Speeds and Strikes, and might potentially change its senses or size. Any changes are listed in its stat block.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Chilling Combo",
+      "actions": 1,
+      "traits": [
+        "cold"
+      ],
+      "description": "<p>The snow oni makes two fist Strikes targeting the same creature. If they both hit, the target becomes Slowed 1 for 1 round.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Falling Frozen Lightning",
+      "actions": 2,
+      "traits": [
+        "cold",
+        "primal"
+      ],
+      "description": "<p>The snow oni calls down a bolt of icy lightning, white as fallen snow. The bolt strikes a location within 60 feet, freezing the air into a cloud of snow that fills a 20ft Burst and lasts for 1 minute.</p>\n<p>All creatures within the snow become Concealed, and all creatures outside the snow become concealed to creatures within it. A creature that enters the snow or begins its turn there takes 15 Cold Damage damage, with a Basic DC 33 Fortitude Saving Throw save.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Primal Innate Spells",
+      "type": "innate",
+      "bonus": 23,
+      "dc": 31,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 2,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [
+        {
+          "name": "Invisibility (At Will, Self Only)",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "illusion",
+            "manipulate",
+            "subtle"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>Illusions bend light around the target, rendering it Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "rOlKikTNaS1f14fd"
+        }
+      ],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Society, DC 31"
+}

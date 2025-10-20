@@ -1,11 +1,15 @@
 import re
 from file_jsons import get_compendium, get_lang_json
-from dicts import saving_throws
+from dicts import saving_throws, actions
 
 compendium = get_compendium()
 lang_json = get_lang_json()
 
 
+action_span_pattern = re.compile(
+    r'<span\s+class="action-glyph">(?P<val>\d+)<\/span>'
+)
+clean_pattern_end = re.compile(r"\[\[\/\S+\s+(?P<val>[^\]]+)\]\]")
 macro_pattern = re.compile(r"\[\[\/[^\]]+\]\]\{(?P<val>[^\}]+)\}")
 clean_pattern = re.compile(r"@\w+\[[^\]]+\]\{(?P<val>[^\}]+)\}")
 uuid_pattern = re.compile(r"@UUID\[(?P<key>[^\]]+)\]")
@@ -78,8 +82,10 @@ def simplify_uuid(text: str) -> str:
     if text:
         text = clean_pattern.sub(lambda m: m.group("val"), text)
         text = macro_pattern.sub(lambda m: m.group("val"), text)
-        return re.sub(r"@\w+\[([^\]]+)\]", repl, localize(text))
-    return text
+        text = re.sub(r"@\w+\[([^\]]+)\]", repl, localize(text))
+        text = clean_pattern_end.sub(lambda m: m.group("val").replace("-"," ").capitalize(), text)
+        text = action_span_pattern.sub(lambda m: actions.get(m.group("val"), m.group("val")), text)
+    return text 
 
 
 def clean_uuid(text: str) -> str:

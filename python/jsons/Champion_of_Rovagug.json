@@ -1,0 +1,359 @@
+{
+  "initiative": 0,
+  "initiativebonus": 10,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Champion of Rovagug",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid",
+    "Unholy"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 1
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [
+    {
+      "name": "Greataxe",
+      "quantity": 1,
+      "description": "<p>This large battle axe is too heavy to wield with only one hand. Many greataxes incorporate two blades, and they are often \"bearded,\" having a hook at the bottom to increase the strength of their chopping power.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": [
+        "sweep"
+      ]
+    },
+    {
+      "name": "Javelin",
+      "quantity": 3,
+      "description": "<p>This thin spear is well balanced for throwing but is not designed for melee use.</p>",
+      "level": 0,
+      "price": "1 sp",
+      "traits": [
+        "thrown"
+      ]
+    },
+    {
+      "name": "Half Plate",
+      "quantity": 1,
+      "description": "<p>Half plate consists of most of the upper body plates used in full plate, with lighter or sparser steel plate protection for the arms and legs. This provides some of the protection of full plate with greater flexibility and speed. A suit of this armor comes with an undercoat of @UUID[Compendium.pf2e.equipment-srd.Item.Padded Armor] and a pair of @UUID[Compendium.pf2e.equipment-srd.Item.Gauntlet]{gauntlets}.</p>",
+      "level": 1,
+      "price": "18 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 70,
+    "max": 70,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Champion's Aura",
+      "actions": null,
+      "traits": [
+        "aura",
+        "divine"
+      ],
+      "description": "<p>15 feet. Any follower of Rovagug in the aura knows the champion is a champion of Rovagug. Enemies in the aura take a –1 circumstance penalty to saves against fear, and an enemy that ends its turn in the aura can't reduce the value of its Frightened condition below 1. The aura can be suppressed or resumed with a single action, which has the concentrate trait, and ends if the champion falls Unconscious.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Destructive Vengeance",
+      "actions": -1,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p><strong>Trigger</strong> An enemy in the champion's aura damages the champion</p><hr /><p><strong>Effect</strong> The champion increases the amount of damage they take by 2d6] and deals @Damage 2d6[spirit Damage damage to the triggering enemy. In addition, until the end of the champion's next turn, the champion's Strikes against the triggering creature deals 2 extra spirit damage.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fearsome Greataxe",
+      "bonus": 13,
+      "traits": [
+        "magical",
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d12+8",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d12+8)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Javelin",
+      "bonus": 10,
+      "traits": [
+        "thrown-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+8",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+8)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Gauntlet",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "free-hand"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+8)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Axe Swipe",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The champion makes a melee Strike with a +1 circumstance bonus to the attack roll and compares the roll to the AC of up to two foes that are in reach and adjacent to each other. The champion rolls damage only once and applies it to each creature they hit. This counts as two attacks toward their multiple attack penalty.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Fearsome Armament",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The champion grants their greataxe the Fearsome rune while they wield it.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Champion Devotion Spells",
+      "type": "focus",
+      "bonus": 12,
+      "dc": 20,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 1,
+      "cantrips": [],
+      "lv1spells": [
+        {
+          "name": "Touch of the Void",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "champion",
+            "focus",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "1",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing undead creature or 1 living creature",
+          "save": "",
+          "description": "<p>You infuse the target with void energy, healing undead or damaging a living creature.</p><ul><li><strong>Willing Undead Creature</strong> The target regains 6 Hit Points. If the target is yourself, you also gain a +2 status bonus to damage rolls for 1 round.</li><li><p><strong>Living Creature</strong> The target takes 1d6 void damage with a basic Fortitude save; on a failure, the target also takes a –2 status penalty to AC for 1 round.</p></li></ul><p></p><hr /><p><strong>Heightened (+1)</strong> The amount of healing increases by 6, and the damage to a living target increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "4OFNlh90eUu8uq1T"
+        }
+      ],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Society, DC 20"
+}

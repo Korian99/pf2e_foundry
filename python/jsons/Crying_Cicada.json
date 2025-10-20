@@ -1,0 +1,218 @@
+{
+  "initiative": 0,
+  "initiativebonus": 11,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Crying Cicada",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Common",
+    "Small",
+    "Animal"
+  ],
+  "source": "Pathfinder Howl of the Wild",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 11,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "deception",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Steal Voice",
+      "actions": 2,
+      "traits": [
+        "auditory"
+      ],
+      "description": "<p><strong>Requirements</strong> An enemy creature has spoken since the crying cicada's last turn</p>\n<hr />\n<p><strong>Effect</strong> The crying cicada learns and mimics the sound of its opponent's voice. It can't make new sentences, but it can choose to repeat select parts of the phrases it has heard. All non-cicada creatures within 30 feet, other than the owner of the stolen voice, must succeed at a DC 19 Will Saving Throw save to disbelieve the mimicry.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 48,
+    "max": 48,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "poison"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Wings Flat",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When the crying cicada is still and perched on a tree, it blends seamlessly into the environment. It has an automatic result of 30 on Deception checks and DCs to pass as part of the tree.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "15 ft, fly 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Proboscis",
+      "bonus": 9,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d8+5",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d4",
+          "type": "poison"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+5)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d4)*2",
+          "type": "poison"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Slam",
+      "bonus": 9,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+4)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "crying-cicada-poison"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Crying Cicada Poison",
+      "actions": null,
+      "traits": [
+        "inhaled",
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 19 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 1d6 Poison Damage damage plus Slowed 1 (1 round)</p>\n<p><strong>Stage 2</strong> 1d6 poison damage plus Slowed 2 (1 round)</p>\n<p><strong>Stage 3</strong> 2d6 Poison Damage damage plus slowed 2 and Stupefied 1 (1 round).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sob",
+      "actions": 1,
+      "traits": [
+        "auditory",
+        "emotion",
+        "mental"
+      ],
+      "description": "<p>The crying cicada mimics the noise of a wounded animal or crying child. Non-cicada creatures within a 150ft Emanation must attempt a DC 19 Will Saving Throw save or be distressed by the pleas for help. The effect lasts for 1 round, but if the cicada uses this ability again on subsequent rounds, it extends the duration by 1 round for all affected creatures. Once a creature succeeds at any save against Sob, that creature is temporarily immune to Sob for 24 hours.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature believes an animal or child needs help somewhere nearby. The creature is Fascinated, and it must spend each of its actions to Seek or move closer to the cicada as expediently as possible, while avoiding obvious dangers. If the creature is adjacent to the cicada, it stays still and doesn't act.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Wing Flurry",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The crying cicada beats its wings together, exposing all creatures within a 10ft Burst to crying cicada poison.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 18"
+}

@@ -1,0 +1,480 @@
+{
+  "initiative": 0,
+  "initiativebonus": 5,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Goblin War Chanter",
+  "type": "Creature",
+  "level": 1,
+  "traits": [
+    "Common",
+    "Small",
+    "Goblin",
+    "Humanoid"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 5,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Goblin"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "occultism",
+      "modifier": 4,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "performance",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [
+    {
+      "name": "Dogslicer",
+      "quantity": 1,
+      "description": "<p>This short, curved, and crude makeshift blade often has holes drilled into it to reduce its weight. It's a favored weapon of goblins.</p>",
+      "level": 0,
+      "price": "1 sp",
+      "traits": [
+        "agile",
+        "backstabber",
+        "finesse",
+        "goblin"
+      ]
+    },
+    {
+      "name": "Shortbow",
+      "quantity": 1,
+      "description": "<p>This smaller bow is made of a single piece of wood and favored by skirmishers and cavalry.</p>",
+      "level": 0,
+      "price": "3 gp",
+      "traits": [
+        "deadly-d10"
+      ]
+    },
+    {
+      "name": "Leather Armor",
+      "quantity": 1,
+      "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 5,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 16,
+    "max": 16,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Goblin Scuttle",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A goblin ally ends a move action adjacent to the goblin.</p>\n<hr />\n<p><strong>Effect</strong> The goblin war chanter Steps.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Dogslicer",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "backstabber",
+        "finesse"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+2",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+2)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Shortbow",
+      "bonus": 8,
+      "traits": [
+        "deadly-d10",
+        "range-increment-60",
+        "reload-0"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Goblin Song",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The war chanter sings annoying goblin songs, distracting foes with silly and repetitive lyrics. The chanter attempts a performance|traits:auditory,concentrate,linguistic check against the Will DCs of up to two enemies within 30 feet. This has the usual traits and restrictions for a Performance check.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes a -1 status penalty to Perception checks and Will saves for 1 minute. Effect: Goblin Song (Critical Success)</p>\n<p><strong>Success</strong> As critical success, but the target is affected for only one round. Effect: Goblin Song (Success)</p>\n<p><strong>Critical Failure</strong> The target is temporarily immune to Goblin Song for 1 hour.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Occult Spontaneous Spells",
+      "type": "spontaneous",
+      "bonus": 7,
+      "dc": 17,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 1,
+      "cantrips": [
+        {
+          "name": "Courageous Anthem",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "bard",
+            "composition",
+            "concentrate",
+            "emotion",
+            "mental"
+          ],
+          "castingTime": "1",
+          "duration": "1 round",
+          "range": "",
+          "area": "60ft emanation",
+          "targets": "",
+          "save": "",
+          "description": "<p>You inspire yourself and your allies with words or tunes of encouragement. You and all allies in the area gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "7rdIJNlg0RBV8B23"
+        },
+        {
+          "name": "Figment",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "illusion",
+            "manipulate",
+            "subtle"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to ",
+          "range": "30 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create a simple illusory sound or vision. A sound adds the auditory trait to the spell and the sound can't include intelligible words or elaborate music. A vision adds the visual trait, can be no larger than a 5-foot cube, and is clearly crude and undetailed if viewed from within 15 feet. When you Cast or Sustain the Spell, you can attempt to Create a Diversion with the illusion, gaining a +2 circumstance bonus to your Deception check. If the attempt fails against a creature, that creature disbelieves the <em>figment</em>.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "npPeMlWAcr7gmmD7"
+        },
+        {
+          "name": "Message",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "auditory",
+            "concentrate",
+            "illusion",
+            "linguistic",
+            "mental",
+            "subtle"
+          ],
+          "castingTime": "1",
+          "duration": "see below",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You mouth words quietly, but instead of coming out of your mouth, they're transferred directly to the ears of the target. While others can't hear your words any better than if you normally mouthed them, the target can hear your words as if they were standing next to you. The target can give a brief response as a reaction, or as a free action on their next turn if they wish, but they must be able to see you and be within range to do so. If they respond, their response is delivered directly to your ear, just like the original message.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The spell's range increases to 500 feet.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "1WtNqx99KWQ8eeqN"
+        },
+        {
+          "name": "Telekinetic Hand",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to ",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 unattended object of light Bulk or less",
+          "save": "",
+          "description": "<p>You create a floating, magical hand, either invisible or ghostlike, that grasps the target object and levitates it slowly up to 20 feet in any direction. When you Sustain the spell, you can move the object an additional 20 feet. If the object is in the air when the spell ends, the object falls.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (5th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (7th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 2 or less.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "nXEGFCbfHCG9V4WO"
+        },
+        {
+          "name": "Telekinetic Projectile",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal 2d6 bludgeoning, piercing, or slashing damage—as appropriate for the object you hurled. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "R6Z2Chy1JQdTLv6A"
+        }
+      ],
+      "lv1spells": [
+        {
+          "name": "Bless",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "aura",
+            "concentrate",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "",
+          "area": "15ft emanation",
+          "targets": "you and allies in the area",
+          "save": "",
+          "description": "<p>Blessings from beyond help your companions strike true. You and your allies gain a +1 status bonus to attack rolls while within the emanation. Once per round on subsequent turns, you can Sustain the spell to increase the emanation's radius by 10 feet.</p>\n<p>Bless can counteract Bane.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "IXkZPKf9ouDk9G6o"
+        },
+        {
+          "name": "Soothe",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "emotion",
+            "healing",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>You grace the target's mind, boosting its mental defenses and healing its wounds. The target regains 1d10+4 Hit Points when you Cast the Spell and gains a +2 status bonus to saves against mental effects for the duration.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 1d10+4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "P8WAFjSEUAnxpp0n"
+        }
+      ],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 2,
+        "max": 2
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Society, DC 15"
+}

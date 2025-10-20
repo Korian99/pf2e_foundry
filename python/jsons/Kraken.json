@@ -1,0 +1,419 @@
+{
+  "initiative": 0,
+  "initiativebonus": 34,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Kraken",
+  "type": "Creature",
+  "level": 18,
+  "traits": [
+    "Uncommon",
+    "Gargantuan",
+    "Aquatic",
+    "Beast"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 34,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Thalassic"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 38,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 32,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 33,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 9
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 9
+  },
+  "intelligence": {
+    "value": 5
+  },
+  "wisdom": {
+    "value": 6
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 42,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 35,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 32,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 360,
+    "max": 360,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "controlled",
+    "emotion"
+  ],
+  "resistances": [
+    {
+      "type": "cold",
+      "value": 10
+    },
+    {
+      "type": "poison",
+      "value": 20
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Altered Weather",
+      "actions": null,
+      "traits": [
+        "aura",
+        "primal"
+      ],
+      "description": "<p>A kraken reshapes the weather within 2 miles of it, with the effect of the Control Weather ritual centered on the kraken and based on its emotional state, at the GM's discretion. If the kraken dies, the weather returns to normal immediately.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "10 ft, swim 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Arm",
+      "bonus": 37,
+      "traits": [
+        "magical",
+        "reach-40"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d10+17",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d10+17)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tentacle",
+      "bonus": 37,
+      "traits": [
+        "agile",
+        "magical",
+        "reach-60",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+17",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+17)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Beak",
+      "bonus": 37,
+      "traits": [
+        "magical",
+        "reach-20",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+17",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+17)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Constrict",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>(2d10+17) Bludgeoning Damage, Basic DC 40 Fortitude Saving Throw. On a failed save, a creature that is holding its breath loses 1d4 rounds worth of air.</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Double Attack",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The kraken makes two Strikes with two different arms or tentacles, each limb targeting a different creature. Double Attack counts as two attacks toward the kraken's multiple attack penalty, but the penalty doesn't increase until after both attacks are made.</p>\n<p>If the kraken subsequently uses the Grab action, it Grabs any number of creatures it hit with Double Attack.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Ink Cloud",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The kraken releases a cloud of black, venomous ink in an 80ft Emanation. This cloud has no effect outside water.</p>\n<p>Creatures inside the ink cloud are exposed to kraken ink poison and are Undetected while inside the cloud.</p>\n<p>The kraken can't use Ink Cloud again for 2d6 rounds, and the cloud dissipates after 1 minute.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Jet",
+      "actions": 1,
+      "traits": [
+        "move"
+      ],
+      "description": "<p>The kraken moves through the water up to 280 feet in a straight line without triggering reactions.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Kraken Ink",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p>Krakens are immune to this poison</p>\n<p><strong>Saving Throw</strong> DC 39 Fortitude Saving Throw;</p>\n<hr />\n<p><strong>Maximum Duration</strong> 10 rounds</p>\n<p><strong>Stage 1</strong> 4d6 Poison Damage damage and Sickened 1 (1 round)</p>\n<p><strong>Stage 2</strong> 5d6 Poison Damage damage and Sickened 2 (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Primal Innate Spells",
+      "type": "innate",
+      "bonus": 32,
+      "dc": 40,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 10,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [
+        {
+          "name": "Resist Energy",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>A shield of elemental energy protects a creature against one type of energy damage. Choose acid, cold, electricity, fire, or sonic damage. The target and its gear gain resistance 5 against the damage type you chose.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The resistance increases to 10, and you can target up to two creatures.</p>\n<p><strong>Heightened (7th)</strong> The resistance increases to 15, and you can target up to five creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "wA4oCOqAmbsIN7Qi"
+        }
+      ],
+      "lv8spells": [
+        {
+          "name": "Punishing Winds",
+          "type": "spell",
+          "level": 8,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "air",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "3",
+          "duration": "Sustained up to 1 minute",
+          "range": "100 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>Violent winds and a powerful downdraft fill the area, forming a cyclone. All flying creatures in the area descend 40 feet. The entire area is greater difficult terrain for Flying creatures, and difficult terrain for creatures on the ground or Climbing. Any creature that ends its turn Flying within the area descends 20 feet. Any creature pushed into a surface by this spell's winds takes bludgeoning damage as though it had fallen.</p>\n<p>The squares at the outside vertical edges of the cylinder prevent creatures from leaving. These squares are greater difficult terrain, and a creature attempting to push through must succeed at an Athletics check or Acrobatics check to Maneuver in Flight against your spell DC to get through. A creature that fails ends its current action but can try again.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "j2B0o9HQDgwRl8QD"
+        }
+      ],
+      "lv9spells": [],
+      "lv10spells": [
+        {
+          "name": "Dominate (Animals Only)",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 10,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "incapacitation",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "until the next time you make your daily preparations",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You take command of the target, forcing it to obey your orders. If you issue an obviously self-destructive order, the target doesn't act until you issue a new order. The effect depends on its Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Stunned 1 as it fights off your commands.</p>\n<p><strong>Failure</strong> You control the target. It gains the Controlled condition, but it can attempt a Will save at the end of each of its turns. On a success, the spell ends.</p>\n<p><strong>Critical Failure</strong> As a failure, but the target receives a new save only if you give it a new order that is against its nature, such as killing its allies.</p>\n<hr />\n<p><strong>Heightened (10th)</strong> The duration is unlimited.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "bTOywO9RTYBgmCfo"
+        }
+      ],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Arcana or Nature, DC 38"
+}

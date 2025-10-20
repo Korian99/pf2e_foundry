@@ -1,0 +1,255 @@
+{
+  "initiative": 0,
+  "initiativebonus": 13,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Monster Hunter",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "Monster Lore",
+      "modifier": 13,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [
+    {
+      "name": "Composite Longbow",
+      "quantity": 1,
+      "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>",
+      "level": 1,
+      "price": "20 gp",
+      "traits": [
+        "deadly-d10",
+        "propulsive",
+        "volley-30"
+      ]
+    },
+    {
+      "name": "Greataxe",
+      "quantity": 1,
+      "description": "<p>This large battle axe is too heavy to wield with only one hand. Many greataxes incorporate two blades, and they are often \"bearded,\" having a hook at the bottom to increase the strength of their chopping power.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": [
+        "sweep"
+      ]
+    },
+    {
+      "name": "Hide Armor",
+      "quantity": 1,
+      "description": "<p>A mix of furs, sturdy hide, and sometimes molded boiled leather, this armor provides protection due to its layers of leather, though its bulkiness slows the wearer down and decreases mobility.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Favored Game",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A monster hunter specializes in bringing down certain non-humanoid creatures. These favored game are typically animals and beasts, but an individual might hunt dragons, plants, or more specialized creatures like tigers or manticores.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 105,
+    "max": 105,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within your reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p>You lash out at a foe that leaves an opening. Make a melee Strike against the triggering creature. If your attack is a critical hit and the trigger was a manipulate action, you disrupt that action. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Greataxe",
+      "bonus": 15,
+      "traits": [
+        "magical",
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d12+8",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d12+8)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "primal-fear"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Composite Longbow",
+      "bonus": 14,
+      "traits": [
+        "deadly-d10",
+        "propulsive",
+        "range-increment-100",
+        "reload-0",
+        "volley-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+6",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+6)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "primal-fear"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Hunter's Onslaught",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "emotion",
+        "mental"
+      ],
+      "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Requirements</strong> The monster hunter isn't Fatigued</p><hr /><p><strong>Effect</strong> The monster hunter leads an attack against their monstrous foe. The monster hunter chooses an enemy they can see that qualifies as their favored game. The monster hunter becomes Fascinated by that creature and gains 10 temporary Hit Points that last as long as the onslaught does. During the onslaught, the hunter gains a +8 status bonus to damage rolls against the designated enemy, and allies in a 30-foot aura around the hunter gain half that bonus. The onslaught lasts for 1 minute or until either the monster hunter or the designated creature falls Unconscious.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Primal Fear",
+      "actions": null,
+      "traits": [
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>When the monster hunter hits a creature that qualifies as their favored game, that creature is Frightened 1 (or Frightened 2 on a critical hit).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sudden Charge",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The monster hunter Strides twice and makes a melee Strike.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 22"
+}

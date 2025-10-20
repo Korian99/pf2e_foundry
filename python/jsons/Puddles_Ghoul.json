@@ -1,0 +1,229 @@
+{
+  "initiative": 0,
+  "initiativebonus": 6,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Puddles Ghoul",
+  "type": "Creature",
+  "level": 0,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Ghoul",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder Society Scenario #6-04: An Enkindled Carnival",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 6,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Necril"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 4,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 3,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 4,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 13,
+    "max": 13,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious",
+    "bleed"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Stench",
+      "actions": null,
+      "traits": [
+        "aura",
+        "olfactory"
+      ],
+      "description": "<p>10 feet, DC 14 Fortitude Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>A creature entering the aura or starting its turn in the area must succeed at a Fortitude save or become Sickened 1 (plus Slowed 1 as long as it's sickened on a critical failure). A creature that succeeds at its save or recovers from being sickened is temporarily immune to all stench auras for 1 minute.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, swim 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 8,
+      "traits": [
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+1",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+1)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+1",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+1)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Slurp Blood",
+      "actions": 1,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p><strong>Requirements</strong> A Grabbed, Paralyzed, Restrained, Unconscious, or willing creature is within the Puddles ghoul's reach</p><hr /><p><strong>Effect</strong> The ghoul bites the creature, slurping its blood. This requires an Athletics check against the target's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions. The victim takes (1d6+1) Piercing Damage damage and the Puddles ghoul regains 3 Healing Damage Hit Points, gaining any excess HP as temporary HP.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swift Movement",
+      "actions": 1,
+      "traits": [
+        "move"
+      ],
+      "description": "<p>The Puddles ghoul jumps up to half its Speed or swims up to half its swim Speed. This movement doesn't trigger reactions.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 14"
+}

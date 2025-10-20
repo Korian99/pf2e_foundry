@@ -1,0 +1,260 @@
+{
+  "initiative": 0,
+  "initiativebonus": 14,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Shui Gui",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Aquatic",
+    "Ghost",
+    "Incorporeal",
+    "Spirit",
+    "Undead",
+    "Water"
+  ],
+  "source": "Pathfinder Lost Omens Tian Xia World Guide",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 14,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Tien"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "Ghost Lore",
+      "modifier": 15,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 0
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": 4
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Water-Bound Curse",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The shui gui is bound to the body of water in which it died. It's unable to move further than 120 feet from the edge of the water.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 50,
+    "max": 50,
+    "note": "void healing, rejuvenation",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "fire",
+        "force",
+        "ghost-touch",
+        "spirit",
+        "vitality"
+      ],
+      "type": "all-damage",
+      "value": 5
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Rejuvenation",
+      "actions": null,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p>When the shui gui is destroyed, it reforms after 2d4 days within the body of water it's bound to, fully healing. It can be permanently destroyed if the body of the shui gui who originally died in the water can be found and laid to rest.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Ti Shõn",
+      "actions": -1,
+      "traits": [
+        "death",
+        "divine"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature Grabbed by the shui gui dies of suffocation</p>\n<hr />\n<p><strong>Effect</strong> Ripping the spirit of its drowned victim out of the target's body, the shui gui enters the corpse to take the original owner's place. The shui gui then returns to life at the edge of its body of water as if it had been the target of a successful resurrect ritual, except it has the appearance of the target rather than its original body. After a week, the spirit of the drowned creature becomes a shui gui. The new spirit can't be raised from the dead by normal magical means until they've been destroyed as a shui gui.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "10 ft, swim 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Ghostly Hand",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+4",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+4)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Drag Under",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The shui gui Swims at half Speed, along with any creature it has Grabbed.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Drown the Living",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The target must be holding its breath and be Grabbed by the shui gui</p>\n<hr />\n<p><strong>Effect</strong> The shui gui tightens its grip. The target must succeed at a DC 24 Fortitude Saving Throw save or immediately lose 1d4 actions worth of air (or twice that on a critical failure).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Ghostly Grasp",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A shui gui can Grapple corporeal creatures despite being incorporeal. The shui gui uses its Athletics check to Grapple as normal but can't use Athletics for other actions that require corporeal contact, like Force Open or Trip.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism or Religion, DC 20"
+}

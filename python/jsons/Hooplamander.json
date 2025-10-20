@@ -1,0 +1,202 @@
+{
+  "initiative": 0,
+  "initiativebonus": 12,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Hooplamander",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Common",
+    "Large",
+    "Beast"
+  ],
+  "source": "Pathfinder Howl of the Wild",
+  "senses": [
+    "Scent 30ft imprecise"
+  ],
+  "perception": {
+    "value": 12,
+    "note": "Scent 30ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 78,
+    "max": 78,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Flexible Dodge",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The hooplamander is Unfurled</p>\n<p><strong>Trigger</strong> The hooplamander is targeted by a Strike</p>\n<hr />\n<p><strong>Effect</strong> The hooplamander gains a +2 circumstance bonus to AC against the triggering attack and enters its Wheels Up stance.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Hookclaw",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "versatile-p"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6",
+          "type": "persistent bleed"
+        },
+        {
+          "roll": "1d4+5",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6)*2",
+          "type": "persistent bleed"
+        },
+        {
+          "roll": "(1d4+5)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Ridged Tail",
+      "bonus": 13,
+      "traits": [
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+5)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Rollout Trample",
+      "actions": 3,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The hooplamander is Wheels Up</p>\n<hr />\n<p><strong>Effect</strong> As Trample (Large or smaller, ridged tail, Basic DC 22 Reflex Saving Throw), except targets that critically fail their Reflex save are Stunned 1, and the hooplamander Unfurls at the end of its movement.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Unfurl",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The hooplamander is Wheels Up</p>\n<hr />\n<p><strong>Effect</strong> The hooplamander releases its tail, Leaping up to 20 feet as it exits its wheeled shape and unfurls to land on its four legs.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Wheels Up",
+      "actions": 1,
+      "traits": [
+        "stance"
+      ],
+      "description": "<p><strong>Requirements</strong> The hooplamander is Unfurled</p>\n<hr />\n<p><strong>Effect</strong> The hooplamander Leaps and then rolls into its wheeled form. Any creature within 5 feet must succeed at a DC 22 Reflex Saving Throw save or be Off-Guard for one round. While it's Wheels Up, the hooplamander can't make Strikes and its Speed increases to 40 feet.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 20"
+}

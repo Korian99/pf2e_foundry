@@ -1,0 +1,223 @@
+{
+  "initiative": 0,
+  "initiativebonus": 14,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Legbreaker",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 16,
+      "note": [
+        "Shoving with Maul 17"
+      ],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "thievery",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Maul",
+      "quantity": 1,
+      "description": "<p>Mauls are massive warhammers that must be swung with two hands.</p>",
+      "level": 0,
+      "price": "3 gp",
+      "traits": [
+        "shove"
+      ]
+    },
+    {
+      "name": "Studded Leather Armor",
+      "quantity": 1,
+      "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>",
+      "level": 0,
+      "price": "3 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 110,
+    "max": 110,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Maul",
+      "bonus": 17,
+      "traits": [
+        "magical",
+        "shove"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d10+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d10+10)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+10)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Break Legs!",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The legbreaker makes a maul Strike against an adjacent creature. If it hits, the creature is knocked Prone and becomes Clumsy 1 for 1 minute. As long as this clumsy condition lasts, the creature also takes a –5-foot penalty to its Speeds and has weakness 5 to the legbreaker's Strikes.</p>\n<p>Effect: Break Legs!</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rushing Strike",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The legbreaker Strides twice. If they end their movement within melee reach of an enemy, they can make a melee Strike against that enemy.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Stampeding Shove",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The legbreaker Shoves a creature, gaining a +2 circumstance bonus to their Athletics check if the target is Prone. If the Shove succeeds, the target takes 2d10 Bludgeoning Damage damage (double damage on a critical success).</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 22"
+}

@@ -1,0 +1,231 @@
+{
+  "initiative": 0,
+  "initiativebonus": 3,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Toady",
+  "type": "Creature",
+  "level": 0,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [
+    "(+9 to eavesdrop)"
+  ],
+  "perception": {
+    "value": 3,
+    "note": "(+9 to eavesdrop)",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "one additional language spoken by their boss"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 4,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 2,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "thievery",
+      "modifier": 4,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Sap",
+      "quantity": 1,
+      "description": "<p>A sap has a soft wrapping around a dense core, typically a leather sheath around a lead rod. Its head is wider than its grip to disperse the force of a blow, as the weapon's purpose is to knock out its victim rather than to draw blood.</p>",
+      "level": 0,
+      "price": "1 sp",
+      "traits": [
+        "agile",
+        "nonlethal"
+      ]
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "+6 Bonus on Perception to Eavesdrop",
+      "actions": null,
+      "traits": [],
+      "description": "",
+      "collapsed": false
+    },
+    {
+      "name": "Master Sends Their Regards",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A toady can deliver a message from their boss to Demoralize using their boss's Intimidation modifier instead of their own.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 3,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 20,
+    "max": 20,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "mental",
+      "value": 2
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Human Shield",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The toady's boss takes damage from an attack, and the toady is adjacent to them</p><hr /><p><strong>Effect</strong> The toady takes the damage instead, along with any secondary effects of attack. This damage can't be reduced in any way.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Sap",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "nonlethal"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+2)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+2)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Scurry",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The toady Strides, then can Hide. They can attempt to Hide from creatures without cover or being Concealed, but at a –2 circumstance penalty.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Throw Cargo",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>A toady carries a heavy load of supplies at their boss's behest. They hurl a heavy item they're carrying, which explodes on impact to deal 1d10 Bludgeoning Damage damage to all creatures in a 5ft Type:burst with a Basic DC 14 Reflex Saving Throw save.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 14"
+}

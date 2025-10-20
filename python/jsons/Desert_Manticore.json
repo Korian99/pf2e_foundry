@@ -1,0 +1,244 @@
+{
+  "initiative": 0,
+  "initiativebonus": 22,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Desert Manticore",
+  "type": "Creature",
+  "level": 12,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Beast"
+  ],
+  "source": "Pathfinder Howl of the Wild",
+  "senses": [
+    "Darkvision",
+    "Scent 60ft imprecise"
+  ],
+  "perception": {
+    "value": 22,
+    "note": "Darkvision, Scent 60ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Kelish",
+    "Osiriani"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 26,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 270,
+    "max": 270,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "poison"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Indomitable Beast",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The desert manticore is reduced to 0 HP</p>\n<hr />\n<p><strong>Effect</strong> The desert manticore avoids being knocked out and remains at 1 HP, then can make a stinger Strike against a creature in its reach.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, fly 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 25,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d8+10",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d8+10)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 25,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d6+10",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d6+10)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Stinger",
+      "bonus": 25,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+10",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+10)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "manticore-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Manticore Venom",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 32 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 3d8 Poison Damage damage and Drained 1 (1 round)</p>\n<p><strong>Stage 2</strong> 4d8 Poison Damage damage and Drained 2 (1 round)</p>\n<p><strong>Stage 3</strong> 5d8 Poison Damage damage and Drained 3 (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Scorpion Sting",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The desert manticore Strikes an Off-Guard creature with its stinger. The attack injects venom deeply, dealing an additional 4d8 poison damage and giving the target a –2 circumstance penalty to their initial save against the poison.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Venomous Flight",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The desert manticore Flies twice, dripping venom from its stinger. It chooses a creature it flew directly above during the flight, which is exposed to manticore venom. The desert manticore cannot fly further than 60 feet above the target or the venom becomes too dispersed in fall to take effect.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 30"
+}

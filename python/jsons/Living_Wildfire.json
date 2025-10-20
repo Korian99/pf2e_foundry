@@ -1,0 +1,207 @@
+{
+  "initiative": 0,
+  "initiativebonus": 10,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Living Wildfire",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Common",
+    "Medium",
+    "Elemental",
+    "Fire"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision",
+    "smoke vision"
+  ],
+  "perception": {
+    "value": 10,
+    "note": "Darkvision, smoke vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Pyric"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Smoke Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The living wildfire ignores the Concealed condition from smoke.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 80,
+    "max": 80,
+    "note": "explosion",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "fire",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "cold",
+      "value": 5
+    },
+    {
+      "exceptions": [],
+      "type": "water",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Explosion",
+      "actions": null,
+      "traits": [
+        "fire"
+      ],
+      "description": "<p>When the living wildfire dies, it explodes, dealing 3d6 Fire Damage damage to each creature in a emanation|distance:10|traits:fire,damaging-effect (Basic DC 19 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "50 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Tendril",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "finesse",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+6",
+          "type": "fire"
+        },
+        {
+          "roll": "2d4",
+          "type": "persistent fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+6)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(2d4)*2",
+          "type": "persistent fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Fire Mote",
+      "bonus": 15,
+      "traits": [
+        "range-increment-60"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+3",
+          "type": "fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+3)*2",
+          "type": "fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Spreading Flames",
+      "actions": 1,
+      "traits": [
+        "fire",
+        "primal"
+      ],
+      "description": "<p><strong>Requirements</strong> The living wildfire's last action was a Strike that dealt fire damage</p>\n<hr />\n<p><strong>Effect</strong> The fire flares, dealing 3d6 Fire Damage damage to each creature adjacent to that target with a Basic DC 19 Reflex Saving Throw save.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 20"
+}

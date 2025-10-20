@@ -1,0 +1,308 @@
+{
+  "initiative": 0,
+  "initiativebonus": 15,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Sniper",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "medicine",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Dagger",
+      "quantity": 1,
+      "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
+      "level": 0,
+      "price": "2 sp",
+      "traits": [
+        "agile",
+        "finesse",
+        "thrown-10",
+        "versatile-s"
+      ]
+    },
+    {
+      "name": "Arquebus",
+      "quantity": 1,
+      "description": "<p>This is a long gun that offers more range than the average firearm, though the long barrel and ferocious kickback make the weapon particularly unsteady unless a tripod or other stand is used to stabilize it. The arquebus is one of the most commonly used long guns among the soldiers of Dongun Hold and Alkenstar.</p>",
+      "level": 0,
+      "price": "8 gp",
+      "traits": [
+        "concussive",
+        "fatal-d12",
+        "kickback"
+      ]
+    },
+    {
+      "name": "Silencer",
+      "quantity": 4,
+      "description": "<p>One of the more prolifically used devices developed in the infamous Alkenstar Gunworks, these small firearm components are capable of muffling most of the weapons' explosive sound when fired. Without a silencer, a firearm's shot makes a loud and distinctive bang, which can easily be heard through doors and thin walls, but firearms equipped with silencers only make a quiet noise when fired. Due to engineering constraints, a silencer can't be attached to any firearm with the scatter trait. Attaching a silencer to a firearm takes 1 minute, and the silencer is consumed the first time a shot is fired through it.</p>",
+      "level": 0,
+      "price": "1 sp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Silencer",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A Silencer is an uncommon item worth 1 sp. It has light Bulk and can be attached to a firearm in 1 minute; the sniper typically already has one attached before going into combat. The first time a shot is fired through it, the silencer is consumed and reduces the report to a quiet noise. A silencer doesn't work on scatter firearms.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 65,
+    "max": 65,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Dagger",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+8",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+8)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Dagger",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "thrown-10",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+8",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+8)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+8)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Arquebus",
+      "bonus": 15,
+      "traits": [
+        "concussive",
+        "fatal-d12",
+        "kickback",
+        "range-increment-150",
+        "reload-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+6",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+6)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Concussive Shot",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The sniper makes an arquebus Strike against a creature within the weapon's first range increment. On a success, the creature must succeed at a DC 21 Fortitude Saving Throw save or be Stunned 1 (Stunned 2 on a critical failure).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Full Bore",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The sniper makes an arquebus Strike against two creatures that are adjacent to each other. The attack ignores any lesser cover one target provides the other. Roll damage once, and apply it to each creature the sniper hits. This counts as two attacks when determining the sniper's multiple attack penalty.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sniper's Edge",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The sniper's ranged Strikes deal 2d6 extra precision damage to Off-Guard creatures.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Surprise Attack",
+      "actions": null,
+      "traits": [],
+      "description": "<p>All enemy creatures that have not yet acted in combat are Off-Guard to the sniper.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 20"
+}

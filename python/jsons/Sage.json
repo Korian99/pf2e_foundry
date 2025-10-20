@@ -1,0 +1,237 @@
+{
+  "initiative": 0,
+  "initiativebonus": 14,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Sage",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "up to 4 additional languages"
+  ],
+  "skills": [
+    {
+      "name": "arcana",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "medicine",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "occultism",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "society",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 4
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Staff",
+      "quantity": 1,
+      "description": "<p>This long piece of wood can aid in walking and deliver a mighty blow.</p>",
+      "level": 0,
+      "price": "",
+      "traits": [
+        "two-hand-d8"
+      ]
+    },
+    {
+      "name": "Religious Symbol (Wooden)",
+      "quantity": 1,
+      "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity to use certain abilities and cast some spells. A religious symbol can be worn on the body on a chain or pin, or can be held.</p>",
+      "level": 0,
+      "price": "1 sp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 86,
+    "max": 86,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Timely Advice",
+      "actions": -1,
+      "traits": [
+        "auditory",
+        "concentrate",
+        "linguistic",
+        "mental"
+      ],
+      "description": "<p><strong>Trigger</strong> An ally is about to attempt an attack roll or skill check and has not yet rolled</p>\n<hr />\n<p><strong>Effect</strong> The sage gives the ally a savvy piece of advice, providing valuable insight. The ally gains a +2 circumstance bonus to the triggering roll.</p>\n<p>Effect: Timely Advice</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Staff",
+      "bonus": 13,
+      "traits": [
+        "magical",
+        "two-hand-d8"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+6)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+6)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Sage's Analysis",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p>The sage studies a creature, attempting an arcana, nature, occultism, religion, or society check against the creature's Recall Knowledge DC. On a success, the sage gains a +2 circumstance bonus to attack rolls and AC against that creature and deals an additional 2d6 damage to the creature with weapon attacks.</p>\n<p>These benefits last for 1 minute or until the sage uses this ability again.</p>\n<p>Effect: Sage's Analysis</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 22"
+}

@@ -1,0 +1,257 @@
+{
+  "initiative": 0,
+  "initiativebonus": 10,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Demolitionist",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "thievery",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "Explosive Lore",
+      "modifier": 14,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 4
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Light Mace",
+      "quantity": 1,
+      "description": "<p>A light mace has a short wooden or metal shaft ending with a dense metal head. Used much like a club, it delivers heavy bludgeoning blows, but with extra power derived from the head's metal ridges or spikes.</p>",
+      "level": 0,
+      "price": "4 sp",
+      "traits": [
+        "agile",
+        "finesse",
+        "shove"
+      ]
+    },
+    {
+      "name": "Leather Armor",
+      "quantity": 1,
+      "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 60,
+    "max": 60,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "fire",
+      "value": 5
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Explosive Demise",
+      "actions": null,
+      "traits": [
+        "fire"
+      ],
+      "description": "<p>When the demolitionist is reduced to 0 Hit Points while they have any explosives still in their bag, the remaining explosives detonate, unleashing an explosion of fire upon all creatures in a 30ft Type:emanation. Each creature in the area takes 3d6 Fire Damage damage with a DC 19 Reflex Saving Throw save.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Replenish Explosives",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The demolitionist can replenish their stock of explosives with 4 hours of downtime.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Light Mace",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "finesse",
+        "shove"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+7)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+7)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Plant Mine",
+      "actions": 1,
+      "traits": [
+        "fire",
+        "manipulate"
+      ],
+      "description": "<p>◆ to ◆◆</p><hr /><p>The demolitionist plants a mine in an adjacent square. If a creature moves onto a space with a mine, the mine explodes. This deals 3d8 Fire Damage damage to the creature with a Basic DC 21 Reflex Saving Throw save. The demolitionist can use 2 actions to Plant a Mine to hide the mine, granting it a Stealth DC of 21. Creatures that didn't see the mine as it was planted must actively search for it (using the Search activity while exploring or the Seek action in an encounter).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Toss Dynamite",
+      "actions": 2,
+      "traits": [
+        "fire",
+        "manipulate"
+      ],
+      "description": "<p>The demolitionist quickly throws a stick of dynamite up to 20 feet away that explodes in 5ft Type:burst. Creatures within the burst take 4d4 Fire Damage damage with a Basic DC 21 Reflex Saving Throw save.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Wall Charge",
+      "actions": 3,
+      "traits": [
+        "fire",
+        "manipulate"
+      ],
+      "description": "<p>The demolitionist plants a powerful wall charge on a flat surface such as a door or wall. Once the charge is planted, it explodes after 1 minute, dealing 60 Fire Damage damage to the surface and ignoring up to 15 of the surface's Hardness. The explosive also deals 5d6 Fire Damage damage to creatures within 30 feet of the explosive with a Basic DC 25 Reflex Saving Throw save.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 19"
+}

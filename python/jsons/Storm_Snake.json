@@ -1,0 +1,169 @@
+{
+  "initiative": 0,
+  "initiativebonus": 12,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Storm Snake",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Common",
+    "Medium",
+    "Beast",
+    "Dragon",
+    "Electricity"
+  ],
+  "source": "Pathfinder Howl of the Wild",
+  "senses": [
+    "Low light vision"
+  ],
+  "perception": {
+    "value": 12,
+    "note": "Low light vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 11,
+      "note": [
+        "to Fly 13"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 70,
+    "max": 70,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "electricity",
+      "value": 8
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Static Shock",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature touches the storm snake or damages it with an unarmed melee attack or non-reach melee weapon</p>\n<hr />\n<p><strong>Effect</strong> The triggering enemy is shocked for 2d8 Electricity Damage damage (Basic DC 19 Fortitude Saving Throw save). On a failed save, the target is Stunned 1.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, fly 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 12,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d4+5",
+          "type": "slashing"
+        },
+        {
+          "roll": "1d4",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+5)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(1d4)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Lightning Strike",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The storm snake redirects the lightning it has absorbed from storms, dealing 2d10 Electricity Damage damage to a single target within 20 feet (Basic DC 19 Reflex Saving Throw save). On a failure, the target is Dazzled until the end of its next turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Static Field",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The storm snake gathers all static electricity in the area before releasing it in a 30ft Emanation that deals 3d12 Electricity Damage damage to all non-plant creatures (DC 19 Reflex Saving Throw save) and grants plant creatures 5 temporary Hit Points that last for 1 minute. Plant life in the area begins to grow significantly faster than the average for plants of their genus; in forests, fields, or otherwise floral locations, this immediately transforms the area into non-magical difficult terrain. The storm snake can't use Static field again for 1d4 rounds.</p>\n<p>Effect: Static Field</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature or Arcana, DC 20"
+}

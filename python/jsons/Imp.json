@@ -1,0 +1,383 @@
+{
+  "initiative": 0,
+  "initiativebonus": 7,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Imp",
+  "type": "Creature",
+  "level": 1,
+  "traits": [
+    "Common",
+    "tiny",
+    "Fiend",
+    "Unholy"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 7,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Diabolic",
+    "Chthonian",
+    "Daemonic",
+    "Telepathy (Touch)"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "arcana",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -1
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 5,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 15,
+    "max": 15,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "poison",
+      "value": 3
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 3
+    }
+  ],
+  "defensiveAbilities": [],
+  "speed": "20 ft, fly 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Stinger",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "reach-0",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4-1",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4-1)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "imp-venom"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Change Shape",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "polymorph"
+      ],
+      "description": "<p>The imp takes on the appearance of a Medium or smaller animal. While transformed, the imp loses their normal senses, innate spells, and special actions, but doesn't otherwise change their statistics and can still speak and use telepathy. The imp also gains any special senses of the animal and any Speeds the animal has.</p>\n<p>This doesn't change the attack and damage modifiers of their Strikes but might change the damage type their Strikes deal (depending on what kinds of attacks the animal has) and prevents them from exposing creatures to imp venom.</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster changes its shape indefinitely. It can use this action again to return to its natural shape or adopt a new shape. Unless otherwise noted, a monster cannot use Change Shape to appear as a specific individual. Using Change Shape counts as creating a disguise for the Impersonate use of Deception. The monster's transformation automatically defeats Perception DCs to determine whether the creature is a member of the ancestry or creature type into which it transformed, and it gains a +4 status bonus to its Deception DC to prevent others from seeing through its disguise. Change Shape abilities specify what shapes the monster can adopt. The monster doesn't gain any special abilities of the new shape, only its physical form. For example, in each shape, it replaces its normal Speeds and Strikes, and might potentially change its senses or size. Any changes are listed in its stat block.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Fiendish Healing",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "divine",
+        "healing",
+        "vitality"
+      ],
+      "description": "<p><strong>Frequency</strong> once per round.</p>\n<hr />\n<p><strong>Effect</strong> The imp regains 1d6 Healing Damage Hit Points.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Fiendish Temptation",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "divine",
+        "fortune",
+        "unholy"
+      ],
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The imp offers a nonfiend within 15 feet a bargain, granting a boon of good luck if the creature accepts voluntarily. The boon lasts for 1 hour once accepted.</p>\n<p>Once during the hour, the creature can roll an attack roll or saving throw twice and use the higher result. If the creature dies while the boon is in place, the imp decides where the creature's soul travels. This typically makes the soul bound for eternity in the imp's home plane, and the creature unable to be raised or resurrected except by the Wish ritual or similar magic.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Imp Venom",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 16 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 1d6 Poison Damage damage and Clumsy 1 (1 round)</p>\n<p><strong>Stage 2</strong> 1d6 Poison Damage damage, clumsy 1, and Slowed 1 (1 round)</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Divine Innate Spells",
+      "type": "innate",
+      "bonus": 9,
+      "dc": 17,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 4,
+      "cantrips": [
+        {
+          "name": "Detect Magic",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft emanation",
+          "targets": "",
+          "save": "",
+          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "3kk2mTRbqYBvm4Rt"
+        }
+      ],
+      "lv1spells": [
+        {
+          "name": "Charm",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "emotion",
+            "incapacitation",
+            "manipulate",
+            "mental",
+            "subtle"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>To the target, your words are honey and your visage seems bathed in a dreamy haze. It must attempt a Will save, with a +4 circumstance bonus if you or your allies recently threatened it or used hostile actions against it.</p>\n<p>You can Dismiss the spell. If you use hostile actions against the target, the spell ends. When the spell ends, the target doesn't necessarily realize it was charmed unless its friendship with you or the actions you convinced it to take clash with its expectations, meaning you could potentially convince the target to continue being your friend via mundane means.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and aware you tried to charm it.</p>\n<p><strong>Success</strong> The target is unaffected but thinks your spell was something harmless instead of charm, unless it identifies the spell.</p>\n<p><strong>Failure</strong> The target's attitude becomes Friendly toward you. If it was Friendly, it becomes Helpful. It can't use hostile actions against you.</p>\n<p><strong>Critical Failure</strong> The target's attitude becomes Helpful toward you, and it can't use hostile actions against you.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The duration lasts until the next time you make your daily preparations.</p>\n<p><strong>Heightened (8th)</strong> The duration lasts until the next time you make your daily preparations, and you can target up to 10 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "1dpMc0MTl3sBJ1yR"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Invisibility (At Will, Self Only)",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "illusion",
+            "manipulate",
+            "subtle"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "self",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>Illusions bend light around the target, rendering it Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "VpJedVOR1dcpVdbe"
+        }
+      ],
+      "lv3spells": [],
+      "lv4spells": [
+        {
+          "name": "Read Omens",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "prediction"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You peek into the future. Choose a particular goal or activity you plan to engage in within 1 week, or an event you expect might happen within 1 week. You learn a cryptic clue or piece of advice that could help with the chosen event, often in the form of a rhyme or omen.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "ljWqi7Rdo10zXj2j"
+        }
+      ],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Religion, DC 15"
+}

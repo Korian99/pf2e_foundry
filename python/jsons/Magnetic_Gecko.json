@@ -1,0 +1,207 @@
+{
+  "initiative": 0,
+  "initiativebonus": 10,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Magnetic Gecko",
+  "type": "Creature",
+  "level": 1,
+  "traits": [
+    "Common",
+    "Small",
+    "Animal"
+  ],
+  "source": "Pathfinder Howl of the Wild",
+  "senses": [
+    "Low light vision",
+    "greater electrolocation 20 feet"
+  ],
+  "perception": {
+    "value": 10,
+    "note": "Low light vision, greater electrolocation 20 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 6,
+      "note": [
+        "to Climb 8"
+      ],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": -1
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Greater Electrolocation",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A magnetic gecko can sense minute electrical charges in living creatures, which it can use as a precise sense at a range of 20 feet. This distance increases to 100 feet against any creature that has used an electricity effect within the last minute.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Uncanny Climber",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A magnetic gecko's feet allow it to climb virtually any surface, no matter how slick or sheer. If a gecko attempts an Athletics check to Climb and critically fails, it gets a failure instead.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 4,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 20,
+    "max": 20,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "electricity"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "30 ft, climb 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 7,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+2",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+2)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tongue",
+      "bonus": 7,
+      "traits": [
+        "electricity",
+        "finesse",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [
+        "static-cling"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Launch Metal",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The gecko repulses the metal attached to its body in all directions, dealing 2d6 Bludgeoning Damage damage (Basic DC 17 Reflex Saving Throw save) to all creatures in a 10ft Emanation. The gecko can't use Launch Metal again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Repel",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The gecko manipulates its magnetic field to repel metal, humming audibly and gaining resistance 2 to damage from metal weapons and metal effects until the beginning of its next turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Static Cling",
+      "actions": null,
+      "traits": [],
+      "description": "<p>If the gecko hits Small or smaller creature with its tongue, and the target is made of metal or is wearing metallic armor, the gecko's tongue latches on to the creature. The creature must attempt a DC 17 Reflex Saving Throw save or become Grabbed. While the gecko is Grabbing a creature in this way, it can attempt an athletics|defense:fortitude check against the target's Fortitude DC to pull the creature to a space adjacent to the gecko. A creature grabbed in this way can Escape normally.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 15"
+}

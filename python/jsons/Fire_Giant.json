@@ -1,0 +1,258 @@
+{
+  "initiative": 0,
+  "initiativebonus": 18,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Fire Giant",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Common",
+    "Large",
+    "Fire",
+    "Giant",
+    "Humanoid"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Low light vision"
+  ],
+  "perception": {
+    "value": 18,
+    "note": "Low light vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Jotun",
+    "Pyric"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 0
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Greatsword",
+      "quantity": 1,
+      "description": "<p>This immense two-handed sword is nearly as tall as its wielder. Its lower blade is often somewhat dulled to allow it to be gripped for extra leverage in close-quarter fights.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": [
+        "versatile-p"
+      ]
+    },
+    {
+      "name": "Half Plate",
+      "quantity": 1,
+      "description": "<p>Half plate consists of most of the upper body plates used in full plate, with lighter or sparser steel plate protection for the arms and legs. This provides some of the protection of full plate with greater flexibility and speed. A suit of this armor comes with an undercoat of @UUID[Compendium.pf2e.equipment-srd.Item.Padded Armor] and a pair of @UUID[Compendium.pf2e.equipment-srd.Item.Gauntlet]{gauntlets}.</p>",
+      "level": 1,
+      "price": "18 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 31,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 175,
+    "max": 175,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "fire"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Greatsword",
+      "bonus": 24,
+      "traits": [
+        "magical",
+        "reach-10",
+        "versatile-p"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+13",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+13)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 23,
+      "traits": [
+        "agile",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+13",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+13)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Flame",
+      "bonus": 21,
+      "traits": [
+        "fire",
+        "primal",
+        "range-120"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d6",
+          "type": "fire"
+        },
+        {
+          "roll": "2d6",
+          "type": "persistent fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d6)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "persistent fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Flaming Stroke",
+      "actions": 2,
+      "traits": [
+        "fire",
+        "primal"
+      ],
+      "description": "<p>The fire giant imbues their blade with flames and makes a greatsword Strike with a –2 circumstance penalty against each creature in a 15ft Line. They make one attack roll only and compare the result to each creature's AC. This Strike deals an additional 1d6 fire damage and counts as one attack for the fire giant's multiple attack penalty</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 27"
+}

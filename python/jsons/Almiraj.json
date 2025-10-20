@@ -1,0 +1,231 @@
+{
+  "initiative": 0,
+  "initiativebonus": 14,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Almiraj",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Uncommon",
+    "Small",
+    "Animal"
+  ],
+  "source": "Pathfinder Howl of the Wild",
+  "senses": [
+    "Tremorsense 40ft imprecise"
+  ],
+  "perception": {
+    "value": 14,
+    "note": "Tremorsense 40ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 63,
+    "max": 63,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Frightful Presence",
+      "actions": null,
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>5 feet DC 22 Will Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>A creature that first enters the area must attempt a Will save.</p>\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to this monster's Frightful Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by the presence.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 4.</p></p></details> Creatures that critically fail are also fleeing for 1 round.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Strike (Horn only)",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>\n<p>Fleeing creatures take an additional 1d6 Bleed Damage damage. On a critical hit, the target is knocked Prone.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "35 ft, burrow 25ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Horn",
+      "bonus": 13,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+7",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+7)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 13,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+7",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+7)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4+7",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+7)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Final Shake",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The almiraj has a creature Grabbed</p>\n<hr />\n<p><strong>Effect</strong> The almiraj clamps its jaws down on the creature and shakes it vigorously, attempting to finish it off. The creature takes 2d6 Bludgeoning Damage damage and must succeed at a DC 20 Fortitude Saving Throw save or become Enfeebled 1. Small or smaller creatures take a –2 circumstance penalty to their save.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Goring Charge",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The almiraj lowers its head and moves with ferocity toward its selected prey. The almiraj Strides twice. If it ends its movement within melee reach of at least one enemy, it makes a horn Strike against that enemy. This Strike deals an additional 1d6 persistent bleed damage.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Into the Earth",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The almiraj has a Medium or smaller creature Grabbed</p>\n<hr />\n<p><strong>Effect</strong> The almiraj attempts to flee with its meal, burrowing into the ground. The grabbed creature must succeed at a DC 20 Reflex Saving Throw save or be dragged beneath the ground as the almiraj Burrows up to its Speed. If the target succeeds at its save, it Escapes and the almiraj continues burrowing as normal; if it fails, the grabbed creature must hold its breath or begin suffocating under the dirt.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 19"
+}

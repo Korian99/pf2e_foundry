@@ -1,0 +1,205 @@
+{
+  "initiative": 0,
+  "initiativebonus": 24,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Veldenar",
+  "type": "Creature",
+  "level": 11,
+  "traits": [
+    "Common",
+    "huge",
+    "Air",
+    "Elemental"
+  ],
+  "source": "Pathfinder Rage of Elements",
+  "senses": [
+    "Darkvision",
+    "all-around vision"
+  ],
+  "perception": {
+    "value": 24,
+    "note": "Darkvision, all-around vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Sussuran"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 32,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 190,
+    "max": 190,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "cold"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "electricity",
+      "value": 10
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "All-Around Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster can see in all directions simultaneously and therefore can't be flanked.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Attack of Opportunity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Natural Invisibility",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A veldenar is naturally Invisible and only becomes visible when using a hostile action. Creatures it has engulfed remain visible within it, albeit slightly blurred by the veldenar's translucent skin.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Viscous Breath",
+      "actions": null,
+      "traits": [
+        "air",
+        "aura"
+      ],
+      "description": "<p>15 feet. The veldenar raises the viscosity of the surrounding air just by breathing it. Creatures who enter or start their turn within the emanation treat the area as difficult terrain and take a –2 status penalty to any non-magical physical attacks they attempt. This aura is suppressed whenever the veldenar has a creature engulfed.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, fly 25ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Tongue",
+      "bonus": 25,
+      "traits": [
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+10",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "1d10",
+          "type": "cold"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+10)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(1d10)*2",
+          "type": "cold"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Vacuum",
+      "actions": 2,
+      "traits": [
+        "air"
+      ],
+      "description": "<p><strong>Requirements</strong> The veldenar doesn't have a creature engulfed</p>\n<hr />\n<p><strong>Effect</strong> The veldenar forcefully unlocks then expands its jaws to inhale the air in a 15ft Cone before it, pulling Large or smaller creatures into its cavernous maw. The veldenar Engulfs the creatures in the area (DC 27 Reflex Saving Throw, (1d10+10) Cold Damage, Escape dc=27, Rupture 25).</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 28"
+}

@@ -1,0 +1,243 @@
+{
+  "initiative": 0,
+  "initiativebonus": 10,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Rigger",
+  "type": "Creature",
+  "level": 1,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 7,
+      "note": [
+        "to Climb 10"
+      ],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "Sailing Lore",
+      "modifier": 6,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Dagger",
+      "quantity": 2,
+      "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
+      "level": 0,
+      "price": "2 sp",
+      "traits": [
+        "agile",
+        "finesse",
+        "thrown-10",
+        "versatile-s"
+      ]
+    },
+    {
+      "name": "Rope",
+      "quantity": 1,
+      "description": "<p>50 feet of rope.</p>",
+      "level": 0,
+      "price": "5 sp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 5,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 20,
+    "max": 20,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "30 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Dagger",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+3",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+3)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Dagger",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "thrown-10",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+3",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+3)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+3)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Death from Above",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The rigger deals an additional 1d4 precision damage to any creature at a lower elevation than themself.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Practiced Climber",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The rigger requires only one hand free to Climb and is not Off-Guard when Climbing.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rope Tension Spring",
+      "actions": 2,
+      "traits": [
+        "manipulate",
+        "move"
+      ],
+      "description": "<p><strong>Requirements</strong> The rigger is adjacent to a vertical rope on board a ship and is wielding a dagger</p><hr /><p><strong>Effect</strong> The rigger loops the rope around one arm and severs the rope with their dagger. Counterweight and tension pull the rigger 20 feet straight up.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 15"
+}

@@ -1,0 +1,613 @@
+{
+  "initiative": 0,
+  "initiativebonus": 15,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Watchmage",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "arcana",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "society",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "Legal Lore",
+      "modifier": 13,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 4
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Shortbow",
+      "quantity": 1,
+      "description": "<p>This smaller bow is made of a single piece of wood and favored by skirmishers and cavalry.</p>",
+      "level": 0,
+      "price": "3 gp",
+      "traits": [
+        "deadly-d10"
+      ]
+    },
+    {
+      "name": "Leather Armor",
+      "quantity": 1,
+      "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": []
+    },
+    {
+      "name": "Spellbook",
+      "quantity": 1,
+      "description": "<p>Contains all prepared spells plus @UUID[Compendium.pf2e.spells-srd.Item.Earthbind], @UUID[Compendium.pf2e.spells-srd.Item.Revealing Light], @UUID[Compendium.pf2e.spells-srd.Item.Sleep], @UUID[Compendium.pf2e.spells-srd.Item.Tailwind].</p>\n<p>A spellbook holds the written knowledge necessary to learn and prepare various spells, a necessity for wizards (who typically get one for free) and a useful luxury for other spellcasters looking to learn additional spells. Each spellbook can hold up to 100 spells. The Price listed is for a blank spellbook.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Arcane Watch",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The watchmage can either Investigate or Search while using the Detect Magic exploration activity.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 70,
+    "max": 70,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Counter Escape",
+      "actions": -1,
+      "traits": [
+        "arcane"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature Casts a Spell with the teleportation trait or as a reaction</p><hr /><p><strong>Effect</strong> The watchmage expends a spell slot of the same rank or higher as the trigger creature's spell and attempts to counteract the triggering spell (counteract modifier +11).</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+5)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Shortbow",
+      "bonus": 15,
+      "traits": [
+        "deadly-d10",
+        "magical",
+        "range-increment-60",
+        "reload-0"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Eldritch Arms",
+      "actions": null,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p>In a brief ritual that takes 10 minutes, the watchmage chooses a single weapon or unarmed attack through which they can focus their magic. Strikes the watchmage makes with that weapon are magical and deal 1d6 additional force damage.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spellbound Strike",
+      "actions": 3,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The watchmage is wielding the weapon chosen with Eldritch Arms</p><hr /><p><strong>Effect</strong> The watchmage Casts a Spell that takes 1 or 2 actions to cast, imbuing that spell into the weapon. The watchmage Strikes with the required weapon. This counts as two attacks for the watchmage's multiple attack penalty. On a hit, the target is also affected by the spell, though the target gets any normal defenses allowed by the spell.</p>\n<p>If the spell is targeted, it targets the creature that was hit and no one else. If the spell is an area, the target must be in the area. A burst is centered on a corner of the target's square if the target is Medium or smaller, or the corner of a square closest to the creature's center if it's Large or larger. A cone or line emits from a square of the watchmage's choice adjacent to the target.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Arcane Prepared Spells",
+      "type": "prepared",
+      "bonus": 12,
+      "dc": 20,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 3,
+      "cantrips": [
+        {
+          "name": "Detect Magic",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft emanation",
+          "targets": "",
+          "save": "",
+          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "aiuPhWT0qND0NtnV"
+        },
+        {
+          "name": "Frostbite",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "cold",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "Basic fortitude",
+          "description": "<p>An orb of biting cold coalesces around your target, freezing its body. The target takes 2d4 cold damage with a basic Fortitude save. On a critical failure, the target also gains weakness 1 to bludgeoning until the start of your next turn.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4 and the weakness on a critical failure increases by 1.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "u5ARLhCnGfIaISnf"
+        },
+        {
+          "name": "Ignition",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "fire",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You snap your fingers and point at a target, which begins to smolder. Make a spell attack roll against the target's AC, dealing 2d4 fire damage on a hit. If the target is within your melee reach, you can choose to make a melee spell attack with the flame instead of a ranged spell attack, which increases all the spell's damage dice to d6s.</p><hr /><p><strong>Critical Success</strong> The target takes double damage and 1d4 persistent fire damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p><hr /><p><strong>Heightened (+1)</strong> The initial damage increases by 1d4 and the persistent fire damage on a critical hit increases by 1d4.</p>\n<p>(@item.rank)d4 Persistent,fire Damage{Scaling Persistent Fire Damage}</p>\n<p>(@item.rank)d6 Persistent,fire Damage{Scaling Persistent Fire Damage (Melee)}</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Y61Q4es6ITruXLHB"
+        },
+        {
+          "name": "Read Aura",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "1 minute",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 object",
+          "save": "",
+          "description": "<p>You focus on the target object, opening your mind to perceive magical auras. When the casting is complete, you know whether that item is magical. You or anyone you advise about the aura gains a +2 circumstance bonus to Identify Magic on the item. If the object is illusory, you detect this only if the effect's rank is lower than the rank of your <em>read aura</em> spell.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to 10 objects.</p>\n<p><strong>Heightened (6th)</strong> You can target any number of objects.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Z3G89kbEiyEFAt81"
+        },
+        {
+          "name": "Tangle Vine",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate",
+            "plant",
+            "wood"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>A vine appears from thin air, flicking from your hand and lashing itself to the target. Attempt a spell attack roll against the target.</p>\n<p></p>\n<hr />\n<p><strong>Critical Success</strong> The target gains the Immobilized condition and takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty and the immobilized condition.</p>\n<p><strong>Success</strong> The target takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty.</p>\n<p><strong>Failure</strong> The target is unaffected.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The effects last for 2 rounds.</p>\n<p><strong>Heightened (4th)</strong> The effects last for 1 minute.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "dsbhZQrQQn1EyuUL"
+        }
+      ],
+      "lv1spells": [
+        {
+          "name": "Command",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "auditory",
+            "concentrate",
+            "linguistic",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "until the end of the target's next turn",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You shout a command that's hard to ignore. You can command the target to approach you, run away (as if it had the Fleeing condition), release what it's holding, drop Prone, or stand in place. It can't Delay or take any reactions until it has obeyed your command. The effects depend on the target's Will save.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> For the first action on its next turn, the creature must use a single action to do as you command.</p>\n<p><strong>Critical Failure</strong> The target must use all its actions on its next turn to obey your command.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target up to 10 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "WrXH7Upj6kFyvs4G"
+        },
+        {
+          "name": "Force Barrage",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "force",
+            "manipulate"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You fire a shard of solidified magic toward a creature that you can see. It automatically hits and deals 1d4+1 force damage. For each additional action you use when Casting the Spell, increase the number of shards you shoot by one, to a maximum of three shards for 3 actions. You choose the target for each shard individually. If you shoot more than one shard at the same target, combine the damage before applying bonuses or penalties to damage, resistances, weaknesses, and so forth.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> You fire one additional shard with each action you spend.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "iv7tk7yyoeyni5vj"
+        },
+        {
+          "name": "Sure Strike",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "fortune"
+          ],
+          "castingTime": "1",
+          "duration": "until the end of your turn",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>The next time you make an attack roll before the end of your turn, roll it twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden. You are then temporarily immune to <em>sure strike</em> for 10 minutes.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "mPcd3CkCyxGyH7Kl"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Dispel Magic",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "xPkHCIIX1yoOqt3D"
+        },
+        {
+          "name": "See the Unseen",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "revelation"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>Your gaze pierces through illusions and finds Invisible creatures and spirits. You can see invisible creatures as though they weren't invisible, although their features are blurred, making them Concealed and difficult to identify. You can also see incorporeal creatures, like ghosts, phased through an object from within 10 feet of an object's surface as blurry shapes seen through those objects. Subtler clues also grant you a +2 status bonus to checks you make to disbelieve illusions.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> This spell has a duration of 8 hours.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "hp1orl8mGWI5abqE"
+        }
+      ],
+      "lv3spells": [
+        {
+          "name": "Haste",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>Magic empowers the target to act faster. It gains the Quickened condition and can use the extra action each round only for Strike and Stride actions.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> You can target up to 6 creatures.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "c9AuAbimxx6aVpdR"
+        },
+        {
+          "name": "Slow",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "fortitude",
+          "description": "<p>You dilate the flow of time around the target, slowing its actions.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Slowed 1 for 1 round.</p>\n<p><strong>Failure</strong> The target is Slowed 1 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Slowed 2 for 1 minute.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "C1gFOddSKcNP3KJT"
+        }
+      ],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv2slots": {
+        "current": 2,
+        "max": 2
+      },
+      "lv3slots": {
+        "current": 2,
+        "max": 2
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Society, DC 20"
+}

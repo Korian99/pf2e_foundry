@@ -1,0 +1,708 @@
+{
+  "initiative": 0,
+  "initiativebonus": 9,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Zealot of Asmodeus",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid",
+    "Unholy"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "society",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 1
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [
+    {
+      "name": "Composite Shortbow",
+      "quantity": 1,
+      "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>",
+      "level": 1,
+      "price": "14 gp",
+      "traits": [
+        "deadly-d10",
+        "propulsive"
+      ]
+    },
+    {
+      "name": "Mace",
+      "quantity": 1,
+      "description": "<p>With a stout haft and a heavy metal head, a mace is sturdy and allows its wielder to deliver powerful blows and dent armor.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": [
+        "shove"
+      ]
+    },
+    {
+      "name": "Half Plate",
+      "quantity": 1,
+      "description": "<p>Half plate consists of most of the upper body plates used in full plate, with lighter or sparser steel plate protection for the arms and legs. This provides some of the protection of full plate with greater flexibility and speed. A suit of this armor comes with an undercoat of @UUID[Compendium.pf2e.equipment-srd.Item.Padded Armor] and a pair of @UUID[Compendium.pf2e.equipment-srd.Item.Gauntlet]{gauntlets}.</p>",
+      "level": 1,
+      "price": "18 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 22,
+    "note": "(24 with shield raised)",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 60,
+    "max": 60,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Shield Block",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> The monster has its shield raised and takes damage from a physical attack.</p>\n<hr />\n<p><strong>Effect</strong> The monster snaps its shield into place to deflect a blow. The shield prevents the monster from taking an amount of damage up to the shield's Hardness. The monster and the shield each take any remaining damage, possibly breaking or destroying the shield.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swear Vengeance",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature the zealot can see damages a follower of Asmodeus other than the zealot</p><hr /><p><strong>Effect</strong> The zealot is affected by a Sure Strike spell. If the zealot makes an attack roll against anyone other than the triggering creature, the <em>sure strike</em> ends with no effect.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Mace",
+      "bonus": 12,
+      "traits": [
+        "shove"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+4)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+4)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Composite Shortbow",
+      "bonus": 9,
+      "traits": [
+        "deadly-d10",
+        "propulsive",
+        "range-increment-60",
+        "reload-0"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+2",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+2)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Channel Smite",
+      "actions": 2,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p><strong>Cost</strong> the zealot expends a Harm spell</p><hr /><p><strong>Effect</strong> The zealot makes a melee Strike. If it hits, they damage the target with a 1-action <em>harm</em> spell. The target automatically gets a failure (or a critical failure if the Strike was a critical hit). The spell doesn't have the manipulate trait when cast this way.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Deadly Simplicity",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The zealot deals 1d8 damage with their mace instead of 1d6.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Divine Prepared Spells",
+      "type": "prepared",
+      "bonus": 11,
+      "dc": 19,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 2,
+      "cantrips": [
+        {
+          "name": "Detect Magic",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft emanation",
+          "targets": "",
+          "save": "",
+          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "HiKm5lOfUGMH3xKU"
+        },
+        {
+          "name": "Divine Lance",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate",
+            "sanctified",
+            "spirit"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You unleash a beam of divine energy. Make a ranged spell attack against the target's AC. On a hit, the target takes 2d4 spirit damage (double damage on a critical hit).</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "yEKd58C4M0Ti3Esm"
+        },
+        {
+          "name": "Forbidding Ward",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to 1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 ally and 1 enemy",
+          "save": "",
+          "description": "<p>You ward an ally against the attacks and hostile spells from the target enemy. The target ally gains a +1 status bonus to Armor Class and saving throws against the target enemy's attacks, spells, and other effects.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (6th)</strong> The status bonus increases to +2.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "dZlYGHlcbueSC2JU"
+        },
+        {
+          "name": "Read Aura",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "1 minute",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 object",
+          "save": "",
+          "description": "<p>You focus on the target object, opening your mind to perceive magical auras. When the casting is complete, you know whether that item is magical. You or anyone you advise about the aura gains a +2 circumstance bonus to Identify Magic on the item. If the object is illusory, you detect this only if the effect's rank is lower than the rank of your <em>read aura</em> spell.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to 10 objects.</p>\n<p><strong>Heightened (6th)</strong> You can target any number of objects.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "OCcvzowVOHHoJRT0"
+        },
+        {
+          "name": "Sigil",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "unlimited",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature or object",
+          "save": "",
+          "description": "<p>You harmlessly place your unique magical sigil, which is about 1 square inch in size, on the targeted creature or object. The mark can be visible or invisible, and you can change it from one state to another by using an Interact action to touch the target. The mark can be scrubbed or scraped off with 5 minutes of work. If it's on a creature, it fades naturally over the course of a week. The time before the mark fades increases depending on your heightened rank.</p><hr /><p><strong>Heightened (3rd)</strong> The sigil instead fades after 1 month.</p>\n<p><strong>Heightened (5th)</strong> The sigil instead fades after 1 year.</p>\n<p><strong>Heightened (7th)</strong> The sigil never fades.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "wkerDZfJZD894Up5"
+        }
+      ],
+      "lv1spells": [
+        {
+          "name": "Command",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "auditory",
+            "concentrate",
+            "linguistic",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "until the end of the target's next turn",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You shout a command that's hard to ignore. You can command the target to approach you, run away (as if it had the Fleeing condition), release what it's holding, drop Prone, or stand in place. It can't Delay or take any reactions until it has obeyed your command. The effects depend on the target's Will save.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> For the first action on its next turn, the creature must use a single action to do as you command.</p>\n<p><strong>Critical Failure</strong> The target must use all its actions on its next turn to obey your command.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target up to 10 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "3fvAPEzrDnakE2YW"
+        },
+        {
+          "name": "Runic Weapon",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "touch",
+          "area": "",
+          "targets": "1 weapon that is unattended or wielded by a willing creature",
+          "save": "",
+          "description": "<p>The weapon glimmers with magic as temporary runes carve down its length. The target becomes a <em>+1 striking weapon</em>, gaining a +1 item bonus to attack rolls and increasing the number of weapon damage dice to two.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The weapon is <em>+2 greater striking</em>.</p>\n<p><strong>Heightened (9th)</strong> The weapon is <em>+3 major striking</em>.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "lKgSMpyNmlUFv4Rn"
+        },
+        {
+          "name": "Spirit Link",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "healing",
+            "manipulate",
+            "spirit"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>You form a spiritual link with another creature, taking in its pain. When you Cast this Spell and at the start of each of your turns, if the target is below maximum Hit Points, it regains 2 Hit Points (or the difference between its current and maximum Hit Points, if that's lower). You lose as many Hit Points as the target regained.</p>\n<p>This is a spiritual transfer, so no effects apply that would increase the Hit Points the target regains or decrease the Hit Points you lose. This transfer also ignores any temporary Hit Points you or the target have. Since this effect doesn't involve vitality or void energy, <em>spirit link</em> works even if you or the target is undead. While the duration persists, you gain no benefit from regeneration or fast healing. You can Dismiss this spell, and if you're ever at 0 Hit Points, <em>spirit link</em> ends automatically.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The number of Hit Points transferred each time increases by 2.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "vpZoHrjQWH51ssTB"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Cleanse Affliction",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "healing",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>Gentle restorative magic pushes back the effects of toxins and more complex maladies. Choose an affliction on the target, such as a curse, disease, or poison. If it has advanced past stage one, reduce the stage by one. This reduction can be applied only once to a given case of an affliction, with the case ending when it's completely cured. Although the reduction can't occur again, heightened versions of this spell attempt to counteract with each casting.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> Attempt to counteract the affliction if it is a disease or poison.</p>\n<p><strong>Heightened (4th)</strong> Attempt to counteract the affliction if it is a curse, disease, or poison.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "aRlfVhusoQb3hUa4"
+        },
+        {
+          "name": "Harm",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 living creature or 1 willing undead creature",
+          "save": "Basic fortitude",
+          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "vaLNG3EkIoVXgZ0X"
+        },
+        {
+          "name": "Harm",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 living creature or 1 willing undead creature",
+          "save": "Basic fortitude",
+          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "vaLNG3EkIoVXgZ0X"
+        },
+        {
+          "name": "Harm",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 living creature or 1 willing undead creature",
+          "save": "Basic fortitude",
+          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "vaLNG3EkIoVXgZ0X"
+        },
+        {
+          "name": "Harm",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 living creature or 1 willing undead creature",
+          "save": "Basic fortitude",
+          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "vaLNG3EkIoVXgZ0X"
+        },
+        {
+          "name": "See the Unseen",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "revelation"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>Your gaze pierces through illusions and finds Invisible creatures and spirits. You can see invisible creatures as though they weren't invisible, although their features are blurred, making them Concealed and difficult to identify. You can also see incorporeal creatures, like ghosts, phased through an object from within 10 feet of an object's surface as blurry shapes seen through those objects. Subtler clues also grant you a +2 status bonus to checks you make to disbelieve illusions.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> This spell has a duration of 8 hours.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "TZV12E3RIhgUWnIX"
+        },
+        {
+          "name": "Share Life",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You forge a temporary link between the target's life essence and your own. The target takes half damage from all effects that deal Hit Point damage, and you take the remainder of the damage. When you take damage through this link, you don't apply any resistances, weaknesses, or other abilities you have to that damage; you simply take that amount of damage. The spell ends if the target is ever more than 30 feet away from you. If either you or the target is reduced to 0 Hit Points, any damage from this spell is resolved and then the spell ends.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "LlbDw3HN5Iwkk4Yx"
+        }
+      ],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv2slots": {
+        "current": 7,
+        "max": 7
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Society, DC 19"
+}

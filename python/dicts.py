@@ -86,3 +86,10 @@ excluded_abilities = {
     "constant spell",
     "darkvision",
 }
+actions = {
+    "-1": "⟳",
+    "1": "◆",
+    "2": "◆◆",
+    "3": "◆◆◆",
+    "0": "◇",
+}

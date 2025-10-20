@@ -1,0 +1,269 @@
+{
+  "initiative": 0,
+  "initiativebonus": 11,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Equestrian Constable",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "Settlement Lore",
+      "modifier": 8,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 1
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [
+    {
+      "name": "Crossbow",
+      "quantity": 1,
+      "description": "<p>This ranged weapon has a bow-like assembly mounted on a handled frame called a tiller. The tiller has a mechanism to lock the bowstring in place, attached to a trigger mechanism that releases the tension and launches a bolt.</p>",
+      "level": 0,
+      "price": "3 gp",
+      "traits": []
+    },
+    {
+      "name": "Guisarme",
+      "quantity": 1,
+      "description": "<p>This polearm bears a long, often one-sided, curved blade with a hook protruding from the blunt side of the blade, which can allow its wielder to trip opponents at a distance. Its shaft is usually 8 feet long.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": [
+        "reach",
+        "trip"
+      ]
+    },
+    {
+      "name": "Half Plate",
+      "quantity": 1,
+      "description": "<p>Half plate consists of most of the upper body plates used in full plate, with lighter or sparser steel plate protection for the arms and legs. This provides some of the protection of full plate with greater flexibility and speed. A suit of this armor comes with an undercoat of @UUID[Compendium.pf2e.equipment-srd.Item.Padded Armor] and a pair of @UUID[Compendium.pf2e.equipment-srd.Item.Gauntlet]{gauntlets}.</p>",
+      "level": 1,
+      "price": "18 gp",
+      "traits": []
+    },
+    {
+      "name": "Manacles (Poor)",
+      "quantity": 1,
+      "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a -15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from poor manacles requires two successful @Check[thievery|dc:17|traits:action:pick-a-lock] checks.</p>",
+      "level": 0,
+      "price": "3 sp",
+      "traits": []
+    },
+    {
+      "name": "Rope",
+      "quantity": 1,
+      "description": "<p>50 feet of rope.</p>",
+      "level": 0,
+      "price": "5 sp",
+      "traits": []
+    },
+    {
+      "name": "Signal Whistle",
+      "quantity": 1,
+      "description": "<p>When sounded, a signal whistle can be heard clearly up to half a mile away across open terrain.</p>",
+      "level": 0,
+      "price": "8 cp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Trained Animal",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The equestrian constable rides a trained mount of their level or lower, usually a War Horse or, for elite equestrian constables, a Veteran War Horse. The animal has the standard number of actions, uses its normal stat block, and counts toward the encounter's XP budget normally.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 60,
+    "max": 60,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Opportune Maneuver",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within 10 feet uses an action with the move trait or leaves a space within the constable's reach during its move action</p><hr /><p><strong>Effect</strong> The constable attempts to Trip the triggering creature. On a success, the triggering action is disrupted.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Guisarme",
+      "bonus": 14,
+      "traits": [
+        "reach-10",
+        "trip"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+8",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+8)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "knockdown"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+8)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Crossbow",
+      "bonus": 11,
+      "traits": [
+        "range-increment-120",
+        "reload-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Vigilant Vantage",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The equestrian constable Seeks or Points Out a target. They can Interact to draw an item or Command an Animal to approach or attack the target.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 19"
+}

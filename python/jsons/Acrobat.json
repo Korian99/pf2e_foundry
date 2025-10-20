@@ -1,0 +1,290 @@
+{
+  "initiative": 0,
+  "initiativebonus": 6,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Acrobat",
+  "type": "Creature",
+  "level": 2,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "performance",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "Circus Lore",
+      "modifier": 5,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [
+    {
+      "name": "Dagger",
+      "quantity": 5,
+      "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
+      "level": 0,
+      "price": "2 sp",
+      "traits": [
+        "agile",
+        "finesse",
+        "thrown-10",
+        "versatile-s"
+      ]
+    },
+    {
+      "name": "Climbing Kit",
+      "quantity": 1,
+      "description": "<p>This satchel includes 50 feet of rope, pulleys, a dozen pitons, a hammer, a grappling hook, and one set of crampons. Climbing kits allow you to attach yourself to the wall you're Climbing, moving half as quickly as usual (minimum 5 feet) but letting you attempt a @Check[flat|dc:5] whenever you critically fail to prevent a fall. A single kit has only enough materials for one climber; each climber needs their own kit. If you wear your climbing kit, you can access it as part of a Climb action.</p>",
+      "level": 0,
+      "price": "5 sp",
+      "traits": []
+    },
+    {
+      "name": "Rope",
+      "quantity": 1,
+      "description": "<p>50 feet of rope.</p>",
+      "level": 0,
+      "price": "5 sp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Acrobatic Specialist",
+      "actions": null,
+      "traits": [],
+      "description": "<p>For encounters involving contests of acrobatics and similar activities, the acrobat is a 5th-level challenge.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Steady Balance",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When the acrobat rolls a success on an Acrobatics check, they get a critical success instead.</p>\n<p>They aren't Off-Guard when attempting to Balance and can attempt an Acrobatics check instead of a Reflex save to Grab an Edge.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 4,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 30,
+    "max": 30,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Cat Fall",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The acrobat treats all falls as 25 feet shorter.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Nimble Dodge",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The acrobat is targeted with a melee or ranged attack by an attacker they can see</p><hr /><p><strong>Effect</strong> The acrobat gains a +2 circumstance bonus to AC against the triggering attack.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Dagger",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Foot",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+4)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Dagger",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "thrown-10",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Sneak Attack",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The acrobat deals an extra 1d6 precision damage to Off-Guard creatures.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swinging Strike",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The acrobat swings on a rope or trapeze, moving up to double their Speed. At any point during the swing, they can make a melee Strike.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 16"
+}

@@ -1,0 +1,536 @@
+{
+  "initiative": 0,
+  "initiativebonus": 15,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Aesra",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Common",
+    "Medium",
+    "Archon",
+    "Celestial",
+    "Holy"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 15,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Diabolic",
+    "Draconic",
+    "Empyrean",
+    "Utopian",
+    "Truespeech"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "arcana",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [
+    {
+      "name": "Full Plate",
+      "quantity": 1,
+      "description": "<p>Plate mail consists of interlocking plates that encase nearly the entire body in a carapace of steel. It is costly and heavy, and the wearer often requires help to don it correctly, but it provides some of the best defense armor can supply. A suit of this armor comes with an undercoat of @UUID[Compendium.pf2e.equipment-srd.Item.Padded Armor] and a pair of @UUID[Compendium.pf2e.equipment-srd.Item.Gauntlet]{gauntlets}.</p>",
+      "level": 2,
+      "price": "30 gp",
+      "traits": [
+        "bulwark"
+      ]
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "At-Will Spells",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>The monster can cast its at-will spells any number of times without using up spell slots.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 27,
+    "note": "all-around vision",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+1 status to all saves vs. magic",
+  "hp": {
+    "value": 100,
+    "max": 100,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "fear-effects"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "fire",
+      "value": 15
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "unholy",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "All-Around Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster can see in all directions simultaneously and therefore can't be flanked.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Archon's Protection",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> An enemy damages the archon's ally and both are within 15 feet of the archon</p>\n<hr />\n<p><strong>Effect</strong> The ally gains resistance 10 to all damage against the triggering damage and the archon can make a Strike against the enemy.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, fly 60ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Flame of Justice",
+      "bonus": 18,
+      "traits": [
+        "holy",
+        "magical",
+        "versatile-p"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "fire"
+        },
+        {
+          "roll": "2d10+5",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(2d10+5)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "flame-of-justice"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Flame of Justice",
+      "bonus": 15,
+      "traits": [
+        "holy",
+        "magical",
+        "range-increment-30",
+        "versatile-p"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "fire"
+        },
+        {
+          "roll": "2d10+5",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(2d10+5)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "flame-of-justice"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Flame of Justice",
+      "actions": null,
+      "traits": [
+        "divine",
+        "holy"
+      ],
+      "description": "<p>An aesra's spirit of righteousness manifests as a two-handed sword of fire. If disarmed or thrown as a ranged weapon, the flame of justice vanishes after landing or dealing damage and reappears in the aesra's hands again instantly. On a critical hit, the target also takes 2d6 Persistent,fire Damage damage.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Flaming Slash",
+      "actions": 2,
+      "traits": [
+        "divine",
+        "fire",
+        "holy",
+        "manipulate"
+      ],
+      "description": "<p>The aesra sweeps their sword, creating a 15ft Cone of sacred flame that deals 5d6 Fire Damage damage with a Basic DC 23 Reflex Saving Throw save.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Maintain Formation",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When an aesra casts Translocate, they can bring an adjacent willing archon along with them. That archon appears in an empty space adjacent to the aesra's new space.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Divine Innate Spells",
+      "type": "innate",
+      "bonus": 16,
+      "dc": 24,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 5,
+      "cantrips": [
+        {
+          "name": "Light",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "light",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "until your next daily preparations",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "RTOvdE2FtflyR9Z1"
+        },
+        {
+          "name": "Message",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "auditory",
+            "concentrate",
+            "illusion",
+            "linguistic",
+            "mental",
+            "subtle"
+          ],
+          "castingTime": "1",
+          "duration": "see below",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You mouth words quietly, but instead of coming out of your mouth, they're transferred directly to the ears of the target. While others can't hear your words any better than if you normally mouthed them, the target can hear your words as if they were standing next to you. The target can give a brief response as a reaction, or as a free action on their next turn if they wish, but they must be able to see you and be within range to do so. If they respond, their response is delivered directly to your ear, just like the original message.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The spell's range increases to 500 feet.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "dXLMVNwPYVlFMSRf"
+        }
+      ],
+      "lv1spells": [
+        {
+          "name": "Sure Strike",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "fortune"
+          ],
+          "castingTime": "1",
+          "duration": "until the end of your turn",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>A glimpse into the future ensures your next blow strikes true. The next time you make an attack roll before the end of your turn, roll the attack twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "DC0PJ3VOreLLJwNW"
+        },
+        {
+          "name": "Sure Strike",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "fortune"
+          ],
+          "castingTime": "1",
+          "duration": "until the end of your turn",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>A glimpse into the future ensures your next blow strikes true. The next time you make an attack roll before the end of your turn, roll the attack twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "DC0PJ3VOreLLJwNW"
+        },
+        {
+          "name": "Sure Strike",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "fortune"
+          ],
+          "castingTime": "1",
+          "duration": "until the end of your turn",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>A glimpse into the future ensures your next blow strikes true. The next time you make an attack roll before the end of your turn, roll the attack twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "DC0PJ3VOreLLJwNW"
+        }
+      ],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [
+        {
+          "name": "Translocate (At Will)",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "vHFwV3PukgrPZlmL"
+        }
+      ],
+      "lv5spells": [
+        {
+          "name": "Truespeech (Constant)",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "VPVXtdK9ufc7gkvQ"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Religion, DC 23"
+}

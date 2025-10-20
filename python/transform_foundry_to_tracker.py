@@ -1,5 +1,6 @@
 from dicts import skills, excluded_abilities, actions_type, dc_by_level, skill_by_tradition, saving_throws
 from regex import clean_uuid, simplify_uuid
+#TODO CHECK MODIFICATIONS
 
 def get_spellcasting(items):
     traditions = []
@@ -103,7 +104,6 @@ def get_spellcasting(items):
                  "description": clean_uuid(item_detail["description"]["value"]),
                  "cast": False,
                  "cost": item_detail["cost"]["value"],
-                 # TODO RITUAL
                  "primaryCheck": primaryCheck if ritual else "",
                  "secondaryCasters":  secondaryCasters if ritual else "",
                  "secondaryChecks":  secondaryCheck if ritual else "",
@@ -152,7 +152,6 @@ def get_spellcasting(items):
 
 
 def get_abilities(items, ability_type):
-    # TODO CHECK
     def should_include(item):
         name = item["name"].lower()
         return all(excluded.lower() not in name for excluded in excluded_abilities)
@@ -222,7 +221,6 @@ def get_common_0(npc, foundry_json, npc_type, lores=[]):
 def get_common_1(npc, foundry_json):
     sys = foundry_json["system"]
     attributes = sys["attributes"]
-    # TODO CHECK SPECIAL
     npc["items"] = [
         {
             "name": item["name"],
@@ -238,7 +236,6 @@ def get_common_1(npc, foundry_json):
 
     npc["generalAbilities"] = get_abilities(foundry_json["items"], None)
 
-    # AC and Saves #TODO CHECK SPECIAL CASES LIKE ANIMATED SWORD or similar
     npc["ac"] = {"value": attributes["ac"]["value"],
                  "note": attributes["ac"].get("details"), "usedAttribute": "dexterity", "modifications": []}
     if attributes.get("hardness", None):
@@ -292,11 +289,9 @@ def get_common_1(npc, foundry_json):
                                 for d in item["system"]["damageRolls"].values()],
                 "critRolls": [{"roll": f"({d['damage']})*2", "type": f"{d.get('category','')+' ' if d.get('category', None) else ''}" + d["damageType"]}
                               for d in item["system"]["damageRolls"].values()],
-                # TODO WHAT IS THIS
                 "effects": item["system"]["attackEffects"]["value"],
                 "usedAttributeToHit": "strength" if range_attack == "melee" and not "finesse" in item["system"]["traits"]["value"] else "dexterity",
                 "usedAttributeDamage": "strength",
-                # TODO CHECK THIS
                 "toHitModifications": [],
                 "damageModifications": []
             }
@@ -305,7 +300,6 @@ def get_common_1(npc, foundry_json):
     npc["offensiveAbilities"] = get_abilities(
         foundry_json["items"], "offensive")
 
-    # TODO IMPROVE
     npc["spellcastingEntries"] = get_spellcasting(foundry_json["items"])
 
     traits = [t.capitalize() for t in sys["traits"]["value"]]
@@ -345,7 +339,6 @@ def npc_data(foundry_json):
         "modifier": item["system"]["mod"]["value"],
         "note": "",
         "usedAttribute": "intelligence",
-        # TODO SEE IF ANYTHING ELSE
         "modifications": []
     }
         for item in foundry_json["items"]
@@ -366,7 +359,6 @@ def npc_data(foundry_json):
         note.append(sys["perception"]["details"])
     npc["perception"] = {
         "value": sys["perception"]["mod"],
-        # TODO CHECK THIS
         "note": ", ".join(note),
         "usedAttribute": "wisdom",
         "modifications": []
@@ -392,7 +384,6 @@ def npc_data(foundry_json):
             "modifier": data["base"],
             "note": get_special(data),
             "usedAttribute": attr,
-            # TODO SEE IF ANYTHING ELSE
             "modifications": []
         }
         for name, data in sys.get("skills", {}).items()

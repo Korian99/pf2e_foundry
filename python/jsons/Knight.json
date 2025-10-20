@@ -1,0 +1,307 @@
+{
+  "initiative": 0,
+  "initiativebonus": 13,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Knight",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "society",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "Warfare Lore",
+      "modifier": 15,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [
+    {
+      "name": "Bastard Sword",
+      "quantity": 1,
+      "description": "<p>This broad-bladed sword, sometimes called the hand-and-a-half sword, has a longer grip so it can be held in one hand or used with two hands to provide extra slashing power.</p>",
+      "level": 0,
+      "price": "4 gp",
+      "traits": [
+        "two-hand-d12"
+      ]
+    },
+    {
+      "name": "Spear",
+      "quantity": 3,
+      "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>",
+      "level": 0,
+      "price": "1 sp",
+      "traits": [
+        "monk",
+        "thrown-20"
+      ]
+    },
+    {
+      "name": "Full Plate (with Livery)",
+      "quantity": 1,
+      "description": "<p>Plate mail consists of interlocking plates that encase nearly the entire body in a carapace of steel. It is costly and heavy, and the wearer often requires help to don it correctly, but it provides some of the best defense armor can supply. A suit of this armor comes with an undercoat of @UUID[Compendium.pf2e.equipment-srd.Item.Padded Armor] and a pair of @UUID[Compendium.pf2e.equipment-srd.Item.Gauntlet]{gauntlets}.</p>",
+      "level": 2,
+      "price": "30 gp",
+      "traits": [
+        "bulwark"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 25,
+    "note": "(27 with shield raised)",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 110,
+    "max": 110,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Knight's Courage",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Any time the knight gains the Frightened condition, they reduce its value by 1.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Shield Block",
+      "actions": -1,
+      "traits": [],
+      "description": "<p>The knight can Shield Block for an adjacent ally, preventing that ally from taking damage instead of themself.</p><hr /><p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> The monster has its shield raised and takes damage from a physical attack.</p>\n<hr />\n<p><strong>Effect</strong> The monster snaps its shield into place to deflect a blow. The shield prevents the monster from taking an amount of damage up to the shield's Hardness. The monster and the shield each take any remaining damage, possibly breaking or destroying the shield.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Bastard Sword",
+      "bonus": 18,
+      "traits": [
+        "magical",
+        "two-hand-d12"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+10",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+10)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Spear",
+      "bonus": 17,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d6+10",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+10)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Spear",
+      "bonus": 17,
+      "traits": [
+        "thrown-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+10",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+10)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Gauntlet",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "free-hand"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+10)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Intimidating Strike",
+      "actions": 2,
+      "traits": [
+        "emotion",
+        "fear",
+        "fighter",
+        "mental"
+      ],
+      "description": "<p>The knight makes a melee Strike. If it hits and deals damage, the target is Frightened 1, or Frightened 2 on a critical hit.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rearming Advance",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The knight Strides or Steps. During this movement, they can Interact to swap from wielding their bastard sword in two hands to wielding it in one hand and wielding their shield in the other, or vice versa. This Interact action doesn't trigger reactions that can be triggered by manipulate actions.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Warding Shift",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The knight is adjacent to a willing ally</p><hr /><p><strong>Effect</strong> The knight moves an adjacent willing ally 5 feet in any direction and can Step into the space the ally vacated.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 23"
+}

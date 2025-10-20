@@ -1,0 +1,267 @@
+{
+  "initiative": 0,
+  "initiativebonus": 9,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Werewolf",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Common",
+    "Medium",
+    "Beast",
+    "Human",
+    "Humanoid",
+    "Werecreature"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Low light vision",
+    "Scent 30ft imprecise"
+  ],
+  "perception": {
+    "value": 9,
+    "note": "Low light vision, Scent 30ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Wolf Empathy"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [
+    {
+      "name": "Battle Axe",
+      "quantity": 1,
+      "description": "<p>These axes are designed explicitly as weapons, rather than tools. They typically weigh less, with a shaft reinforced with metal bands or bolts, and have a sharper blade, making them ideal for chopping limbs rather than wood.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": [
+        "sweep"
+      ]
+    },
+    {
+      "name": "Composite Shortbow",
+      "quantity": 1,
+      "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>",
+      "level": 0,
+      "price": "14 gp",
+      "traits": [
+        "deadly-d10",
+        "propulsive"
+      ]
+    },
+    {
+      "name": "Studded Leather Armor",
+      "quantity": 1,
+      "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>",
+      "level": 0,
+      "price": "3 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Wolf Empathy",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The werewolf can communicate with canine creatures.</p>\n<hr />\n<p>The werecreature can ask questions of, receive answers from, and use the Diplomacy skill with animals of its general kind.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 63,
+    "max": 63,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "silver",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Battle Axe",
+      "bonus": 11,
+      "traits": [
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+8",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+8)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Composite Shortbow",
+      "bonus": 9,
+      "traits": [
+        "deadly-d10",
+        "range-increment-60",
+        "reload-0"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Change Shape",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "polymorph",
+        "primal"
+      ],
+      "description": "<ul>\n<li><strong>Human</strong>\n<ul>\n<li><strong>Melee</strong> fist +11 <strong>Damage</strong> 1d4+8</li>\n</ul>\n</li>\n<li><strong>Animal</strong>\n<ul>\n<li><strong>Speed</strong> 40 feet</li>\n<li><strong>Melee</strong> jaws with Knockdown</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>The werecreature changes into its humanoid, hybrid, or animal shape. Each shape has a specific, persistent appearance. A true werecreature's natural form is its hybrid shape.</p>\n<p>In humanoid shape, the werecreature uses its original humanoid size, loses its jaws and claws Strikes, and gains a melee fist Strike that deals bludgeoning damage equal to the slashing damage dealt by its claw.</p>\n<p>In animal shape, its Speed and size change to that of the animal, it gains any special Strike effects of the animal that it didn't already have (such as Grab), and it loses its weapon Strikes.</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster changes its shape indefinitely. It can use this action again to return to its natural shape or adopt a new shape. Unless otherwise noted, a monster cannot use Change Shape to appear as a specific individual. Using Change Shape counts as creating a disguise for the Impersonate use of Deception. The monster's transformation automatically defeats Perception DCs to determine whether the creature is a member of the ancestry or creature type into which it transformed, and it gains a +4 status bonus to its Deception DC to prevent others from seeing through its disguise. Change Shape abilities specify what shapes the monster can adopt. The monster doesn't gain any special abilities of the new shape, only its physical form. For example, in each shape, it replaces its normal Speeds and Strikes, and might potentially change its senses or size. Any changes are listed in its stat block.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Curse of the Werewolf",
+      "actions": null,
+      "traits": [
+        "curse",
+        "primal"
+      ],
+      "description": "<p>This curse affects only humanoids.</p>\n<hr />\n<p><strong>Saving Throw</strong> DC 17 Fortitude Saving Throw</p>\n<p>On each full moon, the cursed creature must succeed at another Fortitude save or turn into the same kind of werecreature until dawn.</p>\n<p>The creature is under the GM's control and goes on a rampage for half the night before falling unconscious until dawn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Moon Frenzy",
+      "actions": null,
+      "traits": [
+        "polymorph",
+        "primal"
+      ],
+      "description": "<p>When a full moon appears in the night sky, the werecreature must enter hybrid form, can't Change Shape thereafter, becomes one size larger, increases its reach by 5 feet, and increases the damage of its jaws by 2.</p>\n<p>When the moon sets or the sun rises, the werecreature returns to humanoid form and is Fatigued for 2d4 hours.</p>\n<p>Effect: Moon Frenzy</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Pack Attack",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The werewolf's Strikes deal 1d6 extra damage to creatures within reach of at least two of the werewolf's allies.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Knockdown (Animal Shape)",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Trip the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature or Society, DC 18"
+}

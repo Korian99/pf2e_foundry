@@ -1,0 +1,296 @@
+{
+  "initiative": 0,
+  "initiativebonus": 8,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Driver",
+  "type": "Creature",
+  "level": 2,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "Driving Lore",
+      "modifier": 8,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "Engineering Lore",
+      "modifier": 8,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "Piloting Lore",
+      "modifier": 8,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [
+    {
+      "name": "Hand Crossbow",
+      "quantity": 1,
+      "description": "<p>Sometimes referred to as an alley bow by rogues or ruffians, this small crossbow fires small bolts that are sometimes used to deliver poison to the target. It's small enough to be shot one-handed, but it still requires two hands to load.</p>",
+      "level": 0,
+      "price": "3 gp",
+      "traits": []
+    },
+    {
+      "name": "Leather Armor",
+      "quantity": 1,
+      "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": []
+    },
+    {
+      "name": "Crowbar",
+      "quantity": 1,
+      "description": "<p>When Forcing Open an object that doesn't have an easy grip, a crowbar makes it easier to gain the necessary leverage. Without a crowbar, prying something open takes a -2 item penalty to the Athletics check to Force Open.</p>",
+      "level": 0,
+      "price": "5 sp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Driving Specialist",
+      "actions": null,
+      "traits": [],
+      "description": "<p>For encounters involving driving, the driver is an 8th-level challenge.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Express Driver",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A driver can attempt a driving-lore check to increase a vehicle's travel Speed when calculating the value for a day. The DC is determined by the GM but is typically based on the vehicle's piloting DC or the difficulty of traversing the environment, whichever is harder. On a success, increase the vehicle's travel Speed by half.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Skilled Driver",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The driver gains a +10 circumstance bonus to any skill check involved in driving a vehicle, and is considered a master in the skill for such checks. This bonus also applies to any initiative roll while the driver is piloting a vehicle.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 18,
+    "note": "+6 status to all defenses while driving",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+6 status to all defenses while driving",
+  "hp": {
+    "value": 28,
+    "max": 28,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "+6 Status to All Defenses While Driving",
+      "actions": null,
+      "traits": [],
+      "description": "",
+      "collapsed": false
+    },
+    {
+      "name": "Vehicle Block",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The driver is driving a vehicle</p>\n<p><strong>Trigger</strong> The driver would take damage from an attack or from a damaging effect that requires a Reflex save</p><hr /><p><strong>Effect</strong> With swift steering, the driver puts the bulk of the vehicle in between themself and the problem, causing the vehicle to take the damage instead of the driver.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Crowbar",
+      "bonus": 7,
+      "traits": [
+        "fatal-d10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+3)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+3)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Hand Crossbow",
+      "bonus": 10,
+      "traits": [
+        "range-increment-60",
+        "reload-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+2",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+2)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Sideswipe",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The driver is taking a Drive action with a vehicle and moves the vehicle adjacent to a creature</p><hr /><p><strong>Effect</strong> All creatures adjacent to the vehicle take the vehicle's collision damage with a reflex|basic save against the vehicle's collision DC. The vehicle continues to move normally after the Sideswipe.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 16"
+}

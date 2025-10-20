@@ -1,0 +1,277 @@
+{
+  "initiative": 0,
+  "initiativebonus": 14,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Tengu Bladesmith",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Common",
+    "Medium",
+    "Humanoid",
+    "Tengu"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [
+    "Low light vision"
+  ],
+  "perception": {
+    "value": 14,
+    "note": "Low light vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Tengu",
+    "plus two others"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 16,
+      "note": [
+        "for blacksmithing 18"
+      ],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "Tengu Lore",
+      "modifier": 14,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [
+    {
+      "name": "Wakizashi",
+      "quantity": 1,
+      "description": "<p>This short-bladed, single-edged sword is typically carried as part of a pair alongside a @UUID[Compendium.pf2e.equipment-srd.Item.Katana].</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": [
+        "agile",
+        "deadly-d8",
+        "finesse",
+        "versatile-p"
+      ]
+    },
+    {
+      "name": "Katana",
+      "quantity": 1,
+      "description": "<p>A katana is a curved, single-edged sword known for its wickedly sharped blade.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": [
+        "deadly-d8",
+        "two-hand-d10",
+        "versatile-p"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 100,
+    "max": 100,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Cold Iron Wakizashi",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "cold-iron",
+        "deadly-d8",
+        "versatile-p"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+7",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+7)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Katana",
+      "bonus": 17,
+      "traits": [
+        "deadly-d8",
+        "magical",
+        "two-hand-d10",
+        "versatile-p"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+7",
+          "type": "slashing"
+        },
+        {
+          "roll": "1d4",
+          "type": "persistent bleed"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+7)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(1d4)*2",
+          "type": "persistent bleed"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Beak",
+      "bonus": 15,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+7",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+7)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Feinting Failure",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The tengu bladesmith's previous action this turn was a Strike that failed or critically failed</p><hr /><p><strong>Effect</strong> The tengu bladesmith Strikes the same target, who is Off-Guard against this attack. On a hit, the bladesmith deals 1d6 additional precision damage.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swirling Blade",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The tengu bladesmith Interacts to draw a weapon in the sword group, then attempts to Disarm a weapon held by a foe within reach. The weapon the tengu bladesmith draws gains the disarm trait for this attempt.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 22"
+}

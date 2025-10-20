@@ -1,0 +1,272 @@
+{
+  "initiative": 0,
+  "initiativebonus": 18,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Chaos Falcon",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Rare",
+    "huge",
+    "Air",
+    "Beast",
+    "Electricity",
+    "Fire",
+    "Water"
+  ],
+  "source": "Pathfinder Howl of the Wild",
+  "senses": [
+    "Darkvision",
+    "stormsight"
+  ],
+  "perception": {
+    "value": 18,
+    "note": "Darkvision, stormsight",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Sussuran"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 7
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 4
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Storm Bolt",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The chaos falcon's bolt Strike always deals the damage type of their storm nexus aura.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Stormsight",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Wind, precipitation, and clouds don't impair a chaos falcon's vision; they ignore the Concealed condition from storms, mist, precipitation, and the like.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 180,
+    "max": 180,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "fire",
+      "value": 10
+    },
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "electricity",
+      "value": 10
+    },
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "cold",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "25 ft, fly 50ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Beak",
+      "bonus": 21,
+      "traits": [
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+10",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+10)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Talon",
+      "bonus": 21,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+10",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+10)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Bolt",
+      "bonus": 23,
+      "traits": [
+        "range-120"
+      ],
+      "damageRolls": [
+        {
+          "roll": "6d6",
+          "type": "untyped"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(6d6)*2",
+          "type": "untyped"
+        }
+      ],
+      "effects": [
+        "storm-bolt"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Dive-bomb",
+      "actions": 2,
+      "traits": [
+        "earth",
+        "fire",
+        "primal"
+      ],
+      "description": "<p><strong>Requirements</strong> The chaos falcon is Flying</p>\n<hr />\n<p><strong>Effect</strong> The chaos falcon Flies twice straight down. If they reach the ground or a similarly solid object at the end of this movement, their landing shatters that surface into sharp shards and droplets of molten stone deal 4d6 Fire Damage|options:area-damage]{4d6 fire and 3d8 piercing} damage (Basic DC 26 Reflex Saving Throw save) to all other creatures within 20 feet.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Flash Storm",
+      "actions": 1,
+      "traits": [
+        "air",
+        "primal",
+        "water"
+      ],
+      "description": "<p>Water condenses around the ash particles in the chaos falcon's 15-foot aura, pelting everything beneath it with driving rain. Creatures in that area must succeed at a DC 26 Reflex Saving Throw save or be pushed 20 feet down, falling Prone if they start or end this movement on the ground.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Storm Nexus",
+      "actions": null,
+      "traits": [
+        "aura",
+        "primal"
+      ],
+      "description": "<p>15 feet, 3d6 Untyped Damage, Basic DC 26 Reflex Saving Throw save. The chaos falcon is surrounded by a cloud of volcanic ash, lightning arcing within the cloud as it glows hot in some areas and collects ice in others. A chaos falcon can change the damage type of this aura to cold, electricity, or fire as an action, which has the concentrate trait.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 27"
+}

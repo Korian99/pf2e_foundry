@@ -1,0 +1,249 @@
+{
+  "initiative": 0,
+  "initiativebonus": 11,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Noble",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "deception",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "society",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "Games Lore",
+      "modifier": 8,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [
+    {
+      "name": "Rapier",
+      "quantity": 1,
+      "description": "<p>The rapier is a long and thin piercing blade with a basket hilt. It is prized among many as a dueling weapon.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": [
+        "deadly-d8",
+        "disarm",
+        "finesse"
+      ]
+    },
+    {
+      "name": "Clothing (High-Fashion Fine)",
+      "quantity": 1,
+      "description": "<p>Fine clothing, suitable for a noble or royal, is made with expensive fabrics, precious metals, and intricate patterns. You gain a +1 item bonus to checks to Make an Impression on nobility or other upper-class folk while wearing high-fashion fine clothing.</p>",
+      "level": 3,
+      "price": "55 gp",
+      "traits": []
+    },
+    {
+      "name": "Silver Flask",
+      "quantity": 1,
+      "description": "",
+      "level": 0,
+      "price": "",
+      "traits": []
+    },
+    {
+      "name": "Signet Ring",
+      "quantity": 1,
+      "description": "",
+      "level": 0,
+      "price": "",
+      "traits": []
+    },
+    {
+      "name": "Loaded Dice",
+      "quantity": 1,
+      "description": "<p>These dice are weighted on one side to ensure they always land with the desired number facing up. Loaded dice grant you a +1 item bonus to Games Lore checks to gamble with the dice.</p>\n<p>A creature can determine a die is loaded while handling it with a successful secret @Check[perception|dc:20|traits:secret] check. Determining dice are loaded without handling the dice is more difficult, especially since smart cheaters switch loaded dice in and out so they don't suspiciously roll the same number over and over. In this case, an observer must succeed at a secret Perception check against the roller's Games Lore or Thievery DC to notice the switches or the patterns.</p><hr /><p>@Check[perception|defense:games-lore|traits:secret] (Games Lore DC)</p>\n<p>@Check[perception|defense:thievery|traits:secret] (Thievery DC)</p>",
+      "level": 1,
+      "price": "5 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Lip Reader",
+      "actions": null,
+      "traits": [],
+      "description": "<p>After years of sticking their nose where it doesn't belong, the noble has learned to read lips from afar. If they're trying to read lips in an encounter or attempting a difficult feat of lip reading, they are Fascinated and Off-Guard, and might need to succeed at a society check with a DC determined by the GM.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 50,
+    "max": 50,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Rapier",
+      "bonus": 10,
+      "traits": [
+        "deadly-d8",
+        "disarm",
+        "finesse"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+6",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+6)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+6)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Noble's Ruse",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> Once per round</p>\n<hr />\n<p><strong>Effect</strong> The noble Feints. On a success, the noble Strikes the target.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sneak Attack",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The noble deals an additional 1d6 precision damage to Off-Guard creatures.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 18"
+}

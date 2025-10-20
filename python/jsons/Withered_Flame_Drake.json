@@ -1,0 +1,246 @@
+{
+  "initiative": 0,
+  "initiativebonus": 12,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Withered Flame Drake",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Common",
+    "Large",
+    "Dragon",
+    "Elemental",
+    "Fire"
+  ],
+  "source": "Pathfinder #217: Death Sails a Wine-Dark Sea",
+  "senses": [
+    "Darkvision",
+    "Scent 30ft imprecise",
+    "smoke vision"
+  ],
+  "perception": {
+    "value": 12,
+    "note": "Darkvision, Scent 30ft imprecise, smoke vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Draconic"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 1
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Smoke Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Neither smoke nor the miasma impairs the drake's vision; it ignores concealment caused by these effects.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 75,
+    "max": 75,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "fire",
+    "paralyzed",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "poison",
+      "value": 5
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Miasma-Proof",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The drake is immune to damage caused by the miasma.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Strike (Fangs Only)",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, fly 50ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fangs",
+      "bonus": 14,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d8+5",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d6",
+          "type": "fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+5)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 14,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+5)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Draconic Frenzy",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The flame drake makes two Fangs Strikes and one Tail Strike in any order.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Fireball Breath",
+      "actions": 2,
+      "traits": [
+        "fire",
+        "primal"
+      ],
+      "description": "<p>The flame drake expels a ball of flame to a range of 180 feet that explodes in a 20ft Burst. Creatures in the burst take 6d6 Fire Damage damage (Basic DC 22 Reflex Saving Throw save).</p>\n<p>The flame drake can't use Fireball Breath again for 1d6 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Speed Surge",
+      "actions": 1,
+      "traits": [
+        "move"
+      ],
+      "description": "<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> The flame drake Strides or Flies twice.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Arcana or Nature, DC 20"
+}

@@ -1,0 +1,880 @@
+{
+  "initiative": 0,
+  "initiativebonus": 22,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Vicharamuni",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Beast",
+    "Holy"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 22,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Empyrean"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "Heaven Lore",
+      "modifier": 21,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 3
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 31,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 175,
+    "max": 175,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "25 ft, swim 25ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fangs",
+      "bonus": 22,
+      "traits": [
+        "finesse",
+        "holy",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+8",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+8)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "vicharamuni-venom"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 22,
+      "traits": [
+        "agile",
+        "finesse",
+        "holy",
+        "reach-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+8)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "coils-of-knowledge"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Spit",
+      "bonus": 22,
+      "traits": [
+        "agile",
+        "holy",
+        "poison",
+        "range-increment-30"
+      ],
+      "damageRolls": [],
+      "critRolls": [],
+      "effects": [
+        "vicharamuni-venom"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Coils of Knowledge",
+      "actions": null,
+      "traits": [
+        "force",
+        "magical"
+      ],
+      "description": "<p>The naga's grip is more spiritual than physical. A creature hit by a vicharamuni's tail must succeed at a DC 29 Will Saving Throw save or become Grabbed by the tail until they Escape, the naga releases them with an Interact action, or the naga dies.</p>\n<p>A captive takes a –4 status penalty to Escape, but can choose to attempt an Occultism or Religion check to Escape instead of the usual options without taking this penalty</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Greater Constrict",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>(3d8+5) Bludgeoning Damage, Basic DC 29 Fortitude Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC. A creature that fails this save falls Unconscious, and a creature that succeeds is then temporarily immune to falling unconscious from Greater Constrict for 1 minute.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spiritual Venom",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A vicharamuni can choose to negate any damage that its venom does to a creature. In addition, the naga can cast any of its divine spells on a creature that is affected by its venom, regardless of range or line of effect.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Vicharamuni Venom",
+      "actions": null,
+      "traits": [
+        "divine",
+        "holy",
+        "mental",
+        "poison",
+        "spirit"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 29 Will Saving Throw</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 3d6 Spirit Damage (1 round)</p>\n<p><strong>Stage 2</strong> 3d6 spirit and Drained 1 (1 round)</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Divine Spontaneous Spells",
+      "type": "spontaneous",
+      "bonus": 21,
+      "dc": 29,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 5,
+      "cantrips": [
+        {
+          "name": "Daze",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental",
+            "nonlethal"
+          ],
+          "castingTime": "2",
+          "duration": "1 round",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "Basic will",
+          "description": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals 1d6 mental damage, with a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "L8p2I3DyL4mj22PP"
+        },
+        {
+          "name": "Detect Magic",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft emanation",
+          "targets": "",
+          "save": "",
+          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "DrAEqW9jh9MjalcG"
+        },
+        {
+          "name": "Frostbite",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "cold",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "Basic fortitude",
+          "description": "<p>An orb of biting cold coalesces around your target, freezing its body. The target takes 2d4 cold damage with a basic Fortitude save. On a critical failure, the target also gains weakness 1 to bludgeoning until the start of your next turn.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4 and the weakness on a critical failure increases by 1.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "UsG9xjLywCVgRi6P"
+        },
+        {
+          "name": "Light",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "light",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "until your next daily preparations",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "1s74v0PrPWkQjc4k"
+        },
+        {
+          "name": "Read Aura",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "1 minute",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 object",
+          "save": "",
+          "description": "<p>You focus on the target object, opening your mind to perceive magical auras. When the casting is complete, you know whether that item is magical. You or anyone you advise about the aura gains a +2 circumstance bonus to Identify Magic on the item. If the object is illusory, you detect this only if the effect's rank is lower than the rank of your <em>read aura</em> spell.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to 10 objects.</p>\n<p><strong>Heightened (6th)</strong> You can target any number of objects.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "tOGfOPotfNSVeuwE"
+        },
+        {
+          "name": "Stabilize",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "healing",
+            "manipulate",
+            "vitality"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 dying creature",
+          "save": "",
+          "description": "<p>Life energy shuts death's door. The target loses the Dying condition, though it remains Unconscious at 0 Hit Points.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "H8UrMhEEO7C8DlFw"
+        },
+        {
+          "name": "Telekinetic Hand",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to ",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 unattended object of light Bulk or less",
+          "save": "",
+          "description": "<p>You create a floating, magical hand, either invisible or ghostlike, that grasps the target object and levitates it slowly up to 20 feet in any direction. When you Sustain the spell, you can move the object an additional 20 feet. If the object is in the air when the spell ends, the object falls.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (5th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (7th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 2 or less.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "xzjvsW6jeC2diT0s"
+        }
+      ],
+      "lv1spells": [
+        {
+          "name": "Heal",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "healing",
+            "manipulate",
+            "vitality"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 willing living creature or 1 undead",
+          "save": "Basic fortitude",
+          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse vital energy in a 30ft Emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "jqmsQPJYfyyNULBE"
+        },
+        {
+          "name": "Protection",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>You ward a creature against harm. The target gains a +1 status bonus to Armor Class and saving throws.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can choose to have the benefits also affect all your allies in a 10ft Emanation around the target.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "qTzzxLKKkGwwW8fO"
+        },
+        {
+          "name": "Spirit Link",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "healing",
+            "manipulate",
+            "spirit"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>You form a spiritual link with another creature, taking in its pain. When you Cast this Spell and at the start of each of your turns, if the target is below maximum Hit Points, it regains 2 Hit Points (or the difference between its current and maximum Hit Points, if that's lower). You lose as many Hit Points as the target regained.</p>\n<p>This is a spiritual transfer, so no effects apply that would increase the Hit Points the target regains or decrease the Hit Points you lose. This transfer also ignores any temporary Hit Points you or the target have. Since this effect doesn't involve vitality or void energy, <em>spirit link</em> works even if you or the target is undead. While the duration persists, you gain no benefit from regeneration or fast healing. You can Dismiss this spell, and if you're ever at 0 Hit Points, <em>spirit link</em> ends automatically.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The number of Hit Points transferred each time increases by 2.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "mrK9SLn65iFzQc6f"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Calm",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "emotion",
+            "incapacitation",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to 1 minute",
+          "range": "120 feet",
+          "area": "10ft burst",
+          "targets": "",
+          "save": "will",
+          "description": "<p>You forcibly calm creatures in the area, soothing them into a nonviolent state; each creature must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> Calming urges impose a -1 status penalty to the creature's attack rolls.</p>\n<p><strong>Failure</strong> Any emotion effects that would affect the creature are suppressed and the creature can't use hostile actions. If the target is subject to hostility from any other creature, it ceases to be affected by <em>calm</em>.</p>\n<p><strong>Critical Failure</strong> As failure, but hostility doesn't end the effect.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "rAupeLduIhILcCGi"
+        },
+        {
+          "name": "Noise Blast",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "sonic"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "10ft burst",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>A cacophonous noise blasts out, dealing 2d10 sonic damage. Each creature must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Deafened for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is deafened for 1 minute, and is Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Vd1Qjk2eDuAhruEa"
+        },
+        {
+          "name": "See the Unseen",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "revelation"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>Your gaze pierces through illusions and finds Invisible creatures and spirits. You can see invisible creatures as though they weren't invisible, although their features are blurred, making them Concealed and difficult to identify. You can also see incorporeal creatures, like ghosts, phased through an object from within 10 feet of an object's surface as blurry shapes seen through those objects. Subtler clues also grant you a +2 status bonus to checks you make to disbelieve illusions.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> This spell has a duration of 8 hours.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "OLgGq9stdStfrG4N"
+        }
+      ],
+      "lv3spells": [
+        {
+          "name": "Crisis of Faith",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You assault the target's faith, riddling the creature with doubt and mental turmoil that deal 6d6 mental damage, or 6d8 mental damage if it can cast divine spells. The effects are determined by its Will save.</p>\n<p>To many deities, casting this spell on a follower of your own deity without significant cause is anathema.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage; if the target can cast divine spells, it's Stupefied 1 for 1 round.</p>\n<p><strong>Critical Failure</strong> The target takes double damage, is Stupefied 1 for 1 round, and can't cast divine spells for 1 round.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6 (or by 2d8 if the target is a divine spellcaster).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "SWO3RGlG0J6nqxZU"
+        },
+        {
+          "name": "Holy Light",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "fire",
+            "holy",
+            "light",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You shine a blazing ray of light tinged with holy energy. Make a ranged spell attack. The ray deals 5d6 fire damage. If the target has the unholy trait, you deal an extra 5d6 spirit damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p>\n<p>If the light passes through an area of magical darkness or targets a creature affected by magical darkness, holy light attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by 2d6, and the spirit damage against unholy creatures increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "s4sz5RlGYARbb7Za"
+        },
+        {
+          "name": "Mind Reading",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to 1 round or sustained up to 1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>With a cursory mental touch, you attempt to read the target's mind. It must attempt a Will save. The target then becomes temporarily immune to your mind reading for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The target perceives vague surface thoughts from you when you Cast the Spell.</p>\n<p><strong>Success</strong> You find out whether the target's Intelligence modifier is higher than, equal to, or lower than yours.</p>\n<p><strong>Failure</strong> You perceive vague surface thoughts from the target when you Cast the Spell, and you find out whether its Intelligence is higher than, equal to, or lower than yours.</p>\n<p><strong>Critical Failure</strong> As failure, and for the duration of the spell, you can Sustain the spell to detect the target's surface thoughts again. The target doesn't receive any additional saves.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "0HYwHlx3Y8go66EA"
+        }
+      ],
+      "lv4spells": [
+        {
+          "name": "Cleanse Affliction",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "healing",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>Gentle restorative magic pushes back the effects of toxins and more complex maladies. Choose an affliction on the target, such as a curse, disease, or poison. If it has advanced past stage one, reduce the stage by one. This reduction can be applied only once to a given case of an affliction, with the case ending when it's completely cured. Although the reduction can't occur again, heightened versions of this spell attempt to counteract with each casting.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> Attempt to counteract the affliction if it is a disease or poison.</p>\n<p><strong>Heightened (4th)</strong> Attempt to counteract the affliction if it is a curse, disease, or poison.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "QCLwwtIc7wphZLzu"
+        },
+        {
+          "name": "Lightning Bolt",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "electricity",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "120ft line",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>A bolt of lightning strikes outward from your hand, dealing 4d12 electricity damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "bBog1oMTMXVxDNrM"
+        },
+        {
+          "name": "Fly",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "5 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can soar through the air, gaining a fly Speed equal to its Speed or 20 feet, whichever is greater.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration increases to 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "aGfQpIAk1rBIfUOg"
+        }
+      ],
+      "lv5spells": [
+        {
+          "name": "Dispel Magic",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "qWAFcy0QQVQ1Sb1G"
+        },
+        {
+          "name": "Breath of Life",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "healing",
+            "vitality"
+          ],
+          "castingTime": "reaction",
+          "duration": "",
+          "range": "60 feet",
+          "area": "",
+          "targets": "the triggering creature",
+          "save": "",
+          "description": "<p><strong>Trigger</strong> A living creature within range would die.</p>\n<hr />\n<p>Your blessing revives a creature at the moment of its death. You prevent the target from dying and restore 5d8 Hit Points to the target. You can't use breath of life if the triggering effect was a death effect or an effect that leaves no remains, such as Disintegrate</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The healing increases by 1d8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "yM5ey9fKxfZOB3PR"
+        },
+        {
+          "name": "Divine Immolation",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "fire",
+            "manipulate",
+            "sanctified",
+            "spirit"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>Divine flames scour creatures within the area. Creatures take 6d6 fire damage and (@item.level -3)d6 Persistent,fire Damage damage. The divine power within the flames scorches the spirit as well; a creature takes spirit damage instead of fire damage from divine immolation if that would be more detrimental to the creature (as determined by the GM).</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and no persistent damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and persistent damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and double persistent damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6 and persistent damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "KGlP6qWH05EldiDI"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 4,
+        "max": 4
+      },
+      "lv2slots": {
+        "current": 4,
+        "max": 4
+      },
+      "lv3slots": {
+        "current": 4,
+        "max": 4
+      },
+      "lv4slots": {
+        "current": 4,
+        "max": 4
+      },
+      "lv5slots": {
+        "current": 4,
+        "max": 4
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Arcana or Nature, DC 27"
+}

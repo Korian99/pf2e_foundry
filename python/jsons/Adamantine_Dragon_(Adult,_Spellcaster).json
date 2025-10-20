@@ -1,0 +1,965 @@
+{
+  "initiative": 0,
+  "initiativebonus": 23,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Adamantine Dragon (Adult, Spellcaster)",
+  "type": "Creature",
+  "level": 13,
+  "traits": [
+    "Common",
+    "huge",
+    "Dragon",
+    "Primal"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision",
+    "Scent 60ft imprecise",
+    "Tremorsense 90ft imprecise"
+  ],
+  "perception": {
+    "value": 23,
+    "note": "Darkvision, Scent 60ft imprecise, Tremorsense 90ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Petran",
+    "Fey",
+    "Sakvroth"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "Mining Lore",
+      "modifier": 24,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 8
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": 3
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+2 status to all saves vs primal",
+  "hp": {
+    "value": 220,
+    "max": 220,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "paralyzed",
+    "petrified",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Abandon Armor",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Once the adamantine dragon is reduced to fewer than half their Hit Points, their resistance is reduced by 10 and they gain a +10 circumstance bonus to their Speeds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Frightful Presence",
+      "actions": null,
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>90 feet DC 30 Will Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>A creature that first enters the area must attempt a Will save.</p>\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to this monster's Frightful Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by the presence.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 4.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Resilient Form",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The dragon is critically hit with a weapon or unarmed attack;</p>\n<hr />\n<p><strong>Effect</strong> The dragon's tough scales ward off deadly attacks. The dragon attempts a DC 17 Flat . On a success, the triggering attack becomes a normal hit.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, burrow 40ft, fly 150ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 27,
+      "traits": [
+        "magical",
+        "reach-15",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d12+14",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+14)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 27,
+      "traits": [
+        "agile",
+        "magical",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+14",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+14)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "knockdown"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 25,
+      "traits": [
+        "magical",
+        "reach-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+14",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+14)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Rock",
+      "bonus": 25,
+      "traits": [
+        "brutal",
+        "range-increment-120"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+14",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+14)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Adamantine Body",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The dragon's unarmed melee Strikes are adamantine.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Avalanche Breath",
+      "actions": 2,
+      "traits": [
+        "primal"
+      ],
+      "description": "<p>The dragon belches a mass of boulders that deals 11d8 Bludgeoning Damage damage in a 40ft Cone (Basic DC 33 Reflex Saving Throw save).</p>\n<p>They can't use Avalanche Breath again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Burrowing Pounce",
+      "actions": 3,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The dragon is burrowed</p>\n<hr />\n<p><strong>Effect</strong> The dragon Burrows, then Leaps out of the ground, landing at a point within 25 feet. The dragon makes a melee Strike against a creature within reach when they land. If the Strike is a critical hit, the target is knocked Prone.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rock Tunneler",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The dragon can burrow through solid stone at a Speed of 20 feet. They can leave a tunnel if they desire, and they usually don't.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swallow Whole",
+      "actions": 1,
+      "traits": [
+        "attack"
+      ],
+      "description": "<p>Large, (3d12+7) Bludgeoning Damage, Rupture 29</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster attempts to swallow a creature of the listed size or smaller that it has grabbed or restrained in its jaws or mouth. If a swallowed creature is of the maximum size listed, the monster can't use Swallow Whole again. If the creature is smaller than the maximum, the monster can usually swallow more creatures; the GM determines the maximum. The monster attempts an athletics|defense:reflex check opposed by the grabbed creature's Reflex DC. If it succeeds, it swallows the creature. The monster's mouth or jaws no longer grab a creature it has swallowed, so the monster is free to use them to Strike or Grab once again. The monster can't attack creatures it has swallowed.</p>\n<p>A swallowed creature is Grabbed, is Slowed 1, and has to hold its breath or start suffocating. The swallowed creature takes the listed amount of damage when first swallowed and at the end of each of its turns while it's swallowed. If the victim Escapes this ability's grabbed condition, it exits through the monster's mouth. This frees any other creature grabbed in the monster's mouth or jaws. A swallowed creature can attack the monster that has swallowed it, but only with unarmed attacks or with weapons of light Bulk or less. The swallowing creature is Off-Guard against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the swallowed creature cuts itself free. A creature that gets free by either Escaping or cutting itself free can immediately breathe and exits the swallowing monster's space.</p>\n<p>Effect: Engulf and Swallow Whole</p>\n<p>If the monster dies, a swallowed creature can be freed by creatures adjacent to the corpse if they spend a combined total of 3 actions cutting the monster open with a weapon or unarmed attack that deals piercing or slashing damage.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Throw Rock",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>The monster picks up a rock within reach or retrieves a stowed rock and throws it, making a ranged Strike.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Knockdown",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Trip the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Primal Prepared Spells",
+      "type": "prepared",
+      "bonus": 27,
+      "dc": 34,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 6,
+      "cantrips": [
+        {
+          "name": "Caustic Blast",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "acid",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "5ft burst",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>You fling a large glob of acid that immediately detonates, spraying nearby creatures. Creatures in the area take 1d8 acid damage with a basic Reflex save; on a critical failure, the creature also takes (1+floor((@item.rank -1)/2)) Persistent,acid Damage damage.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The initial damage increases by 1d8, and the persistent damage on a critical failure increases by 1.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "13zLYp3hB20L1ml0"
+        },
+        {
+          "name": "Detect Magic",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft emanation",
+          "targets": "",
+          "save": "",
+          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "QgAoAe8r6lVxqiWq"
+        },
+        {
+          "name": "Know the Way",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>In your mind's eye, you magically reorient yourself. You immediately know which direction is north (if it exists at your current location), and you can choose a location you were at within the last 24 hours and learn what direction it lies.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can choose a location you were at within the last week.</p>\n<p><strong>Heightened (7th)</strong> You can choose a location you were at regardless of how long ago you were there.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "HXo9ypt74r4mToXB"
+        },
+        {
+          "name": "Sigil",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "unlimited",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature or object",
+          "save": "",
+          "description": "<p>You harmlessly place your unique magical sigil, which is about 1 square inch in size, on the targeted creature or object. The mark can be visible or invisible, and you can change it from one state to another by using an Interact action to touch the target. The mark can be scrubbed or scraped off with 5 minutes of work. If it's on a creature, it fades naturally over the course of a week. The time before the mark fades increases depending on your heightened level.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The sigil instead fades after 1 month.</p>\n<p><strong>Heightened (5th)</strong> The sigil instead fades after 1 year.</p>\n<p><strong>Heightened (7th)</strong> The sigil never fades.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "qvQopBuKeBEuZGbJ"
+        },
+        {
+          "name": "Tangle Vine",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate",
+            "plant",
+            "wood"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>A vine appears from thin air, flicking from your hand and lashing itself to the target. Attempt a spell attack roll against the target.</p>\n<p></p>\n<hr />\n<p><strong>Critical Success</strong> The target gains the Immobilized condition and takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty and the immobilized condition.</p>\n<p><strong>Success</strong> The target takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty.</p>\n<p><strong>Failure</strong> The target is unaffected.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The effects last for 2 rounds.</p>\n<p><strong>Heightened (4th)</strong> The effects last for 1 minute.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "pozccd3PYY1UOoe8"
+        }
+      ],
+      "lv1spells": [
+        {
+          "name": "Air Bubble",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "air",
+            "concentrate"
+          ],
+          "castingTime": "reaction",
+          "duration": "1 minute",
+          "range": "60 feet",
+          "area": "",
+          "targets": "the triggering creature",
+          "save": "",
+          "description": "<p><strong>Trigger</strong> A creature within range enters an environment where it can't breathe.</p>\n<p>A bubble of pure air appears around the target's head, allowing it to breathe normally. The effect ends as soon as the target returns to an environment where it can breathe normally.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "s8fhl3qnRkkQl4mD"
+        },
+        {
+          "name": "Tailwind",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "air",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>The wind at your back pushes you to find new horizons. You gain a +10-foot status bonus to your Speed.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The duration increases to 8 hours.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "D8Wm9Q8V3BvofcZT"
+        },
+        {
+          "name": "Vanishing Tracks",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You obscure the tracks you leave behind. The DC of checks to Track you gains a +4 status bonus or is equal to your spell DC, whichever results in a higher DC.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The duration increases to 8 hours.</p>\n<p><strong>Heightened (4th)</strong> The duration increases to 8 hours. The spell has a range of 20 feet and an area of a 20-foot-emanation, affecting up to 10 creatures of your choice within that area.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "6QNi8VI8VZW4dMoh"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Darkness",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "darkness",
+            "manipulate"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create a shroud of darkness that prevents light from penetrating or emanating within the area. Light does not enter the area and any non-magical light sources, such as a torch or lantern, do not emanate any light while inside the area, even if their light radius would extend beyond the darkness. This also suppresses magical light of your darkness spell's rank or lower. Light can't pass through, so creatures in the area can't see outside. From outside, it appears as a globe of pure darkness.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> Even creatures with darkvision (but not greater darkvision) can barely see through the darkness. They treat targets seen through the darkness as Concealed.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "PmnlGIpRZ4zHUuHV"
+        },
+        {
+          "name": "Shatter",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "sonic"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 unattended object",
+          "save": "",
+          "description": "<p>A high-frequency sonic attack shatters a nearby object. You deal 2d10 sonic damage to the object, ignoring the object's Hardness if it is 4 or lower.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10, and the Hardness the spell ignores increases by 2.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "pRG6KrS1uwKqzur0"
+        },
+        {
+          "name": "Water Walk",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can walk on the surface of water and other liquids without falling through. It can go underwater if it wishes, but in that case it must Swim normally. This spell doesn't grant the ability to breathe underwater.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell's range increases to 30 feet, the duration increases to 1 hour, and you can target up to 10 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Lj3WiY9ZLrd1cCEc"
+        }
+      ],
+      "lv3spells": [
+        {
+          "name": "Earthbind",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "earth",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 flying creature",
+          "save": "fortitude",
+          "description": "<p>Using the weight of earth, you hamper a target's flight, with effects based on its Fortitude save. If the creature reaches the ground safely, it doesn't take falling damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target falls safely up to 120 feet.</p>\n<p><strong>Failure</strong> The target falls safely up to 120 feet. If it hits the ground, it can't Fly, levitate, or otherwise leave the ground for 1 round.</p>\n<p><strong>Critical Failure</strong> The target falls safely up to 120 feet. If it hits the ground, it can't Fly, levitate, or otherwise leave the ground for 1 minute.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "ZAg3H7nIQN0FhaAb"
+        },
+        {
+          "name": "One with Stone",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "earth",
+            "manipulate",
+            "polymorph"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes or 8 hours",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You can either transform into a stone or merge with stone. While transformed, you can't move or affect anything outside the stone, but you can cast spells as long as they don't require line of effect beyond the stone. You can Dismiss this spell.</p>\n<ul>\n<li><strong>Merge with Stone</strong> The spell's duration is 10 minutes. While casting the spell, you must touch a stone with enough volume to fit you and your possessions or the spell is disrupted. While merged, you can hear, but not see, what's going on outside the stone. If the stone takes damage while you're inside it, you're expelled from the stone and take 10d6 damage. <em>Magic passage</em> expels you without dealing damage. The spell ends if you're ever outside the stone.</li>\n<li><strong>Turn into a Stone</strong> The spell's duration is 8 hours. You become a Large stone. Perception checks don't reveal your true nature, but a successful Nature or Survival check against your spell DC reveals that you appear to be a stone that is strangely new to the area. While in this form, you can observe everything around you, using your normal senses. As a stone, your AC is 23, and only status bonuses, status penalties, circumstance bonuses, and circumstance penalties affect you. Any successes and critical successes you roll on Reflex saves are failures\n</li>\n</ul>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "wTAn2TvjRjHgh48R"
+        },
+        {
+          "name": "Slow",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "fortitude",
+          "description": "<p>You dilate the flow of time around the target, slowing its actions.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Slowed 1 for 1 round.</p>\n<p><strong>Failure</strong> The target is Slowed 1 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Slowed 2 for 1 minute.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "r5HbDIMfg5FRY2UR"
+        }
+      ],
+      "lv4spells": [
+        {
+          "name": "Shape Stone",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "earth",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "cube of stone 10 feet across or smaller",
+          "save": "reflex",
+          "description": "<p>You shape the stone into a rough shape of your choice. The shaping process is too crude to produce intricate parts, fine details, moving pieces, or the like. Any creatures standing atop the stone when you reshape it must each attempt a Reflex save or Acrobatics check.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature falls Prone atop the stone.</p>\n<p><strong>Critical Failure</strong> The creature falls off the stone (if applicable) and lands Prone.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "OKcpMUHeJ4eeDvZ0"
+        },
+        {
+          "name": "Unfettered Movement",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature touched",
+          "save": "",
+          "description": "<p>You repel effects that would hinder a creature or slow its movement. While under this spell's effect, the target ignores effects that would give them a circumstance penalty to Speed. When they attempt to Escape an effect that has them Immobilized, Grabbed, or Restrained, they automatically succeed unless the effect is magical and of a higher rank than the <em>unfettered movement</em> spell.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "D4zMoucWRfi2l83Q"
+        },
+        {
+          "name": "Vapor Form",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "air",
+            "concentrate",
+            "manipulate",
+            "polymorph"
+          ],
+          "castingTime": "2",
+          "duration": "5 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>The target transforms into a vaporous state. In this state, the target is amorphous. It loses any item bonus to AC and all other effects and bonuses from armor, and it uses its proficiency modifier for unarmored defense. It gains resistance 8 to physical damage and is immune to precision damage. It can't cast spells, activate items, or use actions that have the attack or manipulate trait. It gains a fly Speed of 10 feet and can slip through tiny cracks. The target can Dismiss the spell.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "fj2GC6PrkLXbSy05"
+        }
+      ],
+      "lv5spells": [
+        {
+          "name": "Impaling Spike",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "metal"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "reflex",
+          "description": "<p>You conjure a spike that thrusts up from the earth beneath a target creature, potentially impaling it. The spike is made of cold iron and deals 8d6 piercing damage. The target must attempt a Reflex save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target dodges the spike and is unaffected.</p>\n<p><strong>Success</strong> The target is struck by the spike and takes half damage.</p>\n<p><strong>Failure</strong> The target is impaled through a leg or another nonvital body part. The creature takes full damage and, if it's standing on solid ground, becomes Immobilized. It can attempt to Escape (the DC is your spell DC). While it remains impaled, it takes damage from any weakness to cold iron it has at the end of each of its turns.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is impaled through a vital organ or its center of mass, taking double damage, and it is Off-Guard as long as it's impaled.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "GutqWcfxdMR55gMg"
+        },
+        {
+          "name": "Magic Passage",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "earth",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "touch",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create a visible tunnel through the wall in the chosen area, replacing the area with empty space. If the wall is thicker than 10 feet, the tunnel ends 10 feet in. Even a small layer of metal in the wall prevents this spell from functioning. This spell doesn't reduce the integrity of the structure. When the spell ends, anyone inside the tunnel is shunted to the nearest exit.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The tunnel can be up to 20 feet deep. The areas of the wall that contain your tunnel's entrance appear completely normal (unless viewed with truesight or a similar effect), despite the tunnel's existence. The tunnel's entrance functions as a solid wall, but you can specify a password or a trigger, allowing creatures to enter freely.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "iaXH6XL1zpGp8YNo"
+        },
+        {
+          "name": "Speak with Stones",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "earth",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You can ask questions of and receive answers from natural or worked stone. While stone is not intelligent, you speak with the natural spirits of the stone, which have a personality colored by the type of stone, as well as by the type of structure the stone is part of, for worked stone. A stone's perspective, perception, and knowledge give it a worldview different enough from a human's that it doesn't consider the same details important. Stones can mostly answer questions about creatures that touched them in the past and what is concealed beneath or behind them.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The duration is 8 hours.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "NMm7kQ77Fj1YxxCG"
+        }
+      ],
+      "lv6spells": [
+        {
+          "name": "Petrify",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "earth",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature made of organic material",
+          "save": "fortitude",
+          "description": "<p>The target's body slowly turns into a stone statue. The target must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Slowed 1 for 1 round as stone begins to form on their body.</p>\n<p><strong>Failure</strong> The target is slowed 1 and must attempt a Fortitude save at the end of each of its turns; this ongoing save has the incapacitation trait. On a failed save, the slowed condition increases by 1 (or 2 on a critical failure) as stone growths creep across their body. A successful save reduces the slowed condition by 1. When a creature becomes fully unable to act due to the slowed condition from <em>petrify</em>, the spell then ends in a flash of gray light, leaving the target Petrified permanently as they become a statue. The spell also ends if the slowed condition is removed, which causes the stone to break off harmlessly.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is initially Slowed 2.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "p47E7Ih4rRVqkCQw"
+        },
+        {
+          "name": "Tangling Creepers",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "plant",
+            "wood"
+          ],
+          "castingTime": "3",
+          "duration": "10 minutes",
+          "range": "500 feet",
+          "area": "40ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p>Dense, twitching creepers sprout from every surface and fill any bodies of water in the area. Any creature moving on the land, or Climbing or Swimming within the creepers, takes a -10-foot circumstance penalty to its Speeds while in the area. Once per round, you can Sustain the spell to make a vine lash out from any square within the expanse of creepers. This vine has a 15-foot reach. Make a melee spell attack roll against the target; on a success, the vine pulls the target into the creepers and makes it Immobilized for 1 round or until the creature Escapes (against your spell DC), whichever comes first.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "S6PkftReWQ0y5aDR"
+        }
+      ],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv2slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv3slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv4slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv5slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv6slots": {
+        "current": 2,
+        "max": 2
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Arcana, DC 31"
+}

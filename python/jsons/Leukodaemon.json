@@ -1,0 +1,469 @@
+{
+  "initiative": 0,
+  "initiativebonus": 20,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Leukodaemon",
+  "type": "Creature",
+  "level": 9,
+  "traits": [
+    "Common",
+    "Large",
+    "Daemon",
+    "Fiend",
+    "Unholy"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision",
+    "plaguesense (imprecise) 60 feet"
+  ],
+  "perception": {
+    "value": 20,
+    "note": "Darkvision, plaguesense (imprecise) 60 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Daemonic",
+    "Telepathy 100 feet"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "medicine",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 3
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [
+    {
+      "name": "Composite Longbow",
+      "quantity": 1,
+      "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>",
+      "level": 0,
+      "price": "20 gp",
+      "traits": [
+        "deadly-d10",
+        "propulsive",
+        "volley-30"
+      ]
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Plaguesense (Imprecise) 60 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A leukodaemon senses any creature with a disease, and they know the type and current stage of all diseases carried by any creature within range.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+1 status to all saves vs. magic",
+  "hp": {
+    "value": 155,
+    "max": 155,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Infectious Aura",
+      "actions": null,
+      "traits": [
+        "aura",
+        "disease"
+      ],
+      "description": "<p>30 feet.</p>\n<p>Leukodaemons radiate infection. All creatures within 30 feet of a leukodaemon take a –2 status penalty to saves against disease. If a creature within range contracts or progresses a disease, all adjacent creatures are exposed to the same disease, at the same DC.</p>\n<p>Effect: Infectious Aura</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, fly 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 21,
+      "traits": [
+        "disease",
+        "magical",
+        "reach-10",
+        "unarmed",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+9",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+9)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "daemonic-pestilence"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 21,
+      "traits": [
+        "agile",
+        "disease",
+        "magical",
+        "reach-10",
+        "unarmed",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+9",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+9)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "daemonic-pestilence"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Composite Longbow",
+      "bonus": 21,
+      "traits": [
+        "deadly-d10",
+        "disease",
+        "magical",
+        "propulsive",
+        "range-increment-100",
+        "reload-0",
+        "unholy",
+        "volley-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+9",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+9)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "daemonic-pestilence"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Daemonic Pestilence",
+      "actions": null,
+      "traits": [
+        "disease"
+      ],
+      "description": "<p>The leukodaemon can telepathically communicate with the afflicted creature at any distance on the same plane</p>\n<p><strong>Saving Throw</strong> DC 28 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Stage 1</strong> carrier (1 day)</p>\n<p><strong>Stage 2</strong> Drained 1 (1 day)</p>\n<p><strong>Stage 3</strong> Drained 2 (1 day)</p>\n<p><strong>Stage 4</strong> drained 2 (1 day)</p>\n<p><strong>Stage 5</strong> Drained 3 (1 week)</p>\n<p><strong>Stage 6</strong> dead</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Plague Breath",
+      "actions": 2,
+      "traits": [
+        "divine",
+        "unholy"
+      ],
+      "description": "<p>The leukodaemon exhales a cloud of corpse-bloated, biting black flies in a 20ft Cone. Creatures within the cone take 4d8 Piercing Damage damage (Basic DC 28 Reflex Saving Throw save). A creature that fails the save becomes Sickened 1 (or Sickened 2 on a critical failure).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Quicken Pestilence",
+      "actions": 1,
+      "traits": [
+        "divine",
+        "manipulate"
+      ],
+      "description": "<p>The leukodaemon coaxes a disease into full bloom. They choose a target in their aura of pestilence that's currently affected by a disease. That creature must attempt a Fortitude save against the disease as if the interval for the disease's current stage had passed.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Divine Innate Spells",
+      "type": "innate",
+      "bonus": 18,
+      "dc": 26,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 5,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [
+        {
+          "name": "Dispel Magic",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 4,
+          "timesPrepared": 2,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "CHum1wuK6FBxJMNK"
+        },
+        {
+          "name": "Dispel Magic",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 4,
+          "timesPrepared": 2,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "CHum1wuK6FBxJMNK"
+        },
+        {
+          "name": "Translocate (At Will)",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "3VlLp5tyHAozkdRS"
+        }
+      ],
+      "lv5spells": [
+        {
+          "name": "Translocate",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "y8jolYikX4z8ZPNN"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Religion, DC 26"
+}

@@ -1,0 +1,590 @@
+{
+  "initiative": 0,
+  "initiativebonus": 22,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Valkyrie of Gorum",
+  "type": "Creature",
+  "level": 12,
+  "traits": [
+    "Common",
+    "Medium",
+    "Aesir",
+    "Chaotic",
+    "Monitor"
+  ],
+  "source": "Pathfinder Adventure: Prey for Death",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 22,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Jotun",
+    "ravenspeaker, tongues"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 3
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [
+    {
+      "name": "Spear",
+      "quantity": 1,
+      "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>",
+      "level": 0,
+      "price": "1 sp",
+      "traits": [
+        "thrown-20"
+      ]
+    },
+    {
+      "name": "Breastplate",
+      "quantity": 1,
+      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.Half Plate] armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
+      "level": 0,
+      "price": "8 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Claimer of the Slain",
+      "actions": null,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p>Valkyries can detect the souls of those recently slain in combat. A valkyrie spends 10 minutes praying over the body of a creature who has been dead for no more than 12 hours; if that creature is worthy of becoming an Einherji and of the appropriate alignment, the valkyrie transforms that creature into an einherji.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Ravenspeaker",
+      "actions": null,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p>Valkyries use ravens as servants and spies. They can speak with ravens, and they can have up to three raven servitors who follow their commands. Valkyries can constantly observe whatever their commanded ravens sense.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 215,
+    "max": 215,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "type": "electricity",
+      "value": 15
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Attack of Opportunity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Recall the Fallen",
+      "actions": -1,
+      "traits": [
+        "divine",
+        "healing"
+      ],
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> An allied creature within 60 feet who isn't a construct or undead is reduced to 0 Hit Points and their Dying value is 2 or less</p>\n<hr />\n<p><strong>Effect</strong> The valkyrie restores 5d10 Healing Damage Hit Points to the target.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, fly 60ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Spear",
+      "bonus": 28,
+      "traits": [
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+15",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d12",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+15)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d12)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Spear",
+      "bonus": 26,
+      "traits": [
+        "magical",
+        "thrown-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+15",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d12",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+15)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d12)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Storm of Battle",
+      "actions": 2,
+      "traits": [
+        "divine",
+        "electricity"
+      ],
+      "description": "<p>The valkyrie hurls her spear into the air, creating a massive storm in a 100ft Burst. Spears of lightning rain down upon enemies in the area, dealing 4d12 Electricity Damage damage (Basic DC 32 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Divine Innate Spells",
+      "type": "innate",
+      "bonus": 21,
+      "dc": 29,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 7,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [
+        {
+          "name": "Fear",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "emotion",
+            "fear",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Frightened 1.</p>\n<p><strong>Failure</strong> The target is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target is Frightened 3 and Fleeing for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "6Nu9a79BGcDq8Klp"
+        },
+        {
+          "name": "Augury",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "prediction"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You gain a vague glimpse of the future. During the casting of this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveal the GM's best guess among the following outcomes: good, bad, mixed (the results will be a mix of good and bad), and nothing (there won't be particularly good or bad results).</p>\n<p>The GM rolls a secret DC 6 Flat . On a failure, the result is always \"nothing.\" This makes it impossible to tell whether a \"nothing\" result is accurate. If anyone asks about the same topic as the first casting of <em>augury</em> during an additional casting, the GM uses the secret roll result from the first casting. If circumstances change, though, it's possible to get a different result.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "ytuXUfxVPClFjfED"
+        },
+        {
+          "name": "Status",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "until the next time you make your daily preparations",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing living creature",
+          "save": "",
+          "description": "<p>As long as you and the target are on the same plane of existence and both alive, you remain aware of its present state. You know the target's direction from you, distance from you, and any conditions affecting it.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell's range increases to 30 feet, and you can target up to 10 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "8wVmjKteUc9LinuH"
+        }
+      ],
+      "lv4spells": [],
+      "lv5spells": [
+        {
+          "name": "Command",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "auditory",
+            "concentrate",
+            "linguistic",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "until the end of the target's next turn",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You shout a command that's hard to ignore. You can command the target to approach you, run away (as if it had the Fleeing condition), release what it's holding, drop Prone, or stand in place. It can't Delay or take any reactions until it has obeyed your command. The effects depend on the target's Will save.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> For the first action on its next turn, the creature must use a single action to do as you command.</p>\n<p><strong>Critical Failure</strong> The target must use all its actions on its next turn to obey your command.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target up to 10 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Y4RIqcqK7QutPnkq"
+        },
+        {
+          "name": "Truespeech (Constant)",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "J5llxiwFo9KvoQym"
+        }
+      ],
+      "lv6spells": [
+        {
+          "name": "Heal",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "healing",
+            "manipulate",
+            "vitality"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 willing living creature or 1 undead",
+          "save": "Basic fortitude",
+          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse vital energy in a 30ft Emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "jv3sUJSINZu6qvd6"
+        },
+        {
+          "name": "Infuse Vitality",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "vitality"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 to 3 willing creatures",
+          "save": "",
+          "description": "<p>You empower attacks with vital energy. The number of targets is equal to the number of actions you spent casting this spell. Each target's unarmed and weapon Strikes deal an extra 1d4 vitality damage. (This damage typically damages only undead). If you have the holy trait, you can add that trait to this spell and to the Strikes affected by the spell.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The damage increases to 2d4 damage.</p>\n<p><strong>Heightened (5th)</strong> The damage increases to 3d4 damage.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "lOeqwNWAchyg0pXw"
+        },
+        {
+          "name": "Heroism",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You unlock the target's inner heroism, granting it a +1 status bonus to attack rolls, Perception checks, saving throws, and skill checks.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The status bonus increases to +2.</p>\n<p><strong>Heightened (9th)</strong> The status bonus increases to +3.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "AwW9rrh5UObR8sEx"
+        },
+        {
+          "name": "Weapon Storm",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "reflex",
+          "description": "<p><strong>Area</strong> 30-foot cone or 10-foot emanation</p><hr /><p>You swing a weapon you're holding, and the weapon magically multiplies into duplicates that swipe at all creatures in either a cone or an emanation. This flurry deals four dice of damage to creatures in the area. This damage has the same type as the weapon and uses the same die size. Determine the die size as if you were attacking with the weapon; for instance, if you were wielding a two-hand weapon in both hands, you'd use its two-hand damage die.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is subject to the weapon's critical specialization effect.</p><hr /><p><strong>Heightened (+1)</strong> Add another damage die.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "TcvoLjq70ANyYoAA"
+        }
+      ],
+      "lv7spells": [
+        {
+          "name": "Interplanar Teleport (Self and Mount Only)",
+          "type": "spell",
+          "level": 7,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "",
+          "range": "5 feet",
+          "area": "",
+          "targets": "up to 8 willing creatures",
+          "save": "",
+          "description": "<p><strong>Requirements</strong> You have a planar key for the destination plane, used as a locus</p>\n<hr />\n<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must know the destination plane exists and use a magic planar key created from material from that plane as a locus for the spell. While the planar keys for most prominent planes are uncommon, just like the spell <em>interplanar teleport</em>, more obscure planes and demiplanes often have rare or possibly even unique planar keys.</p>\n<p>The spell is highly imprecise, and you appear 1d20×25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. <em>Interplanar teleport</em> doesn't provide a means of return travel, though casting <em>interplanar teleport</em> again allows you to return to your previous plane unless there are extenuating circumstances.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "0uB0pwpfFot7P4Rz"
+        }
+      ],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Religion, DC 30"
+}

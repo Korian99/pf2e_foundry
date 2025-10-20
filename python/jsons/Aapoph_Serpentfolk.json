@@ -1,0 +1,245 @@
+{
+  "initiative": 0,
+  "initiativebonus": 8,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Aapoph Serpentfolk",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Humanoid",
+    "Mutant",
+    "Serpentfolk"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision",
+    "Scent 30ft imprecise"
+  ],
+  "perception": {
+    "value": 8,
+    "note": "Darkvision, Scent 30ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo",
+    "Sakvroth",
+    "Telepathy 100 feet"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": -1
+  },
+  "items": [
+    {
+      "name": "Scimitar",
+      "quantity": 1,
+      "description": "<p>This one-handed curved blade is sharp on one side.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": [
+        "forceful",
+        "sweep"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+2 status to will saves vs. mental",
+  "hp": {
+    "value": 60,
+    "max": 60,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "type": "poison",
+      "value": 5
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Scimitar",
+      "bonus": 11,
+      "traits": [
+        "forceful",
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+6",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+6)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fangs",
+      "bonus": 11,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d8+6",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+6)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "serpentfolk-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 11,
+      "traits": [
+        "agile"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+6)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "knockdown"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Serpentfolk Venom",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 20 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 1d4 Poison Damage damage and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> 2d4 Poison Damage damage and enfeebled 1 (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Slithering Attack",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The aapoph serpentfolk makes one scimitar or fangs Strike and one tail Strike, each targeting a different creature. These attacks both count toward the aapoph's multiple attack penalty, but the penalty doesn't increase until after the aapoph makes both attacks.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Knockdown",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Trip the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 18"
+}

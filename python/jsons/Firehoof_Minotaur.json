@@ -1,0 +1,256 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Firehoof Minotaur",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Beast",
+    "Fire",
+    "Humanoid"
+  ],
+  "source": "Pathfinder #217: Death Sails a Wine-Dark Sea",
+  "senses": [
+    "Darkvision",
+    "smoke vision"
+  ],
+  "perception": {
+    "value": 16,
+    "note": "Darkvision, smoke vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Jotun",
+    "Pyric"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 1
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [
+    {
+      "name": "Greataxe",
+      "quantity": 1,
+      "description": "<p>This large battle axe is too heavy to wield with only one hand. Many greataxes incorporate two blades, and they are often \"bearded,\" having a hook at the bottom to increase the strength of their chopping power.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": [
+        "sweep"
+      ]
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Perfect Orienteering",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A minotaur automatically critically succeeds at Survival checks to Sense Direction or Track.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Smoke Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Smoke doesn't impair a firehoof minotaur's vision; they ignore the Concealed condition from smoke.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 140,
+    "max": 140,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "cold",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Fiery Blood",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature scores a critical hit on the firehoof minotaur</p><hr /><p><strong>Effect</strong> The firehoof minotaur's splashes its fire-infused blood onto the creature and deals 2d6 Fire Damage damage (Basic DC 22 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Greataxe",
+      "bonus": 18,
+      "traits": [
+        "magical",
+        "reach-10",
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d12+6",
+          "type": "slashing"
+        },
+        {
+          "roll": "2d6",
+          "type": "fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d12+6)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Horn",
+      "bonus": 17,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d8+10",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+10)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Belch Smoke",
+      "actions": 2,
+      "traits": [
+        "fire"
+      ],
+      "description": "<p>The firehoof minotaur takes a huge breath, then belches a cloud of smoke, filling a 40ft Type:cone. All creatures within the smoke cloud become Concealed, and all creatures outside the smoke become concealed to creatures within it. The smoke dissipates after 1d4 rounds, and the firehoof minotaur can't Belch Smoke again until the smoke clears.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Fire Stomp",
+      "actions": 2,
+      "traits": [
+        "fire"
+      ],
+      "description": "<p>The firehoof minotaur vigorously stomps the ground with a hoof, releasing an explosion of fire in a 10ft Type:emanation that deals 4d6 Fire Damage damage (Basic DC 22 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Hazy Fear",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The firehoof minotaur snorts and stomps fire as they hunt their prey, inspiring terror. The minotaur makes an Intimidation check to Demoralize all living creatures within 60 feet who can hear the minotaur but not clearly see them (whether the minotaur is Concealed, Hidden, or Undetected). Roll once and apply the result to all creatures. If the targets have their vision effected by smoke or a similar effect, the minotaur gains a +4 circumstance bonus to this check. Each target is temporarily immune for 10 minutes.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature or Society, DC 23"
+}

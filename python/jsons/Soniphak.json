@@ -1,0 +1,244 @@
+{
+  "initiative": 0,
+  "initiativebonus": 21,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Soniphak",
+  "type": "Creature",
+  "level": 9,
+  "traits": [
+    "Common",
+    "huge",
+    "Beast"
+  ],
+  "source": "Pathfinder Howl of the Wild",
+  "senses": [
+    "Echolocation 120ft precise",
+    "sensitive echolocation (precise) 120 feet"
+  ],
+  "perception": {
+    "value": 21,
+    "note": "Echolocation 120ft precise, sensitive echolocation (precise) 120 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Draconic"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Sensitive Echolocation",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The soniphak can use its hearing as a precise sense with the listed range. If the soniphak takes sonic damage beyond its resistance, its senses are overloaded and all creatures are Concealed from it for 1 round.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Snatch",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The soniphak can Fly at half Speed with a creature Grabbed or Restrained in its claws, carrying that creature along with it.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 180,
+    "max": 180,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "visual"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "sonic",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "20 ft, fly 50ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 19,
+      "traits": [
+        "reach-15",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+9",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+9)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 19,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+9",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+9)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Screech",
+      "bonus": 19,
+      "traits": [
+        "range-60",
+        "sonic"
+      ],
+      "damageRolls": [
+        {
+          "roll": "6d6",
+          "type": "sonic"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(6d6)*2",
+          "type": "sonic"
+        }
+      ],
+      "effects": [
+        "aftershock"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Aftershock",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Whenever a soniphak hits with a screech Strike, feedback deals each creature the soniphak has Grabbed or Restrained 1d6 Sonic Damage damage.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Disruptive Screech",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within 30 feet of the soniphak uses an auditory action</p>\n<hr />\n<p><strong>Effect</strong> The soniphak makes a screech Strike against the triggering creature. This disrupts a triggering concentrate action if the Strike is a critical hit.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Shattering Scream",
+      "actions": 2,
+      "traits": [
+        "sonic"
+      ],
+      "description": "<p>The soniphak can focus its screech at a stone or rock surface within 60 feet to create an explosion in a 15ft Burst from the point of impact. Creatures in the area take 5d6 Piercing Damage damage (Basic DC 28 Reflex Saving Throw save), and the area becomes difficult terrain due to fragments of loose stone.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 26"
+}

@@ -1,0 +1,210 @@
+{
+  "initiative": 0,
+  "initiativebonus": 14,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Ulfen Witchguard",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder Society Scenario #6-08: Upon Wheels and Rime",
+  "senses": [],
+  "perception": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Skald"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [
+    {
+      "name": "Battle Axe",
+      "quantity": 1,
+      "description": "<p>These axes are designed explicitly as weapons, rather than tools. They typically weigh less, with a shaft reinforced with metal bands or bolts, and have a sharper blade, making them ideal for chopping limbs rather than wood.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": [
+        "sweep"
+      ]
+    },
+    {
+      "name": "Shortbow",
+      "quantity": 1,
+      "description": "<p>This smaller bow is made of a single piece of wood and favored by skirmishers and cavalry.</p>",
+      "level": 0,
+      "price": "3 gp",
+      "traits": [
+        "deadly-d10"
+      ]
+    },
+    {
+      "name": "Studded Leather Armor",
+      "quantity": 1,
+      "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>",
+      "level": 0,
+      "price": "3 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 72,
+    "max": 72,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Face Me!",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within 30 feet deals damage to Matriarch Szvetneera</p><hr /><p><strong>Effect</strong> The Ulfen bodyguard lets out a threating bellow at whoever injured their ward. They then attempt a check to Demoralize against the triggering creature, gaining a +2 circumstance bonus to the check.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Battle Axe",
+      "bonus": 14,
+      "traits": [
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+5",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+5)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Shortbow",
+      "bonus": 12,
+      "traits": [
+        "deadly-d10",
+        "range-increment-60",
+        "reload-0"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+5",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+5)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Back Away!",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The Ulfen witchguard attacks the target, pushing them back and away from their charge. The witchguard makes a Strike against the creature, then attempts to Shove their target. Depending on the outcome of their Strike, there may be additional effects.</p><hr /><p><strong>Critical Success</strong> The Ulfen witchguard gains a +2 circumstance bonus to their attempt to Shove.</p>\n<p><strong>Success</strong> The Ulfen witchguard gains a +1 circumstance bonus to their attempt to Shove.</p>\n<p><strong>Failure</strong> There is no effect.</p>\n<p><strong>Critical Failure</strong> The Ulfen witchguard is Off-Guard until the start of their next turn.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 19"
+}

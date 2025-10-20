@@ -1,0 +1,236 @@
+{
+  "initiative": 0,
+  "initiativebonus": 13,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Jungle Drake",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Common",
+    "Large",
+    "Dragon",
+    "Wood"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision",
+    "Scent 30ft imprecise"
+  ],
+  "perception": {
+    "value": 13,
+    "note": "Darkvision, Scent 30ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Draconic"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 90,
+    "max": 90,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "disease",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Twisting Tail",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within reach of the jungle drake's stinger uses a move action or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The jungle drake Strikes the target with its stinger. If it hits, the jungle drake disrupts the creature's action.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, fly 50ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fangs",
+      "bonus": 17,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d10+7",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+7)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "predatory-grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Stinger",
+      "bonus": 17,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+7",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+7)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "jungle-drake-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Draconic Frenzy",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The jungle drake makes one Fangs Strike and two Stinger Strikes in any order.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Forest Passage",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The jungle drake ignores difficult terrain caused by plants, such as bushes, vines, and undergrowth. Even plants manipulated by magic don't impede their progress.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Jungle Drake Venom",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 24 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 1d6 Poison Damage damage and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> 1d6 Poison Damage damage and Enfeebled 2 (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Predatory Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>As Grab, but the jungle drake's Grab doesn't end if they move away. Instead, they carry the Grabbed creature with them. A jungle drake can't Fly while grabbing a creature unless that creature can also Fly.</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Speed Surge",
+      "actions": 1,
+      "traits": [
+        "move"
+      ],
+      "description": "<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> The jungle drake Strides or Flies twice.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spit Venom",
+      "actions": 2,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p>A jungle drake can spit a sticky glob of their venom to a range of 50 feet that explodes in a 10ft Burst. Those in the burst must succeed at a DC 24 Reflex Saving Throw save or be exposed to jungle drake venom.</p>\n<p>The jungle drake can't use Spit Venom again for 1d6 rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana, DC 22"
+}

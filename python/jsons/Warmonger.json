@@ -1,0 +1,301 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Warmonger",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "Warfare Lore",
+      "modifier": 21,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Battle Axe",
+      "quantity": 2,
+      "description": "<p>These axes are designed explicitly as weapons, rather than tools. They typically weigh less, with a shaft reinforced with metal bands or bolts, and have a sharper blade, making them ideal for chopping limbs rather than wood.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": [
+        "sweep"
+      ]
+    },
+    {
+      "name": "Composite Longbow",
+      "quantity": 1,
+      "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>",
+      "level": 1,
+      "price": "20 gp",
+      "traits": [
+        "deadly-d10",
+        "propulsive",
+        "volley-30"
+      ]
+    },
+    {
+      "name": "Hide Armor",
+      "quantity": 1,
+      "description": "<p>A mix of furs, sturdy hide, and sometimes molded boiled leather, this armor provides protection due to its layers of leather, though its bulkiness slows the wearer down and decreases mobility.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "War Ready",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The warmonger can always roll Warfare Lore for initiative.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 200,
+    "max": 200,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Pain Training",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The warmonger treats the value of any Drained, Dying, Enfeebled, Sickened, and Wounded conditions affecting them as 1 lower. The warmonger still has the condition and must remove it normally.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, climb 10ft, swim 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Battle Axe",
+      "bonus": 23,
+      "traits": [
+        "magical",
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+12",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+12)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 22,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+12",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+12)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Composite Longbow",
+      "bonus": 21,
+      "traits": [
+        "deadly-d10",
+        "magical",
+        "propulsive",
+        "range-increment-100",
+        "reload-0",
+        "volley-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+9",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+9)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Patch and Set",
+      "actions": 1,
+      "traits": [
+        "healing",
+        "manipulate"
+      ],
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> The warmonger has a hand free</p><hr /><p><strong>Effect</strong> The warmonger grits their teeth and ties off a wound or sets a bone or joint. They regain 20 Healing Damage Hit Points.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Power Through",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The warmonger is wielding two melee weapons and isn't Fatigued</p><hr /><p><strong>Effect</strong> The warmonger attempts up to three melee Strikes against different creatures. These count toward the warmonger's multiple attack penalty normally, but the penalty doesn't increase until after all the attacks. The warmonger overexerts themself with the attacks, becoming fatigued. The warmonger can attempt a DC 30 Fortitude Saving Throw save to recover from this fatigued condition at the start of each of their turns.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sight Prey",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p>The warmonger singles out one enemy to bring down with ranged attacks until the end of the current turn. The warmonger's ranged Strikes against that creature gain a +1 circumstance bonus to the attack roll and deal an extra 3d6 precision damage. Each time the warmonger hits that creature with a ranged Strike, the creature takes a –10-foot penalty to its Speeds for 1 minute and falls 20 feet if it's flying.</p>\n<p>Effect: Sight Prey (Speed Penalty)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "War Cry",
+      "actions": -1,
+      "traits": [
+        "auditory",
+        "emotion",
+        "mental"
+      ],
+      "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> The warmonger critically hits or knocks out an enemy</p><hr /><p><strong>Effect</strong> The warmonger screams a battle cry. Each ally in a 30ft Type:emanation that hears it deals an additional 1d6 damage with its Strikes for 1 round.</p>\n<p>Effect: War Cry</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 27"
+}

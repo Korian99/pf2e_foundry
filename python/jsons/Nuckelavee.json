@@ -1,0 +1,443 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Nuckelavee",
+  "type": "Creature",
+  "level": 9,
+  "traits": [
+    "Common",
+    "Large",
+    "Amphibious",
+    "Fey"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Low light vision"
+  ],
+  "perception": {
+    "value": 16,
+    "note": "Low light vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo",
+    "Common",
+    "Fey"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [
+    {
+      "name": "Bastard Sword",
+      "quantity": 1,
+      "description": "<p>This broad-bladed sword, sometimes called the hand-and-a-half sword, has a longer grip so it can be held in one hand or used with two hands to provide extra slashing power.</p>",
+      "level": 0,
+      "price": "4 gp",
+      "traits": [
+        "two-hand-d12"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 190,
+    "max": 190,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "disease",
+    "poison"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Frightful Presence",
+      "actions": null,
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>30 feet DC 25 Will Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>A creature that first enters the area must attempt a Will save.</p>\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to this monster's Frightful Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by the presence.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 4.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Purity Vulnerability",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Unpolluted fresh water burns a nuckelavee like acid, dealing 1d6 Acid Damage damage to it and causing it to be Sickened 2.</p>\n<p>A nuckelavee can't heal from damage when it's in an area that isn't polluted (subject to GM discretion).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "40 ft, swim 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Bastard Sword",
+      "bonus": 21,
+      "traits": [
+        "magical",
+        "reach-10",
+        "two-hand-d12"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+12",
+          "type": "slashing"
+        },
+        {
+          "roll": "1d6",
+          "type": "poison"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+12)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "poison"
+        }
+      ],
+      "effects": [
+        "mortasheen"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+12",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d6",
+          "type": "poison"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+12)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "poison"
+        }
+      ],
+      "effects": [
+        "mortasheen"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Hoof",
+      "bonus": 20,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d6+12",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+12)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "mortasheen"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Blight Breath",
+      "actions": 2,
+      "traits": [
+        "disease",
+        "poison",
+        "primal"
+      ],
+      "description": "<p>The nuckelavee breathes a 30ft Cone of foulness, dealing 8d6 Void Damage damage to living creatures in the area with a Basic DC 28 Fortitude Saving Throw save. A creature that fails also takes 2d6 Bleed Damage damage.</p>\n<p>The nuckelavee can't use Blight Breath again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Mortasheen",
+      "actions": null,
+      "traits": [
+        "disease"
+      ],
+      "description": "<p>The target can't recover from the fatigued condition caused by mortasheen until the disease is cured. Mortasheen gains the virulent trait against animals and plants</p>\n<p><strong>Saving Throw</strong> DC 28 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Stage 1</strong> Carrier with no ill effect (1 day);</p>\n<p><strong>Stage 2</strong> Drained 1 and Fatigued (1 day)</p>\n<p><strong>Stage 3</strong> Drained 2 and fatigued (1 day)</p>\n<p><strong>Stage 4</strong> dead</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Trample",
+      "actions": 3,
+      "traits": [],
+      "description": "<p>Medium or smaller, hoof, Basic DC 28 Reflex Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Primal Innate Spells",
+      "type": "innate",
+      "bonus": 20,
+      "dc": 28,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 5,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [
+        {
+          "name": "Aqueous Orb",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to 1 minute",
+          "range": "60 feet",
+          "area": "",
+          "targets": "",
+          "save": "reflex",
+          "description": "<p>A sphere of water 10 feet in diameter forms in an unoccupied space in range, either on the ground or on the surface of a liquid.</p>\n<p>When you Cast this Spell and each time you Sustain it, you can roll the orb, moving it up to 10 feet along the ground or the surface of a liquid.</p>\n<p>The orb can move through the spaces of any creatures or obstacles that wouldn't stop the flow of water. It extinguishes non-magical fires it moves through of its size or smaller, and it attempts to counteract any magical fires it moves through. If it fails to counteract a given fire, it can't counteract that fire for the duration of the spell.</p>\n<p>The orb can engulf Large or smaller creatures it moves through, and it can contain as many creatures as fit in its space. The orb can try to engulf the same creature only once per turn, even if you roll it onto a creature's space more than once. Any Large or smaller creature whose space the orb tries to move through can attempt a Reflex save.</p>\n<hr />\n<p><strong>Success</strong> The creature can either let the orb pass (remaining in its space or moving out of the orb's path into a space of the creature's choice) or allow itself to be pushed in front of the orb to the end of the orb's movement.</p>\n<p><strong>Failure</strong> The creature is engulfed in the orb. It moves along with the orb and must hold its breath or begin suffocating (unless it can breathe in water). An engulfed Medium or smaller creature and anyone trying to affect that creature follow the normal rules for aquatic battles. An engulfed Large creature is usually big enough that parts of it stick out from the water, and it can reach out of the water. The creature can get free either by Swimming with a successful athletics|traits:action:swim|dc:10 check or by Escaping against your spell DC. A freed creature exits the orb's space and can immediately breathe.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature can't Swim to get free.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "bWBrbpzqLBZm2Dzn"
+        }
+      ],
+      "lv4spells": [],
+      "lv5spells": [
+        {
+          "name": "Control Water",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "500 feet",
+          "area": "",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>By imposing your will upon the water, you can raise or lower the level of water in the chosen area by 10 feet. Creatures that have the water trait and that are in the area when you Cast the Spell must attempt a Fortitude save, with the effects of the Slow spell.</p>\n<p><strong>Area</strong> 50 feet long by 50 feet wide</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "GD79FEdETWoVSjoM"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [
+        {
+          "name": "Blight",
+          "type": "ritual",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "plant",
+            "void"
+          ],
+          "castingTime": "1 day",
+          "duration": "1 year",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p><strong>Area</strong> 1/2-mile-radius circle centered on you</p>\n<hr />\n<p>You twist and stunt plants in the area, causing them to wither. In addition to other dangers from failing plant life, this decreases the crop yield for farms. If you cast this ritual in an area affected by <em>plant growth</em>, <em>blight</em> attempts to counteract <em>plant growth</em> instead of producing its usual effect.</p>\n<hr />\n<p><strong>Critical Success</strong> Completely spoil the crop yield in the area, or decrease the yield by half in an area with up to a 1-mile radius.</p>\n<p><strong>Success</strong> Decease the crop yield in the area by half.</p>\n<p><strong>Failure</strong> The ritual has no effect.</p>\n<p><strong>Critical Failure</strong> The flora in the area changes in an unexpected way, determined by the GM but generally as contradictory to your true desires as possible (for instance, enriching crops when you would prefer to blight them).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "Nature (expert)",
+          "secondaryCasters": 1,
+          "secondaryChecks": "Survival",
+          "id": "d2FtSayBxb502VD4"
+        }
+      ],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Nature, DC 26"
+}

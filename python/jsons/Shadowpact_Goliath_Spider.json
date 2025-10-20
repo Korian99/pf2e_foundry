@@ -1,0 +1,208 @@
+{
+  "initiative": 0,
+  "initiativebonus": 22,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Shadowpact Goliath Spider",
+  "type": "Creature",
+  "level": 11,
+  "traits": [
+    "Rare",
+    "Gargantuan",
+    "Animal"
+  ],
+  "source": "Pathfinder Society Scenario #6-09: The Power of Legends",
+  "senses": [
+    "Darkvision",
+    "web sense"
+  ],
+  "perception": {
+    "value": 22,
+    "note": "Darkvision, web sense",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 8
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 7
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": -4
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Web Sense",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The goliath spider has imprecise tremorsense to detect the vibrations of creatures touching its web.</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>Tremorsense allows a monster to feel the vibrations through a solid surface caused by movement. It is an imprecise sense with a limited range (listed in the ability). Tremorsense functions only if the monster is on the same surface as the subject, and only if the subject is moving along (or burrowing through) the surface.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 30,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 220,
+    "max": 220,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Spring Upon Prey",
+      "actions": -1,
+      "traits": [
+        "attack"
+      ],
+      "description": "<p><strong>Requirements</strong> Initiative has not yet been rolled.</p>\n<p><strong>Trigger</strong> A creature touches the goliath spider's web while the spider is on it.</p>\n<hr />\n<p><strong>Effect</strong> The goliath spider automatically notices the creature and Strides, Climbs, or Descends on a Web before it rolls initiative.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "45 ft, climb 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fangs",
+      "bonus": 24,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+12",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+12)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "goliath-spider-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Web",
+      "bonus": 22,
+      "traits": [
+        "range-increment-60"
+      ],
+      "damageRolls": [],
+      "critRolls": [],
+      "effects": [
+        "web-tether"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Descend on a Web",
+      "actions": 1,
+      "traits": [
+        "move"
+      ],
+      "description": "<p>The goliath spider moves straight down up to 120 feet, suspended by a web line. It can hang from the web or drop off. The distance it Descends on a Web doesn't count for falling damage.</p>\n<p>A creature that successfully Strikes the web (AC 20, Hardness 5, 20 HP) severs it, causing the spider to fall.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Goliath Spider Venom",
+      "actions": null,
+      "traits": [
+        "incapacitation",
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 30 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 3d6 Poison Damage damage and Slowed 1 (1 round)</p>\n<p><strong>Stage 2</strong> 3d8 Poison Damage damage and Slowed 2 (1 round)</p>\n<p><strong>Stage 3</strong> 3d10 Poison Damage damage and Paralyzed for 2d4 hours</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Hazard Immunity",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The shadowpact goliath spider never triggers the reactions of hazards in its own lair and is immune to the negative consequences of damaging area effects created by hazards in its lair (so if a PC set off a hazard that released a Fireball inside its lair, it would not take damage from the <em>fireball</em> even if it was within the <em>fireball's</em> area).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Web Tether",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A creature hit by the spider's web Strike is Restrained and tethered to the spider, preventing it from moving farther away from the spider.</p>\n<p>The spider can have one creature tethered at a time. The DC to Escape or Force Open the web is 30. The tether can be severed with a Strike (AC 20, Hardness 5, HP 20), but this doesn't free the restrained creature.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 28"
+}

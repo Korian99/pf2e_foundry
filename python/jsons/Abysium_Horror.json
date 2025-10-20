@@ -1,0 +1,215 @@
+{
+  "initiative": 0,
+  "initiativebonus": 17,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Abysium Horror",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Common",
+    "huge",
+    "Elemental",
+    "Metal"
+  ],
+  "source": "Pathfinder Rage of Elements",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 17,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Talican"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 3
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 215,
+    "max": 215,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "electricity",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Green Glow",
+      "actions": null,
+      "traits": [
+        "aura",
+        "poison",
+        "radiation"
+      ],
+      "description": "<p>20 feet.</p>\n<p>An abysium horror constantly emanates a powerful energy toxic to life. This radiation sheds dim light in the area. Any creature beginning its turn in the aura must attempt a DC 27 Fortitude Saving Throw save, becoming Sickened 1 on a failure or Sickened 2 on a critical failure. Once out of the aura, an affected creature's sickened condition automatically decreases by 1 at the beginning of each of its turns.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Heavy",
+      "actions": null,
+      "traits": [],
+      "description": "<p>As long as it is immobile, the elemental can't be forcibly moved or knocked Prone. If it takes a move action, it loses this immunity until the start of its next turn.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, climb 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 23,
+      "traits": [
+        "reach-15",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4",
+          "type": "poison"
+        },
+        {
+          "roll": "2d8+10",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4)*2",
+          "type": "poison"
+        },
+        {
+          "roll": "(2d8+10)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Radioactive Shrapnel",
+      "bonus": 23,
+      "traits": [
+        "brutal",
+        "propulsive",
+        "range-increment-60"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4",
+          "type": "poison"
+        },
+        {
+          "roll": "2d8+7",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4)*2",
+          "type": "poison"
+        },
+        {
+          "roll": "(2d8+7)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Trample",
+      "actions": 3,
+      "traits": [],
+      "description": "<p>Large or smaller, claw, Basic DC 27 Reflex Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 27"
+}

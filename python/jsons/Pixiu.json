@@ -1,0 +1,372 @@
+{
+  "initiative": 0,
+  "initiativebonus": 18,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Pixiu",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Dragon"
+  ],
+  "source": "Pathfinder Lost Omens Tian Xia World Guide",
+  "senses": [
+    "Darkvision",
+    "goldsense (precise) 120 feet"
+  ],
+  "perception": {
+    "value": 18,
+    "note": "Darkvision, goldsense (precise) 120 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Draconic"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Goldsense (Precise) 120 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The pixiu can detect the presence, location, and approximate value of gold within 120 feet.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 165,
+    "max": 165,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "void",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Good Fortune",
+      "actions": -1,
+      "traits": [
+        "fortune"
+      ],
+      "description": "<p><strong>Trigger</strong> The pixiu, or an ally within 30 feet, is about to attempt a saving throw but hasn't rolled yet</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> That creature rolls the triggering saving throw twice and takes the better result.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Stored Wealth",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Pixius can eat gold and gems with no adverse effects. A pixiu's belly can hold any number of gold pieces, usually around 100. Whenever it takes slashing or piercing damage, a number of gold pieces equal to the damage falls from its belly to the ground in its square.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, fly 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 20,
+      "traits": [
+        "magical",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4",
+          "type": "spirit"
+        },
+        {
+          "roll": "2d10+5",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4)*2",
+          "type": "spirit"
+        },
+        {
+          "roll": "(2d10+5)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "devour-wealth"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "magical",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4",
+          "type": "spirit"
+        },
+        {
+          "roll": "2d6+5",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4)*2",
+          "type": "spirit"
+        },
+        {
+          "roll": "(2d6+5)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Devour Wealth",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The pixiu's previous action was a successful jaws Strike</p>\n<hr />\n<p><strong>Effect</strong> The pixiu swallows up to 2d12 gold pieces on the target's person and gains temporary Hit Points equal to the amount devoured. These temporary Hit Points last for 1 minute.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Trample",
+      "actions": 3,
+      "traits": [],
+      "description": "<p>Medium or smaller, claw, Basic DC 26 Reflex Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Divine Innate Spells",
+      "type": "innate",
+      "bonus": 18,
+      "dc": 26,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 4,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [
+        {
+          "name": "Cleanse Affliction",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 4,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "healing",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>Gentle restorative magic pushes back the effects of toxins and more complex maladies. Choose an affliction on the target, such as a curse, disease, or poison. If it has advanced past stage one, reduce the stage by one. This reduction can be applied only once to a given case of an affliction, with the case ending when it's completely cured. Although the reduction can't occur again, heightened versions of this spell attempt to counteract with each casting.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> Attempt to counteract the affliction if it is a disease or poison.</p>\n<p><strong>Heightened (4th)</strong> Attempt to counteract the affliction if it is a curse, disease, or poison.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "shptZ5ZphDp6mh5i"
+        },
+        {
+          "name": "Cleanse Affliction",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 4,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "healing",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>Gentle restorative magic pushes back the effects of toxins and more complex maladies. Choose an affliction on the target, such as a curse, disease, or poison. If it has advanced past stage one, reduce the stage by one. This reduction can be applied only once to a given case of an affliction, with the case ending when it's completely cured. Although the reduction can't occur again, heightened versions of this spell attempt to counteract with each casting.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> Attempt to counteract the affliction if it is a disease or poison.</p>\n<p><strong>Heightened (4th)</strong> Attempt to counteract the affliction if it is a curse, disease, or poison.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "shptZ5ZphDp6mh5i"
+        },
+        {
+          "name": "Cleanse Affliction",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 4,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "healing",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>Gentle restorative magic pushes back the effects of toxins and more complex maladies. Choose an affliction on the target, such as a curse, disease, or poison. If it has advanced past stage one, reduce the stage by one. This reduction can be applied only once to a given case of an affliction, with the case ending when it's completely cured. Although the reduction can't occur again, heightened versions of this spell attempt to counteract with each casting.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> Attempt to counteract the affliction if it is a disease or poison.</p>\n<p><strong>Heightened (4th)</strong> Attempt to counteract the affliction if it is a curse, disease, or poison.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "shptZ5ZphDp6mh5i"
+        }
+      ],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Arcana, DC 24"
+}

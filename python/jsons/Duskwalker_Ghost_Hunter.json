@@ -1,0 +1,294 @@
+{
+  "initiative": 0,
+  "initiativebonus": 10,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Duskwalker Ghost Hunter",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Duskwalker",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 10,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Necril"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Composite Longbow",
+      "quantity": 1,
+      "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>",
+      "level": 0,
+      "price": "20 gp",
+      "traits": [
+        "deadly-d10",
+        "propulsive",
+        "volley-30"
+      ]
+    },
+    {
+      "name": "Hatchet",
+      "quantity": 2,
+      "description": "<p>This small axe can be used in close combat or thrown.</p>",
+      "level": 0,
+      "price": "4 sp",
+      "traits": [
+        "agile",
+        "sweep",
+        "thrown-10"
+      ]
+    },
+    {
+      "name": "Leather Armor",
+      "quantity": 1,
+      "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 21,
+    "note": "(22 against prey; see Spirit Hunter)",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+1 status to all saves vs. death effects",
+  "hp": {
+    "value": 56,
+    "max": 56,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "type": "void",
+      "value": 2
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Ghost Dodge",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The duskwalker is targeted by a Strike or spell</p>\n<hr />\n<p><strong>Effect</strong> The duskwalker gains a +2 circumstance bonus to AC, resistance 5 to spirit damage, and increases their resistance to void damage to 5, all against the triggering attack.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Hatchet",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+5",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+5)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Hatchet",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "sweep",
+        "thrown-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+5",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+5)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Composite Longbow",
+      "bonus": 14,
+      "traits": [
+        "deadly-d10",
+        "propulsive",
+        "range-increment-100",
+        "reload-0",
+        "volley-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Ghost Hunter",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The duskwalker's weapons have the benefits of the <em>Ghost Touch</em> property rune on attacks against incorporeal undead.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spirit Hunter",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The duskwalker designates a single creature they can observe as their prey.</p>\n<p>The duskwalker gains a +2 circumstance bonus to Deception checks, Intimidation checks, and Stealth checks against their prey and to any check to Recall Knowledge about it, and deal an additional 2 Spirit Damage damage with all weapon Strikes against their prey.</p>\n<p>These effects last until the duskwalker uses Spirit Hunter again.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spirit Shot",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The duskwalker has designated a creature as their prey using Spirit Hunter</p>\n<hr />\n<p><strong>Effect</strong> The duskwalker makes two ranged Strikes against their prey. If both Strikes hit, combine their damage for the purpose of resistances and weaknesses.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 19"
+}

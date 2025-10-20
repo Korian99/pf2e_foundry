@@ -1,0 +1,207 @@
+{
+  "initiative": 0,
+  "initiativebonus": 10,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Wight (BB)",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Common",
+    "Medium",
+    "Undead",
+    "Unholy",
+    "Wight"
+  ],
+  "source": "Pathfinder Beginner Box",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 10,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 1
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [
+    {
+      "name": "Dagger",
+      "quantity": 1,
+      "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
+      "level": 0,
+      "price": "2 sp",
+      "traits": [
+        "agile",
+        "finesse",
+        "thrown-10",
+        "versatile-s"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 40,
+    "max": 40,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "poison",
+    "unconscious",
+    "bleed",
+    "void"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Final Spite",
+      "actions": -1,
+      "traits": [],
+      "description": "<p>When the wight is reduced to 0 Hit Points, it can use its reaction to make a Strike before being destroyed. It doesn't gain any Hit Points from corrupting spite on this Strike.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+6",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+6)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "corrupting-spite"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Dagger",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+6",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+6)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "corrupting-spite"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Corrupting Spite",
+      "actions": null,
+      "traits": [
+        "divine",
+        "void"
+      ],
+      "description": "<p>When the wight deals damage to a living creature with its claw or dagger Strike, the wight regains 2 Void,healing Damage Hit Points and the target must succeed at a DC 17 Fortitude Saving Throw save or take 2 damage that can't be healed. The wight can use corrupting spite multiple times, but a single creature can't take more than 8 unhealable damage.</p>\n<p>Each full night of rest heals 2 of the unhealable damage, and a full day of bed rest increases the recovery to 4 of the unhealable damage.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 18"
+}

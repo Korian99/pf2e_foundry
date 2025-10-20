@@ -1,0 +1,231 @@
+{
+  "initiative": 0,
+  "initiativebonus": 7,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Harrow Reader",
+  "type": "Creature",
+  "level": -1,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "diplomacy",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "occultism",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "performance",
+      "modifier": 5,
+      "note": [
+        "when fortune-telling 11"
+      ],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "society",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "Fortune-Telling Lore",
+      "modifier": 11,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [
+    {
+      "name": "Sickle",
+      "quantity": 1,
+      "description": "<p>Originally a farming tool used for reaping grain, this one-handed weapon has a short wooden handle ending in a curved blade, sometimes sharpened on both sides.</p>",
+      "level": 0,
+      "price": "2 sp",
+      "traits": [
+        "agile",
+        "finesse",
+        "trip"
+      ]
+    },
+    {
+      "name": "Harrow Deck (Simple)",
+      "quantity": 1,
+      "description": "<p>Used by gamblers and seers alike, this deck of cards comes in several varieties.</p>\n<hr />\n<p>Simple harrow decks are made from low-quality paper and typically have only an icon and a number to signify the suit and alignment. These simple decks are mostly used for games of chance, as the actual image and significance of the cards are irrelevant for such games.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Cold Reading Specialist",
+      "actions": null,
+      "traits": [],
+      "description": "<p>For encounters involving fortune-telling, the harrow reader is a 3rd-level challenge.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 3,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 8,
+    "max": 8,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Sickle",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "finesse",
+        "trip"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+1",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+1)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+1",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+1)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Fated Doom",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Though harrow readers try to avoid combat, no throw of the cards can avoid fate, so a harrow reader learns how best to survive. In the harrow reader's first encounter each day, they gain a +1 status bonus to their initiative roll, attack rolls, and AC.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Read the Harrow",
+      "actions": null,
+      "traits": [
+        "exploration",
+        "occult",
+        "prediction"
+      ],
+      "description": "<p>The harrow reader can conduct a reading over the course of 10 minutes to duplicate the effects of the Augury spell. The harrow reader can conduct up to five readings per day, but the flat check DC increases by 2. This is cumulative, to a maximum of DC 14 for the fifth.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 13"
+}

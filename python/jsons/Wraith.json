@@ -1,0 +1,219 @@
+{
+  "initiative": 0,
+  "initiativebonus": 14,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Wraith",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Common",
+    "Medium",
+    "Incorporeal",
+    "Undead",
+    "Unholy",
+    "Wraith"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision",
+    "Lifesense 60ft precise"
+  ],
+  "perception": {
+    "value": 14,
+    "note": "Darkvision, Lifesense 60ft precise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Necril"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Lifesense 60 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>Lifesense allows a monster to sense the vital essence of living and undead creatures within the listed range. The sense can distinguish between the vitality energy animating living creatures and the void energy animating undead creatures, much as sight distinguishes colors.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 80,
+    "max": 80,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious",
+    "bleed"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Sunlight Powerlessness",
+      "actions": null,
+      "traits": [],
+      "description": "<p>While in sunlight, a wraith is Blinded and Slowed 2.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft, fly 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Wraith Touch",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "divine",
+        "finesse",
+        "void"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Grip of Fear",
+      "actions": 2,
+      "traits": [
+        "emotion",
+        "fear",
+        "mental",
+        "nonlethal"
+      ],
+      "description": "<p>The wraith reaches into an adjacent creature's chest, gripping their heart. The target takes 6d6 Mental Damage damage with a Basic DC 24 Will Saving Throw save. On a critical failure, the creature is also Paralyzed until the start of the wraith's next turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Robes of Welcome",
+      "actions": 1,
+      "traits": [
+        "divine",
+        "void"
+      ],
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The wraith wraps its robes around an adjacent living creature, exposing it to void's embrace. If any creature is cursed by the wraith's void's embrace, the wraith can't impose void's embrace on another creature.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void's Embrace",
+      "actions": null,
+      "traits": [
+        "curse",
+        "death",
+        "divine",
+        "void"
+      ],
+      "description": "<p>If the victim succeeds at a saving throw against this curse while in sunlight, the curse ends. While you have this curse, you bypass the resistance of the wraith that cursed you.</p>\n<p><strong>Saving Throw</strong> DC 24 Will Saving Throw</p><hr /><p><strong>Stage 1</strong> the victim is Dazzled in any light (1 hour)</p>\n<p><strong>Stage 2</strong> the victim gains lifesense 30 feet but is Blinded in any light (1 hour)</p>\n<p><strong>Stage 3</strong> as stage 2, but the creature also has Void Healing (1 hour)</p>\n<p><strong>Stage 4</strong> the victim becomes Unconscious and can't awaken (1 day)</p>\n<p><strong>Stage 5</strong> the creature dies and becomes a wraith, its body crumbling to ash</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 22"
+}

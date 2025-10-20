@@ -1,0 +1,227 @@
+{
+  "initiative": 0,
+  "initiativebonus": 10,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Blackfrost Zombie",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Rare",
+    "Medium",
+    "Cold",
+    "Mindless",
+    "Undead",
+    "Unholy",
+    "Zombie"
+  ],
+  "source": "Pathfinder Adventure Path: Gatewalkers",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 10,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Ice Climb 20 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The blackfrost dead can climb on ice as though it had the listed climb Speed. It ignores difficult terrain and greater difficult terrain from ice and snow and doesn't risk falling when crossing ice.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 120,
+    "max": 120,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "cold",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Opportune Bite",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature critically fails a Strike within 10 feet of the blackfrost zombie</p>\n<hr />\n<p><strong>Effect</strong> The blackfrost zombie Steps toward the triggering creature, then makes a jaws Strike against that creature.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 15,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+5",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "1d6",
+          "type": "cold"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+5)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "cold"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 15,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4+5",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d6",
+          "type": "cold"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+5)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "cold"
+        }
+      ],
+      "effects": [
+        "blackfrost"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Blackfrost",
+      "actions": null,
+      "traits": [
+        "cold",
+        "curse",
+        "disease",
+        "occult"
+      ],
+      "description": "<p>This affliction can't be reduced below stage 1, nor the damage from it healed, until successfully treated with Cleanse Affliction or a similar effect; the affliction can then be removed as a normal disease. A creature that dies from cold damage while cursed with blackfrost rises as a blackfrost dead after 24 hours. Blackfrost has a counteract rank of 10.</p>\n<p><strong>Saving Throw</strong> DC 27 Fortitude Saving Throw</p>\n<p><strong>Stage 1</strong> 4d6 Cold Damage (1 minute)</p>\n<p><strong>Stage 2</strong> weakness to cold 5 and Drained 1 (1 day)</p>\n<p><strong>Stage 3</strong> weakness to cold 10 and Drained 2 (1 day)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Blackfrost Breath",
+      "actions": 2,
+      "traits": [
+        "occult"
+      ],
+      "description": "<p>The blackfrost dead gasps sharply, then exhales a mist of dark-blue blackfrost particles in a 5ft Emanation. All creatures within the mist become Concealed, and all creatures outside the mist become concealed to creatures within it. The mist persists for 1 minute. A creature that ends its turn in the mist is exposed to blackfrost. The blackfrost dead can't use Blackfrost Breath again for 1d4 rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 22"
+}

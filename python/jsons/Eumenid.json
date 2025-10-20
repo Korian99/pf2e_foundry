@@ -1,0 +1,351 @@
+{
+  "initiative": 0,
+  "initiativebonus": 18,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Eumenid",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Monitor"
+  ],
+  "source": "Pathfinder #217: Death Sails a Wine-Dark Sea",
+  "senses": [
+    "Darkvision",
+    "Lifesense 60ft imprecise"
+  ],
+  "perception": {
+    "value": 18,
+    "note": "Darkvision, Lifesense 60ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Chthonian",
+    "Empyrean"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 15,
+      "note": [
+        "to track 18"
+      ],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [
+    {
+      "name": "Spiked Chain",
+      "quantity": 1,
+      "description": "<p>This 4-foot-long length of chain is covered with barbs and has spikes on one or both ends. Some feature metal hoops used as handgrips.</p>",
+      "level": 0,
+      "price": "3 gp",
+      "traits": [
+        "disarm",
+        "finesse",
+        "trip"
+      ]
+    },
+    {
+      "name": "Bola",
+      "quantity": 1,
+      "description": "<p>This throwing weapon consists of weights tied to the end of long cords, which can be used to bludgeon foes or entangle their legs.</p>",
+      "level": 0,
+      "price": "5 sp",
+      "traits": [
+        "nonlethal",
+        "ranged-trip",
+        "thrown"
+      ]
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Unerring Tracker",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A eumenid can Track at its full speed and treats all results of Survival checks to Track as one degree of success better.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 80,
+    "max": 80,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Trip Quarry",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The eumenid's quarry uses a move action within reach of the eumenid's spiked chain</p><hr /><p><strong>Effect</strong> The eumenid Trips the creature.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, fly 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Spiked Chain",
+      "bonus": 17,
+      "traits": [
+        "disarm",
+        "finesse",
+        "magical",
+        "reach-15",
+        "trip"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6",
+          "type": "spirit"
+        },
+        {
+          "roll": "1d8+4",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6)*2",
+          "type": "spirit"
+        },
+        {
+          "roll": "(1d8+4)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Bola",
+      "bonus": 16,
+      "traits": [
+        "nonlethal",
+        "ranged-trip",
+        "thrown-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+4)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Designate Quarry",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "mental"
+      ],
+      "description": "<p>The eumenid designates a single creature as their quarry and focuses their attention on that creature. The eumenid must be able to see or hear the creature, or they must be tracking it. As long as the eumenid has the creature as their quarry, the eumenid gains telepathy with that creature with unlimited range, even between planes. Each day, the quarry can attempt a DC 24 Will Saving Throw save; a success breaks the connection and makes the creature immune to that eumenid's Designate Quarry for 24 hours. The eumenid can only have one quarry at any given time.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Stretching Chain",
+      "actions": null,
+      "traits": [],
+      "description": "<p>In the hands of a eumenid, any spiked chain has a reach of 15 feet.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Taunt Quarry",
+      "actions": 1,
+      "traits": [
+        "detection",
+        "divine",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> The eumenid has Designated a Quarry</p><hr /><p><strong>Effect</strong> Using their telepathy, the eumenid mentally harangues and threatens their quarry, who must attempt a DC 24 Will Saving Throw save.</p><hr /><p><strong>Critical Success</strong> The quarry is unaffected.</p>\n<p><strong>Success</strong> The quarry is Frightened 1. The eumenid learns on what plane the quarry is on.</p>\n<p><strong>Failure</strong> The quarry is Frightened 2. The eumenid learns the quarry's rough location, accurate to within 10 miles.</p>\n<p><strong>Critical Failure</strong> The quarry is Frightened 3 and Off-Guard for as long as it is frightened. The eumenid also learns the quarry's exact location.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Occult Innate Spells",
+      "type": "innate",
+      "bonus": 16,
+      "dc": 24,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 7,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [
+        {
+          "name": "Interplanar Teleport (Self Only; no Planar Key Required for Amneros and the Plane the Quarry is on)",
+          "type": "spell",
+          "level": 7,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "",
+          "range": "5 feet",
+          "area": "",
+          "targets": "up to 8 willing creatures",
+          "save": "",
+          "description": "<p><strong>Requirements</strong> You have a planar key for the destination plane, used as a locus</p>\n<hr />\n<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must know the destination plane exists and use a magic planar key created from material from that plane as a locus for the spell. While the planar keys for most prominent planes are uncommon, just like the spell <em>interplanar teleport</em>, more obscure planes and demiplanes often have rare or possibly even unique planar keys.</p>\n<p>The spell is highly imprecise, and you appear 1d20×25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. <em>Interplanar teleport</em> doesn't provide a means of return travel, though casting <em>interplanar teleport</em> again allows you to return to your previous plane unless there are extenuating circumstances.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "6fqNMpZdwmyEHhmT"
+        }
+      ],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Religion, DC 22"
+}
