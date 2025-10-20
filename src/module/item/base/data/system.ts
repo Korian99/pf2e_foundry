@@ -1,10 +1,10 @@
 import type { DocumentFlags, DocumentFlagsSource } from "@common/data/_types.d.mts";
 import type * as fields from "@common/data/fields.d.mts";
+import type { ItemType } from "@item/types.ts";
 import type { MigrationRecord, OneToThree, PublicationData, Rarity } from "@module/data.ts";
 import type { RuleElementSource } from "@module/rules/index.ts";
 import type { Predicate } from "@system/predication.ts";
 import type { ItemTrait } from "../types.ts";
-import type { ItemType } from "./index.ts";
 
 type BaseItemSourcePF2e<
     TType extends ItemType,
@@ -23,6 +23,7 @@ interface ActionCost {
 interface TraitConfig {
     volley?: number;
     tracking?: number;
+    resilient?: number;
     [key: string]: number | undefined;
 }
 

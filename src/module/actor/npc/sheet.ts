@@ -1,13 +1,13 @@
 import type { NPCPF2e } from "@actor";
 import { CreatureSheetPF2e, type CreatureSheetData } from "@actor/creature/sheet.ts";
-import { ModifierPF2e } from "@actor/modifiers.ts";
+import { Modifier } from "@actor/modifiers.ts";
 import { NPCSkillsEditor } from "@actor/npc/skills-editor.ts";
 import { SheetClickActionHandlers } from "@actor/sheet/base.ts";
 import { createAbilityViewData } from "@actor/sheet/helpers.ts";
 import { RecallKnowledgePopup } from "@actor/sheet/popups/recall-knowledge-popup.ts";
-import { MovementType } from "@actor/types.ts";
-import { ATTRIBUTE_ABBREVIATIONS, MOVEMENT_TYPES, SAVE_TYPES } from "@actor/values.ts";
+import { ATTRIBUTE_ABBREVIATIONS, SAVE_TYPES } from "@actor/values.ts";
 import type { ActorSheetOptions } from "@client/appv1/sheets/actor-sheet.d.mts";
+import { createEffectAreaLabel } from "@item/helpers.ts";
 import { createTagifyTraits, eventToRollParams } from "@module/sheet/helpers.ts";
 import type { UserPF2e } from "@module/user/document.ts";
 import { DicePF2e } from "@scripts/dice.ts";
@@ -22,10 +22,10 @@ import {
     NPCActionSheetData,
     NPCIdentificationSheetData,
     NPCSheetData,
-    NPCSpeedSheetData,
     NPCSpellcastingSheetData,
     NPCStrikeSheetData,
     NPCSystemSheetData,
+    NPCTraitOrTag,
 } from "./types.ts";
 
 abstract class AbstractNPCSheet extends CreatureSheetPF2e<NPCPF2e> {
@@ -123,7 +123,7 @@ abstract class AbstractNPCSheet extends CreatureSheetPF2e<NPCPF2e> {
             const args: StatisticRollParameters = {
                 ...eventToRollParams(event, { type: "check" }),
                 modifiers: [
-                    new ModifierPF2e({
+                    new Modifier({
                         slug: "variant",
                         label: variant.label,
                         modifier: variant.base - skill.base,
@@ -245,7 +245,6 @@ class NPCSheetPF2e extends AbstractNPCSheet {
 
         const { ac, hp, hardness } = sheetData.data.attributes;
         const perception = sheetData.data.perception;
-        const speedData = sheetData.data.attributes.speed;
         const sourceAttributes = actorSource.system.attributes;
         ac.adjustedHigher = ac.value > sourceAttributes.ac.value;
         ac.adjustedLower = ac.value < sourceAttributes.ac.value;
@@ -253,31 +252,23 @@ class NPCSheetPF2e extends AbstractNPCSheet {
         hp.adjustedLower = hp.max < sourceAttributes.hp.max;
         perception.adjustedHigher = perception.totalModifier > actorSource.system.perception.mod;
         perception.adjustedLower = perception.totalModifier < actorSource.system.perception.mod;
+        const speeds = sheetData.data.movement.speeds;
+        const noLandTravel = R.omit(speeds, ["land", "travel"]);
         sheetData.speeds = {
             land: {
-                label: speedData.label ?? "",
-                value: speedData.total,
-                details: speedData.details,
-                adjustedHigher: speedData.total > speedData.value,
-                adjustedLower: speedData.total < speedData.value,
+                label: speeds.land.label,
+                value: speeds.land.value,
+                details: sourceAttributes.speed.details,
+                adjustedHigher: speeds.land.value > sourceAttributes.speed.value,
+                adjustedLower: sourceAttributes.speed.value < speeds.land.value,
             },
-            ...MOVEMENT_TYPES.filter((t): t is Exclude<MovementType, "land"> => t !== "land").reduce(
-                (speeds, type) => {
-                    const speed = speedData.otherSpeeds.find((s) => s.type === type);
-                    return {
-                        ...speeds,
-                        [type]: speed
-                            ? {
-                                  label: speed.label,
-                                  value: speed.total,
-                                  adjustedHigher: typeof speed.total === "number" && speed.total > speed.value,
-                                  adjustedLower: typeof speed.total === "number" && speed.total < speed.value,
-                              }
-                            : null,
-                    };
-                },
-                {} as Record<Exclude<MovementType, "land">, NPCSpeedSheetData | null>,
-            ),
+            ...R.mapValues(noLandTravel, (speed, type) => {
+                if (!speed) return null;
+                const legacyValue = sourceAttributes.speed.otherSpeeds.find((s) => s.type === type)?.value ?? NaN;
+                const adjustedHigher = speed.value > legacyValue;
+                const adjustedLower = speed.value < legacyValue;
+                return { label: speed.label, value: speed.value, adjustedHigher, adjustedLower };
+            }),
         };
         const traits = actor.system.traits.value;
         sheetData.hasHardness = traits.includes("construct") || (Number(hardness?.value) || 0) > 0;
@@ -320,34 +311,41 @@ class NPCSheetPF2e extends AbstractNPCSheet {
      */
     async #prepareActions(sheetData: NPCSheetData): Promise<void> {
         const listFormatter = game.i18n.getListFormatter({ style: "long", type: "conjunction" });
-        const attacks: NPCStrikeSheetData[] = R.sortBy(
-            await Promise.all(
-                sheetData.data.actions.map(async (attack) => {
-                    const item = attack.item;
-                    const traits = item.system.traits.value.map((t) =>
-                        traitSlugToObject(t, CONFIG.PF2E.npcAttackTraits),
-                    );
-                    const rollData = item.getRollData();
-                    const description = await TextEditorPF2e.enrichHTML(item.description, { rollData });
-                    const damageFormula = item.dealsDamage ? String(await attack.damage?.({ getFormula: true })) : null;
-                    const effects = ((): string => {
-                        const list = attack.additionalEffects.map((e) => game.i18n.localize(e.label));
-                        return listFormatter.format(list);
-                    })();
+        const attacks: NPCStrikeSheetData[] = await Promise.all(
+            sheetData.data.actions.map(async (attack) => {
+                const item = attack.item;
+                const rollData = item.getRollData();
+                const description = await TextEditorPF2e.enrichHTML(item.description, { rollData });
+                const breakdown = attack.type === "strike" ? attack.breakdown : attack.statistic.dc.breakdown;
+                const damageFormula = item.dealsDamage ? String(await attack.damage?.({ getFormula: true })) : null;
+                const effects = ((): string => {
+                    const list = attack.additionalEffects.map((e) => game.i18n.localize(e.label));
+                    return listFormatter.format(list);
+                })();
 
-                    return {
-                        ...R.pick(item, ["id", "name", "sort"]),
-                        ...R.pick(attack, ["breakdown", "variants"]),
-                        attackType: item.isMelee ? "PF2E.NPCAttackMelee" : "PF2E.NPCAttackRanged",
-                        traits,
-                        effects,
-                        description,
-                        damageFormula,
-                    };
-                }),
-            ),
-            (a) => a.name,
-            (a) => a.sort,
+                const tags: NPCTraitOrTag[] = item.system.traits.value.map((t) =>
+                    traitSlugToObject(t, CONFIG.PF2E.npcAttackTraits),
+                );
+
+                // Area/Auto fire adds a tag to the traits list in the npc sheet
+                if (item.system.action !== "strike" && item.system.area) {
+                    tags.push({ label: createEffectAreaLabel(item.system.area) });
+                }
+
+                return {
+                    ...R.pick(item, ["id", "name", "sort"]),
+                    attackType: attack.attackRollType,
+                    glyph: attack.glyph,
+                    variants: attack.variants.map((v, idx) => ({
+                        label: v.label,
+                        breakdown: idx === 0 ? breakdown : null,
+                    })),
+                    traitsAndTags: tags.sort((a, b) => a.label.localeCompare(b.label, game.i18n.lang)),
+                    effects,
+                    description,
+                    damageFormula,
+                };
+            }),
         );
         const actions: NPCActionSheetData = {
             passive: { label: game.i18n.localize("PF2E.ActionTypePassive"), actions: [] },

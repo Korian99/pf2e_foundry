@@ -2,6 +2,7 @@ import type { ActorPF2e } from "@actor/base.ts";
 import type { DialogV2Configuration } from "@client/applications/api/dialog.d.mts";
 import type { DocumentHTMLEmbedConfig } from "@client/applications/ux/text-editor.d.mts";
 import type { ItemUUID } from "@client/documents/_module.d.mts";
+import type { ToCompendiumOptions } from "@client/documents/abstract/_module.d.mts";
 import type { DropCanvasData } from "@client/helpers/hooks.d.mts";
 import type { DocumentConstructionContext } from "@common/_types.d.mts";
 import type {
@@ -16,12 +17,13 @@ import type { ImageFilePath, RollMode } from "@common/constants.d.mts";
 import type { ContainerPF2e, PhysicalItemPF2e } from "@item";
 import { createConsumableFromSpell } from "@item/consumable/spell-consumables.ts";
 import { addOrUpgradeTrait, itemIsOfType, markdownToHTML } from "@item/helpers.ts";
+import { ITEM_TYPES } from "@item/values.ts";
 import type { ItemOriginFlag } from "@module/chat-message/data.ts";
 import { ChatMessagePF2e } from "@module/chat-message/document.ts";
 import { preImportJSON } from "@module/doc-helpers.ts";
 import { MigrationList, MigrationRunner } from "@module/migration/index.ts";
 import { MigrationRunnerBase } from "@module/migration/runner/base.ts";
-import { RuleElementOptions, RuleElementPF2e, RuleElementSource, RuleElements } from "@module/rules/index.ts";
+import { RuleElement, RuleElementOptions, RuleElementSource, RuleElements } from "@module/rules/index.ts";
 import { processGrantDeletions } from "@module/rules/rule-element/grant-item/helpers.ts";
 import { eventToRollMode } from "@module/sheet/helpers.ts";
 import { type EnrichmentOptionsPF2e, type RollDataPF2e, TextEditorPF2e } from "@system/text-editor.ts";
@@ -29,7 +31,6 @@ import {
     ErrorPF2e,
     createHTMLElement,
     htmlClosest,
-    isObject,
     localizer,
     objectHasKey,
     setHasElement,
@@ -41,7 +42,7 @@ import * as R from "remeda";
 import type { AfflictionSource } from "../affliction/data.ts";
 import { PHYSICAL_ITEM_TYPES } from "../physical/values.ts";
 import { MAGIC_TRADITIONS } from "../spell/values.ts";
-import type { ItemInstances } from "../types.ts";
+import type { ItemInstances, ItemType } from "../types.ts";
 import type {
     ConditionSource,
     EffectSource,
@@ -49,7 +50,6 @@ import type {
     ItemFlagsPF2e,
     ItemSourcePF2e,
     ItemSystemData,
-    ItemType,
     RawItemChatData,
     TraitChatData,
 } from "./data/index.ts";
@@ -74,7 +74,7 @@ class ItemPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extends Item
     }
 
     /** Prepared rule elements from this item */
-    declare rules: RuleElementPF2e[];
+    declare rules: RuleElement[];
 
     /** The sluggified name of the item **/
     get slug(): string | null {
@@ -295,19 +295,19 @@ class ItemPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extends Item
         // Set item grant default values: pre-migration values will be strings, so temporarily check for objectness
         const flags = this.flags;
         flags.pf2e = fu.mergeObject(flags.pf2e ?? {}, { rulesSelections: {} });
-        if (isObject(flags.pf2e.grantedBy)) {
+        if (R.isPlainObject(flags.pf2e.grantedBy)) {
             flags.pf2e.grantedBy.onDelete ??= this.isOfType("physical") ? "detach" : "cascade";
         }
         const grants = (flags.pf2e.itemGrants ??= {});
         for (const grant of Object.values(grants)) {
-            if (isObject(grant)) {
+            if (R.isPlainObject(grant)) {
                 grant.onDelete ??= "detach";
             }
         }
         this.grantedBy = this.actor?.items.get(this.flags.pf2e.grantedBy?.id ?? "") ?? null;
     }
 
-    prepareRuleElements(options: Omit<RuleElementOptions, "parent"> = {}): RuleElementPF2e[] {
+    prepareRuleElements(options: Omit<RuleElementOptions, "parent"> = {}): RuleElement[] {
         if (!this.actor) throw ErrorPF2e("Rule elements may only be prepared from embedded items");
         return (this.rules = this.actor.canHostRuleElements
             ? RuleElements.fromOwnedItem({ ...options, parent: this as ItemPF2e<NonNullable<TParent>> })
@@ -398,7 +398,7 @@ class ItemPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extends Item
                 if (refreshedSpell instanceof ItemPF2e && refreshedSpell.isOfType("spell")) {
                     const spellConsumableData = await createConsumableFromSpell(refreshedSpell, {
                         type: currentSource.system.category,
-                        heightenedLevel: currentSource.system.spell.system.location.heightenedLevel,
+                        rank: currentSource.system.spell.system.location.heightenedLevel,
                     });
                     fu.mergeObject(updates, {
                         name: spellConsumableData.name,
@@ -427,6 +427,11 @@ class ItemPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extends Item
         if (options.notify) ui.notifications.info(localize("Success", { item: this.name }));
 
         return this;
+    }
+
+    override exportToJSON(options: ToCompendiumOptions = {}): void {
+        options.clearSource ??= false;
+        super.exportToJSON(options);
     }
 
     getOriginData(): ItemOriginFlag {
@@ -594,16 +599,14 @@ class ItemPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extends Item
             types?: string[];
         } & Partial<DialogV2Configuration> = {},
     ): Promise<Item | null> {
-        options.classes = [...(options.classes ?? []), "dialog-item-create"];
-        options.types &&= R.unique(options.types);
-        options.types ??= Object.keys(game.system.documentTypes.Item);
+        options.classes = [options.classes ?? [], "item-create"].flat();
+        options.types = R.unique([options.types ?? ITEM_TYPES].flat());
 
-        // Figure out the types to omit
-        const omittedTypes: ItemType[] = ["condition", "spellcastingEntry", "lore"];
-        if (BUILD_MODE === "production") omittedTypes.push("affliction", "book");
-        if (game.settings.get("pf2e", "campaignType") !== "kingmaker") omittedTypes.push("campaignFeature");
-
-        for (const type of omittedTypes) {
+        // Exclude certain types from being creatable
+        const excludedTypes: ItemType[] = ["condition", "spellcastingEntry", "lore"];
+        if (BUILD_MODE === "production") excludedTypes.push("affliction", "book");
+        if (game.settings.get("pf2e", "campaignType") !== "kingmaker") excludedTypes.push("campaignFeature");
+        for (const type of excludedTypes) {
             options.types.findSplice((t) => t === type);
         }
 

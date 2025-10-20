@@ -1,11 +1,11 @@
 import { ActorPF2e } from "@actor";
-import { ModifierPF2e } from "@actor/modifiers.ts";
+import { Modifier } from "@actor/modifiers.ts";
 import { SAVE_TYPES } from "@actor/values.ts";
 import type { ClientDocument } from "@client/documents/abstract/client-document.d.mts";
 import type { MeasuredTemplateType } from "@common/constants.d.mts";
 import { ItemPF2e } from "@item";
 import type { AbilityTrait } from "@item/ability/types.ts";
-import { EFFECT_AREA_SHAPES } from "@item/spell/values.ts";
+import { EFFECT_AREA_SHAPES } from "@item/values.ts";
 import { ChatMessageFlagsPF2e, ChatMessagePF2e } from "@module/chat-message/index.ts";
 import { calculateDC } from "@module/dc.ts";
 import { eventToRollParams } from "@module/sheet/helpers.ts";
@@ -261,7 +261,7 @@ export class InlineRollLinks {
                 } else if (against) {
                     const defenseStat = opposingActor?.getStatistic(against)?.clone({
                         modifiers: adjustment
-                            ? [new ModifierPF2e({ label: "PF2E.InlineCheck.DCAdjustment", modifier: adjustment })]
+                            ? [new Modifier({ label: "PF2E.InlineCheck.DCAdjustment", modifier: adjustment })]
                             : [],
                         rollOptions: [
                             item?.isOfType("action", "feat") ? `${opposingRole}:action:slug:${item.slug}` : null,

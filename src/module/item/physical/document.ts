@@ -15,9 +15,9 @@ import { MystifiedTraits } from "@item/base/data/values.ts";
 import { isContainerCycle } from "@item/container/helpers.ts";
 import { MAGIC_TRADITIONS } from "@item/spell/values.ts";
 import type { Rarity, Size, ZeroToTwo } from "@module/data.ts";
-import { RuleElementOptions, RuleElementPF2e } from "@module/rules/index.ts";
+import { RuleElement, RuleElementOptions } from "@module/rules/index.ts";
 import type { EffectSpinoff } from "@module/rules/rule-element/effect-spinoff/spinoff.ts";
-import { createHTMLElement, ErrorPF2e, isObject, localizer, setHasElement, tupleHasValue } from "@util";
+import { createHTMLElement, ErrorPF2e, localizer, setHasElement, tupleHasValue } from "@util";
 import * as R from "remeda";
 import { getUnidentifiedPlaceholderImage } from "../identification.ts";
 import { Bulk } from "./bulk.ts";
@@ -31,13 +31,7 @@ import type {
     PhysicalSystemData,
     Price,
 } from "./data.ts";
-import {
-    CoinsPF2e,
-    computeLevelRarityPrice,
-    getDefaultEquipStatus,
-    handleHPChange,
-    prepareBulkData,
-} from "./helpers.ts";
+import { Coins, computeLevelRarityPrice, getDefaultEquipStatus, handleHPChange, prepareBulkData } from "./helpers.ts";
 import { getUsageDetails, isEquipped } from "./usage.ts";
 import { DENOMINATIONS } from "./values.ts";
 
@@ -129,11 +123,11 @@ abstract class PhysicalItemPF2e<TParent extends ActorPF2e | null = ActorPF2e | n
     }
 
     /** The monetary value of the entire item stack */
-    get assetValue(): CoinsPF2e {
-        const baseValue = CoinsPF2e.fromPrice(this.price, this.quantity);
+    get assetValue(): Coins {
+        const baseValue = Coins.fromPrice(this.price, this.quantity);
         return this.isSpecific
             ? baseValue
-            : this.subitems.reduce((total, i) => total.plus(CoinsPF2e.fromPrice(i.price, i.quantity)), baseValue);
+            : this.subitems.reduce((total, i) => total.plus(Coins.fromPrice(i.price, i.quantity)), baseValue);
     }
 
     get identificationStatus(): IdentificationStatus {
@@ -271,17 +265,12 @@ abstract class PhysicalItemPF2e<TParent extends ActorPF2e | null = ActorPF2e | n
         this.system.stackGroup ??= null;
         this.system.hp.brokenThreshold = Math.floor(this.system.hp.max / 2);
 
-        // Temporary: prevent noise from items pre migration 746
-        if (typeof this.system.price.value === "string") {
-            this.system.price.value = CoinsPF2e.fromString(this.system.price.value);
-        }
-
         // Ensure infused items are always temporary
         const traits: PhysicalItemTrait[] = this.system.traits.value;
         if (traits.includes("infused")) this.system.temporary = true;
 
         // Normalize and fill price data
-        this.system.price.value = new CoinsPF2e(this.system.temporary ? {} : this.system.price.value);
+        this.system.price.value = new Coins(this.system.temporary ? {} : this.system.price.value);
         this.system.price.per = Math.max(1, this.system.price.per ?? 1);
         this.system.price.sizeSensitive ??= true;
 
@@ -412,7 +401,7 @@ abstract class PhysicalItemPF2e<TParent extends ActorPF2e | null = ActorPF2e | n
         }
     }
 
-    override prepareRuleElements(options?: Omit<RuleElementOptions, "parent">): RuleElementPF2e[] {
+    override prepareRuleElements(options?: Omit<RuleElementOptions, "parent">): RuleElement[] {
         const rules = super.prepareRuleElements(options);
         if (this.actor?.canHostRuleElements) {
             for (const subitem of this.subitems) {
@@ -570,7 +559,7 @@ abstract class PhysicalItemPF2e<TParent extends ActorPF2e | null = ActorPF2e | n
     }
 
     /**
-     * Can the provided item stack with this item?
+     * Can the provided item stack with this item? This should be used on existing items.
      * @param item an item we are trying to add to the inventory
      */
     isStackableWith(item: PhysicalItemPF2e): boolean {
@@ -583,8 +572,8 @@ abstract class PhysicalItemPF2e<TParent extends ActorPF2e | null = ActorPF2e | n
         if (!preCheck) return false;
 
         // Additional checks to make sure the worn state is what we want
-        // These checks are skipped for sub-items
-        if (!this.parentItem) {
+        // These checks are skipped for sub-items or items that are in a container
+        if (!this.parentItem && !this.container) {
             const secondPreCheck =
                 this.isHeld === item.isHeld && (!this.isHeld || this.quantity === 0 || item.quantity === 0);
             if (!secondPreCheck) return false;
@@ -592,11 +581,14 @@ abstract class PhysicalItemPF2e<TParent extends ActorPF2e | null = ActorPF2e | n
 
         const thisData = this.toObject().system;
         const otherData = item.toObject().system;
+        thisData.price.value = { cp: new Coins(thisData.price.value).copperValue };
+        otherData.price.value = { cp: new Coins(otherData.price.value).copperValue };
         thisData.quantity = otherData.quantity;
         thisData.equipped = otherData.equipped;
         thisData.containerId = otherData.containerId;
         thisData._migration = otherData._migration;
         thisData.identification = otherData.identification;
+        thisData.publication = otherData.publication;
 
         return R.isDeepEqual(thisData, otherData);
     }
@@ -871,25 +863,21 @@ abstract class PhysicalItemPF2e<TParent extends ActorPF2e | null = ActorPF2e | n
         if (operation.checkHP ?? true) handleHPChange(this, changed);
 
         // Clear 0 price denominations and per fields with values 0 or 1
-        if (isObject<Record<string, unknown>>(changed.system.price)) {
+        if (R.isPlainObject(changed.system.price)) {
             const price: Record<string, unknown> = changed.system.price;
-            if (isObject<Record<string, number | null>>(price.value)) {
+            if (R.isPlainObject(price.value)) {
                 const coins = price.value;
                 for (const denomination of DENOMINATIONS) {
-                    if (coins[denomination] === 0) {
-                        coins[`-=${denomination}`] = null;
-                    }
+                    if (coins[denomination] === 0) coins[`-=${denomination}`] = null;
                 }
             }
-
             if ("per" in price && (!price.per || Number(price.per) <= 1)) {
                 price["-=per"] = null;
             }
         }
 
-        const equipped: Record<string, unknown> = changed.system.equipped ?? {};
-
         // Uninvest if dropping
+        const equipped: Record<string, unknown> = changed.system.equipped ?? {};
         if (equipped.carryType === "dropped" && this.system.equipped.invested) {
             equipped.invested = false;
         }

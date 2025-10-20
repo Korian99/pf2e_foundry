@@ -11,7 +11,6 @@ import type {
     CreaturePerceptionData,
     CreatureResources,
     CreatureResourcesSource,
-    CreatureSpeeds,
     CreatureSystemData,
     CreatureSystemSource,
     CreatureTraitsSource,
@@ -24,15 +23,17 @@ import type {
     ActorAttributesSource,
     ActorFlagsPF2e,
     AttributeBasedTraceData,
+    BasicAttackAction,
     HitPointsStatistic,
     StrikeData,
 } from "@actor/data/base.ts";
 import { InitiativeTraceData } from "@actor/initiative.ts";
-import type { ModifierPF2e, StatisticModifier } from "@actor/modifiers.ts";
+import type { Modifier, StatisticModifier } from "@actor/modifiers.ts";
 import type { ActorAlliance, SaveType, SkillSlug } from "@actor/types.ts";
 import type { MeleePF2e } from "@item";
 import type { PublicationData, ValueAndMax } from "@module/data.ts";
 import type { RawPredicate } from "@system/predication.ts";
+import type { Statistic } from "@system/statistic/index.ts";
 
 type NPCSource = BaseCreatureSource<"npc", NPCSystemSource> & {
     flags: DeepPartial<NPCFlags>;
@@ -159,7 +160,7 @@ interface NPCSystemData extends Omit<NPCSystemSource, "attributes" | "perception
     skills: Record<string, NPCSkillData>;
 
     /** Special strikes which the creature can take. */
-    actions: NPCStrike[];
+    actions: NPCAttackAction[];
 
     resources: NPCResources;
 
@@ -167,7 +168,7 @@ interface NPCSystemData extends Omit<NPCSystemSource, "attributes" | "perception
         rituals: { dc: number };
     };
 
-    customModifiers: Record<string, ModifierPF2e[]>;
+    customModifiers: Record<string, Modifier[]>;
 }
 
 interface NPCPerceptionData extends CreaturePerceptionData {
@@ -177,7 +178,6 @@ interface NPCPerceptionData extends CreaturePerceptionData {
 interface NPCAttributes extends Omit<NPCAttributesSource, AttributesSourceOmission>, CreatureAttributes {
     adjustment: "elite" | "weak" | null;
     hp: NPCHitPoints;
-    speed: NPCSpeeds;
     /**
      * Data related to the currently equipped shield. This is copied from the shield data itself, and exists to
      * allow for the shield health to be shown in a token.
@@ -195,7 +195,7 @@ interface NPCAttributes extends Omit<NPCAttributesSource, AttributesSourceOmissi
     classOrSpellDC: { value: number };
 }
 
-type AttributesSourceOmission = "ac" | "initiative" | "immunities" | "weaknesses" | "resistances";
+type AttributesSourceOmission = "ac" | "initiative" | "immunities" | "weaknesses" | "resistances" | "speed";
 
 interface NPCDetails extends NPCDetailsSource, CreatureDetails {
     level: {
@@ -211,7 +211,7 @@ interface NPCDetails extends NPCDetailsSource, CreatureDetails {
 interface NPCStrike extends StrikeData {
     item: MeleePF2e<ActorPF2e>;
     /** The type of attack as a localization string */
-    attackRollType?: string;
+    attackRollType: string;
     /** The id of the item this strike is generated from */
     sourceId?: string;
     /** Additional effects from a successful strike, like "Grab" */
@@ -219,6 +219,20 @@ interface NPCStrike extends StrikeData {
     /** A melee usage of a firearm: not available on NPC strikes */
     altUsages?: never;
 }
+
+interface NPCAreaFire extends BasicAttackAction {
+    type: "area-fire" | "auto-fire";
+    item: MeleePF2e<ActorPF2e>;
+    /** The type of attack as a localization string */
+    attackRollType: string;
+    altUsages?: never;
+    statistic: Statistic;
+    additionalEffects: { tag: string; label: string }[];
+    /** A list of buttons to show. In practice there is only one */
+    variants: { label: string; roll: () => void }[];
+}
+
+type NPCAttackAction = NPCStrike | NPCAreaFire;
 
 /** Save data with an additional "base" value */
 interface NPCSaveData extends SaveData {
@@ -252,10 +266,6 @@ interface NPCSkillData extends NPCSkillSource, AttributeBasedTraceData {
     special: NPCSpecialSkill[];
 }
 
-interface NPCSpeeds extends CreatureSpeeds {
-    details: string;
-}
-
 interface NPCResources extends CreatureResources {
     /** The current number of focus points and pool size */
     focus: ValueAndMax & { cap: number };
@@ -263,6 +273,8 @@ interface NPCResources extends CreatureResources {
 }
 
 export type {
+    NPCAreaFire,
+    NPCAttackAction,
     NPCAttributes,
     NPCAttributesSource,
     NPCFlags,

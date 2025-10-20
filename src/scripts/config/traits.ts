@@ -596,6 +596,7 @@ const npcAttackTraits = {
     ...weaponTraits,
     ...preciousMaterials,
     ...rangeTraits,
+    area: "PF2E.TraitArea",
     concentrate: "PF2E.TraitConcentrate",
     curse: "PF2E.TraitCurse",
     "deadly-2d8": "PF2E.TraitDeadly2D8",
@@ -1064,6 +1065,9 @@ const armorTraits = {
     plant: "PF2E.TraitPlant",
     ponderous: "PF2E.TraitPonderous",
     relic: "PF2E.TraitRelic",
+    "resilient-1": "PF2E.TraitResilient1",
+    "resilient-2": "PF2E.TraitResilient2",
+    "resilient-3": "PF2E.TraitResilient3",
     tech: "PF2E.TraitTech",
 };
 

@@ -2,10 +2,10 @@
     "id": "pf2e",
     "title": "Pathfinder Second Edition",
     "description": "A community contributed game system for Pathfinder Second Edition",
-    "version": "7.4.3",
+    "version": "7.6.3",
     "license": "./LICENSE",
     "manifest": "https://raw.githubusercontent.com/foundryvtt/pf2e/v13-dev/static/system.json",
-    "download": "https://github.com/foundryvtt/pf2e/releases/download/7.4.3/pf2e.zip",
+    "download": "https://github.com/foundryvtt/pf2e/releases/download/7.6.3/pf2e.zip",
     "changelog": "https://github.com/foundryvtt/pf2e/blob/v13-dev/CHANGELOG.md",
     "url": "https://github.com/foundryvtt/pf2e",
     "bugs": "https://github.com/foundryvtt/pf2e/issues",
@@ -14,7 +14,7 @@
     "primaryTokenAttribute": "attributes.hp",
     "compatibility": {
         "minimum": "13.348",
-        "verified": "13.348",
+        "verified": "13.350",
         "maximum": "13"
     },
     "authors": [
@@ -41,11 +41,65 @@
         "diagonals": 4
     },
     "documentTypes": {
+        "Actor": {
+            "army": {
+                "htmlFields": [
+                    "details.description"
+                ]
+            },
+            "familiar": {},
+            "hazard": {
+                "htmlFields": [
+                    "details.description"
+                ]
+            },
+            "loot": {
+                "htmlFields": [
+                    "details.description"
+                ]
+            },
+            "party": {
+                "htmlFields": [
+                    "details.description"
+                ]
+            },
+            "vehicle": {
+                "htmlFields": [
+                    "details.description"
+                ]
+            }
+        },
         "RegionBehavior": {
             "environment": {},
             "environmentFeature": {}
         }
     },
+    "languages": [
+        {
+            "lang": "en",
+            "name": "Main (English)",
+            "path": "lang/en.json",
+            "flags": {}
+        },
+        {
+            "lang": "en",
+            "name": "Actions (English)",
+            "path": "lang/action-en.json",
+            "flags": {}
+        },
+        {
+            "lang": "en",
+            "name": "Rules Elements (English)",
+            "path": "lang/re-en.json",
+            "flags": {}
+        },
+        {
+            "lang": "en",
+            "name": "Kingmaker (English)",
+            "path": "lang/kingmaker-en.json",
+            "flags": {}
+        }
+    ],
     "packs": [
         {
             "name": "abomination-vaults-bestiary",
@@ -555,6 +609,19 @@
             "flags": {}
         },
         {
+            "name": "revenge-of-the-runelords-bestiary",
+            "label": "Revenge of the Runelords",
+            "path": "packs/revenge-of-the-runelords-bestiary",
+            "type": "Actor",
+            "banner": "systems/pf2e/assets/compendium-banner/red.webp",
+            "system": "pf2e",
+            "ownership": {
+                "PLAYER": "LIMITED",
+                "ASSISTANT": "OWNER"
+            },
+            "flags": {}
+        },
+        {
             "name": "rusthenge-bestiary",
             "label": "Rusthenge",
             "path": "packs/rusthenge-bestiary",
@@ -936,7 +1003,7 @@
             "label": "Spells",
             "path": "packs/spells",
             "type": "Item",
-            "banner": "systems/pf2e/assets/compendium-banner/blue.webp",
+            "banner": "systems/pf2e/assets/compendium-banner/green.webp",
             "system": "pf2e",
             "ownership": {
                 "PLAYER": "OBSERVER",
@@ -1027,7 +1094,7 @@
             "label": "Feat/Feature Effects",
             "path": "packs/feat-effects",
             "type": "Item",
-            "banner": "systems/pf2e/assets/compendium-banner/green.webp",
+            "banner": "systems/pf2e/assets/compendium-banner/blue.webp",
             "system": "pf2e",
             "ownership": {
                 "PLAYER": "OBSERVER",
@@ -1066,7 +1133,7 @@
             "label": "Equipment",
             "path": "packs/equipment",
             "type": "Item",
-            "banner": "systems/pf2e/assets/compendium-banner/blue.webp",
+            "banner": "systems/pf2e/assets/compendium-banner/green.webp",
             "system": "pf2e",
             "ownership": {
                 "PLAYER": "OBSERVER",
@@ -1254,6 +1321,7 @@
                         "kingmaker-bestiary",
                         "myth-speaker-bestiary",
                         "quest-for-the-frozen-flame-bestiary",
+                        "revenge-of-the-runelords-bestiary",
                         "season-of-ghosts-bestiary",
                         "seven-dooms-for-sandpoint-bestiary",
                         "shades-of-blood-bestiary",
@@ -1402,32 +1470,6 @@
                 "domains",
                 "journals"
             ]
-        }
-    ],
-    "languages": [
-        {
-            "lang": "en",
-            "name": "Main (English)",
-            "path": "lang/en.json",
-            "flags": {}
-        },
-        {
-            "lang": "en",
-            "name": "Actions (English)",
-            "path": "lang/action-en.json",
-            "flags": {}
-        },
-        {
-            "lang": "en",
-            "name": "Rules Elements (English)",
-            "path": "lang/re-en.json",
-            "flags": {}
-        },
-        {
-            "lang": "en",
-            "name": "Kingmaker (English)",
-            "path": "lang/kingmaker-en.json",
-            "flags": {}
         }
     ]
 }

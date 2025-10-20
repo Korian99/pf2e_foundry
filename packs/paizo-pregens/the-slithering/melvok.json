@@ -957,7 +957,7 @@
                 },
                 "defense": null,
                 "description": {
-                    "value": "<p>You blast an icy ray. Make a spell attack roll. The ray deals 2d4 cold damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage and takes a -10-foot status penalty to its Speeds for 1 round.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Ray of Frost]</p>\n<p><strong>Success</strong> The target takes normal damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>"
+                    "value": "<p>You blast an icy ray. Make a spell attack roll. The ray deals 2d4 cold damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage and takes a –10-foot status penalty to its Speeds for 1 round.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Spell Effect: Ray of Frost]</p>\n<p><strong>Success</strong> The target takes normal damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>"
                 },
                 "duration": {
                     "sustained": false,
@@ -4582,28 +4582,7 @@
                         "key": "ActiveEffectLike",
                         "mode": "add",
                         "path": "system.attributes.familiarAbilities.value",
-                        "value": {
-                            "brackets": [
-                                {
-                                    "end": 5,
-                                    "value": 1
-                                },
-                                {
-                                    "end": 11,
-                                    "start": 6,
-                                    "value": 2
-                                },
-                                {
-                                    "end": 17,
-                                    "start": 12,
-                                    "value": 3
-                                },
-                                {
-                                    "start": 18,
-                                    "value": 4
-                                }
-                            ]
-                        }
+                        "value": "match(when(lte(@actor.level, 5), 1), when(btwn(@actor.level, 6, 11), 2), when(btwn(@actor.level, 12, 17), 3), when(gte(@actor.level, 18), 4))"
                     }
                 ],
                 "slug": "familiar-witch",
@@ -4872,11 +4851,7 @@
                     "type": "fire",
                     "value": 2
                 }
-            ],
-            "speed": {
-                "otherSpeeds": [],
-                "value": 25
-            }
+            ]
         },
         "build": {
             "attributes": {

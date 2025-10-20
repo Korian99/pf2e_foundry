@@ -1,4 +1,4 @@
-import { DeferredValueParams, MODIFIER_TYPES, ModifierPF2e, ModifierType } from "@actor/modifiers.ts";
+import { DeferredValueParams, MODIFIER_TYPES, Modifier, ModifierType } from "@actor/modifiers.ts";
 import { AttributeString } from "@actor/types.ts";
 import { damageCategoriesUnique } from "@scripts/config/damage.ts";
 import { DamageCategoryUnique } from "@system/damage/types.ts";
@@ -10,7 +10,7 @@ import {
     StrictStringField,
 } from "@system/schema-data-fields.ts";
 import { objectHasKey, sluggify } from "@util";
-import { RuleElementOptions, RuleElementPF2e } from "./base.ts";
+import { RuleElement, RuleElementOptions } from "./base.ts";
 import {
     ModelPropsFromRESchema,
     ResolvableValueField,
@@ -24,11 +24,12 @@ import fields = foundry.data.fields;
  * Apply a constant modifier (or penalty/bonus) to a statistic or usage thereof
  * @category RuleElement
  */
-class FlatModifierRuleElement extends RuleElementPF2e<FlatModifierSchema> {
+class FlatModifierRuleElement extends RuleElement<FlatModifierSchema> {
     constructor(source: FlatModifierSource, options: RuleElementOptions) {
         super(source, options);
         if (this.invalid) return;
 
+        // Force false if there is no way this RE is relevant to ABP
         if (!this.item.isOfType("physical") && this.type !== "item") {
             this.fromEquipment = false;
         }
@@ -102,17 +103,8 @@ class FlatModifierRuleElement extends RuleElementPF2e<FlatModifierSchema> {
             }),
             removeAfterRoll: new DataUnionField(
                 [
-                    new StrictStringField<"if-enabled", "if-enabled">({
-                        required: false,
-                        nullable: false,
-                        choices: ["if-enabled"],
-                        initial: undefined,
-                    }),
-                    new StrictBooleanField({
-                        required: false,
-                        nullable: false,
-                        initial: undefined,
-                    }),
+                    new StrictStringField<"if-enabled">({ required: false, nullable: false, choices: ["if-enabled"] }),
+                    new StrictBooleanField({ required: false, nullable: false, initial: undefined }),
                     new PredicateField({ required: false, nullable: false, initial: undefined }),
                 ],
                 { required: false, nullable: false, initial: false },
@@ -136,7 +128,7 @@ class FlatModifierRuleElement extends RuleElementPF2e<FlatModifierSchema> {
         for (const selector of selectors) {
             if (selector === "null") continue;
 
-            const construct = (options: DeferredValueParams = {}): ModifierPF2e | null => {
+            const construct = (options: DeferredValueParams = {}): Modifier | null => {
                 const resolvedValue = Number(this.resolveValue(this.value, 0, options)) || 0;
                 if (this.ignored) return null;
 
@@ -160,7 +152,7 @@ class FlatModifierRuleElement extends RuleElementPF2e<FlatModifierSchema> {
                 }
                 if (this.battleForm && !this.predicate.includes("battle-form")) this.predicate.push("battle-form");
 
-                const modifier = new ModifierPF2e({
+                const modifier = new Modifier({
                     slug,
                     label,
                     modifier: finalValue,
@@ -187,7 +179,7 @@ class FlatModifierRuleElement extends RuleElementPF2e<FlatModifierSchema> {
     }
 
     /** Remove this rule element's parent item after a roll */
-    override async afterRoll({ check, rollOptions }: RuleElementPF2e.AfterRollParams): Promise<void> {
+    override async afterRoll({ check, rollOptions }: RuleElement.AfterRollParams): Promise<void> {
         if (this.ignored || !this.removeAfterRoll || !this.item.isOfType("effect")) {
             return;
         }
@@ -200,9 +192,7 @@ class FlatModifierRuleElement extends RuleElementPF2e<FlatModifierSchema> {
     }
 }
 
-interface FlatModifierRuleElement
-    extends RuleElementPF2e<FlatModifierSchema>,
-        ModelPropsFromRESchema<FlatModifierSchema> {
+interface FlatModifierRuleElement extends RuleElement<FlatModifierSchema>, ModelPropsFromRESchema<FlatModifierSchema> {
     value: RuleValue;
 }
 
@@ -249,7 +239,7 @@ type FlatModifierSchema = RuleElementSchema & {
      * The value may be a boolean, "if-enabled", or a predicate to be tested against the roll options from the roll.
      */
     removeAfterRoll: DataUnionField<
-        StrictStringField<"if-enabled"> | StrictBooleanField | PredicateField<false, false, false>,
+        StrictStringField<"if-enabled"> | StrictBooleanField<false, false, false> | PredicateField<false, false, false>,
         false,
         false,
         true

@@ -3,12 +3,12 @@ import { ItemPF2e } from "@item";
 import type { ItemSourcePF2e } from "@item/base/data/index.ts";
 import * as R from "remeda";
 import { AELikeChangeMode } from "../ae-like.ts";
-import type { RuleElementPF2e } from "../base.ts";
+import type { RuleElement } from "../base.ts";
 import { ResolvableValueField } from "../data.ts";
 import { ITEM_ALTERATION_HANDLERS } from "./handlers.ts";
 import fields = foundry.data.fields;
 
-class ItemAlteration extends foundry.abstract.DataModel<RuleElementPF2e, ItemAlterationSchema> {
+class ItemAlteration extends foundry.abstract.DataModel<RuleElement, ItemAlterationSchema> {
     static override defineSchema(): ItemAlterationSchema {
         return {
             mode: new fields.StringField({
@@ -21,11 +21,16 @@ class ItemAlteration extends foundry.abstract.DataModel<RuleElementPF2e, ItemAlt
                 initial: undefined,
                 choices: R.keys(ITEM_ALTERATION_HANDLERS),
             }),
+            fromEquipment: new fields.BooleanField({
+                required: true,
+                nullable: false,
+                initial: true,
+            }),
             value: new ResolvableValueField(),
         };
     }
 
-    get rule(): RuleElementPF2e {
+    get rule(): RuleElement {
         return this.parent;
     }
 
@@ -45,6 +50,7 @@ class ItemAlteration extends foundry.abstract.DataModel<RuleElementPF2e, ItemAlt
         handler.handle({
             item,
             rule: this.rule,
+            fromEquipment: this.fromEquipment,
             alteration: {
                 mode: this.mode,
                 itemType: item.type,
@@ -55,16 +61,18 @@ class ItemAlteration extends foundry.abstract.DataModel<RuleElementPF2e, ItemAlt
 }
 
 interface ItemAlteration
-    extends foundry.abstract.DataModel<RuleElementPF2e, ItemAlterationSchema>,
+    extends foundry.abstract.DataModel<RuleElement, ItemAlterationSchema>,
         fields.ModelPropsFromSchema<ItemAlterationSchema> {}
 
 type ItemAlterationSchema = {
     mode: fields.StringField<AELikeChangeMode, AELikeChangeMode, true, false, false>;
     property: fields.StringField<ItemAlterationProperty, ItemAlterationProperty, true, false, false>;
     value: ResolvableValueField<true, true, false>;
+    /** Whether this alteration comes from equipment or an equipment effect */
+    fromEquipment: fields.BooleanField;
 };
 
 type ItemAlterationProperty = keyof typeof ITEM_ALTERATION_HANDLERS;
 
 export { ItemAlteration };
-export type { ItemAlterationSchema };
+export type { ItemAlterationProperty, ItemAlterationSchema };

@@ -33,17 +33,19 @@
                 "prompt": "PF2E.SpecificRule.Prompt.Weapon"
             },
             {
+                "fromEquipment": false,
                 "itemId": "{item|flags.pf2e.rulesSelections.weapon}",
                 "key": "ItemAlteration",
                 "mode": "upgrade",
-                "property": "potency",
+                "property": "runes-potency",
                 "value": "ternary(gte(@item.level,9),3,ternary(gte(@item.level,6),2,1))"
             },
             {
+                "fromEquipment": false,
                 "itemId": "{item|flags.pf2e.rulesSelections.weapon}",
                 "key": "ItemAlteration",
                 "mode": "upgrade",
-                "property": "striking",
+                "property": "runes-striking",
                 "value": "ternary(gte(@item.level,9),3,ternary(gte(@item.level,6),2,1))"
             }
         ],

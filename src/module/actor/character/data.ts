@@ -14,7 +14,7 @@ import {
     SaveData,
     SkillData,
 } from "@actor/creature/data.ts";
-import { CreatureInitiativeSource, CreatureSpeeds, Language } from "@actor/creature/index.ts";
+import { CreatureInitiativeSource, Language } from "@actor/creature/index.ts";
 import {
     ActorAttributesSource,
     ActorFlagsPF2e,
@@ -24,7 +24,7 @@ import {
     StrikeData,
     TraitViewData,
 } from "@actor/data/base.ts";
-import { AttributeString, MovementType, SaveType, SkillSlug } from "@actor/types.ts";
+import { AttributeString, SaveType, SkillSlug } from "@actor/types.ts";
 import type { WeaponPF2e } from "@item";
 import { ArmorCategory } from "@item/armor/types.ts";
 import { ProficiencyRank } from "@item/base/data/index.ts";
@@ -34,8 +34,8 @@ import { BaseWeaponType, WeaponCategory, WeaponGroup } from "@item/weapon/types.
 import { ValueAndMax, ZeroToFour } from "@module/data.ts";
 import { DamageType } from "@system/damage/types.ts";
 import type { Predicate } from "@system/predication.ts";
+import type { WeaponAuxiliaryAction } from "./auxiliary.ts";
 import type { CharacterPF2e } from "./document.ts";
-import type { WeaponAuxiliaryAction } from "./helpers.ts";
 import type { CharacterSheetTabVisibility } from "./sheet.ts";
 
 type CharacterSource = BaseCreatureSource<"character", CharacterSystemSource> & {
@@ -101,13 +101,6 @@ interface CharacterAttributesSource extends ActorAttributesSource {
         temp: number;
         /** Stamina points: present if Stamina variant is enabled  */
         sp?: { value: number };
-    };
-    speed: {
-        value: number;
-        otherSpeeds: {
-            type: Exclude<MovementType, "land">;
-            value: number;
-        }[];
     };
 }
 
@@ -249,6 +242,14 @@ interface CharacterSystemData extends Omit<CharacterSystemSource, SourceOmission
 
     initiative: InitiativeData;
 
+    /**
+     * A character's hands (or some other grasping appendage): typically a maximum of 2 and actively usable of 2
+     * - A creature may have a certain number of hands but only have a subset of them be active.
+     *   An action may be needed to change the "live" subset.
+     * - Hands that are "really" free are literally not occupied in any sense of the word.
+     */
+    hands: CharacterHandsData;
+
     /** A catch-all for character proficiencies */
     proficiencies: {
         /** Proficiencies in the four weapon categories as well as groups, base weapon types, etc. */
@@ -277,7 +278,7 @@ interface CharacterSystemData extends Omit<CharacterSystemSource, SourceOmission
     exploration: string[];
 }
 
-type SourceOmission = "customModifiers" | "perception" | "resources" | "saves" | "traits";
+type SourceOmission = "attributes" | "customModifiers" | "perception" | "resources" | "saves" | "speed" | "traits";
 
 interface CharacterSkillData extends SkillData {
     attribute: AttributeString;
@@ -432,6 +433,11 @@ interface CharacterPerceptionData extends CreaturePerceptionData {
     rank: ZeroToFour;
 }
 
+interface CharacterHandsData {
+    max: { value: number; active: number };
+    free: { value: number; really: number };
+}
+
 interface CharacterDetails extends Omit<CharacterDetailsSource, "alliance">, CreatureDetails {
     /** Convenience information for easy access when the item class instance isn't available */
     ancestry: {
@@ -479,15 +485,14 @@ interface CharacterAttributes extends Omit<CharacterAttributesSource, Attributes
     /** Data related to character hitpoints. */
     hp: CharacterHitPoints;
 
-    speed: CreatureSpeeds;
-
     /**
      * Data related to the currently equipped shield. This is copied from the shield data itself and exists to
      * allow for the shield health to be shown on an actor shield and token.
      */
     shield: HeldShieldData;
 }
-type AttributesSourceOmission = "immunities" | "weaknesses" | "resistances";
+
+type AttributesSourceOmission = "immunities" | "weaknesses" | "resistances" | "speed";
 
 interface CharacterHitPoints extends HitPointsStatistic {
     recoveryMultiplier: number;
@@ -505,6 +510,7 @@ export type {
     CharacterDetails,
     CharacterDetailsSource,
     CharacterFlags,
+    CharacterHandsData,
     CharacterProficiency,
     CharacterResources,
     CharacterResourcesSource,

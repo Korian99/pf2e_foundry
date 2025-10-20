@@ -9,6 +9,8 @@ import { SetGamePF2e } from "@scripts/set-game-pf2e.ts";
 import { activateSocketListener } from "@scripts/socket.ts";
 import { storeInitialWorldVersions } from "@scripts/store-versions.ts";
 import { extendDragData } from "@scripts/system/dragstart-handler.ts";
+import { NoJQueryPlugin } from "@util/destroyables.ts";
+import Sortable from "sortablejs";
 
 export const Ready = {
     listen: (): void => {
@@ -161,6 +163,14 @@ export const Ready = {
                 }
                 ui.combat.render();
             }
+
+            // Preload Font Awesome Duotone
+            // Check for presence of `find`: Firefox's iterator objects aren't always iterator objects.
+            const faDuotone = document.fonts.values().find?.((f) => f.family === "Font Awesome 6 Duotone");
+            if (faDuotone?.status === "unloaded") faDuotone.load();
+
+            // Prevent sortable from using jQuery when cloning elements.
+            Sortable.mount(NoJQueryPlugin);
 
             // Announce the system is ready in case any module needs access to an application not available until now
             Hooks.callAll("pf2e.systemReady");
