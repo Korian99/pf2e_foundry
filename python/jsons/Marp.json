@@ -1,0 +1,186 @@
+{
+  "initiative": 0,
+  "initiativebonus": 12,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Marp",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Common",
+    "Small",
+    "Beast"
+  ],
+  "source": "Pathfinder Howl of the Wild",
+  "senses": [
+    "Darkvision",
+    "goldsense (imprecise) 60 feet"
+  ],
+  "perception": {
+    "value": 12,
+    "note": "Darkvision, goldsense (imprecise) 60 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Fey"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "thievery",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Goldsense",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Marps can sense any accumulation of gold within range. They also can precisely measure the purity of gold by touch.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 48,
+    "max": 48,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Panicked Withdrawal",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The marp takes damage from a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> The marp drops any items held in their hands, then Climbs or Strides up to 15 feet.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, climb 15ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 12,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+6",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+6)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Gold?",
+      "actions": 1,
+      "traits": [
+        "auditory",
+        "emotion",
+        "linguistic",
+        "mental"
+      ],
+      "description": "<p>The marp asks for gold from all creatures in a 30ft Emanation. Each target must attempt a DC 22 Will Saving Throw save or retrieve and drop gold valuables as a free action.</p>\n<hr />\n<p><strong>Critical Success</strong> The target can refuse the request, though they can also choose to willingly hand over any amount of gold. If they do so, they gain a +1 status bonus to the next saving throw they attempt within 1 minute, and they're temporarily immune to Scampering Theft for 1 minute.</p>\n<p><strong>Success</strong> The target can refuse the request.</p>\n<p><strong>Failure</strong> The target must drop coins, gold jewelry, or other objects worth 20 gp.</p>\n<p><strong>Critical Failure</strong> As failure, but 40 gp.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Scampering Theft",
+      "actions": 2,
+      "traits": [
+        "manipulate",
+        "move"
+      ],
+      "description": "<p>The marp runs and attempts to snatch a purse, pendant, or other such object. The marp Strides up to their Speed, and they can move through enemy spaces during this movement. They then attempt to steal valuables from the target, who must attempt a DC 22 Reflex Saving Throw save.</p>\n<p><strong>Success</strong> The marp fails to steal anything from the target.</p>\n<p><strong>Failure</strong> The marp steals one object from the target's possession that is made of or contains gold. They can't steal objects held by or permanently attached to the creature. If the object contains lead, the marp drops it at the target's feet. After stealing the object (or dropping it), the marp then Strides up to their Speed.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 19"
+}

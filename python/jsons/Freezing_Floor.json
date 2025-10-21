@@ -1,0 +1,121 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Freezing Floor",
+  "type": "Hazard",
+  "level": 8,
+  "traits": [
+    "Common",
+    "Medium",
+    "Magical",
+    "Trap"
+  ],
+  "source": "Pathfinder Adventure Path: Gatewalkers",
+  "stealth": {
+    "value": 16,
+    "note": "(expert) or @Check[perception|dc:31] (master) to notice the cold fog rising from the floor"
+  },
+  "description": "<p>The white brick floor radiates ice-cold air.</p>",
+  "disable": "<p>DC 24 Thievery  (expert) to erase a rune, or Dispel Magic (3rd rank; counteract DC 24) to dispel a rune; all three runes must be erased or dispelled to disable the trap.</p>",
+  "reset": "<p>The trap deactivates and resets after 1 minute.</p>",
+  "routine": "<p>(3 actions) With each action, the trap attempts a frost jet Strike against any creature standing on the white bricks. The trap loses 1 action per disabled or dispelled rune.</p>",
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Cold Snap",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature steps on the white bricks</p>\n<hr />\n<p><strong>Effect</strong> The trap makes a frost jet Strike against the triggering creature and rolls initiative.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Frostbite",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A creature that takes persistent cold damage from the trap's frost jet Strike must attempt a DC 18 Fortitude Saving Throw save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature isn't affected and is immune to this frostbite effect for 24 hours.</p>\n<p><strong>Success</strong> The creature isn't affected.</p>\n<p><strong>Failure</strong> The creature can't stop shivering and becomes Clumsy 1.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature becomes Fatigued.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 27,
+    "note": null,
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "hardness": {
+    "value": 14
+  },
+  "fortitude": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 56,
+    "max": 56,
+    "note": "to destroy the bricks and disable the trap;",
+    "modifications": []
+  },
+  "immunities": [
+    "critical-hits",
+    "precision"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "",
+  "strikes": [
+    {
+      "type": "ranged",
+      "name": "Frost Jet",
+      "bonus": 20,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d4",
+          "type": "persistent cold"
+        },
+        {
+          "roll": "2d6",
+          "type": "cold"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4)*2",
+          "type": "persistent cold"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "cold"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [],
+  "spellcastingEntries": [],
+  "recallKnowledge": ", DC 24"
+}

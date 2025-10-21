@@ -1,0 +1,257 @@
+{
+  "initiative": 0,
+  "initiativebonus": 31,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Temperbrand",
+  "type": "Creature",
+  "level": 18,
+  "traits": [
+    "Unique",
+    "huge",
+    "Elemental",
+    "Fire",
+    "Metal"
+  ],
+  "source": "Pathfinder Adventure: Prey for Death",
+  "senses": [
+    "Darkvision",
+    "Tremorsense 60ft imprecise"
+  ],
+  "perception": {
+    "value": 31,
+    "note": "Darkvision, Tremorsense 60ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Jotun",
+    "Pyric"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 29,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 31,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 9
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 9
+  },
+  "intelligence": {
+    "value": 3
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 41,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 35,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 335,
+    "max": 335,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "fire"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "physical",
+      "value": 15
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "cold",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Molten Spray",
+      "actions": -1,
+      "traits": [
+        "fire",
+        "primal"
+      ],
+      "description": "<p><strong>Trigger</strong> Temperbrand takes physical damage</p><hr /><p><strong>Effect</strong> Temperbrand's body erupts at the site of the damage to spray molten iron into an adjacent square of her choice. Any creature occupying that square takes 9d6 Fire Damage damage (Basic DC 37 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Vulnerable to Water",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Whenever Temperbrand is targeted with a water effect, she takes 6d6 Cold Damage damage and becomes Slowed 1 for 1d4 rounds as her body hardens into solid metal. As long as she remains slowed, her Armor Class increase to 43.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, burrow 10ft, climb 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Slagblade",
+      "bonus": 35,
+      "traits": [
+        "reach-15",
+        "versatile-p"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+17",
+          "type": "slashing"
+        },
+        {
+          "roll": "2d6",
+          "type": "fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+17)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Foot",
+      "bonus": 35,
+      "traits": [
+        "magical",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+17",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "2d6",
+          "type": "fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+17)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Hurl Slagblade",
+      "actions": 2,
+      "traits": [
+        "divine",
+        "fire",
+        "incapacitation",
+        "primal"
+      ],
+      "description": "<p>Temperbrand whips an arm at a target within 120 feet, causing her slagblade to detach and fly through the air. The target creature must attempt a DC 40 Reflex Saving Throw save. Temperbrand regrows a new slagblade instantly but can't use Hurl Slag again for 1d4 rounds.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes 5d10 Fire Damage damage.</p>\n<p><strong>Failure</strong> The creature takes 10d10 Fire Damage damage, and the slag hardens, causing the creature to become Slowed 1 for 3 rounds. A creature can end the slowed condition early by Escaping (DC 40) the confining slag.</p>\n<p><strong>Critical Failure</strong> The creature takes 20d10 Fire Damage damage, and the slag swiftly anchors them in place, causing the creature to become Restrained until they Escape dc=40.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Ooze Form",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "polymorph",
+        "primal"
+      ],
+      "description": "<p>Temperbrand's body becomes amorphous. Her AC becomes 30, and she becomes immune to critical hits and precision damage. While in this form she is blind (but retains her tremorsense), and her Speeds are reduced by 15 feet (to a minimum of 5 feet). She can move through spaces as if she were a Tiny creature without penalty. As long as she remains in Ooze Form, she can't make slagblade Strikes or Hurl Slagblade, but she gains Trample. She can end Ooze Form by using this action again.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Slagblade Storm",
+      "actions": 3,
+      "traits": [],
+      "description": "<p>Temperbrand Strikes all creatures within her reach with a slagblade Strike. Her multiple attack penalty doesn't increase until the end of this activity.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Trample (Ooze Form Only)",
+      "actions": 3,
+      "traits": [],
+      "description": "<p>Large or smaller, Foot, Basic DC 40 Reflex Saving Throw</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 38"
+}

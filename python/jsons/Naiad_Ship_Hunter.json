@@ -1,0 +1,252 @@
+{
+  "initiative": 0,
+  "initiativebonus": 13,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Naiad Ship Hunter",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Amphibious",
+    "Fey",
+    "Nymph",
+    "Water"
+  ],
+  "source": "Pathfnder Society Scenario #7-03: A Foot in the Door",
+  "senses": [
+    "Low light vision"
+  ],
+  "perception": {
+    "value": 13,
+    "note": "Low light vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Elven",
+    "Fey",
+    "Thalassic"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Coral Armor",
+      "quantity": 1,
+      "description": "<p>A good option for undersea explorers and aquatic peoples alike, coral armor consists of panels of carved coral. If worn underwater, some of this coral can even be alive.</p>",
+      "level": 0,
+      "price": "5 gp",
+      "traits": [
+        "adjusted",
+        "aquadynamic"
+      ]
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Animal Empathy",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The naiad can ask questions of, receive answers from, and use the Diplomacy skill with animals.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 60,
+    "max": 60,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "fire",
+      "value": 3
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "cold-iron",
+      "value": 3
+    }
+  ],
+  "defensiveAbilities": [],
+  "speed": "25 ft, swim 25ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Aqueous Boarding Pike",
+      "bonus": 13,
+      "traits": [
+        "magical",
+        "reach",
+        "shove",
+        "water"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d10+6",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d10+6)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Water Orb",
+      "bonus": 14,
+      "traits": [
+        "magical",
+        "range-60",
+        "water"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+3)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Hunt Prey",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p>The naiad ship hunter designates a single creature they can see and hear, or one they're Tracking or Gathering Information about, as their prey. The naiad ship hunter gains a +2 circumstance bonus to Perception checks to Seek the prey, to Survival checks to Track the prey, and to Diplomacy checks to Gather Information about the prey. This effect lasts until they use Hunt Prey again.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Posse's Edge",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The naiad ship hunter and their allies gain a +1 circumstance bonus on initiative rolls if the opposing side includes their hunted prey.</p>\n<p>Effect: Posse's Edge</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Precision Edge",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The frst time the naiad ship hunter hits their hunted prey in a round, they deal an additional 1d8 precision damage.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 19"
+}

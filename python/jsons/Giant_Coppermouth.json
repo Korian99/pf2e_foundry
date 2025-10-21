@@ -1,0 +1,203 @@
+{
+  "initiative": 0,
+  "initiativebonus": 18,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Giant Coppermouth",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Common",
+    "Medium",
+    "Animal"
+  ],
+  "source": "Pathfinder Howl of the Wild",
+  "senses": [
+    "Low light vision",
+    "Scent 30ft imprecise",
+    "greater electrolocation 20 feet"
+  ],
+  "perception": {
+    "value": 18,
+    "note": "Low light vision, Scent 30ft imprecise, greater electrolocation 20 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": -2
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Deep Breath",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The giant coppermouth can hold its breath for 1 hour.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Greater Electrolocation",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A giant coppermouth can sense minute electrical charges in living creatures, which it can use as a precise sense at a range of 20 feet. This distance increases to 100 feet against any creature that has used an electricity effect within the last minute.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 115,
+    "max": 115,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "electricity"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "30 ft, climb 20ft, swim 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fangs",
+      "bonus": 18,
+      "traits": [
+        "electricity",
+        "finesse"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+6",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d4",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+6)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d4)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [
+        "coppermouth-venom"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Coppermouth Venom",
+      "actions": null,
+      "traits": [
+        "electricity",
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 25 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 1d6 Poison Damage]{1d6 poison and 1d6 electricity} (1 round)</p>\n<p><strong>Stage 2</strong> 2d6 Poison Damage]{2d6 poison and 1d6 electricity} and Clumsy 1 (1 round)</p>\n<p><strong>Stage 3</strong> 2d6 Poison Damage]{2d6 poison and 2d6 electricity} and Clumsy 2</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Quickening Jolt",
+      "actions": 2,
+      "traits": [
+        "electricity"
+      ],
+      "description": "<p>The coppermouth manipulates its own nervous system by increasing its reaction time, Striding and making two Strikes against different targets during the movement. Both attacks count toward its multiple attack penalty, but the penalty doesn't increase until after it has made both attacks.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Venomous Spit",
+      "actions": 2,
+      "traits": [
+        "electricity",
+        "poison"
+      ],
+      "description": "<p>The coppermouth unleashes a stream of electrified venom in a 30ft Line. The venom deals 8d6 Electricity Damage damage (Basic DC 22 Reflex Saving Throw) and creatures that take damage from the venom are immediately exposed to coppermouth venom. The copper mouth can't use Venomous Spit again for 1d4 rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 23"
+}

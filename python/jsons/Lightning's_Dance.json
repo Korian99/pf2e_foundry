@@ -1,0 +1,105 @@
+{
+  "initiative": 0,
+  "initiativebonus": 10,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Lightning's Dance",
+  "type": "Hazard",
+  "level": 11,
+  "traits": [
+    "Rare",
+    "Medium",
+    "Kaiju",
+    "Mythic",
+    "Primal"
+  ],
+  "source": "Pathfinder War of Immortals",
+  "stealth": {
+    "value": 10,
+    "note": "(expert) or @Check[perception|dc:33] (master) to notice sparks dancing around normally non-conductive surfaces"
+  },
+  "description": "<p>Electricity suffuses an area where Agyra has used her lightning breath multiple times.</p>",
+  "disable": "<p>DC 35 Crafting  (master) to fashion a makeshift lightning rod, DC 33 Nature  (expert) to dissipate the electrical charge harmlessly into the air.</p>",
+  "reset": "<p>The hazard deactivates and immediately resets if has no targets for 1 round; it also resets if Agyra uses her lightning breath multiple times in a single combat in the area.</p>",
+  "routine": "<p>(2 actions) Bolts of lightning flash out. The hazard makes two lightning bolt Strikes at two different creatures within 120 feet of the hazard's center. If only one creature is in range, the hazard makes only one Strike.</p>",
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 0,
+    "note": null,
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 0,
+    "max": 0,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Lightning Bolt",
+      "bonus": 24,
+      "traits": [
+        "range-increment-120"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+15",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+15)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Static Shock",
+      "actions": -1,
+      "traits": [
+        "electricity"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature approaches within 10 feet of the hazard's center</p><hr /><p><strong>Effect</strong> Electricity wells up from the ground and nearby material. Each creature in the hazard's area must attempt a DC 33 Fortitude Saving Throw save, and the hazard then rolls initiative. A character wearing metal armor or wielding a metal shield or weapon of at least 1 Bulk treats the result of their saving throw as one step worse.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Clumsy 1 for 1 round.</p>\n<p><strong>Failure</strong> The creature is Clumsy 2 for 2 rounds.</p>\n<p><strong>Critical Failure</strong> The creature is clumsy 2 for 4 rounds and Stunned 1 for 1 round.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": ", DC 28"
+}

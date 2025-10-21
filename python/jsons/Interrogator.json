@@ -1,0 +1,263 @@
+{
+  "initiative": 0,
+  "initiativebonus": 13,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Interrogator",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "medicine",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [
+    {
+      "name": "Dart",
+      "quantity": 5,
+      "description": "<p>This thrown weapon is larger than an arrow but shorter than a javelin. It typically has a short shaft of wood ending in a metal tip and is sometimes stabilized by feathers or fur.</p>",
+      "level": 0,
+      "price": "1 cp",
+      "traits": [
+        "agile",
+        "thrown"
+      ]
+    },
+    {
+      "name": "War Razor",
+      "quantity": 1,
+      "description": "<p>A war razor is an exaggerated version of the barbers' tool. It's a brittle but extremely sharp weapon that is very easy to slip into a pocket or sleeve.</p>",
+      "level": 0,
+      "price": "3 sp",
+      "traits": [
+        "agile",
+        "backstabber",
+        "deadly-d8",
+        "finesse"
+      ]
+    },
+    {
+      "name": "Leather Apron (Functions as Leather Armor)",
+      "quantity": 1,
+      "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": []
+    },
+    {
+      "name": "Healer's Toolkit",
+      "quantity": 1,
+      "description": "<p>This kit of bandages, herbs, and suturing tools is necessary for Medicine checks to @UUID[Compendium.pf2e.actionspf2e.Item.Administer First Aid], @UUID[Compendium.pf2e.actionspf2e.Item.Treat Disease], @UUID[Compendium.pf2e.actionspf2e.Item.Treat Poison], or @UUID[Compendium.pf2e.actionspf2e.Item.Treat Wounds]. If you wear your healer's toolkit, you can draw and replace its tools as part of the action that uses them.</p>",
+      "level": 0,
+      "price": "5 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 90,
+    "max": 90,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Dart",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "thrown-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+7",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+7)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "torment"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "War Razor",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "backstabber",
+        "deadly-d8",
+        "finesse",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+10",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+10)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "torment"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+10)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "torment"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Blood and Fear",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The interrogator Strikes with a slashing melee weapon. If they hit and deal damage, the target takes an additional 1d4 persistent bleed damage and is Frightened 1 (or 2d4 persistent bleed damage and Frightened 2 on a critical hit).</p>\n<p>Each of the interrogator's other enemies in a 30ft Type:emanation around the target that witnesses the bloodshed must succeed at a DC 19 Will Saving Throw save or be frightened 1. The frightened part of this ability is an emotion, fear, mental, and visual effect.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Hobble",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> A creature is Grabbed or Restrained by the interrogator</p><hr /><p><strong>Effect</strong> One creature grabbed or restrained by the interrogator takes 2d6 Bludgeoning Damage damage with a Basic DC 23 Fortitude Saving Throw save. If the creature fails its save, it also gains a condition of the interrogator's choice: Clumsy 2 for 1 minute, Enfeebled 2 for 1 minute, or Drained 1.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Torment",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The interrogator's Strikes deal an additional 1d8 mental damage to Frightened creatures.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 22"
+}

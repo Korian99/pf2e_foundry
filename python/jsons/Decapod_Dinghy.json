@@ -1,0 +1,237 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Decapod Dinghy",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Common",
+    "Gargantuan",
+    "Amphibious",
+    "Beast"
+  ],
+  "source": "Pathfinder Howl of the Wild",
+  "senses": [
+    "Tremorsense 30ft imprecise",
+    "Wavesense 30ft imprecise"
+  ],
+  "perception": {
+    "value": 16,
+    "note": "Tremorsense 30ft imprecise, Wavesense 30ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Thalassic",
+    "(can't speak any language)"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "All Aboard",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A decapod dinghy can carry up to 30 Bulk of creatures or unattended items on their back, such as five Medium creatures. The anemones' gentle hold on the passengers is sufficient in most situations, but while in combat, those passengers are Slowed 1 if they want to take other actions while remaining on the decapod dinghy's back.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Anemone Transport",
+      "actions": 3,
+      "traits": [
+        "primal",
+        "teleportation"
+      ],
+      "description": "<p>The decapod dinghy and all their willing passengers teleport to a patch of anemones within 10 miles large enough for the decapod dinghy to stand among them. Although the decapod dinghy doesn't need to see the location, they must have been there before. All creatures transported are temporarily immune to this ability for 24 hours.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 145,
+    "max": 145,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "poison"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "bludgeoning",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Inflate Anemones",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The anemones on the decapod dinghy's back inflate, enveloping all passengers and giving each passenger a +2 circumstance bonus to AC until the beginning of the decapod dinghy's next turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Protect Passenger",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> An enemy within 20 feet damages one of the decapod dinghy's passengers</p>\n<hr />\n<p><strong>Effect</strong> The decapod dinghy's anemones lash out for a tentacle Strike against the triggering creature.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, climb 25ft, swim 25ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 19,
+      "traits": [
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+7",
+          "type": "slashing"
+        },
+        {
+          "roll": "2d6",
+          "type": "poison"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+7)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "poison"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tentacle",
+      "bonus": 19,
+      "traits": [
+        "poison",
+        "reach-20",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "5d6",
+          "type": "poison"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(5d6)*2",
+          "type": "poison"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Stinging Anemones",
+      "actions": 1,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p>The decapod dinghy's anemones sting any number of creatures they choose among passengers and those the decapod dinghy has Grabbed or Restrained. The stings deal 5d6 Poison Damage damage (Basic DC 26 Fortitude Saving Throw). On a failed save, that creature is also Enfeebled 2 for 1 hour.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 24"
+}

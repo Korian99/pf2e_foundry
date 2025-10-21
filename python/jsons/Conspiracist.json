@@ -1,0 +1,214 @@
+{
+  "initiative": 0,
+  "initiativebonus": 8,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Conspiracist",
+  "type": "Creature",
+  "level": 0,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "senses": [],
+  "perception": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "deception",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "occultism",
+      "modifier": -1,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "performance",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "society",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "Conspiracy Lore",
+      "modifier": 11,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 0
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": 3
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [
+    {
+      "name": "Signal Whistle",
+      "quantity": 1,
+      "description": "<p>When sounded, a signal whistle can be heard clearly up to half a mile away across open terrain.</p>",
+      "level": 0,
+      "price": "8 cp",
+      "traits": []
+    },
+    {
+      "name": "Writing Set",
+      "quantity": 1,
+      "description": "<p>Using a writing set, you can draft correspondence and scribe scrolls. A set includes stationery, including a variety of paper and parchment, as well as ink, a quill or inkpen, sealing wax, and a simple seal. If you've written a large amount, you can refill your kit with extra ink and paper.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Compulsive Liar",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The conspiracist can use Deception instead of Diplomacy to Make an impression skill=deception or Request skill=deception. Any creature attempting a Perception check to Sense Motive against the conspiracist gets a result one degree of success worse than they rolled.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Social Specialist",
+      "actions": null,
+      "traits": [],
+      "description": "<p>For encounters involving deception and social manipulation, the conspiracist is a 4th-level challenge.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 4,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 15,
+    "max": 15,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Evoke Pity",
+      "actions": -1,
+      "traits": [
+        "auditory",
+        "concentrate",
+        "emotion",
+        "linguistic",
+        "mental"
+      ],
+      "description": "<p><strong>Trigger</strong> An enemy reduces the conspiracist to below half their maximum HP</p><hr /><p><strong>Effect</strong> The conspiracist begs their assailants to \"see reason\" and let them live. The conspiracist attempts a single performance|against:will check against the Will DCs of all enemies in a 30ft Type:emanation. Any creature the attempt succeeds against takes a –2 circumstance penalty to damaging attacks without the nonlethal trait they make against the conspiracist for 10 minutes</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 4,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Sow Doubt",
+      "actions": 2,
+      "traits": [
+        "auditory",
+        "concentrate",
+        "emotion",
+        "linguistic",
+        "mental"
+      ],
+      "description": "<p>The conspiracist argues that their enemies have been hoodwinked into attacking them by nefarious powers. The conspiracist attempts a single deception|against:will|options:inflicts:stupefied,inflicts:controlled check against the Will DCs of all enemies that can hear them.</p><hr /><p><strong>Critical Success</strong> The enemy fully believes the conspiracist, becoming Stupefied 2 for 1 minute. If the creature was already stupefied 2, they become Controlled by the conspiracist until the end of the encounter.</p>\n<p><strong>Success</strong> The enemy has trouble disbelieving the conspiracist's logic, becoming Stupefied 1 for 1 minute. If they're already stupefied 1, they become stupefied 2.</p>\n<p><strong>Failure</strong> The enemy is unconvinced, but a seed of doubt remains.</p>\n<p><strong>Critical Failure</strong> The enemy sees through the conspiracist's act, becoming immune to Sow Doubt for 24 hours.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 14"
+}

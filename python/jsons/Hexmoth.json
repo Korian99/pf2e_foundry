@@ -1,0 +1,206 @@
+{
+  "initiative": 0,
+  "initiativebonus": 19,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Hexmoth",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Common",
+    "Small",
+    "Animal"
+  ],
+  "source": "Pathfinder Howl of the Wild",
+  "senses": [
+    "arcanosense (precise) 120 feet"
+  ],
+  "perception": {
+    "value": 19,
+    "note": "arcanosense (precise) 120 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "arcana",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Arcanosense",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A hexmoth can sense sources of magic at the listed range as though it has a 4th-rank Detect Magic constant innate spell.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 105,
+    "max": 105,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "spells",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Advanced Arcanovore",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A hexmoth has resistance 10 against all damage caused by spells. It's immune to one type of energy it consumed most as a hexworm, typically acid, cold, electricity, fire, or sonic.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, fly 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Proboscis",
+      "bonus": 13,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d10+9",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+9)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "arcane-consumption"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Hexbolt",
+      "bonus": 13,
+      "traits": [
+        "range-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+6",
+          "type": "untyped"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+6)*2",
+          "type": "untyped"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Arcane Consumption",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The hexmoth attempts to consume the magic of an adjacent magical effect or unattended magic item. It attempts a counteract check against the target with a +16 modifier. On a success, the magical effect ends. A magic item instead becomes a mundane item for 1 round. The hexmoth gains 2d8 Healing Damage Hit Points.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Arcanotaxis",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The hexmoth has detected a source of magic with its arcanosense</p>\n<p><strong>Trigger</strong> The hexmoth's turn begins</p>\n<hr />\n<p><strong>Effect</strong> The hexmoth Flies or Strides up to its Speed toward the nearest source of magic it can detect.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Hexdust Wind",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>With a few fierce wingbeats, the hexmoth expels magical scale dust in a 30ft Cone. This deals 10d6 Untyped Damage damage of the type to which the hexmoth is immune (Basic DC 23 Fortitude Saving Throw save). It can't use Hexdust Wind again for 1d4 rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 24"
+}

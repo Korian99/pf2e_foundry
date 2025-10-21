@@ -1,0 +1,294 @@
+{
+  "initiative": 0,
+  "initiativebonus": 31,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Terotricus",
+  "type": "Creature",
+  "level": 19,
+  "traits": [
+    "Rare",
+    "Gargantuan",
+    "Fungus",
+    "Unholy"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision",
+    "Tremorsense 120ft imprecise"
+  ],
+  "perception": {
+    "value": 31,
+    "note": "Darkvision, Tremorsense 120ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Chthonian",
+    "Elven",
+    "Fey"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 37,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 32,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 31,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 31,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 10
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 9
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 6
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 42,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 34,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+1 status to all saves vs. magic",
+  "hp": {
+    "value": 370,
+    "max": 370,
+    "note": "regeneration 25 (deactivated by cold)",
+    "modifications": []
+  },
+  "immunities": [
+    "controlled",
+    "disease",
+    "paralyzed",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 15
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 15
+    },
+    {
+      "type": "cold-iron",
+      "value": 15
+    },
+    {
+      "type": "holy",
+      "value": 15
+    },
+    {
+      "type": "slashing",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Regeneration 25 (Deactivated by Cold)",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster regains the listed number of Hit Points each round at the beginning of its turn. Its Dying condition never increases beyond Dying 3 as long as its regeneration is active. However, if it takes damage of a type listed in the regeneration entry, its regeneration deactivates until the end of its next turn. Deactivate the regeneration before applying any damage of a listed type, since that damage might kill the monster by bringing it to Dying 4.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spore Cloud",
+      "actions": null,
+      "traits": [
+        "aura",
+        "disease"
+      ],
+      "description": "<p>30 feet.</p>\n<p>A creature entering the aura or starting its turn there is exposed to spore blight.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "35 ft, burrow 25ft, climb 25ft, swim 35ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Tentacle",
+      "bonus": 37,
+      "traits": [
+        "magical",
+        "reach-20",
+        "unarmed",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d10+18",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "2d6",
+          "type": "spirit"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d10+18)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "spirit"
+        }
+      ],
+      "effects": [
+        "improved-grab",
+        "improved-push"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Spores",
+      "bonus": 37,
+      "traits": [
+        "brutal",
+        "magical",
+        "range-increment-80",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d8+8",
+          "type": "poison"
+        },
+        {
+          "roll": "2d6",
+          "type": "spirit"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d8+8)*2",
+          "type": "poison"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "spirit"
+        }
+      ],
+      "effects": [
+        "spore-blight",
+        "sticky-spores"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Infest Environs",
+      "actions": 2,
+      "traits": [
+        "primal"
+      ],
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> The terotricus is in a swamp or forested area</p><hr /><p><strong>Effect</strong> The terotricus drains nutrients from nearby trees and undergrowth while simultaneously infesting them with fungal growth. All non-magical plant life (though not plant creatures) within a 60ft Emanation withers and sprouts foul mold and slimy mushrooms, removing any cover and concealment provided by trees and undergrowth. In addition, the terotricus regains 200 Healing,vitality Damage{200 Hit Points} (this is a healing vitality effect).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spore Blight",
+      "actions": null,
+      "traits": [
+        "disease"
+      ],
+      "description": "<p>Plants and fungi are immune.</p>\n<p><strong>Saving Throw</strong> DC 40 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Stage 1</strong> Enfeebled 2 (1 day)</p>\n<p><strong>Stage 2</strong> Enfeebled 4 and Slowed 1 (1 day)</p>\n<p><strong>Stage 3</strong> Controlled by the terotricus (as Dominate; 5d8 days)</p>\n<p><strong>Stage 4</strong> dead</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sticky Spores",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A creature hit by a terotricus's spores takes a –10-foot status penalty to all its Speeds for 1 minute. If the Strike was a critical hit, the creature is also Immobilized until it Escapes.</p>\n<p>Effect: Sticky Spores</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Improved Grab",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Improved Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with as a free action. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead spend an action to use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Improved Push 20 feet",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>The monster can use Push as a free action triggered by a hit with its initial attack.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 39"
+}

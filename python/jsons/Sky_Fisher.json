@@ -1,0 +1,218 @@
+{
+  "initiative": 0,
+  "initiativebonus": 18,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Sky Fisher",
+  "type": "Creature",
+  "level": 11,
+  "traits": [
+    "Common",
+    "huge",
+    "Animal"
+  ],
+  "source": "Pathfinder Howl of the Wild",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 18,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 7
+  },
+  "constitution": {
+    "value": 7
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": -3
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 30,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 200,
+    "max": 200,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "precision"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "bludgeoning",
+      "value": 14
+    },
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "poison",
+      "value": 14
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "piercing",
+      "value": 7
+    },
+    {
+      "exceptions": [],
+      "type": "slashing",
+      "value": 7
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Transparency",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Unless it has fed recently, the sky fisher is naturally Invisible. Using non-hostile actions does not cause the sky fisher to become Hidden. When it takes a hostile action of any kind, the sky fisher is hidden instead of Undetected until the start of its next turn, as the vague outline of its many tendrils temporarily becomes faintly visible.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft, fly 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Stinging Tentacle",
+      "bonus": 24,
+      "traits": [
+        "agile",
+        "reach-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+8)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "grab",
+        "sky-fisher-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Abduct",
+      "actions": 1,
+      "traits": [
+        "attack"
+      ],
+      "description": "<p>The sky fisher reels in a target Grabbed by its tentacles, pulling them into an adjacent space, and then attempts to Swallow them Whole (Large, (3d8+12) Acid Damage, Rupture 25). The sky fisher can only use Swallow Whole when using Abduct.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Enzymic Vent",
+      "actions": 2,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p>The sky fisher vents flesh-eating enzymes into the air, dealing 3d6 Persistent,acid Damage|options:area-damage]{3d6 persistent acid damage and 3d6 persistent bleed damage} in a 20ft Emanation (Basic DC 25 Reflex Saving Throw save). It can't use Enzymic Vent again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Jet",
+      "actions": 2,
+      "traits": [
+        "move"
+      ],
+      "description": "<p>The sky fisher quickly expels some of its gases to move swiftly through the air, Flying up to 100 feet in a straight line; this movement doesn't trigger reactions.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sky Fisher Venom",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 25 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 3d6 Poison Damage damage, Clumsy 1, and can't speak above a whisper (1 round)</p>\n<p><strong>Stage 2</strong> 3d8 Poison Damage damage, Clumsy 2, and can't speak (1 round)</p>\n<p><strong>Stage 3</strong> 3d10 Poison Damage damage and Paralyzed (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 28"
+}

@@ -1,0 +1,198 @@
+{
+  "initiative": 0,
+  "initiativebonus": 29,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Grikkitog",
+  "type": "Creature",
+  "level": 14,
+  "traits": [
+    "Common",
+    "huge",
+    "Aberration",
+    "Earth"
+  ],
+  "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision",
+    "Tremorsense 30ft imprecise",
+    "manifold vision"
+  ],
+  "perception": {
+    "value": 29,
+    "note": "Darkvision, Tremorsense 30ft imprecise, manifold vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Petran"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 27,
+      "note": [
+        "to imitate stone 31"
+      ],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 8
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Implant Core",
+      "actions": 3,
+      "traits": [
+        "manipulate"
+      ],
+      "description": "<p>The grikkitog implants its core into an adjacent section of earth or stone, melding seamlessly and changing its visual appearance to match the surrounding rock. It's Immobilized but automatically succeeds at its Deception check to Impersonate the stone around it; creatures actively searching for it can still attempt Perception checks against its Deception DC as normal. A grikkitog can release its implantation as a free action, which has the manipulate trait. A grikkitog's infestation aura and manifold vision are only active while implanted.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Manifold Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p>While its core is implanted, the grikkitog can see through the eyes it creates throughout the area of its infestation aura, gaining the benefits of All-Around Vision.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 36,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 200,
+    "max": 200,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "exceptions": [
+        "adamantine"
+      ],
+      "type": "all-damage",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Infestation Aura",
+      "actions": null,
+      "traits": [
+        "aura",
+        "earth",
+        "occult"
+      ],
+      "description": "<p>120 feet.</p>\n<p>While its core is implanted, a grikkitog infests all earth and stone within 120 feet, as long as there is a contiguous physical connection between the earth, including stone objects touching the ground. This effect spreads even if the grikkitog does not have line of effect, though it can affect earth or stone on the surface and exposed to the air only if at least part of its core is exposed as well.</p>\n<p>Within the aura, it can grow maws and eyes everywhere. It can make jaws attacks against any creature, originating from any earth or stone in the aura adjacent to that creature. Determine cover from the origin point of the attack, not from the grikkitog's core.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, burrow 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 29,
+      "traits": [
+        "magical",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d12+14",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+14)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "barbed-maw"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Barbed Maw",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The grikkitog hits a creature with a jaws Strike</p>\n<hr />\n<p><strong>Effect</strong> The grikkitog sinks its barbed teeth into the target, which must succeed at a DC 34 Reflex Saving Throw save or be Immobilized. While immobilized, the victim takes 3d8 Persistent,bleed Damage damage and the grikkitog feeds upon its flesh. The creature is immobilized until the grikkitog ends the effect as a free action or the target succeeds at a DC 38 check to Escape dc=38.</p>\n<p>The grikkitog can immobilize any number of creatures with these maws.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Earth Glide",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The grikkitog can Burrow through dirt and stone at its full burrow Speed, leaving no tunnels or signs of its passing.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism, DC 32"
+}
