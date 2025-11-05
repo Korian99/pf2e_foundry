@@ -11,11 +11,10 @@
   "traits": [
     "Common",
     "Medium",
-    "Chaotic",
     "Humanoid",
     "Kitsune"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [],
   "perception": {
     "value": 10,
@@ -139,8 +138,8 @@
   },
   "savenote": "",
   "hp": {
-    "value": 24,
-    "max": 24,
+    "value": 25,
+    "max": 25,
     "note": "",
     "modifications": []
   },
@@ -152,11 +151,64 @@
   "strikes": [
     {
       "type": "melee",
+      "name": "Dagger",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+2)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Dagger",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "thrown-10",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+2)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
       "name": "Jaws",
       "bonus": 10,
       "traits": [
-        "finesse",
-        "unarmed"
+        "finesse"
       ],
       "damageRolls": [
         {
@@ -178,64 +230,11 @@
     },
     {
       "type": "melee",
-      "name": "Dagger",
-      "bonus": 10,
-      "traits": [
-        "agile",
-        "finesse",
-        "versatile-s"
-      ],
-      "damageRolls": [
-        {
-          "roll": "1d4+2",
-          "type": "piercing"
-        }
-      ],
-      "critRolls": [
-        {
-          "roll": "(1d4+2)*2",
-          "type": "piercing"
-        }
-      ],
-      "effects": [],
-      "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "strength",
-      "toHitModifications": [],
-      "damageModifications": []
-    },
-    {
-      "type": "ranged",
-      "name": "Dagger",
-      "bonus": 10,
-      "traits": [
-        "agile",
-        "thrown-10",
-        "versatile-s"
-      ],
-      "damageRolls": [
-        {
-          "roll": "1d4+2",
-          "type": "piercing"
-        }
-      ],
-      "critRolls": [
-        {
-          "roll": "(1d4+2)*2",
-          "type": "piercing"
-        }
-      ],
-      "effects": [],
-      "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "strength",
-      "toHitModifications": [],
-      "damageModifications": []
-    },
-    {
-      "type": "ranged",
       "name": "Foxfire",
       "bonus": 12,
       "traits": [
-        "range-20"
+        "fire",
+        "magical"
       ],
       "damageRolls": [
         {
@@ -250,7 +249,7 @@
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -265,47 +264,22 @@
         "divine",
         "polymorph"
       ],
-      "description": "<p>The kitsune trickster transforms into the tailless form of a specific Medium human. The tailless form can't be altered and resembles the kitsune's fox-like humanoid form. While the kitsune trickster's alternate form is a Medium human, some kitsune have tailless forms of other humanoids, or a fox alternate form.</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster changes its shape indefinitely. It can use this action again to return to its natural shape or adopt a new shape. Unless otherwise noted, a monster cannot use Change Shape to appear as a specific individual. Using Change Shape counts as creating a disguise for the Impersonate use of Deception. The monster's transformation automatically defeats Perception DCs to determine whether the creature is a member of the ancestry or creature type into which it transformed, and it gains a +4 status bonus to its Deception DC to prevent others from seeing through its disguise. Change Shape abilities specify what shapes the monster can adopt. The monster doesn't gain any special abilities of the new shape, only its physical form. For example, in each shape, it replaces its normal Speeds and Strikes, and might potentially change its senses or size. Any changes are listed in its stat block.</p></p></details></p>",
+      "description": "<p>The kitsune trickster transforms into the tailless form of a specific Medium human. The tailless form can't be altered and resembles the kitsune's fox-like humanoid form. While the kitsune trickster's alternate form is a Medium human, some kitsune have tailless forms of other humanoids, or a fox alternate form.</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster changes its shape indefinitely. It can use this action again to return to its natural shape or adopt a new shape. Unless otherwise noted, a monster cannot use Change Shape to appear as a specific individual. Using Change Shape counts as creating a disguise for the Impersonate use of Deception. The monster's transformation automatically defeats Perception DCs to determine whether the creature is a member of the ancestry or creature type into which it transformed, and it gains a +4 status bonus to its Deception DC to prevent others from seeing through its disguise. Change Shape abilities specify what shapes the monster can adopt. The monster doesn't gain any special abilities of the new shape, only its physical form. For example, in each shape, it replaces its normal Speeds and Strikes, and might potentially change its senses or size. Any changes are listed in its stat block.</p></p></details></p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [
     {
-      "name": "Divine Spontaneous Spells",
+      "name": "Primal Spontaneous Spells",
       "type": "spontaneous",
-      "bonus": 10,
-      "dc": 18,
+      "bonus": 0,
+      "dc": 0,
       "focusPoints": {
         "current": 0,
         "max": 0
       },
       "autoHeightenLevel": 1,
       "cantrips": [
-        {
-          "name": "Dancing Lights",
-          "type": "cantrip",
-          "level": 1,
-          "heightenedLevel": 1,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "light",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "Sustained up to ",
-          "range": "120 feet",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You create up to four floating lights, no two of which are more than 10 feet apart. Each sheds light like a torch. When you Sustain the Spell, you can move any number of lights up to 60 feet. Each light must remain within 120 feet of you and within 10 feet of all others, or it winks out.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "qgi8hxQzHhBhmjzW"
-        },
         {
           "name": "Detect Magic",
           "type": "cantrip",
@@ -323,25 +297,25 @@
           "area": "30ft emanation",
           "targets": "",
           "save": "",
-          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies.</p>\n<p>You detect illusion magic only if that magic's effect has a lower level than the rank of your detect magic spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an invisibility potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the school of magic for the highest-level effect within range that the spell detects. If multiple effects are equally strong, the GM determines which you learn.</p>\n<p><strong>Heightened (4th)</strong> As 3rd level, but you also pinpoint the source of the highest-level magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
+          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Y2wVnVLuh7u3yagV"
+          "id": "zzFvyCYXcsedmyF5"
         },
         {
-          "name": "Ghost Sound",
+          "name": "Figment",
           "type": "cantrip",
           "level": 1,
           "heightenedLevel": 1,
           "timesPrepared": 1,
           "traits": [
-            "auditory",
             "concentrate",
             "illusion",
-            "manipulate"
+            "manipulate",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "Sustained up to ",
@@ -349,13 +323,38 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You create an auditory illusion of simple sounds that has a maximum volume equal to four normal humans shouting. The sounds emanate from a square you designate within range. You can't create intelligible words or other intricate sounds (such as music).</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The range increases to 60 feet.</p>\n<p><strong>Heightened (5th)</strong> The range increases to 120 feet.</p>",
+          "description": "<p>You create a simple illusory sound or vision. A sound adds the auditory trait to the spell and the sound can't include intelligible words or elaborate music. A vision adds the visual trait, can be no larger than a 5-foot cube, and is clearly crude and undetailed if viewed from within 15 feet. When you Cast or Sustain the Spell, you can attempt to Create a Diversion with the illusion, gaining a +2 circumstance bonus to your Deception check. If the attempt fails against a creature, that creature disbelieves the <em>figment</em>.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "NQVz2ZiLaz1MC4VM"
+          "id": "RwgmYNlyIQPP0pyS"
+        },
+        {
+          "name": "Light",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "light",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "until your next daily preparations",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "qVbPw4HcKtQu7SJy"
         },
         {
           "name": "Prestidigitation",
@@ -373,66 +372,16 @@
           "area": "",
           "targets": "1 object (cook, lift, or tidy only)",
           "save": "",
-          "description": "<p>The simplest magic does your bidding. You can perform simple magical effects for as long as you Sustain the Spell. Each time you Sustain the Spell, you can choose one of four options.</p>\n<ul>\n<li><strong>Cook</strong> Cool, warm, or flavor 1 pound of nonliving material.</li>\n<li><strong>Lift</strong> Slowly lift an unattended object of light Bulk or less 1 foot off the ground.</li>\n<li><strong>Make</strong> Create a temporary object of negligible Bulk, made of congealed magical substance. The object looks crude and artificial and is extremely fragile-it can't be used as a tool, weapon, or spell component.</li>\n<li><strong>Tidy</strong> Color, clean, or soil an object of light Bulk or less. You can affect an object of 1 Bulk with 10 rounds of concentration, and a larger object a 1 minute per Bulk.</li>\n</ul>\n<p>Prestidigitation can't deal damage or cause adverse conditions. Any actual change to an object (beyond what is noted above) persists only as long as you Sustain the Spell.</p>",
+          "description": "<p>The simplest magic does your bidding. You can perform simple magical effects for as long as you Sustain the spell. Each time you Sustain the spell, you can choose one of four options.</p><ul><li><strong>Cook</strong> Cool, warm, or flavor 1 pound of nonliving material.</li><li><strong>Lift</strong> Slowly lift an unattended object of light Bulk or less 1 foot off the ground.</li><li><strong>Make</strong> Create a temporary object of negligible Bulk, made of congealed magical substance. The object looks crude and artificial and is extremely fragile-it can't be used as a tool, weapon, or locus or cost for a spell.</li><li><strong>Tidy</strong> Color, clean, or soil an object of light Bulk or less. You can affect an object of 1 Bulk with 10 rounds of concentration, and a larger object at 1 minute per Bulk.</li></ul><p><em>Prestidigitation</em> can't deal damage or cause adverse conditions. Any actual change to an object (beyond what is noted above) persists only as long as you Sustain the spell.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "QLtkj5Zvh7vSQvhW"
+          "id": "0PHufy60vLmCIDzk"
         },
         {
-          "name": "Produce Flame",
-          "type": "cantrip",
-          "level": 1,
-          "heightenedLevel": 1,
-          "timesPrepared": 1,
-          "traits": [
-            "attack",
-            "concentrate",
-            "fire",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and (@item.level)d4 Persistent,fire Damage damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "cxOeb2UuCIkF1vxw"
-        },
-        {
-          "name": "Sigil",
-          "type": "cantrip",
-          "level": 1,
-          "heightenedLevel": 1,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "unlimited",
-          "range": "touch",
-          "area": "",
-          "targets": "1 creature or object",
-          "save": "",
-          "description": "<p>You harmlessly place your unique magical sigil, which is about 1 square inch in size, on the targeted creature or object. The mark can be visible or invisible, and you can change it from one state to another by using an Interact action to touch the target. The mark can be scrubbed or scraped off with 5 minutes of work. If it's on a creature, it fades naturally over the course of a week. The time before the mark fades increases depending on your heightened level.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The sigil instead fades after 1 month.</p>\n<p><strong>Heightened (5th)</strong> The sigil instead fades after 1 year.</p>\n<p><strong>Heightened (7th)</strong> The sigil never fades.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "DUB5dWenBwEraSmA"
-        },
-        {
-          "name": "Tanglefoot",
+          "name": "Tangle Vine",
           "type": "cantrip",
           "level": 1,
           "heightenedLevel": 1,
@@ -441,7 +390,8 @@
             "attack",
             "concentrate",
             "manipulate",
-            "plant"
+            "plant",
+            "wood"
           ],
           "castingTime": "2",
           "duration": "",
@@ -449,13 +399,13 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>A vine covered in sticky sap appears from thin air, flicking from your hand and lashing itself to the target. Attempt a spell attack against the target.</p>\n<hr />\n<p><strong>Critical Success</strong> The target gains the Immobilized condition and takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty and the Immobilized condition.</p>\n<p><strong>Success</strong> The target takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty.</p>\n<p></p>\n<p><strong>Failure</strong> The target is unaffected.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The effects last for 2 rounds.</p>\n<p><strong>Heightened (4th)</strong> The effects last for 1 minute.</p>",
+          "description": "<p>A vine appears from thin air, flicking from your hand and lashing itself to the target. Attempt a spell attack roll against the target.</p>\n<p></p>\n<hr />\n<p><strong>Critical Success</strong> The target gains the Immobilized condition and takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty and the immobilized condition.</p>\n<p><strong>Success</strong> The target takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty.</p>\n<p><strong>Failure</strong> The target is unaffected.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The effects last for 2 rounds.</p>\n<p><strong>Heightened (4th)</strong> The effects last for 1 minute.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "3I8nDMhpdW7YCLhl"
+          "id": "y1jkS4DEt0tCmRri"
         }
       ],
       "lv1spells": [
@@ -470,7 +420,8 @@
             "emotion",
             "incapacitation",
             "manipulate",
-            "mental"
+            "mental",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "1 hour",
@@ -484,7 +435,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Ejvl0ykcy24IEgHl"
+          "id": "mpG44vJIKTZJiv7j"
         },
         {
           "name": "Fleet Step",
@@ -508,10 +459,10 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "9BsIzehreFwdTyxf"
+          "id": "1ypptplrwM0pp71r"
         },
         {
-          "name": "Magic Fang",
+          "name": "Runic Body",
           "type": "spell",
           "level": 1,
           "heightenedLevel": 1,
@@ -526,13 +477,13 @@
           "area": "",
           "targets": "1 willing creature",
           "save": "",
-          "description": "<p>Choose one of the target's unarmed attacks. You cause that unarmed attack to shine with primal energy. The unarmed attack becomes a +1 striking unarmed attack, gaining a +1 item bonus to attack rolls and increasing the number of damage dice to two if it had only one.</p>\n<p></p>",
+          "description": "<p>Glowing runes appear on the target's body. All its unarmed attacks become <em>+1 striking</em> unarmed attacks, gaining a +1 item bonus to attack rolls and increasing the number of damage dice to two.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The unarmed attacks are <em>+2 greater striking</em>.</p>\n<p><strong>Heightened (9th)</strong> The unarmed attacks are <em>+3 major striking</em>.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "zjxuMiMLIw28bURD"
+          "id": "SrDXN1qPLA75qGhS"
         }
       ],
       "lv2spells": [],

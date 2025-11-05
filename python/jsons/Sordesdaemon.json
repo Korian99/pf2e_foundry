@@ -9,14 +9,13 @@
   "type": "Creature",
   "level": 15,
   "traits": [
-    "Uncommon",
+    "Common",
     "Large",
     "Daemon",
-    "Evil",
     "Fiend",
     "Unholy"
   ],
-  "source": "Pathfinder #162: Ruins of the Radiant Siege",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision"
   ],
@@ -152,7 +151,7 @@
         "aura",
         "disease"
       ],
-      "description": "<p>30 feet. Creatures in the aura can't reduce the value of the sickened condition.</p>\n<p>A creature that enters the aura or begins its turn in it must succeed at a DC 34 Fortitude Saving Throw save or be Sickened 2 (plus Slowed 1 as long as it is sickened on a critical failure).</p>\n<p>A creature that succeeds at its save is temporarily immune for 1 minute.</p>\n<p>Creatures made of water (such as water elementals) and plant creatures use an outcome one degree of success worse than the result of their save.</p>",
+      "description": "<p>30 feet. A creature that enters the aura or begins its turn in it must succeed at a DC 34 Fortitude Saving Throw save or be Sickened 2 (plus Slowed 1 as long as it's sickened on a critical failure). Creatures in the aura can't reduce the value of the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute. Creatures made of water (such as water elementals) and plant creatures use an outcome one degree of success worse than the result of their save.</p>",
       "collapsed": false
     }
   ],
@@ -215,7 +214,7 @@
         "acid",
         "divine"
       ],
-      "description": "<p>The sordesdaemon exhales a spray of sewage that deals 8d6 Acid Damage|options:area-damage]{8d6 acid damage and 8d6 poison damage} in a 30ft Cone (Basic DC 40 Fortitude Saving Throw save).</p>\n<p>It can't use Retch of Foulness again for 1d4 rounds.</p>",
+      "description": "<p>The sordesdaemon exhales a spray of sewage that deals 8d6 Acid Damage|options:area-damage]{8d6 acid damage and 8d6 poison damage} in a 30ft Cone (Basic DC 36 Fortitude Saving Throw save).</p>\n<p>It can't use Retch of Foulness again for 1d4 rounds.</p>",
       "collapsed": false
     }
   ],
@@ -231,38 +230,12 @@
       },
       "autoHeightenLevel": 8,
       "cantrips": [],
-      "lv1spells": [
-        {
-          "name": "Detect Alignment (At Will) (Good Only)",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 1,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "detection",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "",
-          "area": "30ft emanation",
-          "targets": "",
-          "save": "",
-          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "nJsNcaSTO2fdeZHz"
-        }
-      ],
+      "lv1spells": [],
       "lv2spells": [],
       "lv3spells": [],
       "lv4spells": [
         {
-          "name": "Dimension Door (At Will)",
+          "name": "Translocate (at will)",
           "type": "spell",
           "level": 4,
           "heightenedLevel": 4,
@@ -278,7 +251,7 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -289,7 +262,32 @@
       ],
       "lv5spells": [
         {
-          "name": "Cloudkill (At Will)",
+          "name": "Translocate",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "lBM2KOSdEGLIyH2g"
+        },
+        {
+          "name": "Toxic Cloud (at will)",
           "type": "spell",
           "level": 5,
           "heightenedLevel": 5,
@@ -313,38 +311,13 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "8rZciZP1Mbjm3tYQ"
-        },
-        {
-          "name": "Dimension Door",
-          "type": "spell",
-          "level": 5,
-          "heightenedLevel": 5,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "teleportation"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "1 mile",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "lBM2KOSdEGLIyH2g"
         }
       ],
       "lv6spells": [],
       "lv7spells": [],
       "lv8spells": [
         {
-          "name": "Horrid Wilting",
+          "name": "Desiccate",
           "type": "spell",
           "level": 8,
           "heightenedLevel": 8,
@@ -360,7 +333,7 @@
           "area": "",
           "targets": "any number of living creatures",
           "save": "Basic fortitude",
-          "description": "<p>You pull the moisture from the targets' bodies, dealing 10d10 void damage. Creatures made of water (such as water elementals) and plant creatures use the outcome for one degree of success worse than the result of their saving throw. Creatures whose bodies contain no significant moisture (such as earth elementals) are immune to horrid wilting.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
+          "description": "<p>You pull the moisture from the targets' bodies, dealing 10d10 void damage. Creatures made of water (such as water elementals) and plant creatures use the outcome for one degree of success worse than the result of their saving throw. Creatures whose bodies contain no significant moisture (such as earth elementals) are immune to desiccate.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -377,7 +350,8 @@
           "traits": [
             "concentrate",
             "curse",
-            "manipulate"
+            "manipulate",
+            "spirit"
           ],
           "castingTime": "2",
           "duration": "varies",
@@ -385,7 +359,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "will",
-          "description": "<p>You curse the target, sapping its spirit and leaving a contagious trap in its essence. The target must attempt a Will save. Any creature that casts a divine or occult spell on the target while it's affected is targeted by spiritual epidemic and must also attempt a Will save. The curse continues to spread in this way.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Enfeebled 2 and Stupefied 2 for 1 round.</p>\n<p><strong>Failure</strong> The target is Enfeebled 2 and Stupefied 2 for 1 minute and Enfeebled 1 and Stupefied 1 permanently.</p>\n<p><strong>Critical Failure</strong> The target is Enfeebled 2 and Stupefied 3 for 1 minute and Enfeebled 2 and Stupefied 2 permanently.</p>",
+          "description": "<p>You curse the target, sapping its spirit and leaving a contagious trap in its essence. The target must attempt a Will save. Any creature that casts a divine or occult spell on the target while it's affected is targeted by spiritual epidemic and must also attempt a Will save. The curse continues to spread in this way.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Enfeebled 2 and Stupefied 2 for 1 round.</p>\n<p><strong>Failure</strong> The target is enfeebled 2 and stupefied 2 for 1 minute and Enfeebled 1 and Stupefied 1 permanently.</p>\n<p><strong>Critical Failure</strong> The target is Enfeebled 3 and Stupefied 3 for 1 minute and enfeebled 2 and stupefied 2 permanently.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",

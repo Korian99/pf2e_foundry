@@ -12,11 +12,9 @@
     "Common",
     "huge",
     "Aberration",
-    "Aquatic",
-    "Chaotic",
-    "Evil"
+    "Aquatic"
   ],
-  "source": "Pathfinder Bestiary 2",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision",
     "See invisibility"
@@ -121,16 +119,21 @@
   "immunities": [],
   "resistances": [
     {
+      "doubleVs": [],
+      "exceptions": [],
       "type": "cold",
       "value": 10
     },
     {
+      "doubleVs": [],
+      "exceptions": [],
       "type": "electricity",
       "value": 10
     }
   ],
   "weaknesses": [
     {
+      "exceptions": [],
       "type": "fire",
       "value": 15
     }
@@ -143,7 +146,7 @@
         "arcane",
         "aura"
       ],
-      "description": "<p>30 feet. A vaspercham's shell distorts nearby magic. Any creature in the aura who Casts a Spell must attempt a DC 37 Will Saving Throw save.</p>\n<hr />\n<p><strong>Critical Success</strong> The spell is unaffected and the caster is temporarily immune to the magic-warping aura for 1 minute.</p>\n<p><strong>Success</strong> The spell is unaffected, but if the spell allows a saving throw, the vaspercham gains a +1 circumstance bonus to save against it.</p>\n<p><strong>Failure</strong> If the spell has a target and there are one or more viable targets within its range, the spell's target changes, determined randomly by the GM. If there is no other possible target within range or the spell has no target, the spell is disrupted.</p>\n<p><strong>Critical Failure</strong> The caster instead Casts another Spell, choosing randomly from their spell repertoire, prepared spells, or available focus spells (as appropriate) and selecting any targets at random.</p>",
+      "description": "<p>30 feet. A vaspercham's shell distorts nearby magic. Any creature in the aura who Casts a Spell must attempt a DC 37 Will Saving Throw save.</p><hr /><p><strong>Critical Success</strong> The spell is unaffected, and the caster is temporarily immune to the magic-warping aura for 1 minute.</p>\n<p><strong>Success</strong> The spell is unaffected, but if the spell allows a saving throw, the vaspercham gains a +1 circumstance bonus to save against it.</p>\n<p><strong>Failure</strong> If the spell has a target and there are one or more viable targets within its range, the spell's target changes, determined randomly by the GM. If there's no other possible target within range or the spell has no target, the spell is disrupted.</p>\n<p><strong>Critical Failure</strong> The caster instead Casts another Spell, choosing randomly from their spell repertoire, prepared spells, or available focus spells (as appropriate) and selecting any targets at random.</p>",
       "collapsed": false
     }
   ],
@@ -156,8 +159,7 @@
       "traits": [
         "agile",
         "magical",
-        "reach-20",
-        "unarmed"
+        "reach-20"
       ],
       "damageRolls": [
         {
@@ -180,13 +182,12 @@
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Water Blast",
       "bonus": 33,
       "traits": [
         "brutal",
         "magical",
-        "range-increment-100",
         "water"
       ],
       "damageRolls": [
@@ -204,7 +205,7 @@
       "effects": [
         "hallucinatory-brine"
       ],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -228,7 +229,7 @@
       "traits": [
         "concentrate"
       ],
-      "description": "<p>The vaspercham releases an effusion of noxious water from its shell. Creatures within a 15ft Emanation must save against the vaspercham's hallucinatory brine.</p>",
+      "description": "<p>The vaspercham releases an effusion of noxious water from its shell. Creatures within a 15ft Type:emanation must save against the vaspercham's hallucinatory brine.</p>",
       "collapsed": false
     },
     {
@@ -243,7 +244,7 @@
     {
       "name": "Arcane Innate Spells",
       "type": "innate",
-      "bonus": 31,
+      "bonus": 33,
       "dc": 41,
       "focusPoints": {
         "current": 0,
@@ -257,7 +258,7 @@
       "lv4spells": [],
       "lv5spells": [
         {
-          "name": "Control Water",
+          "name": "Control Water (At Will)",
           "type": "spell",
           "level": 5,
           "heightenedLevel": 5,
@@ -268,18 +269,18 @@
             "water"
           ],
           "castingTime": "2",
-          "duration": "",
+          "duration": "1 hour",
           "range": "500 feet",
           "area": "",
           "targets": "",
-          "save": "",
-          "description": "<p>By imposing your will upon the water, you can raise or lower the level of water in the chosen area by 10 feet. Water creatures in the area are subjected to the effects of Slow.</p>",
+          "save": "fortitude",
+          "description": "<p>By imposing your will upon the water, you can raise or lower the level of water in the chosen area by 10 feet. Creatures that have the water trait and that are in the area when you Cast the Spell must attempt a Fortitude save, with the effects of the Slow spell.</p>\n<p><strong>Area</strong> 50 feet long by 50 feet wide</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "UsbkDyHC2hPJ3Xb5"
+          "id": "FgWm0D6J046GOf3J"
         }
       ],
       "lv6spells": [
@@ -301,13 +302,13 @@
           "area": "",
           "targets": "1 creature",
           "save": "will",
-          "description": "<p>You cause any spells cast on the target to spill out their energy in harmful surges. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> Whenever the target becomes affected by a spell with a duration, the target takes 2d12 Persistent,force Damage damage. Each time it takes persistent force damage from spellwrack, it reduces the remaining duration of spells affecting it by 1 round. Only a successful Arcana check against your spell DC can help the target recover from the Persistent Damage; the curse and the Persistent Damage end after 1 minute.</p>\n<p><strong>Failure</strong> As success, but the curse and Persistent Damage do not end on their own.</p>\n<p><strong>Critical Failure</strong> As failure, but the persistent force damage is 4d12.</p>",
+          "description": "<p>You cause any spells cast on the target to spill out their energy in harmful surges. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> Whenever the target becomes affected by a spell with a duration, the target takes 2d12 Persistent,force Damage damage. Each time it takes persistent force damage from <em>spellwrack</em>, it reduces the remaining duration of spells affecting it by 1 round. Only a successful arcana check against your spell DC can help the target recover from the persistent damage; the curse and the persistent damage end after 1 minute.</p>\n<p><strong>Failure</strong> As success, but the curse and persistent damage do not end on their own.</p>\n<p><strong>Critical Failure</strong> As failure, but the persistent force damage is 4d12 Persistent,force Damage.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "fY6vB2duDFos8Z4w"
+          "id": "8sz3adTjUoBrx4gq"
         },
         {
           "name": "Spellwrack",
@@ -327,13 +328,13 @@
           "area": "",
           "targets": "1 creature",
           "save": "will",
-          "description": "<p>You cause any spells cast on the target to spill out their energy in harmful surges. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> Whenever the target becomes affected by a spell with a duration, the target takes 2d12 Persistent,force Damage damage. Each time it takes persistent force damage from spellwrack, it reduces the remaining duration of spells affecting it by 1 round. Only a successful Arcana check against your spell DC can help the target recover from the Persistent Damage; the curse and the Persistent Damage end after 1 minute.</p>\n<p><strong>Failure</strong> As success, but the curse and Persistent Damage do not end on their own.</p>\n<p><strong>Critical Failure</strong> As failure, but the persistent force damage is 4d12.</p>",
+          "description": "<p>You cause any spells cast on the target to spill out their energy in harmful surges. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> Whenever the target becomes affected by a spell with a duration, the target takes 2d12 Persistent,force Damage damage. Each time it takes persistent force damage from <em>spellwrack</em>, it reduces the remaining duration of spells affecting it by 1 round. Only a successful arcana check against your spell DC can help the target recover from the persistent damage; the curse and the persistent damage end after 1 minute.</p>\n<p><strong>Failure</strong> As success, but the curse and persistent damage do not end on their own.</p>\n<p><strong>Critical Failure</strong> As failure, but the persistent force damage is 4d12 Persistent,force Damage.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "fY6vB2duDFos8Z4w"
+          "id": "8sz3adTjUoBrx4gq"
         },
         {
           "name": "Spellwrack",
@@ -353,16 +354,41 @@
           "area": "",
           "targets": "1 creature",
           "save": "will",
-          "description": "<p>You cause any spells cast on the target to spill out their energy in harmful surges. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> Whenever the target becomes affected by a spell with a duration, the target takes 2d12 Persistent,force Damage damage. Each time it takes persistent force damage from spellwrack, it reduces the remaining duration of spells affecting it by 1 round. Only a successful Arcana check against your spell DC can help the target recover from the Persistent Damage; the curse and the Persistent Damage end after 1 minute.</p>\n<p><strong>Failure</strong> As success, but the curse and Persistent Damage do not end on their own.</p>\n<p><strong>Critical Failure</strong> As failure, but the persistent force damage is 4d12.</p>",
+          "description": "<p>You cause any spells cast on the target to spill out their energy in harmful surges. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> Whenever the target becomes affected by a spell with a duration, the target takes 2d12 Persistent,force Damage damage. Each time it takes persistent force damage from <em>spellwrack</em>, it reduces the remaining duration of spells affecting it by 1 round. Only a successful arcana check against your spell DC can help the target recover from the persistent damage; the curse and the persistent damage end after 1 minute.</p>\n<p><strong>Failure</strong> As success, but the curse and persistent damage do not end on their own.</p>\n<p><strong>Critical Failure</strong> As failure, but the persistent force damage is 4d12 Persistent,force Damage.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "fY6vB2duDFos8Z4w"
+          "id": "8sz3adTjUoBrx4gq"
         }
       ],
       "lv7spells": [
+        {
+          "name": "See the Unseen (Constant)",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "revelation"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>Your gaze pierces through illusions and finds Invisible creatures and spirits. You can see invisible creatures as though they weren't invisible, although their features are blurred, making them Concealed and difficult to identify. You can also see incorporeal creatures, like ghosts, phased through an object from within 10 feet of an object's surface as blurry shapes seen through those objects. Subtler clues also grant you a +2 status bonus to checks you make to disbelieve illusions.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> This spell has a duration of 8 hours.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "UIdrHtM1AixVpQWf"
+        },
         {
           "name": "Regenerate",
           "type": "spell",
@@ -381,45 +407,20 @@
           "area": "",
           "targets": "1 willing living creature",
           "save": "",
-          "description": "<p>An infusion of vitality energy grants a creature continuous healing. The target temporarily gains regeneration 15, which restores 15 Hit Points to it at the start of each of its turns. While it has regeneration, the target can't die from damage and its Dying condition can't increase to a value that would kill it (this stops most creatures from going beyond dying 3), though if its Wounded value becomes 4 or higher, it stays Unconscious until its wounds are treated. If the target takes acid or fire damage, its regeneration deactivates until after the end of its next turn. Each time the creature regains Hit Points from regeneration, it also regrows one damaged or ruined organ (if any). During the spell's duration, the creature can also reattach severed body parts by spending an Interact action to hold the body part to the area it was severed from.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The regeneration increases to 20.</p>",
+          "description": "<p>An infusion of vital energy grants a creature continuous healing. The target temporarily gains regeneration 15, which restores 15 Hit Points to it at the start of each of its turns. While it has regeneration, the target can't die from taking Hit Point damage and its Dying condition can't increase to a value that would kill it (this stops most creatures' dying condition at dying 3), though if its Wounded value becomes 4 or higher, it stays Unconscious until its wounds are treated. If the target takes acid or fire damage, its regeneration deactivates until after the end of its next turn.</p>\n<p>Each time the creature regains Hit Points from regeneration, it also regrows one damaged or ruined organ (if any). During the spell's duration, the creature can also reattach severed body parts by spending an Interact action to hold the body part to the area it was severed from.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (9th)</strong> The regeneration increases to 20.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "R6Uthab3PRxESLLo"
-        },
-        {
-          "name": "See Invisibility (Constant)",
-          "type": "spell",
-          "level": 7,
-          "heightenedLevel": 7,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "revelation"
-          ],
-          "castingTime": "2",
-          "duration": "10 minutes",
-          "range": "",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You can see Invisible creatures and objects. They appear to you as translucent shapes, and they are Concealed to you.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The spell has a duration of 8 hours.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "7p38bExu8L9jgQ5N"
+          "id": "M6jLg7HBK2BRWpNp"
         }
       ],
       "lv8spells": [
         {
           "name": "Lightning Bolt",
           "type": "spell",
-          "level": 8,
+          "level": 3,
           "heightenedLevel": 8,
           "timesPrepared": 1,
           "traits": [
@@ -439,17 +440,42 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "cJa6v9WyqOoh2IVC"
+          "id": "w60iNJG9t0jMelt9"
         }
       ],
       "lv9spells": [
         {
-          "name": "Cone of Cold",
+          "name": "Dispelling Globe",
           "type": "spell",
-          "level": 9,
+          "level": 4,
           "heightenedLevel": 9,
           "timesPrepared": 1,
           "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "",
+          "area": "10ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create an immobile globe around yourself that attempts to counteract any spell from outside the globe whose area or targets enter into the globe, as if the globe were a Dispel Magic spell 1 rank lower than its actual spell rank.</p>\n<p>If the counteract attempt succeeds, it prevents only the portion of the spell that would have entered the globe (so if the spell also has targets outside the globe, or part of its area is beyond the globe, those targets or that area is affected normally).</p>\n<p>You must form the sphere in an unbroken open space, so its edges don't pass through any creatures or objects, or the spell is lost (though creatures can enter the globe after the spell is cast).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "5pDdIXOgnZp1M6RW"
+        },
+        {
+          "name": "Howling Blizzard",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 9,
+          "timesPrepared": 1,
+          "traits": [
+            "air",
             "cold",
             "concentrate",
             "manipulate"
@@ -460,37 +486,13 @@
           "area": "60ft cone",
           "targets": "",
           "save": "Basic reflex",
-          "description": "<p>Icy cold rushes forth from your hands. You deal 12d6 cold damage to creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "description": "<p>Freezing winds extend from your hands, pushing away from you with great force. If you Cast this Spell with 2 actions, it has an area of a 60-foot cone; if you Cast this Spell with 3 actions, it has a range of 500 feet and an area of a 30-foot burst. Each creature in the area takes 10d6 cold damage with a basic Reflex save. Snowdrifts and icy gales fill the area until the start of your next turn, making the area difficult terrain.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "yWhzcp0E6Y1EwhLf"
-        },
-        {
-          "name": "Spell Immunity",
-          "type": "spell",
-          "level": 9,
-          "heightenedLevel": 9,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "24 hours",
-          "range": "touch",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>You ward a creature against the effects of a single spell. Choose a spell and name it aloud as part of the verbal component. Spell immunity attempts to counteract that spell whenever spell immunity's target is the target of the named spell or in that spell's area. Successfully counteracting a spell that targets an area or multiple targets with spell immunity negates the effects only for the target affected by spell immunity.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "cSrbbHBdzubu6hzG"
+          "id": "4C05GQZLjkLd6yhQ"
         }
       ],
       "lv10spells": [],

@@ -12,10 +12,9 @@
     "Common",
     "Medium",
     "Aesir",
-    "Chaotic",
     "Monitor"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision"
   ],
@@ -28,7 +27,7 @@
   "languages": [
     "Common",
     "Jotun",
-    "ravenspeaker, tongues"
+    "ravenspeaker, truespeech"
   ],
   "skills": [
     {
@@ -93,6 +92,7 @@
       "level": 0,
       "price": "1 sp",
       "traits": [
+        "monk",
         "thrown-20"
       ]
     },
@@ -110,9 +110,10 @@
       "name": "Claimer of the Slain",
       "actions": null,
       "traits": [
+        "concentrate",
         "divine"
       ],
-      "description": "<p>Valkyries can detect the souls of those recently slain in combat. A valkyrie spends 10 minutes praying over the body of a creature who has been dead for no more than 12 hours; if that creature is worthy of becoming an Einherji and of the appropriate alignment, the valkyrie transforms that creature into an einherji.</p>",
+      "description": "<p>Valkyries can detect the souls of those recently slain in combat. A valkyrie spends 10 minutes praying over the body of a creature who has been dead for no more than 12 hours; if that creature is worthy of becoming an Einherji, the valkyrie transforms that creature into an einherji.</p>",
       "collapsed": false
     },
     {
@@ -166,10 +167,10 @@
   "weaknesses": [],
   "defensiveAbilities": [
     {
-      "name": "Attack of Opportunity",
+      "name": "Reactive Strike",
       "actions": -1,
       "traits": [],
-      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "description": "<p><strong>Trigger</strong> A creature within your reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p>You lash out at a foe that leaves an opening. Make a melee Strike against the triggering creature. If your attack is a critical hit and the trigger was a manipulate action, you disrupt that action. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>",
       "collapsed": false
     },
     {
@@ -219,7 +220,7 @@
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Spear",
       "bonus": 26,
       "traits": [
@@ -247,7 +248,7 @@
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -278,13 +279,12 @@
       "autoHeightenLevel": 7,
       "cantrips": [],
       "lv1spells": [],
-      "lv2spells": [],
-      "lv3spells": [
+      "lv2spells": [
         {
           "name": "Augury",
           "type": "spell",
           "level": 2,
-          "heightenedLevel": 3,
+          "heightenedLevel": 2,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -297,19 +297,72 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You gain a vague glimpse of the future. During the casting of this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveals the GM's best guess among the following outcomes:</p>\n<ul>\n<li><strong>Weal</strong> The results will be good.</li>\n<li><strong>Woe</strong> The results will be bad.</li>\n<li><strong>Weal</strong> and Woe The results will be a mix of good and bad.</li>\n<li><strong>Nothing</strong> There won't be particularly good or bad results.</li>\n</ul>\n<p>The GM rolls a secret DC 6 Flat . On a failure, the result is always \"nothing.\" This makes it impossible to tell whether a \"nothing\" result is accurate. If anyone asks about the same topic as the first casting of augury during an additional casting, the GM uses the secret roll result from the first casting. If circumstances change, though, it's possible to get a different result.</p>",
+          "description": "<p>You gain a vague glimpse of the future. During the casting of this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveal the GM's best guess among the following outcomes: good, bad, mixed (the results will be a mix of good and bad), and nothing (there won't be particularly good or bad results).</p>\n<p>The GM rolls a secret DC 6 Flat . On a failure, the result is always \"nothing.\" This makes it impossible to tell whether a \"nothing\" result is accurate. If anyone asks about the same topic as the first casting of <em>augury</em> during an additional casting, the GM uses the secret roll result from the first casting. If circumstances change, though, it's possible to get a different result.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "groZMtL5O9L5Jmrc"
+          "id": "pBTKYygZGTdwD8cu"
+        }
+      ],
+      "lv3spells": [
+        {
+          "name": "Heroism",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You unlock the target's inner heroism, granting it a +1 status bonus to attack rolls, Perception checks, saving throws, and skill checks.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The status bonus increases to +2.</p>\n<p><strong>Heightened (9th)</strong> The status bonus increases to +3.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "ehgaBfb1f2q5tCvy"
         },
+        {
+          "name": "Safe Passage",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "3",
+          "duration": "Sustained up to 1 minute",
+          "range": "touch",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p><strong>Area</strong> 10-foot-wide, 10-foot-tall, 60-foot-long section of terrain</p><hr /><p>You make passage through the area safe for a brief amount of time. Anyone passing through the area gains the following benefits against harmful effects of the terrain and environment, including environmental damage, hazardous terrain, and hazards in the area. The spell grants a +2 status bonus to AC and saves against such effects, and resistance 5 to all damage from such effects. Furthermore, the spell prevents anything in the area that's prone to collapse, such as a rickety bridge or an unstable ceiling, from collapsing, except under extreme strain that would collapse a normal structure of its type.</p>\n<p><em>Safe passage</em> protects only against harm, not inconvenience, and it doesn't reduce difficult terrain, remove the Concealed condition caused by precipitation, or the like, nor does it protect against creatures within the spell's area.</p>\n<p></p><hr /><p><strong>Heightened (5th)</strong> The granted resistance increases to 10, and the area can be 120 feet long.</p>\n<p><strong>Heightened (8th)</strong> The granted resistance increases to 15, and the area can be 500 feet long.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "JK1K3KoJ0C1rdO1m"
+        }
+      ],
+      "lv4spells": [
         {
           "name": "Status",
           "type": "spell",
           "level": 2,
-          "heightenedLevel": 3,
+          "heightenedLevel": 4,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -328,62 +381,37 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "KqwBljhsyqbQdT1M"
-        },
+          "id": "cwUhMAFps7HlNpjJ"
+        }
+      ],
+      "lv5spells": [
         {
-          "name": "Sanctified Ground",
+          "name": "Infuse Vitality",
           "type": "spell",
-          "level": 3,
-          "heightenedLevel": 3,
+          "level": 1,
+          "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "consecration",
-            "manipulate"
+            "manipulate",
+            "vitality"
           ],
-          "castingTime": "1 minute",
-          "duration": "until the next time you make your daily preparations",
-          "range": "",
-          "area": "30ft burst",
-          "targets": "",
-          "save": "",
-          "description": "<p>You sanctify the area, sprinkling it with holy water and warding it against your foes. Choose aberrations, celestials, dragons, fiends, monitors, or undead. All creatures in the area gain a +1 status bonus to AC, attack rolls, damage rolls, and saving throws against the chosen creatures.</p>",
-          "cast": false,
-          "cost": "1 vial of holy water",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "MLYQCbRgHBsnLSd7"
-        },
-        {
-          "name": "Wanderer's Guide",
-          "type": "spell",
-          "level": 3,
-          "heightenedLevel": 3,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "1 minute",
-          "duration": "until your next daily preparations",
-          "range": "",
+          "castingTime": "1 to 3",
+          "duration": "1 minute",
+          "range": "30 feet",
           "area": "",
-          "targets": "",
+          "targets": "1 to 3 willing creatures",
           "save": "",
-          "description": "<p>You call upon the beyond to guide your route. When you Cast this Spell, choose a destination; you receive an inspired route to that destination, allowing you and allies who travel overland with you to reduce the movement penalty from difficult terrain by half for the duration, as long as you don't deviate from the inspired route. This doesn't have any effect on movement during encounters. If you use this ability again before the duration is over, this effect ends and is replaced by that of the new route.</p>",
+          "description": "<p>You empower attacks with vital energy. The number of targets is equal to the number of actions you spent casting this spell. Each target's unarmed and weapon Strikes deal an extra 1d4 vitality damage. (This damage typically damages only undead). If you have the holy trait, you can add that trait to this spell and to the Strikes affected by the spell.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The damage increases to 2d4 damage.</p>\n<p><strong>Heightened (5th)</strong> The damage increases to 3d4 damage.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "w9JtxbH56or3qvWz"
-        }
-      ],
-      "lv4spells": [],
-      "lv5spells": [
+          "id": "0bLepJRkzpudfQkz"
+        },
         {
-          "name": "Tongues (Constant)",
+          "name": "Truespeech (Constant)",
           "type": "spell",
           "level": 5,
           "heightenedLevel": 5,
@@ -404,35 +432,10 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "ObwEq85BpNcwAeik"
+          "id": "eASrswNFoxu5Mo35"
         }
       ],
       "lv6spells": [
-        {
-          "name": "Disrupting Weapons",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 6,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "vitality"
-          ],
-          "castingTime": "2",
-          "duration": "1 minute",
-          "range": "touch",
-          "area": "",
-          "targets": "up to two weapons, each of which must be wielded by you or a willing ally, or else unattended",
-          "save": "",
-          "description": "<p>You infuse weapons with vitality energy. Attacks with these weapons deal an extra 1d4 vitality damage to undead.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The damage increases to 2d4 damage.</p>\n<p><strong>Heightened (5th)</strong> Target up to three weapons, and the damage increases to 3d4 damage.</p>\n<p>{Spell Effect: Disrupting Weapons}</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "dsCHqZfnUtzqFkTx"
-        },
         {
           "name": "Heal",
           "type": "spell",
@@ -450,13 +453,13 @@
           "area": "",
           "targets": "1 willing living creature or 1 undead",
           "save": "Basic fortitude",
-          "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p>◆◆ <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p>◆◆◆ <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse vital energy in a 30ft Emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Hoc5aq3HUCtHEtNn"
+          "id": "9A3YnB5w5Tb8VpXK"
         },
         {
           "name": "Heroism",
@@ -475,18 +478,18 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You tap into the target's inner heroism, granting it a +1 status bonus to attack rolls, Perception checks, saving throws, and skill checks.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The status bonus increases to +2.</p>\n<p><strong>Heightened (9th)</strong> The status bonus increases to +3.</p>\n<p></p>",
+          "description": "<p>You unlock the target's inner heroism, granting it a +1 status bonus to attack rolls, Perception checks, saving throws, and skill checks.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The status bonus increases to +2.</p>\n<p><strong>Heightened (9th)</strong> The status bonus increases to +3.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "hjehZ1vITTxkua7e"
+          "id": "vUY6VV2NoK3leHKO"
         }
       ],
       "lv7spells": [
         {
-          "name": "Plane Shift (Self and Mount Only)",
+          "name": "Interplanar Teleport (self and mount only)",
           "type": "spell",
           "level": 7,
           "heightenedLevel": 7,
@@ -498,17 +501,17 @@
           ],
           "castingTime": "10 minutes",
           "duration": "",
-          "range": "touch",
+          "range": "5 feet",
           "area": "",
-          "targets": "1 willing creature, or up to 8 willing creatures joining hands",
+          "targets": "up to 8 willing creatures",
           "save": "",
-          "description": "<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must have specific knowledge of the destination plane and use a magic tuning fork created from material from that plane as a focus for the spell. While the tuning forks for most prominent planes are uncommon, just like the spell plane shift, more obscure planes and demiplanes often have rare tuning forks. The spell is highly imprecise, and you appear 1d20x25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. Plane shift doesn't provide a means of return travel, though casting plane shift again allows you to return to your previous plane unless there are extenuating circumstances.</p>",
+          "description": "<p><strong>Requirements</strong> You have a planar key for the destination plane, used as a locus</p>\n<hr />\n<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must know the destination plane exists and use a magic planar key created from material from that plane as a locus for the spell. While the planar keys for most prominent planes are uncommon, just like the spell <em>interplanar teleport</em>, more obscure planes and demiplanes often have rare or possibly even unique planar keys.</p>\n<p>The spell is highly imprecise, and you appear 1d20×25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. <em>Interplanar teleport</em> doesn't provide a means of return travel, though casting <em>interplanar teleport</em> again allows you to return to your previous plane unless there are extenuating circumstances.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "vjPEjP5swzJDQYdF"
+          "id": "pahqS8TU0kTPmWyL"
         }
       ],
       "lv8spells": [],

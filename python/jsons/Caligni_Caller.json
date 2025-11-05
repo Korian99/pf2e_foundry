@@ -9,14 +9,12 @@
   "type": "Creature",
   "level": 6,
   "traits": [
-    "Uncommon",
+    "Common",
     "Medium",
     "Caligni",
-    "Chaotic",
-    "Evil",
     "Humanoid"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Greater darkvision"
   ],
@@ -120,8 +118,8 @@
   },
   "savenote": "",
   "hp": {
-    "value": 70,
-    "max": 70,
+    "value": 80,
+    "max": 80,
     "note": "death umbra",
     "modifications": []
   },
@@ -206,31 +204,6 @@
       "autoHeightenLevel": 5,
       "cantrips": [
         {
-          "name": "Chill Touch",
-          "type": "cantrip",
-          "level": 1,
-          "heightenedLevel": 1,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "void"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "touch",
-          "area": "",
-          "targets": "1 living or undead creature",
-          "save": "Basic fortitude",
-          "description": "<p>Siphoning void energy into yourself, your hand radiates a pale darkness. Your touch weakens the living and disorients undead, possibly even causing them to flee. The effect depends on whether the target is living or undead.</p>\n<ul>\n<li><strong>Living Creature</strong> The spell deals void damage equal to 1d4 plus your spellcasting modifier. The target attempts a basic Fortitude save, but is also Enfeebled 1 for 1 round on a critical failure.</li>\n<li><strong>Undead Creature</strong> The target is Off-Guard for 1 round on a failed Fortitude save. On a critical failure, the target is also Fleeing for 1 round unless it succeeds at a Will save.</li>\n</ul>\n<hr />\n<p><strong>Heightened (+1)</strong> The void damage to living creatures increases by 1d4.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "6Jj22qinJT6zND28"
-        },
-        {
           "name": "Detect Magic",
           "type": "cantrip",
           "level": 1,
@@ -247,19 +220,44 @@
           "area": "30ft emanation",
           "targets": "",
           "save": "",
-          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies.</p>\n<p>You detect illusion magic only if that magic's effect has a lower level than the rank of your detect magic spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an invisibility potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the school of magic for the highest-level effect within range that the spell detects. If multiple effects are equally strong, the GM determines which you learn.</p>\n<p><strong>Heightened (4th)</strong> As 3rd level, but you also pinpoint the source of the highest-level magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
+          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "1T5xrqrDgglCPtRW"
+          "id": "Ew6RCbDZHc1RMJlz"
+        },
+        {
+          "name": "Void Warp",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 living creature",
+          "save": "Basic fortitude",
+          "description": "<p>You call upon the Void to harm life force. The target takes 2d4 void damage with a basic Fortitude save. On a critical failure, the target is also Enfeebled 1 until the start of your next turn.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "SAbPYciP1E2mIlyf"
         }
       ],
       "lv1spells": [],
       "lv2spells": [
         {
-          "name": "Darkness (At Will)",
+          "name": "Darkness (at will)",
           "type": "spell",
           "level": 2,
           "heightenedLevel": 2,
@@ -302,7 +300,7 @@
           "area": "30ft line",
           "targets": "",
           "save": "fortitude",
-          "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 void damage and (@item.level) Bleed Damage damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the void damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double void damage and double persistent bleed damage.</p><hr /><p><strong>Heightened (+1)</strong> The void damage increases by 2d4, and the persistent bleed damage increases by 1.</p>",
+          "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 void damage and (@item.level) Bleed Damage damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the void damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double void damage and double persistent bleed damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The void damage increases by 2d4, and the persistent bleed damage increases by 1.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -327,7 +325,7 @@
           "area": "30ft line",
           "targets": "",
           "save": "fortitude",
-          "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 void damage and (@item.level) Bleed Damage damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the void damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double void damage and double persistent bleed damage.</p><hr /><p><strong>Heightened (+1)</strong> The void damage increases by 2d4, and the persistent bleed damage increases by 1.</p>",
+          "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 void damage and (@item.level) Bleed Damage damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the void damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double void damage and double persistent bleed damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The void damage increases by 2d4, and the persistent bleed damage increases by 1.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -352,7 +350,7 @@
           "area": "30ft line",
           "targets": "",
           "save": "fortitude",
-          "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 void damage and (@item.level) Bleed Damage damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the void damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double void damage and double persistent bleed damage.</p><hr /><p><strong>Heightened (+1)</strong> The void damage increases by 2d4, and the persistent bleed damage increases by 1.</p>",
+          "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 void damage and (@item.level) Bleed Damage damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the void damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double void damage and double persistent bleed damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The void damage increases by 2d4, and the persistent bleed damage increases by 1.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -371,7 +369,8 @@
             "cold",
             "concentrate",
             "darkness",
-            "manipulate"
+            "manipulate",
+            "unholy"
           ],
           "castingTime": "2",
           "duration": "",
@@ -379,7 +378,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You shoot an utterly cold ray of darkness tinged with unholy energy. Make a ranged spell attack against the target. You deal 5d6 cold damage, plus 5d6 spirit damage if the target is a celestial.</p>\n<p>If the ray passes through an area of magical light or targets a creature affected by magical light, chilling darkness attempts to counteract the light. If you need to determine whether the ray passes through an area of light, draw a line between yourself and the spell's target.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The cold damage increases by 2d6, and the spirit damage against celestials increases by 2d6.</p>",
+          "description": "<p>You shoot an utterly cold ray of darkness tinged with unholy energy. Make a ranged spell attack. The ray deals 5d6 cold damage. If the target has the holy trait, you deal an extra 5d6 spirit damage.</p><hr /><p><strong>Critical Success</strong> The target takes double damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p>\n<p>If the ray passes through an area of magical light or targets a creature affected by magical light, <em>chilling darkness</em> attempts to counteract the light. If you need to determine whether the ray passes through an area of light, draw a line between yourself and the spell's target.</p><hr /><p><strong>Heightened (+1)</strong> The cold damage increases by 2d6, and the spirit damage against holy creatures increases by 2d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -398,7 +397,8 @@
             "cold",
             "concentrate",
             "darkness",
-            "manipulate"
+            "manipulate",
+            "unholy"
           ],
           "castingTime": "2",
           "duration": "",
@@ -406,7 +406,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You shoot an utterly cold ray of darkness tinged with unholy energy. Make a ranged spell attack against the target. You deal 5d6 cold damage, plus 5d6 spirit damage if the target is a celestial.</p>\n<p>If the ray passes through an area of magical light or targets a creature affected by magical light, chilling darkness attempts to counteract the light. If you need to determine whether the ray passes through an area of light, draw a line between yourself and the spell's target.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The cold damage increases by 2d6, and the spirit damage against celestials increases by 2d6.</p>",
+          "description": "<p>You shoot an utterly cold ray of darkness tinged with unholy energy. Make a ranged spell attack. The ray deals 5d6 cold damage. If the target has the holy trait, you deal an extra 5d6 spirit damage.</p><hr /><p><strong>Critical Success</strong> The target takes double damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p>\n<p>If the ray passes through an area of magical light or targets a creature affected by magical light, <em>chilling darkness</em> attempts to counteract the light. If you need to determine whether the ray passes through an area of light, draw a line between yourself and the spell's target.</p><hr /><p><strong>Heightened (+1)</strong> The cold damage increases by 2d6, and the spirit damage against holy creatures increases by 2d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -444,7 +444,7 @@
       ],
       "lv5spells": [
         {
-          "name": "Shadow Walk",
+          "name": "Umbral Journey",
           "type": "spell",
           "level": 5,
           "heightenedLevel": 5,
@@ -459,9 +459,9 @@
           "duration": "8 hours",
           "range": "touch",
           "area": "",
-          "targets": "you and up to 9 willing creatures touched",
+          "targets": "you and up to 10 willing creatures touched",
           "save": "",
-          "description": "<p>You access the Shadow Plane, using its warped nature to spread your travels. The targets enter the edge of the Shadow Plane where it borders the Material Plane. Targets can't see the Material Plane while on the Shadow Plane (although elements of that plane can sometimes be a hazy reflection of the Material Plane). While on the Shadow Plane, the targets are exposed to potential encounters with that plane's denizens. The shadows on the border between the planes bend space, speeding up your movement with respect to the Material Plane. Every 3 minutes the targets travel along this border, they move as far as they would through the Material Plane in 1 hour. At any point, a target can Dismiss the spell's effects, although this affects only that target. The shadow bending is inexact, so when the spell ends, the targets appear roughly 1 mile from their intended location on the Material Plane (though those who are traveling together and Dismiss the spell at the same point on the Plane of Shadow appear together).</p>",
+          "description": "<p>You move partially into the Netherworld, using its warped nature to speed your travels. Each hour, you cover roughly as much ground as you normally would in 3 days. The landmarks are vague and symbolic rather than concrete, leaving you within a mile of your intended destination when you Dismiss the spell or its duration ends</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",

@@ -11,10 +11,9 @@
   "traits": [
     "Uncommon",
     "Medium",
-    "Evil",
     "Humanoid"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision"
   ],
@@ -27,8 +26,7 @@
   "languages": [
     "Aklo",
     "Common",
-    "Fey",
-    "tongues"
+    "Truespeech"
   ],
   "skills": [
     {
@@ -142,13 +140,16 @@
   "immunities": [],
   "resistances": [
     {
+      "doubleVs": [],
+      "exceptions": [],
       "type": "poison",
       "value": 15
     }
   ],
   "weaknesses": [
     {
-      "type": "cold-iron",
+      "exceptions": [],
+      "type": "peachwood",
       "value": 10
     }
   ],
@@ -157,7 +158,7 @@
       "name": "Darting Legs",
       "actions": -1,
       "traits": [],
-      "description": "<p><strong>Requirements</strong> The jorogumo has their spider legs extended or has Changed Shape</p>\n<p><strong>Trigger</strong> The jorogumo is targeted with an attack</p>\n<hr />\n<p><strong>Effect</strong> The jorogumo raises a leg, gaining a +2 circumstance bonus to AC against the triggering attack.</p>",
+      "description": "<p><strong>Requirements</strong> The jorogumo has their spider legs extended or has Changed Shape</p>\n<p><strong>Trigger</strong> The jorogumo is targeted with an attack</p><hr /><p><strong>Effect</strong> The jorogumo raises a leg, gaining a +2 circumstance bonus to AC against the triggering attack.</p>",
       "collapsed": false
     }
   ],
@@ -167,9 +168,7 @@
       "type": "melee",
       "name": "Jaws",
       "bonus": 27,
-      "traits": [
-        "unarmed"
-      ],
+      "traits": [],
       "damageRolls": [
         {
           "roll": "3d12+14",
@@ -195,8 +194,7 @@
       "name": "Claw",
       "bonus": 27,
       "traits": [
-        "agile",
-        "unarmed"
+        "agile"
       ],
       "damageRolls": [
         {
@@ -217,18 +215,16 @@
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Web",
       "bonus": 23,
-      "traits": [
-        "range-increment-60"
-      ],
+      "traits": [],
       "damageRolls": [],
       "critRolls": [],
       "effects": [
         "web-trap"
       ],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -253,7 +249,7 @@
         "incapacitation",
         "poison"
       ],
-      "description": "<p><strong>Saving Throw</strong> DC 32 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> 3d6 Poison Damage damage and Stupefied 1 (1 round)</p>\n<p><strong>Stage 2</strong> 3d6 Poison Damage damage and Stupefied 2 (1 round)</p>\n<p><strong>Stage 3</strong> 4d6 Poison Damage damage and Stupefied 2 (1 round)</p>\n<p><strong>Stage 4</strong> Paralyzed for 1d4 hours</p>",
+      "description": "<p><strong>Saving Throw</strong> DC 32 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> 3d6 Poison Damage damage and Stupefied 1 (1 round)</p>\n<p><strong>Stage 2</strong> 3d6 Poison Damage damage and Stupefied 2 (1 round)</p>\n<p><strong>Stage 3</strong> 4d6 Poison Damage damage and stupefied 2 (1 round)</p>\n<p><strong>Stage 4</strong> Paralyzed for 1d4 hours</p>",
       "collapsed": false
     },
     {
@@ -264,14 +260,14 @@
         "occult",
         "polymorph"
       ],
-      "description": "<p><strong>Requirements</strong> The jorogumo is in humanoid form</p>\n<hr />\n<p><strong>Effect</strong> Eight large spider legs sprout from the jorogumo's back, granting them a 40-foot climb Speed and allowing them to use the Darting Legs reaction.</p>",
+      "description": "<p><strong>Requirements</strong> The jorogumo is in humanoid form</p><hr /><p><strong>Effect</strong> Eight large spider legs sprout from the jorogumo's back, granting a 40-foot climb Speed and allowing them to use the Darting Legs reaction.</p>",
       "collapsed": false
     },
     {
       "name": "Web Trap",
       "actions": null,
       "traits": [],
-      "description": "<p>A creature hit by the jorogumo's web attack is Immobilized and stuck to the nearest surface, preventing the creature from moving.</p>\n<p>The DC to Escape dc=32 or Force open dc=32 the web trap is 32.</p>",
+      "description": "<p>A creature hit by the jorogumo's web attack is Immobilized and stuck to the nearest surface, preventing the creature from moving. The DC to Escape or Force Open the web trap is 32.</p>",
       "collapsed": false
     }
   ],
@@ -299,7 +295,8 @@
             "emotion",
             "incapacitation",
             "manipulate",
-            "mental"
+            "mental",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "1 hour",
@@ -313,12 +310,12 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "8geadWeP6EV4w18U"
+          "id": "nrFBzWgzO2zkggIT"
         }
       ],
       "lv2spells": [
         {
-          "name": "Speak with Animals (Constant) (Spiders Only)",
+          "name": "Speak with Animals (Constant)",
           "type": "spell",
           "level": 2,
           "heightenedLevel": 2,
@@ -328,7 +325,7 @@
             "manipulate"
           ],
           "castingTime": "2",
-          "duration": "10 minutes",
+          "duration": "1 hour",
           "range": "",
           "area": "",
           "targets": "",
@@ -339,7 +336,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "GPFQRaqbTvsHzgLv"
+          "id": "tDnGHBENORXCE6b3"
         }
       ],
       "lv3spells": [
@@ -361,13 +358,13 @@
           "area": "",
           "targets": "1 creature",
           "save": "will",
-          "description": "<p>With a cursory mental touch, you attempt to read the target's mind. It must attempt a Will save. The target then becomes temporarily immune to your mind reading for 1 hour.</p>\n<hr /><p><strong>Critical Success</strong> The target perceives vague surface thoughts from you when you Cast the Spell.</p>\n<p><strong>Success</strong> You find out whether the target's Intelligence modifier is higher than, equal to, or lower than yours.</p>\n<p><strong>Failure</strong> You perceive vague surface thoughts from the target when you Cast the Spell, and you find out whether its Intelligence modifier is higher than, equal to, or lower than yours.</p>\n<p><strong>Critical Failure</strong> As failure, and for the duration of the spell, you can Sustain the Spell to detect the target's surface thoughts again. The target doesn't receive any additional saves.</p>",
+          "description": "<p>With a cursory mental touch, you attempt to read the target's mind. It must attempt a Will save. The target then becomes temporarily immune to your mind reading for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The target perceives vague surface thoughts from you when you Cast the Spell.</p>\n<p><strong>Success</strong> You find out whether the target's Intelligence modifier is higher than, equal to, or lower than yours.</p>\n<p><strong>Failure</strong> You perceive vague surface thoughts from the target when you Cast the Spell, and you find out whether its Intelligence is higher than, equal to, or lower than yours.</p>\n<p><strong>Critical Failure</strong> As failure, and for the duration of the spell, you can Sustain the spell to detect the target's surface thoughts again. The target doesn't receive any additional saves.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "gfVREKT4YiAXf0Sh"
+          "id": "b6cuLHfZlcYXxAcP"
         }
       ],
       "lv4spells": [
@@ -390,13 +387,13 @@
           "area": "",
           "targets": "1 creature",
           "save": "will",
-          "description": "<p>You afflict the target with a curse that makes its presence abrasive and off-putting. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> For 10 minutes, the target must roll twice and use the worse result whenever attempting a Deception, Diplomacy, Intimidation, or Performance check, and creatures they encounter have an initial attitude toward them of one step worse (for instance, Unfriendly instead of Indifferent).</p>\n<p><strong>Failure</strong> As success, but the effect is permanent.</p>\n<p><strong>Critical Failure</strong> As failure, and creatures that the target encounters have an initial attitude toward them of two steps worse.</p>",
+          "description": "<p>You afflict the target with a curse that makes its presence abrasive and off-putting. The target must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> For 10 minutes, the target must roll twice and use the worse result whenever attempting a Deception, Diplomacy, Intimidation, or Performance check, and creatures they encounter have an initial attitude toward them of one step worse (for instance, Unfriendly instead of Indifferent).</p>\n<p></p>\n<p><strong>Failure</strong> As success, but the effect is permanent.</p>\n<p></p>\n<p><strong>Critical Failure</strong> As failure, and creatures that the target encounters have an initial attitude toward them of two steps worse.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "u6JO0hbqTu6SyElT"
+          "id": "r5hwww48T7DchilH"
         },
         {
           "name": "Outcast's Curse",
@@ -417,13 +414,13 @@
           "area": "",
           "targets": "1 creature",
           "save": "will",
-          "description": "<p>You afflict the target with a curse that makes its presence abrasive and off-putting. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> For 10 minutes, the target must roll twice and use the worse result whenever attempting a Deception, Diplomacy, Intimidation, or Performance check, and creatures they encounter have an initial attitude toward them of one step worse (for instance, Unfriendly instead of Indifferent).</p>\n<p><strong>Failure</strong> As success, but the effect is permanent.</p>\n<p><strong>Critical Failure</strong> As failure, and creatures that the target encounters have an initial attitude toward them of two steps worse.</p>",
+          "description": "<p>You afflict the target with a curse that makes its presence abrasive and off-putting. The target must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> For 10 minutes, the target must roll twice and use the worse result whenever attempting a Deception, Diplomacy, Intimidation, or Performance check, and creatures they encounter have an initial attitude toward them of one step worse (for instance, Unfriendly instead of Indifferent).</p>\n<p></p>\n<p><strong>Failure</strong> As success, but the effect is permanent.</p>\n<p></p>\n<p><strong>Critical Failure</strong> As failure, and creatures that the target encounters have an initial attitude toward them of two steps worse.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "u6JO0hbqTu6SyElT"
+          "id": "r5hwww48T7DchilH"
         },
         {
           "name": "Outcast's Curse",
@@ -444,13 +441,13 @@
           "area": "",
           "targets": "1 creature",
           "save": "will",
-          "description": "<p>You afflict the target with a curse that makes its presence abrasive and off-putting. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> For 10 minutes, the target must roll twice and use the worse result whenever attempting a Deception, Diplomacy, Intimidation, or Performance check, and creatures they encounter have an initial attitude toward them of one step worse (for instance, Unfriendly instead of Indifferent).</p>\n<p><strong>Failure</strong> As success, but the effect is permanent.</p>\n<p><strong>Critical Failure</strong> As failure, and creatures that the target encounters have an initial attitude toward them of two steps worse.</p>",
+          "description": "<p>You afflict the target with a curse that makes its presence abrasive and off-putting. The target must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> For 10 minutes, the target must roll twice and use the worse result whenever attempting a Deception, Diplomacy, Intimidation, or Performance check, and creatures they encounter have an initial attitude toward them of one step worse (for instance, Unfriendly instead of Indifferent).</p>\n<p></p>\n<p><strong>Failure</strong> As success, but the effect is permanent.</p>\n<p></p>\n<p><strong>Critical Failure</strong> As failure, and creatures that the target encounters have an initial attitude toward them of two steps worse.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "u6JO0hbqTu6SyElT"
+          "id": "r5hwww48T7DchilH"
         },
         {
           "name": "Suggestion",
@@ -463,7 +460,8 @@
             "incapacitation",
             "linguistic",
             "manipulate",
-            "mental"
+            "mental",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "varies",
@@ -471,13 +469,13 @@
           "area": "",
           "targets": "1 creature",
           "save": "will",
-          "description": "<p>Your honeyed words are difficult for creatures to resist. You suggest a course of action to the target, which must be phrased in such a way as to seem like a logical course of action to the target and can't be self-destructive or obviously against the target's self-interest. The target must attempt a Will save.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected and knows you tried to control it.</p>\n<p><strong>Success</strong> The target is unaffected and thinks you were talking to them normally, not casting a spell on them.</p>\n<p><strong>Failure</strong> The target immediately follows your suggestion. The spell has a duration of 1 minute, or until the target has completed a finite suggestion or the suggestion becomes self-destructive or has other obvious negative effects.</p>\n<p><strong>Critical Failure</strong> As failure, but the base duration is 1 hour.</p>\n<hr /><p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>",
+          "description": "<p>Your honeyed words are difficult for creatures to resist. You suggest a course of action to the target, which must be phrased in such a way as to seem like a logical course of action to the target and can't be self-destructive or obviously against the target's self-interest. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and knows you tried to control it.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target immediately follows your suggestion. The spell has a duration of 1 minute, or until the target has completed a finite suggestion or the suggestion becomes self-destructive or has other obvious negative effects.</p>\n<p><strong>Critical Failure</strong> As failure, but the base duration is 1 hour.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "czoars2JsBtG5aFk"
+          "id": "tH1kFOJ5IcrLyTad"
         },
         {
           "name": "Suggestion",
@@ -490,7 +488,8 @@
             "incapacitation",
             "linguistic",
             "manipulate",
-            "mental"
+            "mental",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "varies",
@@ -498,13 +497,13 @@
           "area": "",
           "targets": "1 creature",
           "save": "will",
-          "description": "<p>Your honeyed words are difficult for creatures to resist. You suggest a course of action to the target, which must be phrased in such a way as to seem like a logical course of action to the target and can't be self-destructive or obviously against the target's self-interest. The target must attempt a Will save.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected and knows you tried to control it.</p>\n<p><strong>Success</strong> The target is unaffected and thinks you were talking to them normally, not casting a spell on them.</p>\n<p><strong>Failure</strong> The target immediately follows your suggestion. The spell has a duration of 1 minute, or until the target has completed a finite suggestion or the suggestion becomes self-destructive or has other obvious negative effects.</p>\n<p><strong>Critical Failure</strong> As failure, but the base duration is 1 hour.</p>\n<hr /><p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>",
+          "description": "<p>Your honeyed words are difficult for creatures to resist. You suggest a course of action to the target, which must be phrased in such a way as to seem like a logical course of action to the target and can't be self-destructive or obviously against the target's self-interest. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and knows you tried to control it.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target immediately follows your suggestion. The spell has a duration of 1 minute, or until the target has completed a finite suggestion or the suggestion becomes self-destructive or has other obvious negative effects.</p>\n<p><strong>Critical Failure</strong> As failure, but the base duration is 1 hour.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "czoars2JsBtG5aFk"
+          "id": "tH1kFOJ5IcrLyTad"
         },
         {
           "name": "Suggestion",
@@ -517,7 +516,8 @@
             "incapacitation",
             "linguistic",
             "manipulate",
-            "mental"
+            "mental",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "varies",
@@ -525,18 +525,18 @@
           "area": "",
           "targets": "1 creature",
           "save": "will",
-          "description": "<p>Your honeyed words are difficult for creatures to resist. You suggest a course of action to the target, which must be phrased in such a way as to seem like a logical course of action to the target and can't be self-destructive or obviously against the target's self-interest. The target must attempt a Will save.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected and knows you tried to control it.</p>\n<p><strong>Success</strong> The target is unaffected and thinks you were talking to them normally, not casting a spell on them.</p>\n<p><strong>Failure</strong> The target immediately follows your suggestion. The spell has a duration of 1 minute, or until the target has completed a finite suggestion or the suggestion becomes self-destructive or has other obvious negative effects.</p>\n<p><strong>Critical Failure</strong> As failure, but the base duration is 1 hour.</p>\n<hr /><p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>",
+          "description": "<p>Your honeyed words are difficult for creatures to resist. You suggest a course of action to the target, which must be phrased in such a way as to seem like a logical course of action to the target and can't be self-destructive or obviously against the target's self-interest. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and knows you tried to control it.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target immediately follows your suggestion. The spell has a duration of 1 minute, or until the target has completed a finite suggestion or the suggestion becomes self-destructive or has other obvious negative effects.</p>\n<p><strong>Critical Failure</strong> As failure, but the base duration is 1 hour.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "czoars2JsBtG5aFk"
+          "id": "tH1kFOJ5IcrLyTad"
         }
       ],
       "lv5spells": [
         {
-          "name": "Tongues (Constant)",
+          "name": "Truespeech (Constant)",
           "type": "spell",
           "level": 5,
           "heightenedLevel": 5,
@@ -557,7 +557,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "JZJkUq4BEg1IAg4W"
+          "id": "vtP3BQRkTKStkABB"
         }
       ],
       "lv6spells": [],
@@ -570,7 +570,8 @@
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "summon"
           ],
           "castingTime": "3",
           "duration": "Sustained up to 1 minute",
@@ -578,13 +579,13 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You conjure an animal to fight for you. You summon a common creature that has the animal trait and whose level is -1, such as those found in Pathfinder Bestiary volumes. Heightening the spell increases the maximum level of creature you can summon.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> Level 1</p>\n<p><strong>Heightened (3rd)</strong> Level 2</p>\n<p><strong>Heightened (4th)</strong> Level 3</p>\n<p><strong>Heightened (5th)</strong> Level 5</p>\n<p><strong>Heightened (6th)</strong> Level 7</p>\n<p><strong>Heightened (7th)</strong> Level 9</p>\n<p><strong>Heightened (8th)</strong> Level 11</p>\n<p><strong>Heightened (9th)</strong> Level 13</p>\n<p><strong>Heightened (10th)</strong> Level 15</p>",
+          "description": "<p>You summon a creature that has the animal trait and whose level is –1 to fight for you.</p><hr /><p><strong>Heightened</strong> As listed in the summon trait.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "ZarnbOm1D79SECpY"
+          "id": "rB2QwSHTXGe7l9rE"
         }
       ],
       "lv8spells": [],

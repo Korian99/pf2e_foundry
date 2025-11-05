@@ -1,0 +1,655 @@
+{
+  "initiative": 0,
+  "initiativebonus": 25,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Exscinder",
+  "type": "Creature",
+  "level": 13,
+  "traits": [
+    "Rare",
+    "huge",
+    "Archon",
+    "Celestial",
+    "Holy"
+  ],
+  "source": "Pathfinder Monster Core 2",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 25,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo",
+    "Chthonian",
+    "Diabolic",
+    "Draconic",
+    "Empyrean",
+    "Necril",
+    "Sakvroth",
+    "Utopian",
+    "Telepathy 100 feet, Truespeech"
+  ],
+  "skills": [
+    {
+      "name": "arcana",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 26,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "occultism",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "society",
+      "modifier": 26,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "Heaven Lore",
+      "modifier": 26,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "Library Lore",
+      "modifier": 26,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 8
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": 5
+  },
+  "wisdom": {
+    "value": 8
+  },
+  "charisma": {
+    "value": 7
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 240,
+    "max": 240,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "fear-effects"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "unholy",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Archon's Protection",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> An enemy damages the archon's ally and both are within 15 feet of the archon</p><hr /><p><strong>Effect</strong> The ally gains resistance 15 to all damage against the triggering damage, and the archon can make a Strike against the enemy.</p>\n<p>Effect: Archon's Protection</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, fly 50ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Binding Chains",
+      "bonus": 27,
+      "traits": [
+        "disarm",
+        "finesse",
+        "holy",
+        "magical",
+        "trip"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6",
+          "type": "fire"
+        },
+        {
+          "roll": "3d8+11",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(3d8+11)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "censorious-lash"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Blazing Sigil",
+      "bonus": 25,
+      "traits": [
+        "fire",
+        "holy",
+        "magical",
+        "spirit"
+      ],
+      "damageRolls": [
+        {
+          "roll": "5d6",
+          "type": "fire"
+        },
+        {
+          "roll": "3d6",
+          "type": "spirit"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(5d6)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(3d6)*2",
+          "type": "spirit"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Censorious Lash",
+      "actions": null,
+      "traits": [
+        "divine",
+        "incapacitation",
+        "mental"
+      ],
+      "description": "<p>When the exscinder hits a creature with a binding chains Strike, that creature must attempt a DC 30 Will Saving Throw save. On a failure, it's controlled by the exscinder for its frst action on its next turn (or controlled for its entire next turn on a critical failure).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Change Size",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "divine",
+        "polymorph"
+      ],
+      "description": "<p>The exscinder changes size to their choice of Huge, Large, Medium, or Small.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Temper thy Words",
+      "actions": 1,
+      "traits": [
+        "auditory",
+        "concentrate",
+        "divine"
+      ],
+      "description": "<p>The exscinder chooses one written text within 120 feet. They don't need to be able to observe the text, but they can't target one that's deliberately Concealed. The exscinder censors the text, modifying it to their wishes. The text can't be referenced, making it useless for functions like Casting a Spell from a scroll, preparing spells from a spellbook, or consulting a scholarly journal. If the text is attended, the creature possessing it can attempt a DC 33 Will Saving Throw save; an unattended text automatically gets a critical failure.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Divine Innate Spells",
+      "type": "innate",
+      "bonus": 25,
+      "dc": 33,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 7,
+      "cantrips": [
+        {
+          "name": "Light",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "light",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "until your next daily preparations",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "HX0LH1qY8VCxtorP"
+        },
+        {
+          "name": "Message",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "auditory",
+            "concentrate",
+            "illusion",
+            "linguistic",
+            "mental",
+            "subtle"
+          ],
+          "castingTime": "1",
+          "duration": "see below",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You mouth words quietly, but instead of coming out of your mouth, they're transferred directly to the ears of the target. While others can't hear your words any better than if you normally mouthed them, the target can hear your words as if they were standing next to you. The target can give a brief response as a reaction, or as a free action on their next turn if they wish, but they must be able to see you and be within range to do so. If they respond, their response is delivered directly to your ear, just like the original message.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The spell's range increases to 500 feet.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "dsWNlfQcaOq9B5j8"
+        }
+      ],
+      "lv1spells": [
+        {
+          "name": "Sure Strike",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "fortune"
+          ],
+          "castingTime": "1",
+          "duration": "until the end of your turn",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>The next time you make an attack roll before the end of your turn, roll it twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden. You are then temporarily immune to <em>sure strike</em> for 10 minutes.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "lMrebBl0sxvh3qsg"
+        },
+        {
+          "name": "Sure Strike",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "fortune"
+          ],
+          "castingTime": "1",
+          "duration": "until the end of your turn",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>The next time you make an attack roll before the end of your turn, roll it twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden. You are then temporarily immune to <em>sure strike</em> for 10 minutes.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "lMrebBl0sxvh3qsg"
+        },
+        {
+          "name": "Sure Strike",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "fortune"
+          ],
+          "castingTime": "1",
+          "duration": "until the end of your turn",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>The next time you make an attack roll before the end of your turn, roll it twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden. You are then temporarily immune to <em>sure strike</em> for 10 minutes.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "lMrebBl0sxvh3qsg"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Invisibility (at will)",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "illusion",
+            "manipulate",
+            "subtle"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>Illusions bend light around the target, rendering it Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "qfZzm4z3hVRpljta"
+        }
+      ],
+      "lv3spells": [],
+      "lv4spells": [
+        {
+          "name": "Heal (at will)",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "healing",
+            "manipulate",
+            "vitality"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 willing living creature or 1 undead",
+          "save": "Basic fortitude",
+          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse vital energy in a 30ft Emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "unwZp6AOzyCpeSVj"
+        },
+        {
+          "name": "Translocate (at will)",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Iar5lwSgPwAP4jWx"
+        }
+      ],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [
+        {
+          "name": "Ring of Truth",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "30 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "will",
+          "description": "<p>You designate an area in which lies are revealed. Creatures in the area also take a –2 status penalty to Deception checks. Each time a creature in the area speaks a true statement, the soft ring of a bell sounds in the area. Creatures are aware of the magic; therefore, they can avoid answering questions to which they would normally respond with a lie, or they can be evasive as long as they remain within the boundaries of the truth. If a creature is in the area when the spell is cast or later enters the area, that creature attempts a Will save. It uses the results of this initial save if it leaves and reenters the area.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is so convincing that the bell rings even if they lie.</p>\n<p><strong>Success</strong> If the target lies and succeeds at their Deception check against all targets, the bell still rings.</p>\n<p><strong>Failure</strong> The bell accurately sees through their deception and will never ring if they lie.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "5sgMz5M77oRYDnYM"
+        },
+        {
+          "name": "Rewrite Memory (at will)",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "unlimited",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You alter the target's memories by erasing a memory, enhancing a memory's clarity, altering a memory, or adding a false memory. The target can attempt a Will save to resist the spell.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and realizes you tried to alter its memory.</p>\n<p><strong>Success</strong> The target is unaffected but thinks your spell was something harmless instead of <em>rewrite memory</em>, unless it identifies the spell.</p>\n<p><strong>Failure</strong> During the first 5 minutes of the spell's duration, you can Sustain the spell to modify a memory once each round. When you do, you imagine up to 6 seconds of memory to modify, to a maximum of 5 continuous minutes of memory.</p>\n<p>Any memories you've altered remain changed as long as the spell is active. If the target moves out of range before the 5 minutes is up, you can't alter any further memories.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can Cast the Spell on a willing target to suppress all memory of a particular topic, detailed in 50 words or fewer. The effect is permanent, and it patches these omissions with an indistinct haze.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "UWYpe3mMSFQ5jQRb"
+        },
+        {
+          "name": "Divine Immolation",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "fire",
+            "manipulate",
+            "sanctified",
+            "spirit"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>Divine flames scour creatures within the area. Creatures take 6d6 fire damage and (@item.level -3)d6 Persistent,fire Damage damage. The divine power within the flames scorches the spirit as well; a creature takes spirit damage instead of fire damage from divine immolation if that would be more detrimental to the creature (as determined by the GM).</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and no persistent damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and persistent damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and double persistent damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6 and persistent damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "QqvTMVk8FD3HGzoK"
+        },
+        {
+          "name": "Interplanar Teleport",
+          "type": "spell",
+          "level": 7,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "",
+          "range": "5 feet",
+          "area": "",
+          "targets": "up to 8 willing creatures",
+          "save": "",
+          "description": "<p><strong>Requirements</strong> You have a planar key for the destination plane, used as a locus</p>\n<hr />\n<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must know the destination plane exists and use a magic planar key created from material from that plane as a locus for the spell. While the planar keys for most prominent planes are uncommon, just like the spell <em>interplanar teleport</em>, more obscure planes and demiplanes often have rare or possibly even unique planar keys.</p>\n<p>The spell is highly imprecise, and you appear 1d20×25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. <em>Interplanar teleport</em> doesn't provide a means of return travel, though casting <em>interplanar teleport</em> again allows you to return to your previous plane unless there are extenuating circumstances.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "espZPwP7i6u944Lv"
+        }
+      ],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Religion, DC 31"
+}

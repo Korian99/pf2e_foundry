@@ -13,13 +13,14 @@
     "tiny",
     "Beast"
   ],
-  "source": "Pathfinder Bestiary 2",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
-    "Darkvision"
+    "Darkvision",
+    "treasure sense (imprecise) 500 feet"
   ],
   "perception": {
     "value": 7,
-    "note": "Darkvision",
+    "note": "Darkvision, treasure sense (imprecise) 500 feet",
     "usedAttribute": "wisdom",
     "modifications": []
   },
@@ -69,6 +70,13 @@
       "actions": null,
       "traits": [],
       "description": "<p>The carbuncle can Telepathically send mild feelings and sensations to nearby creatures. It can't use this ability to communicate in language or hinder a target, but it might convey a feeling of dread or the scent of food cooking nearby.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Treasure Sense",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The carbuncle can sense the presence and location of any object or grouping of objects worth at least 50 gp in total within 500 feet of it. The carbuncle's sense only functions if the treasure is within in a container or physically obscured, such as when buried underground. Objects worn on a person or left out in open air don't trigger the carbuncle's sense.</p>",
       "collapsed": false
     }
   ],
@@ -164,7 +172,7 @@
         "incapacitation",
         "mental"
       ],
-      "description": "<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> The carbuncle concentrates on a creature it can see and tries to manipulate that creature. The target must attempt a DC 18 Will Saving Throw save. The target then becomes temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>Critical Success</strong> The attempt backfires and bolsters the target's mind instead, granting it a +1 status bonus to Will saving throws for 1 hour.</p>\n<p><strong>Success</strong> The target briefly experiences an unusual but harmless sensation like an unexpected flavor or scent, an urge to eat something strange, or an amusing half-forgotten memory.</p>\n<p><strong>Failure</strong> The target is compelled to spend all of its actions on its next turn performing harmless, pointless, and usually embarrassing actions.</p>\n<p><strong>Critical Failure</strong> As failure, but the compulsion persists for 1 minute. The target can attempt a new save at the end of its turn each round to end the effect.</p>",
+      "description": "<p><strong>Frequency</strong> three times per day</p><hr /><p><strong>Effect</strong> The carbuncle concentrates on a creature it can see and tries to manipulate that creature, imploring them to perform harmless, pointless, and usually embarrassing actions. The target must attempt a DC 18 Will Saving Throw save. The target then becomes temporarily immune for 24 hours. This has the ef ects of Suggestion except that a critical success bolsters the target and grants them a +1 status bonus to Will saves for 1 hour, the duration on a failure is 1 round, and the duration on a critical failure is a 1 minute. The target can attempt a new save at the end of its turn each round to end the ef ect.</p>",
       "collapsed": false
     }
   ],
@@ -198,7 +206,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "Basic will",
-          "description": "<p>You cloud the target's mind and daze it with a mental jolt. The jolt deals mental damage equal to your spellcasting ability modifier; the target must attempt a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
+          "description": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals 1d6 mental damage, with a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -209,7 +217,7 @@
       ],
       "lv1spells": [
         {
-          "name": "Jump (At will)",
+          "name": "Jump (at will)",
           "type": "spell",
           "level": 1,
           "heightenedLevel": 1,
@@ -236,7 +244,7 @@
       "lv2spells": [],
       "lv3spells": [
         {
-          "name": "Levitate (At will) (Self only)",
+          "name": "Levitate (at will, self only)",
           "type": "spell",
           "level": 3,
           "heightenedLevel": 3,
@@ -249,9 +257,9 @@
           "duration": "5 minutes",
           "range": "touch",
           "area": "",
-          "targets": "Self only",
+          "targets": "1 unattended object or willing creature",
           "save": "",
-          "description": "<p>You defy gravity and levitate the target 5 feet off the ground. For the duration of the spell, you can move the target up or down 10 feet with a single action, which has the concentrate trait. A creature floating in the air from levitate takes a -2 circumstance penalty to attack rolls. A floating creature can spend an Interact action to stabilize itself and negate this penalty for the remainder of its turn. If the target is adjacent to a fixed object or terrain of suitable stability, it can move across the surface by climbing (if the surface is vertical, like a wall) or crawling (if the surface is horizontal, such as a ceiling). The GM determines which surfaces can be climbed or crawled across.</p>",
+          "description": "<p>You defy gravity and levitate the target 5 feet off the ground. You can Sustain the spell to move the target up or down 10 feet. A creature floating in the air from levitate takes a –2 circumstance penalty to attack rolls. A floating creature can spend an Interact action to stabilize itself and negate this penalty for the remainder of its turn. If the target is adjacent to a fixed object or terrain of suitable stability, it can move across the surface by climbing (if the surface is vertical, like a wall) or crawling (if the surface is horizontal, such as a ceiling). The GM determines which surfaces can be climbed or crawled across.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",

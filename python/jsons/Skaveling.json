@@ -11,9 +11,10 @@
   "traits": [
     "Common",
     "Large",
-    "Undead"
+    "Undead",
+    "Unholy"
   ],
-  "source": "Pathfinder Bestiary 2",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision",
     "Echolocation 40ft precise"
@@ -24,7 +25,10 @@
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "languages": [],
+  "languages": [
+    "Aklo",
+    "Sakvroth"
+  ],
   "skills": [
     {
       "name": "acrobatics",
@@ -112,7 +116,8 @@
     "disease",
     "paralyzed",
     "poison",
-    "unconscious"
+    "unconscious",
+    "bleed"
   ],
   "resistances": [],
   "weaknesses": [],
@@ -136,10 +141,7 @@
           "type": "piercing"
         }
       ],
-      "effects": [
-        "ghoul-fever",
-        "paralysis"
-      ],
+      "effects": [],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
@@ -164,9 +166,7 @@
           "type": "bludgeoning"
         }
       ],
-      "effects": [
-        "paralysis"
-      ],
+      "effects": [],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
@@ -188,6 +188,24 @@
       "collapsed": false
     },
     {
+      "name": "Consume Flesh",
+      "actions": 1,
+      "traits": [
+        "manipulate"
+      ],
+      "description": "<p><strong>Requirements</strong> The skaveling is adjacent to the corpse of a creature that died within the last hour</p><hr /><p><strong>Effect</strong> The skaveling devours a chunk of the corpse and regains 1d6 Hit Points plus 1d6 for every 2 levels the skaveling has. They can regain Hit Points from any given corpse only once.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Feast on Fear",
+      "actions": -1,
+      "traits": [
+        "occult"
+      ],
+      "description": "<p><strong>Trigger</strong> The skaveling deals damage to a frightened creature with a fangs Strike</p><hr /><p><strong>Effect</strong> The skaveling draws power from the fear infusing a creature's flesh. The frightened creature must attempt a DC 22 Fortitude Saving Throw saving throw.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes a –5-foot status penalty to its Speed, and the skaveling gains a +5-foot status bonus to their Speeds until the end of their next turn.</p>\n<p><strong>Failure</strong> The creature takes a –10-foot status penalty to its Speed, and the skaveling gains a +10-foot status bonus to their Speeds until the end of their next turn.</p>\n<p><strong>Critical Failure</strong> The creature is Slowed 1, and the skaveling can immediately Fly, Step, or Stride as a free action; this movement doesn't trigger reactions.</p>",
+      "collapsed": false
+    },
+    {
       "name": "Ghoul Fever",
       "actions": null,
       "traits": [
@@ -204,6 +222,15 @@
         "occult"
       ],
       "description": "<p>Any creature hit by the skaveling's Strikes must attempt a DC 22 Fortitude Saving Throw save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Slowed 1.</p>\n<p><strong>Failure</strong> The creature is Paralyzed. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each save.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swift Dart",
+      "actions": 1,
+      "traits": [
+        "move"
+      ],
+      "description": "<p>The skaveling Flies up to half their Speed. This movement doesn't trigger reactions.</p>",
       "collapsed": false
     }
   ],

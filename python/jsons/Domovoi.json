@@ -11,11 +11,9 @@
   "traits": [
     "Common",
     "tiny",
-    "Chaotic",
-    "Fey",
-    "Good"
+    "Fey"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "tremorsense (imprecise) within their entire bound home"
   ],
@@ -48,7 +46,7 @@
     },
     {
       "name": "Household Lore",
-      "modifier": 11,
+      "modifier": 10,
       "note": "",
       "usedAttribute": "intelligence",
       "modifications": []
@@ -78,7 +76,14 @@
       "name": "Master of the Home",
       "actions": null,
       "traits": [],
-      "description": "<p>A home with a friendly domovoi is blessed, as the domovoi cooks, cleans, fetches water, and does a hundred other small tasks.</p>\n<p>A home so blessed never suffers from random accidents such as fires, and any checks to Craft, Earn Income, Repair, or Subsist in the home receive a +2 circumstance bonus. If the domovoi is unfriendly, such checks take a -2 circumstance penalty instead, as the domovoi hides things, makes noise when people try to sleep, tangles weaving, and otherwise makes life a misery.</p>\n<p>A domovoi must spend a week in a place before these benefits occur.</p>",
+      "description": "<p>A home with a friendly domovoi is blessed, as the domovoi cooks, cleans, fetches water, and does a hundred other small tasks. A home so blessed never encounters random accidents such as fires, and any checks to Craft, Earn Income, Repair, or Subsist in the home receive a +2 circumstance bonus. If the domovoi is unfriendly, such checks take a –2 circumstance penalty instead, as the domovoi hides things, makes noise when people try to sleep, tangles weaving, and otherwise makes life a misery. A domovoi must spend a week in a place before these benefits occur.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "At-Will Spells",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>The monster can cast its at-will spells any number of times without using up spell slots.</p></p></details></p>",
       "collapsed": false
     }
   ],
@@ -117,6 +122,7 @@
   "resistances": [],
   "weaknesses": [
     {
+      "exceptions": [],
       "type": "cold-iron",
       "value": 4
     }
@@ -139,13 +145,13 @@
       "traits": [],
       "damageRolls": [
         {
-          "roll": "1d4+3",
+          "roll": "1d4+4",
           "type": "bludgeoning"
         }
       ],
       "critRolls": [
         {
-          "roll": "(1d4+3)*2",
+          "roll": "(1d4+4)*2",
           "type": "bludgeoning"
         }
       ],
@@ -156,12 +162,11 @@
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Enraged Home (Bludgeoning)",
       "bonus": 9,
       "traits": [
-        "primal",
-        "range-increment-30"
+        "primal"
       ],
       "damageRolls": [
         {
@@ -176,18 +181,17 @@
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Enraged Home (Piercing)",
       "bonus": 9,
       "traits": [
-        "primal",
-        "range-increment-30"
+        "primal"
       ],
       "damageRolls": [
         {
@@ -202,18 +206,17 @@
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Enraged Home (Slashing)",
       "bonus": 9,
       "traits": [
-        "primal",
-        "range-increment-30"
+        "primal"
       ],
       "damageRolls": [
         {
@@ -228,7 +231,7 @@
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -239,7 +242,7 @@
       "name": "Home Guardian",
       "actions": null,
       "traits": [],
-      "description": "<p>By commanding their home to attack, the domovoi can Grapple, Shove, Trip, and Disarm with their enraged home Strike.</p>\n<p>The domovoi uses their Household Lore instead of Athletics skill for these checks.</p>",
+      "description": "<p>By commanding their home to attack, the domovoi can Disarm, Grapple, Reposition, Shove, or Trip with their enraged home Strike. The domovoi uses their Household Lore instead of Athletics skill for these checks.</p>",
       "collapsed": false
     }
   ],
@@ -256,30 +259,6 @@
       "autoHeightenLevel": 1,
       "cantrips": [
         {
-          "name": "Mage Hand",
-          "type": "cantrip",
-          "level": 1,
-          "heightenedLevel": 1,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "Sustained up to ",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 unattended object of light Bulk or less",
-          "save": "",
-          "description": "<p>You create a single magical hand, either invisible or ghostlike, that grasps the target object and moves it slowly up to 20 feet. Because you're levitating the object, you can move it in any direction. When you Sustain the Spell, you can move the object an additional 20 feet. If the object is in the air when the spell ends, the object falls.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (5th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (7th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 2 or less.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "iDRP3LOGyjTdxRxg"
-        },
-        {
           "name": "Prestidigitation",
           "type": "cantrip",
           "level": 1,
@@ -295,13 +274,37 @@
           "area": "",
           "targets": "1 object (cook, lift, or tidy only)",
           "save": "",
-          "description": "<p>The simplest magic does your bidding. You can perform simple magical effects for as long as you Sustain the Spell. Each time you Sustain the Spell, you can choose one of four options.</p>\n<ul>\n<li><strong>Cook</strong> Cool, warm, or flavor 1 pound of nonliving material.</li>\n<li><strong>Lift</strong> Slowly lift an unattended object of light Bulk or less 1 foot off the ground.</li>\n<li><strong>Make</strong> Create a temporary object of negligible Bulk, made of congealed magical substance. The object looks crude and artificial and is extremely fragile-it can't be used as a tool, weapon, or spell component.</li>\n<li><strong>Tidy</strong> Color, clean, or soil an object of light Bulk or less. You can affect an object of 1 Bulk with 10 rounds of concentration, and a larger object a 1 minute per Bulk.</li>\n</ul>\n<p>Prestidigitation can't deal damage or cause adverse conditions. Any actual change to an object (beyond what is noted above) persists only as long as you Sustain the Spell.</p>",
+          "description": "<p>The simplest magic does your bidding. You can perform simple magical effects for as long as you Sustain the spell. Each time you Sustain the spell, you can choose one of four options.</p><ul><li><strong>Cook</strong> Cool, warm, or flavor 1 pound of nonliving material.</li><li><strong>Lift</strong> Slowly lift an unattended object of light Bulk or less 1 foot off the ground.</li><li><strong>Make</strong> Create a temporary object of negligible Bulk, made of congealed magical substance. The object looks crude and artificial and is extremely fragile-it can't be used as a tool, weapon, or locus or cost for a spell.</li><li><strong>Tidy</strong> Color, clean, or soil an object of light Bulk or less. You can affect an object of 1 Bulk with 10 rounds of concentration, and a larger object at 1 minute per Bulk.</li></ul><p><em>Prestidigitation</em> can't deal damage or cause adverse conditions. Any actual change to an object (beyond what is noted above) persists only as long as you Sustain the spell.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "svyNmRASkymNxCWH"
+          "id": "lbz7iMpuE0vD2W3W"
+        },
+        {
+          "name": "Telekinetic Hand",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to ",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 unattended object of light Bulk or less",
+          "save": "",
+          "description": "<p>You create a floating, magical hand, either invisible or ghostlike, that grasps the target object and levitates it slowly up to 20 feet in any direction. When you Sustain the spell, you can move the object an additional 20 feet. If the object is in the air when the spell ends, the object falls.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (5th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (7th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 2 or less.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "kNmu4tsHjr5udz0A"
         },
         {
           "name": "Telekinetic Projectile",
@@ -320,13 +323,13 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal bludgeoning, piercing, or slashing damage-as appropriate for the object you hurled-equal to 1d6 plus your spellcasting ability modifier. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
+          "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal 2d6 bludgeoning, piercing, or slashing damage—as appropriate for the object you hurled. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "zdLhMbUqSKNHAuc8"
+          "id": "D6KtpjPnIMahGDLT"
         }
       ],
       "lv1spells": [
@@ -352,7 +355,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "mOQO1nFke9ZyiXTD"
+          "id": "o3GxW6zorJM0YxBk"
         }
       ],
       "lv2spells": [],

@@ -14,7 +14,7 @@
     "Humanoid",
     "Nagaji"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Low light vision"
   ],
@@ -51,6 +51,13 @@
       ],
       "usedAttribute": "wisdom",
       "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
     }
   ],
   "strength": {
@@ -84,14 +91,13 @@
       ]
     },
     {
-      "name": "Ranseur",
+      "name": "Khopesh",
       "quantity": 1,
-      "description": "<p>This polearm is a long trident with a central prong that's longer than the other two.</p>",
+      "description": "<p>This curved sickle sword has a pointed tip, allowing it to be swung in wide arcs or thrust vertically around enemy defenses. The tip of a khopesh is hooked and can be used to trip an opponent.</p>",
       "level": 0,
       "price": "2 gp",
       "traits": [
-        "disarm",
-        "reach"
+        "trip"
       ]
     },
     {
@@ -145,7 +151,7 @@
   "weaknesses": [],
   "defensiveAbilities": [
     {
-      "name": "Attack of Opportunity",
+      "name": "Reactive Strike",
       "actions": -1,
       "traits": [],
       "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
@@ -156,22 +162,21 @@
   "strikes": [
     {
       "type": "melee",
-      "name": "Ranseur",
+      "name": "Khopesh",
       "bonus": 10,
       "traits": [
-        "disarm",
-        "reach-10"
+        "trip"
       ],
       "damageRolls": [
         {
-          "roll": "1d10+4",
-          "type": "piercing"
+          "roll": "1d8+4",
+          "type": "slashing"
         }
       ],
       "critRolls": [
         {
-          "roll": "(1d10+4)*2",
-          "type": "piercing"
+          "roll": "(1d8+4)*2",
+          "type": "slashing"
         }
       ],
       "effects": [],
@@ -181,12 +186,11 @@
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Longbow",
       "bonus": 7,
       "traits": [
         "deadly-d10",
-        "range-increment-100",
         "volley-30"
       ],
       "damageRolls": [
@@ -202,7 +206,7 @@
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -213,7 +217,7 @@
       "name": "Slough Toxins",
       "actions": 1,
       "traits": [],
-      "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The nagaji is afflicted with a poison</p>\n<hr />\n<p><strong>Effect</strong> The nagaji accelerates their metabolism. They roll a saving throw against the affliction with a +2 circumstance bonus. If they must attempt an ongoing save against the same poison at the end of their turn, they also get a +2 circumstance bonus to that save.</p>",
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The nagaji is afflicted with a poison</p><hr /><p><strong>Effect</strong> The nagaji accelerates their metabolism. They roll a saving throw against the affliction with a +2 circumstance bonus. If they must attempt an ongoing save against the same poison at the end of their turn, they also get a +2 circumstance bonus to that save.</p>",
       "collapsed": false
     }
   ],

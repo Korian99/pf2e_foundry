@@ -11,11 +11,10 @@
   "traits": [
     "Common",
     "Small",
-    "Chaotic",
     "Monitor",
     "Protean"
   ],
-  "source": "Pathfinder Bestiary 2",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision",
     "entropy sense (imprecise) 30 feet"
@@ -30,7 +29,7 @@
     "Chthonian",
     "Empyrean",
     "Protean",
-    "telepathy (touch)"
+    "Telepathy touch only"
   ],
   "skills": [
     {
@@ -38,6 +37,13 @@
       "modifier": 9,
       "note": [],
       "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "strength",
       "modifications": []
     },
     {
@@ -103,7 +109,7 @@
         "divine",
         "prediction"
       ],
-      "description": "<p>An akizendri can anticipate the most likely location of a creature through their supernatural insight into the forces of chaotic probabilities and chance. This grants the akizendri the ability to sense creatures within the listed range. A creature under the effects of Veil of Privacy or that is otherwise shielded from divinations and predictions cannot be noticed via entropy sense.</p>",
+      "description": "<p>An akizendri can anticipate the most likely presence of a creature through a supernatural insight into chaotic probabilities and chance. This grants them the ability to sense creatures within the listed range. Veil of Privacy prevents a creature from being detected via entropy sense automatically (without a counteract check).</p>",
       "collapsed": false
     }
   ],
@@ -133,18 +139,22 @@
   },
   "savenote": "",
   "hp": {
-    "value": 42,
-    "max": 42,
+    "value": 40,
+    "max": 40,
     "note": "fast healing 1",
     "modifications": []
   },
   "immunities": [],
   "resistances": [
     {
+      "doubleVs": [],
+      "exceptions": [],
       "type": "precision",
       "value": 3
     },
     {
+      "doubleVs": [],
+      "exceptions": [],
       "type": "protean-anatomy",
       "value": 6
     }
@@ -159,13 +169,12 @@
       "collapsed": false
     },
     {
-      "name": "Protean Anatomy 6",
+      "name": "Protean Anatomy",
       "actions": null,
       "traits": [
-        "divine",
-        "polymorph"
+        "divine"
       ],
-      "description": "<p>An akizendri's vital organs shift and change shape and position constantly. Immediately after the akizendri takes acid, electricity, or sonic damage, it gains the listed amount of resistance to that damage type. This lasts for 1 hour or until the next time the protean takes damage of one of the other types (in which case its resistance changes to match that type), whichever comes first.</p>\n<p>The akizendri is immune to polymorph effects unless it is a willing target. If Blinded or Deafened, the akizendri automatically recovers at the end of its next turn as new sensory organs grow to replace the compromised ones.</p>\n<p>Effect: Protean Anatomy</p>",
+      "description": "<p>An akizendri's vital organs shift and change shape and position constantly. Immediately after the akizendri takes acid, electricity, or sonic damage, they gain the listed amount of resistance to that damage type. This lasts for 1 hour or until the next time the protean takes damage of one of the other types (in which case their resistance changes to match that type), whichever comes first.</p>\n<p>The akizendri is immune to polymorph effects unless they're a willing target. If Blinded or Deafened, the akizendri automatically recovers at the end of their next turn as new sensory organs grow to replace the compromised ones.</p>\n<p>Effect: Protean Anatomy</p>",
       "collapsed": false
     }
   ],
@@ -177,8 +186,7 @@
       "bonus": 12,
       "traits": [
         "finesse",
-        "magical",
-        "unarmed"
+        "magical"
       ],
       "damageRolls": [
         {
@@ -213,7 +221,6 @@
       "name": "Tail",
       "bonus": 12,
       "traits": [
-        "chaotic",
         "finesse",
         "magical"
       ],
@@ -255,7 +262,7 @@
         "divine",
         "polymorph"
       ],
-      "description": "<p>The akizendri takes on the appearance of any Small or smaller creature. This doesn't change its Speed or its attack and damage bonuses with its Strikes, but might change the damage type its Strikes deal.</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster changes its shape indefinitely. It can use this action again to return to its natural shape or adopt a new shape. Unless otherwise noted, a monster cannot use Change Shape to appear as a specific individual. Using Change Shape counts as creating a disguise for the Impersonate use of Deception. The monster's transformation automatically defeats Perception DCs to determine whether the creature is a member of the ancestry or creature type into which it transformed, and it gains a +4 status bonus to its Deception DC to prevent others from seeing through its disguise. Change Shape abilities specify what shapes the monster can adopt. The monster doesn't gain any special abilities of the new shape, only its physical form. For example, in each shape, it replaces its normal Speeds and Strikes, and might potentially change its senses or size. Any changes are listed in its stat block.</p></p></details></p>",
+      "description": "<p>The akizendri takes on the appearance of any Small or smaller creature. This doesn't change its Speed or its attack and damage bonuses with its Strikes, but might change the damage type its Strikes deal.</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster changes its shape indefinitely. It can use this action again to return to its natural shape or adopt a new shape. Unless otherwise noted, a monster cannot use Change Shape to appear as a specific individual. Using Change Shape counts as creating a disguise for the Impersonate use of Deception. The monster's transformation automatically defeats Perception DCs to determine whether the creature is a member of the ancestry or creature type into which it transformed, and it gains a +4 status bonus to its Deception DC to prevent others from seeing through its disguise. Change Shape abilities specify what shapes the monster can adopt. The monster doesn't gain any special abilities of the new shape, only its physical form. For example, in each shape, it replaces its normal Speeds and Strikes, and might potentially change its senses or size. Any changes are listed in its stat block.</p></p></details></p>",
       "collapsed": false
     },
     {
@@ -282,7 +289,7 @@
       "traits": [
         "divine"
       ],
-      "description": "<p>When the akizendri casts Secret Page, it can physically immerse itself in the text, changing the message of the text in the process. It can exit the book at any point by Dismissing <em>secret page</em>, at which point it appears in a space adjacent to the text. If it does so to begin combat, it rolls a Deception check for initiative. As long as it remains immersed in the text, the akizendri has no body. It can communicate telepathically with a creature as long as the creature touches the book or scroll that contains the secret page. It can sense nearby creatures using its entropy sense, but not in any other way, nor can it use any attack, manipulate, or move actions or speak aloud. If the object it is immersed in is destroyed, the akizendri reappears in an adjacent square and is Stunned 1.</p>",
+      "description": "<p>As a 1-minute activity, the akizendri physically immerses itself in a page of text it's touching, changing the message of the text in the process. It can exit the book at any point by Dismissing this ability, at which point it appears in a space adjacent to the text. If it does so to begin combat, it rolls a Deception check for initiative. As long as it remains immersed in the text, the akizendri has no body. It can communicate telepathically with a creature as long as the creature touches the book or scroll that contains it. It can sense nearby creatures using its entropy sense, but not in any other way, nor can it use any attack, manipulate, or move actions or speak aloud. If the object it's immersed in is destroyed, the akizendri reappears in an adjacent square and is Stunned 1.</p>",
       "collapsed": false
     },
     {
@@ -306,30 +313,29 @@
       "autoHeightenLevel": 4,
       "cantrips": [
         {
-          "name": "Acid Splash",
+          "name": "Caustic Blast",
           "type": "cantrip",
           "level": 1,
           "heightenedLevel": 1,
           "timesPrepared": 1,
           "traits": [
             "acid",
-            "attack",
             "concentrate",
             "manipulate"
           ],
           "castingTime": "2",
           "duration": "",
           "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>You splash a glob of acid that splatters your target and nearby creatures. Make a spell attack. If you hit, you deal 1d6 acid damage plus 1 splash acid damage. On a critical success, the target also takes (ceil(@item.level/2)) Persistent,acid Damage damage.</p><hr /><p><strong>Heightened (3rd)</strong> The initial damage increases to 2d6, and the persistent damage increases to 2.</p>\n<p><strong>Heightened (5th)</strong> The initial damage increases to 3d6, the persistent damage increases to 3, and the splash damage increases to 2.</p>\n<p><strong>Heightened (7th)</strong> The initial damage increases to 4d6, the persistent damage increases to 4, and the splash damage increases to 3.</p>\n<p><strong>Heightened (9th)</strong> The initial damage increases to 5d6, the persistent damage increases to 5, and the splash damage increases to 4.</p>",
+          "area": "5ft burst",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>You fling a large glob of acid that immediately detonates, spraying nearby creatures. Creatures in the area take 1d8 acid damage with a basic Reflex save; on a critical failure, the creature also takes (1+floor((@item.rank -1)/2)) Persistent,acid Damage damage.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The initial damage increases by 1d8, and the persistent damage on a critical failure increases by 1.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "kChQWhlKT2mnLHr4"
+          "id": "WJvVnvUyfIViZsXt"
         },
         {
           "name": "Daze",
@@ -344,30 +350,30 @@
             "nonlethal"
           ],
           "castingTime": "2",
-          "duration": "1 round",
+          "duration": "",
           "range": "60 feet",
           "area": "",
           "targets": "1 creature",
           "save": "Basic will",
-          "description": "<p>You cloud the target's mind and daze it with a mental jolt. The jolt deals mental damage equal to your spellcasting ability modifier; the target must attempt a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
+          "description": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals 1d6 mental damage, with a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "yB8p1BIv5aVPcfbE"
+          "id": "cem3FNDNWTlAkq33"
         },
         {
-          "name": "Ghost Sound",
+          "name": "Figment",
           "type": "cantrip",
           "level": 1,
           "heightenedLevel": 1,
           "timesPrepared": 1,
           "traits": [
-            "auditory",
             "concentrate",
             "illusion",
-            "manipulate"
+            "manipulate",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "Sustained up to ",
@@ -375,16 +381,40 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You create an auditory illusion of simple sounds that has a maximum volume equal to four normal humans shouting. The sounds emanate from a square you designate within range. You can't create intelligible words or other intricate sounds (such as music).</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The range increases to 60 feet.</p>\n<p><strong>Heightened (5th)</strong> The range increases to 120 feet.</p>",
+          "description": "<p>You create a simple illusory sound or vision. A sound adds the auditory trait to the spell and the sound can't include intelligible words or elaborate music. A vision adds the visual trait, can be no larger than a 5-foot cube, and is clearly crude and undetailed if viewed from within 15 feet. When you Cast or Sustain the Spell, you can attempt to Create a Diversion with the illusion, gaining a +2 circumstance bonus to your Deception check. If the attempt fails against a creature, that creature disbelieves the <em>figment</em>.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "fIwjEqIYst9cbTm1"
+          "id": "ZGBfix130ONgAGws"
         },
         {
-          "name": "Mage Hand",
+          "name": "Sigil",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "unlimited",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature or object",
+          "save": "",
+          "description": "<p>You harmlessly place your unique magical sigil, which is about 1 square inch in size, on the targeted creature or object. The mark can be visible or invisible, and you can change it from one state to another by using an Interact action to touch the target. The mark can be scrubbed or scraped off with 5 minutes of work. If it's on a creature, it fades naturally over the course of a week. The time before the mark fades increases depending on your heightened rank.</p><hr /><p><strong>Heightened (3rd)</strong> The sigil instead fades after 1 month.</p>\n<p><strong>Heightened (5th)</strong> The sigil instead fades after 1 year.</p>\n<p><strong>Heightened (7th)</strong> The sigil never fades.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "pRsB70z9qLt0lPKK"
+        },
+        {
+          "name": "Telekinetic Hand",
           "type": "cantrip",
           "level": 1,
           "heightenedLevel": 1,
@@ -399,119 +429,46 @@
           "area": "",
           "targets": "1 unattended object of light Bulk or less",
           "save": "",
-          "description": "<p>You create a single magical hand, either invisible or ghostlike, that grasps the target object and moves it slowly up to 20 feet. Because you're levitating the object, you can move it in any direction. When you Sustain the Spell, you can move the object an additional 20 feet. If the object is in the air when the spell ends, the object falls.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (5th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (7th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 2 or less.</p>",
+          "description": "<p>You create a floating, magical hand, either invisible or ghostlike, that grasps the target object and levitates it slowly up to 20 feet in any direction. When you Sustain the spell, you can move the object an additional 20 feet. If the object is in the air when the spell ends, the object falls.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (5th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (7th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 2 or less.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "3kdUeTRGSrmuuTn2"
-        },
-        {
-          "name": "Sigil",
-          "type": "cantrip",
-          "level": 1,
-          "heightenedLevel": 1,
-          "timesPrepared": 1,
-          "traits": [],
-          "castingTime": "2",
-          "duration": "unlimited",
-          "range": "touch",
-          "area": "",
-          "targets": "1 creature or object",
-          "save": "",
-          "description": "<p>You harmlessly place your unique magical sigil, which is about 1 square inch in size, on the targeted creature or object. The mark can be visible or invisible, and you can change it from one state to another by using an Interact action to touch the target. The mark can be scrubbed or scraped off with 5 minutes of work. If it's on a creature, it fades naturally over the course of a week. The time before the mark fades increases depending on your heightened level.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The sigil instead fades after 1 month.</p>\n<p><strong>Heightened (5th)</strong> The sigil instead fades after 1 year.</p>\n<p><strong>Heightened (7th)</strong> The sigil never fades.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "Ie9eEZ7zzklh3Yew"
+          "id": "zNM9Rv68sDZDWe0s"
         }
       ],
-      "lv1spells": [
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [
         {
-          "name": "Detect Alignment (At will) (Lawful only)",
+          "name": "Dispel Magic",
           "type": "spell",
-          "level": 1,
-          "heightenedLevel": 1,
+          "level": 2,
+          "heightenedLevel": 3,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "detection",
             "manipulate"
           ],
           "castingTime": "2",
           "duration": "",
-          "range": "",
-          "area": "30ft emanation",
-          "targets": "",
-          "save": "",
-          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "7UB9CyvhkK4ZhIuW"
-        }
-      ],
-      "lv2spells": [],
-      "lv3spells": [
-        {
-          "name": "Glyph of Warding",
-          "type": "spell",
-          "level": 3,
-          "heightenedLevel": 3,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "10 minutes",
-          "duration": "unlimited",
-          "range": "touch",
+          "range": "120 feet",
           "area": "",
-          "targets": "1 container or a 10-foot-by-10-foot area",
+          "targets": "1 spell effect or unattended magic item",
           "save": "",
-          "description": "<p>You craft a trap by binding a hostile spell into a symbol. While Casting this Spell, you also Cast a Spell of a lower spell rank to store in the glyph. The stored spell must take 3 actions or fewer to cast, have a hostile effect, and target one creature or have an area. You can set a password, a trigger, or both for the glyph. Any creature that moves, opens, or touches the target container or enters the target area that doesn't speak the password or that matches the trigger activates the glyph, releasing the harmful spell within.</p>\n<p>Once a spell is stored in the glyph, the glyph gains all the traits of that spell. If the stored spell targets one or more creatures, it targets the creature that set off the glyph. If it has an area, that area is centered on the creature that set off the glyph. Glyph of warding's duration ends when the glyph is triggered. The glyph counts as a magical trap, using your spell DC for both the Perception check to notice it and the Thievery check to disable it; both checks require the creature attempting them to be trained in order to succeed.</p>\n<p>You can Dismiss glyph of warding. The maximum number of glyphs of warding you can have active at a time is equal to your spellcasting ability modifier.</p>",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "43OmGso6Cf1xa4Xj"
-        },
-        {
-          "name": "Secret Page",
-          "type": "spell",
-          "level": 3,
-          "heightenedLevel": 3,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "illusion",
-            "manipulate",
-            "visual"
-          ],
-          "castingTime": "1 minute",
-          "duration": "unlimited",
-          "range": "touch",
-          "area": "",
-          "targets": "1 page up to 3 square feet in size",
-          "save": "",
-          "description": "<p>You change the target's text to different text entirely. If the text is a spellbook or a scroll, you can change it to show a spell you know of secret page's level or lower. The replacement spell cannot be cast or used to prepare a spell. You can also transform the text into some other text you have written or have access to. You can specify a password that allows a creature touching the page to change the text back and forth. You must choose the replacement text and the password, if any, when you Cast the Spell.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "7N2o4TaWA20P9iDk"
+          "id": "dncx5Y8XLAqJaAVh"
         }
       ],
       "lv4spells": [
         {
-          "name": "Freedom of Movement (Constant)",
+          "name": "Unfettered Movement (Constant)",
           "type": "spell",
           "level": 4,
           "heightenedLevel": 4,
@@ -526,13 +483,13 @@
           "area": "",
           "targets": "1 creature touched",
           "save": "",
-          "description": "<p>You repel effects that would hinder a creature or slow its movement. While under this spell's effect, the target ignores effects that would give them a circumstance penalty to Speed. When they attempt to Escape an effect that has them Immobilized, Grabbed, or Restrained, they automatically succeed unless the effect is magical and of a higher rank than the <em>freedom of movement</em> spell.</p>\n<p>{Spell Effect: Freedom of Movement}</p>",
+          "description": "<p>You repel effects that would hinder a creature or slow its movement. While under this spell's effect, the target ignores effects that would give them a circumstance penalty to Speed. When they attempt to Escape an effect that has them Immobilized, Grabbed, or Restrained, they automatically succeed unless the effect is magical and of a higher rank than the <em>unfettered movement</em> spell.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "OFeWf6HdNT5mBfJj"
+          "id": "UxUeYsTDbo8noYkM"
         }
       ],
       "lv5spells": [],

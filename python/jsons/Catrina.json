@@ -14,7 +14,7 @@
     "Monitor",
     "Psychopomp"
   ],
-  "source": "Pathfinder Bestiary 2",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision",
     "Lifesense 60ft precise"
@@ -30,7 +30,7 @@
     "Diabolic",
     "Empyrean",
     "Requian",
-    "telepathy 120 feet, tongues"
+    "Telepathy 120 feet, Truespeech"
   ],
   "skills": [
     {
@@ -148,11 +148,15 @@
   ],
   "resistances": [
     {
-      "type": "void",
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "poison",
       "value": 5
     },
     {
-      "type": "poison",
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "void",
       "value": 5
     }
   ],
@@ -167,7 +171,7 @@
         "emotion",
         "incapacitation"
       ],
-      "description": "<p>30 feet. A creature that begins its turn within the area must attempt a DC 18 Will Saving Throw save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to calming presence for 24 hours.</p>\n<p><strong>Success</strong> The creature's attack rolls take a -1 status penalty for 1 round.</p>\n<p><strong>Failure</strong> Any emotion effects that would affect the creature are suppressed and the creature can't use hostile actions. If the creature is subjected to hostility from any other creature, it ceases to be affected by calming presence and is temporarily immune to calming presence for 24 hours.</p>\n<p><strong>Critical Failure</strong> As failure, but hostility doesn't end the effect.</p>",
+      "description": "<p>30 feet. A creature that begins its turn within the area must attempt a DC 18 Will Saving Throw save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to calming presence for 24 hours.</p>\n<p><strong>Success</strong> The creature's attack rolls take a –1 status penalty for 1 round.</p>\n<p><strong>Failure</strong> Any emotion effects that would affect the creature are suppressed, and the creature can't use hostile actions. If the creature is subjected to hostility from any other creature, it ceases to be affected by calming presence and is temporarily immune to calming presence for 24 hours.</p>\n<p><strong>Critical Failure</strong> As failure, but hostility doesn't end the effect.</p>",
       "collapsed": false
     }
   ],
@@ -179,8 +183,7 @@
       "bonus": 14,
       "traits": [
         "agile",
-        "finesse",
-        "unarmed"
+        "finesse"
       ],
       "damageRolls": [
         {
@@ -212,7 +215,7 @@
         "incapacitation",
         "mental"
       ],
-      "description": "<p>The catrina telepathically compels a creature within 30 feet to approach and allow the catrina to kiss them, in preparation for using Kiss of Death. The target must attempt a DC 22 Will Saving Throw save.</p>\n<p><strong>Success</strong> The creature is unaffected and is temporarily immune to Compel Condemned for 24 hours.</p>\n<p><strong>Failure</strong> The creature must spend each of its actions to move closer to the catrina as quickly as possible, while avoiding obvious dangers. If the compelled creature is adjacent to the catrina, it stays still and doesn't act. If the creature takes any damage, the effect ends and the creature is temporarily immune to Compel Condemned for 24 hours. This effect lasts for 1 round, but if the catrina uses this ability again on subsequent rounds, it extend the duration by 1 round for all affected creatures.</p>\n<p><strong>Critical Failure</strong> As failure, but damage does not end the effect.</p>",
+      "description": "<p>The catrina telepathically compels a creature within 30 feet to approach and allow the catrina to kiss them, in preparation for using Kiss of Death. The target must attempt a DC 22 Will Saving Throw save.</p>\n<p><strong>Success</strong> The creature is unaffected and is temporarily immune to Compel Condemned for 24 hours.</p>\n<p><strong>Failure</strong> The creature must spend each of its actions to move closer to the catrina as quickly as possible while avoiding obvious dangers. If the compelled creature is adjacent to the catrina, it stays still and doesn't act. If the creature takes any damage, the effect ends and the creature is temporarily immune to Compel Condemned for 24 hours. This effect lasts for 1 round, but if the catrina uses this ability again on subsequent rounds, it extend the duration by 1 round for all affected creatures.</p>\n<p><strong>Critical Failure</strong> As failure, but damage does not end the effect.</p>",
       "collapsed": false
     },
     {
@@ -221,13 +224,14 @@
       "traits": [
         "death",
         "divine",
-        "manipulate"
+        "manipulate",
+        "void"
       ],
-      "description": "<p>The catrina gives a long, passionate kiss to an Unconscious or willing creature, dealing 3d6 Void Damage damage.</p>\n<p>Any creature damaged by the same catrina's Kiss of Death for 3 consecutive rounds becomes unconscious and is Dying 1.</p>",
+      "description": "<p>The catrina gives a long, passionate kiss to an Unconscious or willing creature, dealing 3d6 Void Damage damage. Any creature damaged by the same catrina's Kiss of Death for 3 consecutive rounds becomes unconscious and is dying 1.</p>",
       "collapsed": false
     },
     {
-      "name": "Spirit Touch",
+      "name": "Shepherd's Touch",
       "actions": null,
       "traits": [
         "incorporeal"
@@ -240,7 +244,7 @@
     {
       "name": "Divine Innate Spells",
       "type": "innate",
-      "bonus": 12,
+      "bonus": 14,
       "dc": 22,
       "focusPoints": {
         "current": 0,
@@ -249,7 +253,7 @@
       "autoHeightenLevel": 5,
       "cantrips": [
         {
-          "name": "Dancing Lights",
+          "name": "Light",
           "type": "cantrip",
           "level": 1,
           "heightenedLevel": 1,
@@ -260,31 +264,32 @@
             "manipulate"
           ],
           "castingTime": "2",
-          "duration": "Sustained up to ",
+          "duration": "until your next daily preparations",
           "range": "120 feet",
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You create up to four floating lights, no two of which are more than 10 feet apart. Each sheds light like a torch. When you Sustain the Spell, you can move any number of lights up to 60 feet. Each light must remain within 120 feet of you and within 10 feet of all others, or it winks out.</p>",
+          "description": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "SrV6uqrpWurfpKGI"
+          "id": "dCnRzM3sfCaqxIoU"
         }
       ],
       "lv1spells": [],
       "lv2spells": [
         {
-          "name": "Invisibility (At will) (Self only)",
+          "name": "Invisibility (At Will, Self Only)",
           "type": "spell",
           "level": 2,
           "heightenedLevel": 2,
           "timesPrepared": 1,
           "traits": [
             "illusion",
-            "manipulate"
+            "manipulate",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "10 minutes",
@@ -292,20 +297,20 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>Cloaked in illusion, the target becomes Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
+          "description": "<p>Illusions bend light around the target, rendering it Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "fJsYqRu8WagF6tZb"
+          "id": "pCq4YnEw0KJLJCDe"
         }
       ],
       "lv3spells": [
         {
           "name": "Illusory Disguise",
           "type": "spell",
-          "level": 3,
+          "level": 1,
           "heightenedLevel": 3,
           "timesPrepared": 1,
           "traits": [
@@ -316,22 +321,46 @@
           ],
           "castingTime": "2",
           "duration": "1 hour",
-          "range": "",
+          "range": "30 feet",
           "area": "",
-          "targets": "",
+          "targets": "1 willing creature",
           "save": "",
-          "description": "<p>You create an illusion that causes you to appear as another creature of the same body shape, and with roughly similar height (within 6 inches) and weight (within 50 pounds), as yourself. The disguise is typically good enough to hide your identity, but not to impersonate a specific individual. The spell doesn't change your voice, scent, or mannerisms. You can change the appearance of your clothing and worn items, such as making your armor look like a dress. Held items are unaffected, and any worn item you remove returns to its true appearance.</p>\n<p>Casting illusory disguise counts as setting up a disguise for the Impersonate use of Deception; it ignores any circumstance penalties you might take for disguising yourself as a dissimilar creature, it gives you a +4 status bonus to Deception checks to prevent others from seeing through your disguise, and you add your level even if you're untrained. You can Dismiss this spell.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The spell also disguises your voice and scent, and it gains the auditory trait.</p>\n<p><strong>Heightened (3rd)</strong> You can appear as any creature of the same size, even a specific individual. You must have seen an individual to take on their appearance. The spell also disguises your voice and scent, and it gains the auditory trait.</p>",
+          "description": "<p>You create an illusion that causes the target to appear as another creature of the same body shape, and with roughly similar height (within 6 inches) and weight (within 50 pounds). The disguise is typically good enough to hide their identity, but not to impersonate a specific individual. The spell changes their appearance and voice, but not mannerisms. You can change the appearance of its clothing and worn items, such as making its armor look like a dress. Held items are unaffected, and any worn item removed from the creature returns to its true appearance.</p>\n<p>Casting <em>illusory disguise</em> counts as setting up a disguise for the Impersonate use of Deception; it ignores any circumstance penalties the target might take for disguising itself as a dissimilar creature, gives a +4 status bonus to Deception checks to prevent others from seeing through the disguise, and lets the target add its level to such Deception checks even if untrained. You can Dismiss this spell.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The target can appear as any creature of the same size, even a specific individual. You must have seen an individual to replicate its appearance, and must have heard its voice to replicate its voice.</p>\n<p><strong>Heightened (4th)</strong> You can target up to 10 willing creatures. If you target multiple creatures, you can choose a different disguise for each target, but none can impersonate a specific individual. You can Dismiss each disguise individually or all collectively.</p>\n<p><strong>Heightened (7th)</strong> As 4th, but you can choose disguises that impersonate specific individuals. You must have seen an individual to replicate its appearance, and must have heard its voice to replicate its voice.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "0PK932hY5wJSLdUT"
+          "id": "BiEOE4QPx1GY53c5"
         }
       ],
       "lv4spells": [
         {
-          "name": "Dimension Door",
+          "name": "Talking Corpse (At Will)",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "10 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 corpse",
+          "save": "will",
+          "description": "<p>You grant the target corpse a semblance of life, which it uses to speak the answers to three questions posed to it. This spell calls on the physical body's latent memories rather than summoning back the deceased's spirit, so the corpse must be mostly intact for the spell to function. The more damage the corpse has taken, the more inaccurate or patchwork its answers are, and it must have a throat and mouth to speak at all. If anyone has previously cast this spell on the corpse in the last week, the spell automatically fails. The corpse can attempt a Will save to resist answering the questions using the statistics of the original creature at its time of death, with the following effects.</p>\n<hr /><p><strong>Critical Success</strong> The target can lie or refuse to answer your questions, and the target's spirit haunts you for 24 hours, bothering you and causing you to be unable to gain any rest for that time.</p>\n<p><strong>Success</strong> The target can provide false information or refuse to answer your questions.</p>\n<p><strong>Failure</strong> The target must answer truthfully, but its answers can be brief, cryptic, and repetitive. It can still mislead you or attempt to stall so that the spell's duration runs out before you can ask all your questions.</p>\n<p><strong>Critical Failure</strong> As failure, but the target's answers are more direct and less repetitive, though still cryptic. It takes a -2 status penalty to Deception checks to deceive or mislead you.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "bIhKbFc7UgWBKaaj"
+        },
+        {
+          "name": "Translocate",
           "type": "spell",
           "level": 4,
           "heightenedLevel": 4,
@@ -347,42 +376,18 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Dpy1b6hLZeJBHww3"
-        },
-        {
-          "name": "Talking Corpse (At will)",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 4,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "10 minutes",
-          "duration": "10 minutes",
-          "range": "touch",
-          "area": "",
-          "targets": "1 corpse",
-          "save": "",
-          "description": "<p>You grant the target corpse a semblance of life, which it uses to speak the answers to three questions posed to it. This spell calls on the physical body's latent memories rather than summoning back the deceased's spirit, so the corpse must be mostly intact for the spell to function. The more damage the corpse has taken, the more inaccurate or patchwork its answers are, and it must have a throat and mouth to speak at all. If anyone has previously cast this spell on the corpse in the last week, the spell automatically fails. The corpse can attempt a Will save to resist answering the questions using the statistics of the original creature at its time of death, with the following effects.</p>\n<hr /><p><strong>Critical Success</strong> The target can lie or refuse to answer your questions, and the target's spirit haunts you for 24 hours, bothering you and causing you to be unable to gain any rest for that time.</p>\n<p><strong>Success</strong> The target can provide false information or refuse to answer your questions.</p>\n<p><strong>Failure</strong> The target must answer truthfully, but its answers can be brief, cryptic, and repetitive. It can still mislead you or attempt to stall so that the spell's duration runs out before you can ask all your questions.</p>\n<p><strong>Critical Failure</strong> As failure, but the target's answers are more direct and less repetitive, though still cryptic. It takes a -2 status penalty to Deception checks to deceive or mislead you.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "56O2v35BcXiX1Ksi"
+          "id": "4Qxomyf3hspgNlZF"
         }
       ],
       "lv5spells": [
         {
-          "name": "Tongues (Constant)",
+          "name": "Truespeech (Constant)",
           "type": "spell",
           "level": 5,
           "heightenedLevel": 5,
@@ -403,7 +408,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "jw75q6Yh45aJWTbt"
+          "id": "NNoTeUgEk0BmUgWf"
         }
       ],
       "lv6spells": [],

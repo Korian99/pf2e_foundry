@@ -13,11 +13,9 @@
     "Medium",
     "Azata",
     "Celestial",
-    "Chaotic",
-    "Good",
     "Holy"
   ],
-  "source": "Pathfinder Bestiary 2",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision",
     "Tremorsense 120ft imprecise"
@@ -112,7 +110,7 @@
   },
   "items": [
     {
-      "name": "+3 Greater Striking Sickle",
+      "name": "Sickle",
       "quantity": 1,
       "description": "<p>Originally a farming tool used for reaping grain, this one-handed weapon has a short wooden handle ending in a curved blade, sometimes sharpened on both sides.</p>",
       "level": 0,
@@ -183,16 +181,17 @@
     {
       "type": "melee",
       "name": "Sickle",
-      "bonus": 39,
+      "bonus": 36,
       "traits": [
         "agile",
         "finesse",
         "holy",
+        "magical",
         "trip"
       ],
       "damageRolls": [
         {
-          "roll": "3d4+16",
+          "roll": "3d4+12",
           "type": "slashing"
         },
         {
@@ -206,7 +205,7 @@
       ],
       "critRolls": [
         {
-          "roll": "(3d4+16)*2",
+          "roll": "(3d4+12)*2",
           "type": "slashing"
         },
         {
@@ -227,9 +226,10 @@
     {
       "type": "melee",
       "name": "Vine",
-      "bonus": 39,
+      "bonus": 36,
       "traits": [
         "holy",
+        "magical",
         "reach-20"
       ],
       "damageRolls": [
@@ -275,14 +275,7 @@
       "traits": [
         "divine"
       ],
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The veranallia spends a minute to encase a creature that has been dead for no more than a year in a cocoon. After 24 hours, the creature is restored to life, and the cocoon explodes in a shower of colorful blossoms. If the veranallia's chooses, Rebirth can change the creature's ancestry or heritage, typically into an aasimar.</p>",
-      "collapsed": false
-    },
-    {
-      "name": "Improved Grab",
-      "actions": 0,
-      "traits": [],
-      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Improved Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with as a free action. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead spend an action to use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The veranallia spends a minute to encase a creature that has been dead for no more than a year in a cocoon. After 24 hours, the creature is restored to life, and the cocoon explodes in a shower of colorful blossoms. If the veranallia's chooses, Rebirth can change the creature's ancestry or heritage, typically into an nephilim.</p>",
       "collapsed": false
     }
   ],
@@ -290,7 +283,7 @@
     {
       "name": "Divine Innate Spells",
       "type": "innate",
-      "bonus": 32,
+      "bonus": 34,
       "dc": 42,
       "focusPoints": {
         "current": 0,
@@ -305,13 +298,14 @@
       "lv5spells": [],
       "lv6spells": [
         {
-          "name": "Baleful Polymorph (At will)",
+          "name": "Cursed Metamorphosis (at will)",
           "type": "spell",
           "level": 6,
           "heightenedLevel": 6,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
+            "curse",
             "incapacitation",
             "manipulate",
             "polymorph"
@@ -322,7 +316,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "fortitude",
-          "description": "<p>You transform the target creature into a harmless animal appropriate to the area, with effects based on its Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's body gains minor features of the harmless animal. Its insides churn as they partially transform, causing it to be Sickened 1. When it recovers from the Sickened condition, its features revert to normal.</p>\n<p><strong>Failure</strong> The target transforms for 1 minute but keeps its mind. If it spends all its actions on its turn concentrating on its original form, it can attempt a Will save to end the effect immediately.</p>\n<p><strong>Critical Failure</strong> The target is transformed into the chosen harmless animal, body and mind, for an unlimited duration.</p>",
+          "description": "<p>You transform the target creature into a harmless animal appropriate to the area, with effects based on its Fortitude save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's body gains minor features of the harmless animal. Its insides churn as they partially transform, causing it to be Sickened 1. When it recovers from the sickened condition, its features revert to normal.</p>\n<p><strong>Failure</strong> The target transforms for 1 minute but keeps its mind. If it spends all its actions on its turn concentrating on its original form, it can attempt a will save to end the effect immediately.</p>\n<p><strong>Critical Failure</strong> The target is transformed into the chosen harmless animal, body and mind, for an unlimited duration.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -331,7 +325,7 @@
           "id": "T1jTn0jRuZqV93CM"
         },
         {
-          "name": "Tangling Creepers (At will)",
+          "name": "Tangling Creepers (at will)",
           "type": "spell",
           "level": 6,
           "heightenedLevel": 6,
@@ -339,7 +333,8 @@
           "traits": [
             "concentrate",
             "manipulate",
-            "plant"
+            "plant",
+            "wood"
           ],
           "castingTime": "3",
           "duration": "10 minutes",
@@ -347,7 +342,7 @@
           "area": "40ft burst",
           "targets": "",
           "save": "",
-          "description": "<p>Dense, twitching creepers sprout from every surface and fill any bodies of water in the area. Any creature moving on the land, or Climbing or Swimming within the creepers, takes a -10- foot circumstance penalty to its Speeds while in the area. Once per round, you can make a vine lash out from any square within the expanse of creepers by using a single action, which has the concentrate trait. This vine has a 15-foot reach and makes a makes a melee spell attack roll against the target. If the attack succeeds, the vine pulls the target into the creepers and makes it Immobilized for 1 round or until the creature Escapes (against your spell DC), whichever comes first.</p>",
+          "description": "<p>Dense, twitching creepers sprout from every surface and fill any bodies of water in the area. Any creature moving on the land, or Climbing or Swimming within the creepers, takes a -10-foot circumstance penalty to its Speeds while in the area. Once per round, you can Sustain the spell to make a vine lash out from any square within the expanse of creepers. This vine has a 15-foot reach. Make a melee spell attack roll against the target; on a success, the vine pulls the target into the creepers and makes it Immobilized for 1 round or until the creature Escapes (against your spell DC), whichever comes first.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -359,35 +354,9 @@
       "lv7spells": [],
       "lv8spells": [
         {
-          "name": "Polar Ray (At will)",
+          "name": "Sunburst (at will)",
           "type": "spell",
-          "level": 8,
-          "heightenedLevel": 8,
-          "timesPrepared": 1,
-          "traits": [
-            "attack",
-            "cold",
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>You fire a blue-white ray of freezing air and sleet that deals 10d8 cold damage. Make a spell attack roll against the target.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage and is Drained 2</p>\n<p><strong>Success</strong> The target takes full damage and is Drained 2</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d8</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "ajiWSW5GFwz1c2fZ"
-        },
-        {
-          "name": "Sunburst (At will)",
-          "type": "spell",
-          "level": 8,
+          "level": 7,
           "heightenedLevel": 8,
           "timesPrepared": 1,
           "traits": [
@@ -403,44 +372,45 @@
           "area": "60ft burst",
           "targets": "",
           "save": "reflex",
-          "description": "<p>A powerful globe of searing sunlight explodes in the area, dealing 8d10 fire damage to creatures and objects in the area, plus 8d10 additional vitality damage to undead creatures. Each creature and object in the area must attempt a Reflex save. If the globe overlaps with an area of magical darkness, sunburst attempts to counteract the darkness effect.</p>\n<hr /><p><strong>Critical Success</strong> The creature or object is unaffected.</p>\n<p><strong>Success</strong> The creature or object takes half damage.</p>\n<p><strong>Failure</strong> The creature or object takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature or object takes full damage. If it's a creature, it becomes Blinded permanently.</p>\n<hr /><p><strong>Heightened (+1)</strong> The fire damage increases by 1d10, and the vitality damage against undead increases by 1d10.</p>",
+          "description": "<p>A powerful globe of searing sunlight explodes in the area, dealing 8d10 fire damage to all creatures in the area, plus an additional (@item.level+1)d10 Vitality Damage damage to undead creatures. Each creature in the area must attempt a Reflex save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes full damage and becomes Blinded permanently.</p>\n<p>If the globe overlaps with an area of magical darkness, <em>sunburst</em> attempts to counteract the darkness effect.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by 1d10, and the vitality damage against undead increases by 1d10.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "IHpzMqwVP4Qwisa6"
+        },
+        {
+          "name": "Arctic Rift (at will)",
+          "type": "spell",
+          "level": 8,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "cold",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "120ft line",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>A jagged crack opens in the air, dealing 12d8 cold damage as it draws away warmth. Each creature along the rift must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Slowed 1 until the start of your next turn.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is Immobilized by a layer of ice, and is slowed 1 as long as it's immobilized. The ice is an object with 60 Hit Points, Hardness 5, immunity to cold damage, and vulnerability 10 to fire. It has object immunities and is destroyed if the target Escapes.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d8 and the ice's Hit Points increase by 5.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "A3hsg1sR7EY6G9Ne"
         }
       ],
       "lv9spells": [
         {
-          "name": "Endure Elements (Constant)",
+          "name": "Speak with Animals (constant)",
           "type": "spell",
-          "level": 9,
-          "heightenedLevel": 9,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "10 minutes",
-          "duration": "until the next time you make your daily preparations",
-          "range": "touch",
-          "area": "",
-          "targets": "1 willing creature",
-          "save": "",
-          "description": "<p>You shield the target against dangerous temperatures. Choose severe cold or heat. The target is protected from the temperature you chose (but not extreme cold or heat).</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The target is protected from severe cold and heat.</p>\n<p><strong>Heightened (5th)</strong> The target is protected from severe cold, severe heat, extreme cold, and extreme heat.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "5AQMHCwBWHE6c3p1"
-        },
-        {
-          "name": "Nature's Enmity",
-          "type": "spell",
-          "level": 9,
+          "level": 2,
           "heightenedLevel": 9,
           "timesPrepared": 1,
           "traits": [
@@ -448,109 +418,7 @@
             "manipulate"
           ],
           "castingTime": "2",
-          "duration": "10 minutes",
-          "range": "120 feet",
-          "area": "500ft burst",
-          "targets": "up to 5 creatures",
-          "save": "",
-          "description": "<p>Animals and plants in the area turn against the targets. Each target suffers from the following effects as long as it remains in the area.</p>\n<ul>\n<li>Vegetation springs up from every surface, giving each target a –10-foot circumstance penalty to its Speed any time it's adjacent to the plants.</li>\n<li>Aggressive animals attack unpredictably. At the start of its turn, each target rolls a Basic DC 8 Flat . On a failure, it's attacked by swarming creatures that deal 2d10 slashing damage. The target attempts a basic Reflex save, and it is Off-Guard for 1 round on any outcome other than a critical success.</li>\n<li>The target loses any connection to nature or natural creatures. The target has to succeed at a Basic DC 5 Flat  when casting any primal spell or the spell fails. Furthermore, animal or plant creatures become hostile to it, even one with a strong bond to the target, such as an animal companion.</li>\n</ul>\n<p>The GM might decide that you can't subject some creatures, such as an emissary of a nature deity, to the ire of nature.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "V36tT2G4lUfNUNVI"
-        },
-        {
-          "name": "Regenerate",
-          "type": "spell",
-          "level": 9,
-          "heightenedLevel": 9,
-          "timesPrepared": 3,
-          "traits": [
-            "concentrate",
-            "healing",
-            "manipulate",
-            "vitality"
-          ],
-          "castingTime": "2",
-          "duration": "1 minute",
-          "range": "touch",
-          "area": "",
-          "targets": "1 willing living creature",
-          "save": "",
-          "description": "<p>An infusion of vitality energy grants a creature continuous healing. The target temporarily gains regeneration 15, which restores 15 Hit Points to it at the start of each of its turns. While it has regeneration, the target can't die from damage and its Dying condition can't increase to a value that would kill it (this stops most creatures from going beyond dying 3), though if its Wounded value becomes 4 or higher, it stays Unconscious until its wounds are treated. If the target takes acid or fire damage, its regeneration deactivates until after the end of its next turn. Each time the creature regains Hit Points from regeneration, it also regrows one damaged or ruined organ (if any). During the spell's duration, the creature can also reattach severed body parts by spending an Interact action to hold the body part to the area it was severed from.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The regeneration increases to 20.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "tyjmT6FqntX2DtkL"
-        },
-        {
-          "name": "Regenerate",
-          "type": "spell",
-          "level": 9,
-          "heightenedLevel": 9,
-          "timesPrepared": 3,
-          "traits": [
-            "concentrate",
-            "healing",
-            "manipulate",
-            "vitality"
-          ],
-          "castingTime": "2",
-          "duration": "1 minute",
-          "range": "touch",
-          "area": "",
-          "targets": "1 willing living creature",
-          "save": "",
-          "description": "<p>An infusion of vitality energy grants a creature continuous healing. The target temporarily gains regeneration 15, which restores 15 Hit Points to it at the start of each of its turns. While it has regeneration, the target can't die from damage and its Dying condition can't increase to a value that would kill it (this stops most creatures from going beyond dying 3), though if its Wounded value becomes 4 or higher, it stays Unconscious until its wounds are treated. If the target takes acid or fire damage, its regeneration deactivates until after the end of its next turn. Each time the creature regains Hit Points from regeneration, it also regrows one damaged or ruined organ (if any). During the spell's duration, the creature can also reattach severed body parts by spending an Interact action to hold the body part to the area it was severed from.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The regeneration increases to 20.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "tyjmT6FqntX2DtkL"
-        },
-        {
-          "name": "Regenerate",
-          "type": "spell",
-          "level": 9,
-          "heightenedLevel": 9,
-          "timesPrepared": 3,
-          "traits": [
-            "concentrate",
-            "healing",
-            "manipulate",
-            "vitality"
-          ],
-          "castingTime": "2",
-          "duration": "1 minute",
-          "range": "touch",
-          "area": "",
-          "targets": "1 willing living creature",
-          "save": "",
-          "description": "<p>An infusion of vitality energy grants a creature continuous healing. The target temporarily gains regeneration 15, which restores 15 Hit Points to it at the start of each of its turns. While it has regeneration, the target can't die from damage and its Dying condition can't increase to a value that would kill it (this stops most creatures from going beyond dying 3), though if its Wounded value becomes 4 or higher, it stays Unconscious until its wounds are treated. If the target takes acid or fire damage, its regeneration deactivates until after the end of its next turn. Each time the creature regains Hit Points from regeneration, it also regrows one damaged or ruined organ (if any). During the spell's duration, the creature can also reattach severed body parts by spending an Interact action to hold the body part to the area it was severed from.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The regeneration increases to 20.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "tyjmT6FqntX2DtkL"
-        },
-        {
-          "name": "Speak with Animals (Constant)",
-          "type": "spell",
-          "level": 9,
-          "heightenedLevel": 9,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "10 minutes",
+          "duration": "1 hour",
           "range": "",
           "area": "",
           "targets": "",
@@ -564,23 +432,24 @@
           "id": "4wGOi1Y9QjvOIUWd"
         },
         {
-          "name": "Speak with Plants (Constant)",
+          "name": "Speak with Plants (constant)",
           "type": "spell",
-          "level": 9,
+          "level": 3,
           "heightenedLevel": 9,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
             "manipulate",
-            "plant"
+            "plant",
+            "wood"
           ],
           "castingTime": "2",
-          "duration": "10 minutes",
+          "duration": "1 hour",
           "range": "",
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You can ask questions of and receive answers from plants, but the spell doesn't make them more friendly or intelligent than normal. Most normal plants have a distinctive view of the world around them, so they don't recognize details about creatures or know anything about the world beyond their immediate vicinity. Cunning plant monsters are likely to be terse and evasive, while less intelligent ones often make inane comments.</p>",
+          "description": "<p>You can ask questions of and receive answers from plants and fungi, but the spell doesn't make them more friendly or intelligent than normal. Most normal plants and fungi have a distinctive view of the world around them, so they don't recognize details about creatures or know anything about the world beyond their immediate vicinity. Cunning plant or fungus monsters are likely to be terse and evasive, while less intelligent ones often make inane comments.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The duration is 8 hours.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -589,35 +458,36 @@
           "id": "X8HPyH2dWuDAiYT3"
         },
         {
-          "name": "Storm of Vengeance",
+          "name": "Nature's Pathway (at will)",
           "type": "spell",
-          "level": 9,
+          "level": 5,
           "heightenedLevel": 9,
           "timesPrepared": 1,
           "traits": [
-            "air",
             "concentrate",
-            "electricity",
-            "manipulate"
+            "manipulate",
+            "mental",
+            "plant",
+            "teleportation"
           ],
-          "castingTime": "3",
-          "duration": "Sustained up to 1 minute",
-          "range": "800 feet",
-          "area": "360ft burst",
+          "castingTime": "1 minute",
+          "duration": "",
+          "range": "",
+          "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>A massive storm cloud forms in the air in a 360-foot burst. Beneath it, rain begins to fall, and gales impose a -4 circumstance penalty to physical ranged attacks and weapon ranged attacks, and the air in the area becomes greater difficult terrain for flying creatures. When you Cast this Spell and the first time each round you Sustain the Spell, you can choose one of the following storm effects. You can't choose the same effect twice in a row.</p>\n<ul>\n<li><strong>Acid Rain</strong> Each creature in the storm takes 4d8 acid damage with no saving throw.</li>\n<li><strong>Hail</strong> The storm deals 4d10 bludgeoning damage to creatures beneath it (basic Fortitude save).</li>\n<li><strong>Lightning</strong> Up to 10 bolts of lightning strike down, targeting creatures of your choice in the storm. No more than one bolt can target any one creature. Each bolt deals 7d6 electricity damage (basic Reflex save). Rain and Wind Heavy rain and whipping wind reduce visibility and mobility, making the area under the storm cloud difficult terrain and making everything seen within or through the area Concealed.</li>\n<li><strong>Thunderclap</strong> Each creature in the storm must succeed at a Fortitude save or be Deafened for 10 minutes. A creature that succeeds is temporarily immune to thunderclaps from storm of vengeance for 1 hour.</li>\n</ul>\n<hr />\n<p><strong>Heightened (10th)</strong> The range increases to 2,200 feet, and the cloud is a 1,000-foot burst.</p>",
+          "description": "<p>You step into a living tree with a trunk big enough for you to fit inside it and instantly teleport to any tree within 5 miles that also has a sufficiently large trunk. Once you enter the first tree, you instantly know the rough locations of other sufficiently large trees within range and can exit from the original tree, if you prefer. You can't carry extradimensional spaces with you; if you attempt to do so, the spell fails.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The tree you exit can be up to 50 miles away.</p>\n<p><strong>Heightened (8th)</strong> The tree you exit can be up to 500 miles away.</p>\n<p><strong>Heightened (9th)</strong> The tree you exit can be anywhere on the same planet.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "25JdBG28HLwUSdVB"
+          "id": "4qmaoet30Rr2gRnV"
         },
         {
-          "name": "Tongues (Constant)",
+          "name": "Truespeech (constant)",
           "type": "spell",
-          "level": 9,
+          "level": 5,
           "heightenedLevel": 9,
           "timesPrepared": 1,
           "traits": [
@@ -639,7 +509,7 @@
           "id": "r9Vti0pP2In1fPgO"
         },
         {
-          "name": "Tree Stride (At will)",
+          "name": "Nature's Enmity",
           "type": "spell",
           "level": 9,
           "heightenedLevel": 9,
@@ -648,21 +518,74 @@
             "concentrate",
             "manipulate",
             "plant",
-            "teleportation"
+            "wood"
           ],
-          "castingTime": "1 minute",
-          "duration": "",
-          "range": "",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You step into a living tree with a trunk big enough for you to fit inside it and instantly teleport to any tree of the same species within 5 miles that also has a sufficiently large trunk. Once you enter the first tree, you instantly know the rough locations of other sufficiently large trees of the same species within range and can exit from the original tree, if you prefer. You can't carry extradimensional spaces with you; if you attempt to do so, the spell fails.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The tree you exit can be up to 50 miles away.</p>\n<p><strong>Heightened (8th)</strong> The tree you exit can be up to 500 miles away.</p>\n<p><strong>Heightened (9th)</strong> The tree you exit can be anywhere on the same planet.</p>",
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "120 feet",
+          "area": "500ft burst",
+          "targets": "up to 5 creatures",
+          "save": "reflex",
+          "description": "<p>Animals, plants, and fungi in the area turn against the targets. Each target suffers from the following effects as long as it remains in the area.</p><ul><li>Vegetation springs up from every surface, giving each target a –10-foot circumstance penalty to its Speed any time it's adjacent to the plants and fungi.</li><li>Aggressive animals attack unpredictably. At the start of its turn, each target rolls a Basic DC 8 Flat . On a failure, it's attacked by creatures that deal 2d10 Slashing Damage damage. The target attempts a basic Reflex save and is Off-Guard for 1 round on any outcome other than a critical success.</li><li><p>The target loses any connection to nature or natural creatures. The target must succeed at a Basic DC 5 Flat  when casting any primal spell or the spell fails. Furthermore, animal, fungus, and plant creatures become hostile to it, even one with a strong bond to the target, such as an animal companion.</p></li></ul><p>The GM might decide that you can't subject some creatures, such as an emissary of a nature deity, to the ire of nature.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Um9w32ZfDOZ1WfA3"
+          "id": "V36tT2G4lUfNUNVI"
+        },
+        {
+          "name": "Regenerate",
+          "type": "spell",
+          "level": 9,
+          "heightenedLevel": 9,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "healing",
+            "manipulate",
+            "vitality"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing living creature",
+          "save": "",
+          "description": "<p>An infusion of vitality energy grants a creature continuous healing. The target temporarily gains regeneration 15, which restores 15 Hit Points to it at the start of each of its turns. While it has regeneration, the target can't die from damage and its Dying condition can't increase to a value that would kill it (this stops most creatures from going beyond dying 3), though if its Wounded value becomes 4 or higher, it stays Unconscious until its wounds are treated. If the target takes acid or fire damage, its regeneration deactivates until after the end of its next turn. Each time the creature regains Hit Points from regeneration, it also regrows one damaged or ruined organ (if any). During the spell's duration, the creature can also reattach severed body parts by spending an Interact action to hold the body part to the area it was severed from.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The regeneration increases to 20.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "tyjmT6FqntX2DtkL"
+        },
+        {
+          "name": "Wrathful Storm",
+          "type": "spell",
+          "level": 9,
+          "heightenedLevel": 9,
+          "timesPrepared": 1,
+          "traits": [
+            "air",
+            "cold",
+            "concentrate",
+            "electricity",
+            "manipulate"
+          ],
+          "castingTime": "3",
+          "duration": "Sustained up to 1 minute",
+          "range": "800 feet",
+          "area": "400ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p>A massive storm cloud forms in the air above the area, spreading rain and gales. The wind imposes a –4 circumstance penalty to physical ranged attacks. The air in the area is greater difficult terrain for flying creatures. When you Cast this Spell and the first time each round you Sustain it on subsequent rounds, you can choose one of the following storm effects. You can't choose the same effect twice in a row.</p><ul><li><strong>Blizzard</strong> The driving snow deals 4d8 Cold Damage damage to each creature in or below the storm with no save. Everything in or beneath the cloud is Concealed by driving snow and any ground is difficult terrain.</li><li><strong>Hail</strong> Each creature in or below the storm takes 4d10 Bludgeoning Damage damage with a basic Fortitude save.</li><li><strong>Lightning</strong> Choose up to 10 creatures in or below the storm to be struck by lightning. Each of them takes 7d6 Electricity Damage damage with a basic Reflex save.</li><li><strong>Tornado</strong> A roughly cylindrical whirlwind appears in or below the cloud in a 30-foot radius. Each creature in the whirlwind is thrown 40 feet upward.</li></ul><p></p><hr /><p><strong>Heightened (10th)</strong> The range increases to 2,000 feet and the cloud is a 1,000-foot burst.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "aqTE0mNiRzVxxeCY"
         }
       ],
       "lv10spells": [
@@ -698,7 +621,7 @@
           "id": "PdBEp2mT1BlLgcrf"
         },
         {
-          "name": "Primal Phenomenon (Once per year)",
+          "name": "Manifestation (once per year)",
           "type": "spell",
           "level": 10,
           "heightenedLevel": 10,
@@ -713,13 +636,13 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You request a direct intercession from the natural world. Nature always refuses unnatural requests and might grant a different request (potentially more powerful or better fitting its character) than the one you asked for. A <em>primal phenomenon</em> spell can do any of the following things.</p>\n<ul>\n<li>Duplicate any primal spell of 9th level or lower.</li>\n<li>Duplicate any non-primal spell of 7th level or lower.</li>\n<li>Produce any effect whose power level is in line with the above effects.</li>\n<li>Reverse certain effects that refer to the <em>wish</em> spell.</li>\n</ul>\n<p>At the GM's discretion, you can try to use <em>primal phenomenon</em> to produce greater effects than these, but doing so may be dangerous, or the spell may have only a partial effect.</p>",
+          "description": "<p>You spin secrets from the fundaments of magic, shaping them into a power with nearly unlimited potential. You duplicate a spell of 9th rank or lower of the tradition from which you cast <em>manifestation</em>, or a spell of 7th rank or lower from any tradition. Though you can normally choose only spells that are common or to which you have access, the GM might allow broader options.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "qxGCsUCI43v3qoRC"
+          "id": "gapottkCkDGz63Yv"
         },
         {
           "name": "Revival",
@@ -739,7 +662,7 @@
           "area": "",
           "targets": "dead creatures and living creatures of your choice within range",
           "save": "",
-          "description": "<p>A burst of healing energy soothes living creatures and temporarily rouses those recently slain. All living targets regain 10d8+40 Hit Points.</p>\n<p>In addition, you return any number of dead targets to life temporarily, with the same effects and limitations as Raise Dead. The raised creatures have a number of temporary Hit Points equal to the Hit Points you gave living creatures, but no normal Hit Points. The raised creatures can't regain Hit Points or gain temporary Hit Points in other ways, and once revival's duration ends, they lose all temporary Hit Points and die.</p>\n<p>Revival can't resurrect creatures killed by disintegrate or a death effect. It has no effect on undead.</p>",
+          "description": "<p>A burst of healing energy soothes living creatures and temporarily rouses those recently slain. All living targets regain 10d8+40 Hit Points.</p>\n<p>In addition, you return any number of dead targets to life temporarily, with the same effects and limitations as Raise Dead. The raised creatures have a number of temporary Hit Points equal to the Hit Points you gave living creatures, but no normal Hit Points. The raised creatures can't regain Hit Points or gain temporary Hit Points in other ways, and once <em>revival</em>'s duration ends, they lose all temporary Hit Points and die.</p>\n<p><em>Revival</em> can't resurrect creatures killed by Disintegrate or a death effect. It has no effect on undead.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -755,20 +678,22 @@
           "level": 2,
           "heightenedLevel": 2,
           "timesPrepared": 1,
-          "traits": [],
+          "traits": [
+            "consecration"
+          ],
           "castingTime": "3 days",
           "duration": "1 year",
           "range": "40 feet",
           "area": "40ft burst",
           "targets": "",
           "save": "",
-          "description": "<p>You consecrate a site to your deity, chanting praises and creating a sacred space. While within the area, worshippers of your deity gain a +1 status bonus to attack rolls, skill checks, saving throws, and Perception checks, and creatures anathema to your deity (such as undead for Pharasma or Sarenrae) take a -1 status penalty to those checks. Attacks made by worshippers of your deity within the area deal 1 damage of one of your deity's alignment types (your choice); if your deity is true neutral, you don't gain this benefit.</p>\n<hr />\n<p><strong>Critical Success</strong> The consecration succeeds, and it either lasts for 10 years instead of 1 or covers an area with twice the radius. Occasionally, with your deity's favor, this might produce an even more amazing effect, such as a permanently consecrated area or the effect covering an entire cathedral.</p>\n<p><strong>Success</strong> The consecration succeeds.</p>\n<p><strong>Failure</strong> The consecration fails.</p>\n<p><strong>Critical Failure</strong> The consecration fails spectacularly and angers your deity, who sends a sign of displeasure. For at least 1 year, further attempts to consecrate the site fail.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The consecrated area also gains the effects of the Planar Seal spell, but the effect doesn't attempt to counteract teleportation by worshippers of your deity. The cost increases to 200 gp × the spell rank.</p>",
+          "description": "<p><strong>Area</strong> 40-foot-radius burst around an immobile altar, shrine, or fixture of your deity</p>\n<p><strong>Secondary Casters</strong> 2, must be worshippers of your religion</p>\n<hr />\n<p>You consecrate a site to your deity, chanting praises and creating a sacred space. While within the area, worshippers of your deity gain a +1 status bonus to attack rolls, skill checks, saving throws, and Perception checks, and creatures anathema to your deity (such as undead for Pharasma or Sarenrae) take a -1 status penalty to those rolls. If your deity's divine sanctification allows you to choose holy or unholy, you can choose to make the consecrated site holy or unholy as well. If the deity's sanctification <span class=\"fontstyle2\">must </span>be holy or unholy, you must make the site match that sanctification. Strikes made by worshippers of your deity within the area gain the site's sanctification trait, if any.</p>\n<hr />\n<p><strong>Critical Success</strong> The consecration succeeds, and it either lasts for 10 years instead of 1 or covers an area with twice the radius. Occasionally, with your deity's favor, this might produce an even more amazing effect, such as a permanently consecrated area or the effect covering an entire cathedral.</p>\n<p><strong>Success</strong> The consecration succeeds.</p>\n<p><strong>Failure</strong> The consecration fails.</p>\n<p><strong>Critical Failure</strong> The consecration fails spectacularly and angers your deity, who sends a sign of displeasure. For at least 1 year, further attempts to consecrate the site fail.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The consecrated area also gains the effects of the Planar Seal spell, but the effect doesn't attempt to counteract teleportation by worshippers of your deity. The cost increases to 200 gp × the spell rank.</p>",
           "cast": false,
           "cost": "rare incense and offerings worth a total value of 20 gp × the spell rank",
           "primaryCheck": "Religion",
-          "secondaryCasters": 0,
+          "secondaryCasters": 2,
           "secondaryChecks": "Crafting, Performance",
-          "id": "EssSQ9C23oiWZPwy"
+          "id": "CDF9Jnt9uhqFx2KX"
         },
         {
           "name": "Reincarnate",
@@ -783,13 +708,13 @@
           "area": "",
           "targets": "1 dead creature of up to 8th level",
           "save": "",
-          "description": "<p>You call forth the target's soul and attempt to incarnate it into a brand-new body. As the soul won't be returning to the original body, only a small portion of the creature's remains are required.</p>\n<p>These remains must have been part of the original body at the time of death, and the target must have died within the past week. If Pharasma has decided that the target's time has come or the target's soul is trapped or doesn't wish to return, this ritual automatically fails, but you discover this after you succeed at the Religion check and can end the ritual without paying the cost.</p>\n<p>If the ritual is successful, the target's new body has a random ancestry. First roll 1d20. On a result of 1 through 14, the new body is one of a common ancestry, while on a 15 through 20 they become a member of an uncommon or rare ancestry. The GM chooses possible ancestries based on those found in the region and then rolls randomly between them. For instance, the GM could roll 1d6 to choose a common ancestry from the Core Rulebook. The target replaces their ancestry Hit Points, size, Speeds, ability boosts, ability flaws, traits, and special abilities with those of their new ancestry. The target loses their heritage and ancestry feats, selecting replacements from their new ancestry. The target's background, class features, and known languages remain unaltered.</p>\n<hr />\n<p><strong>Critical Success</strong> You reincarnate the target into a new adult body. This new body has full HP and has the same spells prepared and points in their pools as the original did when it died.</p>\n<p><strong>Success</strong> As critical success, except the new body has 1 HP and no spells prepared or points in any pools. The soul takes some time to adjust to their new body, leaving them Clumsy 2, Drained 2, and Enfeebled 2 for 1 week; these conditions can't be removed or reduced by any means until the week has passed.</p>\n<p><strong>Failure</strong> You fail to reincarnate the target.</p>\n<p><strong>Critical Failure</strong> The target's soul becomes trapped in an unintelligent animal creature of the GM's choosing, with a level no greater than half the target's level. While trapped, the target has an Intelligence score of 1 (-5 modifier) and can't use any of their own abilities.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The maximum level of the target increases to 10. The cost is the target's level (minimum 1) × 40 gp.</p>\n<p><strong>Heightened (5th)</strong> The maximum level of the target increases to 12. The cost is the target's level (minimum 1) × 75 gp.</p>\n<p><strong>Heightened (6th)</strong> The maximum level of the target increases to 14. The cost is the target's level (minimum 1) × 125 gp. The target must have died within the past month.</p>\n<p><strong>Heightened (7th)</strong> The maximum level of the target increases to 16. The cost is the target's level (minimum 1) × 200 gp. The target must have died within the past month.</p>\n<p><strong>Heightened (8th)</strong> The maximum level of the target increases to 18. The cost is the target's level (minimum 1) × 300 gp. The target must have died within the past year.</p>\n<p><strong>Heightened (9th)</strong> The maximum level of the target increases to 20. The cost is the target's level (minimum 1) × 600 gp. The target must have died within the past decade.</p>",
+          "description": "<p>You call forth the target's soul and attempt to incarnate it into a brand-new body. As the soul won't be returning to the original body, only a small portion of the creature's remains are required. These remains must have been part of the original body at the time of death, and the target must have died within the past week. If Pharasma has decided that the target's time has come or the target's soul is trapped or doesn't wish to return, this ritual automatically fails, but you discover this after you succeed at the Religion check and can end the ritual without paying the cost.</p>\n<p>If the ritual is successful, the target's new body has a random ancestry. Roll 1d20. On a result of 1 through 14, the new body is one of a common ancestry, while on a 15 through 20 they become a member of an uncommon or rare ancestry. The GM chooses possible ancestries based on those found in the region and randomly determines the ancestry. For instance, the GM could roll 1d8 to choose a common ancestry from Player Core. The target replaces their ancestry Hit Points, size, Speeds, attribute boosts and flaws, traits, and special abilities with those of their new ancestry. The target loses their heritage and ancestry feats, selecting replacements from their new ancestry. The target's background, class features, and languages remain unaltered.</p><hr /><p><strong>Critical Success</strong> You reincarnate the target into a new adult body. This new body has full HP and has the same spells prepared as the original did when it died.</p>\n<p><strong>Success</strong> As critical success, except the new body has 1 HP and no spells prepared. The soul takes some time to adjust to their new body, leaving them Clumsy 2, Drained 2, and Enfeebled 2 for 1 week; these conditions can't be removed or reduced by any means until the week has passed.</p>\n<p><strong>Failure</strong> You fail to reincarnate the target.</p>\n<p><strong>Critical Failure</strong> The target's soul becomes trapped in an unintelligent animal creature of the GM's choosing, with a level no greater than half the target's level. While trapped, the target has an Intelligence score of 1 (–5 modifier) and can't use any of their own abilities.</p><hr /><p><strong>Heightened (4th)</strong> The maximum level of the target increases to 10. The cost is the target's level (minimum 1) × 40 gp.</p>\n<p><strong>Heightened (5th)</strong> The maximum level of the target increases to 12. The cost is the target's level (minimum 1) × 75 gp.</p>\n<p><strong>Heightened (6th)</strong> The maximum level of the target increases to 14. The cost is the target's level (minimum 1) × 125 gp. The target must have died within the past month.</p>\n<p><strong>Heightened (7th)</strong> The maximum level of the target increases to 16. The cost is the target's level (minimum 1) × 200 gp. The target must have died within the past month.</p>\n<p><strong>Heightened (8th)</strong> The maximum level of the target increases to 18. The cost is the target's level (minimum 1) × 300 gp. The target must have died within the past year.</p>\n<p><strong>Heightened (9th)</strong> The maximum level of the target increases to 20. The cost is the target's level (minimum 1) × 600 gp. The target must have died within the past decade.</p>",
           "cast": false,
           "cost": "rare herbs worth a total value of the target's level (minimum 1) × 25 gp",
           "primaryCheck": "Nature (expert)",
           "secondaryCasters": 2,
           "secondaryChecks": "Occultism,  Religion",
-          "id": "eLOO8mH9LsAlGzZc"
+          "id": "YQd0xQMnWhiIgOpw"
         },
         {
           "name": "Blight",
@@ -807,13 +732,13 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You twist and stunt plants in the area, causing them to wither. In addition to other dangers from failing plant life, this decreases the crop yield for farms. If you cast this ritual in an area affected by plant growth, blight attempts to counteract plant growth instead of producing its usual effect.</p>\n<hr />\n<p><strong>Critical Success</strong> Completely spoil the crop yield in the area, or decrease the yield by half in an area with up to a 1-mile radius.</p>\n<p><strong>Success</strong> Decease the crop yield in the area by half.</p>\n<p><strong>Failure</strong> The ritual has no effect.</p>\n<p><strong>Critical Failure</strong> The flora in the area changes in an unexpected way, determined by the GM but generally as contradictory to your true desires as possible (for instance, enriching crops when you would prefer to blight them).</p>",
+          "description": "<p><strong>Area</strong> 1/2-mile-radius circle centered on you</p>\n<hr />\n<p>You twist and stunt plants in the area, causing them to wither. In addition to other dangers from failing plant life, this decreases the crop yield for farms. If you cast this ritual in an area affected by <em>plant growth</em>, <em>blight</em> attempts to counteract <em>plant growth</em> instead of producing its usual effect.</p>\n<hr />\n<p><strong>Critical Success</strong> Completely spoil the crop yield in the area, or decrease the yield by half in an area with up to a 1-mile radius.</p>\n<p><strong>Success</strong> Decease the crop yield in the area by half.</p>\n<p><strong>Failure</strong> The ritual has no effect.</p>\n<p><strong>Critical Failure</strong> The flora in the area changes in an unexpected way, determined by the GM but generally as contradictory to your true desires as possible (for instance, enriching crops when you would prefer to blight them).</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "Nature (expert)",
           "secondaryCasters": 1,
           "secondaryChecks": "Survival",
-          "id": "qlQkPQOoS7RYB9wR"
+          "id": "fgXKvORJLHVtNYan"
         },
         {
           "name": "Plant Growth",
@@ -823,7 +748,8 @@
           "timesPrepared": 1,
           "traits": [
             "plant",
-            "vitality"
+            "vitality",
+            "wood"
           ],
           "castingTime": "1 day",
           "duration": "1 year",
@@ -831,13 +757,13 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You cause the plants within the area to be healthier and more fruitful. In addition to other benefits of healthy plants, this increases the crop yield for farms, depending on your success. If you cast it in the area of a Blight, <em>plant growth</em> attempts to counteract the <em>blight</em> instead of producing its usual effect.</p>\n<hr />\n<p><strong>Critical Success</strong> Double the crop yield in the area, or increase the area to a 1-mile radius.</p>\n<p><strong>Success</strong> Increase the crop yield in the area by one-third.</p>\n<p><strong>Failure</strong> The ritual has no effect.</p>\n<p><strong>Critical Failure</strong> The flora in the area changes in an unanticipated way, determined by the GM but generally as contradictory to your true desires as possible (for instance, blighting crops when you would prefer to enrich them).</p>",
+          "description": "<p><strong>Area</strong> 1/2-mile-radius circle centered on you</p>\n<hr />\n<p>You cause the plants within the area to be healthier and more fruitful. In addition to other benefits of healthy plants, this increases the crop yield for farms, depending on your success. If you cast it in the area of a Blight, <em>plant growth</em> attempts to counteract the <em>blight</em> instead of producing its usual effect.</p>\n<hr />\n<p><strong>Critical Success</strong> Double the crop yield in the area, or increase the area to a 1-mile radius.</p>\n<p><strong>Success</strong> Increase the crop yield in the area by one-third.</p>\n<p><strong>Failure</strong> The ritual has no effect.</p>\n<p><strong>Critical Failure</strong> The flora in the area changes in an unanticipated way, determined by the GM but generally as contradictory to your true desires as possible (for instance, blighting crops when you would prefer to enrich them).</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "Nature (expert)",
           "secondaryCasters": 1,
           "secondaryChecks": "Farming Lore or Survival",
-          "id": "7lPIuEFcNVgxhBh3"
+          "id": "4dxxxyJgOHeAfSOE"
         },
         {
           "name": "Awaken Animal",
@@ -852,36 +778,38 @@
           "duration": "",
           "range": "10 feet",
           "area": "",
-          "targets": "1 animal up to the level on Table 7-1",
+          "targets": "1 animal up to the level on the table",
           "save": "",
-          "description": "<p>You grant intelligence to the target, transforming it into a beast. If it was previously an animal companion or minion, it can no longer serve as one.</p>\n<h2>Table 7-1: Creatures Creation Rituals</h2>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Creature Level</th>\n<th>Spell Rank Required</th>\n<th>Cost</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>-1 or 0</td>\n<td>2</td>\n<td>15 gp</td>\n</tr>\n<tr>\n<td>1</td>\n<td>2</td>\n<td>60 gp</td>\n</tr>\n<tr>\n<td>2</td>\n<td>3</td>\n<td>105 gp</td>\n</tr>\n<tr>\n<td>3</td>\n<td>3</td>\n<td>180 gp</td>\n</tr>\n<tr>\n<td>4</td>\n<td>4</td>\n<td>300 gp</td>\n</tr>\n<tr>\n<td>5</td>\n<td>4</td>\n<td>480 gp</td>\n</tr>\n<tr>\n<td>6</td>\n<td>5</td>\n<td>750 gp</td>\n</tr>\n<tr>\n<td>7</td>\n<td>5</td>\n<td>1,080 gp</td>\n</tr>\n<tr>\n<td>8</td>\n<td>6</td>\n<td>1,500 gp</td>\n</tr>\n<tr>\n<td>9</td>\n<td>6</td>\n<td>2,100 gp</td>\n</tr>\n<tr>\n<td>10</td>\n<td>7</td>\n<td>3,000 gp</td>\n</tr>\n<tr>\n<td>11</td>\n<td>7</td>\n<td>4,200 gp</td>\n</tr>\n<tr>\n<td>12</td>\n<td>8</td>\n<td>6,000 gp</td>\n</tr>\n<tr>\n<td>13</td>\n<td>8</td>\n<td>9,000 gp</td>\n</tr>\n<tr>\n<td>14</td>\n<td>9</td>\n<td>13,500 gp</td>\n</tr>\n<tr>\n<td>15</td>\n<td>9</td>\n<td>19,500 gp</td>\n</tr>\n<tr>\n<td>16</td>\n<td>10</td>\n<td>30,000 gp</td>\n</tr>\n<tr>\n<td>17</td>\n<td>10</td>\n<td>45,000 gp</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Critical Success</strong> The target's Intelligence, Wisdom, and Charisma modifiers each increase to +2 if they were lower, and it becomes helpful to you for awakening it.</p>\n<p><strong>Success</strong> The target's Intelligence, Wisdom, and Charisma modifiers increase to +0 if they were worse and it becomes friendly to you for awakening it.</p>\n<p><strong>Failure</strong> You fail to awaken the target.</p>\n<p><strong>Critical Failure</strong> You accidentally awaken the target with a pure bestial hatred toward you. The target's Intelligence, Wisdom, and Charisma modifiers increase to -2 if they were worse. It becomes hostile to you, attempting to destroy you.</p>",
+          "description": "<p>You grant intelligence to the target, transforming it into a beast. If it was previously an animal companion or minion, it can no longer serve as one.</p>\n<p><strong>Critical Success</strong> The target's Intelligence, Wisdom, and Charisma modifiers each increase to +2 if they were lower, and it becomes helpful to you for awakening it.</p>\n<p><strong>Success</strong> The target's Intelligence, Wisdom, and Charisma modifiers increase to +0 if they were lower and it becomes friendly to you for awakening it.</p>\n<p><strong>Failure</strong> You fail to awaken the target.</p>\n<p><strong>Critical Failure</strong> You accidentally awaken the target with a pure bestial hatred toward you. The target's Intelligence, Wisdom, and Charisma modifiers increase to -2 if they were lower. It becomes hostile to you, attempting to destroy you.</p><h2>Creatures Creation Rituals</h2><table class=\"pf2e remaster\"><thead><tr><th>Creature Level</th><th>Spell Rank Required</th><th>Cost</th></tr></thead><tbody><tr><td>-1 or 0</td><td>2</td><td>15 gp</td></tr><tr><td>1</td><td>2</td><td>60 gp</td></tr><tr><td>2</td><td>3</td><td>105 gp</td></tr><tr><td>3</td><td>3</td><td>180 gp</td></tr><tr><td>4</td><td>4</td><td>300 gp</td></tr><tr><td>5</td><td>4</td><td>480 gp</td></tr><tr><td>6</td><td>5</td><td>750 gp</td></tr><tr><td>7</td><td>5</td><td>1,080 gp</td></tr><tr><td>8</td><td>6</td><td>1,500 gp</td></tr><tr><td>9</td><td>6</td><td>2,100 gp</td></tr><tr><td>10</td><td>7</td><td>3,000 gp</td></tr><tr><td>11</td><td>7</td><td>4,200 gp</td></tr><tr><td>12</td><td>8</td><td>6,000 gp</td></tr><tr><td>13</td><td>8</td><td>9,000 gp</td></tr><tr><td>14</td><td>9</td><td>13,500 gp</td></tr><tr><td>15</td><td>9</td><td>19,500 gp</td></tr><tr><td>16</td><td>10</td><td>30,000 gp</td></tr><tr><td>17</td><td>10</td><td>45,000 gp</td></tr></tbody></table>",
           "cast": false,
-          "cost": "herbs, 1/5 the value on Table 7-1",
+          "cost": "herbs, 1/5 the value on Creature Creation Rituals table",
           "primaryCheck": "Nature (master)",
           "secondaryCasters": 3,
           "secondaryChecks": "Lore (any), Society, Survival",
-          "id": "D9BfwwIVIzWhCpUv"
+          "id": "AnV8evR2QlA6F6px"
         },
         {
-          "name": "Commune with Nature",
+          "name": "Commune",
           "type": "ritual",
           "level": 6,
           "heightenedLevel": 6,
           "timesPrepared": 1,
-          "traits": [],
+          "traits": [
+            "prediction"
+          ],
           "castingTime": "1 day",
           "duration": "up to 10 minutes",
           "range": "",
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>As Commune, except you contact the primal spirits of nature, which know about animals, beasts, fey, plants, topography, and natural resources within a 3-mile radius of the ritual's location.</p>",
+          "description": "<p>You call upon an unknown, powerful being to answer questions. The being varies depending on the skill used for the primary check.</p><ul><li><strong>Nature</strong> Primal spirits of nature, which know about animals, beasts, fey, fungi, plants, topography, and natural resources within a 3-mile radius.</li><li><strong>Occultism</strong> Planar and other mysterious entities such as elementals, forgotten spirits, and monitors, which know about forgotten knowledge, the planes, obscure secrets, and other esoterica.</li><li><strong>Religion</strong> Divine beings like celestials and fiends that know about the gods they serve and the god's respective purview; these are typically a servitor of your deity if you have one.</li></ul><p>You can ask up to seven questions that could be answered with \"Yes\" or \"No.\" The entity answers with one-word answers such as \"Yes,\" \"No,\" \"Likely,\" and \"Unknown,\" though its answers always reflect its own agenda and could be deceptive.</p><hr /><p><strong>Critical Success</strong> You contact a more powerful entity aligned strongly with your interests, possibly even your deity. The entity won't attempt to deceive you, though it still might not know the answers. When it's important to provide clarity, the entity will answer your questions with up to five words, such as \"If you leave immediately\" or \"That was true once.\"</p>\n<p><strong>Success</strong> You can ask your questions and receive answers.</p>\n<p><strong>Failure</strong> You fail to contact an appropriate being.</p>\n<p><strong>Critical Failure</strong> You are exposed to the enormity of the cosmos and are Stupefied 4 for 1 week (can't remove by any means).</p>",
           "cast": false,
-          "cost": "rare incense worth a total value of 60 gp",
-          "primaryCheck": "Nature (master",
+          "cost": "rare incense worth a total value of 150 gp",
+          "primaryCheck": "Nature (master), Occultism (master) or Religion (master)",
           "secondaryCasters": 1,
-          "secondaryChecks": "Nature",
-          "id": "KXrIkSl1mRbTOAp9"
+          "secondaryChecks": "Nature, Occultism or Religion (whichever is used for the primary check)",
+          "id": "vnPeETMjMdTBt8ZZ"
         },
         {
           "name": "Primal Call",
@@ -902,7 +830,7 @@
           "primaryCheck": "Nature (master)",
           "secondaryCasters": 4,
           "secondaryChecks": "Crafting, Diplomacy, Survival",
-          "id": "LYMSwprRmVDrg9ff"
+          "id": "gvxSExpyCA5qVCM2"
         }
       ],
       "lv1slots": {

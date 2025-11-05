@@ -1,0 +1,237 @@
+{
+  "initiative": 0,
+  "initiativebonus": 15,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Narrik",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Common",
+    "Medium",
+    "Aberration"
+  ],
+  "source": "Pathfinder Monster Core 2",
+  "senses": [
+    "Darkvision",
+    "Scent 120ft imprecise",
+    "taste fear, vestigial eyes"
+  ],
+  "perception": {
+    "value": 15,
+    "note": "Darkvision, Scent 120ft imprecise, taste fear, vestigial eyes",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Taste Fear",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A narrik viscerally tastes fear. They can use scent as a precise sense when detecting frightened creatures.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Vestigial Eyes",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A narrik's vision is limited. It's only a precise sense within 30 feet, and an imprecise sense beyond that.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 130,
+    "max": 130,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "precision"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Catalyzing Demise",
+      "actions": null,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The narrik is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> When a narrik is slain, their internal chemistry undergoes a violent chain reaction. They explode, and all creatures in a 5ft Type:emanation must succeed at a DC 25 Reflex Saving Throw save or be Immobilized by tanglespit and exposed to psychotropic saliva.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Quick Congeal",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A narrik's strange body chemistry causes their blood to congeal almost instantly. They automatically succeeds at flat checks to recover from persistent bleed damage.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 18,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d6+8",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+8)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "psychotropic-saliva"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claws",
+      "bonus": 18,
+      "traits": [
+        "agile"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4+8",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+8)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Spit",
+      "bonus": 16,
+      "traits": [],
+      "damageRolls": [],
+      "critRolls": [],
+      "effects": [
+        "psychotropic-saliva",
+        "tanglespit"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Psychotropic Saliva",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p>The target's frightened value doesn't automatically decrease at the end of its turn while affected by this poison</p>\n<p><strong>Saving Throw</strong> DC 22 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 1d6 Poison Damage damage and Frightened 1 (1 round)</p>\n<p><strong>Stage 2</strong> 1d8 Poison Damage damage and Frightened 2 (1 round)</p>\n<p><strong>Stage 3</strong> 1d10 Poison Damage damage and Frightened 3 (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Tanglespit",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A creature hit by the narrik's tanglespit is Immobilized as the viscous glob quickly solidifies. The DC to Escape or Force Open the tanglespit is 25. The glob becomes fragile and brittle after 1 minute, automatically freeing the creature.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism, DC 23"
+}

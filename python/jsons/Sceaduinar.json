@@ -12,11 +12,9 @@
     "Rare",
     "Medium",
     "Aberration",
-    "Evil",
-    "Unholy",
     "Void"
   ],
-  "source": "Pathfinder Bestiary 2",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Greater darkvision",
     "Lifesense 120ft precise"
@@ -150,7 +148,7 @@
       "name": "Void Child",
       "actions": null,
       "traits": [],
-      "description": "<p>Sceaduinars have neither souls nor the ability to create. A sceaduinar is immune to effects that target a soul (such as bind soul or resurrect) or that require knowledge of a creature's identity (such as scrying), and critically fails Crafting checks.</p>",
+      "description": "<p>Sceaduinar have neither souls nor the ability to create. A sceaduinar is immune to effects that target a soul (such as Seize Soul or a Resurrect ritual) or that require knowledge of a creature's identity (such as Scrying), and critically fails Crafting checks.</p>",
       "collapsed": false
     },
     {
@@ -276,7 +274,7 @@
       "autoHeightenLevel": 4,
       "cantrips": [
         {
-          "name": "Chill Touch",
+          "name": "Void Warp",
           "type": "cantrip",
           "level": 1,
           "heightenedLevel": 1,
@@ -288,11 +286,11 @@
           ],
           "castingTime": "2",
           "duration": "",
-          "range": "touch",
+          "range": "30 feet",
           "area": "",
-          "targets": "1 living or undead creature",
+          "targets": "1 living creature",
           "save": "Basic fortitude",
-          "description": "<p>Siphoning void energy into yourself, your hand radiates a pale darkness. Your touch weakens the living and disorients undead, possibly even causing them to flee. The effect depends on whether the target is living or undead.</p>\n<ul>\n<li><strong>Living Creature</strong> The spell deals void damage equal to 1d4 plus your spellcasting modifier. The target attempts a basic Fortitude save, but is also Enfeebled 1 for 1 round on a critical failure.</li>\n<li><strong>Undead Creature</strong> The target is Off-Guard for 1 round on a failed Fortitude save. On a critical failure, the target is also Fleeing for 1 round unless it succeeds at a Will save.</li>\n</ul>\n<hr />\n<p><strong>Heightened (+1)</strong> The void damage to living creatures increases by 1d4.</p>",
+          "description": "<p>You call upon the Void to harm life force. The target takes 2d4 void damage with a basic Fortitude save. On a critical failure, the target is also Enfeebled 1 until the start of your next turn.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -311,7 +309,8 @@
           "timesPrepared": 1,
           "traits": [
             "illusion",
-            "manipulate"
+            "manipulate",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "1 minute",
@@ -319,7 +318,7 @@
           "area": "",
           "targets": "1 willing creature",
           "save": "",
-          "description": "<p>The target makes no sound, preventing creatures from noticing it using hearing or other senses alone. The target can't use sonic attacks, nor can it use actions with the auditory trait. This prevents it from casting spells that include verbal components.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell effect emanates from the touched creature, silencing all sound in or passing through a 10- foot radius and preventing any auditory and sonic effects in the affected area. While within the radius, creatures are subject to the same effects as the target. Depending upon the position of the effect, a creature might notice the lack of sound reaching it (blocking off the noise coming from a party, for example).</p>",
+          "description": "<p>The target makes no sound, preventing creatures from noticing it using hearing alone. The target can't use sonic attacks, nor can it use actions with the auditory trait. This prevents it from casting spells due to the magical words involved in casting, with the exception of subtle spells.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell creates an aura in a 10-foot emanation around the touched creature, silencing all sound in or passing through it. While within the aura, creatures are subject to the same effects as the target. Depending upon the position of the effect, a creature might notice the lack of sound reaching it (blocking off the noise coming from a party, for example).</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -330,81 +329,9 @@
       ],
       "lv3spells": [
         {
-          "name": "Harm",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 3,
-          "timesPrepared": 3,
-          "traits": [
-            "manipulate",
-            "void"
-          ],
-          "castingTime": "1 to 3",
-          "duration": "",
-          "range": "varies",
-          "area": "",
-          "targets": "1 living creature or 1 willing undead creature",
-          "save": "Basic fortitude",
-          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "GlvLsuy90tdhrNox"
-        },
-        {
-          "name": "Harm",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 3,
-          "timesPrepared": 3,
-          "traits": [
-            "manipulate",
-            "void"
-          ],
-          "castingTime": "1 to 3",
-          "duration": "",
-          "range": "varies",
-          "area": "",
-          "targets": "1 living creature or 1 willing undead creature",
-          "save": "Basic fortitude",
-          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "GlvLsuy90tdhrNox"
-        },
-        {
-          "name": "Harm",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 3,
-          "timesPrepared": 3,
-          "traits": [
-            "manipulate",
-            "void"
-          ],
-          "castingTime": "1 to 3",
-          "duration": "",
-          "range": "varies",
-          "area": "",
-          "targets": "1 living creature or 1 willing undead creature",
-          "save": "Basic fortitude",
-          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "GlvLsuy90tdhrNox"
-        },
-        {
           "name": "Grim Tendrils",
           "type": "spell",
-          "level": 3,
+          "level": 1,
           "heightenedLevel": 3,
           "timesPrepared": 1,
           "traits": [
@@ -418,13 +345,85 @@
           "area": "30ft line",
           "targets": "",
           "save": "fortitude",
-          "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 void damage and 1 Bleed Damage damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p>\n<hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the void damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double void damage and double persistent bleed damage.</p>\n<hr /><p><strong>Heightened (+1)</strong> The void damage increases by 2d4, and the persistent bleed damage increases by 1.</p>",
+          "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 void damage and (@item.level) Bleed Damage damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the void damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double void damage and double persistent bleed damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The void damage increases by 2d4, and the persistent bleed damage increases by 1.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "s9tNMP3sWLksMakJ"
+        },
+        {
+          "name": "Harm",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 3,
+          "timesPrepared": 3,
+          "traits": [
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 living creature or 1 willing undead creature",
+          "save": "Basic fortitude",
+          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "GlvLsuy90tdhrNox"
+        },
+        {
+          "name": "Harm",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 3,
+          "timesPrepared": 3,
+          "traits": [
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 living creature or 1 willing undead creature",
+          "save": "Basic fortitude",
+          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "GlvLsuy90tdhrNox"
+        },
+        {
+          "name": "Harm",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 3,
+          "timesPrepared": 3,
+          "traits": [
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 living creature or 1 willing undead creature",
+          "save": "Basic fortitude",
+          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "GlvLsuy90tdhrNox"
         }
       ],
       "lv4spells": [
@@ -455,7 +454,7 @@
         {
           "name": "Darkness",
           "type": "spell",
-          "level": 4,
+          "level": 2,
           "heightenedLevel": 4,
           "timesPrepared": 1,
           "traits": [
@@ -478,7 +477,31 @@
           "id": "XVkyY4kzKloGXvNV"
         },
         {
-          "name": "Dimension Door",
+          "name": "Dispel Magic",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "iz9JLTYVW4t7DfDD"
+        },
+        {
+          "name": "Translocate",
           "type": "spell",
           "level": 4,
           "heightenedLevel": 4,
@@ -494,37 +517,13 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "J16voyC4kNhv1KEc"
-        },
-        {
-          "name": "Dispel Magic",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 4,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "1 spell effect or unattended magic item",
-          "save": "",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you succeed against a spell effect, you counteract it. If you succeed against a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "iz9JLTYVW4t7DfDD"
         }
       ],
       "lv5spells": [],

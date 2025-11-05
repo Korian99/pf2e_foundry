@@ -11,13 +11,12 @@
   "traits": [
     "Common",
     "Gargantuan",
-    "Evil",
     "Mindless",
     "Skeleton",
     "Undead",
     "Unholy"
   ],
-  "source": "Pathfinder Book of the Dead",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision"
   ],
@@ -93,7 +92,8 @@
     "disease",
     "paralyzed",
     "poison",
-    "unconscious"
+    "unconscious",
+    "bleed"
   ],
   "resistances": [
     {
@@ -127,7 +127,7 @@
       "collapsed": false
     }
   ],
-  "speed": "40 ft, ",
+  "speed": "40 ft, fly 20ft",
   "strikes": [
     {
       "type": "melee",
@@ -208,12 +208,11 @@
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Bone",
       "bonus": 24,
       "traits": [
-        "brutal",
-        "range-increment-60"
+        "brutal"
       ],
       "damageRolls": [
         {
@@ -230,7 +229,7 @@
       "effects": [
         "bone-debris"
       ],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -248,14 +247,14 @@
       "name": "Mountain Slam",
       "actions": 3,
       "traits": [],
-      "description": "<p>The skeletal titan slams its mountain sword into the ground. The shock wave reverberates, dealing mountain sword damage to all creatures in a 20ft Line (Basic DC 34 Reflex Saving Throw). Those who fail are also knocked Prone.</p>",
+      "description": "<p>The skeletal titan slams its mountain sword into the ground. The shock wave reverberates, dealing (3d12+13) Bludgeoning Damage damage to all creatures in a 20ft Type:line (Basic DC 33 Reflex Saving Throw save). A creature that fails its save is also knocked Prone.</p>",
       "collapsed": false
     },
     {
       "name": "Trample",
       "actions": 3,
       "traits": [],
-      "description": "<p>Huge or smaller, foot, Basic DC 34 Reflex Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details></p>",
+      "description": "<p>Huge or smaller, foot, Basic DC 33 Reflex Saving Throw</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details></p>",
       "collapsed": false
     }
   ],
@@ -269,20 +268,22 @@
         "current": 0,
         "max": 0
       },
-      "autoHeightenLevel": 4,
+      "autoHeightenLevel": 7,
       "cantrips": [],
       "lv1spells": [],
       "lv2spells": [],
       "lv3spells": [],
-      "lv4spells": [
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [
         {
-          "name": "Air Walk",
+          "name": "Fly (constant)",
           "type": "spell",
           "level": 4,
-          "heightenedLevel": 4,
+          "heightenedLevel": 7,
           "timesPrepared": 1,
           "traits": [
-            "air",
             "concentrate",
             "manipulate"
           ],
@@ -292,18 +293,15 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>The target can walk on air as if it were solid ground. It can ascend and descend in this way at a maximum of a 45-degree angle.</p>",
+          "description": "<p>The target can soar through the air, gaining a fly Speed equal to its Speed or 20 feet, whichever is greater.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration increases to 1 hour.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "L4yiPZJSOfkjO85c"
+          "id": "onnK4xdGi4K7zKl5"
         }
       ],
-      "lv5spells": [],
-      "lv6spells": [],
-      "lv7spells": [],
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],

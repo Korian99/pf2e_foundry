@@ -12,12 +12,10 @@
     "Common",
     "Large",
     "Div",
-    "Evil",
     "Fiend",
-    "Lawful",
     "Unholy"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Greater darkvision"
   ],
@@ -160,13 +158,6 @@
   ],
   "defensiveAbilities": [
     {
-      "name": "Attack of Opportunity (Special)",
-      "actions": -1,
-      "traits": [],
-      "description": "<p>A sepid gains an extra reaction each round that they can use only to make an Attack of Opportunity.</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
-      "collapsed": false
-    },
-    {
       "name": "Blatant Liar",
       "actions": null,
       "traits": [],
@@ -177,7 +168,14 @@
       "name": "Deflecting Lie",
       "actions": -1,
       "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature hits the sepid with a ranged Strike or a ranged spell attack roll</p>\n<hr />\n<p><strong>Effect</strong> The sepid lies in an attempt to divert the attack. They roll a Deception check against the triggering creature's Perception DC. On a success, if the triggering attack roll was a success, it becomes a failure, and if the triggering attack roll was a critical hit, it becomes a normal success.</p>",
+      "description": "<p><strong>Trigger</strong> A creature hits the sepid with a ranged Strike or a ranged spell attack roll</p><hr /><p><strong>Effect</strong> The sepid lies in an attempt to divert the attack. They roll a deception|against:perception check against the triggering creature's Perception DC. On a success, if the triggering attack roll was a success, it becomes a failure, and if the triggering attack roll was a critical hit, it becomes a normal success.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p>A sepid gains an extra reaction each round that they can use only to make a Reactive Strike.</p>\n<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
       "collapsed": false
     }
   ],
@@ -188,7 +186,6 @@
       "name": "Falchion",
       "bonus": 30,
       "traits": [
-        "evil",
         "forceful",
         "magical",
         "sweep",
@@ -201,10 +198,6 @@
         },
         {
           "roll": "1d6",
-          "type": "spirit"
-        },
-        {
-          "roll": "1d6",
           "type": "mental"
         }
       ],
@@ -212,10 +205,6 @@
         {
           "roll": "(2d10+16)*2",
           "type": "slashing"
-        },
-        {
-          "roll": "(1d6)*2",
-          "type": "spirit"
         },
         {
           "roll": "(1d6)*2",
@@ -240,12 +229,8 @@
       ],
       "damageRolls": [
         {
-          "roll": "3d8+16",
+          "roll": "3d6+16",
           "type": "slashing"
-        },
-        {
-          "roll": "1d6",
-          "type": "spirit"
         },
         {
           "roll": "1d6",
@@ -254,12 +239,8 @@
       ],
       "critRolls": [
         {
-          "roll": "(3d8+16)*2",
+          "roll": "(3d6+16)*2",
           "type": "slashing"
-        },
-        {
-          "roll": "(1d6)*2",
-          "type": "spirit"
         },
         {
           "roll": "(1d6)*2",
@@ -279,7 +260,6 @@
       "actions": 2,
       "traits": [
         "divine",
-        "evil",
         "unholy"
       ],
       "description": "<p>The sepid calls forth a hail of stone, wood, metal, and similar debris in a 40ft Emanation, dealing 10d6 Bludgeoning Damage|options:area-damage]{10d6 bludgeoning damage and 5d6 spirit damage}. Each creature in the area other than the sepid must attempt a Basic DC 31 Reflex Saving Throw saving throw.</p>\n<p>The sepid can't use Rain of Debris again for 1d4 rounds.</p>",
@@ -315,7 +295,7 @@
           "area": "30ft emanation",
           "targets": "",
           "save": "",
-          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies.</p>\n<p>You detect illusion magic only if that magic's effect has a lower level than the rank of your detect magic spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an invisibility potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the school of magic for the highest-level effect within range that the spell detects. If multiple effects are equally strong, the GM determines which you learn.</p>\n<p><strong>Heightened (4th)</strong> As 3rd level, but you also pinpoint the source of the highest-level magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
+          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -328,7 +308,7 @@
       "lv2spells": [],
       "lv3spells": [
         {
-          "name": "Comprehend Language (At Will) (Self Only)",
+          "name": "Translate (at will; self only)",
           "type": "spell",
           "level": 2,
           "heightenedLevel": 3,
@@ -339,9 +319,9 @@
           ],
           "castingTime": "2",
           "duration": "1 hour",
-          "range": "touch",
+          "range": "30 feet",
           "area": "",
-          "targets": "self",
+          "targets": "1 creature",
           "save": "",
           "description": "<p>The target can understand the meaning of a single language it is hearing or reading when you cast the spell. This doesn't let it understand codes, language couched in metaphor, and the like (subject to GM discretion). If the target can hear multiple languages and knows that, it can choose which language to understand; otherwise, choose one of the languages randomly.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The target can also speak the language.</p>\n<p><strong>Heightened (4th)</strong> You can target up to 10 creatures, and targets can also speak the language.</p>",
           "cast": false,
@@ -354,7 +334,7 @@
       ],
       "lv4spells": [
         {
-          "name": "Darkness (At Will)",
+          "name": "Darkness (at will)",
           "type": "spell",
           "level": 2,
           "heightenedLevel": 4,
@@ -379,31 +359,6 @@
           "id": "zVHM5ms0PMEfCJcT"
         },
         {
-          "name": "Dimension Door (At Will)",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 4,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "teleportation"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "Xco2zlLptJvbWtBI"
-        },
-        {
           "name": "Fly",
           "type": "spell",
           "level": 4,
@@ -419,13 +374,38 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>The target can soar through the air, gaining a fly Speed equal to its Speed or 20 feet, whichever is greater.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration increases to 1 hour.</p>",
+          "description": "<p>The target can soar through the air, gaining a fly Speed equal to its Speed or 20 feet, whichever is greater.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration increases to 1 hour.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "YQu4VXkaSKSLdAPU"
+        },
+        {
+          "name": "Translocate (at will)",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Xco2zlLptJvbWtBI"
         }
       ],
       "lv5spells": [],
@@ -456,55 +436,6 @@
           "id": "pWDAWuCRJwMn7lPy"
         },
         {
-          "name": "Misdirection (At Will) (Self Only)",
-          "type": "spell",
-          "level": 2,
-          "heightenedLevel": 7,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "illusion",
-            "manipulate"
-          ],
-          "castingTime": "1 minute",
-          "duration": "until the next time you make your daily preparations",
-          "range": "touch",
-          "area": "",
-          "targets": "self",
-          "save": "",
-          "description": "<p>You reshape the magic aura of one creature or object to resemble that of another. You designate one target as the primary target and the other as the secondary target. Effects that would detect auras on the primary target instead detect the same types of auras from the secondary target. A creature reading the aura can attempt to disbelieve the illusion. You can Dismiss the spell from up to a mile away.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "N6eFdrrSCUkH7776"
-        },
-        {
-          "name": "Nondetection (At Will) (Self Only)",
-          "type": "spell",
-          "level": 3,
-          "heightenedLevel": 7,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "10 minutes",
-          "duration": "8 hours",
-          "range": "touch",
-          "area": "",
-          "targets": "self",
-          "save": "",
-          "description": "<p>You erect protective wards that make the target difficult to detect via magic. Nondetection attempts to counteract all detection, revelation, and scrying divinations made against the target or the target's gear throughout the duration, counting cantrips as 1st-rank spells for this purpose. Successfully counteracting a divination that targets an area or multiple targets negates the effects only for nondetection's target.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "tqRZXY6ERk4h1lPa"
-        },
-        {
           "name": "Paralyze",
           "type": "spell",
           "level": 3,
@@ -529,6 +460,30 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "rlKvuY2DemD12y1Z"
+        },
+        {
+          "name": "Veil of Privacy (at will; self only)",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "8 hours",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature or object",
+          "save": "",
+          "description": "<p>You erect protective wards that make the target difficult to detect via magic. <em>Veil of privacy</em> attempts to counteract all detection, revelation, and scrying effects used against the target or the target's gear throughout the duration, counting cantrips as 1st-rank spells for this purpose. Successfully counteracting a spell that targets an area or multiple targets negates the effects for only <em>veil of privacy's</em> target.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "tqRZXY6ERk4h1lPa"
         }
       ],
       "lv8spells": [],
@@ -557,13 +512,13 @@
           "id": "5HWYviVnFwe8jQm3"
         },
         {
-          "name": "Create Undead (No Secondary Caster Required)",
+          "name": "Create Undead (no secondary caster required)",
           "type": "ritual",
           "level": 2,
           "heightenedLevel": 2,
           "timesPrepared": 1,
           "traits": [
-            "evil"
+            "unholy"
           ],
           "castingTime": "1 day",
           "duration": "",
@@ -571,9 +526,9 @@
           "area": "",
           "targets": "1 dead creature",
           "save": "",
-          "description": "<p>You transform the target into an undead creature with a level up to that allowed in Table 7-1. There are many versions of this ritual, each specific to a particular type of undead (one ritual for all zombies, one for skeletons, one for ghouls, and so on), and the rituals that create rare undead are also rare. Some forms of undead, such as liches, form using their own unique methods and can't be created with a version of <em>create undead</em>.</p>\n<h2>Table 7-1: Creatures Creation Rituals</h2>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Creature Level</th>\n<th>Spell Rank Required</th>\n<th>Cost</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>-1 or 0</td>\n<td>2</td>\n<td>15 gp</td>\n</tr>\n<tr>\n<td>1</td>\n<td>2</td>\n<td>60 gp</td>\n</tr>\n<tr>\n<td>2</td>\n<td>3</td>\n<td>105 gp</td>\n</tr>\n<tr>\n<td>3</td>\n<td>3</td>\n<td>180 gp</td>\n</tr>\n<tr>\n<td>4</td>\n<td>4</td>\n<td>300 gp</td>\n</tr>\n<tr>\n<td>5</td>\n<td>4</td>\n<td>480 gp</td>\n</tr>\n<tr>\n<td>6</td>\n<td>5</td>\n<td>750 gp</td>\n</tr>\n<tr>\n<td>7</td>\n<td>5</td>\n<td>1,080 gp</td>\n</tr>\n<tr>\n<td>8</td>\n<td>6</td>\n<td>1,500 gp</td>\n</tr>\n<tr>\n<td>9</td>\n<td>6</td>\n<td>2,100 gp</td>\n</tr>\n<tr>\n<td>10</td>\n<td>7</td>\n<td>3,000 gp</td>\n</tr>\n<tr>\n<td>11</td>\n<td>7</td>\n<td>4,200 gp</td>\n</tr>\n<tr>\n<td>12</td>\n<td>8</td>\n<td>6,000 gp</td>\n</tr>\n<tr>\n<td>13</td>\n<td>8</td>\n<td>9,000 gp</td>\n</tr>\n<tr>\n<td>14</td>\n<td>9</td>\n<td>13,500 gp</td>\n</tr>\n<tr>\n<td>15</td>\n<td>9</td>\n<td>19,500 gp</td>\n</tr>\n<tr>\n<td>16</td>\n<td>10</td>\n<td>30,000 gp</td>\n</tr>\n<tr>\n<td>17</td>\n<td>10</td>\n<td>45,000 gp</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Critical Success</strong> The target becomes an undead creature of the appropriate type. If it's at least 4 levels lower than you, you can make it a minion. This gives it the minion trait, meaning it can use 2 actions when you command it, and commanding it is a single action that has the auditory and concentrate traits. You can have a maximum of four minions under your control. If it's intelligent and doesn't become a minion, the undead is helpful to you for awakening it, though it's still a horrid and evil creature. If it's unintelligent and doesn't become a minion, you can give it one simple command. It pursues that goal single-mindedly, ignoring any of your subsequent commands.</p>\n<p><strong>Success</strong> As critical success, except an intelligent undead that doesn't become your minion is only friendly to you, and an unintelligent undead that doesn't become your minion leaves you alone unless you attack it. It marauds the local area rather than following your command.</p>\n<p><strong>Failure</strong> You fail to create the undead.</p>\n<p><strong>Critical Failure</strong> You create the undead, but its soul, tortured by your foul necromancy, is full of nothing but hatred for you. It attempts to destroy you.</p>",
+          "description": "<p>You transform the target into an undead creature with a level up to that allowed in the Creature Creation Rituals table. There are many versions of this ritual, each specific to a particular type of undead (one ritual for all zombies, one for skeletons, one for ghouls, and so on), and the rituals that create rare undead are also rare. Some forms of undead, such as liches, form using their own unique methods and can't be created with a version of <em>create undead</em>.</p><hr /><p><strong>Critical Success</strong> The target becomes an undead creature of the appropriate type. If it's at least 4 levels lower than you, you can make it a minion. This gives it the minion trait, meaning it can use 2 actions when you command it, and commanding it is a single action that has the auditory and concentrate traits. You can have a maximum of four minions under your control. If it's intelligent and doesn't become a minion, the undead is helpful to you for awakening it, though it's still a horrid and evil creature. If it's unintelligent and doesn't become a minion, you can give it one simple command. It pursues that goal single-mindedly, ignoring any of your subsequent commands.</p>\n<p><strong>Success</strong> As critical success, except an intelligent undead that doesn't become your minion is only friendly to you, and an unintelligent undead that doesn't become your minion leaves you alone unless you attack it. It marauds the local area rather than following your command.</p>\n<p><strong>Failure</strong> You fail to create the undead.</p>\n<p><strong>Critical Failure</strong> You create the undead, but its soul, tortured by your foul necromancy, is full of nothing but hatred for you. It attempts to destroy you.</p><h2>Creatures Creation Rituals</h2><table class=\"pf2e remaster\"><thead><tr><th>Creature Level</th><th>Spell Rank Required</th><th>Cost</th></tr></thead><tbody><tr><td>-1 or 0</td><td>2</td><td>15 gp</td></tr><tr><td>1</td><td>2</td><td>60 gp</td></tr><tr><td>2</td><td>3</td><td>105 gp</td></tr><tr><td>3</td><td>3</td><td>180 gp</td></tr><tr><td>4</td><td>4</td><td>300 gp</td></tr><tr><td>5</td><td>4</td><td>480 gp</td></tr><tr><td>6</td><td>5</td><td>750 gp</td></tr><tr><td>7</td><td>5</td><td>1,080 gp</td></tr><tr><td>8</td><td>6</td><td>1,500 gp</td></tr><tr><td>9</td><td>6</td><td>2,100 gp</td></tr><tr><td>10</td><td>7</td><td>3,000 gp</td></tr><tr><td>11</td><td>7</td><td>4,200 gp</td></tr><tr><td>12</td><td>8</td><td>6,000 gp</td></tr><tr><td>13</td><td>8</td><td>9,000 gp</td></tr><tr><td>14</td><td>9</td><td>13,500 gp</td></tr><tr><td>15</td><td>9</td><td>19,500 gp</td></tr><tr><td>16</td><td>10</td><td>30,000 gp</td></tr><tr><td>17</td><td>10</td><td>45,000 gp</td></tr></tbody></table>",
           "cast": false,
-          "cost": "black onyx, see Table 7-1",
+          "cost": "black onyx, see Creature Creation Rituals table",
           "primaryCheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
           "secondaryCasters": 1,
           "secondaryChecks": "Religion",

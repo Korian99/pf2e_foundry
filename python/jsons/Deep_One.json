@@ -1,0 +1,341 @@
+{
+  "initiative": 0,
+  "initiativebonus": 7,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Deep One",
+  "type": "Creature",
+  "level": 1,
+  "traits": [
+    "Common",
+    "Medium",
+    "Amphibious",
+    "Humanoid"
+  ],
+  "source": "Pathfinder Monster Core 2",
+  "senses": [
+    "Darkvision",
+    "Wavesense 30ft imprecise"
+  ],
+  "perception": {
+    "value": 7,
+    "note": "Darkvision, Wavesense 30ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo",
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 4,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 4,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 1
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Pressurized",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A deep one is immune to damage and other negative effects from changes in water pressure.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 4,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 24,
+    "max": 24,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "type": "cold",
+      "value": 2
+    },
+    {
+      "type": "piercing",
+      "value": 3
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Endless",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A deep one doesn't age and is immune to spells and other effects that inflict magical aging. Unless killed, a deep one lives forever.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, swim 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 7,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+3)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 7,
+      "traits": [
+        "agile"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+3",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+3)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Fervent Frenzy",
+      "actions": 3,
+      "traits": [],
+      "description": "<p>The deep one makes two claw Strikes and one jaws Strike in any order. If the target creature is currently frightened by a deep one's Share Devotion ability, it's Off-Guard against these attacks. The deep one becomes Clumsy 1 until the start of their next turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Share Devotion",
+      "actions": 2,
+      "traits": [
+        "concentrate",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>The deep one fills their enemies' minds with terrible hallucinations of the Outer Gods. All enemy creatures within a 30ft Type:emanation must attempt a DC 17 Will Saving Throw save; regardless of the result, a creature is temporarily immune to Share Devotion for 24 hours.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2.</p>\n<p><strong>Critical Failure</strong> As failure, plus Dazzled for as long as it's frightened.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Occult Innate Spells",
+      "type": "innate",
+      "bonus": 6,
+      "dc": 14,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 1,
+      "cantrips": [
+        {
+          "name": "Daze",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental",
+            "nonlethal"
+          ],
+          "castingTime": "2",
+          "duration": "1 round",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "Basic will",
+          "description": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals 1d6 mental damage, with a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "WUGLhaYpsIekwdLG"
+        }
+      ],
+      "lv1spells": [
+        {
+          "name": "Hydraulic Push",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature or unattended object",
+          "save": "",
+          "description": "<p>You call forth a powerful blast of pressurized water that bludgeons the target and knocks it back. Make a ranged spell attack roll.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes 6d6 bludgeoning damage and is knocked back 10 feet.</p>\n<p><strong>Success</strong> The target takes 3d6 bludgeoning damage and is knocked back 5 feet.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The bludgeoning damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "SogGMTve9dXVU8HM"
+        }
+      ],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Society, DC 15"
+}

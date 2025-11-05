@@ -1,0 +1,233 @@
+{
+  "initiative": 0,
+  "initiativebonus": 11,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Kuribu",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Common",
+    "Small",
+    "Angel",
+    "Celestial",
+    "Holy"
+  ],
+  "source": "Pathfinder Monster Core 2",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 11,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Diabolic",
+    "Draconic",
+    "Empyrean"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [
+    {
+      "name": "Composite Shortbow",
+      "quantity": 1,
+      "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>",
+      "level": 1,
+      "price": "14 gp",
+      "traits": [
+        "deadly-d10",
+        "propulsive"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 45,
+    "max": 45,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "unholy",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Immobilizing Ambush",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The kuribu is disguised as a statue</p>\n<p><strong>Trigger</strong> A creature moves within 60 feet of the kuribu</p><hr /><p><strong>Effect</strong> The kuribu springs into action by making a shortbow Strike against the triggering creature. If the Strike hits, the creature is pinned by the arrow, as described in the bow critical specialization.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sentinel's Aura",
+      "actions": null,
+      "traits": [
+        "aura",
+        "divine"
+      ],
+      "description": "<p>30 feet. The kuribu and any other creature in the aura defending the same holy site gain a +1 status bonus to AC. This aura is suppressed while Statue is in effect.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, fly 25ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "holy",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+6)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Composite Shortbow",
+      "bonus": 11,
+      "traits": [
+        "deadly-d10",
+        "propulsive",
+        "reload-0"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+5",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+5)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Blessed Aspect",
+      "actions": 2,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p>The kuribu's face transforms, and their holy countenance unleashes an attack based on the aspect the kuribu chooses. The kuribu can't use Blessed Aspect again for 1d4 rounds. They can revert back to their humanoid appearance at any time, but they still have to wait before using Blessed Aspect again.</p><ul><li><strong>Eagle</strong> The kuribu unleashes a disorienting screech in a 15ft Type:cone that deals 2d10 Sonic Damage damage with a Basic DC 19 Will Saving Throw save. A creature that critically fails is also Stunned 1.</li><li><strong>Lion</strong> The kuribu makes a powerful jaws Strike against an adjacent creature. The attack has a +12 attack modifer and deals 4d6 Piercing Damage]{4d6 piercing damage plus 1d4 persistent bleed damage}.</li><li><p><strong>Ox</strong> The kuribu charges into a creature. The kuribu Flies or Strides. At the end of their movement, the kuribu crashes into one adjacent creature, dealing 4d6 Bludgeoning Damage damage to it with a Basic DC 17 Fortitude Saving Throw save. If the target critically fails, it's also knocked Prone.</p></li></ul>",
+      "collapsed": false
+    },
+    {
+      "name": "Statue",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p>Until the next time they act, the kuribu appears to be a statue. They have an automatic result of 29 on Deception checks and DCs to pass as a statue.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 18"
+}

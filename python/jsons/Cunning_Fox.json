@@ -15,7 +15,7 @@
     "Incorporeal",
     "Spirit"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision"
   ],
@@ -28,7 +28,7 @@
   "languages": [
     "Common",
     "Fey",
-    "tongues"
+    "Truespeech"
   ],
   "skills": [
     {
@@ -87,7 +87,7 @@
         "mental",
         "primal"
       ],
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The spirit guide forms a bond with a mortal creature. While the bond exists, the spirit guide increases their current and maximum Hit Points by 10, gains a +2 status bonus to their attack and damage rolls, and can communicate telepathically with the bonded mortal as long as the two beings are on the same plane.</p>\n<p>The spirit guide can only be bonded with one mortal at a time, and they can take this action again to end the bond or to form a new bond (which also ends the old bond). The bond also ends if the spirit guide or the mortal dies.</p>\n<p>This bond strengthens the spirit guide's connection to the Material Plane. While bonded, the spirit guide loses the incorporeal and spirit traits, loses their immunities and resistances, and changes their Strikes to deal the appropriate physical damage (typically piercing or slashing) instead of force damage.</p>",
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The spirit guide forms a bond with a mortal creature. While the bond exists, the spirit guide increases their current and maximum Hit Points by 10, gains a +2 status bonus to their attack and damage rolls, and can communicate telepathically with the bonded mortal as long as the two beings are on the same plane.</p>\n<p>The spirit guide can only be bonded with one mortal at a time, and they can take this action again to end the bond or to form a new bond (which also ends the old bond). The bond also ends if the spirit guide or the mortal dies.</p>\n<p>This bond strengthens the spirit guide's connection to the Universe. While bonded, the spirit guide loses the incorporeal and spirit traits, loses their immunities and resistances, and changes their Strikes to deal the appropriate physical damage (typically piercing or slashing) instead of force damage.</p>",
       "collapsed": false
     }
   ],
@@ -117,13 +117,32 @@
   },
   "savenote": "",
   "hp": {
-    "value": 14,
-    "max": 14,
+    "value": 15,
+    "max": 15,
     "note": "",
     "modifications": []
   },
-  "immunities": [],
-  "resistances": [],
+  "immunities": [
+    "bleed",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "force",
+        "ghost-touch",
+        "spirit"
+      ],
+      "type": "all-damage",
+      "value": 2
+    }
+  ],
   "weaknesses": [],
   "defensiveAbilities": [],
   "speed": "40 ft, ",
@@ -134,8 +153,7 @@
       "bonus": 6,
       "traits": [
         "finesse",
-        "magical",
-        "unarmed"
+        "magical"
       ],
       "damageRolls": [
         {
@@ -162,8 +180,7 @@
       "traits": [
         "agile",
         "finesse",
-        "magical",
-        "unarmed"
+        "magical"
       ],
       "damageRolls": [
         {
@@ -189,7 +206,7 @@
       "name": "Bonded Strike",
       "actions": 2,
       "traits": [],
-      "description": "<p><strong>Requirements</strong> The spirit guide is currently Bonded with a Mortal</p>\n<hr />\n<p><strong>Effect</strong> The spirit guide makes a jaws Strike. If this attack hits, the bonded mortal can spend their reaction to Strike the same target.</p>",
+      "description": "<p><strong>Requirements</strong> The spirit guide is currently Bonded with a Mortal</p><hr /><p><strong>Effect</strong> The spirit guide makes a jaws Strike. If this attack hits, the bonded mortal can spend their reaction to Strike the same target.</p>",
       "collapsed": false
     }
   ],
@@ -220,13 +237,13 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You ask for divine guidance, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n<p></p>\n<p></p>",
+          "description": "<p>You ask for the guidance of supernatural entities, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n<p></p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "hx02aLswhiM93IBb"
+          "id": "Vyt06mptvZrDcWSU"
         },
         {
           "name": "Read Aura",
@@ -245,13 +262,13 @@
           "area": "",
           "targets": "1 object",
           "save": "",
-          "description": "<p>You focus on the target object, opening your mind to perceive magical auras. When the casting is complete, you know whether that item is magical, and if it is, you learn the school of magic.</p>\n<p>If the object is illusory, you detect this only if the effect's level is lower than the rank of your read aura spell.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to 10 objects.</p>\n<p><strong>Heightened (6th)</strong> You can target any number of objects.</p>",
+          "description": "<p>You focus on the target object, opening your mind to perceive magical auras. When the casting is complete, you know whether that item is magical. You or anyone you advise about the aura gains a +2 circumstance bonus to Identify Magic on the item. If the object is illusory, you detect this only if the effect's rank is lower than the rank of your <em>read aura</em> spell.</p>\n<p></p><hr /><p><strong>Heightened (3rd)</strong> You can target up to 10 objects.</p>\n<p><strong>Heightened (6th)</strong> You can target any number of objects.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "NnMOY6uBk1i1F9p2"
+          "id": "r7MDVbmDCiePImis"
         },
         {
           "name": "Stabilize",
@@ -271,16 +288,40 @@
           "area": "",
           "targets": "1 dying creature",
           "save": "",
-          "description": "<p>Vitality energy shuts death's door. The target loses the Dying condition, though it remains Unconscious at 0 Hit Points.</p>",
+          "description": "<p>Life energy shuts death's door. The target loses the Dying condition, though it remains Unconscious at 0 Hit Points.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "KxMaIt5GcxIhfs7Z"
+          "id": "8dnUv0rEwFruT6bW"
         }
       ],
       "lv1spells": [
+        {
+          "name": "Cleanse Cuisine",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "10 feet",
+          "area": "",
+          "targets": "1 cubic foot",
+          "save": "",
+          "description": "<p>You transform all food and beverages in the area into delicious fare, changing water into wine or another fine beverage, or enhancing the food's taste and ingredients to make it a gourmet treat. You can also choose to remove all toxins and contaminations from the food. This spell doesn't prevent future contamination, natural decay, or spoilage, nor does it make the food any more nutritious.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> Add another cubic foot to the area, which must be contiguous with the rest.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "07L2jkAwsKGKQSa7"
+        },
         {
           "name": "Detect Poison",
           "type": "spell",
@@ -304,31 +345,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Yahd7iC2bkKYgsnp"
-        },
-        {
-          "name": "Purify Food and Drink",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 1,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "touch",
-          "area": "",
-          "targets": "1 cubic foot of contaminated food or water",
-          "save": "",
-          "description": "<p>You remove toxins and contaminations from food and drink, making them safe to consume. This spell doesn't prevent future contamination, natural decay, or spoilage. One cubic foot of liquid is roughly 8 gallons.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "vCylTV65b4CgTBZl"
+          "id": "CYfy02hxh33ILl6U"
         }
       ],
       "lv2spells": [],
@@ -355,13 +372,13 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "JoiIxy3JSfH8cBn8"
+          "id": "2ucjfU3jAUrQrYRI"
         }
       ],
       "lv4spells": [],
       "lv5spells": [
         {
-          "name": "Tongues (Constant)",
+          "name": "Truespeech (Constant)",
           "type": "spell",
           "level": 5,
           "heightenedLevel": 5,
@@ -382,7 +399,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "pfRf6x3WGakhgEUH"
+          "id": "VPGtZKPfghEiBM5N"
         }
       ],
       "lv6spells": [],

@@ -11,10 +11,9 @@
   "traits": [
     "Common",
     "tiny",
-    "Chaotic",
     "Fey"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "tremorsense (imprecise) within their entire bound granary or storeroom"
   ],
@@ -105,20 +104,23 @@
   },
   "savenote": "",
   "hp": {
-    "value": 59,
-    "max": 59,
+    "value": 60,
+    "max": 60,
     "note": "",
     "modifications": []
   },
   "immunities": [],
   "resistances": [
     {
+      "doubleVs": [],
+      "exceptions": [],
       "type": "fire",
       "value": 5
     }
   ],
   "weaknesses": [
     {
+      "exceptions": [],
       "type": "cold-iron",
       "value": 5
     }
@@ -141,18 +143,17 @@
       "traits": [
         "agile",
         "finesse",
-        "magical",
-        "unarmed"
+        "magical"
       ],
       "damageRolls": [
         {
-          "roll": "2d6+2",
+          "roll": "2d6+3",
           "type": "slashing"
         }
       ],
       "critRolls": [
         {
-          "roll": "(2d6+2)*2",
+          "roll": "(2d6+3)*2",
           "type": "slashing"
         }
       ],
@@ -202,16 +203,16 @@
           "area": "",
           "targets": "1 creature",
           "save": "Basic will",
-          "description": "<p>You cloud the target's mind and daze it with a mental jolt. The jolt deals mental damage equal to your spellcasting ability modifier; the target must attempt a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
+          "description": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals 1d6 mental damage, with a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "5VGhRPWEHdtDTfQ9"
+          "id": "nKyYqxJVjfaWcp3S"
         },
         {
-          "name": "Produce Flame",
+          "name": "Ignition",
           "type": "cantrip",
           "level": 1,
           "heightenedLevel": 1,
@@ -228,19 +229,44 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and (@item.level)d4 Persistent,fire Damage damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "description": "<p>You snap your fingers and point at a target, which begins to smolder. Make a spell attack roll against the target's AC, dealing 2d4 fire damage on a hit. If the target is within your melee reach, you can choose to make a melee spell attack with the flame instead of a ranged spell attack, which increases all the spell's damage dice to d6s.</p><hr /><p><strong>Critical Success</strong> The target takes double damage and 1d4 persistent fire damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p><hr /><p><strong>Heightened (+1)</strong> The initial damage increases by 1d4 and the persistent fire damage on a critical hit increases by 1d4.</p>\n<p>(@item.rank)d4 Persistent,fire Damage{Scaling Persistent Fire Damage}</p>\n<p>(@item.rank)d6 Persistent,fire Damage{Scaling Persistent Fire Damage (Melee)}</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "HVtPIF7OuBHS3HCi"
+          "id": "GZWlxsdMlQTPH5fd"
         }
       ],
-      "lv1spells": [],
+      "lv1spells": [
+        {
+          "name": "Cleanse Cuisine (At Will)",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "10 feet",
+          "area": "",
+          "targets": "1 cubic foot",
+          "save": "",
+          "description": "<p>You transform all food and beverages in the area into delicious fare, changing water into wine or another fine beverage, or enhancing the food's taste and ingredients to make it a gourmet treat. You can also choose to remove all toxins and contaminations from the food. This spell doesn't prevent future contamination, natural decay, or spoilage, nor does it make the food any more nutritious.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> Add another cubic foot to the area, which must be contiguous with the rest.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "kKJfqvyeuaJY3F2B"
+        }
+      ],
       "lv2spells": [
         {
-          "name": "Burning Hands",
+          "name": "Breathe Fire",
           "type": "spell",
           "level": 1,
           "heightenedLevel": 2,
@@ -256,37 +282,13 @@
           "area": "15ft cone",
           "targets": "",
           "save": "Basic reflex",
-          "description": "<p>Gouts of flame rush from your hands. You deal 2d6 fire damage to creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "description": "<p>A gout of flame sprays from your mouth. You deal 2d6 fire damage to creatures in the area with a basic Reflex save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "IiCzgnvX0SaaZkGM"
-        },
-        {
-          "name": "Purify Food and Drink (At Will)",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 2,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "touch",
-          "area": "",
-          "targets": "1 cubic foot of contaminated food or water",
-          "save": "",
-          "description": "<p>You remove toxins and contaminations from food and drink, making them safe to consume. This spell doesn't prevent future contamination, natural decay, or spoilage. One cubic foot of liquid is roughly 8 gallons.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "Wzi3fuQeULw68X2T"
+          "id": "exAboMpWhZkExwWX"
         },
         {
           "name": "Augury",
@@ -305,16 +307,16 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You gain a vague glimpse of the future. During the casting of this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveals the GM's best guess among the following outcomes:</p>\n<ul>\n<li><strong>Weal</strong> The results will be good.</li>\n<li><strong>Woe</strong> The results will be bad.</li>\n<li><strong>Weal</strong> and Woe The results will be a mix of good and bad.</li>\n<li><strong>Nothing</strong> There won't be particularly good or bad results.</li>\n</ul>\n<p>The GM rolls a secret DC 6 Flat . On a failure, the result is always \"nothing.\" This makes it impossible to tell whether a \"nothing\" result is accurate. If anyone asks about the same topic as the first casting of augury during an additional casting, the GM uses the secret roll result from the first casting. If circumstances change, though, it's possible to get a different result.</p>",
+          "description": "<p>You gain a vague glimpse of the future. During the casting of this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveal the GM's best guess among the following outcomes: good, bad, mixed (the results will be a mix of good and bad), and nothing (there won't be particularly good or bad results).</p>\n<p>The GM rolls a secret DC 6 Flat . On a failure, the result is always \"nothing.\" This makes it impossible to tell whether a \"nothing\" result is accurate. If anyone asks about the same topic as the first casting of <em>augury</em> during an additional casting, the GM uses the secret roll result from the first casting. If circumstances change, though, it's possible to get a different result.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "6RAfIgCFXPoYN9kW"
+          "id": "sTy0Pey96rLs5ISb"
         },
         {
-          "name": "Flaming Sphere",
+          "name": "Floating Flame",
           "type": "spell",
           "level": 2,
           "heightenedLevel": 2,
@@ -327,16 +329,16 @@
           "castingTime": "2",
           "duration": "Sustained up to 1 minute",
           "range": "30 feet",
-          "area": "",
+          "area": "5ft square",
           "targets": "",
-          "save": "reflex",
-          "description": "<p>You create a sphere of flame in a square within range. The sphere must be supported by a solid surface, such as a stone floor. The sphere deals 3d6 fire damage to each creature in the square where it first appears; each creature must attempt a basic Reflex save. On subsequent rounds, the first time you Sustain this Spell, you can leave the sphere in its square or roll it to another square within range. It deals 3d6 fire damage (basic Reflex save) to each creature in that square.</p>\n<p>Creatures that succeed at their save take no damage (instead of half).</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
+          "save": "Basic reflex",
+          "description": "<p>You create a fire that burns without fuel and moves to your commands. The flame deals 3d6 fire damage to each creature in the square in which it appears, with a basic Reflex save. When you Sustain this spell, you can levitate the flame up to 10 feet. It then deals damage to each creature whose space it shared at any point during its flight. This uses the same damage and save, and you roll the damage once each time you Sustain. A given creature can take damage from floating flame only once per round.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "6RZ5lgUIVQhZDG1z"
+          "id": "McPdEsZt0sO4BRXs"
         }
       ],
       "lv3spells": [],
@@ -364,7 +366,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "A28wmKf9OtBHuZYI"
+          "id": "6PvZhm2r2ZufT11U"
         }
       ],
       "lv5spells": [],

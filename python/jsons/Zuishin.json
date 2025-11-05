@@ -11,12 +11,10 @@
   "traits": [
     "Common",
     "Medium",
-    "Good",
     "Kami",
-    "Lawful",
     "Spirit"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision"
   ],
@@ -28,7 +26,8 @@
   },
   "languages": [
     "Common",
-    "telepathy 100 feet"
+    "Empyrean",
+    "Telepathy 100 feet"
   ],
   "skills": [
     {
@@ -97,11 +96,10 @@
       "name": "Composite Longbow",
       "quantity": 1,
       "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>",
-      "level": 0,
+      "level": 1,
       "price": "20 gp",
       "traits": [
         "deadly-d10",
-        "magical",
         "propulsive",
         "volley-30"
       ]
@@ -114,7 +112,6 @@
       "price": "2 gp",
       "traits": [
         "deadly-d8",
-        "magical",
         "two-hand-d10",
         "versatile-p"
       ]
@@ -165,8 +162,8 @@
   },
   "savenote": "",
   "hp": {
-    "value": 200,
-    "max": 200,
+    "value": 180,
+    "max": 180,
     "note": "",
     "modifications": []
   },
@@ -174,13 +171,14 @@
   "resistances": [],
   "weaknesses": [
     {
+      "exceptions": [],
       "type": "cold-iron",
       "value": 10
     }
   ],
   "defensiveAbilities": [
     {
-      "name": "Attack of Opportunity",
+      "name": "Reactive Strike",
       "actions": -1,
       "traits": [],
       "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
@@ -191,10 +189,11 @@
   "strikes": [
     {
       "type": "melee",
-      "name": "Katana",
+      "name": "Holy Katana",
       "bonus": 23,
       "traits": [
         "deadly-d8",
+        "holy",
         "magical",
         "two-hand-d10",
         "versatile-p"
@@ -218,13 +217,13 @@
       "damageModifications": []
     },
     {
-      "type": "ranged",
-      "name": "Composite Longbow",
+      "type": "melee",
+      "name": "Holy Composite Longbow",
       "bonus": 24,
       "traits": [
         "deadly-d10",
+        "holy",
         "magical",
-        "range-increment-100",
         "reload-0",
         "volley-30"
       ],
@@ -241,7 +240,7 @@
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -255,17 +254,16 @@
         "divine",
         "healing"
       ],
-      "description": "<p>The zuishin blesses an arrow with healing magic and makes a <em>composite longbow</em> Strike against an ally. If it hits, rather than dealing damage, the arrow is infused with the effects of one of the following of the zuishin's innate divine spells: Breath of Life, Heal, Cleanse Affliction, or Sure Footing. The zuishin must have the spell available to cast, and using this ability expends the spell.</p>\n<p>If the zuishin rolls a failure on the attack roll against an ally who's aware of the arrow and wants to be hit, the attack hits, but on a critical failure, it still misses.</p>",
+      "description": "<p>The zuishin blesses an arrow with healing magic. They expend a Breath of Life, Cleanse Affliction, Heal, or Sure Footing spell and make a composite longbow Strike against an ally.</p>\n<p>A critical failure has no effect, but on any other result the ally is affected by the spell rather than taking damage from the Strike.</p>",
       "collapsed": false
     },
     {
       "name": "Holy Weaponry",
       "actions": null,
       "traits": [
-        "divine",
-        "good"
+        "divine"
       ],
-      "description": "<p>Any weapon becomes a <em>Striking Holy</em> weapon while the zuishin wields it. A zuishin creates arrows out of nothing as part of their attacks with any bow they wield.</p>",
+      "description": "<p>Any weapon becomes a <em>striking Holy</em> weapon while the zuishin wields it. A zuishin creates arrows out of nothing as part of their attacks with any bow they wield.</p>",
       "collapsed": false
     }
   ],
@@ -282,57 +280,7 @@
       "autoHeightenLevel": 5,
       "cantrips": [],
       "lv1spells": [],
-      "lv2spells": [
-        {
-          "name": "Detect Alignment (At Will) (Evil Only)",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 2,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "detection",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "",
-          "area": "30ft emanation",
-          "targets": "",
-          "save": "",
-          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "fCrkAswBNGcLQ2S5"
-        },
-        {
-          "name": "Shield Other",
-          "type": "spell",
-          "level": 2,
-          "heightenedLevel": 2,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "10 minutes",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>You forge a temporary link between the target's life essence and your own. The target takes half damage from all effects that deal Hit Point damage, and you take the remainder of the damage. When you take damage through this link, you don't apply any resistances, weaknesses, or other abilities you have to that damage; you simply take that amount of damage. The spell ends if the target is ever more than 30 feet away from you. If either you or the target is reduced to 0 Hit Points, any damage from this spell is resolved and then the spell ends.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "Gl2ryqSicX0o20FI"
-        }
-      ],
+      "lv2spells": [],
       "lv3spells": [
         {
           "name": "Heal",
@@ -351,13 +299,13 @@
           "area": "",
           "targets": "1 willing living creature or 1 undead",
           "save": "Basic fortitude",
-          "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p>◆◆ <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p>◆◆◆ <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse vital energy in a 30ft Emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "bkOHQzbFx2dGl48Y"
+          "id": "VyUcavcOWXQO7v8h"
         },
         {
           "name": "Heal",
@@ -376,18 +324,42 @@
           "area": "",
           "targets": "1 willing living creature or 1 undead",
           "save": "Basic fortitude",
-          "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p>◆◆ <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p>◆◆◆ <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse vital energy in a 30ft Emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "bkOHQzbFx2dGl48Y"
+          "id": "VyUcavcOWXQO7v8h"
+        },
+        {
+          "name": "Share Life",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You forge a temporary link between the target's life essence and your own. The target takes half damage from all effects that deal Hit Point damage, and you take the remainder of the damage. When you take damage through this link, you don't apply any resistances, weaknesses, or other abilities you have to that damage; you simply take that amount of damage. The spell ends if the target is ever more than 30 feet away from you. If either you or the target is reduced to 0 Hit Points, any damage from this spell is resolved and then the spell ends.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "055T7joGPg4hHqUJ"
         }
       ],
       "lv4spells": [
         {
-          "name": "Remove Paralysis",
+          "name": "Cleanse Affliction",
           "type": "spell",
           "level": 2,
           "heightenedLevel": 4,
@@ -401,20 +373,20 @@
           "duration": "",
           "range": "touch",
           "area": "",
-          "targets": "1 creature",
+          "targets": "1 willing creature",
           "save": "",
-          "description": "<p>A surge of energy frees a Paralyzed creature. You can attempt to counteract a single effect imposing the Paralyzed condition on the target. This does not cure someone who is Paralyzed from some natural state or effect, such as paralysis caused by non-magical wounds or toxins.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The spell's range increases to 30 feet, and you can target up to 10 creatures.</p>",
+          "description": "<p>Gentle restorative magic pushes back the effects of toxins and more complex maladies. Choose an affliction on the target, such as a curse, disease, or poison. If it has advanced past stage one, reduce the stage by one. This reduction can be applied only once to a given case of an affliction, with the case ending when it's completely cured. Although the reduction can't occur again, heightened versions of this spell attempt to counteract with each casting.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> Attempt to counteract the affliction if it is a disease or poison.</p>\n<p><strong>Heightened (4th)</strong> Attempt to counteract the affliction if it is a curse, disease, or poison.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "W6hraNBBq8x4vq4j"
+          "id": "JV8j1lBlU1ED3kBi"
         },
         {
-          "name": "Remove Disease",
+          "name": "Sure Footing",
           "type": "spell",
-          "level": 3,
+          "level": 2,
           "heightenedLevel": 4,
           "timesPrepared": 1,
           "traits": [
@@ -422,19 +394,19 @@
             "healing",
             "manipulate"
           ],
-          "castingTime": "10 minutes",
+          "castingTime": "2",
           "duration": "",
           "range": "touch",
           "area": "",
-          "targets": "1 creature",
+          "targets": "1 willing creature",
           "save": "",
-          "description": "<p>Healing magic purges disease from a creature's body. You attempt to counteract one disease afflicting the target.</p>",
+          "description": "<p>You free the target's limbs from ailments that impede mobility. Attempt to counteract an effect of your choice imposing one of these conditions on the target: Clumsy, Grabbed, or Paralyzed. If you didn't counteract the effect, but you would have if its counteract rank were 2 lower, instead suppress the effect until the beginning of your next turn. The effect's duration doesn't elapse while it's suppressed.</p>\n<p>This spell can't counteract or suppress curses, diseases, or conditions that are part of the target's normal state.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> Add Immobilized, Slowed, and Restrained to the list of conditions.</p>\n<p><strong>Heightened (6th)</strong> Add Petrified to the list of conditions.</p>\n<p><strong>Heightened (8th)</strong> Add Stunned to the list of conditions.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "SkOfGvoF8kFYyvCZ"
+          "id": "dsbD9BC6mo5iRHPW"
         }
       ],
       "lv5spells": [
@@ -455,13 +427,13 @@
           "area": "",
           "targets": "1 willing living creature or 1 undead",
           "save": "Basic fortitude",
-          "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p>◆◆ <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p>◆◆◆ <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse vital energy in a 30ft Emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "omU2aDmFJVLH1sy9"
+          "id": "2OoSrIEHijgfc9W6"
         },
         {
           "name": "Dispel Magic",
@@ -485,10 +457,10 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "I91haYNrc5lhS8fu"
+          "id": "OFBXhQ7MB4TayTwN"
         },
         {
-          "name": "Dimension Door",
+          "name": "Translocate",
           "type": "spell",
           "level": 4,
           "heightenedLevel": 5,
@@ -504,16 +476,16 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "YD2UyCsPut2sXDdM"
+          "id": "IQNVBlEWcQRUrhCS"
         },
         {
-          "name": "Dimension Door",
+          "name": "Translocate",
           "type": "spell",
           "level": 4,
           "heightenedLevel": 5,
@@ -529,16 +501,16 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "YD2UyCsPut2sXDdM"
+          "id": "IQNVBlEWcQRUrhCS"
         },
         {
-          "name": "Dimension Door",
+          "name": "Translocate",
           "type": "spell",
           "level": 4,
           "heightenedLevel": 5,
@@ -554,13 +526,13 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "YD2UyCsPut2sXDdM"
+          "id": "IQNVBlEWcQRUrhCS"
         },
         {
           "name": "Breath of Life",
@@ -579,13 +551,13 @@
           "area": "",
           "targets": "the triggering creature",
           "save": "",
-          "description": "<p><strong>Trigger</strong> A living creature within range would die.</p>\n<hr />\n<p>Your blessing revives a creature at the moment of its death. You prevent the target from dying and restore Hit Points to the target equal to 4d8 plus your spellcasting ability modifier. You can't use <em>breath of life</em> if the triggering effect was Disintegrate or a death effect.</p>",
+          "description": "<p><strong>Trigger</strong> A living creature within range would die.</p>\n<hr />\n<p>Your blessing revives a creature at the moment of its death. You prevent the target from dying and restore 5d8 Hit Points to the target. You can't use breath of life if the triggering effect was a death effect or an effect that leaves no remains, such as Disintegrate</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The healing increases by 1d8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "ckJPDDY6SQCpQR10"
+          "id": "PHI94vPuFnsRXquf"
         }
       ],
       "lv6spells": [],

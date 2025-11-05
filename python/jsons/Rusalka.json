@@ -12,11 +12,10 @@
     "Common",
     "Medium",
     "Aquatic",
-    "Evil",
     "Fey",
     "Water"
   ],
-  "source": "Pathfinder Bestiary 2",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Low light vision"
   ],
@@ -40,7 +39,7 @@
     },
     {
       "name": "athletics",
-      "modifier": 22,
+      "modifier": 24,
       "note": [],
       "usedAttribute": "strength",
       "modifications": []
@@ -137,12 +136,15 @@
   "immunities": [],
   "resistances": [
     {
+      "doubleVs": [],
+      "exceptions": [],
       "type": "fire",
       "value": 10
     }
   ],
   "weaknesses": [
     {
+      "exceptions": [],
       "type": "cold-iron",
       "value": 15
     }
@@ -199,7 +201,7 @@
         "mental",
         "primal"
       ],
-      "description": "<p>The rusalka cries out a compelling invitation. Each non-fey creature within a 300ft Emanation must attempt a DC 27 Will Saving Throw save. The effect lasts for 1 round, but if the rusalka uses Beckoning Call again on subsequent rounds, the duration extends by 1 round for all affected creatures. Once a creature succeeds at any save against Beckoning Call, that creature is temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is Fascinated and must spend each of its actions to move closer to the rusalka, avoiding obvious dangers. If a beckoned creature is adjacent to the rusalka, it stays still and doesn't act. If attacked by the rusalka, the creature is freed from captivation at the end of the rusalka's turn.</p>\n<p><strong>Critical Failure</strong> As failure, but if attacked by the rusalka, the creature can attempt a new save only at the start of its next turn, rather than being freed at the end of the rusalka's turn.</p>",
+      "description": "<p>The rusalka cries out a compelling invitation. Each non-fey creature within a 300ft Type:emanation must attempt a DC 29 Will Saving Throw save. The effect lasts for 1 round, but if the rusalka uses Beckoning Call again on subsequent rounds, the duration extends by 1 round for all affected creatures. Once a creature succeeds at any save against Beckoning Call, that creature is temporarily immune for 24 hours.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is Fascinated and must spend each of its actions to move closer to the rusalka, avoiding obvious dangers. If a beckoned creature is adjacent to the rusalka, it stays still and doesn't act. If attacked by the rusalka, the creature is freed from captivation at the end of the rusalka's turn.</p>\n<p><strong>Critical Failure</strong> As failure, but if attacked by the rusalka, the creature can attempt a new save only at the start of its next turn, rather than being freed at the end of the rusalka's turn.</p>",
       "collapsed": false
     },
     {
@@ -220,7 +222,7 @@
       "name": "Flowing Hair",
       "actions": 1,
       "traits": [],
-      "description": "<p>The rusalka attempts an athletics check against each Grabbed creature's Fortitude DC. The rusalka moves each creature they succeed against up to 10 feet and each creature they critically succeed against up to 20 feet. This movement must all be within reach of its tresses.</p>",
+      "description": "<p>The rusalka attempts an Athletics check against the Fortitude save of each creature they have Grabbed or Restrained by their tresses. The rusalka moves each creature they succeed against up to 10 feet and each creature they critically succeed against up to 20 feet. This movement must all be within reach of its tresses.</p>",
       "collapsed": false
     },
     {
@@ -231,7 +233,7 @@
         "mental",
         "primal"
       ],
-      "description": "<p>The rusalka touches a creature within 5 feet using their hand, stirring up memories of regret and shame. The target must attempt a DC 35 Will Saving Throw save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Sickened 1.</p>\n<p><strong>Failure</strong> The creature is Sickened 1 and Stunned 1.</p>\n<p><strong>Critical Failure</strong> The creature is Sickened 1 and Stunned 1, and it must use its first action on its next turn to Strike itself, automatically hitting.</p>",
+      "description": "<p>The rusalka touches a creature within 5 feet using their hand, stirring up memories of regret and shame. The target must attempt a DC 35 Will Saving Throw save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Sickened 1.</p>\n<p><strong>Failure</strong> The creature is sickened 1 and Stunned 1.</p>\n<p><strong>Critical Failure</strong> The creature is sickened 1, stunned 1, and it must use its first action on its next turn to Strike itself, automatically hitting.</p>",
       "collapsed": false
     },
     {
@@ -246,7 +248,7 @@
     {
       "name": "Primal Innate Spells",
       "type": "innate",
-      "bonus": 25,
+      "bonus": 27,
       "dc": 35,
       "focusPoints": {
         "current": 0,
@@ -257,14 +259,15 @@
       "lv1spells": [],
       "lv2spells": [
         {
-          "name": "Invisibility (At will)",
+          "name": "Invisibility (At Will)",
           "type": "spell",
           "level": 2,
           "heightenedLevel": 2,
           "timesPrepared": 1,
           "traits": [
             "illusion",
-            "manipulate"
+            "manipulate",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "10 minutes",
@@ -272,16 +275,16 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>Cloaked in illusion, the target becomes Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
+          "description": "<p>Illusions bend light around the target, rendering it Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "qZpXsMwmncbpw5Dw"
+          "id": "qGxtuGKOVRySglug"
         },
         {
-          "name": "Obscuring Mist (At will)",
+          "name": "Mist (At Will)",
           "type": "spell",
           "level": 2,
           "heightenedLevel": 2,
@@ -297,22 +300,22 @@
           "area": "20ft burst",
           "targets": "",
           "save": "",
-          "description": "<p>You call forth a cloud of mist. All creatures within the mist become Concealed, and all creatures outside the mist become Concealed to creatures within it. You can Dismiss the cloud.</p>",
+          "description": "<p>You call forth a cloud of mist. All creatures within the mist become Concealed, and all creatures outside the mist become concealed to creatures within it. You can Dismiss the cloud.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "AaUkJlN6zMw3tT9b"
+          "id": "WdWB65jenJ7HRKQY"
         }
       ],
       "lv3spells": [],
       "lv4spells": [],
       "lv5spells": [
         {
-          "name": "Charm (At will)",
+          "name": "Charm (At Will)",
           "type": "spell",
-          "level": 5,
+          "level": 1,
           "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
@@ -320,7 +323,8 @@
             "emotion",
             "incapacitation",
             "manipulate",
-            "mental"
+            "mental",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "1 hour",
@@ -334,10 +338,10 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "A0HFdfwZ7P5RQBJw"
+          "id": "ZHUgXbdGnIvdJGaA"
         },
         {
-          "name": "Control Water (At will)",
+          "name": "Control Water (At Will)",
           "type": "spell",
           "level": 5,
           "heightenedLevel": 5,
@@ -348,30 +352,31 @@
             "water"
           ],
           "castingTime": "2",
-          "duration": "",
+          "duration": "1 hour",
           "range": "500 feet",
           "area": "",
           "targets": "",
-          "save": "",
-          "description": "<p>By imposing your will upon the water, you can raise or lower the level of water in the chosen area by 10 feet. Water creatures in the area are subjected to the effects of Slow.</p>",
+          "save": "fortitude",
+          "description": "<p>By imposing your will upon the water, you can raise or lower the level of water in the chosen area by 10 feet. Creatures that have the water trait and that are in the area when you Cast the Spell must attempt a Fortitude save, with the effects of the Slow spell.</p>\n<p><strong>Area</strong> 50 feet long by 50 feet wide</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "vQBJ6UOCVxfLLwKL"
+          "id": "gj8a4jEmXZnHpkMp"
         }
       ],
       "lv6spells": [
         {
           "name": "Water Walk (Constant)",
           "type": "spell",
-          "level": 6,
+          "level": 2,
           "heightenedLevel": 6,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "water"
           ],
           "castingTime": "2",
           "duration": "10 minutes",
@@ -385,7 +390,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "HSgvSQ1CqyZNesYm"
+          "id": "6fcA60juNU839MBS"
         }
       ],
       "lv7spells": [],

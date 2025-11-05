@@ -5,7 +5,7 @@
   "conditions": [],
   "color": "#fff",
   "duplicateIndex": 0,
-  "name": "Melody On The Wind",
+  "name": "Melody on the Wind",
   "type": "Creature",
   "level": 10,
   "traits": [
@@ -14,7 +14,7 @@
     "Air",
     "Elemental"
   ],
-  "source": "Pathfinder Bestiary 2",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision"
   ],
@@ -33,6 +33,13 @@
       "modifier": 22,
       "note": [],
       "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "strength",
       "modifications": []
     },
     {
@@ -113,19 +120,15 @@
     {
       "name": "Hostile Duet",
       "actions": -1,
-      "traits": [
-        "auditory"
-      ],
-      "description": "<p><strong>Trigger</strong> A hostile creature within 30 feet creates an effect with the auditory trait that provides bonuses to itself or its allies</p>\n<hr />\n<p><strong>Effect</strong> The melody on the wind recreates the auditory effect, gaining the bonuses for itself and its allies as long as the original effect persists.</p>",
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A hostile creature within 30 feet creates an effect with the auditory trait that provides bonuses to itself or its allies</p><hr /><p><strong>Effect</strong> The melody on the wind recreates the effect, gaining the bonuses for itself and its allies as long as the original effect persists.</p>",
       "collapsed": false
     },
     {
       "name": "Retune",
       "actions": -1,
-      "traits": [
-        "auditory"
-      ],
-      "description": "<p><strong>Trigger</strong> The melody on the wind is targeted by a spell with the auditory trait</p>\n<hr />\n<p><strong>Effect</strong> The melody on the wind attempts to counteract the spell. If it succeeds, the spell effect is caught in a blast of wind that sweeps it back to its origin, affecting the caster. Targets of the triggering effect other than the melody on the wind are still affected normally.</p>",
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The melody on the wind is targeted by a spell that has the auditory trait</p><hr /><p><strong>Effect</strong> The melody on the wind attempts to counteract the spell with a Performance check. If it succeeds, the spell effect is caught in a blast of wind that sweeps it back to its origin, affecting the caster. Targets of the triggering effect other than the melody on the wind are still affected normally.</p>",
       "collapsed": false
     }
   ],
@@ -160,12 +163,10 @@
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Solid Refrain",
       "bonus": 23,
-      "traits": [
-        "range-increment-70"
-      ],
+      "traits": [],
       "damageRolls": [
         {
           "roll": "2d8+10",
@@ -179,7 +180,7 @@
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -195,7 +196,7 @@
         "mental",
         "primal"
       ],
-      "description": "<p>The melody on the wind sings in a sonorous chorus. Any creature in a 30ft Emanation must attempt a DC 30 Will Saving Throw save to resist becoming fascinated by the melody on the wind. A creature that succeeds at its save is temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Fascinated for 1 round.</p>\n<p><strong>Failure</strong> The creature is fascinated for 1d4 rounds.</p>",
+      "description": "<p>The melody on the wind sings in a sonorous chorus. Any creature in a 30ft Type:emanation must attempt a DC 29 Will Saving Throw save to resist becoming Fascinated by the melody on the wind. A creature that succeeds at its save is temporarily immune for 24 hours.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is fascinated by the melody on the wind for 1 round.</p>\n<p><strong>Failure</strong> The creature is fascinated by the melody on the wind for 4 rounds.</p>",
       "collapsed": false
     },
     {

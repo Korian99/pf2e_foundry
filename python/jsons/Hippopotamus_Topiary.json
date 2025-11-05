@@ -1,0 +1,217 @@
+{
+  "initiative": 0,
+  "initiativebonus": 20,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Hippopotamus Topiary",
+  "type": "Creature",
+  "level": 11,
+  "traits": [
+    "Common",
+    "huge",
+    "Plant"
+  ],
+  "source": "Pathfinder Monster Core 2",
+  "senses": [
+    "Low light vision",
+    "Scent 60ft imprecise",
+    "branchlocation (precise) 30 feet"
+  ],
+  "perception": {
+    "value": 20,
+    "note": "Low light vision, Scent 60ft imprecise, branchlocation (precise) 30 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Muan",
+    "can't speak any language"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Branchlocation",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The hippopotamus topiary can tap its branches together and use its hearing as a precise sense at the listed range.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 30,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 220,
+    "max": 220,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "25 ft, swim 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 22,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d10+15",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+15)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "grab",
+        "swamp-fever"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Hoof",
+      "bonus": 22,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d8+15",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+15)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Absorb Water",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When in water or exposed to a water effect, the hippopotamus loses its weakness to fire until the start of its next turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Jaw Crush",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The hippopotamus topiary has a creature Grabbed</p><hr /><p><strong>Effect</strong> It forcefully bites down on whatever is in its mouth, dealing 6d8 Piercing Damage damage with a Basic DC 27 Reflex Saving Throw save. On a critical failure, creatures take 1d8 Persistent,bleed Damage damage.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Pruning",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "manipulate",
+        "polymorph"
+      ],
+      "description": "<p>The hippopotamus topiary twists and contorts its shape, shedding branches and leaves as needed to change into a topiary of a Medium or smaller animal. Until the next time it acts, the topiary has an automatic result of 43 for Deception checks and DCs to appear as a mundane topiary.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swamp Fever",
+      "actions": null,
+      "traits": [
+        "disease"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 26 Fortitude Saving Throw</p>\n<p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> Sickened 1 (1 day)</p>\n<p><strong>Stage 2</strong> Sickened 2 (1 day)</p>\n<p><strong>Stage 3</strong> sickened 2 and 1d8 Persistent,bleed Damage damage (1 day)</p>\n<p><strong>Stage 4</strong> sickened 2, Drained 1, and 2d8 Persistent,bleed Damage damage (1 day)</p>\n<p><strong>Stage 5</strong> dead</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Walk Through Plants",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The hippopotamus topiary ignores difficult terrain caused by dense vegetation.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 28"
+}

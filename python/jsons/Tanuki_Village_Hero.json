@@ -1,0 +1,237 @@
+{
+  "initiative": 0,
+  "initiativebonus": 4,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Tanuki Village Hero",
+  "type": "Creature",
+  "level": 1,
+  "traits": [
+    "Uncommon",
+    "Small",
+    "Humanoid",
+    "Tanuki"
+  ],
+  "source": "Pathfinder Monster Core 2",
+  "senses": [],
+  "perception": {
+    "value": 4,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Tanuki"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "Legal Lore",
+      "modifier": 3,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": -1
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [
+    {
+      "name": "Dart",
+      "quantity": 10,
+      "description": "<p>This thrown weapon is larger than an arrow but shorter than a javelin. It typically has a short shaft of wood ending in a metal tip and is sometimes stabilized by feathers or fur.</p>",
+      "level": 0,
+      "price": "1 cp",
+      "traits": [
+        "agile",
+        "thrown"
+      ]
+    },
+    {
+      "name": "Kama",
+      "quantity": 1,
+      "description": "<p>Similar to a sickle and used in some regions to reap grain, a kama has a short, slightly curved blade and a wooden handle.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": [
+        "agile",
+        "monk",
+        "trip"
+      ]
+    },
+    {
+      "name": "Studded Leather Armor",
+      "quantity": 1,
+      "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>",
+      "level": 0,
+      "price": "3 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 2,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 21,
+    "max": 21,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Tactical Retreat",
+      "actions": -1,
+      "traits": [
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p><strong>Trigger</strong> The tanuki takes damage</p><hr /><p><strong>Effect</strong> The tanuki runs to a better tactical position. The tanuki gains the Fleeing condition until the beginning of their next turn and Strides.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Kama",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "trip"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+2",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+2)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Dart",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "thrown-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+2",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+2)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Change Shape",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "polymorph",
+        "primal"
+      ],
+      "description": "<p>The tanuki takes on the form of a mundane raccoon dog. This makes them Tiny and gives them a +2 status bonus to their Stealth modifier, but they can't make Strikes.</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster changes its shape indefinitely. It can use this action again to return to its natural shape or adopt a new shape. Unless otherwise noted, a monster cannot use Change Shape to appear as a specific individual. Using Change Shape counts as creating a disguise for the Impersonate use of Deception. The monster's transformation automatically defeats Perception DCs to determine whether the creature is a member of the ancestry or creature type into which it transformed, and it gains a +4 status bonus to its Deception DC to prevent others from seeing through its disguise. Change Shape abilities specify what shapes the monster can adopt. The monster doesn't gain any special abilities of the new shape, only its physical form. For example, in each shape, it replaces its normal Speeds and Strikes, and might potentially change its senses or size. Any changes are listed in its stat block.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Tricky Throw",
+      "actions": 2,
+      "traits": [
+        "polymorph"
+      ],
+      "description": "<p>The tanuki winds up and puts their everything into a throw. They make a dart Strike at one enemy within 40 feet. If the Strike is unsuccessful, the tanuki falls Prone. If the Strike is successful, they really did put everything into the throw, having transformed into the dart the moment they threw it. The tanuki disappears from the space they threw from, appears in a space adjacent to the enemy and makes a kama Strike against said enemy, who's Off-Guard to the attack.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 15"
+}

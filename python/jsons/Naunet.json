@@ -11,11 +11,10 @@
   "traits": [
     "Common",
     "Large",
-    "Chaotic",
     "Monitor",
     "Protean"
   ],
-  "source": "Pathfinder Bestiary",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision",
     "entropy sense (imprecise) 30 feet"
@@ -95,7 +94,7 @@
         "divine",
         "prediction"
       ],
-      "description": "<p>A naunet can anticipate the most likely presence of a creature through a supernatural insight into chaotic probabilities and chance. This grants it the ability to sense creatures within the listed range. A creature under the effects of Veil of Privacy or that is otherwise shielded from divinations and predictions cannot be noticed via entropy sense.</p>",
+      "description": "<p>A naunet can anticipate the most likely presence of a creature through a supernatural insight into chaotic probabilities and chance. This grants them the ability to sense creatures within the listed range. Veil of privacy prevents a creature from being detected via entropy sense automatically (without a counteract check).</p>",
       "collapsed": false
     }
   ],
@@ -127,16 +126,20 @@
   "hp": {
     "value": 120,
     "max": 120,
-    "note": "fast healing 2",
+    "note": "",
     "modifications": []
   },
   "immunities": [],
   "resistances": [
     {
+      "doubleVs": [],
+      "exceptions": [],
       "type": "precision",
       "value": 5
     },
     {
+      "doubleVs": [],
+      "exceptions": [],
       "type": "protean-anatomy",
       "value": 10
     }
@@ -168,27 +171,18 @@
       "bonus": 18,
       "traits": [
         "magical",
-        "reach-10",
-        "unarmed"
+        "reach-10"
       ],
       "damageRolls": [
         {
           "roll": "2d10+8",
           "type": "piercing"
-        },
-        {
-          "roll": "1d6",
-          "type": "spirit"
         }
       ],
       "critRolls": [
         {
           "roll": "(2d10+8)*2",
           "type": "piercing"
-        },
-        {
-          "roll": "(1d6)*2",
-          "type": "spirit"
         }
       ],
       "effects": [],
@@ -202,7 +196,6 @@
       "name": "Tail",
       "bonus": 18,
       "traits": [
-        "chaotic",
         "magical",
         "reach-15"
       ],
@@ -210,20 +203,12 @@
         {
           "roll": "2d8+8",
           "type": "bludgeoning"
-        },
-        {
-          "roll": "1d6",
-          "type": "spirit"
         }
       ],
       "critRolls": [
         {
           "roll": "(2d8+8)*2",
           "type": "bludgeoning"
-        },
-        {
-          "roll": "(1d6)*2",
-          "type": "spirit"
         }
       ],
       "effects": [
@@ -246,27 +231,17 @@
       ],
       "damageRolls": [
         {
-          "roll": "2d8+6",
+          "roll": "2d8+8",
           "type": "piercing"
-        },
-        {
-          "roll": "1d6",
-          "type": "spirit"
         }
       ],
       "critRolls": [
         {
-          "roll": "(2d8+6)*2",
+          "roll": "(2d8+8)*2",
           "type": "piercing"
-        },
-        {
-          "roll": "(1d6)*2",
-          "type": "spirit"
         }
       ],
-      "effects": [
-        "confounding-slam"
-      ],
+      "effects": [],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
@@ -292,7 +267,7 @@
         "divine",
         "polymorph"
       ],
-      "description": "<p>The naunet can take the appearance of any Small, Medium, or Large animal, beast, or humanoid. This doesn't change its Speed or its attack and damage bonuses with its Strikes but might change the damage type its Strikes deal.</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster changes its shape indefinitely. It can use this action again to return to its natural shape or adopt a new shape. Unless otherwise noted, a monster cannot use Change Shape to appear as a specific individual. Using Change Shape counts as creating a disguise for the Impersonate use of Deception. The monster's transformation automatically defeats Perception DCs to determine whether the creature is a member of the ancestry or creature type into which it transformed, and it gains a +4 status bonus to its Deception DC to prevent others from seeing through its disguise. Change Shape abilities specify what shapes the monster can adopt. The monster doesn't gain any special abilities of the new shape, only its physical form. For example, in each shape, it replaces its normal Speeds and Strikes, and might potentially change its senses or size. Any changes are listed in its stat block.</p></p></details></p>",
+      "description": "<p>The naunet can take the appearance of any Small, Medium, or Large animal, beast, or humanoid. This doesn't change its Speed or its attack and damage bonuses with its Strikes but might change the damage type its Strikes deal.</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster changes its shape indefinitely. It can use this action again to return to its natural shape or adopt a new shape. Unless otherwise noted, a monster cannot use Change Shape to appear as a specific individual. Using Change Shape counts as creating a disguise for the Impersonate use of Deception. The monster's transformation automatically defeats Perception DCs to determine whether the creature is a member of the ancestry or creature type into which it transformed, and it gains a +4 status bonus to its Deception DC to prevent others from seeing through its disguise. Change Shape abilities specify what shapes the monster can adopt. The monster doesn't gain any special abilities of the new shape, only its physical form. For example, in each shape, it replaces its normal Speeds and Strikes, and might potentially change its senses or size. Any changes are listed in its stat block.</p></p></details></p>",
       "collapsed": false
     },
     {
@@ -303,14 +278,14 @@
         "emotion",
         "mental"
       ],
-      "description": "<p>A creature hit by the naunet's tentacle Strike is Stupefied 2 for 1d4 rounds (DC 24 Will Saving Throw negates). If the creature was already stupefied in this way, the duration extends by 1 round instead. A chaotic creature is only Stupefied 1 instead.</p>",
+      "description": "<p>A creature hit by the naunet's tentacle Strike is Stupefied 2 for 1d4 rounds (DC 25 Will Saving Throw negates). If the creature was already stupefied in this way, the duration extends by 1 round instead.</p>",
       "collapsed": false
     },
     {
       "name": "Constrict",
       "actions": 1,
       "traits": [],
-      "description": "<p>(1d8+8) Bludgeoning Damage damage, Basic DC 26 Fortitude Saving Throw save</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details></p>",
+      "description": "<p>(1d8+8) Bludgeoning Damage damage, Basic DC 22 Fortitude Saving Throw save</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details></p>",
       "collapsed": false
     },
     {
@@ -325,44 +300,18 @@
     {
       "name": "Divine Innate Spells",
       "type": "innate",
-      "bonus": 16,
-      "dc": 26,
+      "bonus": 17,
+      "dc": 25,
       "focusPoints": {
         "current": 0,
         "max": 0
       },
       "autoHeightenLevel": 5,
       "cantrips": [],
-      "lv1spells": [
-        {
-          "name": "Detect Alignment (At Will) (Lawful Only)",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 1,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "detection",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "",
-          "area": "30ft emanation",
-          "targets": "",
-          "save": "",
-          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "Oy7DyDa1Fc1uUyJg"
-        }
-      ],
+      "lv1spells": [],
       "lv2spells": [
         {
-          "name": "Obscuring Mist (At Will)",
+          "name": "Mist (At Will)",
           "type": "spell",
           "level": 2,
           "heightenedLevel": 2,
@@ -378,13 +327,13 @@
           "area": "20ft burst",
           "targets": "",
           "save": "",
-          "description": "<p>You call forth a cloud of mist. All creatures within the mist become Concealed, and all creatures outside the mist become Concealed to creatures within it. You can Dismiss the cloud.</p>",
+          "description": "<p>You call forth a cloud of mist. All creatures within the mist become Concealed, and all creatures outside the mist become concealed to creatures within it. You can Dismiss the cloud.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "NSZBHCyCvmYgDUpL"
+          "id": "F8H6i5SNkoF2lTuD"
         }
       ],
       "lv3spells": [
@@ -411,19 +360,18 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Kp4bo7vO06rxYNfy"
+          "id": "j6z8iLF17Z1r3kqu"
         }
       ],
       "lv4spells": [
         {
-          "name": "Acid Arrow",
+          "name": "Acid Grip",
           "type": "spell",
           "level": 2,
           "heightenedLevel": 4,
           "timesPrepared": 1,
           "traits": [
             "acid",
-            "attack",
             "concentrate",
             "manipulate"
           ],
@@ -432,17 +380,43 @@
           "range": "120 feet",
           "area": "",
           "targets": "1 creature",
-          "save": "",
-          "description": "<p>You conjure an arrow of acid that keeps corroding the target after it hits. Make a spell attack against the target. On a hit, you deal 3d8 acid damage plus (floor(@item.rank/2))d6 Persistent,acid Damage damage. On a critical hit, double the initial damage, but not the persistent damage.</p><hr /><p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the persistent acid damage increases by 1d6.</p>",
+          "save": "Basic reflex",
+          "description": "<p>An ephemeral, taloned hand grips the target, burning it with magical acid. The target takes 2d8 acid damage plus floor(@item.level/2)d6 Persistent,acid Damage damage depending on its Reflex save. A creature taking persistent damage from this spell takes a –10-foot status penalty to its Speeds. </p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and no persistent damage, and the claw moves it up to 5 feet in a direction of your choice.</p>\n<p><strong>Failure</strong> The creature takes full damage and persistent damage, and the claw moves it up to 10 feet in a direction of your choice.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and full persistent damage, and the claw moves it up to 20 feet in a direction of your choice.</p><hr /><p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the persistent acid damage increases by 1d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "0u2WqzFFQRFpGkP9"
+          "id": "O2X6nncHIV12k5Js"
         },
         {
-          "name": "Freedom of Movement (Constant)",
+          "name": "Vampiric Feast",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "death",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 living creature",
+          "save": "Basic fortitude",
+          "description": "<p>Your touch leeches the lifeblood out of a target to empower yourself. You deal 6d6 void damage to the target. You gain temporary Hit Points equal to half the void damage the target takes (after applying resistances and the like). You lose any remaining temporary Hit Points after 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "PoJWfuM4w2DOAydE"
+        },
+        {
+          "name": "Unfettered Movement (Constant)",
           "type": "spell",
           "level": 4,
           "heightenedLevel": 4,
@@ -457,43 +431,18 @@
           "area": "",
           "targets": "1 creature touched",
           "save": "",
-          "description": "<p>You repel effects that would hinder a creature or slow its movement. While under this spell's effect, the target ignores effects that would give them a circumstance penalty to Speed. When they attempt to Escape an effect that has them Immobilized, Grabbed, or Restrained, they automatically succeed unless the effect is magical and of a higher rank than the <em>freedom of movement</em> spell.</p>\n<p>{Spell Effect: Freedom of Movement}</p>",
+          "description": "<p>You repel effects that would hinder a creature or slow its movement. While under this spell's effect, the target ignores effects that would give them a circumstance penalty to Speed. When they attempt to Escape an effect that has them Immobilized, Grabbed, or Restrained, they automatically succeed unless the effect is magical and of a higher rank than the <em>unfettered movement</em> spell.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "H8p1fVftX2xCpcdM"
-        },
-        {
-          "name": "Solid Fog",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 4,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "water"
-          ],
-          "castingTime": "3",
-          "duration": "1 minute",
-          "range": "120 feet",
-          "area": "20ft burst",
-          "targets": "",
-          "save": "",
-          "description": "<p>You conjure a bank of fog so thick it impedes movement as well as sight. This functions as Mist, except that the area is also difficult terrain. You can Dismiss the spell.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "Kfm1l7V3ISgZyaVj"
+          "id": "6nC0DjZwT84cjDAS"
         }
       ],
       "lv5spells": [
         {
-          "name": "Dimension Door",
+          "name": "Translocate",
           "type": "spell",
           "level": 4,
           "heightenedLevel": 5,
@@ -509,13 +458,13 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "0UQMVUtzl19eLwjS"
+          "id": "bjtbjoFHeunyGbQc"
         }
       ],
       "lv6spells": [],

@@ -1,0 +1,189 @@
+{
+  "initiative": 0,
+  "initiativebonus": 14,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Smoke Creeper",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Common",
+    "Large",
+    "Air",
+    "Elemental",
+    "Evil"
+  ],
+  "source": "Pathfinder Monster Core 2",
+  "senses": [
+    "Darkvision",
+    "smoke vision"
+  ],
+  "perception": {
+    "value": 14,
+    "note": "Darkvision, smoke vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Sussuran"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 15,
+      "note": [
+        "in smoke 17"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Smoke Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The smoke creeper ignores the Concealed condition from smoke.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 80,
+    "max": 80,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "precision",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "fire",
+      "value": 5
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Smoke Form",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The smoke creeper can move through the spaces of other creatures but can't end its movement in the same space.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft, fly 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Smoke Mandibles",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "poison"
+        },
+        {
+          "roll": "2d8+3",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "poison"
+        },
+        {
+          "roll": "(2d8+3)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Choking Swoop",
+      "actions": 3,
+      "traits": [],
+      "description": "<p>The smoke creeper Flies up to its Speed, moving through the spaces of other creatures and leaving traces of itself behind. Each breathing creature it passes through must attempt a DC 23 Fortitude Saving Throw save. On a failure, the creature inhales part of the elemental and is Immobilized for 1 minute by the pain of the smoke rasping in its throat and lungs. A creature can attempt to end this condition by spending an action coughing and succeeding at a DC 23 Fortitude Saving Throw save.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Painful Exhalations",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> At least one creature within 40 feet is Immobilized from the smoke creeper's Choking Swoop</p><hr /><p><strong>Effect</strong> The smoke creeper flaps its wings, violently drawing the lingering smoke free from all creatures immobilized from its Choking Swoop within 40 feet. Each target must attempt a DC 23 Fortitude Saving Throw save. On a failure, the creature is Enfeebled 1 for 1 minute and Sickened 1 (Enfeebled 2 and Sickened 2 on a critical failure). Regardless of the result, the creature is no longer immobilized from the smoke creeper's Choking Swoop.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 22"
+}

@@ -12,13 +12,12 @@
     "Common",
     "huge",
     "Dragon",
-    "Evil",
     "Mindless",
     "Undead",
     "Unholy",
     "Zombie"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision"
   ],
@@ -105,8 +104,10 @@
     "modifications": []
   },
   "immunities": [
+    "bleed",
     "death-effects",
     "disease",
+    "mental",
     "paralyzed",
     "poison",
     "unconscious"
@@ -114,11 +115,13 @@
   "resistances": [],
   "weaknesses": [
     {
-      "type": "vitality",
+      "exceptions": [],
+      "type": "slashing",
       "value": 10
     },
     {
-      "type": "slashing",
+      "exceptions": [],
+      "type": "vitality",
       "value": 10
     }
   ],
@@ -164,8 +167,7 @@
       "bonus": 21,
       "traits": [
         "agile",
-        "reach-10",
-        "unarmed"
+        "reach-10"
       ],
       "damageRolls": [
         {
@@ -194,13 +196,13 @@
       ],
       "damageRolls": [
         {
-          "roll": "2d6+10",
+          "roll": "2d6+12",
           "type": "bludgeoning"
         }
       ],
       "critRolls": [
         {
-          "roll": "(2d6+10)*2",
+          "roll": "(2d6+12)*2",
           "type": "bludgeoning"
         }
       ],
@@ -213,10 +215,12 @@
   ],
   "offensiveAbilities": [
     {
-      "name": "Breath Weapon",
+      "name": "Viscera Breath",
       "actions": 2,
-      "traits": [],
-      "description": "<p>The zombie dragon breathes a wave of fetid viscera that deals 5d6 Bludgeoning Damage|options:area-damage] damage (Basic DC 28 Reflex Saving Throw save). A creature that critically fails is also Sickened 2.</p>\n<p>The zombie dragon can't use Breath Weapon again for 1d4 rounds.</p>",
+      "traits": [
+        "poison"
+      ],
+      "description": "<p>The zombie dragon breathes a wave of fetid viscera that deals 5d6 Bludgeoning Damage|options:area-damage]{5d6 bludgeoning damage and 5d6 poison damage} (Basic DC 28 Reflex Saving Throw save). A creature that critically fails is also Sickened 2. The zombie dragon can't use Viscera Breath again for 1d4 rounds.</p>",
       "collapsed": false
     }
   ],

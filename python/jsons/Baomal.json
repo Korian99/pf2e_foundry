@@ -12,10 +12,9 @@
     "Common",
     "Gargantuan",
     "Aberration",
-    "Aquatic",
-    "Chaotic"
+    "Aquatic"
   ],
-  "source": "Pathfinder Bestiary",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision",
     "Scent 80ft imprecise"
@@ -73,7 +72,7 @@
   "items": [],
   "generalAbilities": [],
   "ac": {
-    "value": 48,
+    "value": 46,
     "note": "all-around vision",
     "usedAttribute": "dexterity",
     "modifications": []
@@ -120,17 +119,10 @@
       "collapsed": false
     },
     {
-      "name": "Attack of Opportunity",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
-      "collapsed": false
-    },
-    {
-      "name": "Double Opportunity",
+      "name": "Doubled Reaction",
       "actions": null,
       "traits": [],
-      "description": "<p>A baomal gains an extra reaction each round that it can use only to make an Attack of Opportunity. It must use a different head for each one it attempts, and it can't make more than one Attack of Opportunity for the same triggering action.</p>",
+      "description": "<p>A baomal gains an extra reaction each round that it can use only to make a Reactive Strike. It must use a different head for each one it attempts, and it can't make more than one Attack of Opportunity for the same triggering action.</p>",
       "collapsed": false
     },
     {
@@ -145,10 +137,17 @@
       "collapsed": false
     },
     {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
       "name": "Two Heads",
       "actions": null,
       "traits": [],
-      "description": "<p>Any ability that would sever a baomal's head (such as a critical hit with a <em>Vorpal</em> weapon) severs one head at random. Losing one head doesn't kill a baomal, but it does prevent the baomal from making Strikes with the lost head and from using Double Opportunity or Two-Headed Strike.</p>",
+      "description": "<p>Any ability that would sever a baomal's head (such as a critical hit with a Vorpal weapon) severs one head at random. Losing one head doesn't kill a baomal, but it does prevent the baomal from making Strikes with the lost head and from using Double Reaction or Two-Headed Strike.</p>",
       "collapsed": false
     }
   ],
@@ -183,12 +182,11 @@
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Tsunami Jet",
       "bonus": 38,
       "traits": [
-        "brutal",
-        "range-500"
+        "brutal"
       ],
       "damageRolls": [
         {
@@ -205,7 +203,7 @@
       "effects": [
         "push"
       ],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []

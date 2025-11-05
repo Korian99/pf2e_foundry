@@ -1,0 +1,210 @@
+{
+  "initiative": 0,
+  "initiativebonus": 5,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Soulrider (Celestial)",
+  "type": "Creature",
+  "level": -1,
+  "traits": [
+    "Common",
+    "tiny",
+    "Aberration",
+    "Celestial",
+    "Holy"
+  ],
+  "source": "Pathfinder Monster Core 2",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 5,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 4,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 4,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 0
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": -3
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": -1
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Planar Adaptation (Celestial)",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A spawning soulrider has traits appropriate to the planar energy it's absorbed: celestial and holy, fiend and unholy, or monitor.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 5,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 2,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 8,
+    "max": 8,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "spirit",
+      "value": 1
+    }
+  ],
+  "defensiveAbilities": [],
+  "speed": "20 ft, swim 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Sucker",
+      "bonus": 6,
+      "traits": [
+        "finesse",
+        "magical",
+        "reach-0"
+      ],
+      "damageRolls": [],
+      "critRolls": [],
+      "effects": [
+        "soul-attach"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "finesse",
+        "reach-0",
+        "sanctified"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "1",
+          "type": "spirit"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(1)*2",
+          "type": "spirit"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Celestial Flare",
+      "actions": 2,
+      "traits": [
+        "holy",
+        "light",
+        "visual"
+      ],
+      "description": "<p>Each enemy within 30 feet of the soulrider takes 2d6 Spirit Damage damage (Basic DC 17 Will Saving Throw save). Creatures that fail the save are Blinded for 1 round. The spawning soulrider can't use Celestial Flare again for 1 minute.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Propulsive Launch",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The soulrider Leaps up to 40 feet, then makes a sucker Strike. If it's in the air and not attached to a creature after the Strike, it falls.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Soul Attach",
+      "actions": null,
+      "traits": [
+        "spirit"
+      ],
+      "description": "<p>When a soulrider succeeds at a sucker Strike against a target with a soul capable of facing judgment, its sucker attaches it to that soul. While attached, both the soulrider and the host creature are Off-Guard, and the soulrider moves with its host until the soulrider dies or the host pulls it loose (Escape DC 15). If the host dies while the soulrider is attached, the soulrider disappears immediately to follow the soul leaving the body. A creature returned to life before reaching its final destination generally returns with any attached soulrider.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Tail Thrash",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The soulrider is attached to a creature's soul</p><hr /><p><strong>Effect</strong> The soulrider makes a tail Strike against the creature whose soul it's attached to, then one against another creature adjacent to the original target. These Strikes count towards the soulrider's multiple attack penalty, but it doesn't increase until after the second attack.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism or Religion, DC 13"
+}

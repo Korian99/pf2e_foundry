@@ -11,19 +11,17 @@
   "traits": [
     "Common",
     "Medium",
-    "Chaotic",
-    "Evil",
     "Hag",
     "Humanoid"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
-    "Darkvision",
-    "bloodsense (imprecise) 90 feet"
+    "Bloodsense 90ft imprecise",
+    "Darkvision"
   ],
   "perception": {
     "value": 17,
-    "note": "Darkvision, bloodsense (imprecise) 90 feet",
+    "note": "Bloodsense 90ft imprecise, Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
@@ -44,7 +42,7 @@
     },
     {
       "name": "athletics",
-      "modifier": 16,
+      "modifier": 18,
       "note": [],
       "usedAttribute": "strength",
       "modifications": []
@@ -65,7 +63,7 @@
     },
     {
       "name": "occultism",
-      "modifier": 14,
+      "modifier": 16,
       "note": [],
       "usedAttribute": "intelligence",
       "modifications": []
@@ -102,14 +100,14 @@
       "name": "Bloodsense (Imprecise) 90 feet",
       "actions": null,
       "traits": [],
-      "description": "<p>A blood hag can sense the presence of blood and creatures with blood. She can tell the difference between spilled blood and the blood within a living creature.</p>",
+      "description": "<p>A blood hag can sense the presence of blood and creatures with blood. They can tell the difference between spilled blood and the blood within a living creature.</p>",
       "collapsed": false
     },
     {
       "name": "Borrowed Skin",
       "actions": null,
       "traits": [],
-      "description": "<p>A blood hag wears a covering of skin stolen from a humanoid creature she has killed, hiding her true form and granting her the effects of a 4th-rank Disguise Magic, with herself as the primary target and the creature whose skin she is wearing as the secondary target.</p>\n<p>Spreading coarse salt inside the skin prevents the hag from putting it back on, forcing her to keep her fiery form until she kills another humanoid and spends 1 hour turning it into a new disguise.</p>",
+      "description": "<p>A blood hag wears a covering of skin stolen from a humanoid creature they've killed, hiding their true form. They appear as the creature whose skin they're wearing, including to spells that would detect that creature. Creatures can still potentially detect the deception as described in the Impersonate action.</p>\n<p>Spreading coarse salt inside the skin prevents the hag from putting it back on, forcing them to keep their fiery form until they kill another humanoid and spend 1 hour turning it into a new disguise.</p>",
       "collapsed": false
     },
     {
@@ -119,7 +117,7 @@
         "mental",
         "occult"
       ],
-      "description": "<p>A blood hag adds Death Ward, Fiery Body, and Nightmare to her coven's spells.</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>This monster can form a coven with two or more other creatures who also have the coven ability. This involves performing an 8-hour ceremony with all prospective coven members. After the coven is formed, each of its members gains elite adjustments, adjusting their levels accordingly. Coven members can sense other members' locations and conditions by spending a single action, which has the concentrate trait, and can sense what another coven member is sensing as a two-action activity, which has the concentrate trait as well.</p>\n<p>Covens also grant spells and rituals to their members, but these can be cast only in cooperation between three coven members who are all within 30 feet of one another. A coven member can contribute to a coven spell with a single action that has the concentrate trait. If two coven members have contributed these actions within the last round, a third member can cast a coven spell on her turn by spending the normal spellcasting actions. A coven can cast its coven spells an unlimited number of times but can cast only one coven spell each round. All covens grant the 8th-rank Cursed Metamorphosis spell and all the following spells, which the coven can cast at any rank up to 5th: Augury, Charm, Clairaudience, Clairvoyance, Dream Message, Illusory Disguise, Illusory Scene, Scouting Eye, and Talking Corpse. Individual creatures with the coven ability also grant additional spells to any coven they join. A coven can also cast the Control Weather ritual, with a DC of 23 instead of the standard DC.</p>\n<p>If a coven member's departure or death brings the coven below three members, the remaining members keep their elite adjustments for 24 hours, but without enough members to contribute the necessary actions, they can't cast coven spells.</p></p></details></p>",
+      "description": "<p>A blood hag adds Aerial Form, Fiery Body, and Nightmare to their coven's spells.</p><hr /><p><details><summary>See rules...</summary>\n<p><p>This monster can form a coven with two or more other creatures who also have the coven ability. This involves performing an 8-hour ceremony with all prospective coven members. After the coven is formed, each of its members gains elite adjustments, adjusting their levels accordingly. Coven members can sense other members' locations and conditions by spending a single action, which has the concentrate trait, and can sense what another coven member is sensing as a two-action activity, which has the concentrate trait as well.</p>\n<p>Covens also grant spells and rituals to their members, but these can be cast only in cooperation between three coven members who are all within 30 feet of one another. A coven member can contribute to a coven spell with a single action that has the concentrate trait. If two coven members have contributed these actions within the last round, a third member can cast a coven spell on her turn by spending the normal spellcasting actions. A coven can cast its coven spells an unlimited number of times but can cast only one coven spell each round. All covens grant the 8th-rank Cursed Metamorphosis spell and all the following spells, which the coven can cast at any rank up to 5th: Augury, Charm, Clairaudience, Clairvoyance, Dream Message, Illusory Disguise, Illusory Scene, Scouting Eye, and Talking Corpse. Individual creatures with the coven ability also grant additional spells to any coven they join. A coven can also cast the Control Weather ritual, with a DC of 23 instead of the standard DC.</p>\n<p>If a coven member's departure or death brings the coven below three members, the remaining members keep their elite adjustments for 24 hours, but without enough members to contribute the necessary actions, they can't cast coven spells.</p></p></details></p>",
       "collapsed": false
     }
   ],
@@ -149,17 +147,25 @@
   },
   "savenote": "",
   "hp": {
-    "value": 170,
-    "max": 170,
+    "value": 155,
+    "max": 155,
     "note": "",
     "modifications": []
   },
   "immunities": [
     "bleed"
   ],
-  "resistances": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "fire",
+      "value": 10
+    }
+  ],
   "weaknesses": [
     {
+      "exceptions": [],
       "type": "cold-iron",
       "value": 10
     }
@@ -169,11 +175,33 @@
   "strikes": [
     {
       "type": "melee",
+      "name": "Jaws",
+      "bonus": 18,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d12+7",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+7)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
       "name": "Claw",
       "bonus": 18,
       "traits": [
-        "agile",
-        "unarmed"
+        "agile"
       ],
       "damageRolls": [
         {
@@ -197,52 +225,27 @@
     },
     {
       "type": "melee",
-      "name": "Jaws",
-      "bonus": 18,
-      "traits": [
-        "unarmed"
-      ],
-      "damageRolls": [
-        {
-          "roll": "2d12+7",
-          "type": "piercing"
-        }
-      ],
-      "critRolls": [
-        {
-          "roll": "(2d12+7)*2",
-          "type": "piercing"
-        }
-      ],
-      "effects": [],
-      "usedAttributeToHit": "strength",
-      "usedAttributeDamage": "strength",
-      "toHitModifications": [],
-      "damageModifications": []
-    },
-    {
-      "type": "ranged",
       "name": "Firebolt",
       "bonus": 19,
       "traits": [
         "agile",
         "fire",
-        "range-30"
+        "occult"
       ],
       "damageRolls": [
         {
-          "roll": "2d10+8",
+          "roll": "5d6",
           "type": "fire"
         }
       ],
       "critRolls": [
         {
-          "roll": "(2d10+8)*2",
+          "roll": "(5d6)*2",
           "type": "fire"
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -258,7 +261,7 @@
         "occult",
         "polymorph"
       ],
-      "description": "<p>The blood hag removes her borrowed skin and transforms into a brilliant ball of fire.</p>\n<p>She becomes amorphous, gains the fire trait and a fly Speed of 60 feet, becomes immune to fire, and emits light as a torch. She loses her melee Strikes and can't Drain Blood, but she deals 3d10 Fire Damage damage (Basic DC 26 Reflex Saving Throw save) to each creature that touches her, as well as to each creature that succeeds at a melee Strike against her with an unarmed attack or from an adjacent space.</p>\n<p>If her skin is intact, she can return to her normal form by spending a single action that has the manipulate trait while adjacent to the skin.</p>\n<p>The hag can instead Assume Fiery Form as a single action, bursting through her skin in a blast of flames. Doing so destroys her borrowed skin and deals 9d6 Fire Damage damage (Basic DC 26 Reflex Saving Throw save) in a 20ft Emanation.</p>\n<p>Effect: Fiery Form</p>",
+      "description": "<p>The blood hag removes their borrowed skin and transforms into a brilliant ball of fire. They become amorphous (allowing them to move through a gap at least 1 foot wide without Squeezing and move at full Speed while Squeezing), gain the fire trait and a fly Speed of 60 feet, become immune to fire, and emit light as a torch. They lose their melee Strikes and can't Drain Blood, but they deal 4d6 Fire Damage damage with a Basic DC 26 Reflex Saving Throw save to each creature that touches them, including a creature that hits them with an unarmed attack or a weapon attack from an adjacent space. If their skin is intact and they're adjacent to it, they can Interact to return to their normal form inside the skin.</p>\n<p>The hag can choose to Assume Fiery Form as a single action, bursting through their skin in a blast of flames. Doing so destroys their borrowed skin and deals 9d6 Fire Damage damage to all creatures in a 20ft Type:emanation with a Basic DC 26 Reflex Saving Throw save.</p>\n<p>Effect: Fiery Form</p>",
       "collapsed": false
     },
     {
@@ -267,7 +270,7 @@
       "traits": [
         "occult"
       ],
-      "description": "<p><strong>Requirements</strong> A Grabbed, Paralyzed, Restrained, Unconscious, or willing creature is within the blood hag's reach</p><hr /><p><strong>Effect</strong> The hag sinks her fangs into the creature to drink its blood. This requires a successful athletics|defense:fortitude check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions.</p>\n<p>The victim becomes Drained 1. The hag regains 15 Healing Damage Hit Points, gaining any excess HP as temporary Hit Points that last for 1 hour. Drinking blood from a creature that's already drained doesn't restore any Hit Points to the hag but increases the victim's drained value by 1, killing the victim when it reaches drained 5.</p>\n<p>A victim's drained condition decreases by 1 per week. A blood transfusion, which requires a successful DC 20 Medicine  check and sufficient blood or a blood donor, reduces the drained condition by 1 after 10 minutes.</p>",
+      "description": "<p><strong>Requirements</strong> A Grabbed, Paralyzed, Restrained, Unconscious, or willing creature is within the blood hag's reach</p><hr /><p><strong>Effect</strong> The hag sinks their fangs into the creature to drink its blood. This requires a successful Athletics check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions. The victim becomes Drained 1. The hag regains 15 Hit Points, gaining any excess HP as temporary Hit Points that last for 1 hour. Drinking blood from a creature that's already drained doesn't restore any Hit Points to the hag but increases the victim's drained value by 1, killing the victim when it reaches Drained 5.</p>\n<p>A victim's drained condition decreases by 1 per week. A blood transfusion, which requires a successful DC 20 Medicine  check and sufficient blood or a blood donor, reduces the drained condition by 1 after 10 minutes.</p>",
       "collapsed": false
     },
     {
@@ -305,7 +308,8 @@
             "emotion",
             "incapacitation",
             "manipulate",
-            "mental"
+            "mental",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "1 hour",
@@ -319,7 +323,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "EcZZoeAaqS7O5qzV"
+          "id": "mOeh8raf1Qxzt6Pb"
         },
         {
           "name": "Sleep",
@@ -346,7 +350,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "UdLNZ0PaNUawrWaz"
+          "id": "zI6tbT61wasquQjN"
         },
         {
           "name": "Sleep",
@@ -373,7 +377,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "UdLNZ0PaNUawrWaz"
+          "id": "zI6tbT61wasquQjN"
         },
         {
           "name": "Sleep",
@@ -400,7 +404,32 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "UdLNZ0PaNUawrWaz"
+          "id": "zI6tbT61wasquQjN"
+        },
+        {
+          "name": "Aerial Form",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "polymorph"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You harness your mastery of primal forces to reshape your body into a Medium flying animal battle form. When you Cast this Spell, choose a listed battle form. You can decide the specific type of animal (such as an owl or eagle for bird), but this has no effect on the form's Size or statistics. While in this form, you gain the animal trait. You can Dismiss the spell.</p>\n<p>You gain the following statistics and abilities regardless of which battle form you choose:</p>\n<ul>\n<li>AC = 18 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>5 temporary Hit Points.</li>\n<li>Low-light vision.</li>\n<li>One or more unarmed melee attacks specific to the battle form you choose, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +16, and your damage bonus is +5. These attacks are Dexterity based (for the purpose of the Clumsy condition, for example). If your attack modifier for Dexterity-based unarmed attacks is higher, you can use it instead.</li>\n<li>Acrobatics modifier of +16, unless your own modifier is higher.</li>\n</ul>\n<hr />\n<p>You also gain specific abilities based on the form you choose:</p>\n<ul>\n<li><strong>{Bat}</strong>\n<ul>\n<li>Speed 20 feet, fly Speed 30 feet; precise echolocation 40 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> fangs, <strong>Damage</strong> 2d8 piercing;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> wing (agile), <strong>Damage</strong> 2d6 bludgeoning.</li>\n</ul>\n</li>\n<li><strong>{Bird}</strong>\n<ul>\n<li>Speed 10 feet, fly Speed 50 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> beak, <strong>Damage</strong> 2d8 piercing;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> talon (agile), <strong>Damage</strong> 1d10 slashing.</li>\n</ul>\n</li>\n<li><strong>{Pterosaur}</strong>\n<ul>\n<li>Speed 10 feet, fly Speed 40 feet; imprecise scent 30 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> beak, <strong>Damage</strong> 3d6 piercing.</li>\n</ul>\n</li>\n<li><strong>{Wasp}</strong>\n<ul>\n<li>Speed 20 feet, fly Speed 40 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> stinger, <strong>Damage</strong> 1d8 piercing plus 1d6 persistent poison.</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p><strong>Heightened (5th)</strong> Your battle form is Large and your fly Speed gains a +10-foot status bonus. You must have enough space to expand into or the spell is lost. You instead gain 10 temporary HP, attack modifier +18, damage bonus +8, and Acrobatics +20.</p>\n<p><strong>Heightened (6th)</strong> Your battle form is Huge, your fly Speed gains a +15-foot status bonus, and your attacks have 10-foot reach. You must have enough space to expand into or the spell is lost. You instead gain AC = 21 + your level, 15 temporary HP, attack modifier +21, damage bonus +4 and double damage dice (including persistent damage), and Acrobatics +23.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "IpZ7G1O3qpR29M3F"
         },
         {
           "name": "Nightmare",
@@ -426,7 +455,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Mie3YGR7Ytv7orpK"
+          "id": "pbKfUM534UvvDOsw"
         }
       ],
       "lv5spells": [
@@ -441,7 +470,8 @@
             "emotion",
             "incapacitation",
             "manipulate",
-            "mental"
+            "mental",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "1 hour",
@@ -455,7 +485,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "y9lHez440Fg9mlqT"
+          "id": "gWuPZPwoROozHdEz"
         },
         {
           "name": "Illusory Disguise",
@@ -471,17 +501,17 @@
           ],
           "castingTime": "2",
           "duration": "1 hour",
-          "range": "",
+          "range": "30 feet",
           "area": "",
-          "targets": "",
+          "targets": "1 willing creature",
           "save": "",
-          "description": "<p>You create an illusion that causes you to appear as another creature of the same body shape, and with roughly similar height (within 6 inches) and weight (within 50 pounds), as yourself. The disguise is typically good enough to hide your identity, but not to impersonate a specific individual. The spell doesn't change your voice, scent, or mannerisms. You can change the appearance of your clothing and worn items, such as making your armor look like a dress. Held items are unaffected, and any worn item you remove returns to its true appearance.</p>\n<p>Casting illusory disguise counts as setting up a disguise for the Impersonate use of Deception; it ignores any circumstance penalties you might take for disguising yourself as a dissimilar creature, it gives you a +4 status bonus to Deception checks to prevent others from seeing through your disguise, and you add your level even if you're untrained. You can Dismiss this spell.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The spell also disguises your voice and scent, and it gains the auditory and olfactory traits.</p>\n<p><strong>Heightened (3rd)</strong> You can appear as any creature of the same size, even a specific individual. You must have seen an individual to take on their appearance. The spell also disguises your voice and scent, and it gains the auditory and olfactory traits.</p>\n<p></p>",
+          "description": "<p>You create an illusion that causes the target to appear as another creature of the same body shape, and with roughly similar height (within 6 inches) and weight (within 50 pounds). The disguise is typically good enough to hide their identity, but not to impersonate a specific individual. The spell changes their appearance and voice, but not mannerisms. You can change the appearance of its clothing and worn items, such as making its armor look like a dress. Held items are unaffected, and any worn item removed from the creature returns to its true appearance.</p>\n<p>Casting <em>illusory disguise</em> counts as setting up a disguise for the Impersonate use of Deception; it ignores any circumstance penalties the target might take for disguising itself as a dissimilar creature, gives a +4 status bonus to Deception checks to prevent others from seeing through the disguise, and lets the target add its level to such Deception checks even if untrained. You can Dismiss this spell.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The target can appear as any creature of the same size, even a specific individual. You must have seen an individual to replicate its appearance, and must have heard its voice to replicate its voice.</p>\n<p><strong>Heightened (4th)</strong> You can target up to 10 willing creatures. If you target multiple creatures, you can choose a different disguise for each target, but none can impersonate a specific individual. You can Dismiss each disguise individually or all collectively.</p>\n<p><strong>Heightened (7th)</strong> As 4th, but you can choose disguises that impersonate specific individuals. You must have seen an individual to replicate its appearance, and must have heard its voice to replicate its voice.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "geZ6MhdnotScXMYT"
+          "id": "1yggy13t7HrHCFLC"
         },
         {
           "name": "Augury",
@@ -500,13 +530,13 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You gain a vague glimpse of the future. During the casting of this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveals the GM's best guess among the following outcomes:</p>\n<ul>\n<li><strong>Weal</strong> The results will be good.</li>\n<li><strong>Woe</strong> The results will be bad.</li>\n<li><strong>Weal</strong> and Woe The results will be a mix of good and bad.</li>\n<li><strong>Nothing</strong> There won't be particularly good or bad results.</li>\n</ul>\n<p>The GM rolls a secret DC 6 Flat . On a failure, the result is always \"nothing.\" This makes it impossible to tell whether a \"nothing\" result is accurate. If anyone asks about the same topic as the first casting of augury during an additional casting, the GM uses the secret roll result from the first casting. If circumstances change, though, it's possible to get a different result.</p>",
+          "description": "<p>You gain a vague glimpse of the future. During the casting of this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveal the GM's best guess among the following outcomes: good, bad, mixed (the results will be a mix of good and bad), and nothing (there won't be particularly good or bad results).</p>\n<p>The GM rolls a secret DC 6 Flat . On a failure, the result is always \"nothing.\" This makes it impossible to tell whether a \"nothing\" result is accurate. If anyone asks about the same topic as the first casting of <em>augury</em> during an additional casting, the GM uses the secret roll result from the first casting. If circumstances change, though, it's possible to get a different result.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "2LFkOyxXIQWQG4uC"
+          "id": "R6NfaiHoEgIPlYdF"
         },
         {
           "name": "Clairaudience",
@@ -531,7 +561,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "IPP5QjbqfGsZ2ri8"
+          "id": "mCVfo9SHf9zNqO5J"
         },
         {
           "name": "Dream Message",
@@ -545,18 +575,18 @@
             "mental"
           ],
           "castingTime": "10 minutes",
-          "duration": "until the next time you make your daily preparations",
+          "duration": "until your next daily preparations",
           "range": "planetary",
           "area": "",
           "targets": "1 creature you know by name and have met in person",
           "save": "",
-          "description": "<p>You send a message to your target's dream. The message is one-way, up to 1 minute of speech (roughly 150 words). If the target is asleep, they receive the message instantly. If not, they receive it the next time they sleep. As soon as they receive it, the spell ends, and you know the message was sent.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> You can target up to 10 creatures you know by name and have met in person. You must send the same message to all of them; the spell ends for each creature individually.</p>",
+          "description": "<p>You send a message to your target's dream. The message is one-way, up to 1 minute of speech (roughly 150 words). If the target is asleep, they receive the message instantly. If not, they receive it the next time they sleep. As soon as they receive it, the spell ends, and you know the message was sent.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> You can target up to 10 creatures you know by name and have met in person. You must send the same message to all of them; the spell ends for each creature individually</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "SOEAh9EWXfD2oUVm"
+          "id": "ukpMc1dpIB3FTIB8"
         },
         {
           "name": "Clairvoyance",
@@ -581,7 +611,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "0mJafvMYadLZQexK"
+          "id": "JIYemcwxGvKbgEIp"
         },
         {
           "name": "Talking Corpse",
@@ -605,31 +635,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "dQPlYoYwLCpofKA3"
-        },
-        {
-          "name": "Death Ward",
-          "type": "spell",
-          "level": 5,
-          "heightenedLevel": 5,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "10 minutes",
-          "range": "touch",
-          "area": "",
-          "targets": "1 living creature touched",
-          "save": "",
-          "description": "<p>You shield a creature from the ravages of void energy.</p>\n<p>It receives a +4 status bonus to saves against death and void effects, gains void resistance 10, and suppresses the effects of the Doomed condition.</p>\n<p></p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "QyV1sNJpgrwwhOLt"
+          "id": "4gamuc2hoLvNPd8I"
         },
         {
           "name": "Illusory Scene",
@@ -651,16 +657,16 @@
           "area": "30ft burst",
           "targets": "",
           "save": "",
-          "description": "<p>You form an imaginary scene that includes up to 10 discrete creatures or objects of various sizes, all of which must be within the spell's area. These elements generate appropriate sounds and smells, and they feel right to the touch. Elements of an illusory scene are incapable of speech. Unlike with the Illusory Creature spell, creatures in your scene lack combat abilities and statistics. Your scene doesn't include changes to the environment around it, though you can place your scene within the illusory environment of a Mirage spell.</p>\n<p>When you create the scene, you can choose to have it be static or follow a program. Though a static scene is stationary, it includes basic natural movement. For example, wind blowing on an illusory piece of paper would rustle it. A program can be up to 1 minute long and repeats when finished. For instance, you could create a scene of two orcs fighting each other, and the fight would go the same way for each repetition. If you create a loop, the two fighters end up in the same place at the start of the scene and at the end of it, but you can smooth the program so it's hard to tell when the loop ends and begins. Anyone observing the scene for more than a few minutes almost always notices it looping. You're unable to alter the program after you create the illusion.</p>\n<p>Any creature that touches any part of the image or uses the Seek action to examine it can attempt to disbelieve your illusion. If they interact with a portion of the illusion, they disbelieve only that portion. They disbelieve the entire scene only on a critical success.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> Creatures or objects in your scene can speak. You must speak the specific lines for each actor when creating your program. The spell disguises your voice for each actor.</p>\n<p><strong>Heightened (8th)</strong> As the 6th-rank version, and the duration is unlimited.</p>",
+          "description": "<p>You craft an imaginary scene that includes up to 10 discrete creatures or objects of various sizes, all of which must be within the spell's area. These elements generate appropriate sounds and smells, and they feel right to the touch. Elements of an illusory scene are incapable of speech. Unlike with the Illusory Creature spell, creatures in your scene lack combat abilities and statistics. Your scene doesn't include changes to the environment around it, though you can place your scene within the illusory environment of a Mirage spell.</p>\n<p>When you create the scene, you can choose to have it be static or follow a program. Though a static scene is stationary, it includes basic natural movement. For example, wind blowing on an illusory piece of paper would rustle it. A program can be up to 1 minute long and repeats when finished. For instance, you could create a scene of two orcs fighting each other, and the fight would go the same way for each repetition. If you create a loop, the two fighters end up in the same place at the start of the scene and at the end of it, but you can smooth the program so it's hard to tell when the loop ends and begins. Anyone observing the scene for more than a few minutes almost always notices it looping. You're unable to alter the program after you create the illusion.</p>\n<p>Any creature that touches any part of the image or uses the Seek action to examine it can attempt to disbelieve your illusion. If they interact with a portion of the illusion, they disbelieve only that portion. They disbelieve the entire scene only on a critical success.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> Creatures or objects in your scene can speak. You must speak the specific lines for each actor when creating your program. The spell disguises your voice for each actor.</p>\n<p><strong>Heightened (8th)</strong> As the 6th-rank version, and the duration is unlimited.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "vCcYMfYOim7jUidM"
+          "id": "phdnHOdguJpgguz6"
         },
         {
-          "name": "Prying Eye",
+          "name": "Scouting Eye",
           "type": "spell",
           "level": 5,
           "heightenedLevel": 5,
@@ -676,13 +682,13 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You create an Invisible, floating eye, 1 inch in diameter, at a location you can see within 500 feet. It sees in all directions with your normal visual senses and continuously transmits what it sees to you. The first time you Sustain the Spell each round, you can either move the eye up to 30 feet, seeing only things in front of the eye, or move it up to 10 feet, seeing everything in all directions around it. There is no limit to how far from you the eye can move, but the spell ends immediately if you and the eye ever cease to be on the same plane of existence. You can attempt Seek actions through the eye if you want to attempt Perception checks with it. Any damage dealt to the eye destroys it and ends the spell.</p>",
+          "description": "<p>You create an Invisible, floating eye, 1 inch in diameter, at a location you can see within 500 feet. It sees in all directions with your normal visual senses and continuously transmits what it sees to you.</p>\n<p>The first time you Sustain the spell each round, you can either move the eye up to 30 feet, seeing only things in front of the eye, or move it up to 10 feet, seeing everything in all directions around it. There is no limit to how far from you the eye can move, but the spell ends immediately if you and the eye ever cease to be on the same plane of existence. You can attempt Seek actions through the eye if you want to attempt Perception checks with it. Any damage dealt to the eye destroys it and ends the spell.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "413I7oPHxKOyLT9X"
+          "id": "PfhwaWyN9yIGMtlM"
         }
       ],
       "lv6spells": [],
@@ -705,24 +711,25 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You become living flame, giving you fire immunity, resistance 10 to precision damage, and weakness 5 to cold and to water. Any creature that touches you or damages you with an unarmed attack or non-reach melee weapon takes 3d6 fire damage. Your unarmed attacks deal 1d4 additional fire damage, and your fire spells deal one additional die of fire damage (of the same damage die the spell uses). You can cast produce flame as an innate spell; the casting is reduced from 2 actions to 1. In fire form, you have a fly Speed of 40 feet and don't need to breathe.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (9th)</strong> Creatures touching you take 4d6 fire damage instead of 3d6, your unarmed attacks deal 2d4 additional fire damage, and you have a fly Speed of 60 feet.</p>",
+          "description": "<p>You become living flame, giving you fire immunity, resistance 10 to precision damage, and weakness 5 to cold and to water. Any creature that touches you or damages you with an unarmed attack or non-reach melee weapon takes 3d6 Fire Damage damage.</p>\n<p>Your unarmed attacks deal an additional 1d4 fire damage, and your fire spells deal one additional die of fire damage (of the same damage die the spell uses). You can cast Ignition as an innate spell; the casting is reduced from 2 actions to 1.</p>\n<p>In fire form, you have a fly Speed of 40 feet and don't need to breathe.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (9th)</strong> Creatures touching you take 4d6 Fire Damage damage instead of 3d6, your unarmed attacks deal 2d4 additional fire damage, and you have a fly Speed of 60 feet.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "hFvAXii5N6drBt7R"
+          "id": "W6yIqqbTiJynCiSn"
         }
       ],
       "lv8spells": [
         {
-          "name": "Baleful Polymorph",
+          "name": "Cursed Metamorphosis",
           "type": "spell",
           "level": 6,
           "heightenedLevel": 8,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
+            "curse",
             "incapacitation",
             "manipulate",
             "polymorph"
@@ -733,20 +740,20 @@
           "area": "",
           "targets": "1 creature",
           "save": "fortitude",
-          "description": "<p>You transform the target creature into a harmless animal appropriate to the area, with effects based on its Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's body gains minor features of the harmless animal. Its insides churn as they partially transform, causing it to be Sickened 1. When it recovers from the Sickened condition, its features revert to normal.</p>\n<p><strong>Failure</strong> The target transforms for 1 minute but keeps its mind. If it spends all its actions on its turn concentrating on its original form, it can attempt a Will save to end the effect immediately.</p>\n<p><strong>Critical Failure</strong> The target is transformed into the chosen harmless animal, body and mind, for an unlimited duration.</p>",
+          "description": "<p>You transform the target creature into a harmless animal appropriate to the area, with effects based on its Fortitude save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's body gains minor features of the harmless animal. Its insides churn as they partially transform, causing it to be Sickened 1. When it recovers from the sickened condition, its features revert to normal.</p>\n<p><strong>Failure</strong> The target transforms for 1 minute but keeps its mind. If it spends all its actions on its turn concentrating on its original form, it can attempt a will save to end the effect immediately.</p>\n<p><strong>Critical Failure</strong> The target is transformed into the chosen harmless animal, body and mind, for an unlimited duration.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "OsTMxKDPkvHBsVZL"
+          "id": "cxTCssSWIqaESEhv"
         }
       ],
       "lv9spells": [],
       "lv10spells": [],
       "rituals": [
         {
-          "name": "Control Weather",
+          "name": "Control Weather (DC 23)",
           "type": "ritual",
           "level": 8,
           "heightenedLevel": 8,
@@ -758,13 +765,13 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You alter the weather, making it calm and normal for the season or choosing up to two effects based on the season.</p>\n<p>You can't specifically control the manifestations, such as the exact path of a tornado or the targets of lightning strikes.</p>\n<ul>\n<li><strong>Autumn</strong> cold weather, fog, mild heat, sleet</li>\n<li><strong>Spring</strong> drizzle, heat, hurricane, sleet, thunderstorm, tornado</li>\n<li><strong>Summer</strong> drizzle, downpour, extreme heat, hail, heat</li>\n<li><strong>Winter</strong> blizzard, mild cold, extreme cold, thaw</li>\n</ul>\n<hr />\n<p><strong>Critical Success</strong> You change the weather as desired and can affect a larger area (up to a 5-mile-radius circle), or a longer duration (any number of additional d12 hours, up to 16d12).</p>\n<p><strong>Success</strong> You change the weather as desired.</p>\n<p><strong>Failure</strong> You fail to change the weather as desired.</p>\n<p><strong>Critical Failure</strong> The weather changes in an unanticipated way, determined by the GM but generally as contradictory to your true desires as possible (for instance, a terrible storm emerges when you would prefer good weather).</p>\n<hr />\n<p><strong>Heightened (9th)</strong> You can create unseasonable weather and contradictory weather effects, such as extreme cold and a hurricane. You can make the weather calm and normal weather for a different season or choose weather effects from any season's list.</p>",
+          "description": "<p><strong>Area</strong> 2-mile-radius circle centered on you</p>\n<hr />\n<p>You alter the weather, making it calm and normal for the season or choosing up to two effects based on the season.</p>\n<ul>\n<li><strong>Spring</strong> drizzle, heat, hurricane, sleet, thunderstorm, tornado</li>\n<li><strong>Summer</strong> drizzle, downpour, extreme heat, hail, heat</li>\n<li><strong>Autumn</strong> cold weather, fog, mild heat, sleet</li>\n<li><strong>Winter</strong> blizzard, mild cold, extreme cold, thaw</li>\n</ul>\n<p>You can't specifically control the manifestations, such as the exact path of a tornado or the targets of lightning strikes.</p>\n<hr />\n<p><strong>Critical Success</strong> You change the weather as desired and can affect a larger area (up to a 5-mile-radius circle), or a longer duration (any number of additional d12 hours, up to 16d12).</p>\n<p><strong>Success</strong> You change the weather as desired.</p>\n<p><strong>Failure</strong> You fail to change the weather as desired.</p>\n<p><strong>Critical Failure</strong> The weather changes in an unanticipated way, determined by the GM but generally as contradictory to your true desires as possible (for instance, a terrible storm emerges when you would prefer good weather).</p>\n<hr />\n<p><strong>Heightened (9th)</strong> You can create unseasonable weather and contradictory weather effects, such as extreme cold and a hurricane. You can make the weather calm and normal weather for a different season or choose weather effects from any season's list.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "Nature (master)",
           "secondaryCasters": 1,
           "secondaryChecks": "Survival",
-          "id": "lmvPTWMvePL5WUuY"
+          "id": "ETxDOoUu6gdJOm86"
         }
       ],
       "lv1slots": {
@@ -834,7 +841,8 @@
             "emotion",
             "incapacitation",
             "manipulate",
-            "mental"
+            "mental",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "1 hour",
@@ -848,7 +856,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "EcZZoeAaqS7O5qzV"
+          "id": "mOeh8raf1Qxzt6Pb"
         },
         {
           "name": "Sleep",
@@ -875,7 +883,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "UdLNZ0PaNUawrWaz"
+          "id": "zI6tbT61wasquQjN"
         },
         {
           "name": "Sleep",
@@ -902,7 +910,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "UdLNZ0PaNUawrWaz"
+          "id": "zI6tbT61wasquQjN"
         },
         {
           "name": "Sleep",
@@ -929,7 +937,32 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "UdLNZ0PaNUawrWaz"
+          "id": "zI6tbT61wasquQjN"
+        },
+        {
+          "name": "Aerial Form",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "polymorph"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You harness your mastery of primal forces to reshape your body into a Medium flying animal battle form. When you Cast this Spell, choose a listed battle form. You can decide the specific type of animal (such as an owl or eagle for bird), but this has no effect on the form's Size or statistics. While in this form, you gain the animal trait. You can Dismiss the spell.</p>\n<p>You gain the following statistics and abilities regardless of which battle form you choose:</p>\n<ul>\n<li>AC = 18 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>5 temporary Hit Points.</li>\n<li>Low-light vision.</li>\n<li>One or more unarmed melee attacks specific to the battle form you choose, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +16, and your damage bonus is +5. These attacks are Dexterity based (for the purpose of the Clumsy condition, for example). If your attack modifier for Dexterity-based unarmed attacks is higher, you can use it instead.</li>\n<li>Acrobatics modifier of +16, unless your own modifier is higher.</li>\n</ul>\n<hr />\n<p>You also gain specific abilities based on the form you choose:</p>\n<ul>\n<li><strong>{Bat}</strong>\n<ul>\n<li>Speed 20 feet, fly Speed 30 feet; precise echolocation 40 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> fangs, <strong>Damage</strong> 2d8 piercing;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> wing (agile), <strong>Damage</strong> 2d6 bludgeoning.</li>\n</ul>\n</li>\n<li><strong>{Bird}</strong>\n<ul>\n<li>Speed 10 feet, fly Speed 50 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> beak, <strong>Damage</strong> 2d8 piercing;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> talon (agile), <strong>Damage</strong> 1d10 slashing.</li>\n</ul>\n</li>\n<li><strong>{Pterosaur}</strong>\n<ul>\n<li>Speed 10 feet, fly Speed 40 feet; imprecise scent 30 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> beak, <strong>Damage</strong> 3d6 piercing.</li>\n</ul>\n</li>\n<li><strong>{Wasp}</strong>\n<ul>\n<li>Speed 20 feet, fly Speed 40 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> stinger, <strong>Damage</strong> 1d8 piercing plus 1d6 persistent poison.</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p><strong>Heightened (5th)</strong> Your battle form is Large and your fly Speed gains a +10-foot status bonus. You must have enough space to expand into or the spell is lost. You instead gain 10 temporary HP, attack modifier +18, damage bonus +8, and Acrobatics +20.</p>\n<p><strong>Heightened (6th)</strong> Your battle form is Huge, your fly Speed gains a +15-foot status bonus, and your attacks have 10-foot reach. You must have enough space to expand into or the spell is lost. You instead gain AC = 21 + your level, 15 temporary HP, attack modifier +21, damage bonus +4 and double damage dice (including persistent damage), and Acrobatics +23.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "IpZ7G1O3qpR29M3F"
         },
         {
           "name": "Nightmare",
@@ -955,7 +988,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Mie3YGR7Ytv7orpK"
+          "id": "pbKfUM534UvvDOsw"
         }
       ],
       "lv5spells": [
@@ -970,7 +1003,8 @@
             "emotion",
             "incapacitation",
             "manipulate",
-            "mental"
+            "mental",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "1 hour",
@@ -984,7 +1018,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "y9lHez440Fg9mlqT"
+          "id": "gWuPZPwoROozHdEz"
         },
         {
           "name": "Illusory Disguise",
@@ -1000,17 +1034,17 @@
           ],
           "castingTime": "2",
           "duration": "1 hour",
-          "range": "",
+          "range": "30 feet",
           "area": "",
-          "targets": "",
+          "targets": "1 willing creature",
           "save": "",
-          "description": "<p>You create an illusion that causes you to appear as another creature of the same body shape, and with roughly similar height (within 6 inches) and weight (within 50 pounds), as yourself. The disguise is typically good enough to hide your identity, but not to impersonate a specific individual. The spell doesn't change your voice, scent, or mannerisms. You can change the appearance of your clothing and worn items, such as making your armor look like a dress. Held items are unaffected, and any worn item you remove returns to its true appearance.</p>\n<p>Casting illusory disguise counts as setting up a disguise for the Impersonate use of Deception; it ignores any circumstance penalties you might take for disguising yourself as a dissimilar creature, it gives you a +4 status bonus to Deception checks to prevent others from seeing through your disguise, and you add your level even if you're untrained. You can Dismiss this spell.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The spell also disguises your voice and scent, and it gains the auditory and olfactory traits.</p>\n<p><strong>Heightened (3rd)</strong> You can appear as any creature of the same size, even a specific individual. You must have seen an individual to take on their appearance. The spell also disguises your voice and scent, and it gains the auditory and olfactory traits.</p>\n<p></p>",
+          "description": "<p>You create an illusion that causes the target to appear as another creature of the same body shape, and with roughly similar height (within 6 inches) and weight (within 50 pounds). The disguise is typically good enough to hide their identity, but not to impersonate a specific individual. The spell changes their appearance and voice, but not mannerisms. You can change the appearance of its clothing and worn items, such as making its armor look like a dress. Held items are unaffected, and any worn item removed from the creature returns to its true appearance.</p>\n<p>Casting <em>illusory disguise</em> counts as setting up a disguise for the Impersonate use of Deception; it ignores any circumstance penalties the target might take for disguising itself as a dissimilar creature, gives a +4 status bonus to Deception checks to prevent others from seeing through the disguise, and lets the target add its level to such Deception checks even if untrained. You can Dismiss this spell.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The target can appear as any creature of the same size, even a specific individual. You must have seen an individual to replicate its appearance, and must have heard its voice to replicate its voice.</p>\n<p><strong>Heightened (4th)</strong> You can target up to 10 willing creatures. If you target multiple creatures, you can choose a different disguise for each target, but none can impersonate a specific individual. You can Dismiss each disguise individually or all collectively.</p>\n<p><strong>Heightened (7th)</strong> As 4th, but you can choose disguises that impersonate specific individuals. You must have seen an individual to replicate its appearance, and must have heard its voice to replicate its voice.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "geZ6MhdnotScXMYT"
+          "id": "1yggy13t7HrHCFLC"
         },
         {
           "name": "Augury",
@@ -1029,13 +1063,13 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You gain a vague glimpse of the future. During the casting of this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveals the GM's best guess among the following outcomes:</p>\n<ul>\n<li><strong>Weal</strong> The results will be good.</li>\n<li><strong>Woe</strong> The results will be bad.</li>\n<li><strong>Weal</strong> and Woe The results will be a mix of good and bad.</li>\n<li><strong>Nothing</strong> There won't be particularly good or bad results.</li>\n</ul>\n<p>The GM rolls a secret DC 6 Flat . On a failure, the result is always \"nothing.\" This makes it impossible to tell whether a \"nothing\" result is accurate. If anyone asks about the same topic as the first casting of augury during an additional casting, the GM uses the secret roll result from the first casting. If circumstances change, though, it's possible to get a different result.</p>",
+          "description": "<p>You gain a vague glimpse of the future. During the casting of this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveal the GM's best guess among the following outcomes: good, bad, mixed (the results will be a mix of good and bad), and nothing (there won't be particularly good or bad results).</p>\n<p>The GM rolls a secret DC 6 Flat . On a failure, the result is always \"nothing.\" This makes it impossible to tell whether a \"nothing\" result is accurate. If anyone asks about the same topic as the first casting of <em>augury</em> during an additional casting, the GM uses the secret roll result from the first casting. If circumstances change, though, it's possible to get a different result.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "2LFkOyxXIQWQG4uC"
+          "id": "R6NfaiHoEgIPlYdF"
         },
         {
           "name": "Clairaudience",
@@ -1060,7 +1094,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "IPP5QjbqfGsZ2ri8"
+          "id": "mCVfo9SHf9zNqO5J"
         },
         {
           "name": "Dream Message",
@@ -1074,18 +1108,18 @@
             "mental"
           ],
           "castingTime": "10 minutes",
-          "duration": "until the next time you make your daily preparations",
+          "duration": "until your next daily preparations",
           "range": "planetary",
           "area": "",
           "targets": "1 creature you know by name and have met in person",
           "save": "",
-          "description": "<p>You send a message to your target's dream. The message is one-way, up to 1 minute of speech (roughly 150 words). If the target is asleep, they receive the message instantly. If not, they receive it the next time they sleep. As soon as they receive it, the spell ends, and you know the message was sent.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> You can target up to 10 creatures you know by name and have met in person. You must send the same message to all of them; the spell ends for each creature individually.</p>",
+          "description": "<p>You send a message to your target's dream. The message is one-way, up to 1 minute of speech (roughly 150 words). If the target is asleep, they receive the message instantly. If not, they receive it the next time they sleep. As soon as they receive it, the spell ends, and you know the message was sent.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> You can target up to 10 creatures you know by name and have met in person. You must send the same message to all of them; the spell ends for each creature individually</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "SOEAh9EWXfD2oUVm"
+          "id": "ukpMc1dpIB3FTIB8"
         },
         {
           "name": "Clairvoyance",
@@ -1110,7 +1144,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "0mJafvMYadLZQexK"
+          "id": "JIYemcwxGvKbgEIp"
         },
         {
           "name": "Talking Corpse",
@@ -1134,31 +1168,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "dQPlYoYwLCpofKA3"
-        },
-        {
-          "name": "Death Ward",
-          "type": "spell",
-          "level": 5,
-          "heightenedLevel": 5,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "10 minutes",
-          "range": "touch",
-          "area": "",
-          "targets": "1 living creature touched",
-          "save": "",
-          "description": "<p>You shield a creature from the ravages of void energy.</p>\n<p>It receives a +4 status bonus to saves against death and void effects, gains void resistance 10, and suppresses the effects of the Doomed condition.</p>\n<p></p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "QyV1sNJpgrwwhOLt"
+          "id": "4gamuc2hoLvNPd8I"
         },
         {
           "name": "Illusory Scene",
@@ -1180,16 +1190,16 @@
           "area": "30ft burst",
           "targets": "",
           "save": "",
-          "description": "<p>You form an imaginary scene that includes up to 10 discrete creatures or objects of various sizes, all of which must be within the spell's area. These elements generate appropriate sounds and smells, and they feel right to the touch. Elements of an illusory scene are incapable of speech. Unlike with the Illusory Creature spell, creatures in your scene lack combat abilities and statistics. Your scene doesn't include changes to the environment around it, though you can place your scene within the illusory environment of a Mirage spell.</p>\n<p>When you create the scene, you can choose to have it be static or follow a program. Though a static scene is stationary, it includes basic natural movement. For example, wind blowing on an illusory piece of paper would rustle it. A program can be up to 1 minute long and repeats when finished. For instance, you could create a scene of two orcs fighting each other, and the fight would go the same way for each repetition. If you create a loop, the two fighters end up in the same place at the start of the scene and at the end of it, but you can smooth the program so it's hard to tell when the loop ends and begins. Anyone observing the scene for more than a few minutes almost always notices it looping. You're unable to alter the program after you create the illusion.</p>\n<p>Any creature that touches any part of the image or uses the Seek action to examine it can attempt to disbelieve your illusion. If they interact with a portion of the illusion, they disbelieve only that portion. They disbelieve the entire scene only on a critical success.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> Creatures or objects in your scene can speak. You must speak the specific lines for each actor when creating your program. The spell disguises your voice for each actor.</p>\n<p><strong>Heightened (8th)</strong> As the 6th-rank version, and the duration is unlimited.</p>",
+          "description": "<p>You craft an imaginary scene that includes up to 10 discrete creatures or objects of various sizes, all of which must be within the spell's area. These elements generate appropriate sounds and smells, and they feel right to the touch. Elements of an illusory scene are incapable of speech. Unlike with the Illusory Creature spell, creatures in your scene lack combat abilities and statistics. Your scene doesn't include changes to the environment around it, though you can place your scene within the illusory environment of a Mirage spell.</p>\n<p>When you create the scene, you can choose to have it be static or follow a program. Though a static scene is stationary, it includes basic natural movement. For example, wind blowing on an illusory piece of paper would rustle it. A program can be up to 1 minute long and repeats when finished. For instance, you could create a scene of two orcs fighting each other, and the fight would go the same way for each repetition. If you create a loop, the two fighters end up in the same place at the start of the scene and at the end of it, but you can smooth the program so it's hard to tell when the loop ends and begins. Anyone observing the scene for more than a few minutes almost always notices it looping. You're unable to alter the program after you create the illusion.</p>\n<p>Any creature that touches any part of the image or uses the Seek action to examine it can attempt to disbelieve your illusion. If they interact with a portion of the illusion, they disbelieve only that portion. They disbelieve the entire scene only on a critical success.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> Creatures or objects in your scene can speak. You must speak the specific lines for each actor when creating your program. The spell disguises your voice for each actor.</p>\n<p><strong>Heightened (8th)</strong> As the 6th-rank version, and the duration is unlimited.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "vCcYMfYOim7jUidM"
+          "id": "phdnHOdguJpgguz6"
         },
         {
-          "name": "Prying Eye",
+          "name": "Scouting Eye",
           "type": "spell",
           "level": 5,
           "heightenedLevel": 5,
@@ -1205,13 +1215,13 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You create an Invisible, floating eye, 1 inch in diameter, at a location you can see within 500 feet. It sees in all directions with your normal visual senses and continuously transmits what it sees to you. The first time you Sustain the Spell each round, you can either move the eye up to 30 feet, seeing only things in front of the eye, or move it up to 10 feet, seeing everything in all directions around it. There is no limit to how far from you the eye can move, but the spell ends immediately if you and the eye ever cease to be on the same plane of existence. You can attempt Seek actions through the eye if you want to attempt Perception checks with it. Any damage dealt to the eye destroys it and ends the spell.</p>",
+          "description": "<p>You create an Invisible, floating eye, 1 inch in diameter, at a location you can see within 500 feet. It sees in all directions with your normal visual senses and continuously transmits what it sees to you.</p>\n<p>The first time you Sustain the spell each round, you can either move the eye up to 30 feet, seeing only things in front of the eye, or move it up to 10 feet, seeing everything in all directions around it. There is no limit to how far from you the eye can move, but the spell ends immediately if you and the eye ever cease to be on the same plane of existence. You can attempt Seek actions through the eye if you want to attempt Perception checks with it. Any damage dealt to the eye destroys it and ends the spell.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "413I7oPHxKOyLT9X"
+          "id": "PfhwaWyN9yIGMtlM"
         }
       ],
       "lv6spells": [],
@@ -1234,24 +1244,25 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You become living flame, giving you fire immunity, resistance 10 to precision damage, and weakness 5 to cold and to water. Any creature that touches you or damages you with an unarmed attack or non-reach melee weapon takes 3d6 fire damage. Your unarmed attacks deal 1d4 additional fire damage, and your fire spells deal one additional die of fire damage (of the same damage die the spell uses). You can cast produce flame as an innate spell; the casting is reduced from 2 actions to 1. In fire form, you have a fly Speed of 40 feet and don't need to breathe.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (9th)</strong> Creatures touching you take 4d6 fire damage instead of 3d6, your unarmed attacks deal 2d4 additional fire damage, and you have a fly Speed of 60 feet.</p>",
+          "description": "<p>You become living flame, giving you fire immunity, resistance 10 to precision damage, and weakness 5 to cold and to water. Any creature that touches you or damages you with an unarmed attack or non-reach melee weapon takes 3d6 Fire Damage damage.</p>\n<p>Your unarmed attacks deal an additional 1d4 fire damage, and your fire spells deal one additional die of fire damage (of the same damage die the spell uses). You can cast Ignition as an innate spell; the casting is reduced from 2 actions to 1.</p>\n<p>In fire form, you have a fly Speed of 40 feet and don't need to breathe.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (9th)</strong> Creatures touching you take 4d6 Fire Damage damage instead of 3d6, your unarmed attacks deal 2d4 additional fire damage, and you have a fly Speed of 60 feet.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "hFvAXii5N6drBt7R"
+          "id": "W6yIqqbTiJynCiSn"
         }
       ],
       "lv8spells": [
         {
-          "name": "Baleful Polymorph",
+          "name": "Cursed Metamorphosis",
           "type": "spell",
           "level": 6,
           "heightenedLevel": 8,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
+            "curse",
             "incapacitation",
             "manipulate",
             "polymorph"
@@ -1262,20 +1273,20 @@
           "area": "",
           "targets": "1 creature",
           "save": "fortitude",
-          "description": "<p>You transform the target creature into a harmless animal appropriate to the area, with effects based on its Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's body gains minor features of the harmless animal. Its insides churn as they partially transform, causing it to be Sickened 1. When it recovers from the Sickened condition, its features revert to normal.</p>\n<p><strong>Failure</strong> The target transforms for 1 minute but keeps its mind. If it spends all its actions on its turn concentrating on its original form, it can attempt a Will save to end the effect immediately.</p>\n<p><strong>Critical Failure</strong> The target is transformed into the chosen harmless animal, body and mind, for an unlimited duration.</p>",
+          "description": "<p>You transform the target creature into a harmless animal appropriate to the area, with effects based on its Fortitude save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's body gains minor features of the harmless animal. Its insides churn as they partially transform, causing it to be Sickened 1. When it recovers from the sickened condition, its features revert to normal.</p>\n<p><strong>Failure</strong> The target transforms for 1 minute but keeps its mind. If it spends all its actions on its turn concentrating on its original form, it can attempt a will save to end the effect immediately.</p>\n<p><strong>Critical Failure</strong> The target is transformed into the chosen harmless animal, body and mind, for an unlimited duration.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "OsTMxKDPkvHBsVZL"
+          "id": "cxTCssSWIqaESEhv"
         }
       ],
       "lv9spells": [],
       "lv10spells": [],
       "rituals": [
         {
-          "name": "Control Weather",
+          "name": "Control Weather (DC 23)",
           "type": "ritual",
           "level": 8,
           "heightenedLevel": 8,
@@ -1287,13 +1298,13 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You alter the weather, making it calm and normal for the season or choosing up to two effects based on the season.</p>\n<p>You can't specifically control the manifestations, such as the exact path of a tornado or the targets of lightning strikes.</p>\n<ul>\n<li><strong>Autumn</strong> cold weather, fog, mild heat, sleet</li>\n<li><strong>Spring</strong> drizzle, heat, hurricane, sleet, thunderstorm, tornado</li>\n<li><strong>Summer</strong> drizzle, downpour, extreme heat, hail, heat</li>\n<li><strong>Winter</strong> blizzard, mild cold, extreme cold, thaw</li>\n</ul>\n<hr />\n<p><strong>Critical Success</strong> You change the weather as desired and can affect a larger area (up to a 5-mile-radius circle), or a longer duration (any number of additional d12 hours, up to 16d12).</p>\n<p><strong>Success</strong> You change the weather as desired.</p>\n<p><strong>Failure</strong> You fail to change the weather as desired.</p>\n<p><strong>Critical Failure</strong> The weather changes in an unanticipated way, determined by the GM but generally as contradictory to your true desires as possible (for instance, a terrible storm emerges when you would prefer good weather).</p>\n<hr />\n<p><strong>Heightened (9th)</strong> You can create unseasonable weather and contradictory weather effects, such as extreme cold and a hurricane. You can make the weather calm and normal weather for a different season or choose weather effects from any season's list.</p>",
+          "description": "<p><strong>Area</strong> 2-mile-radius circle centered on you</p>\n<hr />\n<p>You alter the weather, making it calm and normal for the season or choosing up to two effects based on the season.</p>\n<ul>\n<li><strong>Spring</strong> drizzle, heat, hurricane, sleet, thunderstorm, tornado</li>\n<li><strong>Summer</strong> drizzle, downpour, extreme heat, hail, heat</li>\n<li><strong>Autumn</strong> cold weather, fog, mild heat, sleet</li>\n<li><strong>Winter</strong> blizzard, mild cold, extreme cold, thaw</li>\n</ul>\n<p>You can't specifically control the manifestations, such as the exact path of a tornado or the targets of lightning strikes.</p>\n<hr />\n<p><strong>Critical Success</strong> You change the weather as desired and can affect a larger area (up to a 5-mile-radius circle), or a longer duration (any number of additional d12 hours, up to 16d12).</p>\n<p><strong>Success</strong> You change the weather as desired.</p>\n<p><strong>Failure</strong> You fail to change the weather as desired.</p>\n<p><strong>Critical Failure</strong> The weather changes in an unanticipated way, determined by the GM but generally as contradictory to your true desires as possible (for instance, a terrible storm emerges when you would prefer good weather).</p>\n<hr />\n<p><strong>Heightened (9th)</strong> You can create unseasonable weather and contradictory weather effects, such as extreme cold and a hurricane. You can make the weather calm and normal weather for a different season or choose weather effects from any season's list.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "Nature (master)",
           "secondaryCasters": 1,
           "secondaryChecks": "Survival",
-          "id": "lmvPTWMvePL5WUuY"
+          "id": "ETxDOoUu6gdJOm86"
         }
       ],
       "lv1slots": {

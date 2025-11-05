@@ -1,0 +1,251 @@
+{
+  "initiative": 0,
+  "initiativebonus": 20,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Ambush Copse",
+  "type": "Creature",
+  "level": 13,
+  "traits": [
+    "Common",
+    "huge",
+    "Elemental",
+    "Plant",
+    "Wood"
+  ],
+  "source": "Pathfinder Monster Core 2",
+  "senses": [
+    "Tremorsense 30ft imprecise"
+  ],
+  "perception": {
+    "value": 20,
+    "note": "Tremorsense 30ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Fey",
+    "Muan cant speak any language"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 23,
+      "note": [
+        "in forest 25"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 8
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 300,
+    "max": 300,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "bludgeoning",
+      "value": 10
+    },
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "piercing",
+      "value": 10
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 15
+    },
+    {
+      "exceptions": [],
+      "type": "axe-vulnerability",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Berserk",
+      "actions": null,
+      "traits": [],
+      "description": "<p>An ambush copse that sees fire or axes has a chance of going berserk. At the start of its turn, if it is aware of an axe or a fre the size of a lit torch or larger, the ambush copse must succeed at a DC 5 Flat  or go berserk. A berserk ambush copse can't use concentrate actions and wildly attacks the nearest living creature, or the nearest object if no creatures are nearby.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Blinding Branches",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within 20 feet of the ambush copse leaves a square during a move action it's using</p>\n<p><strong>Requirements</strong> The triggering creature is in forest terrain</p><hr /><p><strong>Effect</strong> The ambush copse's elemental energy animates nearby tree branches to swat at the creature's face. The triggering creature must succeed at a DC 30 Reflex Saving Throw save or become Blinded for 1 round.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Felling Ambush",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature moves within 10 feet of the ambush copse</p>\n<p><strong>Requirements</strong> The ambush copse is disguised as trees or logs</p><hr /><p><strong>Effect</strong> The ambush copse makes a log Strike against the triggering creature. If the attack hits, the creature must attempt a DC 30 Reflex Saving Throw save or be knocked Prone.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Log",
+      "bonus": 27,
+      "traits": [
+        "backswing",
+        "forceful",
+        "reach-20",
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d12+14",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+14)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "pounding-smash"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Caber",
+      "bonus": 25,
+      "traits": [
+        "thrown-40"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d12+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+6)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Feign Copse",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p>Until the next time it acts, the ambush copse appears to be a harmless patch of trees or logs. It has an automatic result of 43 (45 in forests) on Deception checks and DCs to pass as trees or logs.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Pounding Smash",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Regardless of whether the Strike hits or misses, the ambush copse's melee Strikes create a 5-foot-square of difcult terrain in the target's space.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Pulverizing Barrage",
+      "actions": 3,
+      "traits": [],
+      "description": "<p>The ambush copse makes three log Strikes, each at a –2 penalty, all targeting the same creature. The ambush copse's multiple attack penalty doesn't increase until after it has made all three attacks. The ambush copse gains the Clumsy 2 condition until the beginning of its next turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sunder Objects",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When an ambush copse damages an item or structure, it deals an additional 15 Untyped Damage damage to that item or structure.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature or Nature, DC 31"
+}

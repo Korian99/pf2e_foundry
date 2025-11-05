@@ -11,14 +11,13 @@
   "traits": [
     "Common",
     "Medium",
-    "Evil",
     "Fire",
     "Mindless",
     "Undead",
     "Unholy",
     "Zombie"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision"
   ],
@@ -105,9 +104,11 @@
     "modifications": []
   },
   "immunities": [
+    "bleed",
     "death-effects",
     "disease",
     "fire",
+    "mental",
     "paralyzed",
     "poison",
     "unconscious"
@@ -115,12 +116,14 @@
   "resistances": [],
   "weaknesses": [
     {
-      "type": "vitality",
-      "value": 5
+      "exceptions": [],
+      "type": "slashing",
+      "value": 7
     },
     {
-      "type": "slashing",
-      "value": 5
+      "exceptions": [],
+      "type": "vitality",
+      "value": 7
     }
   ],
   "defensiveAbilities": [
@@ -128,7 +131,7 @@
       "name": "Death Throes",
       "actions": null,
       "traits": [],
-      "description": "<p>When a sulfur zombie dies, its body explodes in a 30ft Burst of fire and debris that deals 2d10 Bludgeoning Damage|options:area-damage]{2d10 bludgeoning damage and 2d10 fire damage} to each creature in the area (Basic DC 21 Reflex Saving Throw save).</p>",
+      "description": "<p>When a sulfur zombie dies, its body explodes in a 30ft Type:burst of fire and debris that deals 2d10 Bludgeoning Damage|options:area-damage]{2d10 bludgeoning damage and 2d10 fire damage} to each creature in the area (Basic DC 21 Reflex Saving Throw save).</p>",
       "collapsed": false
     },
     {
@@ -145,9 +148,7 @@
       "type": "melee",
       "name": "Fist",
       "bonus": 17,
-      "traits": [
-        "unarmed"
-      ],
+      "traits": [],
       "damageRolls": [
         {
           "roll": "2d6+5",

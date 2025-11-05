@@ -12,10 +12,9 @@
     "Common",
     "Medium",
     "Aesir",
-    "Chaotic",
     "Monitor"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision"
   ],
@@ -88,7 +87,7 @@
     {
       "name": "Longsword",
       "quantity": 1,
-      "description": "<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>",
+      "description": "<p>Longswords, also known as arming swords, can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>",
       "level": 0,
       "price": "1 gp",
       "traits": [
@@ -145,10 +144,17 @@
       "collapsed": false
     },
     {
-      "name": "Attack of Opportunity",
+      "name": "Raise a Shield",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> You are wielding a shield.</p>\n<hr />\n<p>You position your shield to protect yourself. When you have Raised a Shield, you gain its listed circumstance bonus to AC. Your shield remains raised until the start of your next turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Strike",
       "actions": -1,
       "traits": [],
-      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "description": "<p><strong>Trigger</strong> A creature within your reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p>You lash out at a foe that leaves an opening. Make a melee Strike against the triggering creature. If your attack is a critical hit and the trigger was a manipulate action, you disrupt that action. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>",
       "collapsed": false
     },
     {
@@ -164,7 +170,7 @@
     {
       "type": "melee",
       "name": "Longsword",
-      "bonus": 24,
+      "bonus": 23,
       "traits": [
         "versatile-p"
       ],
@@ -189,7 +195,7 @@
     {
       "type": "melee",
       "name": "Fist",
-      "bonus": 23,
+      "bonus": 22,
       "traits": [
         "agile",
         "unarmed"
@@ -215,7 +221,7 @@
     {
       "type": "melee",
       "name": "Dagger",
-      "bonus": 24,
+      "bonus": 23,
       "traits": [
         "agile",
         "versatile-s"
@@ -239,9 +245,9 @@
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Dagger",
-      "bonus": 21,
+      "bonus": 20,
       "traits": [
         "agile",
         "thrown-10",
@@ -260,7 +266,7 @@
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -299,65 +305,41 @@
         "current": 0,
         "max": 0
       },
-      "autoHeightenLevel": 4,
+      "autoHeightenLevel": 5,
       "cantrips": [],
       "lv1spells": [],
       "lv2spells": [],
       "lv3spells": [],
-      "lv4spells": [
+      "lv4spells": [],
+      "lv5spells": [
         {
-          "name": "Weapon Surge",
+          "name": "Spectral Advance",
           "type": "spell",
-          "level": 1,
-          "heightenedLevel": 4,
+          "level": 5,
+          "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
-            "cleric",
-            "focus",
-            "manipulate"
-          ],
-          "castingTime": "1",
-          "duration": "",
-          "range": "touch",
-          "area": "",
-          "targets": "1 weapon you're wielding",
-          "save": "",
-          "description": "<p>Holding your weapon aloft, you fill it with divine energy.</p>\n<p>On your next Strike with that weapon before the start of your next turn, you gain a +1 status bonus to the attack roll and the weapon deals an additional die of damage.</p>\n<p>If the weapon has a striking rune, this instead increases the number of dice from the striking rune by 1 (to a maximum of 3 extra weapon dice).</p>\n<p>If the target weapon leaves your possession, weapon surge immediately ends.</p>\n<p></p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "lPOhhyYSwHpN0LFT"
-        },
-        {
-          "name": "Word of Freedom",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 4,
-          "timesPrepared": 1,
-          "traits": [
-            "cleric",
+            "champion",
             "concentrate",
             "focus",
-            "mental"
+            "polymorph",
+            "spirit"
           ],
-          "castingTime": "1",
-          "duration": "1 round",
-          "range": "30 feet",
+          "castingTime": "1 or 2",
+          "duration": "",
+          "range": "",
           "area": "",
-          "targets": "1 creature",
+          "targets": "",
           "save": "",
-          "description": "<p>You utter a liberating word of power that frees a creature. You suppress one of the following conditions of your choice: Confused, Frightened, Grabbed, or Paralyzed. The target isn't affected by the chosen condition, and if you suppress the Grabbed condition, the target automatically breaks free from any grab affecting it when you Cast the Spell.</p>\n<p>If you don't remove the effect that provided the condition, the condition returns after the spell ends. For example, if a spell was making the target Confused for 1 minute, word of freedom would let the target act normally for a round, but the Confused condition would return afterward.</p>",
+          "description": "<p>Taking on a spiritual form, you flash across the battlefield to engage an enemy. You Stride to a space adjacent to an enemy. If you cast the spell using 2 actions, you can Stride twice instead of once. If you have a fly Speed, you can Fly instead of Striding.</p>\n<p>If you're mounted, you can have your mount move instead of you. Movement from <em>spectral advance</em> doesn't trigger reactions and ignores difficult terrain and greater difficult terrain. During the movement, you (or your mount) have resistance equal to your level to all damage.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "cfVVDmv6qXlUfUMz"
+          "id": "PNUXLc8MW8jOnIUG"
         }
       ],
-      "lv5spells": [],
       "lv6spells": [],
       "lv7spells": [],
       "lv8spells": [],

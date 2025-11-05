@@ -9,15 +9,14 @@
   "type": "Creature",
   "level": 6,
   "traits": [
-    "Uncommon",
+    "Common",
     "Large",
-    "Chaotic",
     "Earth",
-    "Evil",
     "Giant",
+    "Humanoid",
     "Troll"
   ],
-  "source": "Pathfinder Bestiary 2",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision"
   ],
@@ -63,10 +62,18 @@
     "value": 2
   },
   "charisma": {
-    "value": 2
+    "value": -2
   },
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Easily Misled",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The caverrn troll takes a –4 circumstance penalty to their Perception DC against Deception checks.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 22,
     "note": "",
@@ -74,7 +81,7 @@
     "modifications": []
   },
   "fortitude": {
-    "value": 18,
+    "value": 16,
     "note": "",
     "usedAttribute": "constitution",
     "modifications": []
@@ -86,7 +93,7 @@
     "modifications": []
   },
   "will": {
-    "value": 8,
+    "value": 9,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
@@ -95,14 +102,25 @@
   "hp": {
     "value": 135,
     "max": 135,
-    "note": "regeneration 20 (deactivated by acid or sonic)",
+    "note": "",
     "modifications": []
   },
   "immunities": [
     "bleed"
   ],
   "resistances": [],
-  "weaknesses": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "acid",
+      "value": 10
+    },
+    {
+      "exceptions": [],
+      "type": "sonic",
+      "value": 10
+    }
+  ],
   "defensiveAbilities": [
     {
       "name": "Regeneration 20 (Deactivated by Acid or Sonic)",
@@ -112,24 +130,17 @@
       "collapsed": false
     },
     {
-      "name": "Attack of Opportunity",
-      "actions": -1,
+      "name": "Furious Throw",
+      "actions": 1,
       "traits": [],
-      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
-      "collapsed": false
-    },
-    {
-      "name": "Catch Rock",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster must have a free hand but can Release anything it's holding as part of this reaction.</p>\n<p><strong>Trigger</strong> The monster is targeted with a thrown rock Strike or a rock would fall on the monster.</p>\n<hr />\n<p><strong>Effect</strong> The monster gains a +4 circumstance bonus to its AC against the triggering attack or to any defense against the falling rock. If the attack misses or the monster successfully defends against the falling rock, the monster catches the rock, takes no damage, and is now holding the rock.</p></p></details></p>",
+      "description": "<p><strong>Trigger</strong> The cavern troll takes acid or sonic damage</p><hr /><p><strong>Effect</strong> The troll uses Throw Rock targeting a random enemy within their first range increment. If the cavern troll has persistent acid damage, they attempt a DC 15 Flat  to remove it.</p>",
       "collapsed": false
     },
     {
       "name": "Sunlight Petrification",
       "actions": null,
       "traits": [],
-      "description": "<p>If exposed to direct sunlight, a cavern troll immediately becomes Slowed 1 and can't use reactions or Trample. The slowed value increases by 1 each time the cavern troll ends its turn in sunlight. If the cavern troll's actions are reduced to 0 in this way, they become Petrified until they spends at least 1 minute in darkness. Spells like Sunburst that create magical sunlight cannot petrify a cavern troll, but the troll is slowed 1 for 1d4 rounds after being exposed to such an effect.</p>",
+      "description": "<p>If exposed to direct sunlight, a cavern troll immediately becomes Slowed 1 and can't use reactions. The slowed value increases by 1 each time the cavern troll ends its turn in sunlight. If the cavern troll's actions are reduced to 0 in this way, they become Petrified until they spends at least 1 minute in darkness. Spells like Sunburst that create magical sunlight can't petrify a cavern troll, but the troll is slowed 1 for 1d4 rounds after being exposed to such an effect.</p>",
       "collapsed": false
     }
   ],
@@ -140,8 +151,7 @@
       "name": "Jaws",
       "bonus": 16,
       "traits": [
-        "reach-10",
-        "unarmed"
+        "reach-10"
       ],
       "damageRolls": [
         {
@@ -167,8 +177,7 @@
       "bonus": 16,
       "traits": [
         "agile",
-        "reach-10",
-        "unarmed"
+        "reach-10"
       ],
       "damageRolls": [
         {
@@ -189,12 +198,11 @@
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Rock",
       "bonus": 16,
       "traits": [
-        "brutal",
-        "range-increment-120"
+        "brutal"
       ],
       "damageRolls": [
         {
@@ -209,7 +217,7 @@
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -220,14 +228,14 @@
       "name": "Rend",
       "actions": 1,
       "traits": [],
-      "description": "<p>Claw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>A Rend entry lists a Strike the monster has.</p>\n<p><strong>Requirements</strong> The monster hit the same enemy with two consecutive Strikes of the listed type in the same round.</p>\n<hr />\n<p><strong>Effect</strong> The monster automatically deals that Strike's damage again to the enemy.</p></p></details></p>",
+      "description": "<p>Claw</p><hr /><p><details><summary>See rules...</summary>\n<p><p>A Rend entry lists a Strike the monster has.</p>\n<p><strong>Requirements</strong> The monster hit the same enemy with two consecutive Strikes of the listed type in the same round.</p>\n<hr />\n<p><strong>Effect</strong> The monster automatically deals that Strike's damage again to the enemy.</p></p></details></p>",
       "collapsed": false
     },
     {
       "name": "Rock Tunneler",
       "actions": null,
       "traits": [],
-      "description": "<p>A cavern troll can burrow through solid stone at a Speed of 10 feet. It can leave a tunnel if it desires.</p>",
+      "description": "<p>A cavern troll can burrow through solid stone at a Speed of 10 feet. They can leave a tunnel if they desire.</p>",
       "collapsed": false
     },
     {
@@ -239,5 +247,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "recallKnowledge": ", DC 22"
+  "recallKnowledge": "Society, DC 22"
 }

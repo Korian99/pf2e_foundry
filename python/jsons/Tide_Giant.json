@@ -1,0 +1,338 @@
+{
+  "initiative": 0,
+  "initiativebonus": 21,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Tide Giant",
+  "type": "Creature",
+  "level": 13,
+  "traits": [
+    "Common",
+    "Large",
+    "Amphibious",
+    "Giant",
+    "Humanoid",
+    "Water"
+  ],
+  "source": "Pathfinder Monster Core 2",
+  "senses": [
+    "Low light vision"
+  ],
+  "perception": {
+    "value": 21,
+    "note": "Low light vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Jotun"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 8
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [
+    {
+      "name": "Trident",
+      "quantity": 1,
+      "description": "<p>This three-pronged, spear-like weapon typically has a 4-foot shaft. Like a spear, it can be wielded with one hand or thrown.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": [
+        "thrown-20"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 250,
+    "max": 250,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Cloak of High Tide",
+      "actions": null,
+      "traits": [
+        "aura",
+        "primal",
+        "water"
+      ],
+      "description": "<p>10 feet.</p>\n<p>Elemental water magic ebbs and flows into a tide giant. At the start of each of the giant's turns in combat, their cloak of high tide automatically activates if it's inactive or ends if it's already active. Any creature other than a tide giant that enters or starts its turn in the aura while it's active regains 5 HP; this is a healing vitality effect, and a creature can benefit from it only once per round. When active, the cloak appears as a magical, flowing cloak of seafoam that billows from the tidal giant's shoulders and the back of their limbs. The cloak is inactive when the tide giant isn't in combat.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, swim 50ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Trident",
+      "bonus": 28,
+      "traits": [
+        "magical",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+14",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+14)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Trident",
+      "bonus": 26,
+      "traits": [
+        "magical",
+        "thrown-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+14",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+14)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 27,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4+14",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+14)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Blood Tide",
+      "actions": 1,
+      "traits": [
+        "primal",
+        "water"
+      ],
+      "description": "<p>The tide giant Swims, or Swims twice if their cloak of high tide is active. Holding out their trident, they slash those they pass, dealing 2d8 Piercing Damage damage and 2d6 Persistent,bleed Damage damage (Basic DC 24 Reflex Saving Throw save) to each enemy the giant moves within 10 feet of during their movement. Each creature can be affected only once during a single use of Blood Tide.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Tine and Tide",
+      "actions": 2,
+      "traits": [
+        "primal",
+        "water"
+      ],
+      "description": "<p>A wave blasts from the giant's trident in a 15ft Type:cone or a 5ft Type:burst within 100 feet. If the giant's cloak of high tide is active, this is a 30ft Type:cone or a 10ft Type:burst. Each creature in the area takes 9d8 Bludgeoning Damage damage with a Basic DC 33 Reflex Saving Throw save.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Primal Innate Spells",
+      "type": "innate",
+      "bonus": 0,
+      "dc": 33,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 5,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [
+        {
+          "name": "Control Water",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "500 feet",
+          "area": "",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>By imposing your will upon the water, you can raise or lower the level of water in the chosen area by 10 feet. Creatures that have the water trait and that are in the area when you Cast the Spell must attempt a Fortitude save, with the effects of the Slow spell.</p>\n<p><strong>Area</strong> 50 feet long by 50 feet wide</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "WYj2OtYeJPWbGMgk"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Society, DC 31"
+}

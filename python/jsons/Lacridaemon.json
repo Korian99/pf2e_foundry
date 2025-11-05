@@ -1,0 +1,381 @@
+{
+  "initiative": 0,
+  "initiativebonus": 9,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Lacridaemon",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Common",
+    "Medium",
+    "Daemon",
+    "Fiend",
+    "Unholy"
+  ],
+  "source": "Pathfinder Monster Core 2",
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 9,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Daemonic",
+    "Telepathy 100 feet"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 45,
+    "max": 45,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "cold",
+    "death-effects"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Steal Bearings",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within 30 feet Strides</p><hr /><p><strong>Effect</strong> The lacridaemon attempts to redirect the triggering creature so it eventually becomes as lost as the lacridaemon. The triggering creature attempts a DC 17 Will Saving Throw save. Regardless of the result, the creature becomes temporarily immune to all attempts to Steal Bearings for 1 minute.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature treats all squares as difficult terrain for its Stride.</p>\n<p><strong>Critical Failure</strong> As failure, except that the lacridaemon determines where the target moves during the Stride, though it can't move it into hazardous terrain or a place it can't stand.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Weeping Aura",
+      "actions": null,
+      "traits": [
+        "aura",
+        "divine"
+      ],
+      "description": "<p>60 feet. The sounds of crying constantly surround a lacridaemon. A creature that first enters the area must attempt a DC 17 Will Saving Throw save as the sounds cause major disorientation. On a failure, the creature takes a –2 status penalty to Survival checks to Sense Direction (–4 on a critical failure) for 1 day. After attempting the save, the creature is temporarily immune to the lacridaemon's weeping aura for 1 day. The penalties from multiple weeping auras can increase up to a cumulative total of –10.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 12,
+      "traits": [
+        "magical",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+4",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d6",
+          "type": "cold"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+4)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "cold"
+        }
+      ],
+      "effects": [
+        "lacridaemon-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "magical",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+4",
+          "type": "slashing"
+        },
+        {
+          "roll": "1d6",
+          "type": "cold"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+4)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "cold"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Lacridaemon Venom",
+      "actions": null,
+      "traits": [
+        "poison",
+        "unholy"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 20 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 1d4 Poison Damage damage (1 round)</p>\n<p><strong>Stage 2</strong> 1d6 Poison Damage damage and Stupefied 1 (1 round)</p>\n<p><strong>Stage 3</strong> 1d8 Poison Damage damage, Confused, and stupefied 1 (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Venomous Spray",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The lacridaemon's begins to weep, spraying its venom-filled tears at all creatures within 30 feet. The creatures are immediately exposed to lacridaemon venom. Other lacridaemons are immune to this venom.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Divine Innate Spells",
+      "type": "innate",
+      "bonus": 0,
+      "dc": 17,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 2,
+      "cantrips": [],
+      "lv1spells": [
+        {
+          "name": "Fear",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "emotion",
+            "fear",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Frightened 1.</p>\n<p><strong>Failure</strong> The target is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target is Frightened 3 and Fleeing for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "YuPDoLBxyKx8SGhm"
+        },
+        {
+          "name": "Vanishing Tracks",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You obscure the tracks you leave behind. The DC of checks to Track you gains a +4 status bonus or is equal to your spell DC, whichever results in a higher DC.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The duration increases to 8 hours.</p>\n<p><strong>Heightened (4th)</strong> The duration increases to 8 hours. The spell has a range of 20 feet and an area of a 20-foot-emanation, affecting up to 10 creatures of your choice within that area.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "tXniVXfKSLBpdOko"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Invisibility",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "illusion",
+            "manipulate",
+            "subtle"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>Illusions bend light around the target, rendering it Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "UUb6SP1JVeYg9Kwi"
+        }
+      ],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Religion, DC 18"
+}

@@ -15,7 +15,7 @@
     "Incorporeal",
     "Spirit"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision",
     "Scent 60ft imprecise"
@@ -29,12 +29,12 @@
   "languages": [
     "Common",
     "Fey",
-    "tongues"
+    "Truespeech"
   ],
   "skills": [
     {
       "name": "athletics",
-      "modifier": 23,
+      "modifier": 22,
       "note": [],
       "usedAttribute": "strength",
       "modifications": []
@@ -81,7 +81,7 @@
         "mental",
         "primal"
       ],
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The spirit guide forms a bond with a mortal creature. While the bond exists, the spirit guide increases their current and maximum Hit Points by 20, gains a +2 status bonus to their attack and damage rolls, and can communicate telepathically with the bonded mortal as long as the two beings are on the same plane.</p>\n<p>The spirit guide can only be bonded with one mortal at a time, and they can take this action again to end the bond or to form a new bond (which also ends the old bond). The bond also ends if the spirit guide or the mortal dies.</p>\n<p>This bond strengthens the spirit guide's connection to the Material Plane. While bonded, the spirit guide loses the incorporeal and spirit traits, loses their immunities and resistances, and changes their Strikes to deal the appropriate physical damage (typically piercing or slashing) instead of force damage.</p>",
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The spirit guide forms a bond with a mortal creature. While the bond exists, the spirit guide increases their current and maximum Hit Points by 20, gains a +2 status bonus to their attack and damage rolls, and can communicate telepathically with the bonded mortal as long as the two beings are on the same plane.</p>\n<p>The spirit guide can only be bonded with one mortal at a time, and they can take this action again to end the bond or to form a new bond (which also ends the old bond). The bond also ends if the spirit guide or the mortal dies.</p>\n<p>This bond strengthens the spirit guide's connection to the Universe. While bonded, the spirit guide loses the incorporeal and spirit traits, loses their immunities and resistances, and changes their Strikes to deal the appropriate physical damage (typically piercing or slashing) instead of force damage.</p>",
       "collapsed": false
     }
   ],
@@ -116,15 +116,34 @@
     "note": "",
     "modifications": []
   },
-  "immunities": [],
-  "resistances": [],
+  "immunities": [
+    "bleed",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "force",
+        "ghost-touch",
+        "spirit"
+      ],
+      "type": "all-damage",
+      "value": 10
+    }
+  ],
   "weaknesses": [],
   "defensiveAbilities": [
     {
       "name": "Avenging Claws",
       "actions": -1,
       "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature within 10 feet damages the feathered bear's ally with a melee attack</p>\n<hr />\n<p><strong>Effect</strong> The feathered bear immediately Steps toward the triggering attacker and makes a claws Strike.</p>",
+      "description": "<p><strong>Trigger</strong> A creature within 10 feet damages the feathered bear's ally with a melee attack</p><hr /><p><strong>Effect</strong> The feathered bear immediately Steps toward the triggering attacker and makes a claws Strike.</p>",
       "collapsed": false
     },
     {
@@ -134,7 +153,7 @@
         "aura",
         "primal"
       ],
-      "description": "<p>30 feet. All allies within 30 feet of the feathered bear gain a +1 status bonus to saves against magical effects. The bonus increases to +2 if the effect originated from a demon or other chaotic evil fiend.</p>\n<p>Effect: Guardian's Aegis</p>",
+      "description": "<p>30 feet. All allies within 30 feet of the feathered bear gain a +1 status bonus to saves against magical effects. The bonus increases to +2 if the effect originated from a fiend.</p>\n<p>Effect: Guardian's Aegis</p>",
       "collapsed": false
     }
   ],
@@ -172,8 +191,7 @@
       "bonus": 21,
       "traits": [
         "agile",
-        "magical",
-        "unarmed"
+        "magical"
       ],
       "damageRolls": [
         {
@@ -208,7 +226,7 @@
       "name": "Feathered Charge",
       "actions": 2,
       "traits": [],
-      "description": "<p>The feathered bear Strides and makes a Strike at the end of that movement.</p>\n<p>During the Stride, the feathered bear ignores difficult terrain and greater difficult terrain, and they can move across air as easily as solid ground. If the feathered bear doesn't end their movement on solid ground, they fall as soon as the Strike is completed.</p>",
+      "description": "<p>The feathered bear Strides and makes a Strike at the end of that movement. During the Stride, the feathered bear ignores difficult terrain and greater difficult terrain, and they can move across air as easily as solid ground. If the feathered bear doesn't end their movement on solid ground, they fall as soon as the Strike is completed.</p>",
       "collapsed": false
     },
     {
@@ -237,7 +255,33 @@
         "max": 0
       },
       "autoHeightenLevel": 5,
-      "cantrips": [],
+      "cantrips": [
+        {
+          "name": "Know the Way",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>In your mind's eye, you magically reorient yourself. You immediately know which direction is north (if it exists at your current location), and you can choose a location you were at within the last 24 hours and learn what direction it lies.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can choose a location you were at within the last week.</p>\n<p><strong>Heightened (7th)</strong> You can choose a location you were at regardless of how long ago you were there.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "HuWAPTSd9lapY4W2"
+        }
+      ],
       "lv1spells": [],
       "lv2spells": [],
       "lv3spells": [
@@ -263,59 +307,10 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "00ySgKYncUheJC1A"
+          "id": "iYtGehrpBbEH00vj"
         },
         {
-          "name": "Longstrider",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 3,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "1 hour",
-          "range": "",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You lengthen your stride beyond what should be possible. You gain a +10-foot status bonus to your Speed.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The duration increases to 8 hours.</p>\n<p></p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "weJ27hVwmLdbC7G0"
-        },
-        {
-          "name": "Barkskin",
-          "type": "spell",
-          "level": 2,
-          "heightenedLevel": 3,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "plant"
-          ],
-          "castingTime": "2",
-          "duration": "10 minutes",
-          "range": "touch",
-          "area": "",
-          "targets": "1 willing creature",
-          "save": "",
-          "description": "<p>The target's skin becomes covered in bark. The target gains resistance 2 to bludgeoning and piercing damage and weakness 3 to fire. After the target takes fire damage, it can Dismiss the spell as a free action triggered by taking the damage; doing so doesn't reduce the fire damage the target was dealt.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+2)</strong> The resistances increase by 2, and the weakness increases by 3.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "XuOHW435ybbWwI8r"
-        },
-        {
-          "name": "Endure Elements",
+          "name": "Environmental Endurance",
           "type": "spell",
           "level": 2,
           "heightenedLevel": 3,
@@ -325,18 +320,44 @@
             "manipulate"
           ],
           "castingTime": "10 minutes",
-          "duration": "until the next time you make your daily preparations",
+          "duration": "until your next daily preparations",
           "range": "touch",
           "area": "",
           "targets": "1 willing creature",
           "save": "",
-          "description": "<p>You shield the target against dangerous temperatures. Choose severe cold or heat. The target is protected from the temperature you chose (but not extreme cold or heat).</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The target is protected from severe cold and heat.</p>\n<p><strong>Heightened (5th)</strong> The target is protected from severe cold, severe heat, extreme cold, and extreme heat.</p>",
+          "description": "<p>You shield the target against dangerous temperatures. Choose severe cold or heat. The target is protected from the temperature you chose (but not extreme cold or heat).</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The target is protected from severe cold and severe heat.</p>\n<p><strong>Heightened (5th)</strong> The target is protected from severe cold, severe heat, extreme cold, and extreme heat.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "jzuVowojJM1AxTZ2"
+          "id": "ObFXhm0gggUKMeKB"
+        },
+        {
+          "name": "Oaken Resilience",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "plant",
+            "wood"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>The target's skin becomes tough, with a consistency like bark or wood. The target gains resistance 2 to bludgeoning and piercing damage and weakness 3 to fire. After the target takes fire damage, it can Dismiss the spell as a free action triggered by taking the damage; doing so doesn't reduce the fire damage the target was dealt.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+2)</strong> The resistances increase by 2, and the weakness increases by 3.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "tgRUm9fRWVsKpLQP"
         },
         {
           "name": "Haste",
@@ -354,19 +375,19 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>Magic empowers the target to act faster. It gains the Quickened condition and can use the extra action each round only for Strike and Stride actions.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> You can target up to 6 creatures.</p>",
+          "description": "<p>Magic empowers the target to act faster. It gains the Quickened condition and can use the extra action each round only for Strike and Stride actions.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> You can target up to 6 creatures.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "RJGuj6KYG9aXwVOd"
+          "id": "ijuMpiCEQuX41f7M"
         }
       ],
       "lv4spells": [],
       "lv5spells": [
         {
-          "name": "Tongues (Constant)",
+          "name": "Truespeech (Constant)",
           "type": "spell",
           "level": 5,
           "heightenedLevel": 5,
@@ -387,7 +408,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "qaQZJI6uMjww56l2"
+          "id": "65qecWpM6Z3Wrq6Z"
         }
       ],
       "lv6spells": [],

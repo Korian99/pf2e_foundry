@@ -1,6 +1,6 @@
 {
   "initiative": 0,
-  "initiativebonus": 7,
+  "initiativebonus": 5,
   "comments": "",
   "conditions": [],
   "color": "#fff",
@@ -13,22 +13,31 @@
     "Medium",
     "Human",
     "Humanoid",
-    "Lawful",
     "Oread"
   ],
-  "source": "Pathfinder Bestiary 2",
+  "source": "Pathfinder Monster Core 2",
   "senses": [],
   "perception": {
-    "value": 7,
+    "value": 5,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
   },
   "languages": [
     "Common",
-    "Petran"
+    "Petran",
+    "Pyric",
+    "Sussuran",
+    "Thalassic"
   ],
   "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
     {
       "name": "athletics",
       "modifier": 7,
@@ -44,6 +53,20 @@
       "modifications": []
     },
     {
+      "name": "deception",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
       "name": "medicine",
       "modifier": 5,
       "note": [],
@@ -51,8 +74,22 @@
       "modifications": []
     },
     {
+      "name": "occultism",
+      "modifier": 4,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "performance",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
       "name": "society",
-      "modifier": 3,
+      "modifier": 4,
       "note": [],
       "usedAttribute": "intelligence",
       "modifications": []
@@ -66,28 +103,28 @@
     }
   ],
   "strength": {
-    "value": 4
+    "value": 2
   },
   "dexterity": {
-    "value": 1
+    "value": 2
   },
   "constitution": {
-    "value": 2
+    "value": 0
   },
   "intelligence": {
-    "value": 0
+    "value": 1
   },
   "wisdom": {
-    "value": 2
+    "value": 0
   },
   "charisma": {
-    "value": 0
+    "value": 4
   },
   "items": [
     {
       "name": "Bastard Sword",
       "quantity": 1,
-      "description": "<p>This broad-bladed sword, sometimes called the hand-and-a-half sword, has a longer grip so it can be held in one hand or used with two hands to provide extra piercing or slashing power.</p>",
+      "description": "<p>This broad-bladed sword, sometimes called the hand-and-a-half sword, has a longer grip so it can be held in one hand or used with two hands to provide extra slashing power.</p>",
       "level": 0,
       "price": "4 gp",
       "traits": [
@@ -108,7 +145,7 @@
     {
       "name": "Full Plate",
       "quantity": 1,
-      "description": "<p>Plate mail consists of interlocking plates that encase nearly the entire body in a carapace of steel. It is costly and heavy, and the wearer often requires help to don it correctly, but it provides some of the best defense armor can supply. A suit of this armor comes with an undercoat of padded armor and a pair of gauntlets.</p>",
+      "description": "<p>Plate mail consists of interlocking plates that encase nearly the entire body in a carapace of steel. It is costly and heavy, and the wearer often requires help to don it correctly, but it provides some of the best defense armor can supply. A suit of this armor comes with an undercoat of @UUID[Compendium.pf2e.equipment-srd.Item.Padded Armor] and a pair of @UUID[Compendium.pf2e.equipment-srd.Item.Gauntlet]{gauntlets}.</p>",
       "level": 2,
       "price": "30 gp",
       "traits": [
@@ -118,19 +155,19 @@
   ],
   "generalAbilities": [],
   "ac": {
-    "value": 19,
+    "value": 15,
     "note": "",
     "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
-    "value": 7,
+    "value": 3,
     "note": "",
     "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
-    "value": 6,
+    "value": 5,
     "note": "",
     "usedAttribute": "dexterity",
     "modifications": []
@@ -143,8 +180,8 @@
   },
   "savenote": "",
   "hp": {
-    "value": 20,
-    "max": 20,
+    "value": 16,
+    "max": 16,
     "note": "",
     "modifications": []
   },
@@ -152,6 +189,13 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    },
     {
       "name": "Shield Block",
       "actions": -1,
@@ -188,7 +232,7 @@
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Light Hammer",
       "bonus": 6,
       "traits": [
@@ -208,7 +252,7 @@
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -216,17 +260,10 @@
   ],
   "offensiveAbilities": [
     {
-      "name": "Attack of Opportunity",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
-      "collapsed": false
-    },
-    {
-      "name": "Power Attack",
+      "name": "Vicious Blow",
       "actions": 2,
       "traits": [],
-      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The monster makes a melee Strike. This counts as two attacks when calculating the monster's multiple attack penalty. If this Strike hits, the monster deals an extra die of weapon damage.</p></p></details></p>",
+      "description": "<p><strong>Effect</strong> The oread guard makes a melee Strike. This counts as two attacks when calculating the guard's multiple attack penalty. If this Strike hits, the oread guard deals an extra die of weapon damage.</p>",
       "collapsed": false
     }
   ],

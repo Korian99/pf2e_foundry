@@ -13,7 +13,7 @@
     "Medium",
     "Dragon"
   ],
-  "source": "Pathfinder Bestiary 2",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision"
   ],
@@ -129,8 +129,34 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "30 ft, climb 30ft",
+  "speed": "25 ft, ",
   "strikes": [
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+6",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+6)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
     {
       "type": "melee",
       "name": "Jaws",
@@ -156,33 +182,6 @@
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
-    },
-    {
-      "type": "melee",
-      "name": "Claw",
-      "bonus": 10,
-      "traits": [
-        "agile",
-        "magical",
-        "unarmed"
-      ],
-      "damageRolls": [
-        {
-          "roll": "1d6+6",
-          "type": "slashing"
-        }
-      ],
-      "critRolls": [
-        {
-          "roll": "(1d6+6)*2",
-          "type": "slashing"
-        }
-      ],
-      "effects": [],
-      "usedAttributeToHit": "strength",
-      "usedAttributeDamage": "strength",
-      "toHitModifications": [],
-      "damageModifications": []
     }
   ],
   "offensiveAbilities": [
@@ -190,7 +189,7 @@
       "name": "Poison Gasp",
       "actions": 1,
       "traits": [],
-      "description": "<p>The tatzlwyrm belches a puff of poisonous vapor into the face of an adjacent creature, which must attempt a DC 15 Fortitude Saving Throw save; the creature takes a -2 circumstance penalty to this save if it's Grabbed or Off-Guard.</p>\n<p>The tatzlwyrm can't use Poison Gasp again for 2 rounds.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Sickened 1.</p>\n<p><strong>Failure</strong> The target takes 2d6 Poison Damage damage and is Enfeebled 1 for 1 round.</p>\n<p><strong>Critical Failure</strong> The target takes 4d6 Poison Damage damage and is Enfeebled 1 for 1 minute.</p>",
+      "description": "<p>The tatzlwyrm belches a puff of poisonous vapor into the face of an adjacent creature, which must attempt a DC 15 Fortitude Saving Throw save; the creature takes a –2 circumstance penalty to this save if it's Grabbed or Off-Guard. The tatzlwyrm can't use Poison Gasp again for 2 rounds.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Sickened 1.</p>\n<p><strong>Failure</strong> The target takes 2d6 Poison Damage damage and is Enfeebled 1 for 1 round.</p>\n<p><strong>Critical Failure</strong> The target takes 4d6 Poison Damage damage and is enfeebled 1 for 1 minute.</p>",
       "collapsed": false
     }
   ],

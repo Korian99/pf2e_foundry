@@ -11,13 +11,11 @@
   "traits": [
     "Common",
     "Medium",
-    "Chaotic",
     "Demon",
-    "Evil",
     "Fiend",
     "Unholy"
   ],
-  "source": "Pathfinder #151: The Show Must Go On",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision"
   ],
@@ -31,7 +29,7 @@
     "Chthonian",
     "Draconic",
     "Empyrean",
-    "telepathy 100 feet"
+    "Telepathy 100 feet"
   ],
   "skills": [
     {
@@ -52,7 +50,7 @@
       "name": "deception",
       "modifier": 7,
       "note": [
-        "to impersonate while inhabiting a body 10"
+        "to Impersonate while Inhabiting a Body 10"
       ],
       "usedAttribute": "charisma",
       "modifications": []
@@ -83,11 +81,22 @@
   "charisma": {
     "value": 2
   },
-  "items": [],
+  "items": [
+    {
+      "name": "Longsword",
+      "quantity": 1,
+      "description": "<p>Longswords, also known as arming swords, can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": [
+        "versatile-p"
+      ]
+    }
+  ],
   "generalAbilities": [],
   "ac": {
     "value": 16,
-    "note": "(19 while inhabiting a body)",
+    "note": "",
     "usedAttribute": "dexterity",
     "modifications": []
   },
@@ -137,7 +146,7 @@
       "name": "Recoil from Wasted Opportunities",
       "actions": null,
       "traits": [],
-      "description": "<p>Worm demons can't stand the sight of a good meal presented and then swiftly taken away. Whenever a Dying creature within sight of the worm demon has its dying condition removed, the worm demon takes 1d6 Mental Damage damage.</p>",
+      "description": "<p>Vermleks can't stand the sight of a good meal presented and then swiftly taken away. Whenever a dying creature within sight of the vermlek has its dying condition removed, the vermlek takes 1d6 Mental Damage damage.</p>",
       "collapsed": false
     }
   ],
@@ -153,13 +162,13 @@
       "damageRolls": [
         {
           "roll": "2d8+3",
-          "type": "piercing"
+          "type": "bludgeoning"
         }
       ],
       "critRolls": [
         {
           "roll": "(2d8+3)*2",
-          "type": "piercing"
+          "type": "bludgeoning"
         }
       ],
       "effects": [],
@@ -174,7 +183,6 @@
       "bonus": 12,
       "traits": [
         "agile",
-        "unarmed",
         "unholy"
       ],
       "damageRolls": [
@@ -229,16 +237,16 @@
       "traits": [
         "manipulate"
       ],
-      "description": "<p><strong>Requirements</strong> The worm demon is Inhabiting a Body</p>\n<hr />\n<p><strong>Effect</strong> The worm demon crawls out of the body it is inhabiting, devouring much of the body's remaining flesh and regaining 10 Hit Points in the process. The corpse it leaves behind is little more than a husk.</p>",
+      "description": "<p><strong>Requirements</strong> The vermlek is Inhabiting a Body</p><hr /><p><strong>Effect</strong> The vermlek crawls out of the body they are inhabiting, devouring much of the body's remaining flesh and regaining 10 Hit Points in the process. The corpse they leave behind is little more than a husk.</p>",
       "collapsed": false
     },
     {
       "name": "Inhabit Body",
-      "actions": 3,
+      "actions": 2,
       "traits": [
         "manipulate"
       ],
-      "description": "<p>The worm demon crawls into the body of an adjacent dead Medium humanoid, consuming the bulk of the victim's skeleton and internal organs as it does so and cramming itself into the cavity.</p>\n<p>As long as it Inhabits a Body, the worm demon loses its bite attack, can wield weapons like a humanoid, gains a +3 circumstance bonus to AC, and gains a +3 circumstance bonus to Deception checks to Impersonate the creature it is inhabiting. It cannot use this ability if it is already Inhabiting a Body.</p>",
+      "description": "<p><strong>Requirements</strong> The vermlek isn't already Inhabiting a Body</p><hr /><p><strong>Effect</strong> The vermlek crawls into the body of an adjacent Medium humanoid that has been dead for no more than 1 week, consuming the bulk of the victim's skeleton and internal organs as they do so and cramming themself into the cavity. As long as they Inhabit a Body, the vermlek loses their bite attack, can wield weapons like a humanoid, gains a +3 circumstance bonus to AC, and gains a +3 circumstance bonus to Deception checks to Impersonate the creature they are inhabiting.</p>",
       "collapsed": false
     },
     {
@@ -250,7 +258,7 @@
         "mental",
         "visual"
       ],
-      "description": "<p>Whenever the vermlek Abandons a Body or Inhabits a Body, all creatures within 30 feet who can see the vermlek must succeed at a DC 19 Will Saving Throw save or become Frightened 1. On a critical failure, the creature is frightened 1 and Sickened 1.</p>\n<p>Regardless of the result, creatures are immune to the same vermlek's unsettling movement for 24 hours.</p>",
+      "description": "<p>Whenever the vermlek Abandons a Body or Inhabits a Body, all creatures within 30 feet who can see the vermlek must succeed at a DC 19 Will Saving Throw save or become Frightened 1. On a critical failure, the creature is frightened 1 and Sickened 1. Regardless of the result, creatures are immune to the same vermlek's unsettling movement for 24 hours.</p>",
       "collapsed": false
     }
   ],
@@ -258,20 +266,22 @@
     {
       "name": "Divine Innate Spells",
       "type": "innate",
-      "bonus": 11,
+      "bonus": 0,
       "dc": 19,
       "focusPoints": {
         "current": 0,
         "max": 0
       },
-      "autoHeightenLevel": 1,
+      "autoHeightenLevel": 3,
       "cantrips": [],
-      "lv1spells": [
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [
         {
           "name": "Fear",
           "type": "spell",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 3,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -292,13 +302,13 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "JEyKz1i0fdKEqqap"
+          "id": "bqXtic4xo05Qf1Hm"
         },
         {
           "name": "Harm",
           "type": "spell",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 3,
           "timesPrepared": 1,
           "traits": [
             "manipulate",
@@ -310,17 +320,15 @@
           "area": "",
           "targets": "1 living creature or 1 willing undead creature",
           "save": "Basic fortitude",
-          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p>◆◆ <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "GtilemDApMBiK7Tt"
+          "id": "Z0J3zvSxPpcNm9eM"
         }
       ],
-      "lv2spells": [],
-      "lv3spells": [],
       "lv4spells": [],
       "lv5spells": [],
       "lv6spells": [],

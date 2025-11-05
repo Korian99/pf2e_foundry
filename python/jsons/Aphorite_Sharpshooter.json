@@ -11,12 +11,11 @@
   "traits": [
     "Common",
     "Medium",
-    "Aphorite",
     "Human",
     "Humanoid",
-    "Lawful"
+    "Nephilim"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision"
   ],
@@ -68,7 +67,7 @@
     },
     {
       "name": "Engineering Lore",
-      "modifier": 9,
+      "modifier": 12,
       "note": "",
       "usedAttribute": "intelligence",
       "modifications": []
@@ -116,7 +115,7 @@
     {
       "name": "Breastplate",
       "quantity": 1,
-      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
+      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.Half Plate] armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
       "level": 0,
       "price": "8 gp",
       "traits": []
@@ -170,7 +169,7 @@
       "name": "Crystalline Dust",
       "actions": 2,
       "traits": [],
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The sharpshooter becomes Concealed for 4 rounds, though they can't use the concealment to Hide or Sneak, as normal for concealment where their position is obvious.</p>",
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The sharpshooter becomes Concealed for 4 rounds, though they can't use the concealment to Hide or Sneak, as normal for concealment where their position is obvious.</p>",
       "collapsed": false
     }
   ],
@@ -204,27 +203,26 @@
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Crossbow",
       "bonus": 14,
       "traits": [
-        "range-increment-60",
         "reload-1"
       ],
       "damageRolls": [
         {
-          "roll": "1d8+8",
+          "roll": "1d8+6",
           "type": "piercing"
         }
       ],
       "critRolls": [
         {
-          "roll": "(1d8+8)*2",
+          "roll": "(1d8+6)*2",
           "type": "piercing"
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -247,7 +245,7 @@
         "linguistic",
         "mental"
       ],
-      "description": "<p>The sharpshooter makes witty, but disparaging comments about the fighting style of a target within 30 feet, expressing sympathy over every missed blow and providing sarcastic advice on how to improve.</p>\n<p>The target must succeed at a DC 18 Will Saving Throw save or take a -1 circumstance penalty to attack rolls (-2 on a critical failure) for 1 minute or until it makes a successful Strike against the sharpshooter.</p>\n<p>A creature who critically succeeds or who Strikes the sharpshooter after failing is immune to that sharpshooter's Hurtful Critique for 1 hour.</p>\n<p>Effect: Hurtful Critique</p>",
+      "description": "<p>The sharpshooter makes witty but disparaging comments about the fighting style of a target within 30 feet, expressing sympathy over every missed blow and providing sarcastic advice on how to improve.</p>\n<p>The target must succeed at a DC 18 Will Saving Throw save or take a –1 circumstance penalty to attack rolls (–2 on a critical failure) for 1 minute or until it makes a successful Strike against the sharpshooter.</p>\n<p>A creature that critically succeeds or who Strikes the sharpshooter after failing is immune to that sharpshooter's Hurtful Critique for 1 hour.</p>\n<p>Effect: Hurtful Critique</p>",
       "collapsed": false
     }
   ],
@@ -265,7 +263,7 @@
       "cantrips": [],
       "lv1spells": [
         {
-          "name": "True Strike",
+          "name": "Sure Strike",
           "type": "spell",
           "level": 1,
           "heightenedLevel": 1,
@@ -280,13 +278,13 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>A glimpse into the future ensures your next blow strikes true. The next time you make an attack roll before the end of your turn, roll the attack twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden.</p>\n<p></p>",
+          "description": "<p>The next time you make an attack roll before the end of your turn, roll it twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden. You are then temporarily immune to <em>sure strike</em> for 10 minutes.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "H0AMJSFl2u52eijX"
+          "id": "J78p1jwOtUfCUVl9"
         }
       ],
       "lv2spells": [],

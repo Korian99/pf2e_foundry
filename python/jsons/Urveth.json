@@ -11,14 +11,12 @@
   "traits": [
     "Common",
     "Gargantuan",
-    "Chaotic",
     "Darvakka",
-    "Evil",
     "Shadow",
     "Undead",
     "Unholy"
   ],
-  "source": "Pathfinder Book of the Dead",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Greater darkvision",
     "Lifesense 60ft precise"
@@ -66,14 +64,14 @@
       "modifications": []
     },
     {
-      "name": "Shadow Plane Lore",
+      "name": "Netherworld Lore",
       "modifier": 31,
       "note": "",
       "usedAttribute": "intelligence",
       "modifications": []
     },
     {
-      "name": "The Void Lore",
+      "name": "Void Lore",
       "modifier": 31,
       "note": "",
       "usedAttribute": "intelligence",
@@ -144,7 +142,8 @@
     "disease",
     "paralyzed",
     "poison",
-    "unconscious"
+    "unconscious",
+    "bleed"
   ],
   "resistances": [
     {
@@ -164,13 +163,6 @@
   ],
   "defensiveAbilities": [
     {
-      "name": "Attack of Opportunity (Special)",
-      "actions": -1,
-      "traits": [],
-      "description": "<p>Claw only. An urveth gains 3 extra reactions each round that they can use only to make Attacks of Opportunity.</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
-      "collapsed": false
-    },
-    {
       "name": "Entropy's Shadow",
       "actions": null,
       "traits": [
@@ -179,6 +171,13 @@
         "void"
       ],
       "description": "<p>60 feet. Urveths leak entropy and corruption from their very being. A living creature entering or starting its turn in the aura takes 5d6 Void Damage damage with a Basic DC 38 Fortitude Saving Throw. If it fails, it's also Enfeebled 1 for 1 minute and pulled 10 feet toward the urveth.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p>Claw only. An urveth gains 3 extra reactions each round that they can use only to make Reactive Strikes.</p>\n<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
       "collapsed": false
     },
     {
@@ -334,13 +333,6 @@
       ],
       "description": "<p><strong>Saving Throw</strong> DC 37 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 3d6 Void Damage]{3d6 void damage and 2d6 poison damage} (1 round)</p>\n<p><strong>Stage 2</strong> 3d6 Void Damage]{3d6 void damage and 2d6 poison damage}, and Enfeebled 2 (1 round)</p>\n<p><strong>Stage 3</strong> 3d6 Void Damage]{3d6 void damage and 2d6 poison damage}, and Enfeebled 4 (1 round)</p>",
       "collapsed": false
-    },
-    {
-      "name": "Improved Grab",
-      "actions": 0,
-      "traits": [],
-      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Improved Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with as a free action. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead spend an action to use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
-      "collapsed": false
     }
   ],
   "spellcastingEntries": [
@@ -372,7 +364,7 @@
           "area": "30ft emanation",
           "targets": "",
           "save": "",
-          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies.</p>\n<p>You detect illusion magic only if that magic's effect has a lower level than the rank of your detect magic spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an invisibility potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the school of magic for the highest-level effect within range that the spell detects. If multiple effects are equally strong, the GM determines which you learn.</p>\n<p><strong>Heightened (4th)</strong> As 3rd level, but you also pinpoint the source of the highest-level magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
+          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -386,7 +378,7 @@
       "lv3spells": [],
       "lv4spells": [
         {
-          "name": "Darkness (At Will)",
+          "name": "Darkness (at will)",
           "type": "spell",
           "level": 2,
           "heightenedLevel": 4,
@@ -415,7 +407,7 @@
       "lv6spells": [],
       "lv7spells": [
         {
-          "name": "True Seeing",
+          "name": "Truesight",
           "type": "spell",
           "level": 6,
           "heightenedLevel": 7,
@@ -431,7 +423,7 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You see things within 60 feet as they actually are. The GM rolls a secret counteract check against any illusion or transmutation in the area, but only for the purpose of determining whether you see through it (for instance, if the check succeeds against a polymorph spell, you can see the creature's true form, but you don't end the polymorph spell).</p>",
+          "description": "<p>You see things within 60 feet as they actually are. The GM rolls a secret counteract check against any illusion, morph or polymorph effect in the area, but only for the purpose of determining whether you see through it (for instance, if the check succeeds against a polymorph spell, you can see the creature's true form, but you don't end the polymorph spell).</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -457,8 +449,8 @@
           "range": "500 feet",
           "area": "60ft burst",
           "targets": "",
-          "save": "reflex",
-          "description": "<p>A globe of freezing darkness explodes in the area, dealing 8d10 cold damage to creatures in the area, plus 8d4 additional void damage to living creatures. Each creature in the area must attempt a Reflex save. If the globe overlaps with an area of magical light or affects a creature affected by magical light, eclipse burst attempts to counteract the light effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and becomes Blinded by the darkness for an unlimited duration.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The cold damage increases by 1d10 and the void damage against the living increases by 1d4.</p>",
+          "save": "Basic reflex",
+          "description": "<p>A globe of freezing darkness explodes in the area, dealing 8d10 cold damage to creatures in the area, plus an additional 8d4 void damage to living creatures. Each creature in the area must attempt a Reflex save.</p>\n<p>If the globe overlaps with an area of magical light or affects a creature affected by magical light, eclipse burst attempts to counteract the light effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and becomes Blinded by the darkness for an unlimited duration.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The cold damage increases by 1d10 and the void damage against the living increases by 1d4.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -467,7 +459,7 @@
           "id": "EnlzUbGagNisi8kc"
         },
         {
-          "name": "Plane Shift (to the Universe, Void, or Netherworld only)",
+          "name": "Interplanar Teleport (to the Universe, Void, or Netherworld only)",
           "type": "spell",
           "level": 7,
           "heightenedLevel": 7,
@@ -479,11 +471,11 @@
           ],
           "castingTime": "10 minutes",
           "duration": "",
-          "range": "touch",
+          "range": "5 feet",
           "area": "",
-          "targets": "1 willing creature, or up to 8 willing creatures joining hands",
+          "targets": "up to 8 willing creatures",
           "save": "",
-          "description": "<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must have specific knowledge of the destination plane and use a magic tuning fork created from material from that plane as a focus for the spell. While the tuning forks for most prominent planes are uncommon, just like the spell plane shift, more obscure planes and demiplanes often have rare tuning forks. The spell is highly imprecise, and you appear 1d20x25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. Plane shift doesn't provide a means of return travel, though casting plane shift again allows you to return to your previous plane unless there are extenuating circumstances.</p>",
+          "description": "<p><strong>Requirements</strong> You have a planar key for the destination plane, used as a locus</p>\n<hr />\n<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must know the destination plane exists and use a magic planar key created from material from that plane as a locus for the spell. While the planar keys for most prominent planes are uncommon, just like the spell <em>interplanar teleport</em>, more obscure planes and demiplanes often have rare or possibly even unique planar keys.</p>\n<p>The spell is highly imprecise, and you appear 1d20×25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. <em>Interplanar teleport</em> doesn't provide a means of return travel, though casting <em>interplanar teleport</em> again allows you to return to your previous plane unless there are extenuating circumstances.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -509,7 +501,7 @@
           "area": "",
           "targets": "1 living creature or 1 willing undead creature",
           "save": "Basic fortitude",
-          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p>◆◆ <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -533,7 +525,7 @@
           "area": "",
           "targets": "1 living creature or 1 willing undead creature",
           "save": "Basic fortitude",
-          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p>◆◆ <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -557,7 +549,7 @@
           "area": "",
           "targets": "1 living creature or 1 willing undead creature",
           "save": "Basic fortitude",
-          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p>◆◆ <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -568,13 +560,12 @@
       ],
       "lv9spells": [
         {
-          "name": "Air Walk (Constant)",
+          "name": "Fly (constant)",
           "type": "spell",
           "level": 4,
           "heightenedLevel": 9,
           "timesPrepared": 1,
           "traits": [
-            "air",
             "concentrate",
             "manipulate"
           ],
@@ -584,13 +575,13 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>The target can walk on air as if it were solid ground. It can ascend and descend in this way at a maximum of a 45-degree angle.</p>",
+          "description": "<p>The target can soar through the air, gaining a fly Speed equal to its Speed or 20 feet, whichever is greater.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration increases to 1 hour.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "4pMFJruJiXAxRCo4"
+          "id": "IJB57vOyZxNyssuR"
         }
       ],
       "lv10spells": [],

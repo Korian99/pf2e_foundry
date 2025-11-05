@@ -12,9 +12,10 @@
     "Common",
     "Medium",
     "Beast",
-    "Troll"
+    "Troll",
+    "Wood"
   ],
-  "source": "Pathfinder Bestiary 2",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision",
     "Scent 30ft imprecise"
@@ -36,7 +37,7 @@
     },
     {
       "name": "athletics",
-      "modifier": 11,
+      "modifier": 9,
       "note": [],
       "usedAttribute": "strength",
       "modifications": []
@@ -66,7 +67,7 @@
     "value": 5
   },
   "intelligence": {
-    "value": -4
+    "value": -3
   },
   "wisdom": {
     "value": 1
@@ -104,23 +105,36 @@
   "hp": {
     "value": 65,
     "max": 65,
-    "note": "regeneration 15 (deactivated by acid or fire)",
+    "note": "regeneration 15 (deactivated by electricity or fire)",
     "modifications": []
   },
   "immunities": [],
   "resistances": [],
   "weaknesses": [
     {
+      "exceptions": [],
+      "type": "electricity",
+      "value": 8
+    },
+    {
+      "exceptions": [],
       "type": "fire",
-      "value": 10
+      "value": 8
     }
   ],
   "defensiveAbilities": [
     {
-      "name": "Regeneration 15 (Deactivated by Acid or Fire)",
+      "name": "Regeneration 15 (Deactivated by Electricity or Fire)",
       "actions": null,
       "traits": [],
       "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster regains the listed number of Hit Points each round at the beginning of its turn. Its Dying condition never increases beyond Dying 3 as long as its regeneration is active. However, if it takes damage of a type listed in the regeneration entry, its regeneration deactivates until the end of its next turn. Deactivate the regeneration before applying any damage of a listed type, since that damage might kill the monster by bringing it to Dying 4.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Flailing Bite",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The trollhound takes electricity or fire damage</p><hr /><p><strong>Effect</strong> The trollhound makes a jaws Strike against a random creature within reach. If the trollhound has persistent fire damage, they attempt a DC 15 Flat  to remove it.</p>",
       "collapsed": false
     }
   ],
@@ -162,7 +176,7 @@
       "traits": [
         "disease"
       ],
-      "description": "<p><strong>Saving Throw</strong> DC 18 Fortitude Saving Throw</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> Enfeebled 1 (1 day)</p>\n<p><strong>Stage 3</strong> Enfeebled 1 and Clumsy 1 (1 day)</p>\n<p><strong>Stage 4</strong> Enfeebled 2 and Clumsy 2 (1 day)</p>\n<p><strong>Stage 5</strong> Enfeebled 2, Clumsy 2, and Fatigued (1 day)</p>",
+      "description": "<p>Trollhounds and trolls are immune to bloodfire fever</p>\n<p><strong>Saving Throw</strong> DC 18 Fortitude Saving Throw</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> Enfeebled 1 (1 day)</p>\n<p><strong>Stage 3</strong> enfeebled 1 and Clumsy 1 (1 day)</p>\n<p><strong>Stage 4</strong> Enfeebled 2 and Clumsy 2 (1 day)</p>\n<p><strong>Stage 5</strong> enfeebled 2, clumsy 2, and Fatigued (1 day)</p>",
       "collapsed": false
     },
     {

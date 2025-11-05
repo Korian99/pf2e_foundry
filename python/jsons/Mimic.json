@@ -13,7 +13,7 @@
     "Medium",
     "Aberration"
   ],
-  "source": "Pathfinder Bestiary",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision"
   ],
@@ -30,7 +30,9 @@
     {
       "name": "athletics",
       "modifier": 12,
-      "note": [],
+      "note": [
+        "to Grapple 14"
+      ],
       "usedAttribute": "strength",
       "modifications": []
     },
@@ -42,7 +44,7 @@
       "modifications": []
     },
     {
-      "name": "Dwelling Lore (applies only to the dungeon it lives in)",
+      "name": "Dwelling Lore (applies only to the dungeon they live in)",
       "modifier": 10,
       "note": "",
       "usedAttribute": "intelligence",
@@ -105,44 +107,61 @@
   "weaknesses": [],
   "defensiveAbilities": [
     {
-      "name": "Adhesive",
-      "actions": null,
-      "traits": [],
-      "description": "<p>The mimic is coated in an adhesive slime. Any creature that hits the mimic, is hit by the mimic, or otherwise touches the mimic must succeed at a DC 23 Reflex Saving Throw save or become Grabbed (Escape dc=23). A weapon that hits the mimic is stuck to the mimic and can be removed with a successful DC 23 Athletics  check (made as a single action).</p>\n<p>A mimic can have any number of objects or creatures stuck to it at a time. The mimic can release a stuck creature or object by using a single action, and the adhesive dissolves 1 minute after the mimic dies, releasing all stuck objects and creatures.</p>",
-      "collapsed": false
-    },
-    {
       "name": "Object Lesson",
       "actions": -1,
       "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature touches or physically interacts with the mimic while the mimic is transformed using Mimic Object.</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature is automatically stuck by the mimic's adhesive (it receives no save). The mimic then makes a pseudopod Strike against any creature adjacent to the mimic.</p>\n<p>Object Lesson can't be used again until the mimic escapes and takes on a new disguise.</p>",
+      "description": "<p><strong>Trigger</strong> A creature touches or physically interacts with the mimic while the mimic is transformed using Mimic Object</p><hr /><p><strong>Effect</strong> The mimic makes a jaws Strike against the triggering creature. If initiative hasn't yet been rolled, the mimic then rolls initiative. Object Lesson can't be used again until the mimic escapes and takes on a new disguise.</p>",
       "collapsed": false
     }
   ],
-  "speed": "10 ft, ",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
-      "name": "Pseudopod",
+      "name": "Jaws",
       "bonus": 14,
-      "traits": [
-        "unarmed"
-      ],
+      "traits": [],
       "damageRolls": [
         {
           "roll": "2d8+4",
-          "type": "bludgeoning"
+          "type": "piercing"
         }
       ],
       "critRolls": [
         {
           "roll": "(2d8+4)*2",
-          "type": "bludgeoning"
+          "type": "piercing"
         }
       ],
       "effects": [
-        "adhesive"
+        "improved-grab"
       ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Pseudopod",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+4)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
@@ -157,7 +176,23 @@
         "concentrate",
         "polymorph"
       ],
-      "description": "<p>The mimic assumes the shape of any Medium object. This doesn't change the mimic's texture or overall size but can alter its coloration and visual appearance. It has an automatic result of 28 on Deception checks and DCs to pass as the object that it's mimicking.</p>",
+      "description": "<p>The mimic assumes the shape of any Medium object. This doesn't change the mimic's texture or overall size but can alter their coloration and visual appearance. They have an automatic result of 28 on Deception checks and DCs to pass as the object that they're mimicking.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Mobile Morph",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The mimic transforms part of their body into climbing claws, wings, or paddles. Until the end of their turn, they gain a climb, fly, or swim Speed of 40 feet. This speed is halved if the mimic has a creature swallowed. If they're in the air at the end of their turn, they fall as normal.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swallow Whole",
+      "actions": 1,
+      "traits": [
+        "attack"
+      ],
+      "description": "<p>Medium, 2d8 Acid Damage, Rupture 13</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster attempts to swallow a creature of the listed size or smaller that it has grabbed or restrained in its jaws or mouth. If a swallowed creature is of the maximum size listed, the monster can't use Swallow Whole again. If the creature is smaller than the maximum, the monster can usually swallow more creatures; the GM determines the maximum. The monster attempts an athletics|defense:reflex check opposed by the grabbed creature's Reflex DC. If it succeeds, it swallows the creature. The monster's mouth or jaws no longer grab a creature it has swallowed, so the monster is free to use them to Strike or Grab once again. The monster can't attack creatures it has swallowed.</p>\n<p>A swallowed creature is Grabbed, is Slowed 1, and has to hold its breath or start suffocating. The swallowed creature takes the listed amount of damage when first swallowed and at the end of each of its turns while it's swallowed. If the victim Escapes this ability's grabbed condition, it exits through the monster's mouth. This frees any other creature grabbed in the monster's mouth or jaws. A swallowed creature can attack the monster that has swallowed it, but only with unarmed attacks or with weapons of light Bulk or less. The swallowing creature is Off-Guard against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the swallowed creature cuts itself free. A creature that gets free by either Escaping or cutting itself free can immediately breathe and exits the swallowing monster's space.</p>\n<p>Effect: Engulf and Swallow Whole</p>\n<p>If the monster dies, a swallowed creature can be freed by creatures adjacent to the corpse if they spend a combined total of 3 actions cutting the monster open with a weapon or unarmed attack that deals piercing or slashing damage.</p></p></details></p>",
       "collapsed": false
     }
   ],

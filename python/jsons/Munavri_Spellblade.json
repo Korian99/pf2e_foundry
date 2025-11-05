@@ -11,24 +11,24 @@
   "traits": [
     "Rare",
     "Medium",
-    "Good",
     "Humanoid",
     "Munavri"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
-    "Darkvision"
+    "Darkvision",
+    "light blindness"
   ],
   "perception": {
     "value": 7,
-    "note": "Darkvision",
+    "note": "Darkvision, light blindness",
     "usedAttribute": "wisdom",
     "modifications": []
   },
   "languages": [
     "Munavri",
     "Sakvroth",
-    "telepathy 30 feet (munavris only)"
+    "Telepathy 30 feet (munavris only)"
   ],
   "skills": [
     {
@@ -133,8 +133,8 @@
   },
   "savenote": "",
   "hp": {
-    "value": 28,
-    "max": 28,
+    "value": 30,
+    "max": 30,
     "note": "",
     "modifications": []
   },
@@ -177,13 +177,21 @@
   ],
   "offensiveAbilities": [
     {
+      "name": "Addling Strike",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per turn</p>\n<p><strong>Requirements</strong> The munavri's most recent action was to Cast a Spell</p><hr /><p><strong>Effect</strong> The munavri Strikes. This Strike gains the occult trait and deals an additional 1d4 mental damage.</p>",
+      "collapsed": false
+    },
+    {
       "name": "Intuit Object",
       "actions": 2,
       "traits": [
         "concentrate",
+        "fortune",
         "occult"
       ],
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> By concentrating their psychic energy on a held object, the munavri intuits its use and understands how to effectively wield it.</p>\n<p>The munavri chooses one item they are holding. They gain the trained proficiency rank in one statistic required to use that item, but only for the purpose of using that specific item.</p>\n<p>For example, they could become trained in greatswords (to use a specific greatsword) or Acrobatics (to use a <em>Jade Cat</em> talisman). This benefit lasts for 1 hour.</p>",
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> By concentrating their psychic energy on a held object, the munavri intuits its use and understands how to effectively wield it. If they focus on a weapon, they can roll twice and take the better result for the next Strike they make with it before the end of their next turn. If they focus on a tool, they can roll twice and take the better result for the next skill check they attempt with that tool within the next minute.</p>",
       "collapsed": false
     }
   ],
@@ -217,7 +225,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "Basic will",
-          "description": "<p>You cloud the target's mind and daze it with a mental jolt. The jolt deals mental damage equal to your spellcasting ability modifier; the target must attempt a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
+          "description": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals 1d6 mental damage, with a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -236,7 +244,8 @@
             "concentrate",
             "illusion",
             "linguistic",
-            "mental"
+            "mental",
+            "subtle"
           ],
           "castingTime": "1",
           "duration": "see below",
@@ -244,7 +253,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You mouth words quietly, but instead of coming out of your mouth, they're transferred directly to the ears of the target. While others can't hear your words any better than if you normally mouthed them, the target can hear your words as if they were standing next to you.</p>\n<p>The target can give a brief response as a reaction, or as a free action on their next turn if they wish, but they must be able to see you and be within range to do so. If they respond, their response is delivered directly to your ear, just like the original message.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The spell's range increases to 500 feet.</p>",
+          "description": "<p>You mouth words quietly, but instead of coming out of your mouth, they're transferred directly to the ears of the target. While others can't hear your words any better than if you normally mouthed them, the target can hear your words as if they were standing next to you. The target can give a brief response as a reaction, or as a free action on their next turn if they wish, but they must be able to see you and be within range to do so. If they respond, their response is delivered directly to your ear, just like the original message.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The spell's range increases to 500 feet.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -268,7 +277,7 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You raise a magical shield of force. This counts as using the Raise a Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use.</p>\n<p>While the spell is in effect, you can use the Shield Block reaction with your magic shield. The shield has Hardness 5. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes. Unlike a normal Shield Block, you can use the spell's reaction against the Force Barrage spell.</p>\n<p>Heightening the spell increases the shield's Hardness.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p>\n<p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p>\n<p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p>\n<p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>",
+          "description": "<p>You raise a magical shield of force. This counts as using the Raise a Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use.</p>\n<p>While the spell is in effect, you can use the Shield Block reaction with your magic shield. The shield has Hardness 5. You can use the spell's reaction to reduce damage from any spell or magical effect, even if it doesn't deal physical damage. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes.</p>\n<p></p>\n<p></p>\n<hr />\n<p><strong>Heightened (+2)</strong> The shield's Hardness increases by 5.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -293,7 +302,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal bludgeoning, piercing, or slashing damage-as appropriate for the object you hurled-equal to 1d6 plus your spellcasting ability modifier. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
+          "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal 2d6 bludgeoning, piercing, or slashing damage—as appropriate for the object you hurled. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -347,7 +356,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "will",
-          "description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and 1d4 persistent mental damage. The target must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is Sickened 1. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is Sickened 2.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>\n<p>(@item.level)d4 Persistent,mental Damage{Leveled Persistent Mental Damage}</p>",
+          "description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and (@item.level)d4 Persistent,mental Damage damage. The target must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is Sickened 1. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is Sickened 2.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -372,7 +381,7 @@
           "duration": "1 minute",
           "range": "30 feet",
           "area": "",
-          "targets": "1 willing living creature",
+          "targets": "1 willing creature",
           "save": "",
           "description": "<p>You grace the target's mind, boosting its mental defenses and healing its wounds. The target regains 1d10+4 Hit Points when you Cast the Spell and gains a +2 status bonus to saves against mental effects for the duration.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 1d10+4.</p>",
           "cast": false,

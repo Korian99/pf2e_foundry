@@ -13,10 +13,9 @@
     "Small",
     "Agathion",
     "Celestial",
-    "Good",
     "Holy"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision"
   ],
@@ -128,7 +127,7 @@
   ],
   "generalAbilities": [],
   "ac": {
-    "value": 24,
+    "value": 23,
     "note": "",
     "usedAttribute": "dexterity",
     "modifications": []
@@ -245,10 +244,10 @@
   ],
   "offensiveAbilities": [
     {
-      "name": "Fox's Cunning",
+      "name": "Fox's Wile",
       "actions": null,
       "traits": [],
-      "description": "<p>A vulpinal's core value is cunning. They can apply their knowledge and stories from their extensive travels to just about any situation in an instant. Before spending any other action on their turn, the vulpinal can Recall Knowledge as a free action.</p>",
+      "description": "<p>A vulpinal's core value is cleverness. They can apply their knowledge and stories from their extensive travels to just about any situation in an instant. Before spending any other action on their turn, the vulpinal can Recall Knowledge as a free action.</p>",
       "collapsed": false
     }
   ],
@@ -267,58 +266,34 @@
       "lv1spells": [],
       "lv2spells": [
         {
-          "name": "Detect Alignment (At Will) (Evil Only)",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 2,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "detection",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "",
-          "area": "30ft emanation",
-          "targets": "",
-          "save": "",
-          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "7kWnGY8jWtyZFMYQ"
-        },
-        {
-          "name": "Invisibility (At Will) (Self Only)",
+          "name": "Invisibility (at will, self only)",
           "type": "spell",
           "level": 2,
           "heightenedLevel": 2,
           "timesPrepared": 1,
           "traits": [
             "illusion",
-            "manipulate"
+            "manipulate",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "10 minutes",
           "range": "touch",
           "area": "",
-          "targets": "self",
+          "targets": "1 creature",
           "save": "",
-          "description": "<p>Cloaked in illusion, the target becomes Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
+          "description": "<p>Illusions bend light around the target, rendering it Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "8fuYbarODhWt1FXZ"
+          "id": "PS1K6r4AUCbQeopN"
         }
       ],
       "lv3spells": [
         {
-          "name": "Calm Emotions",
+          "name": "Calm",
           "type": "spell",
           "level": 2,
           "heightenedLevel": 3,
@@ -336,18 +311,18 @@
           "area": "10ft burst",
           "targets": "",
           "save": "will",
-          "description": "<p>You forcibly calm creatures in the area, soothing them into a nonviolent state; each creature must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> Calming urges impose a -1 status penalty to the creature's attack rolls.</p>\n<p><strong>Failure</strong> Any emotion effects that would affect the creature are suppressed and the creature can't use hostile actions. If the target is subject to hostility from any other creature, it ceases to be affected by calm emotions.</p>\n<p><strong>Critical Failure</strong> As failure, but hostility doesn't end the effect.</p>\n<p></p>",
+          "description": "<p>You forcibly calm creatures in the area, soothing them into a nonviolent state; each creature must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> Calming urges impose a -1 status penalty to the creature's attack rolls.</p>\n<p><strong>Failure</strong> Any emotion effects that would affect the creature are suppressed and the creature can't use hostile actions. If the target is subject to hostility from any other creature, it ceases to be affected by <em>calm</em>.</p>\n<p><strong>Critical Failure</strong> As failure, but hostility doesn't end the effect.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "7P46lLRFl5n1tYDh"
+          "id": "030zlQXDpDo1d9pU"
         },
         {
-          "name": "Remove Disease",
+          "name": "Cleanse Affliction",
           "type": "spell",
-          "level": 3,
+          "level": 2,
           "heightenedLevel": 3,
           "timesPrepared": 1,
           "traits": [
@@ -355,47 +330,22 @@
             "healing",
             "manipulate"
           ],
-          "castingTime": "10 minutes",
+          "castingTime": "2",
           "duration": "",
           "range": "touch",
           "area": "",
-          "targets": "1 creature",
+          "targets": "1 willing creature",
           "save": "",
-          "description": "<p>Healing magic purges disease from a creature's body. You attempt to counteract one disease afflicting the target.</p>",
+          "description": "<p>Gentle restorative magic pushes back the effects of toxins and more complex maladies. Choose an affliction on the target, such as a curse, disease, or poison. If it has advanced past stage one, reduce the stage by one. This reduction can be applied only once to a given case of an affliction, with the case ending when it's completely cured. Although the reduction can't occur again, heightened versions of this spell attempt to counteract with each casting.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> Attempt to counteract the affliction if it is a disease or poison.</p>\n<p><strong>Heightened (4th)</strong> Attempt to counteract the affliction if it is a curse, disease, or poison.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "HuW8QvKAuapYd48n"
+          "id": "5RBxWqdaq4qYXtPW"
         }
       ],
       "lv4spells": [
-        {
-          "name": "Dimension Door",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 4,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "teleportation"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "aontV3THkUMU9qpF"
-        },
         {
           "name": "Divine Wrath",
           "type": "spell",
@@ -420,7 +370,32 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "FsuLk4Hy7Y17lPkO"
+          "id": "SXZQCnOLa9qIUcI3"
+        },
+        {
+          "name": "Translocate",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "9KbPLEFv6xtNHCY3"
         }
       ],
       "lv5spells": [
@@ -435,7 +410,7 @@
             "manipulate"
           ],
           "castingTime": "2",
-          "duration": "10 minutes",
+          "duration": "1 hour",
           "range": "",
           "area": "",
           "targets": "",
@@ -449,7 +424,7 @@
           "id": "RgzVnccNPsj40XQj"
         },
         {
-          "name": "Tongues (Constant)",
+          "name": "Truespeech (Constant)",
           "type": "spell",
           "level": 5,
           "heightenedLevel": 5,
@@ -555,7 +530,7 @@
           "area": "",
           "targets": "1 willing living creature or 1 undead creature",
           "save": "",
-          "description": "<p>Your hands become infused with vitality energy, healing a living creature or damaging an undead creature with a touch.</p>\n<p>If you use lay on hands on a willing living target, you restore 6 Hit Points; if the target is one of your allies, they also gain a +2 status bonus to AC for 1 round.</p>\n<p></p>\n<p>Against an undead target, you deal 1d6 damage and it must attempt a basic Fortitude save; if it fails, it also takes a -2 status penalty to AC for 1 round.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 6, and the damage to an undead target increases by 1d6.</p>",
+          "description": "<p>Your hands become infused with powerful vitality, capable of healing a living creature or damaging an undead creature with a touch.</p><ul><li><strong>Willing Living Creature</strong> The target regains 6 Hit Points. If the target is someone other than yourself, it also gains a +2 status bonus to AC for 1 round.</li><li><strong>Undead Creature</strong> The target takes 1d6 vitality damage with a basic Fortitude save; on a failure, the target also takes a –2 status penalty to AC for 1 round.</li></ul><hr /><p><strong>Heightened (+1)</strong> The amount of healing increases by 6, and the damage to an undead target increases by 1d6.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",

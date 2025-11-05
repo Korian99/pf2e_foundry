@@ -15,7 +15,7 @@
     "Humanoid",
     "Suli"
   ],
-  "source": "Pathfinder Bestiary 2",
+  "source": "Pathfinder Monster Core 2",
   "senses": [],
   "perception": {
     "value": 5,
@@ -152,12 +152,7 @@
     {
       "name": "Elemental Bulwark",
       "actions": -1,
-      "traits": [
-        "air",
-        "earth",
-        "fire",
-        "water"
-      ],
+      "traits": [],
       "description": "<p><strong>Trigger</strong> An enemy is about to damage the dune dancer with cold, electricity, or fire, or with a spell that has the air, earth, fire, or water trait</p>\n<hr />\n<p><strong>Effect</strong> The dune dancer gain resistance 2 against the triggering damage</p>",
       "collapsed": false
     }
@@ -193,10 +188,20 @@
   ],
   "offensiveAbilities": [
     {
+      "name": "Distracting Dance",
+      "actions": 1,
+      "traits": [
+        "mental",
+        "visual"
+      ],
+      "description": "<p>With a twirl of their body or with elaborate hand movements, the suli dune dancer attempts to distract a creature within 30 feet. The dune dance attempts a performance|against:perception check against the target's Perception DC.</p><hr /><p><strong>Critical Success</strong> The target is Off-Guard and takes a –2 circumstance bonus to Perception checks until the end of the dune dancer's next turn.</p>\n<p><strong>Success</strong> The target is off-guard until the end of the dune dancer's current turn.</p>\n<p><strong>Critical Failure</strong> The dune dancer is off-guard against attacks from the target until the end of their next turn.</p>",
+      "collapsed": false
+    },
+    {
       "name": "Elemental Assault",
       "actions": 2,
       "traits": [],
-      "description": "<p>Elemental magic fills the dune dancer's body or weapon. The dune dancer chooses one element and makes a melee Strike. The Strike deals an additional 1d4 damage of the indicated type and has the trait corresponding to the element:</p>\n<ul>\n<li><strong>Air</strong> electricity</li>\n<li><strong>Earth</strong> bludgeoning</li>\n<li><strong>Fire</strong> fire</li>\n<li><strong>Water</strong> cold</li>\n</ul>",
+      "description": "<p>Elemental magic fills the dune dancer's body or weapon. The dune dancer chooses one element and makes a melee Strike. The Strike deals an additional 1d4 damage of the indicated type and has the trait corresponding to the element:</p><ul><li><p><strong>Air</strong> electricity</p></li><li><p><strong>Earth</strong> bludgeoning</p></li><li><p><strong>Fire</strong> fire</p></li><li><p><strong>Metal</strong> slashing</p></li><li><p><strong>Water</strong> cold</p></li><li><p><strong>Wood</strong> vitality</p></li></ul>",
       "collapsed": false
     }
   ],
@@ -229,13 +234,13 @@
           "area": "30ft emanation",
           "targets": "",
           "save": "",
-          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies.</p>\n<p>You detect illusion magic only if that magic's effect has a lower level than the rank of your detect magic spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an invisibility potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the school of magic for the highest-level effect within range that the spell detects. If multiple effects are equally strong, the GM determines which you learn.</p>\n<p><strong>Heightened (4th)</strong> As 3rd level, but you also pinpoint the source of the highest-level magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
+          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "nktnO0aAYu7JllFI"
+          "id": "CLlIFdJq9EEd9ZkT"
         },
         {
           "name": "Guidance",
@@ -252,64 +257,13 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You ask for divine guidance, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n<p></p>",
+          "description": "<p>You ask for the guidance of supernatural entities, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n<p></p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "LUphX1enQnxHg2Lf"
-        },
-        {
-          "name": "Inspire Courage",
-          "type": "cantrip",
-          "level": 1,
-          "heightenedLevel": 1,
-          "timesPrepared": 1,
-          "traits": [
-            "bard",
-            "composition",
-            "concentrate",
-            "emotion",
-            "mental"
-          ],
-          "castingTime": "1",
-          "duration": "1 round",
-          "range": "",
-          "area": "60ft emanation",
-          "targets": "",
-          "save": "",
-          "description": "<p>You inspire your allies with words or tunes of encouragement. You and all allies in the area gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects.</p>\n<p></p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "luTiL3BwOrBlcF5Z"
-        },
-        {
-          "name": "Mage Hand",
-          "type": "cantrip",
-          "level": 1,
-          "heightenedLevel": 1,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "Sustained up to ",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 unattended object of light Bulk or less",
-          "save": "",
-          "description": "<p>You create a single magical hand, either invisible or ghostlike, that grasps the target object and moves it slowly up to 20 feet. Because you're levitating the object, you can move it in any direction. When you Sustain the Spell, you can move the object an additional 20 feet. If the object is in the air when the spell ends, the object falls.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (5th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (7th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 2 or less.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "09Ussn5ce6QbEzap"
+          "id": "FuKbT8uYRzGNRqin"
         },
         {
           "name": "Shield",
@@ -327,13 +281,37 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You raise a magical shield of force. This counts as using the Raise a Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use.</p>\n<p>While the spell is in effect, you can use the Shield Block reaction with your magic shield. The shield has Hardness 5. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes. Unlike a normal Shield Block, you can use the spell's reaction against the Force Barrage spell.</p>\n<p>Heightening the spell increases the shield's Hardness.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p>\n<p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p>\n<p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p>\n<p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>",
+          "description": "<p>You raise a magical shield of force. This counts as using the Raise a Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use.</p>\n<p>While the spell is in effect, you can use the Shield Block reaction with your magic shield. The shield has Hardness 5. You can use the spell's reaction to reduce damage from any spell or magical effect, even if it doesn't deal physical damage. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes.</p>\n<p></p>\n<p></p>\n<hr />\n<p><strong>Heightened (+2)</strong> The shield's Hardness increases by 5.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "ezll8fFI692mARXF"
+          "id": "hLCUsCy9QBYyIT3V"
+        },
+        {
+          "name": "Telekinetic Hand",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to ",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 unattended object of light Bulk or less",
+          "save": "",
+          "description": "<p>You create a floating, magical hand, either invisible or ghostlike, that grasps the target object and levitates it slowly up to 20 feet in any direction. When you Sustain the spell, you can move the object an additional 20 feet. If the object is in the air when the spell ends, the object falls.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (5th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (7th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 2 or less.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "mE0Tm9QtdgnfIm3g"
         },
         {
           "name": "Telekinetic Projectile",
@@ -352,18 +330,18 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal bludgeoning, piercing, or slashing damage-as appropriate for the object you hurled-equal to 1d6 plus your spellcasting ability modifier. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
+          "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal 2d6 bludgeoning, piercing, or slashing damage—as appropriate for the object you hurled. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "2sV7ZRgOshQjgOAc"
+          "id": "3k44NhiWPMhNzh32"
         }
       ],
       "lv1spells": [
         {
-          "name": "Color Spray",
+          "name": "Dizzying Colors",
           "type": "spell",
           "level": 1,
           "heightenedLevel": 1,
@@ -381,13 +359,13 @@
           "area": "15ft cone",
           "targets": "",
           "save": "will",
-          "description": "<p>Swirling colors affect viewers based on their Will saves.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Dazzled for 1 round.</p>\n<p><strong>Failure</strong> The creature is Stunned 1, Blinded for 1 round, and Dazzled for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is Stunned for 1 round and Blinded for 1 minute.</p>",
+          "description": "<p>You unleash a swirling multitude of colors that overwhelms creatures based on their Will saves.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Dazzled for 1 round.</p>\n<p><strong>Failure</strong> The creature is Stunned 1, Blinded for 1 round, and dazzled for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is stunned for 1 round and blinded for 1 minute.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "7NabRCMOK0TFhUpx"
+          "id": "03PQ0CsnzLJMtLzo"
         },
         {
           "name": "Soothe",
@@ -406,18 +384,18 @@
           "duration": "1 minute",
           "range": "30 feet",
           "area": "",
-          "targets": "1 willing living creature",
+          "targets": "1 willing creature",
           "save": "",
-          "description": "<p>You grace the target's mind, boosting its mental defenses and healing its wounds. The target regains 1d10+4 Hit Points when you Cast the Spell and gains a +2 status bonus to saves against mental effects for the duration.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 1d10+4.</p>",
+          "description": "<p>You grace the target's mind, boosting its mental defenses and healing its wounds. The target regains 1d10+4 Hit Points when you Cast the Spell and gains a +2 status bonus to saves against mental effects for the duration.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 1d10+4.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "5goS1XPk7oS5XoJ3"
+          "id": "971PzQ6LeZ4kfnxP"
         },
         {
-          "name": "True Strike",
+          "name": "Sure Strike",
           "type": "spell",
           "level": 1,
           "heightenedLevel": 1,
@@ -432,13 +410,13 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>A glimpse into the future ensures your next blow strikes true. The next time you make an attack roll before the end of your turn, roll the attack twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden.</p>\n<p></p>",
+          "description": "<p>The next time you make an attack roll before the end of your turn, roll it twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden. You are then temporarily immune to <em>sure strike</em> for 10 minutes.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "z8vsNdIMXAsLsLAO"
+          "id": "kBNZIL9mp7S5x9sV"
         }
       ],
       "lv2spells": [],
@@ -452,8 +430,8 @@
       "lv10spells": [],
       "rituals": [],
       "lv1slots": {
-        "current": "2",
-        "max": "2"
+        "current": 2,
+        "max": 2
       },
       "lv2slots": {
         "current": 0,

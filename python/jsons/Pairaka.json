@@ -12,12 +12,10 @@
     "Common",
     "Medium",
     "Div",
-    "Evil",
     "Fiend",
-    "Lawful",
     "Unholy"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Greater darkvision"
   ],
@@ -179,22 +177,14 @@
       ],
       "damageRolls": [
         {
-          "roll": "2d8+6",
+          "roll": "2d8+9",
           "type": "slashing"
-        },
-        {
-          "roll": "1d6",
-          "type": "spirit"
         }
       ],
       "critRolls": [
         {
-          "roll": "(2d8+6)*2",
+          "roll": "(2d8+9)*2",
           "type": "slashing"
-        },
-        {
-          "roll": "(1d6)*2",
-          "type": "spirit"
         }
       ],
       "effects": [
@@ -213,7 +203,7 @@
       "traits": [
         "disease"
       ],
-      "description": "<p>A creature can't remove the fatigued condition while infected</p>\n<p><strong>Saving Throw</strong> DC 23 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> Fatigued (1 day)</p>\n<p><strong>Stage 2</strong> Enfeebled 2 and fatigued (1 day)</p>\n<p><strong>Stage 3</strong> Enfeebled 3, fatigued, and take 1d6 Bleed Damage every 1d20 minutes (1 day)</p>",
+      "description": "<p>A creature can't remove the fatigued condition while infected</p>\n<p><strong>Saving Throw</strong> DC 23 Fortitude Saving Throw</p><hr /><p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> Fatigued (1 day)</p>\n<p><strong>Stage 2</strong> Enfeebled 2 and fatigued (1 day)</p>\n<p><strong>Stage 3</strong> Enfeebled 3, fatigued, and take 1d6 Bleed Damage every 1d20 minutes (1 day)</p>",
       "collapsed": false
     },
     {
@@ -268,7 +258,7 @@
           "area": "30ft emanation",
           "targets": "",
           "save": "",
-          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies.</p>\n<p>You detect illusion magic only if that magic's effect has a lower level than the rank of your detect magic spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an invisibility potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the school of magic for the highest-level effect within range that the spell detects. If multiple effects are equally strong, the GM determines which you learn.</p>\n<p><strong>Heightened (4th)</strong> As 3rd level, but you also pinpoint the source of the highest-level magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
+          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -282,7 +272,7 @@
       "lv3spells": [],
       "lv4spells": [
         {
-          "name": "Charm (At Will)",
+          "name": "Charm (at will)",
           "type": "spell",
           "level": 1,
           "heightenedLevel": 4,
@@ -292,7 +282,8 @@
             "emotion",
             "incapacitation",
             "manipulate",
-            "mental"
+            "mental",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "1 hour",
@@ -309,57 +300,7 @@
           "id": "pHk7V2hLZrgzY4OE"
         },
         {
-          "name": "Misdirection (At Will) (Self Only)",
-          "type": "spell",
-          "level": 2,
-          "heightenedLevel": 4,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "illusion",
-            "manipulate"
-          ],
-          "castingTime": "1 minute",
-          "duration": "until the next time you make your daily preparations",
-          "range": "touch",
-          "area": "",
-          "targets": "self",
-          "save": "",
-          "description": "<p>You reshape the magic aura of one creature or object to resemble that of another. You designate one target as the primary target and the other as the secondary target. Effects that would detect auras on the primary target instead detect the same types of auras from the secondary target. A creature reading the aura can attempt to disbelieve the illusion. You can Dismiss the spell from up to a mile away.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "IELKs5btgBCSQgGs"
-        },
-        {
-          "name": "Dimension Door (At Will)",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 4,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "teleportation"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "p2TaK9MrvykMKB0o"
-        },
-        {
-          "name": "Outcast's Curse (At Will)",
+          "name": "Outcast's Curse (at will)",
           "type": "spell",
           "level": 4,
           "heightenedLevel": 4,
@@ -377,7 +318,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "will",
-          "description": "<p>You afflict the target with a curse that makes its presence abrasive and off-putting. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> For 10 minutes, the target must roll twice and use the worse result whenever attempting a Deception, Diplomacy, Intimidation, or Performance check, and creatures they encounter have an initial attitude toward them of one step worse (for instance, Unfriendly instead of Indifferent).</p>\n<p><strong>Failure</strong> As success, but the effect is permanent.</p>\n<p><strong>Critical Failure</strong> As failure, and creatures that the target encounters have an initial attitude toward them of two steps worse.</p>",
+          "description": "<p>You afflict the target with a curse that makes its presence abrasive and off-putting. The target must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> For 10 minutes, the target must roll twice and use the worse result whenever attempting a Deception, Diplomacy, Intimidation, or Performance check, and creatures they encounter have an initial attitude toward them of one step worse (for instance, Unfriendly instead of Indifferent).</p>\n<p></p>\n<p><strong>Failure</strong> As success, but the effect is permanent.</p>\n<p></p>\n<p><strong>Critical Failure</strong> As failure, and creatures that the target encounters have an initial attitude toward them of two steps worse.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -386,7 +327,7 @@
           "id": "oyLpBeZ7RvXbKxJA"
         },
         {
-          "name": "Suggestion (At Will)",
+          "name": "Suggestion (at will)",
           "type": "spell",
           "level": 4,
           "heightenedLevel": 4,
@@ -396,7 +337,8 @@
             "incapacitation",
             "linguistic",
             "manipulate",
-            "mental"
+            "mental",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "varies",
@@ -404,13 +346,38 @@
           "area": "",
           "targets": "1 creature",
           "save": "will",
-          "description": "<p>Your honeyed words are difficult for creatures to resist. You suggest a course of action to the target, which must be phrased in such a way as to seem like a logical course of action to the target and can't be self-destructive or obviously against the target's self-interest. The target must attempt a Will save.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected and knows you tried to control it.</p>\n<p><strong>Success</strong> The target is unaffected and thinks you were talking to them normally, not casting a spell on them.</p>\n<p><strong>Failure</strong> The target immediately follows your suggestion. The spell has a duration of 1 minute, or until the target has completed a finite suggestion or the suggestion becomes self-destructive or has other obvious negative effects.</p>\n<p><strong>Critical Failure</strong> As failure, but the base duration is 1 hour.</p>\n<hr /><p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>",
+          "description": "<p>Your honeyed words are difficult for creatures to resist. You suggest a course of action to the target, which must be phrased in such a way as to seem like a logical course of action to the target and can't be self-destructive or obviously against the target's self-interest. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and knows you tried to control it.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target immediately follows your suggestion. The spell has a duration of 1 minute, or until the target has completed a finite suggestion or the suggestion becomes self-destructive or has other obvious negative effects.</p>\n<p><strong>Critical Failure</strong> As failure, but the base duration is 1 hour.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "nROFFDEy5y0nKYS0"
+        },
+        {
+          "name": "Translocate (at will)",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "p2TaK9MrvykMKB0o"
         }
       ],
       "lv5spells": [],

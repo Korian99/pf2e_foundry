@@ -11,10 +11,9 @@
   "traits": [
     "Uncommon",
     "Medium",
-    "Humanoid",
-    "Lawful"
+    "Humanoid"
   ],
-  "source": "Pathfinder Bestiary 2",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision"
   ],
@@ -27,7 +26,7 @@
   "languages": [
     "Common",
     "Draconic",
-    "one or more planar languages, tongues"
+    "One or more planar languages, Truespeech"
   ],
   "skills": [
     {
@@ -35,6 +34,13 @@
       "modifier": 16,
       "note": [],
       "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "strength",
       "modifications": []
     },
     {
@@ -66,8 +72,8 @@
       "modifications": []
     },
     {
-      "name": "One or more Lore skills related to a specific plane",
-      "modifier": 14,
+      "name": "one or more Lore skills related to a specific plane",
+      "modifier": 0,
       "note": "",
       "usedAttribute": "intelligence",
       "modifications": []
@@ -93,7 +99,7 @@
   },
   "items": [
     {
-      "name": "+1 Ranseur",
+      "name": "Ranseur",
       "quantity": 1,
       "description": "<p>This polearm is a long trident with a central prong that's longer than the other two.</p>",
       "level": 0,
@@ -139,6 +145,8 @@
   "immunities": [],
   "resistances": [
     {
+      "doubleVs": [],
+      "exceptions": [],
       "type": "force",
       "value": 5
     }
@@ -152,12 +160,40 @@
         "arcane",
         "force"
       ],
-      "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> A Force Barrage is fired at the witchwyrd, and the witchwyrd is aware of it and has a free hand</p>\n<hr />\n<p><strong>Effect</strong> The witchwyrd \"catches\" the missile, absorbing it and causing that hand to glow while it holds this energy. A hand that's holding energy can't be used for any other purpose except to use Force Bolt. The energy lasts for 6 rounds or until it is released.</p>",
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> A force barrage or Force Dart (see below) is fired at the witchwyrd, and the witchwyrd is aware of it and has a free hand</p><hr /><p><strong>Effect</strong> The witchwyrd \"catches\" one force projectile, absorbing it, preventing the damage, and causing that hand to glow while it holds this energy. A hand that's holding energy can't be used for any other purpose except to use Force Dart. The energy lasts for 1 minute or until it's released.</p>",
       "collapsed": false
     }
   ],
   "speed": "25 ft, ",
   "strikes": [
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "nonlethal"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+6)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
     {
       "type": "melee",
       "name": "Ranseur",
@@ -184,46 +220,17 @@
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
-    },
-    {
-      "type": "melee",
-      "name": "Fist",
-      "bonus": 15,
-      "traits": [
-        "agile",
-        "nonlethal",
-        "unarmed"
-      ],
-      "damageRolls": [
-        {
-          "roll": "1d6+6",
-          "type": "bludgeoning"
-        }
-      ],
-      "critRolls": [
-        {
-          "roll": "(1d6+6)*2",
-          "type": "bludgeoning"
-        }
-      ],
-      "effects": [
-        "grab"
-      ],
-      "usedAttributeToHit": "strength",
-      "usedAttributeDamage": "strength",
-      "toHitModifications": [],
-      "damageModifications": []
     }
   ],
   "offensiveAbilities": [
     {
-      "name": "Force Bolt",
+      "name": "Force Dart",
       "actions": 1,
       "traits": [
         "arcane",
         "force"
       ],
-      "description": "<p>◆ to ◆◆◆</p><hr /><p>The witchwyrd fires one Force Barrage per action spent (dealing (1d4+1) Force Damage damage each). They can't spend more actions on this ability than they have free hands. If they use a hand that has Absorbed Force, that hand hurls two missiles instead of one, expending the held energy.</p>",
+      "description": "<p>◆ to ◆◆◆</p>\n<p>The witchwyrd fires one dart of force per action spent (dealing (1d4+1) Force Damage damage each). They can't spend more actions on this ability than they have free hands. If they use a hand that has Absorbed Force, that hand hurls two darts instead of one, expending the held energy.</p>",
       "collapsed": false
     },
     {
@@ -238,17 +245,43 @@
     {
       "name": "Arcane Innate Spells",
       "type": "innate",
-      "bonus": 13,
+      "bonus": 15,
       "dc": 23,
       "focusPoints": {
         "current": 0,
         "max": 0
       },
       "autoHeightenLevel": 5,
-      "cantrips": [],
+      "cantrips": [
+        {
+          "name": "Detect Magic",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft emanation",
+          "targets": "",
+          "save": "",
+          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "JkXhcpfOsOxooRbc"
+        }
+      ],
       "lv1spells": [
         {
-          "name": "Floating Disk (At will)",
+          "name": "Carryall (At Will)",
           "type": "spell",
           "level": 1,
           "heightenedLevel": 1,
@@ -264,16 +297,16 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>A disk of magical force materializes adjacent to you. This disk is 2 feet in diameter and follows 5 feet behind you, floating just above the ground. It holds up to 5 Bulk of objects (though they must be able to fit and balance on its surface). Any objects atop the disk fall to the ground when the spell ends.</p>\n<p>The spell ends if a creature tries to ride atop the disk, if the disk is overloaded, if anyone tries to lift or force the disk higher above the ground, or if you move more than 30 feet away from the disk.</p>",
+          "description": "<p>A small platform of magical force materializes adjacent to you to carry cargo. It is Invisible or has a ghostly appearance, is 2 feet in diameter, and follows 5 feet behind you, floating just above the ground. It holds up to 5 Bulk of objects (if they can fit on it). Any objects atop the platform fall to the ground when the spell ends. You can Sustain the spell to move the platform up to 30 feet along the ground, to make it stay in place, or to have it return to you and resume following you. The spell ends if a creature tries to ride atop the platform, if the platform is overloaded, if anyone tries to lift or force the platform higher above the ground, or if you move more than 60 feet away from the platform.</p><hr /><p><strong>Heightened (4th)</strong> The platform can carry 10 Bulk, creatures can ride atop it, and it can hover in the air, not just on the ground</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "z0tSvLqh0IK6Y4TT"
+          "id": "jGoAhdKvjCucyXZA"
         },
         {
-          "name": "Unseen Servant (At will)",
+          "name": "Phantasmal Minion (At Will)",
           "type": "spell",
           "level": 1,
           "heightenedLevel": 1,
@@ -281,7 +314,7 @@
           "traits": [
             "concentrate",
             "manipulate",
-            "mindless"
+            "summon"
           ],
           "castingTime": "3",
           "duration": "Sustained up to ",
@@ -289,18 +322,18 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You summon an unseen servant, which you can command as part of Sustaining the Spell. It serves you until its Hit Points are reduced to 0, at which point the spell ends, or until you stop Sustaining the Spell. The unseen servant gains the summoned trait.</p>\n<p><strong>Unseen Servant</strong> [Creature] [-1] [No Alignment] [Medium]</p>\n<hr />\n<p><strong>AC</strong> 13, <strong>Fort</strong> +0, <strong>Ref</strong> +4, <strong>Will</strong> +0 <strong>HP</strong> 4</p>\n<p><strong>Immunities</strong> disease, mental, non-magical attacks, paralysis, poison, precision, unconscious</p>\n<p><strong>Resistances</strong> all damage 5 (except force or ghost touch)</p>\n<p><strong>Speed</strong> fly 30 feet</p>\n<p><strong>Force Body</strong> An unseen servant's physical body is made of force. It can't use attack actions. It can move and use Interact actions to do things such as fetch objects, open unstuck or unlocked doors, hold chairs, and clean. It can't pass through solid objects.</p>",
+          "description": "<p>You summon a Phantasmal Minion. The minion is roughly the shape of a humanoid. You can choose to have it be Invisible or have an ephemeral appearance, but it's obviously a magical effect, not a real creature.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "ybZoLDhRr9Dy4RFI"
+          "id": "YYatuAaUgxvfUML6"
         }
       ],
       "lv2spells": [
         {
-          "name": "Mirror Image",
+          "name": "Blur",
           "type": "spell",
           "level": 2,
           "heightenedLevel": 2,
@@ -313,24 +346,24 @@
           ],
           "castingTime": "2",
           "duration": "1 minute",
-          "range": "",
+          "range": "touch",
           "area": "",
-          "targets": "",
+          "targets": "1 creature",
           "save": "",
-          "description": "<p>Three illusory images of you swirl about your space, potentially causing those who attack you to hit one of the images instead of you. Any attack that would hit you has a random chance of hitting one of your images instead of you. If all three images remain, there is a 1 in 4 chance of hitting you (1 on 1d4). With two images remaining, there is a 1 in 3 chance of hitting you (1-2 on 1d6). With only one image, the chances are 1 in 2 (1-3 on 1d6).</p>\n<p>Once an image is hit, it is destroyed. If an attack roll fails to hit your AC but doesn't critically fail, it destroys an image but has no additional effect (even if the attack would normally have an effect on a failure). If an attack roll is a critical success and would hit one of the images, one of the images is destroyed and the attack roll becomes a success against you. Once all the images are destroyed, the spell ends.</p>\n<p></p>",
+          "description": "<p>The target's form appears blurry. It becomes Concealed. As the nature of this effect still leaves the target's location obvious, the target can't use this concealment to Hide or Sneak.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "77Ovsa7RPcbu3FQW"
+          "id": "P7Tcc3Ms7gX2VtRI"
         }
       ],
       "lv3spells": [
         {
           "name": "Dispel Magic",
           "type": "spell",
-          "level": 3,
+          "level": 2,
           "heightenedLevel": 3,
           "timesPrepared": 1,
           "traits": [
@@ -343,45 +376,20 @@
           "area": "",
           "targets": "1 spell effect or unattended magic item",
           "save": "",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you succeed against a spell effect, you counteract it. If you succeed against a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Y0ynp2XvcVuQFib8"
+          "id": "f2F28jqDiXdY4liu"
         }
       ],
       "lv4spells": [
         {
-          "name": "Resilient Sphere",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 4,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "force",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "1 minute",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 Large or smaller creature",
-          "save": "",
-          "description": "<p>You create an immobile sphere of force to either trap or protect the target, blocking anything that would pass through the sphere. The sphere has AC 5, Hardness 10, and 40 Hit Points. It's immune to critical hits and precision damage. Disintegrate destroys the sphere instantly. If the target is unwilling, the effects of the sphere depend on the target's Reflex save.</p>\n<hr /><p><strong>Critical Success</strong> The target disrupts the sphere's integrity, causing it to collapse entirely.</p>\n<p><strong>Success</strong> The sphere functions normally but has only 10 Hit Points instead of 40.</p>\n<p><strong>Failure</strong> The sphere has its normal effect.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "J4CUy9ast0rJmMr4"
-        },
-        {
           "name": "Resist Energy",
           "type": "spell",
-          "level": 4,
+          "level": 2,
           "heightenedLevel": 4,
           "timesPrepared": 2,
           "traits": [
@@ -394,18 +402,18 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>A shield of elemental energy protects a creature against one type of energy damage. Choose acid, cold, electricity, fire, or sonic damage. The target and its gear gain resistance 5 against the damage type you chose.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The resistance increases to 10, and you can target up to two creatures.</p>\n<p><strong>Heightened (7th)</strong> The resistance increases to 15, and you can target up to five creatures.</p>",
+          "description": "<p>A shield of elemental energy protects a creature against one type of energy damage. Choose acid, cold, electricity, fire, or sonic damage. The target and its gear gain resistance 5 against the damage type you chose.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The resistance increases to 10, and you can target up to two creatures.</p>\n<p><strong>Heightened (7th)</strong> The resistance increases to 15, and you can target up to five creatures.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "olhTnROSvVAatlLm"
+          "id": "AUmTfHS4ff6l4Hk3"
         },
         {
           "name": "Resist Energy",
           "type": "spell",
-          "level": 4,
+          "level": 2,
           "heightenedLevel": 4,
           "timesPrepared": 2,
           "traits": [
@@ -418,13 +426,13 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>A shield of elemental energy protects a creature against one type of energy damage. Choose acid, cold, electricity, fire, or sonic damage. The target and its gear gain resistance 5 against the damage type you chose.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The resistance increases to 10, and you can target up to two creatures.</p>\n<p><strong>Heightened (7th)</strong> The resistance increases to 15, and you can target up to five creatures.</p>",
+          "description": "<p>A shield of elemental energy protects a creature against one type of energy damage. Choose acid, cold, electricity, fire, or sonic damage. The target and its gear gain resistance 5 against the damage type you chose.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The resistance increases to 10, and you can target up to two creatures.</p>\n<p><strong>Heightened (7th)</strong> The resistance increases to 15, and you can target up to five creatures.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "olhTnROSvVAatlLm"
+          "id": "AUmTfHS4ff6l4Hk3"
         },
         {
           "name": "Suggestion",
@@ -437,7 +445,8 @@
             "incapacitation",
             "linguistic",
             "manipulate",
-            "mental"
+            "mental",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "varies",
@@ -445,20 +454,20 @@
           "area": "",
           "targets": "1 creature",
           "save": "will",
-          "description": "<p>Your honeyed words are difficult for creatures to resist. You suggest a course of action to the target, which must be phrased in such a way as to seem like a logical course of action to the target and can't be self-destructive or obviously against the target's self-interest. The target must attempt a Will save.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected and knows you tried to control it.</p>\n<p><strong>Success</strong> The target is unaffected and thinks you were talking to them normally, not casting a spell on them.</p>\n<p><strong>Failure</strong> The target immediately follows your suggestion. The spell has a duration of 1 minute, or until the target has completed a finite suggestion or the suggestion becomes self-destructive or has other obvious negative effects.</p>\n<p><strong>Critical Failure</strong> As failure, but the base duration is 1 hour.</p>\n<hr /><p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>",
+          "description": "<p>Your honeyed words are difficult for creatures to resist. You suggest a course of action to the target, which must be phrased in such a way as to seem like a logical course of action to the target and can't be self-destructive or obviously against the target's self-interest. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and knows you tried to control it.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target immediately follows your suggestion. The spell has a duration of 1 minute, or until the target has completed a finite suggestion or the suggestion becomes self-destructive or has other obvious negative effects.</p>\n<p><strong>Critical Failure</strong> As failure, but the base duration is 1 hour.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "enxYeRQrmaDvo3Xb"
+          "id": "7L7Ix2SKZrUObojo"
         }
       ],
       "lv5spells": [
         {
-          "name": "Dimension Door",
+          "name": "Translocate",
           "type": "spell",
-          "level": 5,
+          "level": 4,
           "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
@@ -472,16 +481,16 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "CDjlG2fah9XGWqVZ"
+          "id": "NKyQfXIWRUr4N4Tc"
         },
         {
-          "name": "Tongues (Constant)",
+          "name": "Truespeech (Constant)",
           "type": "spell",
           "level": 5,
           "heightenedLevel": 5,
@@ -502,7 +511,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "2mXUYLr8NYh6u9sO"
+          "id": "dT9PSMZVPk0Jt1VU"
         }
       ],
       "lv6spells": [],

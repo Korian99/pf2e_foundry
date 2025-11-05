@@ -11,10 +11,9 @@
   "traits": [
     "Common",
     "Small",
-    "Evil",
     "Fey"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Low light vision"
   ],
@@ -86,23 +85,21 @@
   },
   "items": [
     {
-      "name": "+1 Striking Felt Shears (as Dagger)",
+      "name": "+1 Striking Shears",
       "quantity": 1,
       "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
       "level": 0,
       "price": "2 sp",
       "traits": [
-        "agile",
+        "deadly-d8",
         "finesse",
-        "magical",
-        "thrown-10",
-        "versatile-s"
+        "versatile-p"
       ]
     }
   ],
   "generalAbilities": [],
   "ac": {
-    "value": 34,
+    "value": 33,
     "note": "",
     "usedAttribute": "dexterity",
     "modifications": []
@@ -142,10 +139,10 @@
   ],
   "defensiveAbilities": [
     {
-      "name": "Attack of Opportunity (Special)",
+      "name": "Reactive Strike",
       "actions": -1,
       "traits": [],
-      "description": "<p>The millindemalion can use Hat Toss against the triggering creature instead of making a Strike, making a melee attack roll with a +27 modifier to do so.</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "description": "<p>The millindemalion can use Hat Toss against the triggering creature instead of making a Strike, making a melee attack roll with a +27 modifier to do so.</p><hr /><p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
       "collapsed": false
     },
     {
@@ -163,10 +160,10 @@
       "name": "Felt Shears",
       "bonus": 27,
       "traits": [
-        "agile",
+        "deadly-d8",
         "finesse",
         "magical",
-        "versatile-s"
+        "versatile-p"
       ],
       "damageRolls": [
         {
@@ -193,41 +190,6 @@
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
-    },
-    {
-      "type": "ranged",
-      "name": "Felt Shears",
-      "bonus": 27,
-      "traits": [
-        "agile",
-        "magical",
-        "thrown-10"
-      ],
-      "damageRolls": [
-        {
-          "roll": "2d4+10",
-          "type": "piercing"
-        },
-        {
-          "roll": "1d6",
-          "type": "mental"
-        }
-      ],
-      "critRolls": [
-        {
-          "roll": "(2d4+10)*2",
-          "type": "piercing"
-        },
-        {
-          "roll": "(1d6)*2",
-          "type": "mental"
-        }
-      ],
-      "effects": [],
-      "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "strength",
-      "toHitModifications": [],
-      "damageModifications": []
     }
   ],
   "offensiveAbilities": [
@@ -239,7 +201,7 @@
         "mental",
         "primal"
       ],
-      "description": "<p>The millindemalion quickly crafts a mind-altering hat in combat and tosses it onto a target with a flick of their wrist. The millindemalion chooses one of the effects below and makes a ranged attack roll with a +27 modifier and a range increment of 20 feet.</p>\n<p>On a hit, the target must succeed at a DC 33 Will Saving Throw saving throw or experience the listed effect for 1d4+1 rounds. If the millindemalion critically succeeds at the ranged Strike, the target takes a -4 circumstance penalty on the save.</p>\n<p>A target can only wear one millindemalion hat at a time; a new hat replaces any previous hat. The hat can't be removed before the condition ends, but when the condition ends (or on a successful save), the hat falls to pieces.</p>\n<ul>\n<li><strong>Befuddling Bowler</strong> The hat clouds the target's mind; the target becomes Stupefied 2.</li>\n<li><strong>Bewitching Beret</strong> The target is infatuated with their new hat and its creator, becoming Fascinated by the millindemalion and the beret.</li>\n<li><strong>Dazzling Deerstalker</strong> The target can barely see with the hat falling down over its eyes and gains the Dazzled condition.</li>\n<li><strong>Fettering Fedora</strong> The target feels a heavy weight pressing down on them from the hat and takes a –10-foot circumstance penalty to their Speeds.</li>\n<li><strong>Tiring Tricorne</strong> The target grows sleepy and becomes Slowed 1.</li>\n</ul>\n<p>Effect: Fettering Fedora</p>",
+      "description": "<p>The millindemalion quickly crafts a mind-altering hat in combat and tosses it onto a target with a flick of their wrist. The millindemalion chooses one of the effects below and makes a ranged attack roll with a +27 modifier and a range increment of 20 feet.</p>\n<p>On a hit, the target must succeed at a DC 33 Will Saving Throw saving throw or experience the listed effect for 1d4+1 rounds. If the millindemalion critically succeeds at the ranged Strike, the target takes a -4 circumstance penalty on the save.</p>\n<p>A target can only wear one millindemalion hat at a time; a new hat replaces any previous hat. The hat can't be removed before the condition ends, but when the condition ends (or on a successful save), the hat falls to pieces.</p><ul><li><strong>Befuddling Bowler</strong> The hat clouds the target's mind; the target becomes Stupefied 2.</li><li><strong>Bewitching Beret</strong> The target is infatuated with their new hat and its creator, becoming Fascinated by the millindemalion and the beret.</li><li><strong>Dazzling Deerstalker</strong> The target can barely see with the hat falling down over its eyes and gains the Dazzled condition.</li><li><strong>Fettering Fedora</strong> The target feels a heavy weight pressing down on them from the hat and takes a -10-foot circumstance penalty to their Speeds.</li><li><strong>Tiring Tricorne</strong> The target grows sleepy and becomes Slowed 1.</li></ul><p>Effect: Fettering Fedora</p>",
       "collapsed": false
     },
     {

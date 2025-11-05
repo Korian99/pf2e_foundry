@@ -14,7 +14,7 @@
     "Elemental",
     "Fire"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision",
     "smoke vision"
@@ -52,7 +52,7 @@
     }
   ],
   "strength": {
-    "value": 2
+    "value": 1
   },
   "dexterity": {
     "value": 3
@@ -80,7 +80,7 @@
     }
   ],
   "ac": {
-    "value": 16,
+    "value": 15,
     "note": "",
     "usedAttribute": "dexterity",
     "modifications": []
@@ -105,25 +105,27 @@
   },
   "savenote": "",
   "hp": {
-    "value": 18,
-    "max": 18,
+    "value": 15,
+    "max": 15,
     "note": "",
     "modifications": []
   },
   "immunities": [
     "bleed",
-    "fire",
     "paralyzed",
     "poison",
-    "sleep"
+    "sleep",
+    "fire"
   ],
   "resistances": [],
   "weaknesses": [
     {
+      "exceptions": [],
       "type": "cold",
       "value": 2
     },
     {
+      "exceptions": [],
       "type": "water",
       "value": 2
     }
@@ -135,7 +137,7 @@
       "traits": [
         "fire"
       ],
-      "description": "<p><strong>Trigger</strong> An ally within 30 feet that benefited from the wisp's resonance in the last hour is targeted by an attack</p>\n<hr />\n<p><strong>Effect</strong> The wisp detonates itself in a small elemental explosion that gives temporary Hit Points equal to half the wisp's current Hit Points to allies within 30 feet that have benefited from the wisp's resonance in the last hour. These temporary Hit Points last 1 hour.</p>\n<p>A wisp that uses this reaction is permanently destroyed, and it can be restored only by a Wish spell or similarly powerful effect. If an ability would prevent the wisp's destruction (for instance, if the wisp is summoned and would merely be dismissed), Accord Essence has no effect.</p>",
+      "description": "<p><strong>Trigger</strong> An ally within 30 feet that benefited from the wisp's resonance in the last hour is targeted by an attack</p><hr /><p><strong>Effect</strong> The wisp detonates themself in an elemental explosion. This grants temporary Hit Points equal to half the wisp's current Hit Points to allies within 30 feet who have benefited from the wisp's resonance in the last hour. These temporary Hit Points last 1 hour.</p>\n<p>A wisp that uses this reaction is permanently destroyed, and they can be restored by only a Wish ritual or similarly powerful effect. If an ability would prevent the wisp's destruction (for instance, if the wisp is summoned and would merely be dismissed), Accord Essence has no effect.</p>",
       "collapsed": false
     },
     {
@@ -145,7 +147,7 @@
         "aura",
         "fire"
       ],
-      "description": "<p>30 feet. All wisps vibrate at a frequency attuned to their element, resonating with and empowering all creatures and effects sharing that trait.</p>\n<p>A creature in the area gains a +1 status bonus to attack and damage rolls for effects with the fire trait; a creature with the elemental and fire traits gains this bonus to all attack and damage rolls.</p>",
+      "description": "<p>30 feet. All wisps vibrate at a frequency attuned to their element, resonating with and empowering all creatures and effects sharing that trait.</p>\n<p>A creature in the area gains a +1 status bonus to attack and damage rolls for effects with the air trait; a creature with the elemental and air traits gains this bonus to all attack and damage rolls.</p>",
       "collapsed": false
     }
   ],
@@ -160,7 +162,7 @@
       ],
       "damageRolls": [
         {
-          "roll": "1d4",
+          "roll": "1d4+1",
           "type": "fire"
         },
         {
@@ -170,7 +172,7 @@
       ],
       "critRolls": [
         {
-          "roll": "(1d4)*2",
+          "roll": "(1d4+1)*2",
           "type": "fire"
         },
         {

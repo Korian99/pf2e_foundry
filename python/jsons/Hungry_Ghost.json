@@ -14,9 +14,10 @@
     "Ghost",
     "Incorporeal",
     "Spirit",
-    "Undead"
+    "Undead",
+    "Unholy"
   ],
-  "source": "Pathfinder Book of the Dead",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Darkvision"
   ],
@@ -29,7 +30,7 @@
   "languages": [
     "Common",
     "Necril",
-    "one other language"
+    "One other language"
   ],
   "skills": [
     {
@@ -48,16 +49,9 @@
     },
     {
       "name": "religion",
-      "modifier": 17,
+      "modifier": 15,
       "note": [],
       "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    {
-      "name": "Ghost Lore",
-      "modifier": 18,
-      "note": "",
-      "usedAttribute": "intelligence",
       "modifications": []
     }
   ],
@@ -102,7 +96,7 @@
     "modifications": []
   },
   "reflex": {
-    "value": 17,
+    "value": 15,
     "note": "",
     "usedAttribute": "dexterity",
     "modifications": []
@@ -117,10 +111,11 @@
   "hp": {
     "value": 60,
     "max": 60,
-    "note": "void healing, rejuvenation",
+    "note": "rejuvenation, void healing",
     "modifications": []
   },
   "immunities": [
+    "bleed",
     "death-effects",
     "disease",
     "paralyzed",
@@ -136,6 +131,7 @@
       "exceptions": [
         "force",
         "ghost-touch",
+        "spirit",
         "vitality"
       ],
       "type": "all-damage",
@@ -151,7 +147,7 @@
         "divine",
         "void"
       ],
-      "description": "<p>The hungry ghost touches a creature in reach. If the target is a living creature, it takes damage from the ghost's ghostly touch with a DC 24 Fortitude Saving Throw save. If the ghost is in their living visage, they can disguise Feed on the Living as a benign touch and delay the effects for 1 minute while keeping the target unaware of the effect. A creature can be affected by only one delayed Feed on the Living at a time, and if the ghost loses their living visage during that minute, the Feed on the Living is lost.</p>\n<hr />\n<p><strong>Critical Success</strong> The target's life energy overpowers the ghost. The hungry ghost takes 5 Vitality Damage damage, and the target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage, and the hungry ghost regains HP equal to the damage dealt.</p>\n<p><strong>Failure</strong> The target takes full damage and is Enfeebled 1 for 1 minute, and the hungry ghost regains HP equal to the damage dealt.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is Enfeebled 2 for 1 minute, and the hungry ghost regains HP equal to the damage dealt.</p>",
+      "description": "<p>The hungry ghost touches a living creature in reach to steal its life force. If the ghost is in their living visage, they can disguise Feed on the Living as a benign touch and delay the effects for up to 1 minute while keeping the target unaware of the effect. A creature can be affected by only one delayed Feed on the Living at a time, and if the ghost loses their living visage during that minute, the delayed effect is lost. When Feed on the Living takes effect, the target takes (2d8+4) Void Damage damage, depending on the result of its DC 24 Fortitude Saving Throw save.</p><hr /><p><strong>Critical Success</strong> The target's life energy overpowers the ghost. The hungry ghost takes 5 Vitality Damage damage, and the target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage, and the hungry ghost regains HP equal to the damage dealt.</p>\n<p><strong>Failure</strong> The target takes full damage and is Enfeebled 1 for 1 minute, and the hungry ghost regains HP equal to the damage dealt.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is Enfeebled 2 for 1 minute, and the hungry ghost regains HP equal to the damage dealt.</p>",
       "collapsed": false
     },
     {
@@ -167,7 +163,7 @@
       "traits": [
         "divine"
       ],
-      "description": "<p>When destroyed, hungry ghosts reform after 2d4 days fully healed at whatever location they were at when last destroyed. They're only permanently destroyed when they have been given a proper burial, have had their grave cleaned and maintained for at least a year, or have been judged to be redeemed by Pharasma.</p>",
+      "description": "<p>When a hungry ghost is destroyed, they reform after 2d4 days fully healed at the location where they were last destroyed. They're only permanently destroyed when they have been given a proper burial, have had their grave cleaned and maintained for at least a year, or have been judged to be redeemed by Pharasma.</p>",
       "collapsed": false
     },
     {
@@ -187,7 +183,8 @@
       "traits": [
         "agile",
         "finesse",
-        "magical"
+        "magical",
+        "unarmed"
       ],
       "damageRolls": [
         {

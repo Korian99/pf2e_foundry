@@ -11,12 +11,11 @@
   "traits": [
     "Common",
     "Large",
-    "Evil",
     "Humanoid",
-    "Lawful",
+    "Unholy",
     "Void"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Greater darkvision",
     "Scent 30ft imprecise"
@@ -34,7 +33,7 @@
   "skills": [
     {
       "name": "athletics",
-      "modifier": 32,
+      "modifier": 28,
       "note": [],
       "usedAttribute": "strength",
       "modifications": []
@@ -120,13 +119,6 @@
   "weaknesses": [],
   "defensiveAbilities": [
     {
-      "name": "Attack of Opportunity",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
-      "collapsed": false
-    },
-    {
       "name": "Hunter's Triumph",
       "actions": -1,
       "traits": [
@@ -135,7 +127,14 @@
         "fear",
         "mental"
       ],
-      "description": "<p><strong>Trigger</strong> The sumbreiva kills a creature</p>\n<hr />\n<p><strong>Effect</strong> The sumbreiva lets out a triumphant, bone-chilling howl. Every enemy in a 30ft Emanation must succeed at a DC 36 Will Saving Throw save or become Frightened 3 (and Fleeing as long as it's frightened on a critical failure).</p>",
+      "description": "<p><strong>Trigger</strong> The sumbreiva kills a creature</p><hr /><p><strong>Effect</strong> The sumbreiva lets out a triumphant, bone-chilling howl. Every enemy in a 30ft Type:emanation must succeed at a DC 36 Will Saving Throw save or become Frightened 3 (and Fleeing as long as it's frightened on a critical failure).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
       "collapsed": false
     },
     {
@@ -181,6 +180,37 @@
     },
     {
       "type": "melee",
+      "name": "Sumbreiva Huntblade",
+      "bonus": 33,
+      "traits": [
+        "agile",
+        "death",
+        "magical",
+        "thrown-30",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+16",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+16)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "huntblade-brutality"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
       "name": "Shadow Whip",
       "bonus": 33,
       "traits": [
@@ -211,37 +241,6 @@
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
-    },
-    {
-      "type": "ranged",
-      "name": "Sumbreiva Huntblade",
-      "bonus": 33,
-      "traits": [
-        "agile",
-        "death",
-        "magical",
-        "thrown-30",
-        "versatile-s"
-      ],
-      "damageRolls": [
-        {
-          "roll": "3d8+16",
-          "type": "piercing"
-        }
-      ],
-      "critRolls": [
-        {
-          "roll": "(3d8+16)*2",
-          "type": "piercing"
-        }
-      ],
-      "effects": [
-        "huntblade-brutality"
-      ],
-      "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "strength",
-      "toHitModifications": [],
-      "damageModifications": []
     }
   ],
   "offensiveAbilities": [
@@ -249,14 +248,14 @@
       "name": "Claim Trophy",
       "actions": 1,
       "traits": [],
-      "description": "<p>The sumbreiva claims the soul of a creature they killed within the last minute. This works like Seize Soul, except that no black sapphire is required and the soul is turned into a glowing blue light called a <em>soul trophy</em>. Anyone who kills the sumbreiva can then free the soul from any <em>soul trophy</em> by touching it and speaking the word for \"freedom\" in any language.</p>",
+      "description": "<p>The sumbreiva claims the soul of a creature they killed within the last minute. This works like Seize Soul, except that no black sapphire is required, and the soul is turned into a glowing blue light called a soul trophy. Anyone who kills the sumbreiva can then free the soul from any soul trophy by touching it and speaking the word for \"freedom\" in any language.</p>",
       "collapsed": false
     },
     {
       "name": "Huntblade Brutality",
       "actions": null,
       "traits": [],
-      "description": "<p>The sumbreiva's huntblade deals an additional 2d8 damage to Drained, Off-Guard, or Frightened creatures.</p>",
+      "description": "<p>The sumbreiva's huntblade deals an additional 2d8 precision damage to Drained, Frightened, or Off-Guard creatures.</p>",
       "collapsed": false
     },
     {
@@ -316,7 +315,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "ARaSIKsuXsDfy7SI"
+          "id": "g92lZ9mt568bGxGw"
         },
         {
           "name": "Earthbind",
@@ -326,6 +325,7 @@
           "timesPrepared": 1,
           "traits": [
             "concentrate",
+            "earth",
             "manipulate"
           ],
           "castingTime": "2",
@@ -334,13 +334,13 @@
           "area": "",
           "targets": "1 flying creature",
           "save": "fortitude",
-          "description": "<p>Using the weight of earth, you hamper a target's flight, with effects based on its Fortitude save. If the creature reaches the ground safely, it doesn't take falling damage.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target falls safely up to 120 feet.</p>\n<p><strong>Failure</strong> The target falls safely up to 120 feet. If it hits the ground, it can't Fly, levitate, or otherwise leave the ground for 1 round.</p>\n<p><strong>Critical Failure</strong> The target falls safely up to 120 feet. If it hits the ground, it can't Fly, levitate, or otherwise leave the ground for 1 minute.</p>",
+          "description": "<p>Using the weight of earth, you hamper a target's flight, with effects based on its Fortitude save. If the creature reaches the ground safely, it doesn't take falling damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target falls safely up to 120 feet.</p>\n<p><strong>Failure</strong> The target falls safely up to 120 feet. If it hits the ground, it can't Fly, levitate, or otherwise leave the ground for 1 round.</p>\n<p><strong>Critical Failure</strong> The target falls safely up to 120 feet. If it hits the ground, it can't Fly, levitate, or otherwise leave the ground for 1 minute.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "4WoaV1g8eh1LhnKP"
+          "id": "BI2rPArLKCEebrVE"
         }
       ],
       "lv5spells": [],

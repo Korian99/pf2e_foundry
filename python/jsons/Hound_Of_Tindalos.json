@@ -5,17 +5,16 @@
   "conditions": [],
   "color": "#fff",
   "duplicateIndex": 0,
-  "name": "Hound Of Tindalos",
+  "name": "Hound of Tindalos",
   "type": "Creature",
   "level": 7,
   "traits": [
     "Rare",
     "Medium",
     "Aberration",
-    "Evil",
     "Time"
   ],
-  "source": "Pathfinder Bestiary 2",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Greater darkvision"
   ],
@@ -124,10 +123,20 @@
   ],
   "resistances": [
     {
+      "doubleVs": [],
+      "exceptions": [],
       "type": "mental",
       "value": 10
     },
     {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "physical",
+      "value": 10
+    },
+    {
+      "doubleVs": [],
+      "exceptions": [],
       "type": "poison",
       "value": 10
     }
@@ -168,9 +177,7 @@
       "type": "melee",
       "name": "Jaws",
       "bonus": 17,
-      "traits": [
-        "unarmed"
-      ],
+      "traits": [],
       "damageRolls": [
         {
           "roll": "2d10+7",
@@ -194,8 +201,7 @@
       "name": "Claw",
       "bonus": 17,
       "traits": [
-        "agile",
-        "unarmed"
+        "agile"
       ],
       "damageRolls": [
         {
@@ -221,7 +227,7 @@
       "name": "Angled Entry",
       "actions": 1,
       "traits": [],
-      "description": "<p>The hound of Tindalos casts a 4th-rank Translocate spell, but it must transport itself into a space adjacent to an angle of 90º (or more acute) in the structure or environment around it. For example, it could teleport to a space adjacent to a wall (using the angle between the wall and floor) or a corner in a room, or adjacent to a sizable tree growing straight up out of the ground, but not to a flat plain or a room with only curved corners and edges.</p>\n<p>Once per day, the hound can use this ability to plane shift to or from the Dimension of Time, with the same restrictions on what angles it can appear next to.</p>",
+      "description": "<p>The hound of Tindalos casts a 4th-rank Translocate spell, but it must transport itself into a space adjacent to an angle of 90° (or more acute) in the structure or environment around it. For example, it could teleport to a space adjacent to a wall (using the angle between the wall and floor) or a corner in a room, or adjacent to a sizable tree growing straight up out of the ground, but not to a flat plain or a room with only curved corners and edges.</p>\n<p>Once per day, the hound can use this ability to interplanar teleport to or from the Dimension of Time, with the same restrictions on what angles it can appear next to.</p>",
       "collapsed": false
     }
   ],
@@ -229,7 +235,7 @@
     {
       "name": "Occult Innate Spells",
       "type": "innate",
-      "bonus": 11,
+      "bonus": 13,
       "dc": 21,
       "focusPoints": {
         "current": 0,
@@ -240,14 +246,15 @@
       "lv1spells": [],
       "lv2spells": [
         {
-          "name": "Invisibility (Self only)",
+          "name": "Invisibility (Self Only)",
           "type": "spell",
           "level": 2,
           "heightenedLevel": 2,
           "timesPrepared": 1,
           "traits": [
             "illusion",
-            "manipulate"
+            "manipulate",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "10 minutes",
@@ -255,13 +262,13 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>Cloaked in illusion, the target becomes Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
+          "description": "<p>Illusions bend light around the target, rendering it Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "QTK9hewzSwMZUHHY"
+          "id": "34BiyNE5K73gjIxd"
         }
       ],
       "lv3spells": [
@@ -281,13 +288,13 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>Magic empowers the target to act faster. It gains the Quickened condition and can use the extra action each round only for Strike and Stride actions.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> You can target up to 6 creatures.</p>",
+          "description": "<p>Magic empowers the target to act faster. It gains the Quickened condition and can use the extra action each round only for Strike and Stride actions.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> You can target up to 6 creatures.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "mpLgYJ7Kf0kCg1U9"
+          "id": "x9NKuqP7TIEEmOJf"
         },
         {
           "name": "Slow",
@@ -311,12 +318,12 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "SsKI4W1DhiDZ7aOP"
+          "id": "1xrTVrrZ1iFrATYC"
         }
       ],
       "lv4spells": [
         {
-          "name": "Dimensional Anchor",
+          "name": "Planar Tether",
           "type": "spell",
           "level": 4,
           "heightenedLevel": 4,
@@ -331,13 +338,13 @@
           "area": "",
           "targets": "1 creature",
           "save": "will",
-          "description": "<p>You interfere with the target's ability to teleport and travel between dimensions. Dimensional anchor attempts to counteract any teleportation effect, or any effect that would move the target to a different plane. The duration is determined by the target's Will save.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The effect's duration is 1 minute.</p>\n<p><strong>Failure</strong> The effect's duration is 10 minutes.</p>\n<p><strong>Critical Failure</strong> The effect's duration is 1 hour.</p>",
+          "description": "<p>You stitch the target to its current plane. While the target is affected by <em>planar tether</em>, the spell attempts to counteract any teleportation effect that would move the target, or any effect that would transport it to a different plane. <em>Planar tether</em>'s duration is determined by the target's Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The effect's duration is 1 minute.</p>\n<p><strong>Failure</strong> The effect's duration is 10 minutes.</p>\n<p><strong>Critical Failure</strong> The effect's duration is 1 hour.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "u8XSL6IJkNnSXZQo"
+          "id": "7fCsy5zJT2HmBDEd"
         }
       ],
       "lv5spells": [],
@@ -345,7 +352,7 @@
       "lv7spells": [],
       "lv8spells": [
         {
-          "name": "Discern Location",
+          "name": "Pinpoint",
           "type": "spell",
           "level": 8,
           "heightenedLevel": 8,
@@ -361,13 +368,13 @@
           "area": "",
           "targets": "1 creature or object",
           "save": "",
-          "description": "<p>You learn the name of the target's exact location (including the building, community, and country) and plane of existence. You can target a creature only if you've seen it in person, have one of its significant belongings, or have a piece of its body. To target an object, you must have touched it or have a fragment of it. Discern location automatically overcomes protections against detection and divination of lower level than this spell, even if they would normally have a chance to block it.</p>",
+          "description": "<p>You learn the name of the target's exact location (including the building, community, and country) and plane of existence. You can target a creature only if you've seen it in person, have one of its significant belongings, or have a piece of its body, such as a lock of hair. To target an object, you must have touched it or have a fragment of it. <em>Pinpoint</em> automatically overcomes protections against detection of lower rank than this spell, even if they would normally have a chance to block it.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "eoyTbZPJoPxTTOyy"
+          "id": "s3hZcPocl6DYyYz6"
         }
       ],
       "lv9spells": [],

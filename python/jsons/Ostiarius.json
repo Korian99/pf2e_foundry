@@ -11,13 +11,11 @@
   "traits": [
     "Common",
     "Medium",
-    "Evil",
     "Fiend",
-    "Lawful",
     "Unholy",
     "Velstrac"
   ],
-  "source": "Pathfinder Bestiary 2",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Greater darkvision",
     "painsight, sense portal"
@@ -32,7 +30,7 @@
     "Common",
     "Diabolic",
     "Shadowtongue",
-    "telepathy 100 feet"
+    "Telepathy 100 feet"
   ],
   "skills": [
     {
@@ -104,7 +102,7 @@
       "traits": [
         "divine"
       ],
-      "description": "<p>A velstrac automatically knows whether a creature it sees has any of the Doomed, Dying, and Wounded conditions, as well as the value of those conditions</p>",
+      "description": "<p>A velstrac automatically knows whether a creature it sees has any of the Doomed, Dying, and Wounded conditions as well as the value of those conditions.</p>",
       "collapsed": false
     },
     {
@@ -113,7 +111,7 @@
       "traits": [
         "divine"
       ],
-      "description": "<p>The ostiarius always knows the direction and distance to the closest portal between the Shadow Plane and the Material Plane. This sense functions only on these two planes.</p>",
+      "description": "<p>The ostiarius always knows the direction and distance to the closest portal between the Netherworld and the Universe. This sense functions only on these two planes.</p>",
       "collapsed": false
     }
   ],
@@ -143,9 +141,9 @@
   },
   "savenote": "+1 status to all saves vs. magic",
   "hp": {
-    "value": 67,
-    "max": 67,
-    "note": "regeneration 5 (deactivated by holy or silver)",
+    "value": 65,
+    "max": 65,
+    "note": "",
     "modifications": []
   },
   "immunities": [
@@ -154,10 +152,12 @@
   "resistances": [],
   "weaknesses": [
     {
+      "exceptions": [],
       "type": "holy",
       "value": 5
     },
     {
+      "exceptions": [],
       "type": "silver",
       "value": 5
     }
@@ -193,27 +193,26 @@
         "agile",
         "finesse",
         "magical",
-        "unarmed",
         "unholy"
       ],
       "damageRolls": [
         {
-          "roll": "2d6+2",
-          "type": "slashing"
+          "roll": "2d6",
+          "type": "persistent bleed"
         },
         {
-          "roll": "2d6",
-          "type": "bleed"
+          "roll": "2d6+2",
+          "type": "slashing"
         }
       ],
       "critRolls": [
         {
-          "roll": "(2d6+2)*2",
-          "type": "slashing"
+          "roll": "(2d6)*2",
+          "type": "persistent bleed"
         },
         {
-          "roll": "(2d6)*2",
-          "type": "bleed"
+          "roll": "(2d6+2)*2",
+          "type": "slashing"
         }
       ],
       "effects": [],
@@ -234,7 +233,7 @@
         "linguistic",
         "mental"
       ],
-      "description": "<p>The ostiarius inspires their willing allies and themself by whispering words of courage from their wounds. The ostiarius and their allies in a 50ft Emanation gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects. The ostiarius can Sustain Compel Courage.</p>\n<p>Non-velstracs who accept this compelled courage find bleeding wounds opening on their own bodies to whisper in thanks. They take 1 Bleed Damage damage and can't attempt a flat check to end this damage as long as they're compelled.</p>",
+      "description": "<p>The ostiarius inspires their willing allies and themself by whispering words of courage from their wounds. The ostiarius and their allies in a 50ft Type:emanation gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects. The ostiarius can Sustain Compel Courage. Non-velstracs who accept this compelled courage find bleeding wounds opening on their own bodies to whisper in thanks. They take 1 persistent bleed damage and can't attempt a flat check to end this damage as long as they're compelled.</p>",
       "collapsed": false
     },
     {
@@ -244,11 +243,10 @@
         "concentrate",
         "divine",
         "fear",
-        "incapacitation",
         "mental",
         "visual"
       ],
-      "description": "<p>The ostiarius stares at a creature they can see within 30 feet. The creature must immediately attempt a Will save against Whispering Wounds. In addition, if the creature was already Sickened and fails its save, the creature is Fascinated by the ostiarius and can't use hostile actions. This fascination lasts for 1 round or until the ostiarius takes any hostile action against the creature or the creature's allies. Whether the creature succeeds at or fails the save, it is temporarily immune for 1 hour.</p>",
+      "description": "<p>The ostiarius stares at a creature they can see within 30 feet. The creature must immediately attempt a Will save against whispering wounds. In addition, if the creature was already Sickened and fails its save, the creature is Fascinated by the ostiarius and can't use hostile actions. This fascination lasts for 1 round or until the ostiarius takes any hostile action against the creature or the creature's allies. Whether the creature succeeds at or fails the save, it's temporarily immune to Focus Gaze for 1 hour.</p>",
       "collapsed": false
     }
   ],
@@ -256,7 +254,7 @@
     {
       "name": "Divine Innate Spells",
       "type": "innate",
-      "bonus": 14,
+      "bonus": 16,
       "dc": 24,
       "focusPoints": {
         "current": 0,
@@ -280,19 +278,19 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You raise a magical shield of force. This counts as using the Raise a Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use.</p>\n<p>While the spell is in effect, you can use the Shield Block reaction with your magic shield. The shield has Hardness 5. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes. Unlike a normal Shield Block, you can use the spell's reaction against the Force Barrage spell.</p>\n<p>Heightening the spell increases the shield's Hardness.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p>\n<p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p>\n<p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p>\n<p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>",
+          "description": "<p>You raise a magical shield of force. This counts as using the Raise a Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use.</p>\n<p>While the spell is in effect, you can use the Shield Block reaction with your magic shield. The shield has Hardness 5. You can use the spell's reaction to reduce damage from any spell or magical effect, even if it doesn't deal physical damage. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes.</p>\n<p></p>\n<p></p>\n<hr />\n<p><strong>Heightened (+2)</strong> The shield's Hardness increases by 5.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "PL5g787SIbTNx7ZH"
+          "id": "SkGWISVw6wUWs2ZT"
         }
       ],
       "lv1spells": [],
       "lv2spells": [
         {
-          "name": "Calm Emotions (At will)",
+          "name": "Calm (at will)",
           "type": "spell",
           "level": 2,
           "heightenedLevel": 2,
@@ -310,13 +308,13 @@
           "area": "10ft burst",
           "targets": "",
           "save": "will",
-          "description": "<p>You forcibly calm creatures in the area, soothing them into a nonviolent state; each creature must attempt a Will save.</p>\n<hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> Calming urges impose a -1 status penalty to the creature's attack rolls.</p>\n<p><strong>Failure</strong> Any emotion effects that would affect the creature are suppressed and the creature can't use hostile actions. If the target is subject to hostility from any other creature, it ceases to be affected by calm emotions.</p>\n<p><strong>Critical Failure</strong> As failure, but hostility doesn't end the effect.</p>",
+          "description": "<p>You forcibly calm creatures in the area, soothing them into a nonviolent state; each creature must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> Calming urges impose a -1 status penalty to the creature's attack rolls.</p>\n<p><strong>Failure</strong> Any emotion effects that would affect the creature are suppressed and the creature can't use hostile actions. If the target is subject to hostility from any other creature, it ceases to be affected by <em>calm</em>.</p>\n<p><strong>Critical Failure</strong> As failure, but hostility doesn't end the effect.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "8vvlKfwG2KuafsIJ"
+          "id": "3UZzlE0U0cpJQs8f"
         },
         {
           "name": "Darkness",
@@ -341,7 +339,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "vfydvSQqy3EAqzEF"
+          "id": "iAMC3F84fAxdzBFa"
         },
         {
           "name": "Silence",
@@ -351,7 +349,8 @@
           "timesPrepared": 1,
           "traits": [
             "illusion",
-            "manipulate"
+            "manipulate",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "1 minute",
@@ -359,13 +358,13 @@
           "area": "",
           "targets": "1 willing creature",
           "save": "",
-          "description": "<p>The target makes no sound, preventing creatures from noticing it using hearing or other senses alone. The target can't use sonic attacks, nor can it use actions with the auditory trait. This prevents it from casting spells that include verbal components.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell effect emanates from the touched creature, silencing all sound in or passing through a 10- foot radius and preventing any auditory and sonic effects in the affected area. While within the radius, creatures are subject to the same effects as the target. Depending upon the position of the effect, a creature might notice the lack of sound reaching it (blocking off the noise coming from a party, for example).</p>",
+          "description": "<p>The target makes no sound, preventing creatures from noticing it using hearing alone. The target can't use sonic attacks, nor can it use actions with the auditory trait. This prevents it from casting spells due to the magical words involved in casting, with the exception of subtle spells.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell creates an aura in a 10-foot emanation around the touched creature, silencing all sound in or passing through it. While within the aura, creatures are subject to the same effects as the target. Depending upon the position of the effect, a creature might notice the lack of sound reaching it (blocking off the noise coming from a party, for example).</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "mYwX123h9UrKMwNA"
+          "id": "yq80uqhp6vvjAtRA"
         }
       ],
       "lv3spells": [
@@ -387,16 +386,16 @@
           "area": "",
           "targets": "all creatures in range",
           "save": "will",
-          "description": "<p>Your words fascinate your targets. You speak or sing without interruption throughout the casting and duration. Targets who notice your speech or song might give their undivided attention; each target must attempt a Will save. The GM might grant a circumstance bonus (to a maximum of +4) if the target is of an opposing religion, ancestry, or political leaning, or is otherwise unlikely to agree with what you're saying.</p>\n<p>Each creature that comes within range has to attempt a save when you Sustain the Spell. If you're speaking, enthrall gains the linguistic trait.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and notices that you tried to use magic.</p>\n<p><strong>Success</strong> The target needn't pay attention but doesn't notice you tried to use magic (it might notice others are enthralled).</p>\n<p><strong>Failure</strong> The target is Fascinated with you. It can attempt another Will save if it witnesses actions or speech with which it disagrees. If it succeeds, it's no longer Fascinated and is temporarily immune for 1 hour. If the target is subject to a hostile act, or if another creature succeeds at a Diplomacy or Intimidation check against it, the fascination ends immediately.</p>\n<p><strong>Critical Failure</strong> As failure, but the target can't attempt a save to end the fascination if it disagrees with you.</p>",
+          "description": "<p>Your words fascinate your targets. You speak or sing without interruption throughout the casting and duration. Targets who notice your speech or song might give their undivided attention; each target must attempt a Will save. The GM might grant a circumstance bonus (to a maximum of +4) if the target is of an opposing religion, ancestry, or political leaning, or is otherwise unlikely to agree with what you're saying.</p>\n<p>Each creature that comes within range has to attempt a save when you Sustain the spell. If you're speaking, enthrall gains the linguistic trait.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and notices that you tried to use magic.</p>\n<p><strong>Success</strong> The target needn't pay attention but doesn't notice you tried to use magic (it might notice others are enthralled).</p>\n<p><strong>Failure</strong> The target is Fascinated with you. It can attempt another Will save if it witnesses actions or speech with which it disagrees. If it succeeds, it's no longer fascinated and is temporarily immune for 1 hour. If the target is subject to a hostile act, or if another creature succeeds at a Diplomacy or Intimidation check against it, the fascination ends immediately.</p>\n<p><strong>Critical Failure</strong> As failure, but the target can't attempt a save to end the fascination if it disagrees with you.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "I3FM5oy2JXCDfB6k"
+          "id": "QGB7awqSkt3tOqWb"
         },
         {
-          "name": "Wanderer's Guide",
+          "name": "Safe Passage",
           "type": "spell",
           "level": 3,
           "heightenedLevel": 3,
@@ -405,19 +404,19 @@
             "concentrate",
             "manipulate"
           ],
-          "castingTime": "1 minute",
-          "duration": "until your next daily preparations",
-          "range": "",
+          "castingTime": "3",
+          "duration": "Sustained up to 1 minute",
+          "range": "touch",
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You call upon the beyond to guide your route. When you Cast this Spell, choose a destination; you receive an inspired route to that destination, allowing you and allies who travel overland with you to reduce the movement penalty from difficult terrain by half for the duration, as long as you don't deviate from the inspired route. This doesn't have any effect on movement during encounters. If you use this ability again before the duration is over, this effect ends and is replaced by that of the new route.</p>",
+          "description": "<p><strong>Area</strong> 10-foot-wide, 10-foot-tall, 60-foot-long section of terrain</p><hr /><p>You make passage through the area safe for a brief amount of time. Anyone passing through the area gains the following benefits against harmful effects of the terrain and environment, including environmental damage, hazardous terrain, and hazards in the area. The spell grants a +2 status bonus to AC and saves against such effects, and resistance 5 to all damage from such effects. Furthermore, the spell prevents anything in the area that's prone to collapse, such as a rickety bridge or an unstable ceiling, from collapsing, except under extreme strain that would collapse a normal structure of its type.</p>\n<p><em>Safe passage</em> protects only against harm, not inconvenience, and it doesn't reduce difficult terrain, remove the Concealed condition caused by precipitation, or the like, nor does it protect against creatures within the spell's area.</p>\n<p></p><hr /><p><strong>Heightened (5th)</strong> The granted resistance increases to 10, and the area can be 120 feet long.</p>\n<p><strong>Heightened (8th)</strong> The granted resistance increases to 15, and the area can be 500 feet long.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "lbq6fgMbgb0uvetE"
+          "id": "0pTQmPVvUFQ9NNZl"
         }
       ],
       "lv4spells": [],
@@ -441,15 +440,15 @@
           "duration": "1 year or until dismissed",
           "range": "10 feet",
           "area": "",
-          "targets": "1 creature of a level no greater than double the inveigle ritual's level",
+          "targets": "1 creature of a level no greater than double the inveigle ritual's rank",
           "save": "",
-          "description": "<p>You win over the target's mind, causing it to see you as a close and trusted friend and look upon your every suggestion as reasonable. The target is helpful toward you, so it will go out of its way to help you. As with any other helpful creature, there are limits to what you can ask of it. If you ever ask the target to do something completely against its nature or needlessly harmful to the target or its interests, not only does it refuse, but it also can attempt a Will save to end the effect early. Because of the casting time and range, it's generally difficult to cast this ritual unless the target is willing (perhaps convinced the ritual will have some other effect) or restrained. If the creature is unwilling to accept the ritual, it can attempt a Will save to negate the effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The ritual succeeds and the target takes a -4 status penalty to Will saves to end the effect.</p>\n<p><strong>Success</strong> The ritual succeeds.</p>\n<p><strong>Failure</strong> The ritual fails.</p>\n<p><strong>Critical Failure</strong> The ritual fails and the target instead hates you, becoming hostile to you for the duration.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can use <em>inveigle</em> on a creature up to 1 mile away throughout the casting, as long as you have a lock of hair, a drop of blood, or some other piece of the creature's body, which you mix into the oils used in the cost. The base cost increases to 100 gp. The duration is shorter than normal, based on how large a piece of the creature's body you use. Blood, hair, scales, and the like cause the ritual to last 1 week, while a hand or other substantial body part causes the ritual to last 1 month.</p>",
+          "description": "<p>You win over the target's mind, causing it to see you as a close and trusted friend and look upon your every suggestion as reasonable. The target is helpful toward you, so it will go out of its way to help you. As with any other helpful creature, there are limits to what you can ask of it. If you ever ask the target to do something completely against its nature or needlessly harmful to the target or its interests, not only does it refuse, but it also can attempt a Will save to end the effect early. Because of the casting time and range, it's generally difficult to cast this ritual unless the target is willing (perhaps convinced the ritual will have some other effect) or restrained. If the creature is unwilling to accept the ritual, it can attempt a Will save to negate the effect.</p><hr /><p><strong>Critical Success</strong> The ritual succeeds and the target takes a -4 status penalty to Will saves to end the effect.</p>\n<p><strong>Success</strong> The ritual succeeds.</p>\n<p><strong>Failure</strong> The ritual fails.</p>\n<p><strong>Critical Failure</strong> The ritual fails and the target instead hates you, becoming hostile to you for the duration.</p><hr /><p><strong>Heightened (6th)</strong> You can use <em>inveigle</em> on a creature up to 1 mile away throughout the casting, as long as you have a piece of the creature's body, which you mix into the oils used in the cost. The base cost is 100 gp. The duration is shorter, and based on how large a piece of the creature's body you use: 1 week for blood, hair, scales, and the like, or 1 month for a hand or similarly substantial body part.</p>",
           "cast": false,
           "cost": "rare oils worth a total value of 10 gp × the target's level",
           "primaryCheck": "Arcana (expert), Occultism (expert), or Religion (expert)",
           "secondaryCasters": 0,
           "secondaryChecks": "",
-          "id": "nZPaZth5uZ2ou63x"
+          "id": "a7pzzeEJt7NGExVj"
         }
       ],
       "lv1slots": {

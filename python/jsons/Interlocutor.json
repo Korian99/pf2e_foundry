@@ -11,13 +11,11 @@
   "traits": [
     "Common",
     "Large",
-    "Evil",
     "Fiend",
-    "Lawful",
     "Unholy",
     "Velstrac"
   ],
-  "source": "Pathfinder Bestiary 2",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Greater darkvision",
     "painsight"
@@ -112,7 +110,7 @@
       "traits": [
         "divine"
       ],
-      "description": "<p>A velstrac automatically knows whether a creature it sees has any of the Doomed, Dying, and Wounded conditions, as well as the value of those conditions.</p>",
+      "description": "<p>A velstrac automatically knows whether a creature it sees has any of the Doomed, Dying, and Wounded conditions as well as the value of those conditions.</p>",
       "collapsed": false
     }
   ],
@@ -144,7 +142,7 @@
   "hp": {
     "value": 215,
     "max": 215,
-    "note": "regeneration 20 (deactivated by holy or silver)",
+    "note": "",
     "modifications": []
   },
   "immunities": [
@@ -153,10 +151,12 @@
   "resistances": [],
   "weaknesses": [
     {
+      "exceptions": [],
       "type": "holy",
       "value": 15
     },
     {
+      "exceptions": [],
       "type": "silver",
       "value": 15
     }
@@ -167,13 +167,6 @@
       "actions": null,
       "traits": [],
       "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster regains the listed number of Hit Points each round at the beginning of its turn. Its Dying condition never increases beyond Dying 3 as long as its regeneration is active. However, if it takes damage of a type listed in the regeneration entry, its regeneration deactivates until the end of its next turn. Deactivate the regeneration before applying any damage of a listed type, since that damage might kill the monster by bringing it to Dying 4.</p></p></details></p>",
-      "collapsed": false
-    },
-    {
-      "name": "Attack of Opportunity",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
       "collapsed": false
     },
     {
@@ -188,6 +181,23 @@
       ],
       "description": "<p>30 feet. When a creature ends its turn in the aura, it sees pieces of its own body amid the interlocutor's form. The creature must succeed at a DC 29 Will Saving Throw save or become Stunned 1.</p>",
       "collapsed": false
+    },
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Shadow Siphon",
+      "actions": -1,
+      "traits": [
+        "divine",
+        "shadow"
+      ],
+      "description": "<p><strong>Trigger</strong> The interlocutor would take damage from a spell or magical effect</p><hr /><p><strong>Effect</strong> The interlocutor takes half the triggering damage instead.</p>",
+      "collapsed": false
     }
   ],
   "speed": "40 ft, ",
@@ -200,27 +210,26 @@
         "deadly-2d10",
         "magical",
         "reach-10",
-        "unarmed",
         "unholy"
       ],
       "damageRolls": [
         {
           "roll": "3d10+13",
-          "type": "slashing"
+          "type": "bludgeoning"
         },
         {
           "roll": "2d6",
-          "type": "bleed"
+          "type": "persistent bleed"
         }
       ],
       "critRolls": [
         {
           "roll": "(3d10+13)*2",
-          "type": "slashing"
+          "type": "bludgeoning"
         },
         {
           "roll": "(2d6)*2",
-          "type": "bleed"
+          "type": "persistent bleed"
         }
       ],
       "effects": [],
@@ -241,14 +250,14 @@
         "mental",
         "visual"
       ],
-      "description": "<p>The interlocutor stares at a creature they can see within 30 feet. The creature must immediately attempt a Will save against glimpse of stolen flesh. In addition, if the creature was already Stunned, on a failed save, it feels its internal organs twist and writhe, and is Clumsy 2 for 1 minute.</p>\n<p>After attempting this save, the creature is then temporarily immune until the start of the interlocutor's next turn.</p>",
+      "description": "<p>The interlocutor stares at a creature they can see within 30 feet. The creature must immediately attempt a Will save against glimpse of stolen flesh. In addition, if the creature was already stunned, on a failed save, it feels its internal organs twist and writhe, and is Clumsy 2 for 1 minute. After attempting this save, the creature is then temporarily immune to Focus Gaze until the start of the interlocutor's next turn.</p>",
       "collapsed": false
     },
     {
       "name": "Surgical Rend",
       "actions": 1,
       "traits": [],
-      "description": "<p>This functions as the Rend ability, dealing claw damage. In addition, if the target is a living creature with organs and muscle, the interlocutor opens a precise wound. Until the creature is restored to its maximum Hit Points, thus closing the wound, Strikes against the creature deal 1d6 extra precision damage.</p>\n<p>Effect: Surgical Rend</p>",
+      "description": "<p>This functions as the Rend ability, dealing claw Strike damage. In addition, if the target is a living creature with organs and muscle, the interlocutor opens a precise wound. Until the creature is restored to its maximum Hit Points, thus closing the wound, Strikes against the creature deal an additional 1d6 precision damage.</p>",
       "collapsed": false
     }
   ],
@@ -256,7 +265,7 @@
     {
       "name": "Divine Innate Spells",
       "type": "innate",
-      "bonus": 23,
+      "bonus": 25,
       "dc": 33,
       "focusPoints": {
         "current": 0,
@@ -282,13 +291,13 @@
           "area": "",
           "targets": "1 dying creature",
           "save": "",
-          "description": "<p>Vitality energy shuts death's door. The target loses the Dying condition, though it remains Unconscious at 0 Hit Points.</p>",
+          "description": "<p>Life energy shuts death's door. The target loses the Dying condition, though it remains Unconscious at 0 Hit Points.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Ve6gsftWONByJQPc"
+          "id": "RQ4vUB4GCLOV4ILu"
         }
       ],
       "lv1spells": [],
@@ -312,13 +321,13 @@
           "area": "",
           "targets": "1 willing living creature or 1 undead",
           "save": "Basic fortitude",
-          "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p>◆◆ <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p>◆◆◆ <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse vital energy in a 30ft Emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "T15eZTknkbdcVEDH"
+          "id": "xOd7nQyRYkybv69O"
         },
         {
           "name": "Heal",
@@ -337,63 +346,65 @@
           "area": "",
           "targets": "1 willing living creature or 1 undead",
           "save": "Basic fortitude",
-          "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p>◆◆ <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p>◆◆◆ <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse vital energy in a 30ft Emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "T15eZTknkbdcVEDH"
+          "id": "xOd7nQyRYkybv69O"
         },
         {
-          "name": "Restoration",
+          "name": "Sound Body",
           "type": "spell",
-          "level": 4,
+          "level": 2,
           "heightenedLevel": 4,
           "timesPrepared": 2,
           "traits": [
             "concentrate",
             "healing",
-            "manipulate"
+            "manipulate",
+            "vitality"
           ],
-          "castingTime": "1 minute",
+          "castingTime": "2",
           "duration": "",
           "range": "touch",
           "area": "",
-          "targets": "1 creature",
+          "targets": "1 willing creature",
           "save": "",
-          "description": "<p>Restorative magic counters the effects of toxins or conditions that prevent a creature from functioning at its best. When you cast restoration, choose to either reduce a condition or lessen the effect of a toxin. A creature can benefit from only one restoration spell each day, and it can't benefit from restoration more than once to reduce the stage of the same exposure to a given toxin.</p>\n<ul>\n<li><strong>Lessen a Toxin</strong> Reduce the stage of one toxin the target suffers from by one stage. This can't reduce the stage below stage 1 or cure the affliction.</li>\n<li><strong>Reduce a Condition</strong> Reduce the value of the target's Clumsy, Enfeebled, or Stupefied condition by 2. You can instead reduce two of the listed conditions by 1 each.</li>\n</ul>\n<hr />\n<p><strong>Heightened (4th)</strong> Add Drained to the list of conditions you can reduce. When you lessen a toxin, reduce the stage by two. You also gain a third option that allows you to reduce the target's Doomed value by 1. You can't use this to reduce a permanent Doomed condition.</p>\n<p><strong>Heightened (6th)</strong> As the 4th-rank restoration, but you can reduce a permanent Doomed condition if you add a spellcasting action and a material component while Casting the Spell, during which you provide 100 gp worth of diamond dust as a cost.</p>",
+          "description": "<p>You send a surge of healing energy to restore the target's body. Attempt to counteract an effect of your choice imposing one of these conditions on the target: Blinded, Dazzled, Deafened, Enfeebled, or Sickened. If you didn't counteract the effect, but you would have if its counteract rank were 2 lower, instead suppress the effect until the beginning of your next turn. The effect's duration doesn't elapse while it's suppressed.</p>\n<p>This spell can't counteract or suppress curses, diseases, or conditions that are part of the target's normal state.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> Add Drained and Slowed to the list of conditions.</p>\n<p><strong>Heightened (8th)</strong> Add Stunned to the list of conditions.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "T8XEZJYgHmvL38pa"
+          "id": "LoFBY77U05O4sOn8"
         },
         {
-          "name": "Restoration",
+          "name": "Sound Body",
           "type": "spell",
-          "level": 4,
+          "level": 2,
           "heightenedLevel": 4,
           "timesPrepared": 2,
           "traits": [
             "concentrate",
             "healing",
-            "manipulate"
+            "manipulate",
+            "vitality"
           ],
-          "castingTime": "1 minute",
+          "castingTime": "2",
           "duration": "",
           "range": "touch",
           "area": "",
-          "targets": "1 creature",
+          "targets": "1 willing creature",
           "save": "",
-          "description": "<p>Restorative magic counters the effects of toxins or conditions that prevent a creature from functioning at its best. When you cast restoration, choose to either reduce a condition or lessen the effect of a toxin. A creature can benefit from only one restoration spell each day, and it can't benefit from restoration more than once to reduce the stage of the same exposure to a given toxin.</p>\n<ul>\n<li><strong>Lessen a Toxin</strong> Reduce the stage of one toxin the target suffers from by one stage. This can't reduce the stage below stage 1 or cure the affliction.</li>\n<li><strong>Reduce a Condition</strong> Reduce the value of the target's Clumsy, Enfeebled, or Stupefied condition by 2. You can instead reduce two of the listed conditions by 1 each.</li>\n</ul>\n<hr />\n<p><strong>Heightened (4th)</strong> Add Drained to the list of conditions you can reduce. When you lessen a toxin, reduce the stage by two. You also gain a third option that allows you to reduce the target's Doomed value by 1. You can't use this to reduce a permanent Doomed condition.</p>\n<p><strong>Heightened (6th)</strong> As the 4th-rank restoration, but you can reduce a permanent Doomed condition if you add a spellcasting action and a material component while Casting the Spell, during which you provide 100 gp worth of diamond dust as a cost.</p>",
+          "description": "<p>You send a surge of healing energy to restore the target's body. Attempt to counteract an effect of your choice imposing one of these conditions on the target: Blinded, Dazzled, Deafened, Enfeebled, or Sickened. If you didn't counteract the effect, but you would have if its counteract rank were 2 lower, instead suppress the effect until the beginning of your next turn. The effect's duration doesn't elapse while it's suppressed.</p>\n<p>This spell can't counteract or suppress curses, diseases, or conditions that are part of the target's normal state.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> Add Drained and Slowed to the list of conditions.</p>\n<p><strong>Heightened (8th)</strong> Add Stunned to the list of conditions.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "T8XEZJYgHmvL38pa"
+          "id": "LoFBY77U05O4sOn8"
         }
       ],
       "lv5spells": [
@@ -414,19 +425,19 @@
           "area": "",
           "targets": "the triggering creature",
           "save": "",
-          "description": "<p><strong>Trigger</strong> A living creature within range would die.</p>\n<hr />\n<p>Your blessing revives a creature at the moment of its death. You prevent the target from Dying and restore Hit Points to the target equal to 4d8 plus your spellcasting ability modifier. You can't use breath of life if the triggering effect was disintegrate or a death effect.</p>",
+          "description": "<p><strong>Trigger</strong> A living creature within range would die.</p>\n<hr />\n<p>Your blessing revives a creature at the moment of its death. You prevent the target from dying and restore 5d8 Hit Points to the target. You can't use breath of life if the triggering effect was a death effect or an effect that leaves no remains, such as Disintegrate</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The healing increases by 1d8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "UDXoBQjc0tyY3qtw"
+          "id": "ST0N4xw26ietq4e2"
         }
       ],
       "lv6spells": [],
       "lv7spells": [
         {
-          "name": "Plane Shift (Self only) (To the Universe or Netherworld only)",
+          "name": "Interplanar Teleport (self only, to the Netherworld or the Universe only)",
           "type": "spell",
           "level": 7,
           "heightenedLevel": 7,
@@ -438,17 +449,17 @@
           ],
           "castingTime": "10 minutes",
           "duration": "",
-          "range": "touch",
+          "range": "5 feet",
           "area": "",
-          "targets": "1 willing creature, or up to 8 willing creatures joining hands",
+          "targets": "up to 8 willing creatures",
           "save": "",
-          "description": "<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must have specific knowledge of the destination plane and use a magic tuning fork created from material from that plane as a focus for the spell. While the tuning forks for most prominent planes are uncommon, just like the spell plane shift, more obscure planes and demiplanes often have rare tuning forks. The spell is highly imprecise, and you appear 1d20x25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. Plane shift doesn't provide a means of return travel, though casting plane shift again allows you to return to your previous plane unless there are extenuating circumstances.</p>",
+          "description": "<p><strong>Requirements</strong> You have a planar key for the destination plane, used as a locus</p>\n<hr />\n<p>You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must know the destination plane exists and use a magic planar key created from material from that plane as a locus for the spell. While the planar keys for most prominent planes are uncommon, just like the spell <em>interplanar teleport</em>, more obscure planes and demiplanes often have rare or possibly even unique planar keys.</p>\n<p>The spell is highly imprecise, and you appear 1d20×25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. <em>Interplanar teleport</em> doesn't provide a means of return travel, though casting <em>interplanar teleport</em> again allows you to return to your previous plane unless there are extenuating circumstances.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "NPRORdlBK4J6mXJz"
+          "id": "qY0Myi7JJ7s9XiyN"
         }
       ],
       "lv8spells": [],
@@ -468,20 +479,20 @@
         "max": 0
       },
       "lv4slots": {
-        "current": 4,
-        "max": 4
+        "current": 0,
+        "max": 0
       },
       "lv5slots": {
-        "current": 1,
-        "max": 1
+        "current": 0,
+        "max": 0
       },
       "lv6slots": {
         "current": 0,
         "max": 0
       },
       "lv7slots": {
-        "current": 1,
-        "max": 1
+        "current": 0,
+        "max": 0
       },
       "lv8slots": {
         "current": 0,

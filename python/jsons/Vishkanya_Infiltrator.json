@@ -14,7 +14,7 @@
     "Humanoid",
     "Vishkanya"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Low light vision"
   ],
@@ -133,15 +133,15 @@
     {
       "name": "Disguise Kit",
       "quantity": 1,
-      "description": "<p>This small wooden box contains cosmetics, false facial hair, spirit gum, and a few simple wigs. You usually need a disguise kit to set up a disguise in order to Impersonate someone using the Deception skill. If you've crafted a large number of disguises, you can replenish your cosmetics supply with replacement cosmetics suitable for the type of your disguise kit.</p>",
+      "description": "<p>This small wooden box contains cosmetics, false facial hair, spirit gum, and a few simple wigs. You usually need a disguise kit to set up a disguise in order to Impersonate someone using the Deception skill. If you've crafted a large number of disguises, you can replenish your cosmetics supply with replacement cosmetics suitable for the type of your disguise kit. You can draw and replace a worn disguise kit as part of the action that uses it.</p>",
       "level": 0,
       "price": "2 gp",
       "traits": []
     },
     {
-      "name": "Thieves' Tools",
+      "name": "Thieves' Toolkit",
       "quantity": 1,
-      "description": "<p>You need thieves' tools to @UUID[Compendium.pf2e.actionspf2e.Item.Pick a Lock]{Pick Locks} or @UUID[Compendium.pf2e.actionspf2e.Item.Disable a Device]{Disable Devices} (of some types) using the Thievery skill.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.Thieves' Toolkit (Replacement Picks)]{Replacement Picks} appropriate to your tools; this doesn't require using the Repair action.</p>",
+      "description": "<p>You need a thieves' toolkit to @UUID[Compendium.pf2e.actionspf2e.Item.Pick a Lock]{Pick Locks} or @UUID[Compendium.pf2e.actionspf2e.Item.Disable a Device]{Disable Devices} (of some types) using the Thievery skill.</p>\n<p>If your thieves' toolkit is broken, you can repair it by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.Thieves' Toolkit (Replacement Picks)]{Replacement Picks} appropriate to your toolkit; this doesn't require using the Repair action. If you wear your thieves' toolkit, you can draw and replace it as part of the action that uses it.</p>",
       "level": 0,
       "price": "3 gp",
       "traits": []
@@ -156,7 +156,7 @@
   },
   "fortitude": {
     "value": 6,
-    "note": "(+8 vs. poisons)",
+    "note": "",
     "usedAttribute": "constitution",
     "modifications": []
   },
@@ -172,7 +172,7 @@
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "savenote": "+2 to all saves vs. poison",
+  "savenote": "+2 to foritude saves vs. poison",
   "hp": {
     "value": 45,
     "max": 45,
@@ -184,7 +184,7 @@
   "weaknesses": [],
   "defensiveAbilities": [
     {
-      "name": "+2 to All Saves vs. Poison",
+      "name": "+2 to Fortitude Saves vs. Poison",
       "actions": null,
       "traits": [],
       "description": "",
@@ -221,7 +221,7 @@
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Shuriken",
       "bonus": 11,
       "traits": [
@@ -241,7 +241,7 @@
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -252,28 +252,28 @@
       "name": "Envenom",
       "actions": 1,
       "traits": [],
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Using either saliva or blood, the vishkanya applies vishkanyan venom to one weapon they're holding. To use their blood, they must be injured, or they can deal themselves 1 Slashing Damage damage as part of the action.</p>",
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> Using either saliva or blood, the vishkanya applies vishkanyan venom to one weapon they're holding. To use their blood, they must be injured, or they can deal themself 1 Slashing Damage damage as part of the action.</p>",
       "collapsed": false
     },
     {
       "name": "Flexible",
       "actions": null,
       "traits": [],
-      "description": "<p>The vishkanya infiltrator is adept at dealing with tight situations. They have a +1 circumstance bonus to checks to Escape.</p>",
+      "description": "<p>The vishkanya is adept at dealing with tight situations. They have a +1 circumstance bonus to checks to Escape.</p>",
       "collapsed": false
     },
     {
       "name": "Proficient Poisoner",
       "actions": null,
       "traits": [],
-      "description": "<p>The vishkanya infiltrator doesn't lose the poison on a weapon due to a critically failed Strike.</p>",
+      "description": "<p>The vishkanya doesn't lose the poison on a weapon due to a critically failed Strike.</p>",
       "collapsed": false
     },
     {
       "name": "Sneak Attack",
       "actions": null,
       "traits": [],
-      "description": "<p>The vishkanya deals 1d6 extra precision damage to Off-Guard creatures.</p>",
+      "description": "<p>The vishkanya's Strikes deal an additional 1d6 precision damage to Off-Guard creatures.</p>",
       "collapsed": false
     },
     {
@@ -283,7 +283,7 @@
         "injury",
         "poison"
       ],
-      "description": "<p><strong>Saving Throw</strong> DC 20 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 1d4 Poison Damage damage (1 round)</p>\n<p><strong>Stage 2</strong> 1d4 Poison Damage damage and Off-Guard (1 round)</p>\n<p><strong>Stage 3</strong> 1d4 Poison Damage damage, off-guard, and a –5-foot penalty to Speed (1 round)</p>",
+      "description": "<p><strong>Saving Throw</strong> DC 20 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 1d4 Poison Damage damage (1 round)</p>\n<p><strong>Stage 2</strong> 1d4 Poison Damage damage and Off-Guard (1 round)</p>\n<p><strong>Stage 3</strong> 1d4 Poison Damage damage, off-guard, and a –5-foot penalty to Speed (1 round)</p>",
       "collapsed": false
     }
   ],

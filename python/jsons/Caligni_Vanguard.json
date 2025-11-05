@@ -9,14 +9,12 @@
   "type": "Creature",
   "level": 5,
   "traits": [
-    "Rare",
+    "Uncommon",
     "Medium",
     "Caligni",
-    "Evil",
-    "Humanoid",
-    "Lawful"
+    "Humanoid"
   ],
-  "source": "Pathfinder Bestiary 3",
+  "source": "Pathfinder Monster Core 2",
   "senses": [
     "Echolocation 60ft precise"
   ],
@@ -155,17 +153,17 @@
   ],
   "defensiveAbilities": [
     {
-      "name": "Attack of Opportunity",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
-      "collapsed": false
-    },
-    {
       "name": "Death Blaze",
       "actions": null,
       "traits": [],
-      "description": "<p>When the vanguard dies, their body combusts in a blaze of fire and armor shrapnel.</p>\n<p>All creatures within a 10ft Emanation take 3d6 Fire Damage|options:area-damage]{3d6 fire damage and 3d6 piercing damage} (Basic DC 19 Reflex Saving Throw save).</p>\n<p>The vanguard's armor is destroyed in the blaze, but their other gear is unaffected and left in a pile where they died.</p>",
+      "description": "<p>When the vanguard dies, their body combusts in a blaze of fire and armor shrapnel. All creatures within a 10ft Emanation take 3d6 Fire Damage|options:area-damage]{3d6 fire damage and 3d6 piercing damage} (Basic DC 19 Reflex Saving Throw save). The vanguard's armor is destroyed in the blaze, but their other gear is unaffected and left in a pile where they died.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
       "collapsed": false
     }
   ],
@@ -197,12 +195,11 @@
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Composite Longbow",
       "bonus": 10,
       "traits": [
         "deadly-d10",
-        "range-increment-100",
         "volley-30"
       ],
       "damageRolls": [
@@ -218,7 +215,7 @@
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -232,7 +229,7 @@
         "auditory",
         "mental"
       ],
-      "description": "<p>Each caligni within 30 feet of the vanguard gains the Attack of Opportunity reaction until the end of the vanguard's next turn. Once a caligni has used this Attack of Opportunity, that caligni is temporarily immune to the same vanguard's Call to Arms for 10 minutes.</p>",
+      "description": "<p>Each caligni within 30 feet of the vanguard gains the Reactive Strike reaction until the end of the vanguard's next turn. Once a caligni has used this Reactive Strike, that caligni is temporarily immune to the same vanguard's Call to Arms for 10 minutes.</p>",
       "collapsed": false
     },
     {
