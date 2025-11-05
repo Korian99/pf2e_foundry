@@ -1,0 +1,170 @@
+{
+  "initiative": 0,
+  "initiativebonus": 38,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Fungal Curtain AP",
+  "type": "Hazard",
+  "level": 20,
+  "traits": [
+    "Unique",
+    "Medium",
+    "Environmental",
+    "Fungus"
+  ],
+  "source": "Pathfinder #212: A Voice in the Blight",
+  "remaster": true,
+  "stealth": {
+    "value": 38,
+    "note": "(legendary) to realize the fungus is hazardous; noticing the fungus itself has a DC of 0"
+  },
+  "description": "<p>A glowing wall of moss, lichens, mold, and stringy mushrooms weaves into a towering violet wall of shuddersome matter.</p>",
+  "disable": "<p>DC 42 Nature  (master) six times to identify and prune away the fungal curtain's six sensory bulbs (this doesn't remove the curtain; it must still be hacked through to allow access to the area beyond), or DC 48 Religion  (legendary) twice to exorcise the fiendish energies that empower the fungal curtain and cause it to wilt into sludge</p>",
+  "reset": "<p>The fungal curtain deactivates at the end of any round where there were no foes in area <strong>E5</strong>, then resets at the start of the next round. It restores 10 Hit Points to each damaged section every hour.</p>",
+  "routine": "<p>(3 actions) The fungal curtain takes the following actions each round in this order; the fungal curtain can perceive targets via darkvision and has a Perception modifier of +38. On its first action, it extends a thorny tentacle to attempt a melee Strike on the closest target in reach—if there's no target in reach, the fungal curtain loses this action. On its second action, it fires a volley of thorny spores into area <strong>E5</strong>, attempting a ranged thorny spore Strike against all potential targets in the chamber. On its third action, it emits another whistling decay effect.</p>",
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 37,
+    "note": null,
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "hardness": {
+    "value": 34
+  },
+  "fortitude": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 32,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 134,
+    "max": 134,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "critical-hits",
+    "precision"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "acid",
+      "value": 20
+    },
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "fire",
+      "value": 20
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "holy",
+      "value": 20
+    }
+  ],
+  "defensiveAbilities": [],
+  "speed": "",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Thorny Tentacle",
+      "bonus": 38,
+      "traits": [
+        "magical",
+        "reach-30",
+        "versatile-p"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d10+22",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d10+22)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Thorny Spore",
+      "bonus": 38,
+      "traits": [
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d8",
+          "type": "poison"
+        },
+        {
+          "roll": "3d12",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d8)*2",
+          "type": "poison"
+        },
+        {
+          "roll": "(3d12)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "HP 134 (BT 67) Per Five-Foot Cube",
+      "actions": null,
+      "traits": [],
+      "description": "",
+      "collapsed": false
+    },
+    {
+      "name": "Whistling Decay",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The fungal curtain takes damage or an attempt to disable it critically fails</p><hr /><p><strong>Effect</strong> Pod like protrusions along the fungal curtain clench and then expel a shrill whistling sound along with clouds of flesh-eating spores. The whistling sound alerts the occupants of area <strong>E6</strong>. Any non-fungus, non-demon creature within 30 feet of the fungal curtain is exposed to the flesh-eating spores and takes 8d6 Poison Damage]{8d6 poison damage and 4d6 persistent void} damage (Basic DC 42 Fortitude Saving Throw save). The fungal curtain then rolls initiative.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 40"
+}

@@ -1,0 +1,294 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Decrosia AP OLD",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Chaotic",
+    "Evil",
+    "Hag",
+    "Humanoid"
+  ],
+  "source": "Pathfinder #182: Graveclaw",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 16,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo",
+    "Common",
+    "Jotun",
+    "Petran"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "occultism",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "Poison Lore",
+      "modifier": 16,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 3
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [
+    {
+      "name": "Arquebus",
+      "quantity": 1,
+      "description": "<p>This is a long rifle that offers more range than the average firearm, though the long barrel and ferocious kickback make the weapon particularly unsteady unless a tripod or other stand is used to stabilize it. The arquebus is one of the most commonly used long guns among the soldiers of Dongun Hold and Alkenstar.</p>",
+      "level": 0,
+      "price": "10 gp",
+      "traits": [
+        "concussive",
+        "fatal-d12",
+        "kickback"
+      ]
+    },
+    {
+      "name": "Flintlock Pistol",
+      "quantity": 1,
+      "description": "<p>Though less accurate and powerful than a flintlock musket, the flintlock pistol is a preferred weapon of privateers thanks to its more compact size and affordability. Pirate captains often wear a brace of such pistols in a bandolier so they can draw and fire without stopping to reload.</p>",
+      "level": 0,
+      "price": "6 gp",
+      "traits": [
+        "concussive",
+        "fatal-d8"
+      ]
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Coven",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A rust hag adds Curse of Lost Time, Rusting Grasp, and Summon Construct to her coven's spells.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+1 status to all saves vs. magic",
+  "hp": {
+    "value": 135,
+    "max": 135,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "magical",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6 + 10",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6 + 10)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "rusting-touch"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Ghost Touch Arquebus",
+      "bonus": 20,
+      "traits": [
+        "concussive",
+        "fatal-d12",
+        "kickback",
+        "magical",
+        "reload-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8 + 11",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8 + 11)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "hagshot"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Flintlock Pistol",
+      "bonus": 20,
+      "traits": [
+        "concussive",
+        "fatal-d8",
+        "magical",
+        "reload-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4 + 11",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4 + 11)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "hagshot"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Change Shape",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "occult",
+        "polymorph"
+      ],
+      "description": "<p>The rust hag can take on the appearance of any Medium female humanoid. This doesn't change her Speed or her Strikes, but might change the damage type her Strikes deal (typically to bludgeoning).</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster changes its shape indefinitely. It can use this action again to return to its natural shape or adopt a new shape. Unless otherwise noted, a monster cannot use Change Shape to appear as a specific individual. Using Change Shape counts as creating a disguise for the Impersonate use of Deception. The monster's transformation automatically defeats Perception DCs to determine whether the creature is a member of the ancestry or creature type into which it transformed, and it gains a +4 status bonus to its Deception DC to prevent others from seeing through its disguise. Change Shape abilities specify what shapes the monster can adopt. The monster doesn't gain any special abilities of the new shape, only its physical form. For example, in each shape, it replaces its normal Speeds and Strikes, and might potentially change its senses or size. Any changes are listed in its stat block.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Hagshot",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Any firearm wielded by a rust hag gains the benefits of <em>+1 striking</em> and <em>Ghost Touch</em> runes, and it functions properly no matter how rusty it gets. In addition, when a rust hag critically hits a target with a firearm, the target must succeed at a DC 26 Fortitude Saving Throw save or be Stunned 1.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rusting Touch",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A rust hag's touch causes metal to rapidly rust and corrode. If the hag succeeds at a Strike with her claw, she deals 2d6 #rusting touch damage damage (doubled on a critical hit) to a metal item the target is wearing or holding, ignoring its Hardness. If the hag hits an unattended metal item, the item takes this damage automatically. If a creature uses the Shield Block reaction with a metal shield against the hag's claw attack, the shield is automatically broken, but no other item is rusted on that attack. Objects made of skymetal, such as adamantine and orichalcum, are immune to rusting touch.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 24"
+}

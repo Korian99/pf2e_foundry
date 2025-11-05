@@ -1,0 +1,232 @@
+{
+  "initiative": 0,
+  "initiativebonus": 17,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Arboreal Sapstriker AP",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Common",
+    "Large",
+    "Plant"
+  ],
+  "source": "Pathfinder #201: Pactbreaker",
+  "remaster": true,
+  "senses": [
+    "Low light vision",
+    "Scent 60ft imprecise"
+  ],
+  "perception": {
+    "value": 17,
+    "note": "Low light vision, Scent 60ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Arboreal",
+    "Common",
+    "Fey"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 11,
+      "note": [
+        "in forests 15"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 115,
+    "max": 115,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "bludgeoning",
+      "value": 5
+    },
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "piercing",
+      "value": 5
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "axe-vulnerability",
+      "value": 5
+    },
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Axe Vulnerability",
+      "actions": null,
+      "traits": [],
+      "description": "<p>An arboreal sapstriker takes 5 additional damage from axes.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Primal Sink",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> An arboreal sapstriker succeeds or critically succeeds at a saving throw against a primal effect</p>\n<hr />\n<p><strong>Effect</strong> The sapstriker gains a +1 status bonus to attack rolls, saving throws, skill checks, and sap saving throw DC for 1d4 #rounds rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Branch",
+      "bonus": 17,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d8+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+6)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "sap"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Sap",
+      "bonus": 17,
+      "traits": [
+        "agile"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+6)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "sap"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Amber Tomb",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A foe critically succeeds at a Strike against the arboreal sapstriker with a weapon that deals piercing or slashing damage, or a foe deals damage to an arboreal sapstriker with an axe</p>\n<hr />\n<p><strong>Effect</strong> The arboreal sapstriker attempts to Disarm the triggering foe's weapon, using its Fortitude modifier in place of its Athletics modifier. If it critically succeeds, the weapon is lodged into the sapstriker rather than falling to the ground. A creature can retrieve a lodged weapon by Disarming the sapstriker as if it were wielding the weapon.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sap",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A creature that takes damage from an arboreal sapstriker's branch or sap Strike must succeed at a DC 23 Reflex Saving Throw save or take 1d8 Persistent,acid Damage damage. While taking the persistent damage, a creature takes a –10-foot status penalty to its Speeds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 22"
+}

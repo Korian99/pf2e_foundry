@@ -1,0 +1,213 @@
+{
+  "initiative": 0,
+  "initiativebonus": 11,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Lava Spitter AP",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Rare",
+    "Small",
+    "Construct",
+    "Elemental",
+    "Fire"
+  ],
+  "source": "Pathfinder #217: Death Sails a Wine-Dark Sea",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "smoke vision"
+  ],
+  "perception": {
+    "value": 11,
+    "note": "Darkvision, smoke vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Pyric"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Smoke Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The lava spitter ignores the Concealed condition from smoke.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 60,
+    "max": 60,
+    "note": "fiery healing",
+    "modifications": []
+  },
+  "immunities": [
+    "fire",
+    "mental"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Fiery Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p>If a lava spitter is in contact with lava or an area of equivalent heat, it gains fast healing 5.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Too Hot to Handle",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A creature that successfully grapples or hits a lava spitter with an unarmed attack takes 3d6 Fire Damage damage (Basic DC 20 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fangs",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+3",
+          "type": "piercing"
+        },
+        {
+          "roll": "2",
+          "type": "persistent fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+3)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(2)*2",
+          "type": "persistent fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Lava Spit",
+      "bonus": 13,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d8+1",
+          "type": "fire"
+        },
+        {
+          "roll": "2",
+          "type": "persistent fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+1)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(2)*2",
+          "type": "persistent fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Spew Lava",
+      "actions": 1,
+      "traits": [
+        "fire",
+        "primal"
+      ],
+      "description": "<p>The lava spitter expels a 15ft Type:cone of lava, dealing 5d6 Fire Damage damage to every creature within the cone (Basic DC 20 Reflex Saving Throw save). This area becomes hazardous terrain for 1 minute. A creature takes 2 Fire Damage damage each time it moves into one of these squares. The lava spitter then can't Spew Lava for 1d4 rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Crafting or Arcana or Nature, DC 19"
+}

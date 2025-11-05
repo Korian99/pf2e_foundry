@@ -1,0 +1,454 @@
+{
+  "initiative": 0,
+  "initiativebonus": 30,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Devasance AP",
+  "type": "Creature",
+  "level": 16,
+  "traits": [
+    "Rare",
+    "Medium",
+    "Incorporeal",
+    "Unholy",
+    "Void"
+  ],
+  "source": "Pathfinder #212: A Voice in the Blight",
+  "remaster": true,
+  "senses": [
+    "Greater darkvision",
+    "Lifesense 60ft imprecise"
+  ],
+  "perception": {
+    "value": 30,
+    "note": "Greater darkvision, Lifesense 60ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo",
+    "Necril",
+    "Shadowtongue"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 31,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 33,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 30,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": 5
+  },
+  "wisdom": {
+    "value": 6
+  },
+  "charisma": {
+    "value": 9
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 38,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 30,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 225,
+    "max": 225,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "precision",
+    "unconscious",
+    "poison"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "force",
+        "ghost-touch",
+        "spirit",
+        "vitality"
+      ],
+      "type": "all-damage",
+      "value": 15
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "vitality",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Aura of Malaise",
+      "actions": null,
+      "traits": [
+        "aura",
+        "void"
+      ],
+      "description": "<p>30 feet. A living creature that starts its turn in the devasance's aura must succeed at a DC 34 Will Saving Throw save or become Slowed 1 (or Slowed 2 on a critical failure).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Drink Life",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A living creature takes void damage from the devasance</p><hr /><p><strong>Effect</strong> The devasance gains 25 temporary HP for 1 minute and becomes Quickened until the end of its next turn. It can use the extra action to Strike or Fly.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Shadow",
+      "actions": null,
+      "traits": [],
+      "description": "<p>While on a plane with the void trait or in the area of an effect with the void trait, the devasance's form disappears. It is naturally Invisible in this area, but becomes visible for 1 minute after it takes vitality damage.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "None ft, fly 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Void Hand",
+      "bonus": 30,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+8",
+          "type": "void"
+        },
+        {
+          "roll": "2d6",
+          "type": "spirit"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+8)*2",
+          "type": "void"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "spirit"
+        }
+      ],
+      "effects": [
+        "living-death"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Living Death",
+      "actions": null,
+      "traits": [
+        "curse",
+        "occult"
+      ],
+      "description": "<p>A creature hit by the devasance's void hand strike must attempt a DC 37 Fortitude Saving Throw save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes on the appearance of a rotted or nearly skeletal undead version of itself and becomes Drained 1 for 1 round. If the target assumes another shape through a polymorph effect, it continues to look undead in its new shape. This change in appearance persists for 10 minutes.</p>\n<p><strong>Failure</strong> As success, but with an unlimited duration. Healing effects on the target restore only half the Hit Points they normally would.</p>\n<p><strong>Critical Failure</strong> As failure, but Drained 2. If a living creature dies while under the effects of this curse, their soul is transformed into a devasance upon death. The creature cannot be restored to life, nor can its soul move on to the afterlife, until it is slain again as a devasance.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Ray",
+      "actions": 2,
+      "traits": [
+        "occult",
+        "void"
+      ],
+      "description": "<p>The devasance emits a ray of void energy from its chest in a 60ft Type:line. Living creatures in this area take 7d6 Void Damage damage (Basic DC 37 Fortitude Saving Throw save, plus Enfeebled 1 on a failure, or Enfeebled 2 on a critical failure; the condition has an unlimited duration in either case).</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Occult Innate Spells",
+      "type": "innate",
+      "bonus": 29,
+      "dc": 37,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 8,
+      "cantrips": [
+        {
+          "name": "Telekinetic Projectile",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal 2d6 bludgeoning, piercing, or slashing damage—as appropriate for the object you hurled. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "KDUfkCvtK9t0cPfU"
+        },
+        {
+          "name": "Void Warp",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 living creature",
+          "save": "Basic fortitude",
+          "description": "<p>You call upon the Void to harm life force. The target takes 2d4 void damage with a basic Fortitude save. On a critical failure, the target is also Enfeebled 1 until the start of your next turn.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "IX3qmynLkznrNGO9"
+        }
+      ],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [
+        {
+          "name": "Vision of Death",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "death",
+            "emotion",
+            "fear",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 living creature",
+          "save": "will",
+          "description": "<p>You force the target to see a vision of its own death. It takes 8d6 Mental Damage damage with a Will save. If the target is reduced to 0 HP by this spell, its vision becomes reality and kills it instantly.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage and is Frightened 1.</p>\n<p><strong>Failure</strong> The target takes full damage and is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target takes double damage, is Frightened 4 and is Fleeing for as long as it's frightened.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "og2LgHzjwdttFn1Q"
+        }
+      ],
+      "lv7spells": [
+        {
+          "name": "Paralyze",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "incapacitation",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You block the target's motor impulses before they can leave its mind, threatening to freeze the target in place. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Stunned 1.</p>\n<p><strong>Failure</strong> The target is Paralyzed for 1 round.</p>\n<p><strong>Critical Failure</strong> The target is Paralyzed for 4 rounds. At the end of each of its turns, it can attempt a new Will save to reduce the remaining duration by 1 round, or end it entirely on a critical success.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> You can target up to 10 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "2xoPoiOc08KK5b1E"
+        },
+        {
+          "name": "Warp Mind",
+          "type": "spell",
+          "level": 7,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "emotion",
+            "incapacitation",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You scramble a creature's mental faculties and sensory input. The target must attempt a Will saving throw. Regardless of the result of that save, the target is then temporarily immune for 10 minutes. Warp mind's effects happen instantly, so Dispel Magic and other effects that counteract spells can't counteract them. However, Wish rituals and abilities that can remove non-magical effects can still counteract the effects.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target spends the first action on its next turn with the Confused condition.</p>\n<p><strong>Failure</strong> The target is Confused for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Confused permanently.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "OYkUynJdhguqSGVy"
+        }
+      ],
+      "lv8spells": [
+        {
+          "name": "Spirit Blast",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "spirit"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "Basic fortitude",
+          "description": "<p>You concentrate ethereal energy and attack a creature's spirit, dealing 16d6 spirit damage with a basic Fortitude save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "z827J5ZxXrnk6EPJ"
+        }
+      ],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": ", DC 35"
+}

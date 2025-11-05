@@ -1,0 +1,284 @@
+{
+  "initiative": 0,
+  "initiativebonus": 25,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Clockwork Chopper AP OLD",
+  "type": "Creature",
+  "level": 14,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Clockwork",
+    "Construct",
+    "Mindless"
+  ],
+  "source": "Pathfinder #161: Belly of the Black Whale",
+  "remaster": false,
+  "senses": [
+    "Darkvision",
+    "smoke vision"
+  ],
+  "perception": {
+    "value": 25,
+    "note": "Darkvision, smoke vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 31,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 29,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 8
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": -5
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 36,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 31,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 250,
+    "max": 250,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "exceptions": [
+        "adamantine",
+        "orichalcum"
+      ],
+      "type": "physical",
+      "value": 10
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "electricity",
+      "value": 15
+    },
+    {
+      "type": "orichalcum",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Attack of Opportunity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Integrated Launcher",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A projectile launcher is integrated into a clockwork assassin's systems, containing 10 spinning blades and five smoke bombs. When the assassin is destroyed, the launcher and its ammunition are also destroyed.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Smoke Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The clockwork assassin ignores the concealed condition from smoke.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Wind-Up",
+      "actions": null,
+      "traits": [],
+      "description": "<p>For the clockwork assassin to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. The assassin can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).A creature can attempt a DC 33 Thievery check to Disable a Device to wind the assassin down. For each success, the assassin loses 1 hour of operational time. This can be done even if the assassin is in standby mode.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, climb 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Rapier Hand",
+      "bonus": 29,
+      "traits": [
+        "deadly-d8",
+        "disarm",
+        "finesse",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+14",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+14)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "unbalancing-blow"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Chopper",
+      "bonus": 29,
+      "traits": [
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d12+10",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+10)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Spinning Blade",
+      "bonus": 29,
+      "traits": [
+        "agile",
+        "deadly-d10",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+11",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+11)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Rapid Repair",
+      "actions": null,
+      "traits": [
+        "manipulate"
+      ],
+      "description": "<p>The clockwork assassin spends 1 hour of its operational time to repair itself, regaining 25 Hit Points and refilling its integrated projectile launcher with 4 spinning blades (to a maximum of 10) and 2 smoke bombs (to a maximum of 5).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Smoke Bomb Launcher",
+      "actions": 1,
+      "traits": [
+        "manipulate"
+      ],
+      "description": "<p>The clockwork assassin launches a smoke bomb. A screen of thick, opaque smoke fills a 10ft Burst within 60 feet of the clockwork assassin. Creatures within the area are concealed, and all other creatures are concealed to them. The smoke lasts for 1 minute or until dispersed by a strong wind.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sneak Attack",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The clockwork assassin's Strikes deal an additional 3d6 precision damage to Off-Guard creatures.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Unbalancing Blow",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Creatures hit by the clockwork assassin's rapier hand Strike are Off-Guard until the start of the clockwork assassin's next turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Whirlwind Strike",
+      "actions": 3,
+      "traits": [],
+      "description": "<p>The chopper makes a melee Strike against each enemy within melee reach. Its multiple attack penalty doesn't increase until after all the attacks.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Crafting, DC 32"
+}

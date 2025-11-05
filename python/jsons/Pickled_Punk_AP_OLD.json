@@ -1,0 +1,219 @@
+{
+  "initiative": 0,
+  "initiativebonus": 8,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Pickled Punk AP OLD",
+  "type": "Creature",
+  "level": 1,
+  "traits": [
+    "Common",
+    "tiny",
+    "Evil",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder #157: Devil at the Dreaming Palace",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 8,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -3
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": -3
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 3,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 20,
+    "max": 20,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 2
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Combustible",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The first time each round that a pickled punk takes fire damage, its fumes combust, dealing 5 Fire Damage damage to all other creatures within the area of its Suffocating Fumes aura.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Suffocating Fumes",
+      "actions": null,
+      "traits": [
+        "aura",
+        "inhaled",
+        "poison"
+      ],
+      "description": "<p>5 feet. A creature that enters or begins its turn within the aura must attempt a DC 14 Fortitude Saving Throw save, or DC 17 Fortitude Saving Throw if the pickled punk is attached to the creature.</p>\n<p>On a failed save, the creature is Sickened 1, and on a critical failure, it's also Enfeebled 1 for 1 minute.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+1",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+1)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "attach"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 7,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+1",
+          "type": "piercing"
+        },
+        {
+          "roll": "2",
+          "type": "poison"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+1)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(2)*2",
+          "type": "poison"
+        }
+      ],
+      "effects": [
+        "attach"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Attach",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When a pickled punk hits a target larger than itself, it uses bizarre excretions to adhere to that creature. This is similar to Grabbing the creature, but the pickled punk is not Off-Guard, and it moves with that creature rather than holding it in place.</p>\n<p>Each turn while attached, the pickled punk automatically deals the damage from its jaws Strike to the creature to which it's attached. It also wriggles about, gaining a +2 circumstance bonus to AC as long as it's not also Grabbed or Restrained.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 15"
+}

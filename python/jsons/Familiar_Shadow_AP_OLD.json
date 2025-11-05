@@ -1,0 +1,196 @@
+{
+  "initiative": 0,
+  "initiativebonus": 10,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Familiar Shadow AP OLD",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Common",
+    "Medium",
+    "Chaotic",
+    "Evil",
+    "Incorporeal",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder #198: No Breath to Cry",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 10,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Necril"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 40,
+    "max": 40,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "force",
+        "ghost-touch",
+        "vitality"
+      ],
+      "type": "all-damage",
+      "value": 5
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Light Vulnerability",
+      "actions": null,
+      "traits": [],
+      "description": "<p>An object shedding magical light (such as from the Light spell) is treated as magical when used to attack the shadow.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft, fly 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Shadow Hand",
+      "bonus": 15,
+      "traits": [
+        "finesse",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+3",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+3)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Infest Shadow",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When a familiar shadow pulls free the shadow of the PC that they duplicate, it twists and writhes for a moment before it immediately slithers back around the character. The infested shadow seems to writhe and twist on its own, as if willfully ignoring the actions of the character to whom it's attached. The infested shadow has a habit of making distracting and embarrassing motions, and imparts a –2 status penalty to its attached PC's Deception, Diplomacy, and Stealth checks. If the PC is in a situation where they aren't casting a shadow (such as when they're in complete darkness or Invisible), these penalties are suppressed, but return as soon as their infested shadow does. If a PC with an infested shadow gains the dying condition, the shadow breaks free and becomes a shadow spawn (which functions the same as a shadow spawn created by a typical shadow). This shadow spawn won't attack the creature it spawned from, but any other targets are fair game. If the dying character recovers, their shadow spawn immediately dies and their shadow returns to normal—otherwise the only way to be rid of this strange curse is through the use of a spell like remove curse.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Shadow Spawn",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When a creature's shadow is pulled free by Steal Shadow, it becomes a Shadow Spawn under the command of the shadow that created it. This shadow spawn doesn't have Steal Shadow and is perpetually and incurably Clumsy 2. If the creature the shadow spawn was pulled from dies, the shadow spawn becomes a full-fledged, autonomous shadow. If the creature recovers from its Enfeeblement, its shadow returns to it and the shadow spawn is extinguished.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Slink in Shadows",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The shadow can Hide or end its Sneak in a creature's or object's shadow.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Steal Shadow",
+      "actions": 1,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p><strong>Requirements</strong> The shadow hit a living creature with a shadow hand Strike on its previous action.</p>\n<p>This ability only functions against the PC who the shadow appears to duplicate.</p>\n<hr />\n<p><strong>Effect</strong> The shadow pulls at the target's shadow, making the creature Enfeebled 1. This is cumulative with other enfeebled conditions from shadows, to a maximum of enfeebled 4. If this increases a creature's enfeebled value to 3 or more, the target's shadow is separated from its body. Enfeebled from Steal Shadow decreases by 1 every hour.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 19"
+}

@@ -1,0 +1,143 @@
+{
+  "initiative": 0,
+  "initiativebonus": 17,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Keystone Trap AP OLD",
+  "type": "Hazard",
+  "level": 7,
+  "traits": [
+    "Unique",
+    "Medium",
+    "Mechanical",
+    "Trap"
+  ],
+  "source": "Pathfinder #182: Graveclaw",
+  "remaster": false,
+  "stealth": {
+    "value": 17,
+    "note": "(expert)"
+  },
+  "description": "<p>A 5-foot-square metal vault covered with knobs lies concealed within a stone block. A lever on the stone block slides the vault into view. When the vault is exposed-whether it's slid out or whether the stone is smashed open-the trap activates.</p>",
+  "disable": "<p>DC 24 Thievery  (trained) to find and press hidden knobs in a specific order (three successes are required to disable the trap, which also opens it); DC 24 Crafting  (expert) to sabotage the vault's mechanisms, reducing its actions by 1 (when the trap's actions are reduced to 0, it is disabled)</p>",
+  "reset": "",
+  "routine": "<p>The keystone uses its 3 actions to Electrify, Spin, and then Launch Darts. When the trap loses an action, roll randomly to determine which action it loses.</p>",
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Keystone",
+      "actions": null,
+      "traits": [],
+      "description": "<p><strong>Keystone Hardness</strong> 15</p>\n<p><strong>Keystone</strong> HP 60 (BT 30)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Exposed Vault",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The vault is exposed</p>\n<hr />\n<p><strong>Effect</strong> The vault makes a poison dart spray Strike at a random creature within 30 feet. The trap then rolls initiative.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Electrify",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The metal vault crackles with electricity. In air, this would damage only creatures touching it; in water, the trap deals 2d8 Electricity Damage damage to all creatures in a 10ft Emanation (Basic DC 25 Fortitude Saving Throw).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Launch Darts",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The vault fires a stream of poisoned darts. The trap attacks all creatures in a 30ft Line with its poison dart spray Strike; roll 1d8 to determine the line's direction. These Strikes don't have a multiple attack penalty.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spin",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The vault spins quickly for 1 round. While it Spins, checks to disable the trap have a -2 circumstance penalty, and it Launches Darts at all creatures within 30 feet of it, rather than in a line.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 25,
+    "note": null,
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "hardness": {
+    "value": 10
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 50,
+    "max": 50,
+    "note": "Keystone Hardness 15; Keystone HP 60 (BT 30);",
+    "modifications": []
+  },
+  "immunities": [
+    "critical-hits",
+    "precision"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "",
+  "strikes": [
+    {
+      "type": "ranged",
+      "name": "Poison Dart Spray",
+      "bonus": 18,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "4d4",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d8",
+          "type": "poison"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d4)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d8)*2",
+          "type": "poison"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [],
+  "spellcastingEntries": [],
+  "recallKnowledge": ", DC 23"
+}

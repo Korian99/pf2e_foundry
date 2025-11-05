@@ -1,0 +1,233 @@
+{
+  "initiative": 0,
+  "initiativebonus": 19,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Icewyrm OLD",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Common",
+    "huge",
+    "Amphibious",
+    "Cold",
+    "Elemental",
+    "Water"
+  ],
+  "source": "Pathfinder Bestiary 2",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 19,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Thalassic"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 7
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 30,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 185,
+    "max": 185,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "cold",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Explosion",
+      "actions": null,
+      "traits": [
+        "cold"
+      ],
+      "description": "<p>When the icewyrm dies, it explodes, dealing 8d6 Cold Damage damage to each creature in a 10ft Emanation (Basic DC 27 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ice-burrow 20ft, swim 60ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 23,
+      "traits": [
+        "reach-15",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+13",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+13)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 23,
+      "traits": [
+        "agile",
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+13",
+          "type": "slashing"
+        },
+        {
+          "roll": "1d6",
+          "type": "persistent cold"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+13)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "persistent cold"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Ice Shard",
+      "bonus": 23,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d6+13",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d6",
+          "type": "persistent cold"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+13)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "persistent cold"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Breath Weapon",
+      "actions": 2,
+      "traits": [
+        "cold",
+        "primal"
+      ],
+      "description": "<p>The icewyrm breathes a 60ft Line of freezing shards of razor-sharp ice, dealing 3d12 Cold Damage|options:area-damage]{3d12 cold damage and 3d12 piercing damage} to every creature in the line (Basic DC 29 Reflex Saving Throw save).</p>\n<p>The icewyrm can't use Breath Weapon again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Ice Burrow",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The Icewyrm can Burrow through ice or snow with a Speed of 20 feet. It moves at its full burrow Speed, leaving no tunnels or signs of its passing.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 27"
+}

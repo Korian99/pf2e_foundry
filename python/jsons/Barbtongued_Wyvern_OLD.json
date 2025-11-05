@@ -1,0 +1,253 @@
+{
+  "initiative": 0,
+  "initiativebonus": 29,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Barbtongued Wyvern OLD",
+  "type": "Creature",
+  "level": 18,
+  "traits": [
+    "Rare",
+    "huge",
+    "Dragon",
+    "Evil"
+  ],
+  "source": "Pathfinder Kingmaker",
+  "remaster": false,
+  "senses": [
+    "Darkvision",
+    "Scent 30ft imprecise"
+  ],
+  "perception": {
+    "value": 29,
+    "note": "Darkvision, Scent 30ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Draconic"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 34,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 30,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 9
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 8
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 42,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 34,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 30,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 330,
+    "max": 330,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "paralyzed",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Attack of Opportunity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Savage",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature Grabbed by the wyvern critically fails a skill check to Escape.</p>\n<hr />\n<p><strong>Effect</strong> The wyvern makes a stinger Strike against the triggering creature.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, fly 100ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fangs",
+      "bonus": 35,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d12+17",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d6",
+          "type": "bleed"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+17)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "bleed"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Barbed Tongue",
+      "bonus": 35,
+      "traits": [
+        "reach-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+17",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+17)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "ripping-grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Stinger",
+      "bonus": 35,
+      "traits": [
+        "agile",
+        "reach-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+17",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+17)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "barbtongued-wyvern-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Barbtongued Wyvern Venom",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 40 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 5d12 Poison Damage damage and Clumsy 1 (1 round)</p>\n<p><strong>Stage 2</strong> 6d12 Poison Damage damage and Clumsy 2 (1 round)</p>\n<p><strong>Stage 3</strong> 7d12 Poison Damage damage and Clumsy 3 (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Pin to the Sky",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>With incredible force, the barbtongued wyvern whips its tongue and flings barbs from its length. Up to two creatures within 200 feet of the wyvern can be targeted; each creature must attempt a DC 40 Reflex Saving Throw save. The barbtongued wyvern can't use Pin to the Sky again until its next turn.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes (2d12+3) Piercing Damage damage.</p>\n<p><strong>Failure</strong> The target takes 5d12 Piercing Damage damage and is pinned in place, fastened to the underlying magical nature of Thousandbreaths by the barbs (even if not adjacent to a solid surface). It is Immobilized until it Escapes. If the creature is under the effects of a spell that would prevent it from being immobilized, Thousandbreaths first attempts a Counteract check against the spell (+27).</p>\n<p><strong>Critical Failure</strong> As failure, but the target takes 10d12 Piercing Damage damage and is Slowed 1 until it escapes.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reel In",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The wyvern has a creature Grabbed in its tongue.</p>\n<hr />\n<p><strong>Effect</strong> The wyvern moves the creature up to 20 feet closer to it.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Ripping Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The wyvern's last action was a success with a barbed tongue Strike, or it has a creature Grabbed using this action.</p>\n<hr />\n<p><strong>Effect</strong> If the target was Immobilized by Pin to the Sky, the wyvern first painfully rips it free of the effect, dealing 4d12 Piercing Damage damage. Regardless of whether or not the target was previously immobilized, the wyvern Grabs the target until the end of the monster's next turn. The wyvern can't use its tongue to Strike creatures until the Grab ends. Using Ripping Grab extends the duration of the monster's Grab until the end of its next turn for all creatures grabbed by it. A grabbed creature can use the Escape action to get out of the grab, and the Grab ends for a grabbed creature if the barbtongued wyvern moves away from it.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana, DC 38"
+}

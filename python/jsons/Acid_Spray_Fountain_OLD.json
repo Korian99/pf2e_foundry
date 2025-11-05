@@ -1,0 +1,125 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Acid Spray Fountain OLD",
+  "type": "Hazard",
+  "level": 6,
+  "traits": [
+    "Common",
+    "Medium",
+    "Mechanical",
+    "Trap"
+  ],
+  "source": "Pathfinder Society Scenario #1-00: Origin of the Open Road",
+  "remaster": false,
+  "stealth": {
+    "value": 16,
+    "note": "(expert) to notice the concealed fountain"
+  },
+  "description": "<p>A concealed acid fountain with three nozzles is connected to eight pressure pads in the room.</p>",
+  "disable": "<p>DC 26 Thievery  (expert) on the fountain stops it from spraying acid, or DC 22 Thievery  (expert) disables one of the nozzles and reduces the number of actions the trap can take by 1. When the number of actions is reduced to 0, the fountain is disabled.</p>",
+  "reset": "<p>The trap deactivates after 1 minute, at which point its acid reservoir is empty. It can't reactivate until this reservoir is refilled.</p>",
+  "routine": "<p>(3 actions) On its initiative, the trap makes an acid spray Strike against a random creature in the room for each of its actions.</p>",
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Fountain Activation",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature steps on a pressure pad.</p>\n<hr />\n<p><strong>Effect</strong> The trap makes an acid spray Strike against a random creature in the room, although the initial damage is reduced by 8 as the acid eats through the concealing boxes. The trap then rolls initiative.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "No MAP",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The Acid Spray Strikes do not apply a MAP.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 24,
+    "note": null,
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "hardness": {
+    "value": 14
+  },
+  "fortitude": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 56,
+    "max": 56,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "acid",
+    "critical-hits",
+    "precision"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Acid Spray",
+      "bonus": 14,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d10+8",
+          "type": "acid"
+        },
+        {
+          "roll": "2d4",
+          "type": "persistent acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+8)*2",
+          "type": "acid"
+        },
+        {
+          "roll": "(2d4)*2",
+          "type": "persistent acid"
+        }
+      ],
+      "effects": [
+        "no-map"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [],
+  "spellcastingEntries": [],
+  "recallKnowledge": ", DC 22"
+}

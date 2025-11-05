@@ -1,6 +1,6 @@
 {
   "initiative": 0,
-  "initiativebonus": 11,
+  "initiativebonus": 8,
   "comments": "",
   "conditions": [],
   "color": "#fff",
@@ -11,22 +11,24 @@
   "traits": [
     "Common",
     "Medium",
-    "Chaotic",
-    "Evil",
     "Humanoid",
     "Orc"
   ],
-  "source": "Pathfinder Adventure: Troubles in Otari",
+  "source": "Pathfinder Monster Core",
+  "remaster": true,
   "senses": [
     "Darkvision"
   ],
   "perception": {
-    "value": 11,
+    "value": 8,
     "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "languages": [],
+  "languages": [
+    "Common",
+    "Orcish"
+  ],
   "skills": [
     {
       "name": "athletics",
@@ -70,12 +72,13 @@
   },
   "items": [
     {
-      "name": "Maul",
+      "name": "Greatclub",
       "quantity": 1,
-      "description": "<p>Mauls are massive warhammers that must be swung with two hands.</p>",
+      "description": "<p>While many greatclubs are intricately carved, others are little more than a sturdy tree branch. These massive clubs are too heavy to wield with only one hand.</p>",
       "level": 0,
-      "price": "3 gp",
+      "price": "1 gp",
       "traits": [
+        "backswing",
         "shove"
       ]
     },
@@ -140,26 +143,34 @@
       "traits": [],
       "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its Wounded value increases by 1. When it is Wounded 3, it can no longer use this ability</p></p></details></p>",
       "collapsed": false
+    },
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
     }
   ],
   "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
-      "name": "Maul",
+      "name": "Greatclub",
       "bonus": 10,
       "traits": [
+        "backswing",
         "shove"
       ],
       "damageRolls": [
         {
-          "roll": "1d12+4",
+          "roll": "1d10+4",
           "type": "bludgeoning"
         }
       ],
       "critRolls": [
         {
-          "roll": "(1d12+4)*2",
+          "roll": "(1d10+4)*2",
           "type": "bludgeoning"
         }
       ],
@@ -175,7 +186,7 @@
       "bonus": 10,
       "traits": [
         "agile",
-        "nonlethal",
+        "shove",
         "unarmed"
       ],
       "damageRolls": [
@@ -227,11 +238,12 @@
       "name": "Battle Cry",
       "actions": 1,
       "traits": [
+        "auditory",
         "concentrate",
         "emotion",
         "mental"
       ],
-      "description": "<p>Bellowing mightily, the commander gives themself and all orc allies within 60 feet who can hear them a +1 status bonus to attack and damage rolls until the start of the orc commander's next turn.</p>\n<p>Effect: Battle Cry</p>",
+      "description": "<p>Bellowing mightily, the orc commander gives themself and all orc allies within 60 feet a +1 status bonus to attack and damage rolls until the start of the orc commander's next turn.</p>\n<p>Effect: Battle Cry</p>",
       "collapsed": false
     }
   ],

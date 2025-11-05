@@ -1,0 +1,306 @@
+{
+  "initiative": 0,
+  "initiativebonus": 13,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Fortune Eater OLD",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Rare",
+    "Large",
+    "Chaotic",
+    "Evil",
+    "Incorporeal",
+    "Spirit",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder Bestiary 3",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 13,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "languages spoken by the adventurers (typically common, dwarven, elven, and goblin)"
+  ],
+  "skills": [
+    {
+      "name": "deception",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "performance",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Languages",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The Fortune Eater speaks languages spoken by the adventurers (typically Common, Dwarven, Elven, and Goblin).</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 100,
+    "max": 100,
+    "note": "void healing, rejuvenation",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "force",
+        "ghost-touch",
+        "vitality"
+      ],
+      "type": "all-damage",
+      "value": 5
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Luck Osmosis",
+      "actions": -1,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature affected by the fortune eater's unluck aura has just rolled two d20s for a check and taken the lower result</p>\n<hr />\n<p><strong>Effect</strong> The fortune-eater stores the higher of the two numbers rolled and uses that number in place of their next d20 roll; this is a fortune effect. They can have only one number stored at a time.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rejuvenation",
+      "actions": null,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p>Offering the fortune eater a chance to be instrumental in completing a heroic deed releases their component spirits to move on to the afterlife.</p>\n<hr />\n<p>When a ghost is destroyed, it re-forms after 2d4 days within the location it's bound to, fully healed. A ghost can be permanently destroyed only if someone determines the reason for its existence and sets right whatever prevents the spirit from resting.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Unluck Aura",
+      "actions": null,
+      "traits": [
+        "aura",
+        "divine",
+        "mental",
+        "misfortune"
+      ],
+      "description": "<p>20 feet. A creature entering the area must attempt a DC 23 Will Saving Throw save, rolling the save twice and using the worse result. On a successful save, the creature is temporarily immune to fortune eater unluck auras for 24 hours. On a failure, the creature must roll twice and use the worse result on all checks as long as it is within the aura.</p>\n<p>Effect: Unluck Aura</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft, fly 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Ghostly Longsword",
+      "bonus": 17,
+      "traits": [
+        "finesse",
+        "magical",
+        "versatile-p"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+8",
+          "type": "slashing"
+        },
+        {
+          "roll": "1d8",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+8)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(1d8)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Ghostly Light Mace",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "shove"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+8",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "1d8",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+8)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(1d8)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Ghostly Longbow",
+      "bonus": 17,
+      "traits": [
+        "deadly-d10",
+        "magical",
+        "volley-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+4",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d8",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+4)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d8)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Team Attack",
+      "actions": 3,
+      "traits": [],
+      "description": "<p>Dead teammates coalesce to attack with phantasmal versions of the weapons they used in life. The fortune eater makes a ghostly longsword Strike, ghostly dagger Strike, and ghostly longbow Strike in any order. Each must target a different creature. Their multiple attack penalty doesn't increase until after all the attacks.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism or Religion, DC 23"
+}

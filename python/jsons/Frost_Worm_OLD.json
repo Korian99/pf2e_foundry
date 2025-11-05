@@ -1,0 +1,202 @@
+{
+  "initiative": 0,
+  "initiativebonus": 22,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Frost Worm OLD",
+  "type": "Creature",
+  "level": 12,
+  "traits": [
+    "Common",
+    "huge",
+    "Animal",
+    "Cold"
+  ],
+  "source": "Pathfinder Bestiary 2",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 22,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 20,
+      "note": [
+        "in ice and snow 24"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 225,
+    "max": 225,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "cold"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Death Throes",
+      "actions": null,
+      "traits": [
+        "cold",
+        "primal"
+      ],
+      "description": "<p>When a frost worm dies, it explodes in a 100ft Burst of searing cold blood. All creatures and objects in range take 10d8 Cold Damage damage (Basic DC 29 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Freezing Blood",
+      "actions": -1,
+      "traits": [
+        "cold"
+      ],
+      "description": "<p><strong>Trigger</strong> The frost worm takes piercing or slashing damage</p>\n<hr />\n<p><strong>Effect</strong> The frost worm's freezing blood sprays out on a random creature within 10 feet of the frost worm. That creature takes 7d6 Cold Damage damage (Basic DC 29 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Worm Chill",
+      "actions": null,
+      "traits": [
+        "aura",
+        "cold",
+        "primal"
+      ],
+      "description": "<p>5 feet. A creature that enters or begins its turn in the emanation takes 3d6 Cold Damage damage (Basic DC 29 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, burrow 10ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 25,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+10",
+          "type": "piercing"
+        },
+        {
+          "roll": "2d6",
+          "type": "persistent cold"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+10)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "persistent cold"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Breath Weapon",
+      "actions": 2,
+      "traits": [
+        "cold",
+        "primal"
+      ],
+      "description": "<p>The frost worm exhales a blast of frost, dealing 13d6 Cold Damage damage to creatures in a 50ft Cone (Basic DC 32 Reflex Saving Throw save).</p>\n<p>It can't use Breath Weapon again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Worm Trill",
+      "actions": 1,
+      "traits": [
+        "auditory",
+        "concentrate",
+        "mental",
+        "primal"
+      ],
+      "description": "<p>The frost worm emits a hypnotic trill. Each non-frost worm creature within 100 feet must attempt a DC 32 Will Saving Throw save. The effects of Worm Trill last for 1 round, but if the frost worm uses this ability again on subsequent rounds, it extends this duration by 1 round for any creature already affected.</p>\n<p><strong>Success</strong> The creature is unaffected and is immune to Worm Trill for 24 hours.</p>\n<p><strong>Failure</strong> The creature is Fascinated by the frost worm.</p>\n<p><strong>Critical Failure</strong> As failure, but the fascinated condition doesn't end if the frost worm uses hostile actions against the creature.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 30"
+}

@@ -1,0 +1,221 @@
+{
+  "initiative": 0,
+  "initiativebonus": 8,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Coralclaw AP",
+  "type": "Creature",
+  "level": 2,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Animal",
+    "Aquatic"
+  ],
+  "source": "Pathfinder #216: The Acropolis Pyre",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "Scent 60ft imprecise"
+  ],
+  "perception": {
+    "value": 8,
+    "note": "Darkvision, Scent 60ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 7,
+      "note": [
+        "in coral reefs 9"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": -1
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 5,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 30,
+    "max": 30,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Coral Camouflage",
+      "actions": null,
+      "traits": [],
+      "description": "<p>In reefs and rocky marine environments, a coralclaw can Hide and Sneak without cover or being Concealed.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Shuffler",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A coralclaw struggles to pivot quickly, leaving its hind limbs and tail vulnerable. When the coralclaw is Off-Guard, it gains weakness 2 to physical damage except against effects for which the coralclaw has standard cover or greater cover.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, swim 15ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Crusher Claw",
+      "bonus": 11,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d8+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+4)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Piercer Claw",
+      "bonus": 11,
+      "traits": [
+        "agile"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+4",
+          "type": "piercing"
+        },
+        {
+          "roll": "1",
+          "type": "persistent bleed"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+4)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1)*2",
+          "type": "persistent bleed"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Ambushing Snap",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The coralclaw is hiding in corals and a creature that hasn't detected it is within 25 feet</p><hr /><p><strong>Effect</strong> The coralclaw moves up to its swim Speed + 10 feet toward the triggering creature. When the creature is within reach, the coralclaw makes a melee Strike against it. The creature is Off-Guard to this Strike.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Constrict",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>1d10 Bludgeoning Damage, Basic DC 18 Fortitude Saving Throw</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Crushing Drag",
+      "actions": 2,
+      "traits": [
+        "attack",
+        "move"
+      ],
+      "description": "<p><strong>Requirements</strong> The coralclaw is grabbing or restraining a creature</p><hr /><p><strong>Effect</strong> The coralclaw Constricts the creature, extends the Grabbed or Restrained condition until the end of the coralclaw's next turn, and attempts an Athletics check to Reposition the creature.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Dislodged Armor",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Once the coralclaw is reduced to half its Hit Points, its AC decreases by 2, it gains a +5 circumstance bonus to its Speeds, and it loses coral camouflage. A coralclaw can repair its coral armor with 4 hours of work.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 16"
+}

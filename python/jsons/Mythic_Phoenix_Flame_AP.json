@@ -1,0 +1,228 @@
+{
+  "initiative": 0,
+  "initiativebonus": 11,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Mythic Phoenix Flame AP",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Unique",
+    "Medium",
+    "Elemental",
+    "Fire",
+    "Mythic"
+  ],
+  "source": "Pathfinder #216: The Acropolis Pyre",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "smoke vision"
+  ],
+  "perception": {
+    "value": 11,
+    "note": "Darkvision, smoke vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Pyric"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Smoke Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The mythic phoenix flame ignores the Concealed condition from smoke.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Titanic Might",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The phoenix flame ignores size limitations when performing actions like Grapple or Trip.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 48,
+    "max": 48,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "fire",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "mythic",
+      "value": 4
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "cold",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Flame Cloak",
+      "actions": null,
+      "traits": [
+        "aura",
+        "fire",
+        "primal"
+      ],
+      "description": "<p>10 feet. 1d6 Fire Damage, Basic DC 18 Reflex Saving Throw save. A creature that critically fails its save takes 1d4 Persistent,fire Damage damage.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Mythic Ferocity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Cost</strong> 1 Mythic Point</p>\n<p><strong>Trigger</strong> The phoenix flame is reduced to 0 HP</p><hr /><p><strong>Effect</strong> The phoenix flame avoids being knocked out and regains 4d10 Healing Damage Hit Points, but its wounded value increases by 1. When it is Wounded 3, it can no longer use this ability.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, fly 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fiery Talon",
+      "bonus": 12,
+      "traits": [
+        "fire",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d10+5",
+          "type": "slashing"
+        },
+        {
+          "roll": "1d10",
+          "type": "fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d10+5)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(1d10)*2",
+          "type": "fire"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Breath of Smoke",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The phoenix flame has a creature Grabbed</p><hr /><p><strong>Effect</strong> The phoenix breathes into the lungs of the Grabbed creature, which must attempt a DC 18 Fortitude Saving Throw save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Breath of Smoke for 1 minute.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is Sickened 1.</p>\n<p><strong>Critical Failure</strong> The creature is Sickened 2.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Inferno Dance",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The phoenix Strides up to its Speed, leaving a trail of blazing flame through each space it passes through that lasts until the end of the phoenix's next turn. This trail is difficult terrain and deals 5d6 Fire Damage damage to each creature in its path (Basic DC 18 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Mythic Power",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The creature has a pool of 3 Mythic Points, and can spend those Mythic Points for any of the actions it has.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 19"
+}

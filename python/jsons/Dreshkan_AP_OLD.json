@@ -1,0 +1,221 @@
+{
+  "initiative": 0,
+  "initiativebonus": 11,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Dreshkan AP OLD",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Aberration",
+    "Construct"
+  ],
+  "source": "Pathfinder #164: Hands of the Devil",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 11,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Sakvroth"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 12,
+      "note": [
+        "to Climb 14"
+      ],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+2 status to all saves vs. bleed, death effects, disease, doomed, fatigued, paralyzed, poison, and sickened",
+  "hp": {
+    "value": 72,
+    "max": 72,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "electricity"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Defensive Needle",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature critically fails a melee Strike against the dreshkan</p>\n<hr />\n<p><strong>Effect</strong> The dreshkan makes a needle Strike against that creature.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Light Blindness",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>When first exposed to bright light, the monster is Blinded until the end of its next turn. After this exposure, light doesn't blind the monster again until after it spends 1 hour in darkness. However, as long as the monster is in an area of bright light, it's Dazzled.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Partially Technological",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A dreshkan is partially technological. Vitality healing effects only heal a dreshkan half as much as normal.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, climb 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+4",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+4)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Needle",
+      "bonus": 13,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d4",
+          "type": "piercing"
+        },
+        {
+          "roll": "2d8",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(2d8)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Needle Spray",
+      "actions": 3,
+      "traits": [],
+      "description": "<p>The dreshkan braces itself on all four limbs and sprays needles at as many creatures as it would like in a 30ft Cone, dealing 2d4 Piercing Damage|options:area-damage]{2d4 piercing damage plus 2d8 electricity damage}. Each targeted creature in the area must attempt a Basic DC 21 Reflex Saving Throw.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swarming Stance",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A dreshkan can share the same space as a morlock or another dreshkan, but no more than two such creatures can occupy the same space. When these creatures share the same space, they gain a +1 circumstance bonus to attack rolls.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism or Arcana or Crafting, DC 19"
+}

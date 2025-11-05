@@ -1,0 +1,183 @@
+{
+  "initiative": 0,
+  "initiativebonus": 8,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Greater Shadow Wisp OLD",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Rare",
+    "tiny",
+    "Chaotic",
+    "Evil",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder Society Scenario #1-01: The Absalom Initiation",
+  "remaster": false,
+  "senses": [],
+  "perception": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Necril"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -3
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": -3
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 60,
+    "max": 60,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 5
+    },
+    {
+      "type": "light",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Light Weakness",
+      "actions": null,
+      "traits": [],
+      "description": "<p>An object shedding magical light (such as from the light spell) deals additional damage to the shadow wisp.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "10 ft, fly 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Shadow Tendril",
+      "bonus": 12,
+      "traits": [
+        "finesse",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Shroud",
+      "actions": 1,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p><strong>Requirements</strong> The shadow wisp's previous action was a hit against an adjacent creature with its shadow tendril Strike.</p>\n<hr />\n<p><strong>Effect</strong> The shadow wisp Steps into the creature's space and attempts an acrobatics|defense:reflex check against the target's Reflex DC to attach itself to the target's shadow. As long as it remains attached, it moves with the target and is Off-Guard to attacks from the target. The target can spend a move action on its turn to attempt a Reflex save against the wisp's Acrobatics DC to escape the shroud.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Stretch Shadow",
+      "actions": 1,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p><strong>Requirements</strong> The shadow wisp is attached to a living creature.</p>\n<hr />\n<p><strong>Effect</strong> The shadow wisp slips into the attached creature's shadow, dealing it 1d6 Void Damage damage. It can use the attached creature's shadow to make a shadow tendril Strike against another target up to 10 feet away</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 18"
+}

@@ -1,0 +1,259 @@
+{
+  "initiative": 0,
+  "initiativebonus": 23,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Child Of Venom AP OLD",
+  "type": "Creature",
+  "level": 13,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Evil",
+    "Human",
+    "Humanoid",
+    "Ooze"
+  ],
+  "source": "Pathfinder #161: Belly of the Black Whale",
+  "remaster": false,
+  "senses": [],
+  "perception": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "thievery",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 8
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "+1 Striking Shortsword",
+      "quantity": 1,
+      "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
+      "level": 0,
+      "price": "9 sp",
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile-s"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 31,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 300,
+    "max": 300,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "acid",
+    "critical-hits",
+    "piercing",
+    "precision",
+    "slashing"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Split",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When a child of venom is hit by an attack that would deal slashing or piercing damage and the child of venom has at least 20 HP, the creature splits into two identical children of venom with half the original's HP. One child of venom is in the same space as the original, and the other appears in an adjacent unoccupied space. If no adjacent space is unoccupied, they automatically push creatures and objects out of the way to fill a space.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, climb 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Shortsword",
+      "bonus": 28,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6",
+          "type": "acid"
+        },
+        {
+          "roll": "2d6+9",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6)*2",
+          "type": "acid"
+        },
+        {
+          "roll": "(2d6+9)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Pseudopod",
+      "bonus": 25,
+      "traits": [
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+9",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "3d6",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+9)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(3d6)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [
+        "push"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Acid Spit",
+      "bonus": 27,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "7d6",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(7d6)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Sneak Attack",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The child of venom deals an additional 3d6 precision damage to Off-Guard creatures.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Suction",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The child of venom can climb on ceilings and other inverted surfaces, though such surfaces are difficult terrain for them.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society or Occultism, DC 31"
+}

@@ -1,0 +1,436 @@
+{
+  "initiative": 0,
+  "initiativebonus": 25,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Druulbach AP",
+  "type": "Creature",
+  "level": 12,
+  "traits": [
+    "Unique",
+    "Large",
+    "Amphibious",
+    "Giant",
+    "Humanoid",
+    "Water"
+  ],
+  "source": "Pathfinder #203: Shepherd of Decay",
+  "remaster": true,
+  "senses": [
+    "Low light vision"
+  ],
+  "perception": {
+    "value": 25,
+    "note": "Low light vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo",
+    "Common",
+    "Jotun",
+    "Thalassic"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Sickle",
+      "quantity": 2,
+      "description": "<p>Originally a farming tool used for reaping grain, this one-handed weapon has a short wooden handle ending in a curved blade, sometimes sharpened on both sides.</p>",
+      "level": 0,
+      "price": "2 sp",
+      "traits": [
+        "agile",
+        "finesse",
+        "trip"
+      ]
+    },
+    {
+      "name": "Leather Armor",
+      "quantity": 1,
+      "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": []
+    },
+    {
+      "name": "Gorget of the Primal Roar",
+      "quantity": 1,
+      "description": "<p>This engraved duskwood gorget seems to vibrate with ferocity, granting you a +2 item bonus to Intimidation checks.</p>\n<p><strong>Activate—Primal Roar</strong> <span class=\"action-glyph\">A</span> (auditory, concentrate, emotion, fear, mental)</p>\n<p><strong>Frequency</strong> once during the duration of each polymorph effect</p>\n<p><strong>Requirements</strong> You're in a non-humanoid form via a polymorph effect</p>\n<hr />\n<p><strong>Effect</strong> You unleash a bestial roar, attempting a single @Check[intimidation] check compared to the Will DCs of all enemies within 30 feet to impose the effects below.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2}.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is unaffected.</p>",
+      "level": 11,
+      "price": "1250 gp",
+      "traits": [
+        "invested",
+        "magical"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 32,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 230,
+    "max": 230,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "poison",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "35 ft, swim 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Sickle",
+      "bonus": 26,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "reach-10",
+        "trip"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d10",
+          "type": "poison"
+        },
+        {
+          "roll": "2d4+13",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d10)*2",
+          "type": "poison"
+        },
+        {
+          "roll": "(2d4+13)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 26,
+      "traits": [
+        "agile",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+13",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+13)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Spit",
+      "bonus": 26,
+      "traits": [
+        "primal",
+        "water"
+      ],
+      "damageRolls": [
+        {
+          "roll": "8d6",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(8d6)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Balanced Blades",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Druulbach's multiple attack penalty with agile weapons and agile unarmed attacks is –3 for his second attack and –6 for subsequent attacks (rather than –4 and –8).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Drowning Hook",
+      "actions": 1,
+      "traits": [
+        "primal",
+        "water"
+      ],
+      "description": "<p><strong>Requirements</strong> A creature is Prone within Druulbach's reach</p><hr /><p><strong>Effect</strong> Druulbach uses his sickle to push the creature down as water bubbles up below it. The target becomes submerged in water until they are no longer prone and must hold their breath if it can't breathe water. The target takes 6d6 Bludgeoning Damage damage (Basic DC 29 Fortitude Saving Throw) and loses 3 rounds worth of air if it fails the save.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Flurry of Hooks",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> Druulbach is wielding two sickles</p><hr /><p><strong>Effect</strong> Druulbach makes three sickle Strikes against one target. If multiple attacks hit, combine their damage and apply weaknesses and resistances only once.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Serrated Takedown",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> Druulbach hit with a sickle Strike on his most recent action this turn</p><hr /><p><strong>Effect</strong> Druulbach drags down the target, knocking it Prone and dealing 3d6 Persistent,bleed Damage damage to the creature.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Occult Innate Spells",
+      "type": "innate",
+      "bonus": 21,
+      "dc": 29,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 5,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [
+        {
+          "name": "Augury",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "prediction"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You gain a vague glimpse of the future. During the casting of this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveal the GM's best guess among the following outcomes: good, bad, mixed (the results will be a mix of good and bad), and nothing (there won't be particularly good or bad results).</p>\n<p>The GM rolls a secret DC 6 Flat . On a failure, the result is always \"nothing.\" This makes it impossible to tell whether a \"nothing\" result is accurate. If anyone asks about the same topic as the first casting of <em>augury</em> during an additional casting, the GM uses the secret roll result from the first casting. If circumstances change, though, it's possible to get a different result.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "2fonPV6HSQ8Y8PCj"
+        },
+        {
+          "name": "Mist",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p>You call forth a cloud of mist. All creatures within the mist become Concealed, and all creatures outside the mist become concealed to creatures within it. You can Dismiss the cloud.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "7J8vzekuhgkdTK01"
+        }
+      ],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [
+        {
+          "name": "Mariner's Curse",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "curse",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You afflict the target with the curse of the roiling, unforgiving sea. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target becomes Sickened 1. Reducing its sickened condition to 0 ends the curse.</p>\n<p><strong>Failure</strong> The target becomes sickened 1 and can't reduce its sickened condition below 1 while the curse remains. The curse can be lifted by 4th-rank Cleanse Affliction or similar magic. Whenever the target is sickened and on the water at least a mile from shore, it is also Slowed 1.</p>\n<p><strong>Critical Failure</strong> As failure, but the target becomes Sickened 2.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "4kG6N7MNUUq5wpY4"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Society, DC 30"
+}

@@ -11,11 +11,11 @@
   "traits": [
     "Common",
     "Medium",
-    "Evil",
     "Human",
     "Humanoid"
   ],
-  "source": "Pathfinder Society: Season 1",
+  "source": "Pathfinder NPC Core",
+  "remaster": true,
   "senses": [],
   "perception": {
     "value": 8,
@@ -24,8 +24,7 @@
     "modifications": []
   },
   "languages": [
-    "Common",
-    "Kelish"
+    "Common"
   ],
   "skills": [
     {
@@ -125,8 +124,8 @@
   },
   "savenote": "",
   "hp": {
-    "value": 32,
-    "max": 32,
+    "value": 30,
+    "max": 30,
     "note": "",
     "modifications": []
   },
@@ -135,7 +134,7 @@
   "weaknesses": [],
   "defensiveAbilities": [
     {
-      "name": "Attack of Opportunity",
+      "name": "Reactive Strike",
       "actions": -1,
       "traits": [],
       "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
@@ -168,7 +167,34 @@
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+5)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
       "name": "Club",
       "bonus": 8,
       "traits": [
@@ -187,13 +213,13 @@
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Sling",
       "bonus": 8,
       "traits": [
@@ -213,7 +239,7 @@
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -224,14 +250,14 @@
       "name": "Brutal Beating",
       "actions": null,
       "traits": [],
-      "description": "<p>The ruffian's brutality shakes foes' confidence.</p>\n<p>When the ruffian deals damage on a critical hit, the target is Frightened 1, and the ruffian can knock the target up to 10 feet away (this is forced movement).</p>",
+      "description": "<p>The ruffian's brutality shakes foes' confidence.</p>\n<p>When the ruffian deals damage on a critical hit, the target is Frightened 1, and the ruffian can push the target up to 10 feet.</p>",
       "collapsed": false
     },
     {
-      "name": "Snagging Strike",
+      "name": "Combat Grab",
       "actions": 1,
       "traits": [],
-      "description": "<p><strong>Trigger</strong> The ruffian has one hand free, and their target is within reach of that hand.</p>\n<hr />\n<p><strong>Effect</strong> The ruffian makes a melee Strike while keeping one hand free. If this Strike hits, the target is Off-Guard until the start of the ruffian's next turn or until it leaves the ruffian's reach, whichever comes first.</p>",
+      "description": "<p><strong>Trigger</strong> The ruffian has one hand free</p><hr /><p><strong>Effect</strong> The ruffian makes a melee Strike while keeping one hand free. If this Strike hits, the ruffian Grabs the target using their free hand. The creature remains Grabbed until the end of the ruffian's next turn or until it Escapes, whichever comes first.</p>",
       "collapsed": false
     },
     {

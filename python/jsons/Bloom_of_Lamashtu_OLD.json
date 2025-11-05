@@ -1,0 +1,239 @@
+{
+  "initiative": 0,
+  "initiativebonus": 21,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Bloom of Lamashtu OLD",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Unique",
+    "Large",
+    "Chaotic",
+    "Evil",
+    "Fiend",
+    "Plant",
+    "Unholy"
+  ],
+  "source": "Pathfinder Kingmaker",
+  "remaster": false,
+  "senses": [
+    "Low light vision",
+    "Tremorsense 30ft precise"
+  ],
+  "perception": {
+    "value": 21,
+    "note": "Low light vision, Tremorsense 30ft precise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Chthonian",
+    "(cannot speak any language)"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 18,
+      "note": [
+        "in wooded or underground areas 22"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 210,
+    "max": 210,
+    "note": "regeneration 30 (deactivated by fire or holy)",
+    "modifications": []
+  },
+  "immunities": [
+    "acid",
+    "curse"
+  ],
+  "resistances": [
+    {
+      "type": "bludgeoning",
+      "value": 10
+    },
+    {
+      "type": "piercing",
+      "value": 10
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 10
+    },
+    {
+      "type": "slashing",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Regeneration 30 (Deactivated by Fire or Holy)",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster regains the listed number of Hit Points each round at the beginning of its turn. Its Dying condition never increases beyond Dying 3 as long as its regeneration is active. However, if it takes damage of a type listed in the regeneration entry, its regeneration deactivates until the end of its next turn. Deactivate the regeneration before applying any damage of a listed type, since that damage might kill the monster by bringing it to Dying 4.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Defensive Burst",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The bloom takes slashing damage.</p>\n<p><strong>Effect</strong> The bloom of Lamashtu sprays a gout of acid against an adjacent creature, inflicting 9d6 Acid Damage damage (Basic DC 26 Reflex Saving Throw). The bloom can't use Defensive Burst for 1d4 rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "5 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Thorny Vine",
+      "bonus": 23,
+      "traits": [
+        "reach-15",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+10",
+          "type": "slashing"
+        },
+        {
+          "roll": "2d6",
+          "type": "poison"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+10)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "poison"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Thorn",
+      "bonus": 19,
+      "traits": [
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d6",
+          "type": "poison"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "poison"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Bloom Curse",
+      "actions": null,
+      "traits": [
+        "curse",
+        "primal"
+      ],
+      "description": "<p>A living creature is exposed to the bloom curse if it eats any portion of a bloom of Lamashtu, fails a save against the bloom's seed pod, or is critically hit by the bloom's thorny vine Strike. Unlike the bloom curse contracted from secondary sources, there is no onset time for this version of the curse, and the creature spawned by the victim's death may be much more powerful and is always chaotic evil.</p>\n<hr />\n<p><strong>Saving Throw</strong> DC 29 Fortitude Saving Throw</p>\n<p><strong>Stage 1</strong> no ill effects (1 day)</p>\n<p><strong>Stage 2</strong> Enfeebled 1 (1 day)</p>\n<p><strong>Stage 3</strong> enfeebled 1 and 2d6 Poison Damage damage (8 hours)</p>\n<p><strong>Stage 4</strong> Unconscious and 4d6 Poison Damage damage (10 minutes)</p>\n<p><strong>Stage 5</strong> death;</p>\n<p><strong>Special</strong> A creature that dies from the bloom curse explodes in a blast of First World foliage and releases a monster into the world. This creature is a chaotic evil low-intelligence beast or dragon (chosen by the GM) of the same level as the dead creature.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spew Seed Pod",
+      "actions": 2,
+      "traits": [
+        "poison",
+        "primal"
+      ],
+      "description": "<p>The bloom of Lamashtu's central stalk disgorges a pulsing seed pod from its flower, spitting it at a range of up to 60 feet and creating a 20ft Burst when the seed pod explodes into a spray of supernatural acidic poison. All creatures in this area must attempt a DC 29 Reflex Saving Throw save. The bloom of Lamashtu can't Spew Seed Pod for 1d4 rounds.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes 3d6 Acid Damage]{3d6 acid damage and 3d6 poison damage}.</p>\n<p><strong>Failure</strong> The creature takes 5d6 Acid Damage]{5d6 acid damage and 5d6 poison damage} and is exposed to the bloom curse.</p>\n<p><strong>Critical Failure</strong> As failure, but 10d6 Acid Damage]{10d6 acid damage and 10d6 poison damage}, plus knocked Prone by the force of the blast.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion or Nature, DC 27"
+}

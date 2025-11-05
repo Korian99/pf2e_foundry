@@ -1,0 +1,256 @@
+{
+  "initiative": 0,
+  "initiativebonus": 17,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Galvo OLD",
+  "type": "Creature",
+  "level": 9,
+  "traits": [
+    "Common",
+    "Medium",
+    "Aberration",
+    "Amphibious",
+    "Evil"
+  ],
+  "source": "Pathfinder Bestiary 3",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 17,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Thalassic",
+    "(can't speak any language)"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": -1
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 27,
+    "note": "all-around vision",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 158,
+    "max": 158,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "precision",
+    "swarm-mind"
+  ],
+  "resistances": [
+    {
+      "type": "bludgeoning",
+      "value": 5
+    },
+    {
+      "type": "electricity",
+      "value": 12
+    },
+    {
+      "type": "piercing",
+      "value": 8
+    },
+    {
+      "type": "slashing",
+      "value": 8
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "area-damage",
+      "value": 8
+    },
+    {
+      "type": "splash-damage",
+      "value": 8
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "All-Around Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster can see in all directions simultaneously and therefore can't be flanked.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swarm Mind",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster doesn't have a single mind (typically because it's a swarm of smaller creatures), and is immune to mental effects that target only a specific number of creatures. It is still subject to mental effects that affect all creatures in an area.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Electrical Field",
+      "actions": null,
+      "traits": [
+        "aura",
+        "electricity"
+      ],
+      "description": "<p>5 feet. 1d12 Electricity Damage damage (Basic DC 26 Reflex Saving Throw)</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, swim 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Eel Jaws",
+      "bonus": 21,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+7",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d12",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+7)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d12)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Eel Dart",
+      "bonus": 21,
+      "traits": [
+        "agile",
+        "thrown-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+7",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d12",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+7)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d12)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Squirming Embrace",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The galvo Strides, ending its movement sharing a space with another creature, and deals 3d6 Piercing Damage]{3d6 piercing damage plus 2d12 electricity damage} to the creature. The creature must attempt a Basic DC 28 Reflex Saving Throw save.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swarm Shape",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p>The galvo collapses into a shapeless swarm of eels. It drops all held, worn, and carried items. While discorporated, the galvo can't use attack actions, but it can move through areas small enough for its individual eels to fit without having to Squeeze. It can use Swarm Shape again to coalesce back into its normal form.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism, DC 26"
+}

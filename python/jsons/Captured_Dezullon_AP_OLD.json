@@ -1,0 +1,241 @@
+{
+  "initiative": 0,
+  "initiativebonus": 18,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Captured Dezullon AP OLD",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Common",
+    "Medium",
+    "Plant"
+  ],
+  "source": "Pathfinder #180: The Smoking Gun",
+  "remaster": false,
+  "senses": [
+    "Low light vision"
+  ],
+  "perception": {
+    "value": 18,
+    "note": "Low light vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 21,
+      "note": [
+        "in forests or swamps 24"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 7
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": -1
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 30,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 110,
+    "max": 130,
+    "note": "regeneration 15 (deactivated by fire)",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "type": "acid",
+      "value": 20
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Regeneration 15 (Deactivated by Fire)",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster regains the listed number of Hit Points each round at the beginning of its turn. Its Dying condition never increases beyond Dying 3 as long as its regeneration is active. However, if it takes damage of a type listed in the regeneration entry, its regeneration deactivates until the end of its next turn. Deactivate the regeneration before applying any damage of a listed type, since that damage might kill the monster by bringing it to Dying 4.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Stench",
+      "actions": null,
+      "traits": [
+        "aura",
+        "olfactory"
+      ],
+      "description": "<p>30 feet. A creature entering the emanation must attempt a DC 27 Fortitude Saving Throw save. On a failure, the creature is Sickened 1, and on a critical failure is also Slowed 1. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at the save is temporarily immune to this effect for 1 minute.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, climb 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Vine",
+      "bonus": 21,
+      "traits": [
+        "acid",
+        "agile"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+8",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "3d6",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+8)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(3d6)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Acid Glob",
+      "bonus": 23,
+      "traits": [
+        "acid"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d8",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d8)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [
+        "amnesia-venom"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Amnesia Venom",
+      "actions": null,
+      "traits": [
+        "mental",
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 29 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> Off-Guard (1 round)</p>\n<p><strong>Stage 2</strong> off-guard and Clumsy 1 (1 round)</p>\n<p><strong>Stage 3</strong> Confused, off-guard, and Clumsy 2 (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Constrict",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>(2d6+2) Bludgeoning Damage damage, Basic DC 27 Fortitude Saving Throw</p>\n<hr />\n<p><em>Note: A DC was not provided for this ability by Paizo. The DC present here is a moderate DC for the creature level according to the Gamemastery Guide creature building Tables.</em></p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Root",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p>Until the next time it acts, the dezullon appears to be a normal pitcher plant. It has an automatic result of 41 (44 in forests or swamps) on Deception checks and DCs to pass as a non-creature plant.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Vomit",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The dezullon is damaged by an attack</p>\n<hr />\n<p><strong>Effect</strong> The dezullon vomits the contents of its stomach into an adjacent unoccupied space, filling the space with either a dead body or still-moving zombie (a body is in one of the dezullons, a zombie is in the other). Creatures adjacent to the dezullon must succeed at a DC 28 Reflex Saving Throw save or be splashed with a dose of the dezullon's amnesia venom.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 27"
+}

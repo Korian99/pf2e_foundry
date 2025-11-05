@@ -1,0 +1,212 @@
+{
+  "initiative": 0,
+  "initiativebonus": 7,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Corrupted Wildfire (3-4) OLD",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Chaotic",
+    "Elemental",
+    "Evil",
+    "Fire"
+  ],
+  "source": "Pathfinder Society Scenario #2-14: Lost in Flames",
+  "remaster": false,
+  "senses": [
+    "Darkvision",
+    "smoke vision"
+  ],
+  "perception": {
+    "value": 7,
+    "note": "Darkvision, smoke vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Chthonian",
+    "Pyric"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": -2
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Smoke Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The corrupted wildfire ignores the Concealed condition from smoke.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 51,
+    "max": 51,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "paralyzed",
+    "bleed",
+    "fire",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 4
+    }
+  ],
+  "defensiveAbilities": [],
+  "speed": "50 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+6",
+          "type": "fire"
+        },
+        {
+          "roll": "1d4",
+          "type": "persistent fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+6)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(1d4)*2",
+          "type": "persistent fire"
+        }
+      ],
+      "effects": [
+        "filthy-burn"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Flaming Sap",
+      "bonus": 12,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d6+3",
+          "type": "fire"
+        },
+        {
+          "roll": "1d4",
+          "type": "persistent fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+3)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(1d4)*2",
+          "type": "persistent fire"
+        }
+      ],
+      "effects": [
+        "filthy-burn"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Acrid Cloud",
+      "actions": 2,
+      "traits": [
+        "poison",
+        "primal"
+      ],
+      "description": "<p>The burning sap that makes up the corrupted wildfire's body sputters and pops, ejecting a cloud of acrid that smoke in a 10ft Emanation that lasts for 1 round.</p>\n<p>This smoke provides concealment to all creatures within, and deals 1d6 Poison Damage damage to any creature that enters or begins its turn in the cloud (Basic DC 20 Fortitude Saving Throw).</p>\n<p>A creature that fails is also Sickened 1 (or Sickened 2 on a critical failure).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Filthy Burn",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When the corrupted wildfire successfully strikes a creature with an attack that deals persistent fire damage, the target becomes Sickened 1 (Sickened 2 on a critical hit). This condition cannot be reduced below 1 while the creature is subject to the persistent fire damage from the attack, and ends automatically when the persistent fire ends.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 18"
+}

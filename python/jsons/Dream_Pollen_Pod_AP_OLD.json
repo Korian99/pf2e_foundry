@@ -1,0 +1,116 @@
+{
+  "initiative": 0,
+  "initiativebonus": 12,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Dream Pollen Pod AP OLD",
+  "type": "Hazard",
+  "level": 3,
+  "traits": [
+    "Common",
+    "Medium",
+    "Environmental",
+    "Trap"
+  ],
+  "source": "Pathfinder #151: The Show Must Go On",
+  "remaster": false,
+  "stealth": {
+    "value": 12,
+    "note": "(trained)"
+  },
+  "description": "<p>Four magical plants inside the wagon release hallucinogenic pollen when disturbed.</p>",
+  "disable": "<p>DC 18 Thievery  (trained) to carefully remove a pollen pod or DC 18 Nature  (trained) to prevent a pod from bursting.</p>",
+  "reset": "<p>The trap resets after 1 hour, when the pods have regrown additional pollen. If all the pods are removed or disabled, the trap doesn't reset.</p>",
+  "routine": "<p>(4 actions) The trap loses 1 action each turn for each removed or disabled pollen pod. The trap doesn't take a multiple attack penalty.</p>",
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Pollen Burst",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The wagon door is opened or the pods are disturbed</p>\n<hr />\n<p><strong>Effect</strong> A pod makes a pollen spray Strike against an adjacent creature or the creature that opened the door, the door falls off the wagon, and the trap rolls initiative.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Hallucinogenic Pollen",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A creature hit by the trap's pollen spray must succeed at a DC 20 Will Saving Throw save or it is Confused for 1 round and takes a -2 status penalty to Perception checks and saves against mental effects for 1d4 #hours hours. On a critical failure, the penalty is instead -4.</p>\n<p>Effect: Hallucinogenic Pollen (Failure)</p>\n<p>Effect: Hallucinogenic Pollen (Critical Failure)</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 18,
+    "note": null,
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "hardness": {
+    "value": 1
+  },
+  "fortitude": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 3,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 32,
+    "max": 32,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "critical-hits",
+    "precision"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "",
+  "strikes": [
+    {
+      "type": "ranged",
+      "name": "Pollen Spray",
+      "bonus": 12,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d8",
+          "type": "poison"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8)*2",
+          "type": "poison"
+        }
+      ],
+      "effects": [
+        "hallucinogenic-pollen"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [],
+  "spellcastingEntries": [],
+  "recallKnowledge": ", DC 18"
+}

@@ -1,0 +1,361 @@
+{
+  "initiative": 0,
+  "initiativebonus": 6,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Orc Alchemist OLD",
+  "type": "Creature",
+  "level": 1,
+  "traits": [
+    "Common",
+    "Medium",
+    "Chaotic",
+    "Evil",
+    "Humanoid",
+    "Orc"
+  ],
+  "source": "Pathfinder Society Scenario #1-05: Trailblazers' Bounty",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 6,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Orcish"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 3
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": -1
+  },
+  "items": [
+    {
+      "name": "Acid Flask (Lesser)",
+      "quantity": 2,
+      "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, 1d6 persistent acid damage, and 1 acid splash damage.</p>",
+      "level": 1,
+      "price": "3 gp",
+      "traits": [
+        "acid",
+        "alchemical",
+        "bomb",
+        "consumable",
+        "splash"
+      ]
+    },
+    {
+      "name": "Alchemist's Fire (Lesser)",
+      "quantity": 2,
+      "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 1d8 fire damage, 1 persistent fire damage, and 1 fire splash damage.</p>",
+      "level": 1,
+      "price": "3 gp",
+      "traits": [
+        "alchemical",
+        "bomb",
+        "consumable",
+        "fire",
+        "splash"
+      ]
+    },
+    {
+      "name": "Bottled Lightning (Lesser)",
+      "quantity": 2,
+      "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Bottled lightning is packed with volatile reagents that create a blast of electricity when they are exposed to air. Bottled lightning deals 1d6 electricity damage and 1 electricity splash damage. On a hit, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] until the start of your next turn.</p>",
+      "level": 1,
+      "price": "3 gp",
+      "traits": [
+        "alchemical",
+        "bomb",
+        "consumable",
+        "electricity",
+        "splash"
+      ]
+    },
+    {
+      "name": "Orc Knuckle Dagger",
+      "quantity": 1,
+      "description": "<p>This stout, metal blade of orc design has a horizontal basket hilt with blades jutting from each end, or sometimes one blade like that of a katar.</p>",
+      "level": 0,
+      "price": "7 sp",
+      "traits": [
+        "agile",
+        "disarm",
+        "orc"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 3,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 20,
+    "max": 20,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Ferocity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its Wounded value increases by 1. When it is Wounded 3, it can no longer use this ability</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Orc Knuckle Dagger",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "disarm"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6 + 1",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6 + 1)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 5,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+1",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+1)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Acid Flask (Lesser)",
+      "bonus": 7,
+      "traits": [
+        "bomb",
+        "consumable",
+        "splash"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1",
+          "type": "acid"
+        },
+        {
+          "roll": "1d6",
+          "type": "persistent acid"
+        },
+        {
+          "roll": "1",
+          "type": "splash acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1)*2",
+          "type": "acid"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "persistent acid"
+        },
+        {
+          "roll": "(1)*2",
+          "type": "splash acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Alchemist's Fire (Lesser)",
+      "bonus": 7,
+      "traits": [
+        "bomb",
+        "consumable",
+        "splash"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8",
+          "type": "fire"
+        },
+        {
+          "roll": "1",
+          "type": "persistent fire"
+        },
+        {
+          "roll": "1",
+          "type": "splash fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(1)*2",
+          "type": "persistent fire"
+        },
+        {
+          "roll": "(1)*2",
+          "type": "splash fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Bottled Lightning (Lesser)",
+      "bonus": 7,
+      "traits": [
+        "bomb",
+        "consumable",
+        "splash"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "electricity"
+        },
+        {
+          "roll": "1",
+          "type": "splash electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "electricity"
+        },
+        {
+          "roll": "(1)*2",
+          "type": "splash electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 15"
+}

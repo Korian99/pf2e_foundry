@@ -1,0 +1,110 @@
+{
+  "initiative": 0,
+  "initiativebonus": 9,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Churning Lava (1-2) OLD",
+  "type": "Hazard",
+  "level": 1,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Environmental",
+    "Fire"
+  ],
+  "source": "Pathfinder Society Scenario #2-19: Enter the Pallid Peak",
+  "remaster": false,
+  "stealth": {
+    "value": 9,
+    "note": "(trained)"
+  },
+  "description": "<p>The equilibrium of the brown mold and lava river is disturbed, creating bubbles of molten stone that burst and spew burning debris.</p>",
+  "disable": "<p>DC 14 Nature  or DC 14 Survival  or DC 17 Thievery  to clear your square and all adjacent squares of the mold; the churning lava does not target creatures in cleared squares with its spatter attack, but the hazard is not destroyed until every square has been cleared of mold.</p>",
+  "reset": "<p>If not completely destroyed, the mold spreads to one additional square within 10 feet of lava each day until it fully regenerates and regains its state of equilibrium. If every square is cleaned of mold, the hazard is destroyed.</p>",
+  "routine": "<p>(1 action) On the its initiative, the churning lava targets a random creature in the area with a ranged spatter attack as a magma bubble bursts.</p>",
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Boil",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature disturbs the mold, typically by walking through it</p>\n<hr />\n<p><strong>Effect</strong> The hazard makes a spatter attack against the triggering creature, and then rolls initiative as the lava begins to bubble.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Solidifying Lava",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The target must attempt a DC 17 Reflex Saving Throw save as the lava rapidly cools and solidifies. On a critical hit, use the outcome for one degree of success worse than the result of the save.</p>\n<p><strong>Success</strong> The lava slides off the target with no additional effect.</p>\n<p><strong>Failure</strong> The target becomes Clumsy 1. The target or an adjacent creature can take an Interact action to remove the stone, removing the condition.</p>\n<p><strong>Critical Failure</strong> As failure, except the target becomes Clumsy 2. Each Interact action to remove the stone reduces the value of the clumsy condition by 1.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 0,
+    "note": null,
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 0,
+    "max": 0,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "",
+  "strikes": [
+    {
+      "type": "ranged",
+      "name": "Spatter",
+      "bonus": 9,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d4+3",
+          "type": "fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+3)*2",
+          "type": "fire"
+        }
+      ],
+      "effects": [
+        "solidifying-lava"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [],
+  "spellcastingEntries": [],
+  "recallKnowledge": ", DC 15"
+}

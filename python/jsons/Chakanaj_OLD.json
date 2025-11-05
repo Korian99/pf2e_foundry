@@ -1,0 +1,521 @@
+{
+  "initiative": 0,
+  "initiativebonus": 25,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Chakanaj OLD",
+  "type": "Creature",
+  "level": 14,
+  "traits": [
+    "Rare",
+    "tiny",
+    "Evil",
+    "Fiend",
+    "Sahkil",
+    "Unholy"
+  ],
+  "source": "Pathfinder Adventure: Night of the Gray Death",
+  "remaster": false,
+  "senses": [
+    "Darkvision",
+    "Truesight 60ft precise"
+  ],
+  "perception": {
+    "value": 25,
+    "note": "Darkvision, Truesight 60ft precise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Chthonian",
+    "Diabolic",
+    "Empyrean",
+    "Requian",
+    "telepathy 100 feet"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 27,
+      "note": [
+        "to impersonate clothing 31"
+      ],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 30,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "thievery",
+      "modifier": 26,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 0
+  },
+  "dexterity": {
+    "value": 8
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 7
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 36,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 300,
+    "max": 300,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "fear-effects"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "+4 to Perception to Sense Motive",
+      "actions": null,
+      "traits": [],
+      "description": "",
+      "collapsed": false
+    },
+    {
+      "name": "Ear for Secrets",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A chakanaj knows when a creature within 30 feet lies unless that creature critically succeeds on its Perception check to lie to the chakanaj. This ability doesn't reveal the truth.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Easy to Call",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A sahkil's level is considered 2 lower for the purpose of being conjured by the Binding Circle ritual (and potentially other rituals, at the GM's discretion), but is always free to attack or leave instead of negotiate unless the primary caster's check is a critical success.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Retaliate",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within the chakanaj's reach attacks its host <strong>Requirements</strong> The chakanaj is Bonded with a Host</p><hr /><p><strong>Effect</strong> The chakanaj makes a leg Strike against the triggering creature. If the chakanaj was Impersonating clothing when it makes this strike, the Impersonation ends.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "10 ft, fly 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Leg",
+      "bonus": 29,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+14",
+          "type": "slashing"
+        },
+        {
+          "roll": "2d6",
+          "type": "spirit"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+14)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "spirit"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Bond with Host",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "move"
+      ],
+      "description": "<p><strong>Requirements</strong> The chakanaj is adjacent to a willing creature</p>\n<hr />\n<p><strong>Effect</strong> The chakanaj enters the space of the creature (thereafter called its host) and covers a suitable surface on the host, such as the face or back. The chakanaj occupies the same space as its host and moves with its host. It doesn't impair the host's senses or movement. While worn, the chakanaj establishes a constantShare Life effect with its host. Attacks that target the chakanaj target the host instead, but use the higher AC or saving throw values between the chakanaj and the host. Area effects apply to both the chakanaj and the host, as normal for an area of effect.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Interpose",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The chakanaj is Bonded with a Host</p>\n<hr />\n<p><strong>Effect</strong> The chakanaj interposes itself between the host and its foes, granting its host a +2 circumstance bonus to AC until the start of the chakanaj's next turn.</p>\n<p>Effect: Interpose</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Peel Away",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "move"
+      ],
+      "description": "<p><strong>Requirements</strong> The chakanaj is Bonded with a Host</p>\n<hr />\n<p><strong>Effect</strong> the chakanaj removes itself from its host, peeling off the host's body and enters an adjacent space.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Skip Between",
+      "actions": 1,
+      "traits": [
+        "divine",
+        "teleportation"
+      ],
+      "description": "<p>The chakanaj sahkil moves from the Material Plane to the Ethereal Plane or vice versa, with the effects of Ethereal Jaunt except the effect has an unlimited duration and can be Dismissed. A summoned sahkil can't use Skip Between.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Divine Innate Spells",
+      "type": "innate",
+      "bonus": 26,
+      "dc": 34,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 7,
+      "cantrips": [
+        {
+          "name": "Dancing Lights",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "light",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to ",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create up to four floating lights, no two of which are more than 10 feet apart. Each sheds light like a torch. When you Sustain the Spell, you can move any number of lights up to 60 feet. Each light must remain within 120 feet of you and within 10 feet of all others, or it winks out.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "kGv1mGxTu4ctWkdX"
+        },
+        {
+          "name": "Daze",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental",
+            "nonlethal"
+          ],
+          "castingTime": "2",
+          "duration": "1 round",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "Basic will",
+          "description": "<p>You cloud the target's mind and daze it with a mental jolt. The jolt deals mental damage equal to your spellcasting ability modifier; the target must attempt a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "rDnXSJoNXSmsFt0w"
+        },
+        {
+          "name": "Guidance",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate"
+          ],
+          "castingTime": "1",
+          "duration": "until the start of your next turn",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You ask for divine guidance, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n<p></p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "7rtElM8vrNdoW4pd"
+        }
+      ],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [
+        {
+          "id": "mLF4fLYvO8zeUfFG"
+        },
+        {
+          "id": "mLF4fLYvO8zeUfFG"
+        },
+        {
+          "id": "mLF4fLYvO8zeUfFG"
+        },
+        {
+          "id": "rDnXSJoNXSmsFt0w"
+        },
+        {
+          "id": "7rtElM8vrNdoW4pd"
+        },
+        {
+          "name": "Illusory Object",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "illusion",
+            "manipulate",
+            "visual"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "500 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create an illusory visual image of a stationary object. The entire image must fit within the spell's area. The object appears to animate naturally, but it doesn't make sounds or generate smells. For example, water would appear to pour down an illusory waterfall, but it would be silent.</p>\n<p>Any creature that touches the image or uses the Seek action to examine it can attempt to disbelieve your illusion.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> Your image makes appropriate sounds, generates normal smells, and feels right to the touch. The spell gains the auditory trait. The duration increases to 1 hour.</p>\n<p><strong>Heightened (5th)</strong> As the 2nd-rank version, but the duration is unlimited.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "mLF4fLYvO8zeUfFG"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [
+        {
+          "id": "Rq57HlzwVVMQIneb"
+        },
+        {
+          "name": "Fear (At Will)",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "emotion",
+            "fear",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Frightened 1.</p>\n<p><strong>Failure</strong> The target is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target is Frightened 3 and Fleeing for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "kiGT82JGLq6Jy0HE"
+        },
+        {
+          "name": "True Seeing (Constant)",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "revelation"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You see things within 60 feet as they actually are. The GM rolls a secret counteract check against any illusion or transmutation in the area, but only for the purpose of determining whether you see through it (for instance, if the check succeeds against a polymorph spell, you can see the creature's true form, but you don't end the polymorph spell).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Rq57HlzwVVMQIneb"
+        },
+        {
+          "name": "Mask of Terror (At Will) (Self Only)",
+          "type": "spell",
+          "level": 7,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "emotion",
+            "fear",
+            "illusion",
+            "manipulate",
+            "mental",
+            "visual"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "self",
+          "save": "",
+          "description": "<p>The target appears to be a gruesome and terrifying creature. The effect is unique to each observer, so a human viewing the target might see a demon with bloody fangs, but a demon observing the target might see a glowing angelic visage. When any creature attempts a hostile action against the target, the creature must attempt a Will save. It is then temporarily immune until the end of its next turn.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature becomes Frightened 2 before using its action.</p>\n<p><strong>Critical Failure</strong> The creature becomes Frightened 2, and its action fails and is wasted.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 5 creatures. If a creature uses a hostile action or reaction that affects multiple targets simultaneously, it needs to attempt only one save against mask of terror.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "vP08eytEuzfRSzTp"
+        }
+      ],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Religion, DC 32"
+}

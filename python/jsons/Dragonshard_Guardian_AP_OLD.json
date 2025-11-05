@@ -1,0 +1,298 @@
+{
+  "initiative": 0,
+  "initiativebonus": 39,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Dragonshard Guardian AP OLD",
+  "type": "Creature",
+  "level": 22,
+  "traits": [
+    "Unique",
+    "Large",
+    "Construct"
+  ],
+  "source": "Pathfinder #150: Broken Promises",
+  "remaster": false,
+  "senses": [
+    "Darkvision",
+    "Truesight 60ft precise"
+  ],
+  "perception": {
+    "value": 39,
+    "note": "Darkvision, Truesight 60ft precise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "arcana",
+      "modifier": 30,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 10
+  },
+  "dexterity": {
+    "value": 8
+  },
+  "constitution": {
+    "value": 9
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 7
+  },
+  "charisma": {
+    "value": -5
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 48,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 39,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 36,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 430,
+    "max": 430,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "mental"
+  ],
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 24
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "sonic",
+      "value": 24
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Frightful Presence",
+      "actions": null,
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>90 feet. DC 42 Will Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>A creature that first enters the area must attempt a Will save.</p>\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to this monster's Frightful Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by the presence.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 4.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 41,
+      "traits": [
+        "magical",
+        "reach-15",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "6d10+8",
+          "type": "piercing"
+        },
+        {
+          "roll": "2d10",
+          "type": "bleed"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(6d10+8)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(2d10)*2",
+          "type": "bleed"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 41,
+      "traits": [
+        "agile",
+        "magical",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "9d6+8",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(9d6+8)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Breath Weapon",
+      "actions": 2,
+      "traits": [
+        "arcane",
+        "fire"
+      ],
+      "description": "<p>The construct breathes in one of two ways, then can't use Breath Weapon again for 1d4 rounds.</p>\n<p>- Flame (arcane, evocation, fire) A blast of flame deals 15d10 Fire Damage damage to all creatures in a 60ft Cone (Basic DC 45 Reflex Saving Throw save). This fire damage does not harm objects or constructs.</p>\n<p>- Weakening Gas (arcane, necromancy) A cloud of gold-flecked gas forces each creature in a 60ft Cone to attempt a Basic DC 45 Fortitude Saving Throw save; the effect lasts 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Enfeebled 2.</p>\n<p><strong>Failure</strong> The creature is Enfeebled 5.</p>\n<p><strong>Critical Failure</strong> The creature is Enfeebled 8.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reverberating Revenge",
+      "actions": -1,
+      "traits": [
+        "arcane",
+        "fire"
+      ],
+      "description": "<p><strong>Trigger</strong> The dragonshard guardian takes cold, fire, electricity, or sonic damage from a non-dragonshard guardian source</p>\n<hr />\n<p><strong>Effect</strong> The dragonshard guardian's body absorbs the energy entirely, preventing the damage from harming the construct. Its body reverberates and transforms the absorbed energy before projecting it outward in a 60ft Burst.</p>\n<p>Each creature within the burst takes an amount of fire damage equal to the amount of energy damage absorbed by the triggering attack, including any damage resisted by the guardian's resistances and additional damage from its weakness (Basic DC 45 Reflex Saving Throw save).</p>\n<p>This fire damage doesn't harm objects or constructs.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Innate Arcane Spells",
+      "type": "innate",
+      "bonus": 36,
+      "dc": 44,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 6,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [
+        {
+          "name": "True Seeing (Constant)",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "revelation"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You see things within 60 feet as they actually are. The GM rolls a secret counteract check against any illusion or transmutation in the area, but only for the purpose of determining whether you see through it (for instance, if the check succeeds against a polymorph spell, you can see the creature's true form, but you don't end the polymorph spell).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Y4NlUcT2NJz7cDOb"
+        }
+      ],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Arcana or Crafting, DC 44"
+}

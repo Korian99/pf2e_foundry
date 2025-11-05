@@ -1,0 +1,231 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Gibtanius AP OLD",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Aberration",
+    "Chaotic"
+  ],
+  "source": "Pathfinder #164: Hands of the Devil",
+  "remaster": false,
+  "senses": [
+    "Darkvision",
+    "Scent 30ft imprecise"
+  ],
+  "perception": {
+    "value": 16,
+    "note": "Darkvision, Scent 30ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo",
+    "(can't speak any language)"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 18,
+      "note": [
+        "to High Jump or Long Jump 22"
+      ],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": -3
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 140,
+    "max": 140,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "acid"
+  ],
+  "resistances": [
+    {
+      "type": "bludgeoning",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Powerful Stench",
+      "actions": null,
+      "traits": [
+        "aura",
+        "olfactory"
+      ],
+      "description": "<p>20 feet. A creature that enters the aura must succeed at a DC 26 Fortitude Saving Throw save. On a failure, the creature is Sickened 2; on a critical failure, the creature is also Slowed 1 for as long as it is sickened.</p>\n<p>A creature that succeeds at its save is temporarily immune for 1 minute.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 20,
+      "traits": [
+        "deadly-d12",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+10",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d4",
+          "type": "persistent acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+10)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d4)*2",
+          "type": "persistent acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Spit",
+      "bonus": 17,
+      "traits": [
+        "splash"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6",
+          "type": "acid"
+        },
+        {
+          "roll": "1d6",
+          "type": "persistent acid"
+        },
+        {
+          "roll": "1d6",
+          "type": "splash acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6)*2",
+          "type": "acid"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "persistent acid"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "splash acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Bouncing Crush",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The gibtanius Leaps and can end this Leap occupying the same space as other creatures.</p>\n<p>It deals 5d6 Bludgeoning Damage damage to each creature in the space it Leaps to (Basic DC 26 Reflex Saving Throw save), then Shoves each of those creatures. If it fails to Shove any creature out of its space, it bounces to the closest available space of its choosing that does not contain any creatures.</p>\n<p>Bouncing Crush counts as one attack when determining the gibtanius's multiple attack penalty.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Breath Weapon",
+      "actions": 2,
+      "traits": [
+        "acid",
+        "primal"
+      ],
+      "description": "<p>The gibtanius vomits a stream of acid that deals 9d6 Acid Damage damage to all creatures in a 60ft Line (Basic DC 26 Reflex Saving Throw save).</p>\n<p>It can't use Breath Weapon again for 1d4 rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism, DC 24"
+}

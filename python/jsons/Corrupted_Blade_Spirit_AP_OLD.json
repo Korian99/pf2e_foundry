@@ -1,0 +1,304 @@
+{
+  "initiative": 0,
+  "initiativebonus": 9,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Corrupted Blade Spirit AP OLD",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Rare",
+    "Medium",
+    "Evil",
+    "Incorporeal",
+    "Spirit",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder #193: Mantle of Gold",
+  "remaster": false,
+  "senses": [
+    "Darkvision",
+    "Lifesense 60ft imprecise"
+  ],
+  "perception": {
+    "value": 9,
+    "note": "Darkvision, Lifesense 60ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Dwarven"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [
+    {
+      "name": "Amulet",
+      "quantity": 1,
+      "description": "<p><em>Relics are a special type of magic item that can grow in power as their wielders unlock additional abilities. The full rules for relics and their aspects begin on page 94 of the Gamemastery Guide.</em></p>",
+      "level": 0,
+      "price": "",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Lifesense (Imprecise) 60 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>Lifesense allows a monster to sense the vital essence of living and undead creatures within the listed range. The sense can distinguish between the vitality energy animating living creatures and the void energy animating undead creatures, much as sight distinguishes colors.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 50,
+    "max": 50,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "force",
+        "ghost-touch",
+        "vitality"
+      ],
+      "type": "all-damage",
+      "value": 5
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Clan Dagger Relic",
+      "actions": null,
+      "traits": [
+        "curse",
+        "divine"
+      ],
+      "description": "<p>The corrupted relic is Taargick's clan dagger rather than an amulet. When the spirit Manifests, the clan dagger teleports into its hand. The clan dagger can be targeted by Strikes (AC 21, Hardness 8, HP 20, BT 10).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sudden Manifestation",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The relic detects a creature using its lifesense.</p>\n<hr />\n<p><strong>Effect</strong> The relic Manifests. If this causes an encounter to begin, the relic gains a +4 status bonus to its initiative roll.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft, fly 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Clan Dagger",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "dwarf",
+        "parry",
+        "versatile-b"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4+3",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d6",
+          "type": "persistent bleed"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+3)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "persistent bleed"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Spectral Hand",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+3",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+3)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Deadly Spark",
+      "bonus": 14,
+      "traits": [
+        "air",
+        "divine",
+        "electricity"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Blood Accusation",
+      "actions": -1,
+      "traits": [
+        "fear",
+        "linguistic",
+        "mental"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature within 30 feet of the corrupted blade spirit takes persistent bleed damage</p>\n<hr />\n<p><strong>Effect</strong> The corrupted blade spirit shapes the spilled blood into words that remind the bleeding creature of their fears, mistakes, and shames. The corrupted blade spirit Demoralizes the creature, additionally dealing 1d6 Mental Damage damage on a critical success.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Death Gaze",
+      "actions": 2,
+      "traits": [
+        "concentrate",
+        "divine",
+        "void"
+      ],
+      "description": "<p>The spirit targets a creature it can see within 30 feet, dealing to it 4d6 Void Damage damage (Basic DC 20 Fortitude Saving Throw save).</p>\n<p>A creature with Void Healing instead regains 4d6 Healing Damage Hit Points and is then temporarily immune for 10 minutes.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Manifest",
+      "actions": 1,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p><strong>Requirements</strong> The relic detects at least one creature using its lifesense.</p>\n<hr />\n<p><strong>Effect</strong> The spirit within the relic manifests in an open space within 10 feet of the amulet. When it does, the relic teleports around its neck. The spirit remains in its manifested state until it no longer senses any living creatures within range of its lifesense.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism or Religion, DC 19"
+}

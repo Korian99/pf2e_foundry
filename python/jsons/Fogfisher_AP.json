@@ -1,0 +1,252 @@
+{
+  "initiative": 0,
+  "initiativebonus": 13,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Fogfisher AP",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Rare",
+    "Large",
+    "Aberration"
+  ],
+  "source": "Pathfinder #214: The Broken Palace",
+  "remaster": true,
+  "senses": [
+    "mist vision"
+  ],
+  "perception": {
+    "value": 13,
+    "note": "mist vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Sussuran",
+    "can't speak any language"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": -3
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Mist Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The fogfisher ignores the Concealed condition from fog and mist.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 50,
+    "max": 50,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "acid"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "bludgeoning",
+      "value": 5
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "silver",
+      "value": 5
+    },
+    {
+      "exceptions": [],
+      "type": "slashing",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Fog Rupture",
+      "actions": null,
+      "traits": [],
+      "description": "<p>If a fogfisher takes damage from a critical hit, it must succeed at a DC 16 Flat  or the sac that produces its fog aura ruptures. This causes its fog aura to dissipate at the start of the fogfisher's next turn. The fogfisher is then Slowed 1 for 24 hours, after which it recovers and produces its fog aura again.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "10 ft, fly 25ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Tendrils",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4+4",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d4",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+4)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d4)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Harpoon Hook",
+      "bonus": 12,
+      "traits": [
+        "propulsive"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+3",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+3)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "drifting-toxin",
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Drifting Toxin",
+      "actions": null,
+      "traits": [
+        "poison",
+        "primal"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 21 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 10 minutes</p>\n<p><strong>Stage 1</strong> the creature becomes buoyant in the air and is treated as a Tiny creature for the purposes of wind effects and being pulled by the fogfisher's harpoon; if the creature falls, it drifts gently to the ground (1 round)</p>\n<p><strong>Stage 2</strong> as stage 1 plus Enfeebled 1 (1 minute)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Fog Aura",
+      "actions": null,
+      "traits": [
+        "air",
+        "aura",
+        "primal"
+      ],
+      "description": "<p>15 feet. The fogfisher constantly exudes an aura of fog. All creatures within the aura become Concealed, and all creatures outside the fog become concealed to creatures within it.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reel In",
+      "actions": 1,
+      "traits": [
+        "manipulate"
+      ],
+      "description": "<p><strong>Requirements</strong> The fogfisher has a Tiny creature Grabbed with its harpoon</p><hr /><p><strong>Effect</strong> The fogfisher retracts its harpoon, pulling the grabbed creature toward it. The grabbed creature must attempt a DC 21 Fortitude Saving Throw save.</p><hr /><p><strong>Critical Success</strong> The fogfisher fails to move the creature.</p>\n<p><strong>Success</strong> The fogfisher pulls the creature 5 feet closer.</p>\n<p><strong>Failure</strong> The fogfisher pulls the creature up to 30 feet closer.</p>\n<p><strong>Critical Failure</strong> The fogfisher pulls the creature to an adjacent space.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rip Out",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The fogfisher has a creature Grabbed with its harpoon</p><hr /><p><strong>Effect</strong> The fogfisher rips free its harpoon, retracting the spike and leaving a bloody hole behind. The grabbed creature is no longer grabbed and takes 3d6 Persistent,bleed Damage damage (Basic DC 21 Fortitude Saving Throw save).</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism, DC 19"
+}

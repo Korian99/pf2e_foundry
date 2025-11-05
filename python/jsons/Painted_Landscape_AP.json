@@ -1,0 +1,171 @@
+{
+  "initiative": 0,
+  "initiativebonus": 19,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Painted Landscape AP",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Rare",
+    "Gargantuan",
+    "Construct"
+  ],
+  "source": "Pathfinder #218: Titanbane",
+  "remaster": true,
+  "senses": [
+    "Tremorsense 60ft imprecise"
+  ],
+  "perception": {
+    "value": 19,
+    "note": "Tremorsense 60ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": -5
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 30,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 155,
+    "max": 155,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Construct Armor (Hardness 15)",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Like normal objects, a painted landscape has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once a painted landscape is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, removing the Hardness and reducing its Armor Class to 26.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "15 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Branch",
+      "bonus": 24,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d10+11",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+11)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "sticky-paint"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Engulf",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>DC 29 Reflex Saving Throw, (6d6) Bludgeoning Damage damage, Escape DC 29, Rupture 20</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of any creatures in its path. Any creature of the monster's size or smaller whose space the monster moves through can attempt a Reflex save with the listed DC to avoid being engulfed. A creature unable to act automatically critically fails this save. If a creature succeeds at its save, it can choose to be either pushed aside (out of the monster's path) or pushed in front of the monster to the end of the monster's movement. The monster can attempt to Engulf the same creature only once in a single use of Engulf. The monster can contain as many creatures as can fit in its space.</p>\n<p>A creature that fails its save is pulled into the monster's body. It is Grabbed, is Slowed 1, and has to hold its breath or start suffocating. The creature takes the listed amount of damage when first engulfed and at the end of each of its turns while it's engulfed. An engulfed creature can get free by Escaping against the listed escape DC. An engulfed creature can attack the monster engulfing it, but only with unarmed attacks or with weapons of light Bulk or less. The engulfing creature is Off-Guard against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the engulfed creature cuts itself free.\n<p>Effect: Engulf and Swallow Whole</p>\n<p>A creature that gets free by either method can immediately breathe and exits the swallowing monster's space.</p>\n<p>If the monster dies, all creatures it has engulfed are automatically released as the monster's form loses cohesion.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Mural",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p>Until the next time it acts, the animated landscape appears to be a mural on a flat surface that's at least 10 by 20 feet in area. It has an automatic result of 42 on Deception checks and DCs to pass as a mural.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Painted Replica",
+      "actions": 1,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p><strong>Requirements</strong> A creature died while engulfed by the painted landscape</p><hr /><p><strong>Effect</strong> The painted landscape absorbs the creature, causing the creature's likeness to appear in the mural. Any gear carried by the dead creature remains left behind (but still appears as part of the painting). The painted landscape regains (2d6+20) Healing Damage HP when it absorbs a creature.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sticky Paint",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A painted landscape's Strikes splatter paint on the target. On a critical hit, this paint swiftly dries, and the target becomes Clumsy 1 for 10 minutes. As an Interact action, the target or an adjacent creature can remove enough paint to end the condition.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Crafting, DC 27"
+}

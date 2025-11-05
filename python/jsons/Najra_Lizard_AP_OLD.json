@@ -1,0 +1,206 @@
+{
+  "initiative": 0,
+  "initiativebonus": 11,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Najra Lizard AP OLD",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Uncommon",
+    "tiny",
+    "Chaotic",
+    "Dragon"
+  ],
+  "source": "Pathfinder #158: Sixty Feet Under",
+  "remaster": false,
+  "senses": [
+    "Darkvision",
+    "Scent 30ft imprecise"
+  ],
+  "perception": {
+    "value": 11,
+    "note": "Darkvision, Scent 30ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Draconic"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 10,
+      "note": [
+        "to Create a Diversion 12"
+      ],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -1
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 60,
+    "max": 60,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "paralyzed",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Shared Diversion",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> Another creature in the najra lizard's square succeeds at a Deception check to Create a Diversion</p>\n<hr />\n<p><strong>Effect</strong> The najra lizard automatically successfully Creates a Diversion against the same targets.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 14,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "najra-lizard-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Venomous Spit",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "poison"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4",
+          "type": "poison"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4)*2",
+          "type": "poison"
+        }
+      ],
+      "effects": [
+        "najra-lizard-venom"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Najra Lizard Venom",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The creature is extremely thirsty and can't quench its thirst while poisoned</p>\n<p><strong>Saving Throw</strong> DC 21 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> 1d4 Poison Damage damage, Fatigued, and 1d4 damage that can't be recovered until the creature quenches its thirst (1 round)</p>\n<p><strong>Stage 2</strong> as stage 1 (1 hour)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Najra Swarm Attack",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The najra lizard's melee Strikes deal 1d6 precision damage to creatures sharing a square with more than one najra lizard.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana, DC 19"
+}

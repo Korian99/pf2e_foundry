@@ -1,0 +1,257 @@
+{
+  "initiative": 0,
+  "initiativebonus": 25,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Natbakh AP",
+  "type": "Creature",
+  "level": 14,
+  "traits": [
+    "Rare",
+    "Gargantuan",
+    "Beast",
+    "Dream",
+    "Mythic"
+  ],
+  "source": "Pathfinder #219: Lord of the Trinity Star",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 25,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo",
+    "can't speak any language"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 26,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 26,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 8
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Remove a Condition",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The natbakh ends one condition affecting them.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 34,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 320,
+    "max": 320,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "cold",
+    "controlled",
+    "emotion"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "mythic",
+      "value": 14
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Mythic Resilience (Reflex)",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The creature treats its saving throws with the associated save as one degree of success better than it rolled. This is not cumulative with other effects that change their degree of success, like the incapacitation trait (except for rolling a natural 1 or 20). Each time the monster gains mythic resilience, choose one save. The ability should apply to the creature's highest saves first.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, fly 150ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 29,
+      "traits": [
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "persistent bleed"
+        },
+        {
+          "roll": "3d10+14",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "persistent bleed"
+        },
+        {
+          "roll": "(3d10+14)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tentacle Tongue",
+      "bonus": 29,
+      "traits": [
+        "agile",
+        "reach-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+14",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+14)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Drain Dreams",
+      "actions": 1,
+      "traits": [
+        "mental",
+        "occult"
+      ],
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The natbakh's previous action was a successful jaws Strike that damaged a creature</p><hr /><p><strong>Effect</strong> The natbakh's suckered tongue latches on. The creature must succeed at a DC 34 Will Saving Throw save or become Stupefied 1 (Stupefied 2 on a critical failure) for 1 week as their dreams are slurped away. If the creature becomes stupefied in this way, the natbakh regains 32 Healing Damage HP. Draining dreams from a creature that's already stupefied doesn't restore any HP, but increases the victim's stupefied value by 1, to a maximum of Stupefied 5.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Mythic Power",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The creature has a pool of 3 Mythic Points, and can spend those Mythic Points for any of the actions it has.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Mythic Skill",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The natbakh attempts its next Athletics or Stealth skill check with a +4 bonus and is considered to have mythic proficiency for that check.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Nightmare Screech",
+      "actions": 2,
+      "traits": [
+        "emotion",
+        "mental",
+        "occult"
+      ],
+      "description": "<p>The natbakh shrieks in a 50ft Type:cone that echoes more in the minds of those in the area than in the ears. Those in the area recall shrieks like this in forgotten nightmares, and the memories of wounds suffered in dreams cause nauseating pain. Creatures in the area take 10d8 Mental Damage damage and must attempt a DC 34 Will Saving Throw save. The natbakh can't use Nightmare Screech again for 1d4 rounds.</p><hr /><p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage and is Sickened 1.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Sickened 2</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is sickened 2, and is Slowed 1 for as long as they remain sickened (or 1 minute, whichever comes first).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Writhing Clutches",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A natbakh can Fly at half Speed while it has a Huge or smaller creature Grabbed or Restrained, or at full speed when it has a Medium or smaller creature grabbed or restrained, carrying that creature along with it.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature or Occultism, DC 32"
+}

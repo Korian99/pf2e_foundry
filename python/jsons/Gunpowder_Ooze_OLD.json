@@ -1,0 +1,207 @@
+{
+  "initiative": 0,
+  "initiativebonus": 22,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Gunpowder Ooze OLD",
+  "type": "Creature",
+  "level": 14,
+  "traits": [
+    "Common",
+    "Large",
+    "Mindless",
+    "Ooze"
+  ],
+  "source": "Pathfinder Lost Omens Impossible Lands",
+  "remaster": false,
+  "senses": [
+    "Motion sense 120ft precise"
+  ],
+  "perception": {
+    "value": 22,
+    "note": "Motion sense 120ft precise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 8
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": -5
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Motion Sense",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A gunpowder ooze can sense nearby creatures through vibration and air or water movement.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 400,
+    "max": 400,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "critical-hits",
+    "piercing",
+    "precision",
+    "slashing",
+    "unconscious",
+    "visual"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 20
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Combust",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Due to the volatile nature of its composition, the gunpowder ooze reacts explosively when exposed to open flame. Any time the gunpowder ooze takes fire damage from a source other than a gunpowder ooze's combust or gunpowder residue, it explodes, dealing 15d6 Fire Damage damage to creatures in a 15ft Emanation including itself (Basic DC 34 Reflex Saving Throw). When the gunpowder ooze combusts, it automatically splits as long as it has 10 or more HP.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Split",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When a gunpowder ooze that has 10 or more HP is hit by an attack that would deal slashing or piercing damage, it splits into two identical oozes, each with half the original's HP. One ooze is in the same space as the original, and the other is in an adjacent, unoccupied space. If no adjacent space is unoccupied, it automatically pushes creatures and objects out of the way to fill a space (the GM decides if an object or creature is too big or heavy to push).</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, climb 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Pseudopod",
+      "bonus": 29,
+      "traits": [
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d12+14",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+14)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "gunpowder-residue"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Blast",
+      "bonus": 26,
+      "traits": [
+        "propulsive"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6",
+          "type": "fire"
+        },
+        {
+          "roll": "3d8+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(3d8+10)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "gunpowder-residue"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Gunpowder Residue",
+      "actions": null,
+      "traits": [
+        "fire"
+      ],
+      "description": "<p>A creature hit by the gunpowder ooze's pseudopod or blast is coated in explosive material unless it succeeds at a Basic DC 34 Reflex Saving Throw save. If a creature makes an attack with a firearm, takes fire damage, or uses an action, activity, or item with the fire trait while coated with the residue, the residue explodes, dealing 7d6 Fire Damage damage to the creature and all adjacent creatures (Basic DC 34 Reflex Saving Throw). The residue remains active for 24 hours, until it's ignited, or until it's scrubbed off (an activity that takes at least 10 minutes and requires soap and water). A creature can only be coated with one layer of gunpowder residue at a time.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism, DC 32"
+}

@@ -1,0 +1,224 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Ankhrav Hive Mother AP",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Uncommon",
+    "huge",
+    "Animal",
+    "Cold"
+  ],
+  "source": "Pathfinder #208: Hoof, Cinder, and Storm",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "Tremorsense 90ft imprecise"
+  ],
+  "perception": {
+    "value": 16,
+    "note": "Darkvision, Tremorsense 90ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 1
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": -2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 120,
+    "max": 120,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "cold",
+      "value": 8
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 8
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, burrow 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Mandibles",
+      "bonus": 20,
+      "traits": [
+        "acid"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+6",
+          "type": "piercing"
+        },
+        {
+          "roll": "2d6",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+6)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Acid Spit",
+      "bonus": 17,
+      "traits": [
+        "acid"
+      ],
+      "damageRolls": [
+        {
+          "roll": "5d6",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(5d6)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Armor-Rending Bite",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The hive mother makes a mandibles Strike; if the Strike hits, the target's armor takes the damage and the acid damage bypasses the armor's Hardness.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Frenzy Pheromone",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The hive mother unleashes a pheromone that causes all other ankhravs within a 100ft Emanation to become Quickened 1 until the start of the hive mother's next turn, and they can use the extra action only for Burrow, Stride, or Strike actions.</p>\n<p>The hive mother can't unleash the pheromone again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spray Acid",
+      "actions": 2,
+      "traits": [
+        "acid"
+      ],
+      "description": "<p>The hive mother spews acid in a 60ft Cone, dealing 8d6 Acid Damage|options:area-damage]{8d6 acid damage and 1d6 persistent acid damage} (Basic DC 26 Reflex Saving Throw save).</p>\n<p>It can't spew acid again for 1d4 rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 24"
+}

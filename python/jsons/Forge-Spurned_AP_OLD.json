@@ -1,0 +1,268 @@
+{
+  "initiative": 0,
+  "initiativebonus": 11,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Forge-Spurned AP OLD",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Evil",
+    "Fire",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder #148: Fires of the Haunted City",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 11,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Dwarven",
+    "Sakvroth"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "Droskar Lore",
+      "modifier": 12,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Warhammer",
+      "quantity": 1,
+      "description": "<p>This weapon has a wooden shaft ending in a large, heavy metal head. The head of the hammer might be single-sided or double-sided, but it's always capable of delivering powerful bludgeoning blows.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": [
+        "shove"
+      ]
+    },
+    {
+      "name": "Soul Chain",
+      "quantity": 1,
+      "description": "<p>A <em>soul chain</em> is a <em>+1 striking @UUID[Compendium.pf2e.equipment-srd.Item.Spiked Chain]</em> that has become cursed after a forge-spurned used it to kill a creature and trap its soul. In the hands of a forge-spurned, a soul chain inflicts an additional @Damage[1d6[fire]] damage on a hit. Other creatures can use a <em>soul chain</em> as a standard <em>+1 striking spiked chain</em>. A soul chain fuses with its wielder the first time the wielder damages a living creature with the weapon. A character who dies while carrying a <em>soul chain</em> must attempt a @Check[will|dc:20] save; on a failure, they're immediately transformed into a forge-spurned. Carrying multiple <em>soul chains</em> doesn't increase the DC of the save, but the carrier must attempt the save once for each chain they carry.</p>",
+      "level": 6,
+      "price": "",
+      "traits": [
+        "cursed",
+        "disarm",
+        "finesse",
+        "trip"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 75,
+    "max": 75,
+    "note": "eternal damnation, void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "fire",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Enternal Damnation",
+      "actions": null,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p>As long as its <em>soul chain</em> remains intact, a forge-spurned can't be truly destroyed. It rises again fully healed at the next sundown, even if its physical body was destroyed.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Searing Heat",
+      "actions": null,
+      "traits": [
+        "fire"
+      ],
+      "description": "<p>A creature that touches the forge-spurned (including Grappling it or hitting it with an unarmed attack) takes 2d6 Fire Damage damage (Basic DC 21 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Soul Chain",
+      "bonus": 15,
+      "traits": [
+        "disarm",
+        "trip"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+5",
+          "type": "slashing"
+        },
+        {
+          "roll": "1d6",
+          "type": "fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+5)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Warhammer",
+      "bonus": 14,
+      "traits": [
+        "shove"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+7)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Forge Breath",
+      "actions": 2,
+      "traits": [
+        "divine",
+        "fire"
+      ],
+      "description": "<p>The forge-spurned breathes a cloud of stinging soot, ash, and glowing embers. This can affect either a 30ft Cone or a 20ft Burst centered on the forge-spurned and persists for 1d4 rounds.</p>\n<p>Each creature that moves into or starts their turn in the area takes 6d6 Fire Damage damage, with a Basic DC 21 Reflex Saving Throw save. A creature that fails its save is also Blinded for 1 minute.</p>\n<p>Creatures within the cloud are Concealed, though not from the forge-spurned.</p>\n<p>The forge-spurned can't use Forge Breath again until it has used Inflate Bellows.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Inflate Bellows",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The forge-spurned has used Forge Breath.</p>\n<hr />\n<p><strong>Effect</strong> The forge-spurned re-inflates its flaccid lungs, enabling it to use Forge Breath again.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Soul Chain",
+      "actions": null,
+      "traits": [
+        "divine",
+        "fire"
+      ],
+      "description": "<p>If a creature is slain by an attack from the <em>soul chain</em> and the forge-spurned is able to retain the creature's corpse, it can bind the creature's soul into the soul chain (as Seize Soul) with a day of work at a forge and a DC 20 Crafting  check.</p>\n<p>An individual whose soul is bound in this way can't be resurrected unless the soul chain is destroyed (Hardness 10, 40 HP, BT 20).</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 20"
+}

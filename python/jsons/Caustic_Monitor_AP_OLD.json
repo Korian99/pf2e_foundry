@@ -1,0 +1,230 @@
+{
+  "initiative": 0,
+  "initiativebonus": 22,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Caustic Monitor AP OLD",
+  "type": "Creature",
+  "level": 13,
+  "traits": [
+    "Rare",
+    "huge",
+    "Animal"
+  ],
+  "source": "Pathfinder #166: Despair on Danger Island",
+  "remaster": false,
+  "senses": [
+    "Low light vision",
+    "Scent 30ft imprecise"
+  ],
+  "perception": {
+    "value": 22,
+    "note": "Low light vision, Scent 30ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": -2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 34,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 235,
+    "max": 235,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "40 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 27,
+      "traits": [
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+9",
+          "type": "piercing"
+        },
+        {
+          "roll": "2d8",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+9)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(2d8)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [
+        "caustic-monitor-venom",
+        "improved-grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Talon",
+      "bonus": 27,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+13",
+          "type": "slashing"
+        },
+        {
+          "roll": "2d6",
+          "type": "bleed"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+13)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "bleed"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Caustic Monitor Venom",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 32 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 4d6 Poison Damage damage and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> 4d6 Poison Damage damage and Enfeebled 2 (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Caustic Spray",
+      "actions": 2,
+      "traits": [
+        "acid"
+      ],
+      "description": "<p>The caustic monitor spits a spray of corrosive bile that deals 5d8 Acid Damage damage in a 20ft Cone (Basic DC 32 Reflex Saving Throw save). It can't use Caustic Spray again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Corrosive Flesh",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A creature that touches the caustic monitor takes 2d8 Acid Damage damage (Basic DC 32 Fortitude Saving Throw save).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Gnashing Grip",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature grabbed by the caustic monitor's jaws fails a check to Escape.</p>\n<hr />\n<p><strong>Effect</strong> The caustic monitor's jaws deal 2d8 Piercing Damage damage and the triggering creature is exposed to caustic monitor venom.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Lurching Charge",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The caustic monitor Strides twice, then makes a jaws Strike. If the monitor moved at least 20 feet away from its starting position, it gains a +2 circumstance bonus to this attack roll.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Improved Grab",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Improved Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with as a free action. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead spend an action to use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 31"
+}

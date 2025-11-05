@@ -213,6 +213,7 @@ def get_common_0(npc, foundry_json, npc_type, lores=[]):
         "level": sys["details"]["level"]["value"],
         "traits": traits,
         "source": sys["details"]["publication"]["title"],
+        "remaster": sys["details"]["publication"]["remaster"],
     })
 
     return npc

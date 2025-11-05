@@ -1,0 +1,200 @@
+{
+  "initiative": 0,
+  "initiativebonus": 25,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Elder Elemental Tsunami OLD",
+  "type": "Creature",
+  "level": 14,
+  "traits": [
+    "Common",
+    "huge",
+    "Aquatic",
+    "Elemental",
+    "Water"
+  ],
+  "source": "Pathfinder Kingmaker",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 25,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Thalassic"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 8
+  },
+  "dexterity": {
+    "value": 8
+  },
+  "constitution": {
+    "value": 8
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Water-Bound",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When not touching water, the elemental tsunami is Slowed 1 and can't use reactions.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 36,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 260,
+    "max": 260,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Vortex",
+      "actions": null,
+      "traits": [
+        "aura",
+        "water"
+      ],
+      "description": "<p>50 feet. Water in the area that is in the same body of water as the elemental tsunami is difficult terrain for Swimming creatures that don't have the water trait.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "35 ft, swim 100ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Wave",
+      "bonus": 30,
+      "traits": [
+        "reach-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d12+16",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+16)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "blinding-sickness",
+        "push-or-pull-10-feet"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Blinding Sickness",
+      "actions": null,
+      "traits": [
+        "disease"
+      ],
+      "description": "<p>A creature that takes damage from an elder elemental tsunami's wave Strike or Surge is exposed to blinding sickness.</p>\n<hr />\n<p><strong>Saving Throw</strong> DC 34 Fortitude Saving Throw</p>\n<p><strong>Stage 1</strong> carrier with no ill effects</p>\n<p><strong>Stage 2</strong> Enfeebled 1 (1 day)</p>\n<p><strong>Stage 3</strong> Enfeebled 2 (1 day)</p>\n<p><strong>Stage 4</strong> enfeebled 2 and permanently Blinded (1 day)</p>\n<p><strong>Stage 5</strong> Enfeebled 4 (1 day)</p>\n<p><strong>Stage 6</strong> Unconscious (1 day)</p>\n<p><strong>Stage 7</strong> death</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Drench",
+      "actions": 1,
+      "traits": [
+        "primal",
+        "water"
+      ],
+      "description": "<p>The elemental puts out all fires in a 20ft Emanation.</p>\n<p>It extinguishes all non-magical fires automatically and attempts to counteract magical fires (+20 counteract modifier).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Surge",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The elemental tsunami quickly expands its space to fill the area of its vortex. Creatures within the vortex's emanation take (6d12+8) Bludgeoning Damage damage (Basic DC 34 Fortitude Saving Throw save). A creature that fails this save is Pushed 20 feet. The elemental tsunami then retracts to its former space.</p>\n<p>A creature that takes damage is exposed to blinding sickness.</p>\n<p>The elemental tsunami can't Surge again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Push or Pull 10 feet",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The elemental tsunami can also pull the creature.</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Push in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Shove the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Push lists a distance, change the distance the creature is pushed on a success to that distance.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 32"
+}

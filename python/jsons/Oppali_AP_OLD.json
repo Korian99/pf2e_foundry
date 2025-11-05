@@ -1,0 +1,213 @@
+{
+  "initiative": 0,
+  "initiativebonus": 19,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Oppali AP OLD",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Rare",
+    "Large",
+    "Plant"
+  ],
+  "source": "Pathfinder #190: The Choosing",
+  "remaster": false,
+  "senses": [
+    "Low light vision",
+    "soundsense (precise) 60 feet"
+  ],
+  "perception": {
+    "value": 19,
+    "note": "Low light vision, soundsense (precise) 60 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 21,
+      "note": [
+        "in forests or jungles 23"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 7
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": -1
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Soundsense (Precise) 60 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p>An oppali's sense of hearing is a precise sense to a range of 60 feet.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 30,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 175,
+    "max": 175,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Energizing Incompetence",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within 30 feet critically fails an attack against the oppali</p>\n<hr />\n<p><strong>Effect</strong> The attack instead becomes a failure, and the oppali becomes Quickened 1 for 1 round. It can use this extra action to Step, Stride, or Strike.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Vine",
+      "bonus": 23,
+      "traits": [
+        "finesse",
+        "reach-15",
+        "trip"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8 + 11",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8 + 11)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "drain-luck"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Staccato Blast",
+      "bonus": 23,
+      "traits": [
+        "sonic"
+      ],
+      "damageRolls": [
+        {
+          "roll": "6d6",
+          "type": "sonic"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(6d6)*2",
+          "type": "sonic"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Drain Luck",
+      "actions": null,
+      "traits": [
+        "mental",
+        "misfortune",
+        "primal"
+      ],
+      "description": "<p>A creature other than an animal or plant hit by an oppali's vine Strike must attempt a DC 29 Fortitude Saving Throw saving throw twice, taking the lower result as the actual result.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Drain Luck for 24 hours.</p>\n<p><strong>Success</strong> The creature takes 2d6 Poison Damage damage. Until the start of the creature's next turn, the creature must roll twice and take the worse result on all checks.</p>\n<p>Effect: Drain Luck (Success)</p>\n<p><strong>Failure</strong> The creature takes 2d6 Persistent,poison Damage damage. For 1 round, the creature must roll twice and take the worse result on all checks.</p>\n<p>Effect: Drain Luck (Failure)</p>\n<p><strong>Critical Failure</strong> The creature takes 4d6 Persistent,poison Damage damage. For 1 minute, the creature must roll twice and take the worse result on all checks.</p>\n<p>Effect: Drain Luck (Critical Failure)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Trumpet Blast",
+      "actions": 2,
+      "traits": [
+        "primal",
+        "sonic"
+      ],
+      "description": "<p>The oppali emits a massive blast of discordant noise that deals 9d8 Sonic Damage damage to creatures within a 60ft Cone (Basic DC 29 Fortitude Saving Throw). Creatures who fail the save are also Deafened for 1 round. The oppali can't use its Trumpet Blast again for 1d4 rounds or until it takes at least 20 points of sonic damage from a single source (whichever comes first).</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 27"
+}

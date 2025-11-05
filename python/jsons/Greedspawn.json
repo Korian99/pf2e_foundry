@@ -11,10 +11,10 @@
   "traits": [
     "Common",
     "Medium",
-    "Aberration",
-    "Evil"
+    "Aberration"
   ],
-  "source": "Pathfinder #200: Seven Dooms for Sandpoint",
+  "source": "Pathfinder Monster Core",
+  "remaster": true,
   "senses": [
     "Darkvision",
     "Scent 30ft imprecise"
@@ -83,18 +83,31 @@
   "charisma": {
     "value": 1
   },
-  "items": [],
+  "items": [
+    {
+      "name": "Glaive",
+      "quantity": 1,
+      "description": "<p>This polearm consists of a long, single-edged blade on the end of a 7-foot pole. It is extremely effective at delivering lethal cuts at a distance.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": [
+        "deadly-d8",
+        "forceful",
+        "reach"
+      ]
+    }
+  ],
   "generalAbilities": [
     {
       "name": "Sin Scent (Imprecise) 30 feet",
       "actions": null,
       "traits": [],
-      "description": "<p>A sinspawn can smell creatures that reflect its sin, as the scent ability. The GM determines which creatures are appropriately sinful.</p>",
+      "description": "<p>A sinspawn can smell creatures that reflect its sin as the scent ability. The GM determines which creatures are appropriately sinful.</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>Scent involves sensing creatures or objects by smell, and is usually a vague sense. The range is listed in the ability, and it functions only if the creature or object being detected emits an aroma (for instance, incorporeal creatures usually do not exude an aroma).</p>\n<p>If a creature emits a heavy aroma or is upwind, the GM can double or even triple the range of scent abilities used to detect that creature, and the GM can reduce the range if a creature is downwind.</p></p></details></p>",
       "collapsed": false
     }
   ],
   "ac": {
-    "value": 18,
+    "value": 16,
     "note": "",
     "usedAttribute": "dexterity",
     "modifications": []
@@ -136,7 +149,7 @@
   "weaknesses": [],
   "defensiveAbilities": [
     {
-      "name": "Attack of Opportunity",
+      "name": "Reactive Strike",
       "actions": -1,
       "traits": [],
       "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
@@ -189,6 +202,33 @@
       "critRolls": [
         {
           "roll": "(1d6+4)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Glaive",
+      "bonus": 10,
+      "traits": [
+        "deadly-d8",
+        "forceful",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+4",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+4)*2",
           "type": "slashing"
         }
       ],

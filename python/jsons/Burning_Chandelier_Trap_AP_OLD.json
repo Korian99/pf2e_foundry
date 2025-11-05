@@ -1,0 +1,148 @@
+{
+  "initiative": 0,
+  "initiativebonus": 26,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Burning Chandelier Trap AP OLD",
+  "type": "Hazard",
+  "level": 15,
+  "traits": [
+    "Common",
+    "Medium",
+    "Magical",
+    "Mechanical"
+  ],
+  "source": "Pathfinder #160: Assault on Hunting Lodge Seven",
+  "remaster": false,
+  "stealth": {
+    "value": 26,
+    "note": "(master) or @Check[perception|dc:38|traits:action:seek] (master) to spot the trap's control panel"
+  },
+  "description": "<p>Four large flaming chandeliers swing wildly around the room.</p>",
+  "disable": "<p>DC 36 Thievery  (master) to disable a chandelier or Dispel Magic (8th rank; counteract DC 33) to permanently drain the magic from a chandelier. Any amount of cold damage that overcomes a chandelier's cold resistance extinguishes its flames and removes its persistent fire damage and flame dart attack. DC 41 Thievery  (legendary) to disable the entire trap from the hidden control panel in the southeast corner of the room.</p>",
+  "reset": "<p>The trap deactivates and resets 1 minute after there are no living creatures remaining in the room.</p>",
+  "routine": "<p>(4 actions) For every chandelier disabled, the trap's actions are reduced by 1. For each of the trap's actions, a different chandelier attacks a random creature in the room. A chandelier uses its swinging chandelier attack if it can, but it can't make melee attacks against creatures in the cage, the closet, or the gap between the two double doors leading into the vault. Against a creature it can't reach with a melee attack, it uses a flame dart attack instead. The trap doesn't take multiple attack penalties.</p>",
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Extending Chandeliers",
+      "actions": -1,
+      "traits": [
+        "occult"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature touches the cage door, the closet door, or any wooden stand</p>\n<hr />\n<p><strong>Effect</strong> Both double doors leading out of the room shut and lock; while the trap is active, the key doesn't work to open these doors (although their locks can be picked normally). The chandeliers drop several feet on elongated chains, allowing them to swing around the room. The closest chandelier to the triggering creature makes a swinging chandelier Strike against it. The trap then rolls initiative.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 36,
+    "note": null,
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "hardness": {
+    "value": 30
+  },
+  "fortitude": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 120,
+    "max": 120,
+    "note": "<strong>Panel Hardness</strong> 18; <strong>Panel HP</strong> 88 (BT 44); <strong>Resistances</strong> cold 15",
+    "modifications": []
+  },
+  "immunities": [
+    "critical-hits",
+    "precision"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Swinging Chandelier",
+      "bonus": 35,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "3d12+25",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "4d6",
+          "type": "persistent fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+25)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(4d6)*2",
+          "type": "persistent fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Flame Dart",
+      "bonus": 32,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "4d8+20",
+          "type": "fire"
+        },
+        {
+          "roll": "4d6",
+          "type": "persistent fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d8+20)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(4d6)*2",
+          "type": "persistent fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [],
+  "spellcastingEntries": [],
+  "recallKnowledge": ", DC 34"
+}

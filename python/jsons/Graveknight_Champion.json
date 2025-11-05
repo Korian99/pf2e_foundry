@@ -11,12 +11,11 @@
   "traits": [
     "Uncommon",
     "Medium",
-    "Evil",
-    "Lawful",
     "Undead",
     "Unholy"
   ],
-  "source": "Pathfinder #172: Secrets of the Temple-City",
+  "source": "Pathfinder Monster Core 2",
+  "remaster": true,
   "senses": [
     "Darkvision"
   ],
@@ -80,10 +79,10 @@
   },
   "items": [
     {
-      "name": "Greater Flaming Composite Shortbow",
+      "name": "Composite Shortbow",
       "quantity": 1,
       "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>",
-      "level": 0,
+      "level": 1,
       "price": "14 gp",
       "traits": [
         "deadly-d10",
@@ -91,11 +90,11 @@
       ]
     },
     {
-      "name": "Greater Flaming Greatpick",
+      "name": "Greatpick",
       "quantity": 1,
       "description": "<p>This pick has a longer handle and broader head than a regular pick. It is too heavy to wield in one hand.</p>",
       "level": 0,
-      "price": "2 gp",
+      "price": "1 gp",
       "traits": [
         "fatal-d12"
       ]
@@ -140,10 +139,11 @@
   "hp": {
     "value": 275,
     "max": 275,
-    "note": "void healing, rejuvenation",
+    "note": "rejuvenation, void healing",
     "modifications": []
   },
   "immunities": [
+    "bleed",
     "death-effects",
     "disease",
     "fire",
@@ -155,28 +155,19 @@
   "weaknesses": [],
   "defensiveAbilities": [
     {
-      "name": "Attack of Opportunity",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
-      "collapsed": false
-    },
-    {
       "name": "Clutching Armor",
       "actions": -1,
       "traits": [
         "arcane"
       ],
-      "description": "<p><strong>Trigger</strong> A creature attempts to move away from the graveknight</p>\n<hr />\n<p><strong>Effect</strong> The graveknight's armor animates and attempts to Grab the triggering creature. It makes an Athletics check to Grapple using the graveknight's Athletics modifier - 2. The armor can continue to Grapple the creature normally.</p>\n<p>Since the armor is grappling the creature, the graveknight doesn't need a free hand to do so.</p>",
+      "description": "<p><strong>Trigger</strong> A creature attempts to move away from the graveknight</p><hr /><p><strong>Effect</strong> The graveknight's armor animates and attempts to Grab the triggering creature. It makes an Athletics check to Grapple using the graveknight's Athletics modifier – 2.</p>\n<p>The armor can continue to Grapple the creature normally. Since the armor is grappling the creature, the graveknight doesn't need a free hand to do so.</p>",
       "collapsed": false
     },
     {
-      "name": "Rejuvenation",
-      "actions": null,
-      "traits": [
-        "divine"
-      ],
-      "description": "<p>When a graveknight is destroyed, its armor rebuilds its body over the course of 1d10 days-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating its armor (such as with Disintegrate), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>",
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
       "collapsed": false
     },
     {
@@ -192,7 +183,7 @@
     {
       "type": "melee",
       "name": "Greatpick",
-      "bonus": 31,
+      "bonus": 30,
       "traits": [
         "fatal-d12",
         "fire",
@@ -201,21 +192,13 @@
       "damageRolls": [
         {
           "roll": "3d10+16",
-          "type": "slashing"
-        },
-        {
-          "roll": "1d6",
-          "type": "fire"
+          "type": "piercing"
         }
       ],
       "critRolls": [
         {
           "roll": "(3d10+16)*2",
-          "type": "slashing"
-        },
-        {
-          "roll": "(1d6)*2",
-          "type": "fire"
+          "type": "piercing"
         }
       ],
       "effects": [],
@@ -260,7 +243,7 @@
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Composite Shortbow",
       "bonus": 28,
       "traits": [
@@ -273,24 +256,16 @@
         {
           "roll": "3d6+10",
           "type": "piercing"
-        },
-        {
-          "roll": "1d6",
-          "type": "fire"
         }
       ],
       "critRolls": [
         {
           "roll": "(3d6+10)*2",
           "type": "piercing"
-        },
-        {
-          "roll": "(1d6)*2",
-          "type": "fire"
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -301,16 +276,17 @@
       "name": "Channel Magic",
       "actions": 2,
       "traits": [],
-      "description": "<p>The graveknight redirects magical energies through its armor, allowing it to deliver magic through an attack.</p>\n<p>The graveknight Casts a Spell that takes 1 or 2 actions to cast and requires a spell attack roll. The effects of the spell don't occur immediately but are imbued into an attack instead. The graveknight then makes a melee Strike with a weapon or unarmed attack. The spell is coupled with the attack, using the attack roll result to determine the effects of both the Strike and the spell.</p>\n<p>This counts as two attacks for the graveknight's multiple attack penalty but doesn't apply the penalty until after it's completed Channeling Magic.</p>\n<p>The graveknight can't use Channel Magic again for 1d4 rounds.</p>",
+      "description": "<p>The graveknight redirects magical energies through its armor, allowing it to deliver magic through an attack. The graveknight Casts a Spell that takes 1 or 2 actions to cast and requires a spell attack modifier. The effects of the spell don't occur immediately but are imbued into an attack instead. The graveknight then makes a melee Strike with a weapon or unarmed attack. The spell is coupled with the attack, using the attack roll result to determine the effects of both the Strike and the spell. This counts as two attacks for the graveknight's multiple attack penalty but doesn't apply the penalty until after they've completed Channeling Magic. The graveknight can't use Channel Magic again for 1d4 rounds.</p>",
       "collapsed": false
     },
     {
       "name": "Devastating Blast",
       "actions": 2,
       "traits": [
-        "arcane"
+        "arcane",
+        "fire"
       ],
-      "description": "<p>The graveknight unleashes a 30ft Cone of energy. Creatures in the area take 8d12 Fire Damage damage (Basic DC 36 Reflex Saving Throw save).</p>\n<p>The graveknight can use this ability once every 1d4 rounds.</p>",
+      "description": "<p>The graveknight unleashes a 30ft Cone of energy. Creatures in the area take 9d12 Fire Damage damage (Basic DC 36 Reflex Saving Throw save).</p>\n<p>The graveknight can use this ability once every 1d4 rounds.</p>",
       "collapsed": false
     },
     {
@@ -320,7 +296,14 @@
         "arcane",
         "curse"
       ],
-      "description": "<p>This curse affects anyone who wears a graveknight's armor for at least 1 hour.</p>\n<hr />\n<p><strong>Saving Throw</strong> DC 36 Will Saving Throw save</p>\n<p><strong>Onset</strong> 1 hour</p>\n<p><strong>Stage 1</strong> Doomed 1 and cannot remove the armor (1 day)</p>\n<p><strong>Stage 2</strong> Doomed 2, speed penalty of -10 feet, and cannot remove the armor (1 day)</p>\n<p><strong>Stage 3</strong> dies and transforms into the armor's graveknight.</p>",
+      "description": "<p>This curse affects anyone who wears a graveknight's armor for at least 1 hour.</p><hr /><p><strong>Saving Throw</strong> DC 40 Will Saving Throw save</p>\n<p><strong>Onset</strong> 1 hour</p>\n<p><strong>Stage 1</strong> Doomed 1 and cannot remove the armor (1 day)</p>\n<p><strong>Stage 2</strong> Doomed 2, speed penalty of -10 feet, and cannot remove the armor (1 day)</p>\n<p><strong>Stage 3</strong> dies and transforms into the armor's graveknight.</p>\n<p>Effect: Graveknight's Curse</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Ruinous Weapons",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Any weapon or unarmed attack the graveknight uses gains the effects of a +1 greater striking weapon and a greater flaming weapon rune.</p>",
       "collapsed": false
     },
     {
@@ -333,7 +316,7 @@
   ],
   "spellcastingEntries": [
     {
-      "name": "Innate Divine Spells",
+      "name": "Divine Innate Spells",
       "type": "innate",
       "bonus": 25,
       "dc": 33,
@@ -344,55 +327,31 @@
       "autoHeightenLevel": 7,
       "cantrips": [
         {
-          "name": "Chill Touch",
+          "name": "Divine Lance",
           "type": "cantrip",
           "level": 1,
           "heightenedLevel": 1,
           "timesPrepared": 1,
           "traits": [
+            "attack",
             "concentrate",
             "manipulate",
-            "void"
+            "sanctified",
+            "spirit"
           ],
           "castingTime": "2",
           "duration": "",
-          "range": "touch",
-          "area": "",
-          "targets": "1 living or undead creature",
-          "save": "Basic fortitude",
-          "description": "<p>Siphoning void energy into yourself, your hand radiates a pale darkness. Your touch weakens the living and disorients undead, possibly even causing them to flee. The effect depends on whether the target is living or undead.</p>\n<ul>\n<li><strong>Living Creature</strong> The spell deals void damage equal to 1d4 plus your spellcasting modifier. The target attempts a basic Fortitude save, but is also Enfeebled 1 for 1 round on a critical failure.</li>\n<li><strong>Undead Creature</strong> The target is Off-Guard for 1 round on a failed Fortitude save. On a critical failure, the target is also Fleeing for 1 round unless it succeeds at a Will save.</li>\n</ul>\n<hr />\n<p><strong>Heightened (+1)</strong> The void damage to living creatures increases by 1d4.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "Bay2VJFvLsLfzUnl"
-        },
-        {
-          "name": "Daze",
-          "type": "cantrip",
-          "level": 1,
-          "heightenedLevel": 1,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "mental",
-            "nonlethal"
-          ],
-          "castingTime": "2",
-          "duration": "1 round",
           "range": "60 feet",
           "area": "",
           "targets": "1 creature",
-          "save": "Basic will",
-          "description": "<p>You cloud the target's mind and daze it with a mental jolt. The jolt deals mental damage equal to your spellcasting ability modifier; the target must attempt a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
+          "save": "",
+          "description": "<p>You unleash a beam of divine energy. Make a ranged spell attack against the target's AC. On a hit, the target takes 2d4 spirit damage (double damage on a critical hit).</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "iI2ARMKoepV3z8vl"
+          "id": "tcJuaTuMup7OTiFL"
         },
         {
           "name": "Light",
@@ -406,18 +365,18 @@
             "manipulate"
           ],
           "castingTime": "2",
-          "duration": "until the next time you make your daily preparations",
-          "range": "touch",
+          "duration": "until your next daily preparations",
+          "range": "120 feet",
           "area": "",
-          "targets": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally",
+          "targets": "",
           "save": "",
-          "description": "<p>The object glows, casting bright light in a 20-foot radius (and dim light for the next 20 feet) like a torch. If you cast this spell again on a second object, the light spell on the first object ends.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The object sheds bright light in a 60-foot radius (and dim light for the next 60 feet).</p>",
+          "description": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "OO4uZBnaxv4mxuGn"
+          "id": "qI97PgQomWWujCSi"
         },
         {
           "name": "Shield",
@@ -435,13 +394,38 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You raise a magical shield of force. This counts as using the Raise a Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use.</p>\n<p>While the spell is in effect, you can use the Shield Block reaction with your magic shield. The shield has Hardness 5. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes. Unlike a normal Shield Block, you can use the spell's reaction against the Force Barrage spell.</p>\n<p>Heightening the spell increases the shield's Hardness.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p>\n<p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p>\n<p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p>\n<p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>",
+          "description": "<p>You raise a magical shield of force. This counts as using the Raise a Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use.</p>\n<p>While the spell is in effect, you can use the Shield Block reaction with your magic shield. The shield has Hardness 5. You can use the spell's reaction to reduce damage from any spell or magical effect, even if it doesn't deal physical damage. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes.</p>\n<p></p>\n<p></p>\n<hr />\n<p><strong>Heightened (+2)</strong> The shield's Hardness increases by 5.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "65zxuVkJUuK3Jl3o"
+          "id": "IjBgtAVNEeHBHcJT"
+        },
+        {
+          "name": "Void Warp",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 living creature",
+          "save": "Basic fortitude",
+          "description": "<p>You call upon the Void to harm life force. The target takes 2d4 void damage with a basic Fortitude save. On a critical failure, the target is also Enfeebled 1 until the start of your next turn.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Jfa5sL2w8iMGij3K"
         }
       ],
       "lv1spells": [],
@@ -465,43 +449,46 @@
           "area": "20ft burst",
           "targets": "",
           "save": "Basic reflex",
-          "description": "<p>A roaring blast of fire appears at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "description": "<p>A roaring blast of fire detonates at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "8zqFjvkHhad5vy00"
+          "id": "jzbzZlRxCutDsbzo"
         }
       ],
       "lv5spells": [
         {
-          "name": "Cone of Cold",
+          "name": "Chilling Darkness",
           "type": "spell",
-          "level": 5,
+          "level": 3,
           "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
+            "attack",
             "cold",
             "concentrate",
-            "manipulate"
+            "darkness",
+            "manipulate",
+            "unholy"
           ],
           "castingTime": "2",
           "duration": "",
-          "range": "",
-          "area": "60ft cone",
-          "targets": "",
-          "save": "Basic reflex",
-          "description": "<p>Icy cold rushes forth from your hands. You deal 12d6 cold damage to creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You shoot an utterly cold ray of darkness tinged with unholy energy. Make a ranged spell attack. The ray deals 5d6 cold damage. If the target has the holy trait, you deal an extra 5d6 spirit damage.</p><hr /><p><strong>Critical Success</strong> The target takes double damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p>\n<p>If the ray passes through an area of magical light or targets a creature affected by magical light, <em>chilling darkness</em> attempts to counteract the light. If you need to determine whether the ray passes through an area of light, draw a line between yourself and the spell's target.</p><hr /><p><strong>Heightened (+1)</strong> The cold damage increases by 2d6, and the spirit damage against holy creatures increases by 2d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Qj1qMUuS40KTDo4s"
+          "id": "AxslIlPWnGuWbeyL"
         },
         {
-          "name": "Flame Strike",
+          "name": "Divine Immolation",
           "type": "spell",
           "level": 5,
           "heightenedLevel": 5,
@@ -509,26 +496,28 @@
           "traits": [
             "concentrate",
             "fire",
-            "manipulate"
+            "manipulate",
+            "sanctified",
+            "spirit"
           ],
           "castingTime": "2",
           "duration": "",
           "range": "120 feet",
-          "area": "10ft cylinder",
+          "area": "20ft burst",
           "targets": "",
           "save": "Basic reflex",
-          "description": "<p><strong>Area:</strong> 10-foot radius, 40-foot-tall cylinder</p>\n<hr />\n<p>You call a rain of divine fire that plummets down from above, dealing 8d6 fire damage. Because the flame is infused with divine energy, creatures in the area apply only half their usual fire resistance. Creatures that are immune to fire, instead of gaining the usual benefit of immunity, treat the results of their saving throws as one degree of success better.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "description": "<p>Divine flames scour creatures within the area. Creatures take 6d6 fire damage and (@item.level -3)d6 Persistent,fire Damage damage. The divine power within the flames scorches the spirit as well; a creature takes spirit damage instead of fire damage from divine immolation if that would be more detrimental to the creature (as determined by the GM).</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and no persistent damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and persistent damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and double persistent damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6 and persistent damage increases by 1d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "fLbDjMxabOApzPy6"
+          "id": "CZwaMRAbFlgXKkMG"
         }
       ],
       "lv6spells": [
         {
-          "name": "Scorching Ray",
+          "name": "Spiritual Armament",
           "type": "spell",
           "level": 2,
           "heightenedLevel": 6,
@@ -536,22 +525,23 @@
           "traits": [
             "attack",
             "concentrate",
-            "fire",
-            "manipulate"
+            "manipulate",
+            "sanctified",
+            "spirit"
           ],
-          "castingTime": "1 to 3",
-          "duration": "",
-          "range": "60 feet",
+          "castingTime": "2",
+          "duration": "Sustained up to 1 minute",
+          "range": "120 feet",
           "area": "",
-          "targets": "1 or more creatures",
+          "targets": "1 creature",
           "save": "",
-          "description": "<p>You fire a ray of heat and flame. Make a spell attack roll against a single creature. On a hit, the target takes 2d6 fire damage, and on a critical hit, the target takes double damage.</p>\n<p>For each additional action you use when Casting the Spell, you can fire an additional ray at a different target, to a maximum of three rays targeting three different targets for 3 actions. These attacks each increase your multiple attack penalty, but you don't increase your multiple attack penalty until after you make all the spell attack rolls for <em>scorching ray</em>. If you spend 2 or more actions Casting the Spell, the damage increases to 4d6 fire damage on a hit, and it still deals double damage on a critical hit.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage to each target increases by 1d6 for the 1-action version, or by 2d6 for the 2-action and 3-action versions.</p>",
+          "description": "<p>You create a ghostly, magical echo of one weapon you're wielding or wearing and fling it. Attempt a spell attack roll against the target's AC, dealing 2d8 damage on a hit (or double damage on a critical hit). The damage type is the same as the chosen weapon (or any of its types for a versatile weapon). The attack deals spirit damage instead if that would be more detrimental to the creature (as determined by the GM). This attack uses and contributes to your multiple attack penalty. After the attack, the weapon returns to your side. If you sanctify the spell, the attacks are sanctified as well. Each time you Sustain the spell, you can repeat the attack against any creature within 120 feet.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "ffUrCd00SNqL026z"
+          "id": "l2AqamdKLnAzycam"
         },
         {
           "name": "Fireball",
@@ -570,13 +560,13 @@
           "area": "20ft burst",
           "targets": "",
           "save": "Basic reflex",
-          "description": "<p>A roaring blast of fire appears at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "description": "<p>A roaring blast of fire detonates at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Fih7dCwBjx0eTWi9"
+          "id": "bD3pjjB9VRt1rMvx"
         }
       ],
       "lv7spells": [
@@ -596,19 +586,19 @@
           "castingTime": "2",
           "duration": "",
           "range": "500 feet",
-          "area": "",
+          "area": "60ft burst",
           "targets": "",
-          "save": "reflex",
-          "description": "<p>A globe of freezing darkness explodes in the area, dealing 8d10 cold damage to creatures in the area, plus 8d4 additional void damage to living creatures. Each creature in the area must attempt a Reflex save. If the globe overlaps with an area of magical light or affects a creature affected by magical light, eclipse burst attempts to counteract the light effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and becomes Blinded by the darkness for an unlimited duration.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The cold damage increases by 1d10 and the void damage against the living increases by 1d4.</p>",
+          "save": "Basic reflex",
+          "description": "<p>A globe of freezing darkness explodes in the area, dealing 8d10 cold damage to creatures in the area, plus an additional 8d4 void damage to living creatures. Each creature in the area must attempt a Reflex save.</p>\n<p>If the globe overlaps with an area of magical light or affects a creature affected by magical light, eclipse burst attempts to counteract the light effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and becomes Blinded by the darkness for an unlimited duration.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The cold damage increases by 1d10 and the void damage against the living increases by 1d4.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "NNsevKsIzfk4MFBZ"
+          "id": "9oSpMAR5aNTNyabO"
         },
         {
-          "name": "Finger of Death",
+          "name": "Execute",
           "type": "spell",
           "level": 7,
           "heightenedLevel": 7,
@@ -616,21 +606,22 @@
           "traits": [
             "concentrate",
             "death",
-            "manipulate"
+            "manipulate",
+            "void"
           ],
           "castingTime": "2",
           "duration": "",
           "range": "30 feet",
           "area": "",
-          "targets": "1 living creature",
+          "targets": "1 creature",
           "save": "Basic fortitude",
-          "description": "<p>You point your finger toward the target and speak a word of slaying. You deal 70 void damage to the target. If the damage from <em>finger of death</em> reduces the target to 0 Hit Points, the target dies instantly.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 10.</p>",
+          "description": "<p>You point at a creature and invoke the demise of all things. The target takes 70 void damage with a basic Fortitude save. If the target is undead or otherwise has void healing, the spell loses the death and void traits and gains the vitality trait, and the target takes 70 vitality damage with a basic Fortitude save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 10.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "kDQ06Lq8b8axEpJf"
+          "id": "v8UD00yhAUAFqWEr"
         }
       ],
       "lv8spells": [],
@@ -650,20 +641,20 @@
         "max": 0
       },
       "lv4slots": {
-        "current": 1,
-        "max": 1
+        "current": 0,
+        "max": 0
       },
       "lv5slots": {
-        "current": 2,
-        "max": 2
+        "current": 0,
+        "max": 0
       },
       "lv6slots": {
-        "current": 2,
-        "max": 2
+        "current": 0,
+        "max": 0
       },
       "lv7slots": {
-        "current": 2,
-        "max": 2
+        "current": 0,
+        "max": 0
       },
       "lv8slots": {
         "current": 0,

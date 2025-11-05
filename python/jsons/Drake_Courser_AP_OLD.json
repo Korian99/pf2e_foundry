@@ -1,0 +1,243 @@
+{
+  "initiative": 0,
+  "initiativebonus": 22,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Drake Courser AP OLD",
+  "type": "Creature",
+  "level": 12,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Chaotic",
+    "Cold",
+    "Dragon"
+  ],
+  "source": "Pathfinder #167: Ready? Fight!",
+  "remaster": false,
+  "senses": [
+    "Darkvision",
+    "Scent 30ft imprecise",
+    "snow vision"
+  ],
+  "perception": {
+    "value": 22,
+    "note": "Darkvision, Scent 30ft imprecise, snow vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Draconic",
+    "Tien"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 7
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Snow Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Snow doesn't impair a drake courser's vision; it ignores concealment from snowfall.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 32,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 230,
+    "max": 230,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "cold",
+    "paralyzed",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Attack of Opportunity (Special)",
+      "actions": -1,
+      "traits": [],
+      "description": "<p>Tail only. On a critical hit, the target is knocked Prone; if the target was using a move action, its movement ends.</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "35 ft, climb 35ft, fly 65ft, swim 35ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fangs",
+      "bonus": 25,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "3d12+11",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d6",
+          "type": "cold"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+11)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "cold"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 25,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+11",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+11)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "knockdown"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Battle Dance",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The drake courser makes two fangs Strikes and one tail Strike in any order. It can replace any of these Strikes with Demoralize or Step.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Buffeting Surge",
+      "actions": 1,
+      "traits": [
+        "move"
+      ],
+      "description": "<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> The drake courser moves up to twice its Speed. It can attempt to Trip with its tail once at any point during its movement.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Freezing Mist Breath",
+      "actions": 2,
+      "traits": [
+        "arcane",
+        "cold"
+      ],
+      "description": "<p>The drake spits a ball of liquid up to 60 feet that explodes into a 20ft Burst of freezing mist. Those in the burst take 13d6 Cold Damage damage (Basic DC 31 Reflex Saving Throw save). The mist cakes all surfaces in the area with a sheet of slippery ice that turns the area into difficult terrain for 2d4 rounds. It can't use Freezing Mist Breath again for 1d6 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Ice Climb (35 feet)",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A drake courser can climb on ice as though it had the listed climb Speed. It ignores difficult terrain and greater difficult terrain from ice and snow and doesn't risk falling when crossing ice.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Knockdown",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Trip the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana, DC 30"
+}

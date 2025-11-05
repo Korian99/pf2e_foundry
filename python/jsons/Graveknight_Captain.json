@@ -11,12 +11,11 @@
   "traits": [
     "Uncommon",
     "Medium",
-    "Evil",
-    "Lawful",
     "Undead",
     "Unholy"
   ],
-  "source": "Pathfinder #172: Secrets of the Temple-City",
+  "source": "Pathfinder Monster Core 2",
+  "remaster": true,
   "senses": [
     "Darkvision"
   ],
@@ -54,7 +53,7 @@
     },
     {
       "name": "Warfare Lore",
-      "modifier": 12,
+      "modifier": 13,
       "note": "",
       "usedAttribute": "intelligence",
       "modifications": []
@@ -80,7 +79,7 @@
   },
   "items": [
     {
-      "name": "Shock Warhammer",
+      "name": "Warhammer",
       "quantity": 1,
       "description": "<p>This weapon has a wooden shaft ending in a large, heavy metal head. The head of the hammer might be single-sided or double-sided, but it's always capable of delivering powerful bludgeoning blows.</p>",
       "level": 0,
@@ -102,8 +101,8 @@
   ],
   "generalAbilities": [],
   "ac": {
-    "value": 25,
-    "note": "",
+    "value": 24,
+    "note": "26 with shield raised",
     "usedAttribute": "dexterity",
     "modifications": []
   },
@@ -129,13 +128,14 @@
   "hp": {
     "value": 90,
     "max": 90,
-    "note": "void healing, rejuvination",
+    "note": "rejuvenation, void healing",
     "modifications": []
   },
   "immunities": [
+    "acid",
+    "bleed",
     "death-effects",
     "disease",
-    "electricity",
     "paralyzed",
     "poison",
     "unconscious"
@@ -144,19 +144,19 @@
   "weaknesses": [],
   "defensiveAbilities": [
     {
-      "name": "Attack of Opportunity",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
-      "collapsed": false
-    },
-    {
       "name": "Graveknight's Shield",
       "actions": null,
       "traits": [
         "arcane"
       ],
-      "description": "<p>The graveknight's curse extends to their shield, or the graveknight's armor uses a portion of itself to produce a shield.</p>\n<p>The graveknight has a shield that uses the statistics of a <em>Sturdy Shield (Minor)</em>.</p>\n<p>The shield is quasi-independent of the graveknight and automatically protects the graveknight from harm. When the shield is raised, it automatically uses Shield Block to reduce the damage of the first attack against the graveknight each round without the graveknight needing to spend their reaction to do so.</p>\n<p>The shield automatically rejuvenates with the rest of the graveknight and must be destroyed in the same manner as the graveknight's armor.</p>",
+      "description": "<p>The graveknight's curse extends to their shield, or the graveknight's armor uses a portion of itself to produce a shield. The graveknight has a shield that uses the statistics of a Sturdy Shield of a level no higher than the graveknight's level – 1. The shield is quasi-independent of the graveknight and automatically protects the graveknight from harm. When the shield is raised, it automatically uses Shield Block to reduce the damage of the first attack against the graveknight each round without the graveknight needing to spend their reaction to do so. The shield automatically rejuvenates with the rest of the graveknight and must be destroyed in the same manner as the graveknight's armor.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
       "collapsed": false
     },
     {
@@ -165,7 +165,7 @@
       "traits": [
         "divine"
       ],
-      "description": "<p>When a graveknight is destroyed, its armor rebuilds its body over the course of 1d10 days-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating its armor (such as with Disintegrate), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>",
+      "description": "<p>When a graveknight is destroyed, their armor rebuilds their body over the course of 1d10 days days—or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts. A graveknight can only be permanently destroyed by obliterating their armor (such as with Disintegrate), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>",
       "collapsed": false
     },
     {
@@ -183,7 +183,7 @@
       "name": "Warhammer",
       "bonus": 16,
       "traits": [
-        "electricity",
+        "acid",
         "magical",
         "shove"
       ],
@@ -194,7 +194,7 @@
         },
         {
           "roll": "1d6",
-          "type": "electricity"
+          "type": "acid"
         }
       ],
       "critRolls": [
@@ -204,7 +204,7 @@
         },
         {
           "roll": "(1d6)*2",
-          "type": "electricity"
+          "type": "acid"
         }
       ],
       "effects": [],
@@ -216,10 +216,10 @@
     {
       "type": "melee",
       "name": "Fist",
-      "bonus": 15,
+      "bonus": 16,
       "traits": [
+        "acid",
         "agile",
-        "electricity",
         "unarmed"
       ],
       "damageRolls": [
@@ -229,7 +229,7 @@
         },
         {
           "roll": "1d6",
-          "type": "electricity"
+          "type": "acid"
         }
       ],
       "critRolls": [
@@ -239,7 +239,7 @@
         },
         {
           "roll": "(1d6)*2",
-          "type": "electricity"
+          "type": "acid"
         }
       ],
       "effects": [],
@@ -256,7 +256,7 @@
       "traits": [
         "arcane"
       ],
-      "description": "<p>The graveknight unleashes a 30ft Cone of energy. Creatures in the area take 4d12 Electricity Damage damage (Basic DC 24 Reflex Saving Throw save).</p>\n<p>The graveknight can use this ability once every 1d4 rounds.</p>",
+      "description": "<p>The graveknight unleashes a 30ft Cone of energy. Creatures in the area take 4d12 Acid Damage damage (Basic DC 24 Reflex Saving Throw save).</p>\n<p>The graveknight can use this ability once every 1d4 rounds.</p>",
       "collapsed": false
     },
     {
@@ -266,7 +266,14 @@
         "arcane",
         "curse"
       ],
-      "description": "<p>This curse affects anyone who wears a graveknight's armor for at least 1 hour.</p>\n<hr />\n<p><strong>Saving Throw</strong> DC 24 Will Saving Throw save</p>\n<p><strong>Onset</strong> 1 hour</p>\n<p><strong>Stage 1</strong> Doomed 1 and cannot remove the armor (1 day)</p>\n<p><strong>Stage 2</strong> Doomed 2, speed penalty of -10 feet, and cannot remove the armor (1 day)</p>\n<p><strong>Stage 3</strong> dies and transforms into the armor's graveknight.</p>",
+      "description": "<p>This curse affects anyone who wears a graveknight's armor for at least 1 hour</p>\n<p><strong>Saving Throw</strong> DC 24 Will Saving Throw save</p>\n<p><strong>Onset</strong> 1 hour</p>\n<p><strong>Stage 1</strong> Doomed 1 and can't remove armor (1 day)</p>\n<p><strong>Stage 2</strong> Doomed 2, –10-foot status penalty to Speeds, and can't remove armor (1 day)</p>\n<p><strong>Stage 3</strong> dies and transforms into the armor's graveknight.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Ruinous Weapons",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Any weapon or unarmed attack the graveknight uses gains the effects of a +1 striking weapon and a caustic weapon rune.</p>",
       "collapsed": false
     },
     {

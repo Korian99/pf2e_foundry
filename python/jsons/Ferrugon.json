@@ -9,15 +9,14 @@
   "type": "Creature",
   "level": 12,
   "traits": [
-    "Uncommon",
+    "Common",
     "Medium",
     "Devil",
-    "Evil",
     "Fiend",
-    "Lawful",
     "Unholy"
   ],
-  "source": "Pathfinder #190: The Choosing",
+  "source": "Pathfinder Monster Core 2",
+  "remaster": true,
   "senses": [
     "Greater darkvision"
   ],
@@ -32,7 +31,7 @@
     "Diabolic",
     "Draconic",
     "Empyrean",
-    "Petran",
+    "Talican",
     "telepathy 100 feet"
   ],
   "skills": [
@@ -162,7 +161,7 @@
       "name": "Metallic",
       "actions": null,
       "traits": [],
-      "description": "<p>A ferrugon is a metallic creature and thus affected by effects such as Rusting Grasp.</p>",
+      "description": "<p>A ferrugon is a metallic creature and thus affected by effects such as the circumstance penalty inflicted by Thunderstrike.</p>",
       "collapsed": false
     },
     {
@@ -173,7 +172,7 @@
         "linguistic",
         "mental"
       ],
-      "description": "<p><strong>Trigger</strong> A non-devil creature within 30 feet of the ferrugon succeeds (but doesn't critically succeed) at an attack roll, skill check, or saving throw</p>\n<hr />\n<p><strong>Effect</strong> The ferrugon whispers subversive messages to the triggering creature, causing it to become overly confident in its abilities, while in fact it becomes less accomplished overall. The target must attempt a DC 32 Will Saving Throw save. On a failure, the target gains a +2 status bonus to saving throws against fear effects but also takes a –2 penalty to all attack rolls and skill checks for 1 hour. During this time, the victim can't benefit from Aid reactions, use healing effects on themselves, or use Take Cover or Raise a Shield actions, as these actions seem unnecessary to the creature at this time. Similar defensive actions might not be available to the victim as well, at the GM's discretion. The target is then temporarily immune to Vainglorious Whispers for 24 hours.</p>",
+      "description": "<p><strong>Trigger</strong> A non-devil creature within 30 feet of the ferrugon succeeds (but doesn't critically succeed) at an attack roll, skill check, or saving throw</p><hr /><p><strong>Effect</strong> The ferrugon whispers subversive messages to the triggering creature, causing it to become overly confident in its abilities, while in fact it becomes less accomplished overall. The target must attempt a DC 32 Will Saving Throw save. On a failure, the target gains a +2 status bonus to saving throws against fear effects but also takes a –2 penalty to all attack rolls and skill checks for 1 hour. During this time, the victim can't benefit from Aid reactions, use healing effects on themselves, or use Take Cover or Raise a Shield actions, as these actions seem unnecessary to the creature at this time. Similar defensive actions might not be available to the victim as well, at the GM's discretion. The target is then temporarily immune to Vainglorious Whispers for 24 hours.</p>\n<p>Effect: Vainglorious Whispers</p>",
       "collapsed": false
     }
   ],
@@ -192,22 +191,14 @@
       ],
       "damageRolls": [
         {
-          "roll": "3d8 + 13",
+          "roll": "3d8+16",
           "type": "bludgeoning"
-        },
-        {
-          "roll": "1d6",
-          "type": "spirit"
         }
       ],
       "critRolls": [
         {
-          "roll": "(3d8 + 13)*2",
+          "roll": "(3d8+16)*2",
           "type": "bludgeoning"
-        },
-        {
-          "roll": "(1d6)*2",
-          "type": "spirit"
         }
       ],
       "effects": [],
@@ -229,21 +220,13 @@
       ],
       "damageRolls": [
         {
-          "roll": "1d6",
-          "type": "spirit"
-        },
-        {
-          "roll": "3d4 + 13",
+          "roll": "3d4+16",
           "type": "slashing"
         }
       ],
       "critRolls": [
         {
-          "roll": "(1d6)*2",
-          "type": "spirit"
-        },
-        {
-          "roll": "(3d4 + 13)*2",
+          "roll": "(3d4+16)*2",
           "type": "slashing"
         }
       ],
@@ -256,12 +239,11 @@
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Iron Feather",
       "bonus": 23,
       "traits": [
         "cold-iron",
-        "evil",
         "magical",
         "unholy"
       ],
@@ -280,7 +262,7 @@
       "effects": [
         "ferrugon-tetanus"
       ],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -321,31 +303,35 @@
       "lv3spells": [],
       "lv4spells": [
         {
-          "name": "Creation",
+          "name": "Suggestion",
           "type": "spell",
           "level": 4,
           "heightenedLevel": 4,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "incapacitation",
+            "linguistic",
+            "manipulate",
+            "mental",
+            "subtle"
           ],
-          "castingTime": "1 minute",
-          "duration": "1 hour",
-          "range": "0 feet",
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "30 feet",
           "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You conjure a temporary object from eldritch energy. It must be of vegetable matter (such as wood or paper) and 5 cubic feet or smaller. It can't rely on intricate artistry or complex moving parts, never fulfills a cost or the like, and can't be made of precious materials or materials with a rarity of uncommon or higher. It is obviously temporarily conjured, and thus can't be sold or passed off as a genuine item.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The item is metal and can include common minerals, like feldspar or quartz.</p>",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>Your honeyed words are difficult for creatures to resist. You suggest a course of action to the target, which must be phrased in such a way as to seem like a logical course of action to the target and can't be self-destructive or obviously against the target's self-interest. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and knows you tried to control it.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target immediately follows your suggestion. The spell has a duration of 1 minute, or until the target has completed a finite suggestion or the suggestion becomes self-destructive or has other obvious negative effects.</p>\n<p><strong>Critical Failure</strong> As failure, but the base duration is 1 hour.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "0A3OIUCMJTx0n2I1"
+          "id": "PBvTHDM3nc8F8LUG"
         },
         {
-          "name": "Dimension Door (At Will)",
+          "name": "Translocate (at will)",
           "type": "spell",
           "level": 4,
           "heightenedLevel": 4,
@@ -361,112 +347,13 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "BOplMTfqpVErawrC"
-        },
-        {
-          "name": "Rusting Grasp",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 4,
-          "timesPrepared": 3,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "touch",
-          "area": "",
-          "targets": "1 metal creature, 1 non-magical metal hazard, or 1 non-magical metal item of up to 1 Bulk",
-          "save": "Basic fortitude",
-          "description": "<p>You cause the target to rapidly rust. This magical rust can affect nonferrous materials, but the target must be all or mostly metal. Skymetals such as adamantine and orichalcum are immune to this rust, and the GM might determine other precious materials are similarly resilient. Ultimately, the GM decides if an object or creature can be targeted with this spell.</p>\n<p>All damage from this spell ignores Hardness. If the spell causes persistent damage from rust, a creature can attempt to scrape off the rust to assist the target in recovering from the persistent damage (reducing the DC of the flat check to end persistent damage to 10 and granting an immediate flat check). The effect of the spell depends on its target.</p>\n<ul>\n<li><strong>Creature or Hazard</strong> A creature or hazard must be made of all or mostly metal to be affected (this includes many mechanical traps). The grasp deals 8d6 damage (basic Fortitude save), plus 2d6 Persistent Damage on a failed save. Touching a hazard to affect it with this spell might trigger the hazard, as determined by the GM.</li>\n<li>\n<p><strong>Item</strong> The rust deals 2d6 damage, subject to a basic Reflex save by the creature wearing or holding the item; if the item is unattended, it automatically gets a critical failure. On a failed save, the item also takes 1d6 Persistent Damage. For an attended item, this persistent damage occurs at the end of the attending creature's turns; if the item was unattended when you Cast the Spell, the damage happens at the end of your turns.</p>\n<p>When targeting armor someone is wearing, its Bulk is 1 higher than the listed value, since carrying armor is more cumbersome than wearing it. Thin iron or steel items, such as weapons, have 20 HP and a Broken Threshold of 10, and thicker iron or steel items, such as most suits of armor, have 36 HP and a Broken Threshold of 18.</p>\n</li>\n</ul>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the initial damage to creatures or hazards by 2d6, and increase the maximum Bulk of an item you can target by 1.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "rRCILJ1MeTqkSPeC"
-        },
-        {
-          "name": "Rusting Grasp",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 4,
-          "timesPrepared": 3,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "touch",
-          "area": "",
-          "targets": "1 metal creature, 1 non-magical metal hazard, or 1 non-magical metal item of up to 1 Bulk",
-          "save": "Basic fortitude",
-          "description": "<p>You cause the target to rapidly rust. This magical rust can affect nonferrous materials, but the target must be all or mostly metal. Skymetals such as adamantine and orichalcum are immune to this rust, and the GM might determine other precious materials are similarly resilient. Ultimately, the GM decides if an object or creature can be targeted with this spell.</p>\n<p>All damage from this spell ignores Hardness. If the spell causes persistent damage from rust, a creature can attempt to scrape off the rust to assist the target in recovering from the persistent damage (reducing the DC of the flat check to end persistent damage to 10 and granting an immediate flat check). The effect of the spell depends on its target.</p>\n<ul>\n<li><strong>Creature or Hazard</strong> A creature or hazard must be made of all or mostly metal to be affected (this includes many mechanical traps). The grasp deals 8d6 damage (basic Fortitude save), plus 2d6 Persistent Damage on a failed save. Touching a hazard to affect it with this spell might trigger the hazard, as determined by the GM.</li>\n<li>\n<p><strong>Item</strong> The rust deals 2d6 damage, subject to a basic Reflex save by the creature wearing or holding the item; if the item is unattended, it automatically gets a critical failure. On a failed save, the item also takes 1d6 Persistent Damage. For an attended item, this persistent damage occurs at the end of the attending creature's turns; if the item was unattended when you Cast the Spell, the damage happens at the end of your turns.</p>\n<p>When targeting armor someone is wearing, its Bulk is 1 higher than the listed value, since carrying armor is more cumbersome than wearing it. Thin iron or steel items, such as weapons, have 20 HP and a Broken Threshold of 10, and thicker iron or steel items, such as most suits of armor, have 36 HP and a Broken Threshold of 18.</p>\n</li>\n</ul>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the initial damage to creatures or hazards by 2d6, and increase the maximum Bulk of an item you can target by 1.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "rRCILJ1MeTqkSPeC"
-        },
-        {
-          "name": "Rusting Grasp",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 4,
-          "timesPrepared": 3,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "touch",
-          "area": "",
-          "targets": "1 metal creature, 1 non-magical metal hazard, or 1 non-magical metal item of up to 1 Bulk",
-          "save": "Basic fortitude",
-          "description": "<p>You cause the target to rapidly rust. This magical rust can affect nonferrous materials, but the target must be all or mostly metal. Skymetals such as adamantine and orichalcum are immune to this rust, and the GM might determine other precious materials are similarly resilient. Ultimately, the GM decides if an object or creature can be targeted with this spell.</p>\n<p>All damage from this spell ignores Hardness. If the spell causes persistent damage from rust, a creature can attempt to scrape off the rust to assist the target in recovering from the persistent damage (reducing the DC of the flat check to end persistent damage to 10 and granting an immediate flat check). The effect of the spell depends on its target.</p>\n<ul>\n<li><strong>Creature or Hazard</strong> A creature or hazard must be made of all or mostly metal to be affected (this includes many mechanical traps). The grasp deals 8d6 damage (basic Fortitude save), plus 2d6 Persistent Damage on a failed save. Touching a hazard to affect it with this spell might trigger the hazard, as determined by the GM.</li>\n<li>\n<p><strong>Item</strong> The rust deals 2d6 damage, subject to a basic Reflex save by the creature wearing or holding the item; if the item is unattended, it automatically gets a critical failure. On a failed save, the item also takes 1d6 Persistent Damage. For an attended item, this persistent damage occurs at the end of the attending creature's turns; if the item was unattended when you Cast the Spell, the damage happens at the end of your turns.</p>\n<p>When targeting armor someone is wearing, its Bulk is 1 higher than the listed value, since carrying armor is more cumbersome than wearing it. Thin iron or steel items, such as weapons, have 20 HP and a Broken Threshold of 10, and thicker iron or steel items, such as most suits of armor, have 36 HP and a Broken Threshold of 18.</p>\n</li>\n</ul>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the initial damage to creatures or hazards by 2d6, and increase the maximum Bulk of an item you can target by 1.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "rRCILJ1MeTqkSPeC"
-        },
-        {
-          "name": "Suggestion",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 4,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "incapacitation",
-            "linguistic",
-            "manipulate",
-            "mental"
-          ],
-          "castingTime": "2",
-          "duration": "varies",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "will",
-          "description": "<p>Your honeyed words are difficult for creatures to resist. You suggest a course of action to the target, which must be phrased in such a way as to seem like a logical course of action to the target and can't be self-destructive or obviously against the target's self-interest. The target must attempt a Will save.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected and knows you tried to control it.</p>\n<p><strong>Success</strong> The target is unaffected and thinks you were talking to them normally, not casting a spell on them.</p>\n<p><strong>Failure</strong> The target immediately follows your suggestion. The spell has a duration of 1 minute, or until the target has completed a finite suggestion or the suggestion becomes self-destructive or has other obvious negative effects.</p>\n<p><strong>Critical Failure</strong> As failure, but the base duration is 1 hour.</p>\n<hr /><p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "BY8ARit1Bzi6o4ov"
+          "id": "aUCR74haC1bXJSX3"
         }
       ],
       "lv5spells": [
@@ -493,10 +380,34 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "R1YYVcpt8jmqLYFd"
+          "id": "AhM1JXCImAX6Zu9M"
         },
         {
-          "name": "Dimension Door",
+          "name": "Creation",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "1 minute",
+          "duration": "1 hour",
+          "range": "0 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You conjure a temporary object from magical energy. It must consist of earthen or plant-derived matter (such as wood, paper, brick, or stone) and be 5 cubic feet or smaller. It can't rely on intricate artistry or complex moving parts, never fulfills a cost or the like, and can't be made of precious materials or materials with a rarity of uncommon or higher. It is obviously temporarily conjured, and thus can't be sold or passed off as a genuine item. The spell gains the appropriate trait for the item created, typically earth, plant, or wood.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The item is metal and can include common minerals, like feldspar or quartz. The spell gains the metal trait if used to create a metal object</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "NECiD0M7x3RJLkbj"
+        },
+        {
+          "name": "Translocate",
           "type": "spell",
           "level": 4,
           "heightenedLevel": 5,
@@ -512,16 +423,16 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "5rWwo0jkAOClt4HZ"
+          "id": "dGcGPtLJd8zonlZk"
         },
         {
-          "name": "Wall of Stone",
+          "name": "Wall of Stone (wall is made of rusty iron, not stone)",
           "type": "spell",
           "level": 5,
           "heightenedLevel": 5,
@@ -537,16 +448,16 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You shape a wall of rusty iron. You create a 1-inch-thick wall of rust up to 120 feet long, and 20 feet high. You can shape the wall's path, placing each 5 feet of the wall on the border between squares. The wall doesn't need to stand vertically, so you can use it to form a bridge or set of stairs, for example. You must conjure the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost.</p>\n<p>Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 14, and 50 Hit Points, and it's immune to critical hits and precision damage. A destroyed section of the wall can be moved through, but the rubble created from it is difficult terrain.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of each section of the wall increase by 15.</p>",
+          "description": "<p>You shape a wall of solid stone. You create a 1-inch-thick wall of stone up to 120 feet long, and 20 feet high. You can shape the wall's path, placing each 5 feet of the wall on the border between squares. The wall doesn't need to stand vertically, so you can use it to form a bridge or set of stairs, for example. You must conjure the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost.</p>\n<p>Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 14, and 50 Hit Points, and it's immune to critical hits and precision damage. A destroyed section of the wall can be moved through, but the rubble created from it is difficult terrain.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of each section of the wall increase by 15.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "rOsIGgRmA7m0cfTp"
+          "id": "ZB3iW8avU46qIME6"
         },
         {
-          "name": "Wall of Stone",
+          "name": "Wall of Stone (wall is made of rusty iron, not stone)",
           "type": "spell",
           "level": 5,
           "heightenedLevel": 5,
@@ -562,16 +473,16 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You shape a wall of rusty iron. You create a 1-inch-thick wall of rust up to 120 feet long, and 20 feet high. You can shape the wall's path, placing each 5 feet of the wall on the border between squares. The wall doesn't need to stand vertically, so you can use it to form a bridge or set of stairs, for example. You must conjure the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost.</p>\n<p>Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 14, and 50 Hit Points, and it's immune to critical hits and precision damage. A destroyed section of the wall can be moved through, but the rubble created from it is difficult terrain.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of each section of the wall increase by 15.</p>",
+          "description": "<p>You shape a wall of solid stone. You create a 1-inch-thick wall of stone up to 120 feet long, and 20 feet high. You can shape the wall's path, placing each 5 feet of the wall on the border between squares. The wall doesn't need to stand vertically, so you can use it to form a bridge or set of stairs, for example. You must conjure the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost.</p>\n<p>Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 14, and 50 Hit Points, and it's immune to critical hits and precision damage. A destroyed section of the wall can be moved through, but the rubble created from it is difficult terrain.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of each section of the wall increase by 15.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "rOsIGgRmA7m0cfTp"
+          "id": "ZB3iW8avU46qIME6"
         },
         {
-          "name": "Wall of Stone",
+          "name": "Wall of Stone (wall is made of rusty iron, not stone)",
           "type": "spell",
           "level": 5,
           "heightenedLevel": 5,
@@ -587,39 +498,40 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You shape a wall of rusty iron. You create a 1-inch-thick wall of rust up to 120 feet long, and 20 feet high. You can shape the wall's path, placing each 5 feet of the wall on the border between squares. The wall doesn't need to stand vertically, so you can use it to form a bridge or set of stairs, for example. You must conjure the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost.</p>\n<p>Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 14, and 50 Hit Points, and it's immune to critical hits and precision damage. A destroyed section of the wall can be moved through, but the rubble created from it is difficult terrain.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of each section of the wall increase by 15.</p>",
+          "description": "<p>You shape a wall of solid stone. You create a 1-inch-thick wall of stone up to 120 feet long, and 20 feet high. You can shape the wall's path, placing each 5 feet of the wall on the border between squares. The wall doesn't need to stand vertically, so you can use it to form a bridge or set of stairs, for example. You must conjure the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost.</p>\n<p>Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 14, and 50 Hit Points, and it's immune to critical hits and precision damage. A destroyed section of the wall can be moved through, but the rubble created from it is difficult terrain.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of each section of the wall increase by 15.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "rOsIGgRmA7m0cfTp"
+          "id": "ZB3iW8avU46qIME6"
         }
       ],
       "lv6spells": [
         {
-          "name": "Flesh to Stone",
+          "name": "Petrify (target is transformed into rusty iron, not stone)",
           "type": "spell",
           "level": 6,
           "heightenedLevel": 6,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
+            "earth",
             "manipulate"
           ],
           "castingTime": "2",
           "duration": "varies",
           "range": "120 feet",
           "area": "",
-          "targets": "1 creature made of flesh",
+          "targets": "1 creature made of organic material",
           "save": "fortitude",
-          "description": "<p>You try to turn the target's flesh into rusty iron. The target must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Slowed 1 for 1 round.</p>\n<p><strong>Failure</strong> The target is Slowed 1 and must attempt a Fortitude save at the end of each of its turns; this ongoing save has the incapacitation trait. On a failed save, the Slowed condition increases by 1 (or 2 on a critical failure). A successful save reduces the Slowed condition by 1. When a creature is unable to act due to the Slowed condition from flesh to stone, the creature is permanently non-magically Petrified. The spell ends if the creature is Petrified or the Slowed condition is removed.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is initially Slowed 2.</p>",
+          "description": "<p>The target's body slowly turns into a stone statue. The target must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Slowed 1 for 1 round as stone begins to form on their body.</p>\n<p><strong>Failure</strong> The target is slowed 1 and must attempt a Fortitude save at the end of each of its turns; this ongoing save has the incapacitation trait. On a failed save, the slowed condition increases by 1 (or 2 on a critical failure) as stone growths creep across their body. A successful save reduces the slowed condition by 1. When a creature becomes fully unable to act due to the slowed condition from <em>petrify</em>, the spell then ends in a flash of gray light, leaving the target Petrified permanently as they become a statue. The spell also ends if the slowed condition is removed, which causes the stone to break off harmlessly.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is initially Slowed 2.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "mc3ga1smDc9RD3Cl"
+          "id": "vzzcrnjqJ9EC3WeH"
         }
       ],
       "lv7spells": [],
@@ -628,19 +540,21 @@
       "lv10spells": [],
       "rituals": [
         {
-          "name": "Infernal Pact",
+          "name": "Diabolic Pact",
           "type": "ritual",
           "level": 1,
           "heightenedLevel": 1,
           "timesPrepared": 1,
-          "traits": [],
+          "traits": [
+            "unholy"
+          ],
           "castingTime": "1 day",
           "duration": "",
           "range": "",
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You make an appeal to a powerful devil, asking it to bind some of its subordinates to your service. If you succeed, the devil sends you its choice of one devil whose level is no more than double <em>infernal pact's</em> rank, two devils whose levels are each at least 2 less than double the spell rank, or three devils whose levels are each at least 3 less than double the spell rank.</p>\n<hr />\n<p><strong>Critical Success</strong> The devils are sent to you and serve you for 1d4 weeks.</p>\n<p><strong>Success</strong> The devils are sent to you and serve you for 1d4 days.</p>\n<p><strong>Failure</strong> Your request is denied.</p>\n<p><strong>Critical Failure</strong> Not only is your request denied, but the powerful devil sends word of its displeasure to your master.</p>",
+          "description": "<p>You make an appeal to a powerful devil, asking them to bind some of their subordinates to your service. If you succeed, the devil sends you their choice of one devil of level 2 or lower, two devils of level 0 or lower, or three devils of level –1 or lower.</p><hr /><p><strong>Critical Success</strong> The devils are sent to you and serve you for 1d4 weeks.</p>\n<p><strong>Success</strong> The devils are sent to you and serve you for 1d4 days.</p>\n<p><strong>Failure</strong> Your request is denied.</p>\n<p><strong>Critical Failure</strong> Not only is your request denied, but the powerful devil sends word of its displeasure to your master.</p><hr /><p><strong>Heightened (+1)</strong> Increase the level of devil sent to you by 2 for each option.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "Religion (expert; you must be a devil)",

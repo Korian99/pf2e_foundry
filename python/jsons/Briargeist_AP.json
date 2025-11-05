@@ -1,0 +1,493 @@
+{
+  "initiative": 0,
+  "initiativebonus": 27,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Briargeist AP",
+  "type": "Creature",
+  "level": 15,
+  "traits": [
+    "Rare",
+    "Medium",
+    "Incorporeal",
+    "Spirit",
+    "Undead"
+  ],
+  "source": "Pathfinder #211: The Secret of Deathstalk Tower",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 27,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Arboreal",
+    "Chthonian",
+    "Common",
+    "Fey",
+    "Speak with plants"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 29,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 29,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "Tanglebriar Lore",
+      "modifier": 27,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 4
+  },
+  "wisdom": {
+    "value": 8
+  },
+  "charisma": {
+    "value": 6
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 35,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 240,
+    "max": 240,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious",
+    "bleed"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "force",
+        "ghost-touch",
+        "vitality",
+        "spirit"
+      ],
+      "type": "all-damage",
+      "value": 15
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Tanglebriar Dependent",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A briargeist is bonded to Tanglebriar and must remain within it. If the briargeist moves outside of Tanglebriar, they are immediately destroyed.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "None ft, fly 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Vine",
+      "bonus": 29,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d12+8",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+8)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [
+        "bewildering-toxin"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Infesting Seed",
+      "bonus": 29,
+      "traits": [
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+8",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+8)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [
+        "briarvine"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Bewildering Toxin",
+      "actions": null,
+      "traits": [
+        "mental"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 36 Will Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> Dazzled and Off-Guard (1 round)</p>\n<p><strong>Stage 2</strong> Confused and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> 3d10 Mental Damage damage, confused, and off-guard (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Briarvine",
+      "actions": null,
+      "traits": [
+        "curse",
+        "occult",
+        "void"
+      ],
+      "description": "<p>The incorporeal seeds ejected from a briargeist grow rapidly when they damage living creatures. Living creatures hit by a briargeist's infesting seed must attempt a Basic DC 36 Fortitude Saving Throw save with the following effects. A living creature can only host one briarvine at a time; a creature that currently has a briarvine growing out of them after failing a previous saving throw does not need to attempt additional Fortitude saves.</p><hr /><p><strong>Critical Success</strong> The seed fails to take root.</p>\n<p><strong>Success</strong> The seed fails to take root, but the target still takes 2d10 Void Damage damage as the seed dies out.</p>\n<p><strong>Failure</strong> The seed takes root within the target and inflicts 2d10 Void Damage damage. At the start of the creature's next turn, a long ghostly thorny vine grows out of their body. This ghostly growth makes a vine Strike (as if the briargeist were making the attack) against a randomly determined ally of the host creature within reach at the start of the host creature's turn. If there's no viable target, the vine inflicts 2d10 Void Damage damage (Basic DC 36 Fortitude Saving Throw save) on the host. The host can attempt a new Fortitude save at the end of each of its turns; otherwise, this effect ends automatically after 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, except the host can't attempt new Fortitude saves to end the Briarvine early.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Primal Innate Spells",
+      "type": "innate",
+      "bonus": 28,
+      "dc": 36,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 8,
+      "cantrips": [
+        {
+          "name": "Tangle Vine",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate",
+            "plant",
+            "wood"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>A vine appears from thin air, flicking from your hand and lashing itself to the target. Attempt a spell attack roll against the target.</p>\n<p></p>\n<hr />\n<p><strong>Critical Success</strong> The target gains the Immobilized condition and takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty and the immobilized condition.</p>\n<p><strong>Success</strong> The target takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty.</p>\n<p><strong>Failure</strong> The target is unaffected.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The effects last for 2 rounds.</p>\n<p><strong>Heightened (4th)</strong> The effects last for 1 minute.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "5l6CRn9SpRsuLfuV"
+        }
+      ],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [
+        {
+          "name": "Tangling Creepers (At Will)",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "plant",
+            "wood"
+          ],
+          "castingTime": "3",
+          "duration": "10 minutes",
+          "range": "500 feet",
+          "area": "40ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p>Dense, twitching creepers sprout from every surface and fill any bodies of water in the area. Any creature moving on the land, or Climbing or Swimming within the creepers, takes a –10-foot circumstance penalty to its Speeds while in the area. Once per round, you can Sustain the spell to make a vine lash out from any square within the expanse of creepers. This vine has a 15-foot reach. Make a melee spell attack roll against the target; on a success, the vine pulls the target into the creepers and makes it Immobilized for 1 round or until the creature Escapes (against your spell DC), whichever comes first.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "80pxiEmzRczDj9pV"
+        }
+      ],
+      "lv7spells": [
+        {
+          "name": "Sudden Blight",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "Basic fortitude",
+          "description": "<p>You accelerate the processes of decay in the area. Each living creature in the area takes 2d10 void damage with a basic Fortitude save. A creature afflicted by a disease takes a –2 circumstance penalty to this save. You can also direct the blight to rot all Small and Tiny non-creature plants in the area, eliminating non-magical undergrowth and any resulting difficult terrain, cover, and concealment. <em>Sudden blight</em> attempts to counteract any magical effect on the plants before withering them.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "i0Ucgt9SER9yuTyD"
+        },
+        {
+          "name": "Nature's Pathway (At Will, Within Tanglebriar Only)",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental",
+            "plant",
+            "teleportation"
+          ],
+          "castingTime": "1 minute",
+          "duration": "",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You step into a living tree with a trunk big enough for you to fit inside it and instantly teleport to any tree within 5 miles that also has a sufficiently large trunk. Once you enter the first tree, you instantly know the rough locations of other sufficiently large trees within range and can exit from the original tree, if you prefer. You can't carry extradimensional spaces with you; if you attempt to do so, the spell fails.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The tree you exit can be up to 50 miles away.</p>\n<p><strong>Heightened (8th)</strong> The tree you exit can be up to 500 miles away.</p>\n<p><strong>Heightened (9th)</strong> The tree you exit can be anywhere on the same planet.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "VC2ssjXaTWcqum30"
+        }
+      ],
+      "lv8spells": [
+        {
+          "name": "Fungal Infestation",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "fungus",
+            "manipulate",
+            "poison"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "15ft cone",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>Toxic spores swarm over creatures in the area, causing them to erupt in grotesque fungal growths. These noxious growths deal 2d6 persistent poison damage, and each creature must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The target takes half the persistent poison damage.</p>\n<p><strong>Failure</strong> The target takes the full persistent poison damage. While it's taking this persistent poison damage, it has weakness 1 to fire and weakness 1 to slashing.</p>\n<p><strong>Critical Failure</strong> As failure, but double the persistent poison damage. While it's taking this persistent poison damage, it has weakness 2 to fire and weakness 2 to slashing.</p>\n<p></p><hr /><p><strong>Heightened (+2)</strong> The persistent damage increases by 2d6, and the weakness increases by 1, or by 2 on a critical failure.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "iQ1tDAJC1pPkhzpV"
+        },
+        {
+          "name": "Speak with Plants (Constant)",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "plant",
+            "wood"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You can ask questions of and receive answers from plants and fungi, but the spell doesn't make them more friendly or intelligent than normal. Most normal plants and fungi have a distinctive view of the world around them, so they don't recognize details about creatures or know anything about the world beyond their immediate vicinity. Cunning plant or fungus monsters are likely to be terse and evasive, while less intelligent ones often make inane comments.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The duration is 8 hours.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "F6pyoNxjNBLuniJk"
+        },
+        {
+          "name": "Wall of Thorns",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "plant",
+            "wood"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "60 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You grow a wall of thorny brambles from the ground. You create a 5-foot-thick wall of brambles and thorns in a straight line up to 60 feet long and 10 feet high. You must create the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost. The wall stands vertically. If you wish, the wall can be of a shorter length or height. Everything on each side of the wall has cover from creatures on the opposite side, and the wall's spaces are difficult terrain. For every move action a creature uses to enter at least one of the wall's spaces, that creature takes 3d4 piercing damage.</p>\n<p>Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 10, and 20 Hit Points. It's immune to critical hits and precision damage. A destroyed section can be moved through freely.</p><hr /><p><strong>Heightened (+1)</strong> The Hit Points of each section of the wall increase by 5, and the piercing damage increases by 1d4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "JYCQ8MzybAjVv06R"
+        }
+      ],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Occultism or Religion, DC 34"
+}

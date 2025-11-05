@@ -1,0 +1,275 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Gholdako OLD",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Rare",
+    "huge",
+    "Evil",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder Book of the Dead",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 16,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Cyclops",
+    "Jotun"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "Soothsaying Lore",
+      "modifier": 16,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 7
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [
+    {
+      "name": "Javelin",
+      "quantity": 4,
+      "description": "<p>This thin spear is well balanced for throwing but is not designed for melee use.</p>",
+      "level": 0,
+      "price": "1 sp",
+      "traits": [
+        "thrown"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 215,
+    "max": 215,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Tumultuous Flash",
+      "actions": 0,
+      "traits": [
+        "fortune",
+        "occult"
+      ],
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The gholdako is about to roll a d20</p>\n<hr />\n<p><strong>Effect</strong> Instead of rolling normally, the gholdako attempts a DC 11 Flat , getting a critical success on the triggering roll if the flat check succeeds or a critical failure if it fails.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 23,
+      "traits": [
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+10",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+10)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 23,
+      "traits": [
+        "agile",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d10+10",
+          "type": "slashing"
+        },
+        {
+          "roll": "1d6",
+          "type": "mental"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d10+10)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "mental"
+        }
+      ],
+      "effects": [
+        "infectious-visions"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Javelin",
+      "bonus": 19,
+      "traits": [
+        "thrown-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+10",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+10)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Blinding Breath",
+      "actions": 2,
+      "traits": [
+        "concentrate",
+        "divine",
+        "void"
+      ],
+      "description": "<p>The gholdako exhales a 60ft Cone of noxious breath that deals 7d8 Void Damage damage (Basic DC 29 Reflex Saving Throw). A creature that fails its save is also Blinded until the end of its next turn (or for 1 minute on a critical failure) as a milky film coats its eyes.</p>\n<p>The gholdako can't use Blinding Breath again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Infectious Visions",
+      "actions": null,
+      "traits": [
+        "divine",
+        "mental",
+        "poison"
+      ],
+      "description": "<p>The first time each round the gholdako damages a creature with a claw Strike, the creature must attempt a DC 27 Will Saving Throw save, as its mind is assaulted by horrifying visions. On a failure, the creature is Confused until the end of its next turn. On a critical success, the creature is immune for 24 hours.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 27"
+}

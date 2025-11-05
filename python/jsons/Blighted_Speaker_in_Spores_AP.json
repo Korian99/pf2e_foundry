@@ -1,0 +1,392 @@
+{
+  "initiative": 0,
+  "initiativebonus": 25,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Blighted Speaker in Spores AP",
+  "type": "Creature",
+  "level": 13,
+  "traits": [
+    "Rare",
+    "Large",
+    "Fungus",
+    "Mutant"
+  ],
+  "source": "Pathfinder #203: Shepherd of Decay",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "sporesight (imprecise) 120 feet"
+  ],
+  "perception": {
+    "value": 25,
+    "note": "Darkvision, sporesight (imprecise) 120 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Muan",
+    "Wildsong",
+    "shaped tongue, spore matrix"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 8
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Shaped Tongue",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The speaker in spores can speak with all plants and the creature they resemble.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spore Matrix",
+      "actions": null,
+      "traits": [
+        "aura",
+        "mental",
+        "primal"
+      ],
+      "description": "<p>60 feet.</p>\n<p>The speaker in spores is surrounded by a strong concentration of spores. The speaker can communicate telepathically to any creatures in the aura who have breathed in their spores. This communication always uses the listener's native language and can't be used with a creature that doesn't breathe.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sporesight (Imprecise) 120 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The speaker in spores can see through spores drifting in the air, ignoring cover. This is an imprecise sense and functions only in areas without strong wind currents. Sporesight doesn't function underwater.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 32,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 250,
+    "max": 250,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "poison"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "bludgeoning",
+      "value": 15
+    },
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "piercing",
+      "value": 15
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 15
+    },
+    {
+      "exceptions": [],
+      "type": "slashing",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Blight Walker",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The speaker in spores recovers from the Paralyzed, Slowed, and Stunned conditions at the end of their turn. They're also immune to penalties to their Speeds and ignore cover, concealment, difficult terrain, and greater difficult terrain resulting from plants or fungi.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Toxic Spores",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature critically hits the speaker or the speaker dies</p><hr /><p><strong>Effect</strong> The blighted speaker in spores releases a burst of toxic spores. Any creature within 10 feet of the speaker in spores takes 3d6 Poison Damage damage (Basic DC 31 Fortitude Saving Throw save). Creatures that fail their saving throw are exposed to Ayrzul's Blight.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "40 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Tendril",
+      "bonus": 28,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "persistent poison"
+        },
+        {
+          "roll": "3d10+13",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "persistent poison"
+        },
+        {
+          "roll": "(3d10+13)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Accelerate Decay",
+      "actions": 2,
+      "traits": [
+        "primal",
+        "void"
+      ],
+      "description": "<p>The speaker in spores unleashes void energy that forces desiccation in a 30ft Emanation. Each living creature in the area takes 14d6 Void Damage damage (Basic DC 33 Fortitude Saving Throw save). Creatures afflicted by a disease take a –2 circumstance penalty to this save.</p>\n<p>All Small or smaller non-magical plant life (though not plant creatures) in the area wither and die, eliminating any cover or concealment and leaving difficult terrain in their wake.</p>\n<p>The speaker in spores is immune to this effect and can't use this ability again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Ayrzul's Blight",
+      "actions": null,
+      "traits": [
+        "disease",
+        "earth",
+        "primal"
+      ],
+      "description": "<p>Radioactive elemental energy courses through sap and blood, petrifies bark and bone, withers flesh, and mutates life. Creatures with the wood or plant trait treat critical successes against the disease as successes. The drained condition caused by Ayrzul's Blight can't be healed until the disease is removed. Ayrzul's Blight presents with obvious but varying symptoms, from coughing up black dust to suddenly becoming covered in itchy patches of flaky stone.</p>\n<p><strong>Saving Throw</strong> DC 33 Fortitude Saving Throw</p>\n<p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> Drained 1 (1 day)</p>\n<p><strong>Stage 2</strong> Drained 2 (1 day)</p>\n<p><strong>Stage 3</strong> Drained 3 (1 day)</p>\n<p><strong>Stage 4</strong> Drained 4 (1 day)</p>\n<p><strong>Stage 5</strong> mutation (on a failure) or death (on a critical failure)</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Primal Innate Spells",
+      "type": "innate",
+      "bonus": 25,
+      "dc": 33,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 5,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [
+        {
+          "name": "Environmental Endurance (Constant)",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "until your next daily preparations",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>You shield the target against dangerous temperatures. Choose severe cold or heat. The target is protected from the temperature you chose (but not extreme cold or heat).</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The target is protected from severe cold and severe heat.</p>\n<p><strong>Heightened (5th)</strong> The target is protected from severe cold, severe heat, extreme cold, and extreme heat.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "04uAZlPqfY2Ccmuv"
+        },
+        {
+          "name": "Fly (Constant)",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "5 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can soar through the air, gaining a fly Speed equal to its Speed or 20 feet, whichever is greater.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration increases to 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "go9ACYAZS1cIOqsc"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [
+        {
+          "name": "Blight",
+          "type": "ritual",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "plant",
+            "void"
+          ],
+          "castingTime": "1 day",
+          "duration": "1 year",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p><strong>Area</strong> 1/2-mile-radius circle centered on you</p>\n<hr />\n<p>You twist and stunt plants in the area, causing them to wither. In addition to other dangers from failing plant life, this decreases the crop yield for farms. If you cast this ritual in an area affected by <em>plant growth</em>, <em>blight</em> attempts to counteract <em>plant growth</em> instead of producing its usual effect.</p>\n<hr />\n<p><strong>Critical Success</strong> Completely spoil the crop yield in the area, or decrease the yield by half in an area with up to a 1-mile radius.</p>\n<p><strong>Success</strong> Decease the crop yield in the area by half.</p>\n<p><strong>Failure</strong> The ritual has no effect.</p>\n<p><strong>Critical Failure</strong> The flora in the area changes in an unexpected way, determined by the GM but generally as contradictory to your true desires as possible (for instance, enriching crops when you would prefer to blight them).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "Nature (expert)",
+          "secondaryCasters": 1,
+          "secondaryChecks": "Survival",
+          "id": "Un5zs26q7tSZzxlJ"
+        }
+      ],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Nature, DC 31"
+}

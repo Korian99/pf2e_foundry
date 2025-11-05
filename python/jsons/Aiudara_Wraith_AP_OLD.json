@@ -1,0 +1,227 @@
+{
+  "initiative": 0,
+  "initiativebonus": 33,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Aiudara Wraith AP OLD",
+  "type": "Creature",
+  "level": 18,
+  "traits": [
+    "Rare",
+    "Medium",
+    "Astral",
+    "Evil",
+    "Incorporeal",
+    "Undead",
+    "Unholy",
+    "Wraith"
+  ],
+  "source": "Pathfinder #150: Broken Promises",
+  "remaster": false,
+  "senses": [
+    "Darkvision",
+    "Lifesense 60ft precise"
+  ],
+  "perception": {
+    "value": 33,
+    "note": "Darkvision, Lifesense 60ft precise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Elven",
+    "Necril"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "arcana",
+      "modifier": 31,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 9
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 7
+  },
+  "charisma": {
+    "value": 8
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Lifesense 60 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>Lifesense allows a monster to sense the vital essence of living and undead creatures within the listed range. The sense can distinguish between the vitality energy animating living creatures and the void energy animating undead creatures, much as sight distinguishes colors.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 45,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 37,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 300,
+    "max": 300,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "force",
+        "ghost-touch",
+        "vitality"
+      ],
+      "type": "all-damage",
+      "value": 15
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Teleportation Attachment",
+      "actions": -1,
+      "traits": [
+        "teleportation"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature within 60 feet uses a teleportation effect</p>\n<hr />\n<p><strong>Effect</strong> The aiudara wraith teleports with the creature, arriving in an empty space of its choice adjacent to the triggering creature's destination. If the triggering effect targets multiple creatures, the aiudara wraith chooses which creature it arrives beside.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft, fly 60ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Spectral Hand",
+      "bonus": 35,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d10+16",
+          "type": "force"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d10+16)*2",
+          "type": "force"
+        }
+      ],
+      "effects": [
+        "dimensional-shunt",
+        "drain-life"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Dimensional Shunt",
+      "actions": null,
+      "traits": [
+        "arcane",
+        "teleportation"
+      ],
+      "description": "<p>The aiudara wraith's touch displaces creatures and flings them through space. The creature must attempt a DC 40 Fortitude Saving Throw save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and becomes temporarily immune to dimensional shunt for 1 minute.</p>\n<p><strong>Success</strong> The creature is pushed 5 feet in a random direction.</p>\n<p><strong>Failure</strong> The creature is teleported 20 feet in a direction of the aiudara wraith's choice.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is also Stunned 2.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Drain Life",
+      "actions": null,
+      "traits": [
+        "arcane"
+      ],
+      "description": "<p>When an aiudara wraith damages a living creature with its spectral hand Strike, the aiudara wraith gains 18 temporary Hit Points and the target must succeed at a DC 40 Fortitude Saving Throw save or become Drained 1 and Stupefied 1 as long as it is drained. Further damage dealt by the aiudara wraith's spectral hand Strikes increases the value of the drained and stupefied conditions by 1 each on a failed save, to a maximum of 10 for both.</p>\n<p>Effect: Drain Life</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Instantaneous Movement",
+      "actions": null,
+      "traits": [
+        "arcane",
+        "teleportation"
+      ],
+      "description": "<p>An aiudara wraith moves by means of localized teleportation. An aiudara wraith's Stride does not have the move trait. When an aiudara wraith Strides, it reaches its destination within the range of its Speed immediately.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism or Religion, DC 38"
+}

@@ -1,0 +1,219 @@
+{
+  "initiative": 0,
+  "initiativebonus": 17,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Abyssal Warhound General OLD",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Animal",
+    "Chaotic",
+    "Demon",
+    "Evil",
+    "Fiend",
+    "Unholy"
+  ],
+  "source": "Pathfinder Society Scenario #4-99: Blessings of the Forest",
+  "remaster": false,
+  "senses": [
+    "Darkvision",
+    "Scent 60ft imprecise"
+  ],
+  "perception": {
+    "value": 17,
+    "note": "Darkvision, Scent 60ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 17,
+      "note": [
+        "to Track 19"
+      ],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 170,
+    "max": 170,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "acid",
+      "value": 11
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "cold-iron",
+      "value": 6
+    },
+    {
+      "exceptions": [],
+      "type": "holy",
+      "value": 6
+    }
+  ],
+  "defensiveAbilities": [],
+  "speed": "30 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 20,
+      "traits": [
+        "unarmed",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+11",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+11)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "knockdown"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Caustic Drool",
+      "actions": 1,
+      "traits": [
+        "acid"
+      ],
+      "description": "<p>Caustic saliva drips from the warhound's mouth. Until the end of its turn, the abyssal warhound's jaws Strike deals an additional 2 points of acid damage on a successful attack, or 4 points on a critical success.</p>\n<p>Effect: Caustic Drool</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Caustic Vomit",
+      "actions": 2,
+      "traits": [
+        "acid",
+        "divine"
+      ],
+      "description": "<p>The abyssal warhound purebred spews acidic vomit that deals 9d6 Acid Damage damage in a 40ft Cone (Basic DC 25 Fortitude Saving Throw save). It can't use Caustic Vomit again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Shake",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The abyssal warhound's Caustic Drool ability is active</p>\n<hr />\n<p><strong>Effect</strong> The warhound shakes its head, splattering nearby creatures with caustic saliva. All creatures within 10 feet of the warhound take 5d6 Acid Damage damage (Basic DC 23 Reflex Saving Throw) and the warhound's Caustic Drool ability ends. Abyssal warhounds are immune to this damage.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Warning Growl",
+      "actions": -1,
+      "traits": [
+        "auditory",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature targets the warhound with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> The warhound Demoralizes the triggering creature and does not take a penalty for not speaking a language. The results of this check occur before resolving the triggering Strike.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Knockdown",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Trip the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature or Religion, DC 24"
+}

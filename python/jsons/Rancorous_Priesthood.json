@@ -9,14 +9,15 @@
   "type": "Creature",
   "level": 11,
   "traits": [
-    "Common",
+    "Uncommon",
     "Gargantuan",
-    "Chaotic",
-    "Evil",
+    "Human",
     "Humanoid",
-    "Troop"
+    "Troop",
+    "Unholy"
   ],
-  "source": "Pathfinder #211: The Secret of Deathstalk Tower",
+  "source": "Pathfinder NPC Core",
+  "remaster": true,
   "senses": [],
   "perception": {
     "value": 21,
@@ -107,19 +108,21 @@
   "hp": {
     "value": 195,
     "max": 195,
-    "note": "troop defenses",
+    "note": "thresholds 130 (3 segments), 65 (2 segments)",
     "modifications": []
   },
   "immunities": [],
   "resistances": [],
   "weaknesses": [
     {
+      "exceptions": [],
       "type": "area-damage",
-      "value": 15
+      "value": 10
     },
     {
+      "exceptions": [],
       "type": "splash-damage",
-      "value": 8
+      "value": 10
     }
   ],
   "defensiveAbilities": [
@@ -138,21 +141,21 @@
       "name": "Troop Movement",
       "actions": null,
       "traits": [],
-      "description": "<p>Whenever the troop Strides, they first Form Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then moves up to their Speed. This works just like a Gargantuan creature moving; for instance, if any square of the troop enters difficult terrain, the extra movement cost applies to the whole troop.</p>",
+      "description": "<p>Whenever a troop moves, you move one of its segments and the other segments follow behind it. At the end of the movement, you can group the other segments adjacent to the one you moved as you see fit, provided none of them moves farther than the moving segment. If you choose not to move the troop any distance, you can instead reshape the position of all the segments as long as one stays in place.</p>",
       "collapsed": false
     },
     {
       "name": "Troop Spellcasting",
       "actions": null,
       "traits": [],
-      "description": "<p>When the rancorous priesthood Casts a Spell, their constituent members combine their efforts into casting a more powerful version of the spell than any one member could achieve alone.</p>\n<p>When Casting a Spell that has an area of a burst, cone, or line and doesn't have a duration, increase the area of that spell. Add 5 feet to the radius of a burst that normally has a radius of at least 10 feet (a burst with a smaller radius is not affected). Add 5 feet to the length of a cone or line that is normally 15 feet long or smaller, and add 10 feet to the length of a larger cone or line.</p>",
+      "description": "<p>When the rancorous priesthood Casts a Spell, their constituent members combine their efforts into casting a more powerful version of the spell than any one member could achieve alone. When Casting a Spell that has an area of a burst, cone, or line and doesn't have a duration, increase the area of that spell. Add 5 feet to the radius of a burst that normally has a radius of at least 10 feet (a burst with a smaller radius is not affected). Add 5 feet to the length of a cone or line that is normally 15 feet long or smaller, and add 10 feet to the length of a larger cone or line.</p>",
       "collapsed": false
     },
     {
       "name": "Wild Swing",
       "actions": 1,
       "traits": [],
-      "description": "<p>◆ to ◆◆◆</p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The members of the mob wildly swing their weapons-primarily greataxes-in a chaotic attack at each enemy adjacent to the troop (Basic DC 27 Reflex Saving Throw save). The damage depends on the number of actions.</p>\n<p>◆ (1d12+2) Slashing Damage damage</p>\n<p>◆◆ (2d12+9) Slashing Damage damage</p>\n<p>◆◆◆ (3d12+9) Slashing Damage damage</p>",
+      "description": "<p>◆ to ◆◆◆</p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The members of the mob wildly swing their weapons in a chaotic attack at each enemy in a 5ft Type:emanation with a Basic DC 25 Reflex Saving Throw save. The damage depends on the number of actions.</p>\n<p>◆ (1d12+2) Slashing Damage damage</p>\n<p>◆◆ (2d12+9) Slashing Damage damage</p>\n<p>◆◆◆ (3d12+9) Slashing Damage damage</p>",
       "collapsed": false
     }
   ],
@@ -160,14 +163,65 @@
     {
       "name": "Divine Spontaneous Spells",
       "type": "spontaneous",
-      "bonus": 19,
-      "dc": 27,
+      "bonus": 22,
+      "dc": 30,
       "focusPoints": {
         "current": 0,
         "max": 0
       },
-      "autoHeightenLevel": 6,
+      "autoHeightenLevel": 5,
       "cantrips": [
+        {
+          "name": "Daze",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental",
+            "nonlethal"
+          ],
+          "castingTime": "2",
+          "duration": "1 round",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "Basic will",
+          "description": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals 1d6 mental damage, with a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "LhTYB3DNriDmgcNC"
+        },
+        {
+          "name": "Detect Magic",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft emanation",
+          "targets": "",
+          "save": "",
+          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "D3tG8e8evIjd4yse"
+        },
         {
           "name": "Divine Lance",
           "type": "cantrip",
@@ -193,56 +247,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "9aGO2DDlWWKauxCN"
-        },
-        {
-          "name": "Shield",
-          "type": "cantrip",
-          "level": 1,
-          "heightenedLevel": 1,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "force"
-          ],
-          "castingTime": "1",
-          "duration": "until the start of your next turn",
-          "range": "",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You raise a magical shield of force. This counts as using the Raise a Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use.</p>\n<p>While the spell is in effect, you can use the Shield Block reaction with your magic shield. The shield has Hardness 5. You can use the spell's reaction to reduce damage from any spell or magical effect, even if it doesn't deal physical damage. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes.</p>\n<p></p>\n<p></p>\n<hr />\n<p><strong>Heightened (+2)</strong> The shield's Hardness increases by 5.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "5tS5i4RrnD2cYytX"
-        },
-        {
-          "name": "Void Warp",
-          "type": "cantrip",
-          "level": 1,
-          "heightenedLevel": 1,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "void"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 living creature",
-          "save": "Basic fortitude",
-          "description": "<p>You call upon the Void to harm life force. The target takes 2d4 void damage with a basic Fortitude save. On a critical failure, the target is also Enfeebled 1 until the start of your next turn.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "SAmllwvJwV22JfAs"
+          "id": "NpOj7aoix2IjO5cA"
         }
       ],
       "lv1spells": [],
@@ -251,63 +256,39 @@
       "lv4spells": [],
       "lv5spells": [
         {
-          "name": "Grim Tendrils",
+          "name": "Noise Blast",
           "type": "spell",
-          "level": 1,
+          "level": 2,
           "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
             "manipulate",
-            "void"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "",
-          "area": "30ft line",
-          "targets": "",
-          "save": "fortitude",
-          "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 void damage and (@item.level) Bleed Damage damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the void damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double void damage and double persistent bleed damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The void damage increases by 2d4, and the persistent bleed damage increases by 1.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "zAKSLKRwSUPBhH1b"
-        },
-        {
-          "name": "Crisis of Faith",
-          "type": "spell",
-          "level": 3,
-          "heightenedLevel": 5,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "mental"
+            "sonic"
           ],
           "castingTime": "2",
           "duration": "",
           "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "will",
-          "description": "<p>You assault the target's faith, riddling the creature with doubt and mental turmoil that deal 6d6 mental damage, or 6d8 mental damage if it can cast divine spells. The effects are determined by its Will save.</p>\n<p>To many deities, casting this spell on a follower of your own deity without significant cause is anathema.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage; if the target can cast divine spells, it's Stupefied 1 for 1 round.</p>\n<p><strong>Critical Failure</strong> The target takes double damage, is Stupefied 1 for 1 round, and can't cast divine spells for 1 round.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6 (or by 2d8 if the target is a divine spellcaster).</p>",
+          "area": "10ft burst",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>A cacophonous noise blasts out, dealing 2d10 sonic damage. Each creature must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Deafened for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is deafened for 1 minute, and is Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "oEY6cspAekl0r2mK"
+          "id": "2WMAVBgtp8jO3JhH"
         },
         {
-          "name": "Divine Wrath",
+          "name": "Divine Immolation",
           "type": "spell",
-          "level": 4,
+          "level": 5,
           "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
+            "fire",
             "manipulate",
             "sanctified",
             "spirit"
@@ -317,68 +298,42 @@
           "range": "120 feet",
           "area": "20ft burst",
           "targets": "",
-          "save": "fortitude",
-          "description": "<p>You channel the fury of divinity against your foes. You deal 4d10 spirit damage to enemies in the area, depending on their Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Sickened 1.</p>\n<p><strong>Critical Failure</strong> The creature takes full damage and is Sickened 2; while it's sickened, it's also Slowed 1.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
+          "save": "Basic reflex",
+          "description": "<p>Divine flames scour creatures within the area. Creatures take 6d6 fire damage and (@item.level -3)d6 Persistent,fire Damage damage. The divine power within the flames scorches the spirit as well; a creature takes spirit damage instead of fire damage from divine immolation if that would be more detrimental to the creature (as determined by the GM).</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and no persistent damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and persistent damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and double persistent damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6 and persistent damage increases by 1d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "4oYwIrqCDHv6nAGa"
-        }
-      ],
-      "lv6spells": [
-        {
-          "name": "Harm",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 6,
-          "timesPrepared": 1,
-          "traits": [
-            "manipulate",
-            "void"
-          ],
-          "castingTime": "1 to 3",
-          "duration": "",
-          "range": "varies",
-          "area": "",
-          "targets": "1 living creature or 1 willing undead creature",
-          "save": "Basic fortitude",
-          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p>◆ The spell has a range of touch.</p>\n<p>◆◆ <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p>◆◆◆ <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "SQYaneuhmCBIpaey"
+          "id": "VobKaxSpwL7twR2S"
         },
         {
-          "name": "Vampiric Feast",
+          "name": "Shadow Blast",
           "type": "spell",
-          "level": 3,
-          "heightenedLevel": 6,
+          "level": 5,
+          "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "death",
             "manipulate",
-            "void"
+            "shadow"
           ],
           "castingTime": "2",
           "duration": "",
-          "range": "touch",
+          "range": "varies",
           "area": "",
-          "targets": "1 living creature",
-          "save": "Basic fortitude",
-          "description": "<p>Your touch leeches the lifeblood out of a target to empower yourself. You deal 6d6 void damage to the target. You gain temporary Hit Points equal to half the void damage the target takes (after applying resistances and the like). You lose any remaining temporary Hit Points after 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "targets": "",
+          "save": "",
+          "description": "<p>You shape the shadow substance of the Netherworld into a blast. Choose acid, bludgeoning, cold, electricity, fire, force, piercing, slashing, sonic, or spirit damage; and choose a 30ft Cone, a 15ft Burst within 120 feet, or a 50ft Line. The blast deals 6d8 damage of the type you chose to each creature in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Ls4jeDo6HSKLpfmB"
+          "id": "stvraKOWYjSMwfan"
         }
       ],
+      "lv6spells": [],
       "lv7spells": [],
       "lv8spells": [],
       "lv9spells": [],
@@ -404,9 +359,9 @@
           "cast": false,
           "cost": "",
           "primaryCheck": "Nature (expert)",
-          "secondaryCasters": null,
+          "secondaryCasters": 1,
           "secondaryChecks": "Survival",
-          "id": "uMpGqaiMkiEy14R0"
+          "id": "xM9cMzcHN3mIW4OQ"
         }
       ],
       "lv1slots": {
@@ -432,6 +387,124 @@
       "lv6slots": {
         "current": 2,
         "max": 2
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    },
+    {
+      "name": "Cleric Domain Spells",
+      "type": "focus",
+      "bonus": 22,
+      "dc": 30,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 5,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [
+        {
+          "name": "Cry of Destruction",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "cleric",
+            "concentrate",
+            "focus",
+            "manipulate",
+            "sonic"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "15ft cone",
+          "targets": "",
+          "save": "Basic fortitude",
+          "description": "<p>Your voice booms, smashing what's in front of you. Each creature and unattended object in the area takes 1d8 sonic damage. If you already dealt damage to an enemy this turn with a Strike or spell, increase the damage dice from this spell to d12s.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "ErW7gGoSo8X1ErsS"
+        },
+        {
+          "name": "Destructive Aura",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "aura",
+            "cleric",
+            "concentrate",
+            "focus",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "",
+          "area": "15ft emanation",
+          "targets": "",
+          "save": "",
+          "description": "<p>Swirling sands of divine devastation surround you, weakening the defenses of all they touch. Reduce the resistances of yourself and creatures in the area by 2.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> Reduce the resistances by an additional 2.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "IAabAbmQvzfa9k9D"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
       },
       "lv7slots": {
         "current": 0,

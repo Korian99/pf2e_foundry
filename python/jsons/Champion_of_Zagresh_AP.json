@@ -1,0 +1,310 @@
+{
+  "initiative": 0,
+  "initiativebonus": 17,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Champion of Zagresh AP",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Rare",
+    "Medium",
+    "Dromaar",
+    "Human",
+    "Humanoid",
+    "Orc"
+  ],
+  "source": "Pathfinder #208: Hoof, Cinder, and Storm",
+  "remaster": true,
+  "senses": [],
+  "perception": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Orcish"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [
+    {
+      "name": "Crossbow",
+      "quantity": 1,
+      "description": "<p>This ranged weapon has a bow-like assembly mounted on a handled frame called a tiller. The tiller has a mechanism to lock the bowstring in place, attached to a trigger mechanism that releases the tension and launches a bolt.</p>",
+      "level": 0,
+      "price": "3 gp",
+      "traits": []
+    },
+    {
+      "name": "Greatclub",
+      "quantity": 1,
+      "description": "<p>While many greatclubs are intricately carved, others are little more than a sturdy tree branch. These massive clubs are too heavy to wield with only one hand.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": [
+        "backswing",
+        "shove"
+      ]
+    },
+    {
+      "name": "Splint Mail",
+      "quantity": 1,
+      "description": "<p>This type of armor is chain mail reinforced with flexible, interlocking metal plates, typically located on the wearer's torso, upper arms, and legs. A suit of this armor comes with an undercoat of @UUID[Compendium.pf2e.equipment-srd.Item.Padded Armor] and a pair of @UUID[Compendium.pf2e.equipment-srd.Item.Gauntlet]{gauntlets}.</p>",
+      "level": 1,
+      "price": "13 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 170,
+    "max": 170,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Destructive Vengeance",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The champion of Zagresh is injured by an enemy within 15 feet</p><hr /><p><strong>Effect</strong> The champion of Zagresh increases the amount of damage he takes by 2d6 Untyped Damage and deals 2d6 Void Damage damage to the triggering enemy. In addition, the champion deals 2 extra void damage with their Strikes against the triggering creature until the end of his next turn.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Greatclub",
+      "bonus": 20,
+      "traits": [
+        "backswing",
+        "magical",
+        "shove"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+6)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Crossbow",
+      "bonus": 18,
+      "traits": [
+        "reload-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Fit of Rage",
+      "actions": 3,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The champion swings his greatclub in a wide circle, making a melee Strike against all creatures within reach. On a critical hit, enemies are moved back 5 feet. This is forced movement. Each Strike counts toward the champion's multiple attack penalty, but his penalty doesn't increase until he's made all of his attacks.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Intimidating Strike",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The champion of Zagresh makes a melee Strike. If they hit and deal damage, the target is Frightened 1, or Frightened 2 on a critical hit.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Divine Focus Spells",
+      "type": "focus",
+      "bonus": 17,
+      "dc": 25,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 1,
+      "cantrips": [],
+      "lv1spells": [
+        {
+          "name": "Touch of the Void",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "champion",
+            "focus",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "1",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing undead creature or 1 living creature",
+          "save": "",
+          "description": "<p>You infuse the target with void energy, healing undead or damaging a living creature.</p><ul><li><strong>Willing Undead Creature</strong> The target regains 6 Hit Points. If the target is yourself, you also gain a +2 status bonus to damage rolls for 1 round.</li><li><p><strong>Living Creature</strong> The target takes 1d6 void damage with a basic Fortitude save; on a failure, the target also takes a –2 status penalty to AC for 1 round.</p></li></ul><p></p><hr /><p><strong>Heightened (+1)</strong> The amount of healing increases by 6, and the damage to a living target increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "5DIVWj8JtV3lm6cd"
+        }
+      ],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Society, DC 24"
+}

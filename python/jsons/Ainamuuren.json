@@ -1,69 +1,56 @@
 {
   "initiative": 0,
-  "initiativebonus": 25,
+  "initiativebonus": 23,
   "comments": "",
   "conditions": [],
   "color": "#fff",
   "duplicateIndex": 0,
   "name": "Ainamuuren",
   "type": "Creature",
-  "level": 14,
+  "level": 12,
   "traits": [
     "Unique",
     "Large",
-    "Chaotic",
     "Cold",
     "Humanoid"
   ],
-  "source": "Pathfinder Lost Omens Monsters of Myth",
+  "source": "Pathfinder Adventure Path: Gatewalkers",
+  "remaster": true,
   "senses": [
     "Darkvision",
     "Scent 30ft imprecise"
   ],
   "perception": {
-    "value": 25,
+    "value": 23,
     "note": "Darkvision, Scent 30ft imprecise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
   "languages": [
+    "Aklo",
+    "Common",
+    "Elven",
     "Erutaki",
     "Jotun"
   ],
   "skills": [
     {
       "name": "athletics",
-      "modifier": 28,
+      "modifier": 25,
       "note": [],
       "usedAttribute": "strength",
       "modifications": []
     },
     {
-      "name": "medicine",
-      "modifier": 24,
-      "note": [],
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    {
-      "name": "nature",
-      "modifier": 26,
-      "note": [],
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    {
       "name": "stealth",
-      "modifier": 24,
-      "note": [
-        "in forests and snow 25"
-      ],
+      "modifier": 22,
+      "note": [],
       "usedAttribute": "dexterity",
       "modifications": []
     }
   ],
   "strength": {
-    "value": 8
+    "value": 7
   },
   "dexterity": {
     "value": 4
@@ -72,7 +59,7 @@
     "value": 5
   },
   "intelligence": {
-    "value": 2
+    "value": 0
   },
   "wisdom": {
     "value": 5
@@ -80,27 +67,16 @@
   "charisma": {
     "value": 0
   },
-  "items": [
-    {
-      "name": "Greataxe",
-      "quantity": 1,
-      "description": "<p>This large battle axe is too heavy to wield with only one hand. Many greataxes incorporate two blades, and they are often \"bearded\", having a hook at the bottom to increase the strength of their chopping power.</p>",
-      "level": 0,
-      "price": "2 gp",
-      "traits": [
-        "sweep"
-      ]
-    }
-  ],
+  "items": [],
   "generalAbilities": [],
   "ac": {
-    "value": 33,
+    "value": 32,
     "note": "",
     "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
-    "value": 25,
+    "value": 23,
     "note": "",
     "usedAttribute": "constitution",
     "modifications": []
@@ -112,48 +88,65 @@
     "modifications": []
   },
   "will": {
-    "value": 27,
+    "value": 23,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "savenote": "+1 status bonus to saves against evil and necromancy spells and effects",
+  "savenote": "+1 status bonus to saves against holy spells and effects",
   "hp": {
-    "value": 259,
-    "max": 259,
+    "value": 215,
+    "max": 215,
     "note": "",
     "modifications": []
   },
   "immunities": [
-    "cold"
+    "cold",
+    "controlled",
+    "disease"
   ],
   "resistances": [
     {
+      "doubleVs": [],
+      "exceptions": [],
       "type": "fire",
-      "value": 20
+      "value": 10
+    },
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "mental",
+      "value": 10
     }
   ],
   "weaknesses": [],
   "defensiveAbilities": [
     {
-      "name": "Blizzard Evasion",
+      "name": "+1 Status Bonus to Saves Against Holy Spells and Effects",
+      "actions": null,
+      "traits": [],
+      "description": "",
+      "collapsed": false
+    },
+    {
+      "name": "Blackfrost Evasion",
       "actions": -1,
       "traits": [],
-      "description": "<p><strong>Trigger</strong> Ainamuuren takes at least 40 points of physical damage from a single attack, and he isn't currently discorporated</p><hr /><p><strong>Effect</strong> Ainamuuren discorporates into a whirling blizzard for 3 rounds. During this time, he gains resistance 10 to physical damage and weakness 10 to force damage. He gains a fly speed of 40 feet, but the only action he can take is to Fly. While discorporated, the first time each round that Ainamuuren enters another creature's space or a creature enters Ainamuuren's space, that creature takes 4d8 Cold Damage damage and must succeed at a DC 34 Fortitude Saving Throw save or be Stunned 1. At the start of his turn, Ainamuuren can end this effect as a free action.</p>",
+      "description": "<p><strong>Trigger</strong> Ainamuuren takes at least 35 physical damage from a single attack, and he isn't currently discorporated</p>\n<hr />\n<p><strong>Effect</strong> Ainamuuren discorporates into a whirling blizzard of blackfrost for 3 rounds. During this time, he gains resistance 10 to physical damage and weakness 10 to force damage. He gains a fly Speed of 40 feet, but the only action he can take is to Fly. While discorporated, the first time each round that Ainamuuren enters another creature's space or a creature enters Ainamuuren's space, that creature takes 4d8 Cold Damage and is exposed to blackfrost. At the start of his turn, Ainamuuren can end this effect as a free action.</p>",
       "collapsed": false
     },
     {
-      "name": "Frostbite Runes",
-      "actions": null,
+      "name": "Reactive Strike (Tentacle Only)",
+      "actions": -1,
       "traits": [],
-      "description": "<p>Ainamuuren is marked by the runes of the saumen kar, a gift tied to their ancient curse. Ainamuuren gains a +1 status bonus to saving throws against evil and necromancy spells and effects. He can sense the presence of evil undead as a pervasive taste of oily corruption in the air. This is a vague sense that allows him to know when such a creature is within 60 feet, though he can't precisely pinpoint their location with this sense. This sense also extends to living creatures who have the void healing ability, like dhampir.</p>",
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
       "collapsed": false
     },
     {
-      "name": "Snowblind",
+      "name": "Reactive Tentacles",
       "actions": null,
       "traits": [],
-      "description": "<p>Ainamuuren can Hide and Sneak during even light snowfall, even if it wouldn't be thick enough to normally grant concealment.</p>",
+      "description": "<p>At the start of his turn, when Ainamuuren regains his actions, he gains an additional reaction that can be used only to make an Attack of Opportunity.</p>",
       "collapsed": false
     }
   ],
@@ -161,33 +154,27 @@
   "strikes": [
     {
       "type": "melee",
-      "name": "Greataxe",
-      "bonus": 29,
+      "name": "Tentacle",
+      "bonus": 26,
       "traits": [
-        "cold",
-        "sweep"
+        "reach-10",
+        "unarmed"
       ],
       "damageRolls": [
         {
-          "roll": "3d12+11",
-          "type": "slashing"
-        },
-        {
-          "roll": "1d8",
-          "type": "cold"
+          "roll": "3d6+10",
+          "type": "bludgeoning"
         }
       ],
       "critRolls": [
         {
-          "roll": "(3d12+11)*2",
-          "type": "slashing"
-        },
-        {
-          "roll": "(1d8)*2",
-          "type": "cold"
+          "roll": "(3d6+10)*2",
+          "type": "bludgeoning"
         }
       ],
-      "effects": [],
+      "effects": [
+        "blackfrost-dead-blackfrost"
+      ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
@@ -196,28 +183,29 @@
     {
       "type": "melee",
       "name": "Horns",
-      "bonus": 28,
+      "bonus": 26,
       "traits": [
         "agile",
-        "cold"
+        "cold",
+        "unarmed"
       ],
       "damageRolls": [
         {
-          "roll": "3d10+11",
+          "roll": "3d8+10",
           "type": "bludgeoning"
         },
         {
-          "roll": "1d8",
+          "roll": "1d6",
           "type": "cold"
         }
       ],
       "critRolls": [
         {
-          "roll": "(3d10+11)*2",
+          "roll": "(3d8+10)*2",
           "type": "bludgeoning"
         },
         {
-          "roll": "(1d8)*2",
+          "roll": "(1d6)*2",
           "type": "cold"
         }
       ],
@@ -232,13 +220,35 @@
   ],
   "offensiveAbilities": [
     {
-      "name": "Curse of the Saumen Kar",
+      "name": "Dreams of the Blackfrost Whale",
       "actions": 2,
       "traits": [
-        "cold",
-        "primal"
+        "incapacitation",
+        "mental"
       ],
-      "description": "<p><strong>Frequency</strong> once per day</p><hr />\n<p><strong>Effect</strong> Ainamuuren activates the runes covering his body to create an icy prison around a Huge or smaller creature he can see within 60 feet. The prison is a sphere made of unmelting ice, just large enough to fit his target. The target, and any creatures sharing its space, must attempt a DC 34 Reflex Saving Throw save. A creature that fails becomes trapped inside the prison. If it succeeds, the creature is pushed outside the prison into a space of its choice. If the target shares its space with a gargantuan creature, the effect fails.</p>\n<p>The dome has AC 10, Hardness 20, and 40 Hit Points; and is immune to cold, critical hits, and precision damage. The prison lasts until destroyed, until Ainamuuren uses this ability to create a new prison, or until he dies.</p>",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Ainamuuren fixes his many-eyed gaze upon a single target he can see within 60 feet, then opens wide his maw to release a torrent of whispers channeled from Osoyo's slumbering mind. The targeted creature must attempt a DC 32 Will Saving Throw save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature endures a brief moment where they believe they are imprisoned in the ice, as Osoyo has been for thousands of years, and is Slowed 1 for 1 round.</p>\n<p><strong>Failure</strong> The vision of being imprisoned in ice is more profound, and in the span of a few seconds, the creature endures what seems like a thousand years of imprisonment. The creature is Paralyzed until the end of its next turn, after which it emerges from its paralysis Stupefied 1.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature doesn't automatically recover from paralysis at the end of its turn. Instead, it can attempt a new DC 32 save. On a success, the paralysis ends and they are stupefied 1, but on a failure, the paralysis continues for another round.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Invasive Blackfrost",
+      "actions": null,
+      "traits": [
+        "cold",
+        "curse",
+        "disease",
+        "occult"
+      ],
+      "description": "<p>Gatewalker characters are not immune to blackfrost effects inflicted by Ainamuuren</p>\n<p>This affliction can't be reduced below stage 1, nor the damage from it healed, until successfully treated with Cleanse Affliction or a similar effect; the affliction can then be removed as a normal disease. A creature that dies from cold damage while cursed with blackfrost rises as a blackfrost dead after 24 hours. Blackfrost has a counteract rank of 10.</p>\n<p><strong>Saving Throw</strong> DC 32 Fortitude Saving Throw</p>\n<p><strong>Stage 1</strong> 4d6 Cold Damage (1 minute)</p>\n<p><strong>Stage 2</strong> weakness to cold 5 and Drained 1 (1 day)</p>\n<p><strong>Stage 3</strong> weakness to cold 10 and Drained 2 (1 day)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Twist Deviance",
+      "actions": 2,
+      "traits": [
+        "mental",
+        "occult"
+      ],
+      "description": "<p>Ainamuuren reaches out, then clutches his fingers into a fist and twists his arm, as if he were wrenching and tugging. At the same moment, all gatewalkers in a 60ft Cone that Ainamuuren can see feel the signs they've worn on their bodies since they emerged from their Missing Moment spike with pain, as if Ainamuuren had Grabbed that flesh and was twisting and tearing it. The targets must attempt a DC 32 Will Saving Throw save. Ainamuuren can't use Twist Deviance again for 1d4 rounds.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature endures a brief moment of horrific pain and takes 4d8 Mental Damage.</p>\n<p><strong>Failure</strong> The pain is much greater, and for a moment the creature is convinced that the portion of their flesh that was adorned with the sign of the gatewalker has been torn free. They take 8d8 Mental Damage and can't use their deviant abilities for 1 round.</p>\n<p><strong>Critical Failure</strong> As failure, but 16d8 Mental Damage and they can't use their deviant abilities for 1 minute.</p>",
       "collapsed": false
     },
     {
@@ -251,127 +261,156 @@
   ],
   "spellcastingEntries": [
     {
-      "name": "Innate Primal Spells",
+      "name": "Occult Innate Spells",
       "type": "innate",
-      "bonus": 26,
-      "dc": 34,
+      "bonus": 24,
+      "dc": 32,
       "focusPoints": {
         "current": 0,
         "max": 0
       },
-      "autoHeightenLevel": 7,
-      "cantrips": [],
+      "autoHeightenLevel": 6,
+      "cantrips": [
+        {
+          "name": "Daze",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental",
+            "nonlethal"
+          ],
+          "castingTime": "2",
+          "duration": "1 round",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "Basic will",
+          "description": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals 1d6 mental damage, with a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "GOaTG3DD6PElYC45"
+        }
+      ],
       "lv1spells": [],
       "lv2spells": [],
       "lv3spells": [],
       "lv4spells": [],
       "lv5spells": [
         {
-          "name": "Wall of Ice",
+          "name": "Slither",
           "type": "spell",
           "level": 5,
           "heightenedLevel": 5,
-          "timesPrepared": 3,
-          "traits": [
-            "cold",
-            "concentrate",
-            "manipulate",
-            "water"
-          ],
-          "castingTime": "3",
-          "duration": "1 minute",
-          "range": "120 feet",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You sculpt an ice barrier that blocks sight and, once shattered, freezes foes. You create either a 1-foot-thick wall of ice in a straight line up to 60 feet long and 10 feet high (the wall doesn't have to be vertical, but it must be anchored on both sides to a solid surface) or a 1-foot-thick, 10-foot radius hemisphere of ice. The ice that makes up the wall is opaque. If you wish, the wall can be of a smaller length, height, or radius.</p>\n<p>You must create the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost. Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 10, and 40 Hit Points, and it's immune to critical hits, cold damage, and precision damage. A section also has weakness to fire 15; a section of the wall destroyed by fire melts, evaporating into water and steam. A section destroyed by means other than fire leaves behind a chilling mass of ice that is difficult terrain and deals 2d6 cold damage to any creature passing through it.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of each section of the wall increase by 10, and the cold damage dealt to creatures crossing a destroyed section increases by 1d6.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "srA0zmVE2S5mSkuJ"
-        },
-        {
-          "name": "Wall of Ice",
-          "type": "spell",
-          "level": 5,
-          "heightenedLevel": 5,
-          "timesPrepared": 3,
-          "traits": [
-            "cold",
-            "concentrate",
-            "manipulate",
-            "water"
-          ],
-          "castingTime": "3",
-          "duration": "1 minute",
-          "range": "120 feet",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You sculpt an ice barrier that blocks sight and, once shattered, freezes foes. You create either a 1-foot-thick wall of ice in a straight line up to 60 feet long and 10 feet high (the wall doesn't have to be vertical, but it must be anchored on both sides to a solid surface) or a 1-foot-thick, 10-foot radius hemisphere of ice. The ice that makes up the wall is opaque. If you wish, the wall can be of a smaller length, height, or radius.</p>\n<p>You must create the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost. Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 10, and 40 Hit Points, and it's immune to critical hits, cold damage, and precision damage. A section also has weakness to fire 15; a section of the wall destroyed by fire melts, evaporating into water and steam. A section destroyed by means other than fire leaves behind a chilling mass of ice that is difficult terrain and deals 2d6 cold damage to any creature passing through it.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of each section of the wall increase by 10, and the cold damage dealt to creatures crossing a destroyed section increases by 1d6.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "srA0zmVE2S5mSkuJ"
-        },
-        {
-          "name": "Wall of Ice",
-          "type": "spell",
-          "level": 5,
-          "heightenedLevel": 5,
-          "timesPrepared": 3,
-          "traits": [
-            "cold",
-            "concentrate",
-            "manipulate",
-            "water"
-          ],
-          "castingTime": "3",
-          "duration": "1 minute",
-          "range": "120 feet",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You sculpt an ice barrier that blocks sight and, once shattered, freezes foes. You create either a 1-foot-thick wall of ice in a straight line up to 60 feet long and 10 feet high (the wall doesn't have to be vertical, but it must be anchored on both sides to a solid surface) or a 1-foot-thick, 10-foot radius hemisphere of ice. The ice that makes up the wall is opaque. If you wish, the wall can be of a smaller length, height, or radius.</p>\n<p>You must create the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost. Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 10, and 40 Hit Points, and it's immune to critical hits, cold damage, and precision damage. A section also has weakness to fire 15; a section of the wall destroyed by fire melts, evaporating into water and steam. A section destroyed by means other than fire leaves behind a chilling mass of ice that is difficult terrain and deals 2d6 cold damage to any creature passing through it.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of each section of the wall increase by 10, and the cold damage dealt to creatures crossing a destroyed section increases by 1d6.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "srA0zmVE2S5mSkuJ"
-        }
-      ],
-      "lv6spells": [],
-      "lv7spells": [
-        {
-          "name": "Summon Animal (Cave Bear or Woolly Rhinoceros Only)",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 7,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "shadow"
           ],
           "castingTime": "3",
-          "duration": "Sustained up to 1 minute",
-          "range": "30 feet",
-          "area": "",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "20ft burst",
           "targets": "",
-          "save": "",
-          "description": "<p>You conjure an animal to fight for you. You summon a common creature that has the animal trait and whose level is -1, such as those found in Pathfinder Bestiary volumes. Heightening the spell increases the maximum level of creature you can summon.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> Level 1</p>\n<p><strong>Heightened (3rd)</strong> Level 2</p>\n<p><strong>Heightened (4th)</strong> Level 3</p>\n<p><strong>Heightened (5th)</strong> Level 5</p>\n<p><strong>Heightened (6th)</strong> Level 7</p>\n<p><strong>Heightened (7th)</strong> Level 9</p>\n<p><strong>Heightened (8th)</strong> Level 11</p>\n<p><strong>Heightened (9th)</strong> Level 13</p>\n<p><strong>Heightened (10th)</strong> Level 15</p>",
+          "save": "reflex",
+          "description": "<p>A mass of snakes made of shadow rise up to capture creatures in the area. Each creature in the area when you Cast the Spell takes 3d6 Piercing Damage damage and 1d6 Persistent,poison Damage damage from a biting snake, and it's Grabbed or Restrained depending on its Reflex save. A creature that ends its turn in the area must also attempt this save, even if it's already grabbed or restrained by the snakes. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature takes full damage and is grabbed by a snake. The snakes' Escape DC is equal to your spell DC. A creature can attack a snake to release the creature. A snake's AC is equal to your spell DC, and it's destroyed if it takes 12 or more damage at once. New snakes continually regrow as long as the spell lasts, so destroying snakes doesn't prevent slither from capturing more creatures.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature takes double damage and is restrained by a snake.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The persistent poison damage increases by 1d6 and snake HP increases by 6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "gt0a8yL2ol1kb0eU"
+          "id": "wkZFlthPDSPRAoNN"
+        },
+        {
+          "name": "Synaptic Pulse",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "incapacitation",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "1 round",
+          "range": "",
+          "area": "30ft emanation",
+          "targets": "",
+          "save": "will",
+          "description": "<p>You emit a pulsating mental blast that penetrates the minds of all enemies in the area. Each enemy in the area must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Stunned 1.</p>\n<p><strong>Failure</strong> The creature is Stunned 2.</p>\n<p><strong>Critical Failure</strong> The creature is Stunned for 1 round.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "CMvsq1gy8LfEUx5a"
         }
       ],
+      "lv6spells": [
+        {
+          "name": "Never Mind",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "curse",
+            "incapacitation",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You drastically reduce the target's mental faculties. The target must attempt a Will save. The effects of this curse can be removed only through effects that target curses.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Stupefied 2 for 1 round.</p>\n<p><strong>Failure</strong> The target is Stupefied 4 with an unlimited duration.</p>\n<p><strong>Critical Failure</strong> The target's intellect is permanently reduced below that of an animal, and it treats its Charisma, Intelligence, and Wisdom modifiers as –5. It loses all class abilities that require mental faculties, including all spellcasting. If the target is a PC, they become an NPC under the GM's control.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "0hf2gEXybf2elfbw"
+        },
+        {
+          "name": "Phantasmal Calamity",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "illusion",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "500 feet",
+          "area": "30ft burst",
+          "targets": "",
+          "save": "Basic will",
+          "description": "<p>A vision of apocalyptic destruction fills the mind of each creature in the area. The vision deals 11d6 mental damage (basic Will save). On a critical failure, the creature must also succeed at a reflex save or believe it's trapped (stuck in a fissure, adrift at sea, or some other fate in keeping with its vision). If it fails the second save, it's also Stunned for 1 minute. It can attempt a new Will save at the end of each of its turns, and on a success, it disbelieves the illusion and recovers from the stunned condition.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "tvB4omURHEGRVI9Z"
+        }
+      ],
+      "lv7spells": [],
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
@@ -418,5 +457,5 @@
       }
     }
   ],
-  "recallKnowledge": "Society, DC 32"
+  "recallKnowledge": "Society, DC 30"
 }

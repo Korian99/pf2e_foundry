@@ -1,0 +1,239 @@
+{
+  "initiative": 0,
+  "initiativebonus": 14,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Giant Slug OLD",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Common",
+    "huge",
+    "Animal"
+  ],
+  "source": "Pathfinder Bestiary 2",
+  "remaster": false,
+  "senses": [
+    "Scent 60ft imprecise",
+    "no hearing"
+  ],
+  "perception": {
+    "value": 14,
+    "note": "Scent 60ft imprecise, no hearing",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": -1
+  },
+  "constitution": {
+    "value": 7
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": -4
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "No Hearing",
+      "actions": null,
+      "traits": [
+        "auditory"
+      ],
+      "description": "<p>A giant slug has no auditory senses. It is immune to auditory effects, automatically critically fails Perception checks that require it to hear, and takes a -2 status penalty to Perception checks (but not initiative rolls) that involve sound but also rely on other senses.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 165,
+    "max": 165,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "type": "acid",
+      "value": 10
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "salt",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [],
+  "speed": "20 ft, climb 15ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Radula",
+      "bonus": 21,
+      "traits": [
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+10",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+10)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "mucus"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Foot",
+      "bonus": 21,
+      "traits": [
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+10)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "mucus"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Disgorged Mucus",
+      "bonus": 17,
+      "traits": [
+        "brutal",
+        "splash"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6",
+          "type": "acid"
+        },
+        {
+          "roll": "1d6",
+          "type": "splash acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6)*2",
+          "type": "acid"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "splash acid"
+        }
+      ],
+      "effects": [
+        "mucus"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Malleable",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The giant slug can fit through tight spaces as if it were a Large creature. While Squeezing, it can move at its full Speed. It can Squeeze through spaces that typically fit only a Medium creature, but it does so at the usual Speed for Squeezing.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Mucus",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Any creature hit by the giant slug or that moves into its mucus trail is coated in sticky, caustic mucus. It takes 1d4 Persistent,acid Damage damage and takes a –5-foot status penalty to its Speeds while the damage persists.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Mucus Trail",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Any square the giant slug moves into is coated in mucus. These spaces are difficult terrain, and any creature that moves into one or ends its turn in one is subjected to the slug's mucus. After an hour, the mucus dries and the area is no longer difficult terrain.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Trample",
+      "actions": 3,
+      "traits": [],
+      "description": "<p>Large or smaller, foot, Basic DC 27 Reflex Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 24"
+}

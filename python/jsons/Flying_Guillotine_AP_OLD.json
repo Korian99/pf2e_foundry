@@ -1,0 +1,117 @@
+{
+  "initiative": 0,
+  "initiativebonus": 10,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Flying Guillotine AP OLD",
+  "type": "Hazard",
+  "level": 5,
+  "traits": [
+    "Common",
+    "Medium",
+    "Magical",
+    "Trap"
+  ],
+  "source": "Pathfinder #157: Devil at the Dreaming Palace",
+  "remaster": false,
+  "stealth": {
+    "value": 10,
+    "note": "(trained) or @Check[perception|dc:23|traits:action:seek] (expert) to spot the glyph"
+  },
+  "description": "<p>An invisible magical glyph on the guillotine's blade detects living creatures in the room, which causes the guillotine to fly off its hinges and attack.</p>",
+  "disable": "<p>DC 20 Thievery  (trained) to erase the glyph (which requires a successful unarmed attack roll if the blade is already active) or Dispel Magic (3rd rank; counteract DC 20) to counteract it. The trap has a secret bypass known only to Ralso and Pratchett: as long as the guillotine can see a creature in the room touching thumb and pinky together with an empty hand, it remains dormant.</p>",
+  "reset": "<p>After 1 minute, the trap deactivates, though the door remains locked. The trap rearms itself each day at dawn.</p>",
+  "routine": "<p>(1 action) The blade Flies up to 20 feet and Strikes any creatures whose squares it passes through. It cannot target the same creature more than once per round. The blade cannot be grappled and doesn't take a multiple attack penalty.</p>",
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Flying Blade",
+      "actions": -1,
+      "traits": [
+        "arcane",
+        "attack"
+      ],
+      "description": "<p><strong>Trigger</strong> A living creature enters the room</p>\n<hr />\n<p><strong>Effect</strong> One round after a creature enters the room, the door to the room slams shut and locks (two Thievery checks to pick), and the guillotine blade detaches from its housing and begins flying around the room as the trap rolls initiative.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Speed",
+      "actions": null,
+      "traits": [],
+      "description": "<p>fly 20 feet</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 23,
+    "note": null,
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "hardness": {
+    "value": 13
+  },
+  "fortitude": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 52,
+    "max": 52,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "precision",
+    "critical-hits"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Guillotine Blade",
+      "bonus": 15,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d8+7",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+7)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [],
+  "spellcastingEntries": [],
+  "recallKnowledge": ", DC 20"
+}

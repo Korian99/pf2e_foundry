@@ -1,0 +1,219 @@
+{
+  "initiative": 0,
+  "initiativebonus": 23,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Ba'aupa Mdoudu AP OLD",
+  "type": "Creature",
+  "level": 13,
+  "traits": [
+    "Common",
+    "Medium",
+    "Beast"
+  ],
+  "source": "Pathfinder #172: Secrets of the Temple-City",
+  "remaster": false,
+  "senses": [
+    "Darkvision",
+    "Tremorsense 30ft imprecise",
+    "skeleton sense 60 feet"
+  ],
+  "perception": {
+    "value": 23,
+    "note": "Darkvision, Tremorsense 30ft imprecise, skeleton sense 60 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 8
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": -2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 245,
+    "max": 245,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "acid"
+  ],
+  "resistances": [
+    {
+      "type": "bludgeoning",
+      "value": 15
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Reactive",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A ba'aupa mdoudu gains an additional reaction at the start of its turn but can use this reaction only to Slime Squirt.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Skeleton Sense 60 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Aba'aupa mdoudu can sense the presence of bones and skeletons within 60 feet; this is a precise sense when detecting dead bones but an imprecise one when detecting living bones.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Slime Squirt",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature inflicts slashing or piercing damage on the ba'aupa mdoudu with a melee Strike</p><hr /><p><strong>Effect</strong> The attacking creature takes 2d10 Acid Damage damage.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, burrow 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 27,
+      "traits": [
+        "deadly-d12",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+14",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d10",
+          "type": "persistent acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+14)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d10)*2",
+          "type": "persistent acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Spit",
+      "bonus": 23,
+      "traits": [
+        "acid"
+      ],
+      "damageRolls": [
+        {
+          "roll": "6d6",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(6d6)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Caustic Acid",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Whenever a creature takes acid damage from any of a ba'aupa mdoudu's abilities or Strikes, it must succeed at a DC 30 Fortitude Saving Throw save or become Drained 1 (Drained 2 on a critical failure). On each subsequent failure, the drained condition value increases by 1 (or by 2 on a critical failure), to a maximum of drained 4.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Caustic Rain",
+      "actions": 2,
+      "traits": [
+        "primal"
+      ],
+      "description": "<p>The ba'aupa mdoudu spews copious amounts of acid into the air, creating a cascading rain to fall in a 10ft Emanation around itself. All creatures in the area take 14d6 Acid Damage damage (Basic DC 33 Reflex Saving Throw save) plus Caustic Acid. The ba'aupa mdoudu can't use Caustic Rain again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Stone Tunneler",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A ba'aupa mdoudu can leave a tunnel when it burrows through earth or stone, and it usually does.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 31"
+}

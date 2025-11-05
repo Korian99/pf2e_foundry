@@ -1,66 +1,61 @@
 {
   "initiative": 0,
-  "initiativebonus": 6,
+  "initiativebonus": 5,
   "comments": "",
   "conditions": [],
   "color": "#fff",
   "duplicateIndex": 0,
   "name": "Orc Scrapper",
   "type": "Creature",
-  "level": 1,
+  "level": 0,
   "traits": [
     "Common",
     "Medium",
-    "Chaotic",
-    "Evil",
     "Humanoid",
     "Orc"
   ],
-  "source": "Pathfinder Adventure: Troubles in Otari",
+  "source": "Pathfinder Monster Core",
+  "remaster": true,
   "senses": [
     "Darkvision"
   ],
   "perception": {
-    "value": 6,
+    "value": 5,
     "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "languages": [],
+  "languages": [
+    "Orcish",
+    "Common"
+  ],
   "skills": [
     {
       "name": "athletics",
-      "modifier": 7,
+      "modifier": 5,
       "note": [],
       "usedAttribute": "strength",
       "modifications": []
     },
     {
       "name": "intimidation",
-      "modifier": 4,
+      "modifier": 2,
       "note": [],
       "usedAttribute": "charisma",
-      "modifications": []
-    },
-    {
-      "name": "survival",
-      "modifier": 4,
-      "note": [],
-      "usedAttribute": "wisdom",
       "modifications": []
     }
   ],
   "strength": {
-    "value": 4
+    "value": 3
   },
   "dexterity": {
     "value": 2
   },
   "constitution": {
-    "value": 3
+    "value": 2
   },
   "intelligence": {
-    "value": -1
+    "value": 0
   },
   "wisdom": {
     "value": 1
@@ -71,7 +66,7 @@
   "items": [
     {
       "name": "Javelin",
-      "quantity": 4,
+      "quantity": 3,
       "description": "<p>This thin spear is well balanced for throwing but is not designed for melee use.</p>",
       "level": 0,
       "price": "1 sp",
@@ -80,19 +75,21 @@
       ]
     },
     {
-      "name": "Battle Axe",
-      "quantity": 1,
-      "description": "<p>These axes are designed explicitly as weapons, rather than tools. They typically weigh less, with a shaft reinforced with metal bands or bolts, and have a sharper blade, making them ideal for chopping limbs rather than wood.</p>",
+      "name": "Orc Knuckle Dagger",
+      "quantity": 2,
+      "description": "<p>This stout, metal blade of orc design has a horizontal basket hilt with blades jutting from each end, or sometimes one blade like that of a katar.</p>",
       "level": 0,
-      "price": "1 gp",
+      "price": "7 sp",
       "traits": [
-        "sweep"
+        "agile",
+        "disarm",
+        "orc"
       ]
     },
     {
-      "name": "Breastplate",
+      "name": "Breastplate (Shoddy)",
       "quantity": 1,
-      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
+      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.Half Plate] armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
       "level": 0,
       "price": "8 gp",
       "traits": []
@@ -100,33 +97,33 @@
   ],
   "generalAbilities": [],
   "ac": {
-    "value": 18,
+    "value": 14,
     "note": "",
     "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
-    "value": 8,
+    "value": 5,
     "note": "",
     "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
-    "value": 7,
+    "value": 4,
     "note": "",
     "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
-    "value": 4,
+    "value": 2,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
-    "value": 23,
-    "max": 23,
+    "value": 18,
+    "max": 18,
     "note": "",
     "modifications": []
   },
@@ -146,21 +143,22 @@
   "strikes": [
     {
       "type": "melee",
-      "name": "Battle Axe",
+      "name": "Orc Knuckle Dagger",
       "bonus": 7,
       "traits": [
-        "sweep"
+        "agile",
+        "disarm"
       ],
       "damageRolls": [
         {
-          "roll": "1d8+4",
-          "type": "slashing"
+          "roll": "1d6+3",
+          "type": "piercing"
         }
       ],
       "critRolls": [
         {
-          "roll": "(1d8+4)*2",
-          "type": "slashing"
+          "roll": "(1d6+3)*2",
+          "type": "piercing"
         }
       ],
       "effects": [],
@@ -180,13 +178,13 @@
       ],
       "damageRolls": [
         {
-          "roll": "1d4+4",
+          "roll": "1d4+3",
           "type": "bludgeoning"
         }
       ],
       "critRolls": [
         {
-          "roll": "(1d4+4)*2",
+          "roll": "(1d4+3)*2",
           "type": "bludgeoning"
         }
       ],
@@ -199,19 +197,19 @@
     {
       "type": "ranged",
       "name": "Javelin",
-      "bonus": 5,
+      "bonus": 4,
       "traits": [
         "thrown-30"
       ],
       "damageRolls": [
         {
-          "roll": "1d6+4",
+          "roll": "1d6+3",
           "type": "piercing"
         }
       ],
       "critRolls": [
         {
-          "roll": "(1d6+4)*2",
+          "roll": "(1d6+3)*2",
           "type": "piercing"
         }
       ],
@@ -224,5 +222,5 @@
   ],
   "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "recallKnowledge": "Society, DC 15"
+  "recallKnowledge": "Society, DC 14"
 }

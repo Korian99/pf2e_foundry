@@ -1,0 +1,188 @@
+{
+  "initiative": 0,
+  "initiativebonus": 30,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Chromatic Ooze AP OLD",
+  "type": "Creature",
+  "level": 18,
+  "traits": [
+    "Rare",
+    "Large",
+    "Mindless",
+    "Ooze"
+  ],
+  "source": "Pathfinder #174: Shadows of the Ancients",
+  "remaster": false,
+  "senses": [
+    "Motion sense 240ft precise"
+  ],
+  "perception": {
+    "value": 30,
+    "note": "Motion sense 240ft precise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 9
+  },
+  "dexterity": {
+    "value": -5
+  },
+  "constitution": {
+    "value": 10
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": -5
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 550,
+    "max": 550,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "critical-hits",
+    "precision",
+    "unconscious",
+    "visual"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Caustic Aura",
+      "actions": null,
+      "traits": [
+        "alchemical",
+        "aura",
+        "olfactory"
+      ],
+      "description": "<p>90 feet. The chromatic ooze emanates noxious chemicals into the environment. A creature that enters the aura or starts its turn within it is Sickened 1 unless it succeeds at a DC 37 Fortitude Saving Throw save. Creatures with the scent ability or a particularly heightened sense of smell are Sickened 2, or sickened 1 on a successful Fortitude save. Creatures in the aura can't recover from the sickened condition.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Chromatic Shift",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The chromatic ooze takes acid, cold, electricity, fire, or poison damage</p>\n<hr />\n<p><strong>Effect</strong> The chromatic ooze changes its color based on the triggering damage (to dark green, pale blue, dark blue, red, or light green, respectively) and gains resistance 20 to the triggering damage. If it already had resistance to another damage type from this ability, it loses the resistance to that damage type and gains weakness 20 to it. If it already had weakness to another damage type from this ability, it loses that weakness. After 1 minute, the chromatic ooze returns to its usual rippling, multicolored hue and loses the resistance and weakness from this ability.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Motion Sense",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A chromatic ooze can sense nearby motion through vibration and air movement.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, climb 20ft, swim 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Pseudopod",
+      "bonus": 35,
+      "traits": [
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+17",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+17)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "chromatic-slam",
+        "improved-grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Chromatic Slam",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The ooze's pseudopod Strikes deal an additional 2d10 damage of the same type it resists from its Chromatic Shift ability, if any.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Greater Constrict",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>(3d10+13) Bludgeoning Damage damage, Basic DC 40 Fortitude Saving Throw</p>\n<p><details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC. A creature that fails this save falls Unconscious, and a creature that succeeds is then temporarily immune to falling unconscious from Greater Constrict for 1 minute.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Pseudopod Eruption",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The chromatic ooze concentrates its mass into several pseudopods, increasing its reach to 30 feet until the end of its turn. It then Strikes at up to four different creatures within its reach. This counts as two attacks for the ooze's multiple attack penalty, but the penalty doesn't increase until after it makes all the attacks.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Improved Grab",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Improved Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with as a free action. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead spend an action to use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism, DC 38"
+}

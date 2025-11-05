@@ -1,0 +1,220 @@
+{
+  "initiative": 0,
+  "initiativebonus": 20,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Dread Wisp AP OLD",
+  "type": "Creature",
+  "level": 9,
+  "traits": [
+    "Uncommon",
+    "Small",
+    "Aberration",
+    "Chaotic",
+    "Evil"
+  ],
+  "source": "Pathfinder #165: Eyes of Empty Death",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 20,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo",
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 31,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 90,
+    "max": 90,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "vitality",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Dread Flickering",
+      "actions": null,
+      "traits": [
+        "aura",
+        "light"
+      ],
+      "description": "<p>20 feet. A dread wisp, though naturally invisible, glows with a grayish illumination, casting dim light in the aura and making them visible. Living creatures that end their turn in the aura must succeed at a DC 25 Will Saving Throw saving throw or become Frightened 1 (or Frightened 2 on a critical failure).</p>\n<p>Those that critically succeed are temporarily immune for 10 minutes.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Magic Immunity",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A dread wisp is immune to all spells except Faerie Fire, Force Barrage, Quandary, Holy Light, and spells with the vitality trait.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft, fly 50ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Draining Touch",
+      "bonus": 17,
+      "traits": [
+        "magical",
+        "void"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+8",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+8)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [
+        "wearying-touch"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Feed on Despair",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "occult",
+        "void"
+      ],
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirement</strong> An enemy within 15 feet of the dread wisp is under a fear effect, Drained, or Dying</p>\n<hr />\n<p><strong>Effect</strong> The dread wisp feeds on the creature's despair. The dread wisp regains 2d8 Healing Damage Hit Points and deals 3d8 Void Damage damage to the creature (Basic DC 25 Fortitude Saving Throw save), and if the dread wisp has Gone Dark, their Dread Flickering reignites.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Go Dark",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p>The dread wisp extinguishes their Dread Flickering, becoming Invisible. They can end this effect with another use of this action. If the dread wisp uses their draining touch Strike while invisible, the arc of pale energy lets any observer determine their location, making them Hidden to all observers only until the dread wisp moves.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Shadow Flitter",
+      "actions": 1,
+      "traits": [
+        "occult",
+        "teleportation"
+      ],
+      "description": "<p>The dread wisp teleports to a square they can see within 30 feet that isn't in an area of bright light. The dread wisp can't use again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Wearying Touch",
+      "actions": null,
+      "traits": [],
+      "description": "<p>If the dread wisp critically hits with their draining touch Strike, the target is Drained 1.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism, DC 26"
+}

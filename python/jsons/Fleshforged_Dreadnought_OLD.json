@@ -1,0 +1,241 @@
+{
+  "initiative": 0,
+  "initiativebonus": 29,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Fleshforged Dreadnought OLD",
+  "type": "Creature",
+  "level": 18,
+  "traits": [
+    "Rare",
+    "Gargantuan",
+    "Construct",
+    "Mindless"
+  ],
+  "source": "Pathfinder Lost Omens Impossible Lands",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 29,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 38,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 10
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 9
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": -5
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Scaling Spikes",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A fleshforged dreadnought is covered in handholds and footholds that make it easy to climb. Creatures of Medium or smaller size can Climb the dreadnought, sharing one of its spaces as they do so. The DC to Climb a fleshforged dreadnought is 15, and creatures move 5 more feet on a success and 10 more feet on a critical success, to a maximum of their Speed when Climbing the construct.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 42,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 35,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 300,
+    "max": 300,
+    "note": "regeneration 20 (deactivated by cold iron)",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "type": "acid",
+      "value": 20
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Regeneration 20 (Deactivated by Cold Iron)",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster regains the listed number of Hit Points each round at the beginning of its turn. Its Dying condition never increases beyond Dying 3 as long as its regeneration is active. However, if it takes damage of a type listed in the regeneration entry, its regeneration deactivates until the end of its next turn. Deactivate the regeneration before applying any damage of a listed type, since that damage might kill the monster by bringing it to Dying 4.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Caustic Leak",
+      "actions": 0,
+      "traits": [
+        "acid",
+        "arcane"
+      ],
+      "description": "<p><strong>Frequency</strong> once per turn</p>\n<p><strong>Trigger</strong> The fleshforged dreadnought is damaged by a non-reach piercing or slashing melee Strike</p>\n<hr />\n<p><strong>Effect</strong> Corrosive fluid sprays the attacker, dealing 8d6 Acid Damage damage (Basic DC 40 Reflex Saving Throw).</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Battering Ram",
+      "bonus": 35,
+      "traits": [
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "7d8+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(7d8+10)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "improved-push"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 35,
+      "traits": [
+        "agile",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d8+18",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d8+18)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Ballista",
+      "bonus": 33,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "4d12+8",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d12+8)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Destructive Charge",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The fleshforged dreadnought Strides up to twice its speed and makes a battering ram Strike against a structure or unattended object. The Strike ignores 20 points of the target's Hardness.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Drown in Ichor",
+      "actions": 2,
+      "traits": [
+        "acid",
+        "arcane"
+      ],
+      "description": "<p>The fleshforged dreadnought releases a wave of caustic fluid from vents in its sides. Creatures within a 20ft Emanation take 8d6 Acid Damage damage (Basic DC 40 Reflex Saving Throw). Creatures who fail their saves also take 3d6 Persistent,acid Damage damage.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Trample",
+      "actions": 3,
+      "traits": [
+        "attack"
+      ],
+      "description": "<p>Huge or smaller, battering ram, Basic DC 44 Reflex Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Improved Push 15 feet",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>The monster can use Push as a free action triggered by a hit with its initial attack.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Crafting, DC 38"
+}

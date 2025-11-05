@@ -1,69 +1,71 @@
 {
   "initiative": 0,
-  "initiativebonus": 25,
+  "initiativebonus": 28,
   "comments": "",
   "conditions": [],
   "color": "#fff",
   "duplicateIndex": 0,
   "name": "Collapsing Bridge",
   "type": "Hazard",
-  "level": 6,
+  "level": 16,
   "traits": [
     "Unique",
-    "Medium",
-    "Environmental"
+    "Large",
+    "Mechanical",
+    "Trap"
   ],
-  "source": "Pathfinder Kingmaker",
+  "source": "Pathfinder Claws of the Tyrant",
+  "remaster": true,
   "stealth": {
-    "value": 25,
-    "note": "(or 0 if a PC has analyzed the supports and discovered they are on the verge of collapse)"
+    "value": 28,
+    "note": "(expert)"
   },
-  "description": "<p>As a pillar collapses, the bridge itself groans and shakes, then crumbles into the river below.</p>",
-  "disable": "<p>Several weeks of repair can rebuild the supports and remove the danger; at the GM's discretion, spells like Wall of Stone or Wall of Force can be used to augment the supports more quickly, although these spells are likely out of reach of the PCs at this point.</p>",
+  "description": "<p>Metal supports twist and shear off the bridge, causing stretches of the structure to collapse.</p>",
+  "disable": "<p>engineering-lore|dc:40 to identify and reinforce weak points, DC 43 Crafting  (master) to construct secondary supports, or DC 45 Athletics  (legendary) to reinforce the bridge with found materials; three successes are required to halt the collapse</p>",
   "reset": "",
-  "routine": "",
+  "routine": "<p>(1 action) The collapse radiates out from the damaged section of the bridge. All squares adjacent to a collapsed section also fall into the water.</p>",
   "items": [],
   "generalAbilities": [
     {
-      "name": "Collapse",
+      "name": "Bridge Collapse",
       "actions": -1,
       "traits": [],
-      "description": "<p><strong>Trigger</strong> A support is destroyed</p>\n<p><strong>Effect</strong> The bridge collapses. Any creature on the bridge between the red dotted lines falls 30 feet into water or onto land, taking damage as appropriate plus an additional 5d6 Bludgeoning Damage damage (Basic DC 24 Reflex Saving Throw) from falling debris; a creature within five feet of the red dotted line can try to Grab an Edge (Basic DC 24 Reflex Saving Throw) to avoid falling. A creature under the bridge-either directly below it or within ten feet of it-must attempt a Basic DC 24 Reflex Saving Throw save; a creature that's not directly under the bridge improves the result of their saving throw one degree.</p><hr /><p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes (2d8 + 9) Bludgeoning Damage damage.</p>\n<p><strong>Failure</strong> The creature takes (4d8 + 18) Bludgeoning Damage damage and is knocked Prone.</p>\n<p><strong>Critical Failure</strong> The creature takes (8d8 + 18) Bludgeoning Damage damage, is knocked prone, and is Immobilized by fallen rubble from the collapsed bridge.</p>",
+      "description": "<p><strong>Trigger</strong> A Medium or larger creature steps onto the bridge's weak point</p><hr /><p><strong>Effect</strong> The bridge collapses in the creature's square, then rolls initiative. The DC to Grab an Edge on the bridge is 38. Once the bridge begins to collapse, the river's Swim DC increases to 36 as the water churns with the falling debris. A creature that starts its turn swimming within 15 feet of the bridge takes 10d6 Bludgeoning Damage damage (Basic DC 41 Reflex Saving Throw save).</p>",
       "collapsed": false
     }
   ],
   "ac": {
-    "value": 21,
+    "value": 39,
     "note": null,
     "usedAttribute": "dexterity",
     "modifications": []
   },
   "hardness": {
-    "value": 10
+    "value": 25
   },
   "fortitude": {
-    "value": 9,
-    "note": "",
+    "value": 30,
+    "note": null,
     "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
-    "value": 9,
-    "note": "",
+    "value": 25,
+    "note": null,
     "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
-    "note": "",
+    "note": null,
     "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
-    "value": 10,
-    "max": 58,
-    "note": "For each support",
+    "value": 104,
+    "max": 104,
+    "note": "BT 52",
     "modifications": []
   },
   "immunities": [
@@ -77,5 +79,5 @@
   "strikes": [],
   "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "recallKnowledge": ", DC 22"
+  "recallKnowledge": ", DC 35"
 }
