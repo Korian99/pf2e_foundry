@@ -1,0 +1,249 @@
+{
+  "initiative": 0,
+  "initiativebonus": 14,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Synthetic Khismar (7-8) OLD",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Unique",
+    "Small",
+    "Construct",
+    "Evil"
+  ],
+  "source": "Pathfinder Society Scenario #1-24: Lightning Strikes, Stars Fall",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 14,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Fey",
+    "Gnomish",
+    "Hallit"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "Technology Lore",
+      "modifier": 15,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "+1 Striking Handwraps of Mighty Blows",
+      "quantity": 1,
+      "description": "<p>As you invest these embroidered strips of cloth, you must meditate and slowly wrap them around your hands. These handwraps have weapon runes etched into them to give your unarmed attacks the benefits of those runes, making your unarmed attacks work like magic weapons. For example, <em>+1 striking handwraps of mighty blows</em> would give you a +1 item bonus to attack rolls with your unarmed attacks and increase the damage of your unarmed attacks from one weapon die to two (normally 2d4 instead of 1d4, but if your fists have a different weapon damage die or you have other unarmed attacks, use two of that die size instead).</p>\n<p>You can upgrade, add, and transfer runes to and from the handwraps just as you would for a weapon, and you can attach talismans to the handwraps. Treat the handwraps as melee weapons of the brawling group with light Bulk for these purposes. Property runes apply only when they would be applicable to the unarmed attack you're using. For example, a property that must be applied to a slashing weapon wouldn't function when you attacked with a fist, but you would gain its benefits if you attacked with a claw or some other slashing unarmed attack.</p>",
+      "level": 2,
+      "price": "35 gp",
+      "traits": [
+        "agile",
+        "finesse",
+        "invested",
+        "magical",
+        "nonlethal",
+        "unarmed"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 27,
+    "note": "23 when broken, construct armor",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "hardness": {
+    "value": 10
+  },
+  "fortitude": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 120,
+    "max": 120,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "mental"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Construct Armor (Hardness 10)",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Like normal objects, Synthetic Khismar has Hardness. This Hardness reduces any damage he takes by an amount equal to his Hardness. Once Synthetic Khismar is reduced to fewer than half his Hit Points, or immediately upon being damaged by a critical hit, his construct armor breaks and his AC is reduced to 23.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Overcharge",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> Synthetic Khismar takes electricity damage</p>\n<hr />\n<p><strong>Effect</strong> Synthetic Khismar gains resistance 20 to electricity against the triggering attack and becomes Quickened for 1d4 rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Storm-fist",
+      "bonus": 20,
+      "traits": [
+        "forceful",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+6",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "2d6",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+6)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Electrical Discharge",
+      "bonus": 16,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "5d6",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(5d6)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Programmed Combo",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>Synthetic Khismar makes two storm-fist Strikes against a single target. If either of the attacks deals damage, the target is Off-Guard until the beginning of Synthetic Khismar's next turn. His multiple attack penalty increases after making both attacks.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Self-Destruct",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> Synthetic Khismar has 20 HP or fewer</p>\n<hr />\n<p><strong>Effect</strong> Synthetic Khismar explodes in a ball of burning plasma, destroying himself completely and dealing 10d6 Electricity Damage damage to all creatures within 10ft Emanation (Basic DC 26 Reflex Saving Throw)</p>\n<hr />\n<p><strong>Special</strong> Synthetic Khismar automatically activates this ability as a free action when brought to 0 Hit Points.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Technology Control",
+      "actions": 0,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p><strong>Frequency</strong> once per turn</p>\n<p><strong>Range</strong> 100 feet</p>\n<hr />\n<p><strong>Effect</strong> Synthetic Khismar chooses the target of one technological construct or hazard; if this would cause the technological construct or hazard to attack a creature it would not normally attack, it takes a -2 circumstance penalty to its attack rolls and DCs against that creature.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Crafting, DC 24"
+}

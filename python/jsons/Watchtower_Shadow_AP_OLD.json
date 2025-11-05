@@ -1,0 +1,297 @@
+{
+  "initiative": 0,
+  "initiativebonus": 25,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Watchtower Shadow AP OLD",
+  "type": "Creature",
+  "level": 15,
+  "traits": [
+    "Unique",
+    "Medium",
+    "Chaotic",
+    "Evil",
+    "Incorporeal",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder #166: Despair on Danger Island",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 25,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Necril",
+    "Tien"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 33,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 7
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 6
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Site Bound",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The shadow is tied to its watchtower.</p>\n<hr />\n<p>A typical ghost can stray only a short distance from where it was killed or the place it haunts. A typical limit is 120 feet. Some ghosts are instead bound to a room, building, item, or creature that was special to it rather than a location.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 36,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 190,
+    "max": 190,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "force",
+        "ghost-touch",
+        "vitality"
+      ],
+      "type": "all-damage",
+      "value": 15
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Light Vulnerability",
+      "actions": null,
+      "traits": [],
+      "description": "<p>An object shedding magical light (such as from the Light spell) is treated as magical when used to attack the shadow.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rejuvenation",
+      "actions": null,
+      "traits": [
+        "occult"
+      ],
+      "description": "<p>When the watchtower shadow is destroyed, it re-forms, fully healed, at the watchtower after 12 hours. Destroying the shadow and lighting its watchtower's brazier permanently destroys it.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft, fly 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Shadow Hand",
+      "bonus": 30,
+      "traits": [
+        "finesse",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d10+10",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d10+10)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Shadow Spawn",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When a creature's shadow is pulled free by Steal Shadow, it becomes a Shadow Spawn under the command of the shadow that created it. This shadow spawn doesn't have Steal Shadow and is perpetually and incurably Clumsy 2. If the creature the shadow spawn was pulled from dies, the shadow spawn becomes a full-fledged, autonomous shadow. If the creature recovers from its Enfeeblement, its shadow returns to it and the shadow spawn is extinguished.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Slink in Shadows",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The shadow can Hide or end its Sneak in a creature's or object's shadow.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Steal Shadow",
+      "actions": 1,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p><strong>Requirements</strong> The shadow hit a living creature with a shadow hand Strike on its previous action.</p>\n<hr />\n<p><strong>Effect</strong> The shadow pulls at the target's shadow, making the creature Enfeebled 1. This is cumulative with other enfeebled conditions from shadows, to a maximum of enfeebled 4. If this increases a creature's enfeebled value to 3 or more, the target's shadow is separated from its body. Enfeebled from Steal Shadow decreases by 1 every hour.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Innate Divine Spells",
+      "type": "innate",
+      "bonus": 28,
+      "dc": 36,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 5,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [
+        {
+          "name": "Darkness (At Will)",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "darkness",
+            "manipulate"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create a shroud of darkness that prevents light from penetrating or emanating within the area. Light does not enter the area and any non-magical light sources, such as a torch or lantern, do not emanate any light while inside the area, even if their light radius would extend beyond the darkness. This also suppresses magical light of your darkness spell's rank or lower. Light can't pass through, so creatures in the area can't see outside. From outside, it appears as a globe of pure darkness.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> Even creatures with darkvision (but not greater darkvision) can barely see through the darkness. They treat targets seen through the darkness as Concealed.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "RsxctzlqXtDVcvvk"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Religion, DC 34"
+}

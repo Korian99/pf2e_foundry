@@ -1,0 +1,214 @@
+{
+  "initiative": 0,
+  "initiativebonus": 15,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Scorched Earth Orc (Scout) (7-8) OLD",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Chaotic",
+    "Evil",
+    "Humanoid",
+    "Orc"
+  ],
+  "source": "Pathfinder Society Scenario #2-10: In Burning Dawn",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 15,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Orcish"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [
+    {
+      "name": "Composite Shortbow",
+      "quantity": 1,
+      "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>",
+      "level": 0,
+      "price": "14 gp",
+      "traits": [
+        "deadly-d10",
+        "propulsive"
+      ]
+    },
+    {
+      "name": "Shortsword",
+      "quantity": 1,
+      "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
+      "level": 0,
+      "price": "9 sp",
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile-s"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 95,
+    "max": 95,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Ferocity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its Wounded value increases by 1. When it is Wounded 3, it can no longer use this ability</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Shortsword",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+11",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+11)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Composite Shortbow",
+      "bonus": 15,
+      "traits": [
+        "deadly-d10",
+        "propulsive",
+        "volley-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+11",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+11)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Hunt Prey",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p>The Scorched Earth scout designates a single creature they can see and hear, or one they're Tracking, as their prey. The Scorched Earth scout gains a +2 circumstance bonus to Perception checks to Seek the prey and to Survival checks to Track the prey. The first time the Scorched Earth scout hits the designated prey in a round, they deal an additional 1d8 precision damage. The Scorched Earth scout also ignores the penalty for making ranged attacks within their second range increment. These effects last until the Scorched Earth scout uses Hunt Prey again.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 22"
+}

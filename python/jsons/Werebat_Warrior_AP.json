@@ -1,0 +1,295 @@
+{
+  "initiative": 0,
+  "initiativebonus": 10,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Werebat Warrior AP",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Beast",
+    "Human",
+    "Humanoid",
+    "Werecreature"
+  ],
+  "source": "Pathfinder #213: Thirst for Blood",
+  "remaster": true,
+  "senses": [
+    "Echolocation 40ft precise",
+    "Low light vision"
+  ],
+  "perception": {
+    "value": 10,
+    "note": "Echolocation 40ft precise, Low light vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Sakvroth",
+    "Bat empathy"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "society",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Javelin",
+      "quantity": 3,
+      "description": "<p>This thin spear is well balanced for throwing but is not designed for melee use.</p>",
+      "level": 0,
+      "price": "1 sp",
+      "traits": [
+        "thrown"
+      ]
+    },
+    {
+      "name": "Rapier",
+      "quantity": 1,
+      "description": "<p>The rapier is a long and thin piercing blade with a basket hilt. It is prized among many as a dueling weapon.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": [
+        "deadly-d8",
+        "disarm",
+        "finesse"
+      ]
+    },
+    {
+      "name": "Studded Leather Armor",
+      "quantity": 1,
+      "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>",
+      "level": 0,
+      "price": "3 gp",
+      "traits": []
+    },
+    {
+      "name": "Religious Symbol of Camazotz",
+      "quantity": 1,
+      "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity to use certain abilities and cast some spells. A religious symbol can be worn on the body on a chain or pin, or can be held.</p>",
+      "level": 0,
+      "price": "1 sp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Bat Empathy",
+      "actions": null,
+      "traits": [
+        "primal"
+      ],
+      "description": "<p>A werebat can communicate with bats.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Echolocation",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A werebat can use their hearing as a precise sense at the listed range.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 45,
+    "max": 45,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "silver",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Wing Thrash",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> An adjacent enemy damages the werebat</p><hr /><p><strong>Effect</strong> The werebat makes one or two wing Strikes, each against a different adjacent creature.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Javelin",
+      "bonus": 11,
+      "traits": [
+        "thrown-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+3)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Rapier",
+      "bonus": 11,
+      "traits": [
+        "deadly-d8",
+        "disarm",
+        "finesse"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+3)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Change Shape",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "polymorph",
+        "primal"
+      ],
+      "description": "<ul><li><p><strong>Human</strong></p><ul><li><strong>Melee</strong> fist +11 <strong>Damage</strong> 1d4+2</li></ul></li><li><strong>Animal</strong></li></ul><hr /><p>The werecreature changes into its humanoid, hybrid, or animal shape. Each shape has a specific, persistent appearance. A true werecreature's natural form is its hybrid shape.</p>\n<p>In humanoid shape, the werecreature uses its original humanoid size, loses its jaws and claws Strikes, and gains a melee fist Strike that deals bludgeoning damage equal to the slashing damage dealt by its claw.</p>\n<p>In animal shape, its Speed and size change to that of the animal, it gains any special Strike effects of the animal that it didn't already have (such as Grab), and it loses its weapon Strikes.</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster changes its shape indefinitely. It can use this action again to return to its natural shape or adopt a new shape. Unless otherwise noted, a monster cannot use Change Shape to appear as a specific individual. Using Change Shape counts as creating a disguise for the Impersonate use of Deception. The monster's transformation automatically defeats Perception DCs to determine whether the creature is a member of the ancestry or creature type into which it transformed, and it gains a +4 status bonus to its Deception DC to prevent others from seeing through its disguise. Change Shape abilities specify what shapes the monster can adopt. The monster doesn't gain any special abilities of the new shape, only its physical form. For example, in each shape, it replaces its normal Speeds and Strikes, and might potentially change its senses or size. Any changes are listed in its stat block.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Curse of the Werebat",
+      "actions": null,
+      "traits": [
+        "curse",
+        "primal"
+      ],
+      "description": "<p>This curse affects only humanoids.</p><hr /><p><strong>Saving Throw</strong> DC 17 Fortitude Saving Throw</p>\n<p>On each full moon, the cursed creature must succeed at another Fortitude save or turn into the same kind of werecreature until dawn.</p>\n<p>The creature is under the GM's control and goes on a rampage for half the night before falling unconscious until dawn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Moon Frenzy",
+      "actions": null,
+      "traits": [
+        "polymorph",
+        "primal"
+      ],
+      "description": "<p>When a full moon appears in the night sky, the werecreature must enter hybrid form, can't Change Shape thereafter, becomes one size larger, increases its reach by 5 feet, and increases the damage of its jaws by 2.</p>\n<p>When the moon sets or the sun rises, the werecreature returns to humanoid form and is Fatigued for 2d4 hours.</p>\n<p>Effect: Moon Frenzy</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Vicious Swing",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per turn</p><hr /><p><strong>Effect</strong> The werebat unleashes a particularly powerful attack that devastates their enemy but leaves the werebat a bit unsteady. The werebat makes a melee Strike. This counts as two attacks when calculating their multiple attack penalty. If this Strike hits, the werebat deals an extra die of weapon damage.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature or Society, DC 18"
+}

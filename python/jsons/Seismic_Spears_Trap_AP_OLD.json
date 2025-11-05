@@ -1,0 +1,129 @@
+{
+  "initiative": 0,
+  "initiativebonus": 33,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Seismic Spears Trap AP OLD",
+  "type": "Hazard",
+  "level": 19,
+  "traits": [
+    "Common",
+    "Medium",
+    "Magical"
+  ],
+  "source": "Pathfinder #149: Against the Scarlet Triad",
+  "remaster": false,
+  "stealth": {
+    "value": 33,
+    "note": "(master)"
+  },
+  "description": "<p>Lines of searing lava lance through the area, causing targets to shake as if caught in an earthquake and potentially become petrified.</p>",
+  "disable": "<p>DC 43 Thievery  (master) to disable the wards or Dispel Magic (9th rank; counteract DC 38) to counteract the ward.</p>",
+  "reset": "<p>The trap resets after 1 minute.</p>",
+  "routine": "",
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Cataclysmic Rain",
+      "actions": -1,
+      "traits": [
+        "arcane",
+        "earth",
+        "fire"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature enters the marked area</p>\n<hr />\n<p><strong>Effect</strong> Fiery spears make one Strike against each living creature within 5 feet of the marked area.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Personal Quake",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A creature struck by a seismic spear is Clumsy 3 for 1 round as their body shakes uncontrollably. On a critical hit, a target must succeed at a DC 39 Fortitude Saving Throw save or be Petrified for 1 minute, or permanently on a critical failure.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "No MAP",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The Seismic Spear Strikes do not apply a MAP.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 0,
+    "note": null,
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 10,
+    "max": 10,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "",
+  "strikes": [
+    {
+      "type": "ranged",
+      "name": "Seismic Spear",
+      "bonus": 40,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "3d10+10",
+          "type": "fire"
+        },
+        {
+          "roll": "3d10+10",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+10)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(3d10+10)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "no-map",
+        "personal-quake"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [],
+  "spellcastingEntries": [],
+  "recallKnowledge": ", DC 39"
+}

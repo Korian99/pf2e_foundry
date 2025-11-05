@@ -1,0 +1,255 @@
+{
+  "initiative": 0,
+  "initiativebonus": 27,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Troll Guard OLD",
+  "type": "Creature",
+  "level": 15,
+  "traits": [
+    "Rare",
+    "Large",
+    "Chaotic",
+    "Evil",
+    "Giant",
+    "Troll"
+  ],
+  "source": "Pathfinder Kingmaker",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 27,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Jotun"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 31,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 8
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 8
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 6
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [
+    {
+      "name": "Battle Axe",
+      "quantity": 1,
+      "description": "<p>These axes are designed explicitly as weapons, rather than tools. They typically weigh less, with a shaft reinforced with metal bands or bolts, and have a sharper blade, making them ideal for chopping limbs rather than wood.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": [
+        "magical",
+        "sweep"
+      ]
+    },
+    {
+      "name": "Full Plate",
+      "quantity": 1,
+      "description": "<p>Plate mail consists of interlocking plates that encase nearly the entire body in a carapace of steel. It is costly and heavy, and the wearer often requires help to don it correctly, but it provides some of the best defense armor can supply. A suit of this armor comes with an undercoat of @UUID[Compendium.pf2e.equipment-srd.Item.Padded Armor] and a pair of @UUID[Compendium.pf2e.equipment-srd.Item.Gauntlet]{gauntlets}.</p>",
+      "level": 2,
+      "price": "30 gp",
+      "traits": [
+        "bulwark"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 35,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 340,
+    "max": 340,
+    "note": "regeneration 40 (deactivated by acid or fire)",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Regeneration 40 (Deactivated by Acid or Fire)",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster regains the listed number of Hit Points each round at the beginning of its turn. Its Dying condition never increases beyond Dying 3 as long as its regeneration is active. However, if it takes damage of a type listed in the regeneration entry, its regeneration deactivates until the end of its next turn. Deactivate the regeneration before applying any damage of a listed type, since that damage might kill the monster by bringing it to Dying 4.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Attack of Opportunity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Vigorous Shake",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The troll guard takes Persistent acid or fire damage.</p>\n<hr />\n<p><strong>Effect</strong> The troll guard shakes itself to remove persistent acid or fire effects. The troll guard immediately attempts a DC 15 Flat  check to end the persistent damage that triggered this reaction. If the troll guard succeeds at this check, it can immediately use Primordial Roar as part of this reaction.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Battle Axe",
+      "bonus": 31,
+      "traits": [
+        "reach-10",
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d8+16",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d8+16)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 30,
+      "traits": [
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d12+16",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+16)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Axe Critical Specialization",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The troll guard has access to axe critical specialization effects.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Forced Regeneration",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p><strong>Requirements</strong> The troll guard's regeneration is not currently deactivated.</p>\n<hr />\n<p><strong>Effect</strong> The guard king regains 20 Healing Damage HP.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Primordial Roar",
+      "actions": 1,
+      "traits": [
+        "auditory",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>The troll guard unleashes a bestial roar. Each non-troll creature within 100 feet must attempt a DC 35 Will Saving Throw save. The creature is then temporarily immune for 10 minutes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Frightened 1</p>\n<p><strong>Failure</strong> The creature is Frightened 2</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 3</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rend",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>Battleaxe</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>A Rend entry lists a Strike the monster has.</p>\n<p><strong>Requirements</strong> The monster hit the same enemy with two consecutive Strikes of the listed type in the same round.</p>\n<hr />\n<p><strong>Effect</strong> The monster automatically deals that Strike's damage again to the enemy.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Twin Chop",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The troll guard lashes out at two foes with its axes. The troll guard attempts two battleaxe Strikes, each of which must target a different foe within reach. These attacks count toward the troll's multiple attack penalty, but the multiple attack penalty doesn't increase until after the troll makes both attacks.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": ", DC 34"
+}

@@ -1,0 +1,123 @@
+{
+  "initiative": 0,
+  "initiativebonus": 5,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Toxic Furnace OLD",
+  "type": "Hazard",
+  "level": 6,
+  "traits": [
+    "Common",
+    "Medium",
+    "Magical",
+    "Trap"
+  ],
+  "source": "Pathfinder Adventure: Crown of the Kobold King",
+  "remaster": false,
+  "stealth": {
+    "value": 5,
+    "note": "(expert)"
+  },
+  "description": "<p>The smoking furnace begins to hiss and click, and its vents swivel and adjust to spew toxic fumes in the direction of intruders.</p>",
+  "disable": "<p>DC 25 Thievery  (trained) to render one of the vents useless, or DC 25 Athletics  to wrench and bend a vent until it no longer functions</p>",
+  "reset": "<p>The trap resets after 1 minute, during which it sees no creatures to target.</p>",
+  "routine": "<p>(3 actions) The trap loses 1 action for each disabled vent. On each of the trap's actions, a vent spews a gout of boiling toxin at a living creature in sight of it. It can't target a single creature more than once per round, so if there aren't enough viable targets for all 3 actions, the trap loses those unspent actions.</p>",
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Spew Toxins",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A visible living creature enters the room, or a Stealthy creature fails to remain Hidden from the toxic furnace with a DC 25 Stealth  check (the trap's sensors have darkvision and lifesense);</p>\n<p><strong>Effect</strong> One of the toxic furnace's vents swivels to aim at the triggering creature and then spews a gout of boiling toxin at the target. The toxic furnace then rolls initiative.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 24,
+    "note": null,
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "hardness": {
+    "value": 15
+  },
+  "fortitude": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 56,
+    "max": 56,
+    "note": "Furnace BT 28, Vent Hardness 10, Vent HP 18 (BT 9)",
+    "modifications": []
+  },
+  "immunities": [
+    "critical-hits",
+    "precision"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "",
+  "strikes": [
+    {
+      "type": "ranged",
+      "name": "Boiling Toxin",
+      "bonus": 17,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "acid"
+        },
+        {
+          "roll": "2d6",
+          "type": "fire"
+        },
+        {
+          "roll": "2d6",
+          "type": "poison"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "acid"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "poison"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [],
+  "spellcastingEntries": [],
+  "recallKnowledge": ", DC 22"
+}

@@ -1,0 +1,302 @@
+{
+  "initiative": 0,
+  "initiativebonus": 21,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Rezzelki AP",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Beast"
+  ],
+  "source": "Pathfinder #204: Stage Fright",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "glutton scent (imprecise) 60 feet"
+  ],
+  "perception": {
+    "value": 21,
+    "note": "Darkvision, glutton scent (imprecise) 60 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Osiriani",
+    "Can't Speak"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -3
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Glutton Scent",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A rezzelki's scent ability becomes a precise sense against its favored meal.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 175,
+    "max": 175,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "acid",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Favored Meal",
+      "actions": null,
+      "traits": [],
+      "description": "<p>All rezzelkis have a favorite type of creature to feast upon. Against a favored meal in combat, a rezzelki gains a +1 circumstance bonus to all Strikes and Athletics checks.</p>\n<p>If an encounter doesn't specify what a rezzelki's favorite foodstuff is, roll 1d6:</p>\n<p>1—human</p>\n<p>2—dwarf</p>\n<p>3—elf</p>\n<p>4—kholo</p>\n<p>5—desert giant</p>\n<p>6—mummy</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Taste",
+      "actions": -1,
+      "traits": [
+        "primal"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature within reach of the rezzelki's tongue uses a manipulate or a move action, makes a ranged attack, or leaves a square during a move action it's using</p><hr /><p><strong>Effect</strong> The rezzelki makes a tongue Strike against the triggering creature.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, fly 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 22,
+      "traits": [
+        "forceful",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+10)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "knockdown"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tongue",
+      "bonus": 22,
+      "traits": [
+        "agile",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+6",
+          "type": "slashing"
+        },
+        {
+          "roll": "1d6",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+6)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Fracturing Smash",
+      "actions": 2,
+      "traits": [
+        "attack"
+      ],
+      "description": "<p>The rezzelki Strikes a target with a particularly powerful blow from its tail, with enough force to potentially pulverize bone. This Strike treats any object it hits as if it had half as much Hardness as usual, unless the object's hardness is greater than the rezzelki's level. If the Fracturing Smash hits, it deals two extra dice of weapon damage. A creature with a skeleton that takes damage must succeed at a DC 26 Fortitude Saving Throw save or become Clumsy 1 (Clumsy 2 on a critical failure) by the Fracturing Smash as its bones are partially broken.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Knockdown",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Trip the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Primal Innate Spells",
+      "type": "innate",
+      "bonus": 21,
+      "dc": 29,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 5,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [
+        {
+          "name": "Fly (Constant)",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "5 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can soar through the air, gaining a fly Speed equal to its Speed or 20 feet, whichever is greater.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration increases to 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "7SCngOAnUutccZih"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Arcana or Nature, DC 27"
+}

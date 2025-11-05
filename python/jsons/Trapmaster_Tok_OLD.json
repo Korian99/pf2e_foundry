@@ -1,0 +1,436 @@
+{
+  "initiative": 0,
+  "initiativebonus": 9,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Trapmaster Tok OLD",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Unique",
+    "Small",
+    "Evil",
+    "Humanoid",
+    "Kobold",
+    "Lawful"
+  ],
+  "source": "Pathfinder Society Scenario #5-07: Sewer Dragon Crisis",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 9,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Dwarven",
+    "Goblin"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 10,
+      "note": [
+        "traps 11"
+      ],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "occultism",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "thievery",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "Absalom Lore",
+      "modifier": 10,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 4
+  },
+  "wisdom": {
+    "value": -1
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Acid Flask (Moderate)",
+      "quantity": 2,
+      "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<hr />\n<p>This flask filled with corrosive acid deals 1 acid damage, 2d6 persistent acid damage, and 2 acid splash damage. You gain a +1 item bonus to attack rolls.</p>",
+      "level": 3,
+      "price": "10 gp",
+      "traits": [
+        "acid",
+        "alchemical",
+        "bomb",
+        "consumable",
+        "infused",
+        "splash"
+      ]
+    },
+    {
+      "name": "Alchemist's Fire (Moderate)",
+      "quantity": 2,
+      "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<hr />\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2d8 fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>",
+      "level": 3,
+      "price": "10 gp",
+      "traits": [
+        "alchemical",
+        "bomb",
+        "consumable",
+        "fire",
+        "infused",
+        "splash"
+      ]
+    },
+    {
+      "name": "Vexing Vapor (Moderate)",
+      "quantity": 2,
+      "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p><hr /><p>This flask contains a fine red powder made from toxic berries. You gain a +1 item bonus to attack rolls. A moderate vexing vapor bomb deals @Damage[2d6[mental]] damage and @Damage[(2[splash])[mental]]{2 mental splash damage}. On a hit, the target must succeed at a @Check[flat|dc:5] check before taking actions with the concentrate trait. This lasts until the end of its next turn (1 minute on a critical hit).</p>",
+      "level": 3,
+      "price": "12 gp",
+      "traits": [
+        "alchemical",
+        "bomb",
+        "consumable",
+        "inhaled",
+        "mental",
+        "poison",
+        "splash"
+      ]
+    },
+    {
+      "name": "Dagger",
+      "quantity": 1,
+      "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
+      "level": 0,
+      "price": "2 sp",
+      "traits": [
+        "agile",
+        "finesse",
+        "thrown-10",
+        "versatile-s"
+      ]
+    },
+    {
+      "name": "Studded Leather Armor",
+      "quantity": 1,
+      "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>",
+      "level": 0,
+      "price": "3 gp",
+      "traits": []
+    },
+    {
+      "name": "Alchemist's Toolkit",
+      "quantity": 1,
+      "description": "<p>This mobile collection of vials and chemicals can be used for simple alchemical tasks. If you wear your alchemist's toolkit, you can draw and replace it as part of the action that uses it.</p>",
+      "level": 0,
+      "price": "3 gp",
+      "traits": []
+    },
+    {
+      "name": "Formula Book",
+      "quantity": 1,
+      "description": "<p>A formula book holds the formulas necessary to make items other than the common equipment from this chapter; characters of the alchemist class typically get one for free. Each formula book can hold the formulas for up to 100 different items. Formulas can also appear on parchment sheets, tablets, and almost any other medium; there's no need for you to copy them into a specific book as long as you can keep them on hand to reference them.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Infused Items",
+      "actions": null,
+      "traits": [],
+      "description": "<p>2 Acid Flask (Moderate), 2 Alchemist's Fire (Moderate), 2 Elixir of Life (Minor), 2 Vexing Vapor (Moderate). These items last for 24 hours or until Trapmaster Tok makes his next daily preparations.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 53,
+    "max": 53,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Dagger",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+1",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+1)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Dagger",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "thrown-10",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+1",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+1)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Acid Flask (Moderate)",
+      "bonus": 12,
+      "traits": [
+        "bomb",
+        "consumable",
+        "infused",
+        "splash"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1",
+          "type": "acid"
+        },
+        {
+          "roll": "2",
+          "type": "splash acid"
+        },
+        {
+          "roll": "2d6",
+          "type": "persistent acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1)*2",
+          "type": "acid"
+        },
+        {
+          "roll": "(2)*2",
+          "type": "splash acid"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "persistent acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Alchemist's Fire (Moderate)",
+      "bonus": 12,
+      "traits": [
+        "bomb",
+        "consumable",
+        "infused",
+        "splash"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2",
+          "type": "splash fire"
+        },
+        {
+          "roll": "1d8+2",
+          "type": "fire"
+        },
+        {
+          "roll": "2",
+          "type": "persistent fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2)*2",
+          "type": "splash fire"
+        },
+        {
+          "roll": "(1d8+2)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(2)*2",
+          "type": "persistent fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Vexing Vapor (Moderate)",
+      "bonus": 12,
+      "traits": [
+        "bomb",
+        "consumable",
+        "infused",
+        "inhaled",
+        "splash"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+2",
+          "type": "mental"
+        },
+        {
+          "roll": "2",
+          "type": "splash mental"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+2)*2",
+          "type": "mental"
+        },
+        {
+          "roll": "(2)*2",
+          "type": "splash mental"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Hurried Retreat",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> Tok is adjacent to at least one enemy</p>\n<hr />\n<p><strong>Effect</strong> He Strides up to his speed plus 5 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. He must end this movement in a space that's not adjacent to any enemy.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Quick Bomber",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>Interact to draw and Strike to throw a bomb</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Quicktrap",
+      "actions": 3,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> Tok is adjacent to an empty space, is not adjacent to an enemy, and did not take this action in the previous round</p>\n<hr />\n<p><strong>Effect</strong> Tok quickly rigs a new Trap in the empty space.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 18"
+}

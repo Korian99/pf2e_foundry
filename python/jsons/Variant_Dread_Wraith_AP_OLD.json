@@ -1,0 +1,234 @@
+{
+  "initiative": 0,
+  "initiativebonus": 19,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Variant Dread Wraith AP OLD",
+  "type": "Creature",
+  "level": 9,
+  "traits": [
+    "Rare",
+    "Medium",
+    "Evil",
+    "Incorporeal",
+    "Lawful",
+    "Undead",
+    "Unholy",
+    "Wraith"
+  ],
+  "source": "Pathfinder #199: To Bloom Below the Web",
+  "remaster": false,
+  "senses": [
+    "Darkvision",
+    "Lifesense 60ft precise"
+  ],
+  "perception": {
+    "value": 19,
+    "note": "Darkvision, Lifesense 60ft precise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Necril"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 3
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 6
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Lifesense 60 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>Lifesense allows a monster to sense the vital essence of living and undead creatures within the listed range. The sense can distinguish between the vitality energy animating living creatures and the void energy animating undead creatures, much as sight distinguishes colors.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+1 status to all saves vs. vitality",
+  "hp": {
+    "value": 130,
+    "max": 130,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "force",
+        "ghost-touch",
+        "vitality"
+      ],
+      "type": "all-damage",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Attack of Opportunity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Draining Presence",
+      "actions": null,
+      "traits": [
+        "aura",
+        "void"
+      ],
+      "description": "<p>10 feet. A creature entering the aura must succeed at a DC 26 Fortitude Saving Throw save or become Drained 1. It recovers after it has been out of the aura for 1 minute. This drained condition value is cumulative with the drained value caused by drain life, but not with multiple draining presence auras.</p>\n<p>A creature that succeeds at its save is temporarily immune to draining presence for 24 hours.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sunlight Powerlessness",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A dread wraith caught in sunlight is Stunned 2 and Clumsy 2.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft, fly 60ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Spectral Hand",
+      "bonus": 21,
+      "traits": [
+        "finesse"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+7",
+          "type": "mental"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+7)*2",
+          "type": "mental"
+        }
+      ],
+      "effects": [
+        "drain-life"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Absorb Wraith",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The dread wraith extends its hand toward another wraith creature within 100 feet. The target wraith dissolves and streaks toward the dread wraith in a straight line, dealing 6d10 Void Damage damage to each creature along the line (Basic DC 28 Fortitude Saving Throw save).</p>\n<p>The dread wraith absorbs the essence of the target wraith, becoming Quickened and gaining a +10-foot status bonus to its fly Speed for a number of rounds equal to the level of the absorbed wraith. It can use its extra action only to Fly or Strike.</p>\n<p>An unwilling target can attempt a Basic DC 28 Will Saving Throw save to resist being absorbed.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Drain Life",
+      "actions": null,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p>When the dread wraith damages a living creature with its spectral hand Strike, the wraith gains 10 temporary Hit Points and the target must succeed at a DC 28 Fortitude Saving Throw save or become Drained 1. Further damage dealt by the wraith increases the drained condition value by 1 on a failed save, to a maximum of drained 4.</p>\n<p>Effect: Drain Life</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Wraith Spawn",
+      "actions": null,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p>A living humanoid slain by a wraith's spectral hand Strike rises as a Wraith Spawn after 1d4 rounds. This wraith spawn is under the command of the dread wraith that killed it. It doesn't have drain life or wraith spawn. If the creator of the wraith spawn dies, the wraith spawn becomes a full-fledged, autonomous wraith; it regains its free will and gains drain life and wraith spawn.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 26"
+}

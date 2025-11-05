@@ -1,0 +1,217 @@
+{
+  "initiative": 0,
+  "initiativebonus": 21,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Roper OLD",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Aberration",
+    "Chaotic",
+    "Evil"
+  ],
+  "source": "Pathfinder Bestiary",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 21,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo",
+    "Sakvroth"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 17,
+      "note": [
+        "about caves 21"
+      ],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 17,
+      "note": [
+        "in stony or icy areas 25"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 1
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+2 status to all saves vs. magic",
+  "hp": {
+    "value": 215,
+    "max": 215,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "type": "electricity",
+      "value": 10
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Reactive Lash",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within reach of the roper's strand leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The roper makes a strand Strike against the triggering creature.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "10 ft, climb 10ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 21,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+12",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+12)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Strand",
+      "bonus": 23,
+      "traits": [
+        "reach-50"
+      ],
+      "damageRolls": [],
+      "critRolls": [],
+      "effects": [
+        "sticky-strand"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Extend Strands",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The roper extends or retracts six thin, sticky tendrils from its body. While the strands are extended, the roper takes a -4 circumstance penalty to Stealth checks, and while they're retracted, it can't use its strand Strikes.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Flurry of Strands",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The roper makes a strand Strike with each of its strands (except those that are Immobilizing creatures). Each attack must be against a different target. These attacks count toward the roper's multiple attack penalty, but its multiple attack penalty doesn't increase until after all the attacks.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Pull the Strands",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The roper pulls every creature Grabbed by its strands toward itself. The roper rolls a single athletics check and compares the result to each Immobilized creature's Fortitude DC. The roper pulls each creature it succeeds against up to 25 feet closer and each creature it critically succeeds against up to 50 feet closer.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sticky Strand",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Any creature hit by a roper's strand is Enfeebled 1 and Grabbed. Each additional hit from a strand increases the enfeebled condition value by 1 (to a maximum of enfeebled 4). This enfeebled value decreases by 1 every 8 hours. The roper can move while it has a creature grabbed with a strand, but it automatically releases the creature if it moves beyond the strand's reach. The roper can release an grabbed creature as a free action. A creature can sever a strand with a target attack that hits AC 27 and deals at least 18 slashing damage. This doesn't deal any damage to the roper itself, though it can no longer attack with a severed strand.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism, DC 27"
+}

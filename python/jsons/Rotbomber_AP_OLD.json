@@ -1,0 +1,253 @@
+{
+  "initiative": 0,
+  "initiativebonus": 25,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Rotbomber AP OLD",
+  "type": "Creature",
+  "level": 12,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Chaotic",
+    "Evil",
+    "Mindless",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder #184: The Ghouls Hunger",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 25,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 7
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -3
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": -3
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Slow",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A rotbomber is permanently Slowed 1 and can't use reactions.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 31,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 250,
+    "max": 250,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "vitality",
+      "value": 10
+    },
+    {
+      "type": "slashing",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Pressurized Pustules",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When a rotbomber takes acid, fire, physical or sonic damage, there is a chance a prematurely developed pustule bursts open, determined by a DC 11 Flat . All creatures in a 10ft Emanation must succeed at DC 29 Fortitude Saving Throw save or become Sickened 2. A creature that gets a critical failure becomes Sickened 3. Any creature who attempts this save becomes temporarily immune to pressurized pustules for 24 hours.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "40 ft, climb 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 24,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+12",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+12)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "necrotic-rot"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 20,
+      "traits": [
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+10)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Necrotic Pustule",
+      "bonus": 26,
+      "traits": [
+        "splash",
+        "void"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+14",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+14)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "necrotic-rot"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Gaseous Smash",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The rotbomber pulls two necrotic pustules from its body, one in each hand, and leaps into the air in an attempt to detonate them simultaneously on a hapless victim. The rotbomber Leaps up to 15 feet horizontally and 10 feet vertically to land in a square adjacent to a target creature and makes a necrotic pustule Strike against the target. If the Strike hits, it deals an additional 4d6 Bludgeoning Damage damage to the target. This counts as two attacks for the purposes of determining the rotbomber's multiple attack penalty, but the penalty does not increase until after the Gaseous Smash.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Necrotic Rot",
+      "actions": null,
+      "traits": [
+        "disease",
+        "void"
+      ],
+      "description": "<p>Necrotic rot withers and corrupts living tissue at an alarming rate. An infected creature can't heal damage it takes from necrotic rot until it has been cured of the disease.</p>\n<p><strong>Saving Throw</strong> DC 29 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Stage 1</strong> 2d6 Void Damage damage (1 day)</p>\n<p><strong>Stage 2</strong> Drained 1</p>\n<p><strong>Stage 3</strong> 3d6 Void Damage damage and Drained 2</p>\n<p><strong>Stage 4</strong> dead, rising as a rotbomber immediately</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Propulsive Pestilence",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The pressurized necrotic gases within the rotbomber's pustules make them explode far more dramatically than most alchemists' bombs. The rotbomber's necrotic pustules deal splash damage to every creature within 15 feet of the target.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 30"
+}

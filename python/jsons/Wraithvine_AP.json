@@ -1,0 +1,225 @@
+{
+  "initiative": 0,
+  "initiativebonus": 15,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Wraithvine AP",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Common",
+    "huge",
+    "Fungus",
+    "Plant",
+    "Wraithvine"
+  ],
+  "source": "Pathfinder #201: Pactbreaker",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "Lifesense 30ft imprecise"
+  ],
+  "perception": {
+    "value": 15,
+    "note": "Darkvision, Lifesense 30ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Fey",
+    "(Can't Speak any Language); Telepathy 120 feet (Wraithvines Only)"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 120,
+    "max": 120,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "poison"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "piercing",
+      "value": 5
+    },
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "slashing",
+      "value": 5
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Reactive Strike (Tentacle Only)",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Bite",
+      "bonus": 18,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+11",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+11)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "wraithvine-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tentacle",
+      "bonus": 18,
+      "traits": [
+        "agile",
+        "reach-15",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+11",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+11)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Light Vulnerability",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Whenever a wraithvine begins its turn in an area of magical light, it is Slowed 1 on that turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Parasitic Rejuvenation",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> A creature the wraithvine has Grabbed took damage from wraithvine venom (either from itself, or from a wraithvine child's venom) on its last turn, and the wraithvine hasn't used any other actions this turn</p>\n<hr />\n<p><strong>Effect</strong> The wraithvine regains 3d8 Healing Damage HP and recovers from the Fatigued and slowed conditions. It reduces any Enfeebled value it has by 2.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Wraithvine Venom",
+      "actions": null,
+      "traits": [],
+      "description": "<p><strong>Saving Throw</strong> DC 25 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 1d6 Poison Damage damage and Stupefied 1 (1 round)</p>\n<p><strong>Stage 2</strong> 1d6 Poison Damage damage, Confused, and Stupefied 1 (1 round)</p>\n<p><strong>Stage 3</strong> 2d6 Poison Damage damage, Confused, and Stupefied 1 (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature or Nature, DC 23"
+}

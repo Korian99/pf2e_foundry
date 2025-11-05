@@ -1,0 +1,377 @@
+{
+  "initiative": 0,
+  "initiativebonus": 30,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Vitalia AP OLD",
+  "type": "Creature",
+  "level": 18,
+  "traits": [
+    "Rare",
+    "Large",
+    "Aberration",
+    "Aquatic",
+    "Mindless"
+  ],
+  "source": "Pathfinder #155: Lord of the Black Sands",
+  "remaster": false,
+  "senses": [
+    "Tremorsense 60ft imprecise",
+    "bloodsense (precise) 30 feet"
+  ],
+  "perception": {
+    "value": 30,
+    "note": "Tremorsense 60ft imprecise, bloodsense (precise) 30 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 33,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 9
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Bloodsense (Precise) 30 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The vitalia can detect any creatures that have a heartbeat.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "No Vision",
+      "actions": null,
+      "traits": [],
+      "description": "",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 39,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 35,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 425,
+    "max": 425,
+    "note": "fast healing 20",
+    "modifications": []
+  },
+  "immunities": [
+    "unconscious",
+    "bleed",
+    "sleep",
+    "visual"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "piercing",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Fast Healing 20",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A monster with this ability regains the given number of Hit Points each round at the beginning of its turn.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Blood Eruption",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature lands a critical hit with a melee Strike against the vitalia</p>\n<hr />\n<p><strong>Effect</strong> The vitalia sprays blood at the triggering creature. The creature must succeed at a DC 39 Reflex Saving Throw save or become Dazzled for 1 round (or Blinded for 1 round on a critical failure).</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "15 ft, swim 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Vein",
+      "bonus": 33,
+      "traits": [
+        "magical",
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d8+15",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d8+15)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Blood Squirt",
+      "bonus": 33,
+      "traits": [
+        "acid",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "3d10",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(3d10)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Constrict",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>(4d8+10) Bludgeoning Damage damage, Basic DC 37 Fortitude Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Forced Transfusion",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The vitalia is Grabbing a creature</p>\n<hr />\n<p><strong>Effect</strong> The vitalia inserts some of its veins into the grabbed creature and pumps violently, rapidly exchanging the victim's blood with its own. Any diseases or poisons affecting the vitalia can be transmitted to the target creature, which must make a saving throw as though it had just been targeted with the original affliction. The inverse is true as well; the vitalia must successfully save against any diseases or poisons affecting the target or contract the affliction.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sanguine Rain",
+      "actions": 2,
+      "traits": [
+        "occult"
+      ],
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The vitalia pumps copious amounts of blood into the air, creating a cascading rain of vital fluids in a 15ft Emanation.</p>\n<p>All creatures in the area are Concealed from one another. A creature that benefits from consuming blood (such as bloodseekers or vampires) gains fast healing 10 while in the area. While in the area, a creature taking persistent bleed damage cannot end that condition, even if it spends actions to attempt a flat check to do so.</p>\n<p>The rain lasts for 1 minute.</p>\n<p>Effect: Sanguine Rain</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Occult Innate Spells",
+      "type": "innate",
+      "bonus": 28,
+      "dc": 36,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 8,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [
+        {
+          "name": "Status (At Will)",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "until the next time you make your daily preparations",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing living creature",
+          "save": "",
+          "description": "<p>As long as you and the target are on the same plane of existence and both alive, you remain aware of its present state. You know the target's direction from you, distance from you, and any conditions affecting it.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell's range increases to 30 feet, and you can target up to 10 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "fIVKEuRBev6cm8EW"
+        },
+        {
+          "name": "Vampiric Touch",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "death",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 living creature",
+          "save": "Basic fortitude",
+          "description": "<p>Your touch leeches the lifeblood out of a target to empower yourself. You deal 6d6 void damage to the target. You gain temporary Hit Points equal to half the void damage the target takes (after applying resistances and the like). You lose any remaining temporary Hit Points after 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "K4Wl20UYqGkRc7jL"
+        }
+      ],
+      "lv7spells": [],
+      "lv8spells": [
+        {
+          "name": "Vampiric Exsanguination",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "death",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft cone",
+          "targets": "",
+          "save": "Basic fortitude",
+          "description": "<p>You draw in the blood and life force of other creatures through your outstretched arms. You deal 12d6 void damage to living creatures in the area. You gain temporary Hit Points equal to half the damage a single creature takes from this spell; calculate these temporary Hit Points using the creature that took the most damage. You lose any remaining temporary Hit Points after 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "kHcz4oeseenSbD73"
+        }
+      ],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Occultism, DC 38"
+}

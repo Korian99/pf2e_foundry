@@ -1,0 +1,248 @@
+{
+  "initiative": 0,
+  "initiativebonus": 18,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Tar Zombie Mammoth AP OLD",
+  "type": "Creature",
+  "level": 9,
+  "traits": [
+    "Uncommon",
+    "huge",
+    "Evil",
+    "Mindless",
+    "Undead",
+    "Unholy",
+    "Zombie"
+  ],
+  "source": "Pathfinder #177: Burning Tundra",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 18,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 12,
+      "note": [
+        "in tar pits 16"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": -1
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": -3
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 240,
+    "max": 240,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 10
+    },
+    {
+      "type": "vitality",
+      "value": 10
+    },
+    {
+      "type": "slashing",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Flammable",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A tar zombie requires a successful DC 20 flat check to recover from persistent fire damage. This DC isn't reduced for assisted recovery.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Tusk",
+      "bonus": 21,
+      "traits": [
+        "reach-15",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+11",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+11)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Trunk",
+      "bonus": 21,
+      "traits": [
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+11",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+11)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "improved-grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Foot",
+      "bonus": 21,
+      "traits": [
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+11",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+11)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Fling",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The tar zombie mammoth has a creature Grabbed or Restrained by its trunk</p>\n<hr />\n<p><strong>Effect</strong> The tar zombie mammoth whips its prey violently into the air. It attempts an athletics|defense:fortitude check against the grabbed or restrained creature's Fortitude DC. If the creature is restrained, the mammoth gains a +4 circumstance bonus to this check. On a success, the mammoth flings the creature up to 30 feet overhead and up to 30 feet away (the creature takes damage from the fall as normal, up to 15 Bludgeoning Damage{15} damage for a 30-foot fall). If the flung creature lands on another creature, the creature it lands on takes the same amount of bludgeoning damage (Basic DC 28 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Shambling Trample",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>As Trample, but the tar zombie mammoth Strides up to its Speed instead of double its Speed.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Vomit Tar",
+      "actions": 2,
+      "traits": [
+        "primal"
+      ],
+      "description": "<p>The tar zombie vomits a gout of sticky tar in a 15ft Cone that deals 7d6 Bludgeoning Damage damage ((Basic DC 28 Reflex Saving Throw) save). Creatures that fail the save are Slowed 1 and gain fire weakness 5. Both conditions end after 3 rounds or when the tar is scrubbed off (which requires 3 Interact actions). The tar zombie can't Vomit Tar again for 1d4 rounds.</p>\n<p>Effect: Vomit Tar</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 26"
+}

@@ -1,0 +1,227 @@
+{
+  "initiative": 0,
+  "initiativebonus": 10,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Web Lurker OLD",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Common",
+    "Medium",
+    "Aberration",
+    "Evil"
+  ],
+  "source": "Pathfinder Bestiary",
+  "remaster": false,
+  "senses": [
+    "Darkvision",
+    "Tremorsense 30ft imprecise"
+  ],
+  "perception": {
+    "value": 10,
+    "note": "Darkvision, Tremorsense 30ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo",
+    "spider speak"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 8,
+      "note": [
+        "to Craft Traps and Snares 12"
+      ],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": -1
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Spider Speak",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The web lurker can speak with spiders, with the same effects and limitations as Speak with Animals.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 45,
+    "max": 45,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Spring upon Prey",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature touches the web lurker's web while the web lurker is on it.</p>\n<p><strong>Requirements</strong> Initiative has not yet been rolled.</p>\n<hr />\n<p><strong>Effect</strong> The web lurker automatically notices the creature and Strides or Climbs before rolling initiative.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, climb 25ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fangs",
+      "bonus": 11,
+      "traits": [
+        "poison"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+6",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+6)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "web-lurker-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+6",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+6)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Web",
+      "bonus": 11,
+      "traits": [],
+      "damageRolls": [],
+      "critRolls": [],
+      "effects": [
+        "web-trap"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Web Lurker Venom",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 19 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Maximum Duration</strong> 10 rounds</p>\n<p><strong>Stage 1</strong> 1d6 Poison Damage damage and Off-Guard (1 round)</p>\n<p><strong>Stage 2</strong> 1d6 Poison Damage damage, off-guard, and Slowed 1 (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Web Trap",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A creature hit by the web lurker's web attack is Immobilized and stuck to the nearest surface until it succeeds at DC 20 Acrobatics check to Escape statistic=acrobatics dc=20.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism, DC 18"
+}

@@ -1,0 +1,445 @@
+{
+  "initiative": 0,
+  "initiativebonus": 35,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Risen Nemesis AP",
+  "type": "Creature",
+  "level": 20,
+  "traits": [
+    "Unique",
+    "Medium",
+    "Fiend",
+    "Incorporeal",
+    "Palinthanos",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder #206: Bring the House Down",
+  "remaster": true,
+  "senses": [
+    "Greater darkvision"
+  ],
+  "perception": {
+    "value": 35,
+    "note": "Greater darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Necril"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 37,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 7
+  },
+  "constitution": {
+    "value": 7
+  },
+  "intelligence": {
+    "value": 7
+  },
+  "wisdom": {
+    "value": 7
+  },
+  "charisma": {
+    "value": 7
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Backward Speakers",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When a palinthanos vocalizes, the sounds it creates are reversed. For the egarhowl, this only results in unnerving backwards sounds of angry roars and bestial noises, but for those who can speak, it makes understanding them difficult. A palinthanos has no difficulty understanding any language it can speak, but when it speaks, listeners must succeed at a DC 30 Perception  check made as a free action with the concentrate trait each round to quickly decipher the reversed conversation. This prevents a palinthanos from being able to easily utilize linguistic actions.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 43,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 290,
+    "max": 290,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "force",
+        "ghost-touch",
+        "vitality"
+      ],
+      "type": "all-damage",
+      "value": 20
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft, fly 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 35,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d6+10",
+          "type": "slashing"
+        },
+        {
+          "roll": "4d6",
+          "type": "spirit"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d6+10)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(4d6)*2",
+          "type": "spirit"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Come Out, You Cowards!",
+      "actions": 3,
+      "traits": [
+        "move",
+        "occult"
+      ],
+      "description": "<p>In each round the Risen Nemesis does not have a PC to target, they go on a rampage, harming innocent bystanders and damaging the opera house structure. The Risen Nemesis Strides, then damages enough of their immediate surroundings at the end of this Stride to fill a 10ft Type:emanation with rubble that functions as difficult terrain (or greater difficult terrain where difficult terrain from rubble already existed). The PCs lose 1d4 Opera Points from their accumulated total.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Distort Perception",
+      "actions": 1,
+      "traits": [
+        "incapacitation",
+        "mental",
+        "occult"
+      ],
+      "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The risen nemesis targets a creature it can see within 30 feet and alters its perception of time. The target must attempt a DC 42 Will Saving Throw save. Regardless of success or failure, the creature then becomes temporarily immune to this ability for 24 hours.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature perceives time to flow backward briefly and becomes Slowed 1 for 1 round.</p>\n<p><strong>Failure</strong> Time flows backward for the creature, leaving them unable to interact with the world around them. The creature is Stunned 3, after which it is slowed 1 for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature's mind becomes stuck in a time loop, and it becomes Paralyzed by the disorienting sight for 1 minute. At the end of each of its turns, it can attempt a new Will save to reduce the remaining duration by 1 round or end it entirely on a critical success.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Predestined Defeat",
+      "actions": -1,
+      "traits": [
+        "occult"
+      ],
+      "description": "<p><strong>Trigger</strong> The risen nemesis rolls initiative</p>\n<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> At the start of combat, an inverted, reversed explosion of spiritual and void energy implodes in a 30ft Type:emanation centered on the risen nemesis—a reversal of the creature's spiritually explosive death. All creatures in the area take 16d8 Spirit Damage damage (Basic DC 39 Fortitude Saving Throw save); creatures that fail this save are also Slowed 1 for 1 round as time seems to distort around them.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reaction Reversal",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Since an risen nemesis appears to move backwards in time and the results of its actions manifest slightly out of sync, its manipulate or move actions and Strikes don't trigger reactions normally. Whenever a reaction would be triggered by an risen nemesis in this way, the reacting creature must attempt a DC 11 Flat . On a failure, their reaction does not trigger.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Temporal Possession",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When the echopsyvne casts possession on a creature, that creature experiences time backward. When the echopsyvne controls the target, they function normally, but when the target takes their own actions while the echopsyvne is in partial control or riding along in their body, they become Clumsy 3 and take a –10-foot status penalty to all of their Speeds. When the echopsyvne stops possessing the target, willingly or otherwise, the target must succeed at a DC 37 Will Saving Throw save or be Stunned 1 as they readjust to a more familiar flow of time.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Undo Destruction",
+      "actions": 2,
+      "traits": [
+        "occult"
+      ],
+      "description": "<p>Destruction is the beginning, not the end! The Risen Nemesis rewinds time on a pile of rubble that they can see within 120 feet, causing the rubble in a 10ft Type:burst to restore itself to its pre-destroyed state and causing the area to no longer serve as difficult terrain. All creatures in the area must make a DC 42 Reflex Saving Throw save. The Risen Nemesis cannot use Undo Destruction again for 1d4 rounds.</p><hr /><p><strong>Critical Success</strong> The creature avoids being harmed by the violence of the repairs.</p>\n<p><strong>Success</strong> The creature takes 2d10 Bludgeoning Damage,2d10[slashing]|options:area-damage]{2d10 bludgeoning, 2d10 piercing, and 2d10 slashing} damage as pieces of rubble bash, slice, and pierce them while it swirls through the air to rebuild.</p>\n<p><strong>Failure</strong> As success but 4d10 Bludgeoning Damage,4d10[slashing]|options:area-damage]{4d10 bludgeoning, 2d10 piercing, and 2d10 slashing} damage and the creature is knocked Prone.</p>\n<p><strong>Critical Failure</strong> As failure but 8d10 Bludgeoning Damage,8d10[slashing]|options:area-damage]{8d10 bludgeoning, 8d10 piercing, and 8d10 slashing} damage and the target is carried away with the rubble. They become Restrained by the rebuilt structure (usually the wall or floor within the rubble pile or closest to it; Escape dc=42). The restrained character might be so encased in rubble that they run the risk of suffocation.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Occult Innate Spells",
+      "type": "innate",
+      "bonus": 34,
+      "dc": 42,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 9,
+      "cantrips": [
+        {
+          "name": "Telekinetic Projectile",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal 2d6 bludgeoning, piercing, or slashing damage—as appropriate for the object you hurled. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "LRtJuH81o1G3hWoS"
+        },
+        {
+          "name": "Void Warp",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 living creature",
+          "save": "Basic fortitude",
+          "description": "<p>You call upon the Void to harm life force. The target takes 2d4 void damage with a basic Fortitude save. On a critical failure, the target is also Enfeebled 1 until the start of your next turn.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "rf2MzKQCoE0smpvW"
+        }
+      ],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [
+        {
+          "name": "Warp Mind",
+          "type": "spell",
+          "level": 7,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "emotion",
+            "incapacitation",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You scramble a creature's mental faculties and sensory input. The target must attempt a Will saving throw. Regardless of the result of that save, the target is then temporarily immune for 10 minutes. Warp mind's effects happen instantly, so Dispel Magic and other effects that counteract spells can't counteract them. However, Wish rituals and abilities that can remove non-magical effects can still counteract the effects.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target spends the first action on its next turn with the Confused condition.</p>\n<p><strong>Failure</strong> The target is Confused for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Confused permanently.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "P7bamPIAcLHSHtCf"
+        }
+      ],
+      "lv8spells": [
+        {
+          "name": "Vision of Death",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "death",
+            "emotion",
+            "fear",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 living creature",
+          "save": "will",
+          "description": "<p>You force the target to see a vision of its own death. It takes 8d6 Mental Damage damage with a Will save. If the target is reduced to 0 HP by this spell, its vision becomes reality and kills it instantly.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage and is Frightened 1.</p>\n<p><strong>Failure</strong> The target takes full damage and is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target takes double damage, is Frightened 4 and is Fleeing for as long as it's frightened.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "vVQpbHETK71aqhiq"
+        }
+      ],
+      "lv9spells": [
+        {
+          "name": "Phantasmagoria",
+          "type": "spell",
+          "level": 9,
+          "heightenedLevel": 9,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "death",
+            "illusion",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "any number of creatures",
+          "save": "will",
+          "description": "<p>You fill the targets' minds with endless images, like countless dreams and lives colliding with each other. The onrushing information deals 16d6 Mental Damage damage to each target, depending on its Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage and can't use reactions until the start of your next turn.</p>\n<p><strong>Failure</strong> The target takes full damage and is Confused until the start of your next turn.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is confused for 1 minute.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "42SChq5jZWt9pFAH"
+        }
+      ],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Religion or Religion, DC 40"
+}

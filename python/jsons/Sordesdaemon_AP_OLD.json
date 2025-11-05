@@ -1,0 +1,444 @@
+{
+  "initiative": 0,
+  "initiativebonus": 26,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Sordesdaemon AP OLD",
+  "type": "Creature",
+  "level": 15,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Daemon",
+    "Evil",
+    "Fiend",
+    "Unholy"
+  ],
+  "source": "Pathfinder #162: Ruins of the Radiant Siege",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 26,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Daemonic",
+    "telepathy 100 feet"
+  ],
+  "skills": [
+    {
+      "name": "arcana",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 29,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "medicine",
+      "modifier": 26,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 8
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 9
+  },
+  "intelligence": {
+    "value": 6
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 37,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 30,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+1 status to all saves vs. magic",
+  "hp": {
+    "value": 300,
+    "max": 300,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Miasma of Pollution",
+      "actions": null,
+      "traits": [
+        "aura",
+        "disease"
+      ],
+      "description": "<p>30 feet. Creatures in the aura can't reduce the value of the sickened condition.</p>\n<p>A creature that enters the aura or begins its turn in it must succeed at a DC 34 Fortitude Saving Throw save or be Sickened 2 (plus Slowed 1 as long as it is sickened on a critical failure).</p>\n<p>A creature that succeeds at its save is temporarily immune for 1 minute.</p>\n<p>Creatures made of water (such as water elementals) and plant creatures use an outcome one degree of success worse than the result of their save.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, climb 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 29,
+      "traits": [
+        "magical",
+        "reach-15",
+        "unarmed",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+14",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "1d6",
+          "type": "spirit"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+14)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "spirit"
+        }
+      ],
+      "effects": [
+        "pollution-infusion"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Pollution Infusion",
+      "actions": null,
+      "traits": [
+        "disease",
+        "virulent"
+      ],
+      "description": "<p>Non-fiend creatures adjacent to the afflicted creature take a -1 circumstance penalty to saving throws against disease</p>\n<p><strong>Saving Throw</strong> DC 36 Fortitude Saving Throw</p>\n<p><strong>Stage 1</strong> Drained 1 (1 day)</p>\n<p><strong>Stage 2</strong> Doomed 1 and Drained 1 (1 day)</p>\n<p><strong>Stage 3</strong> Doomed 1 and Drained 2 (1 day)</p>\n<p><strong>Stage 4</strong> Doomed 2 and Drained 2 (1 week)</p>\n<p><strong>Stage 5</strong> dead.</p>\n<p>Effect: Pollution Infusion</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Retch of Foulness",
+      "actions": 2,
+      "traits": [
+        "acid",
+        "divine"
+      ],
+      "description": "<p>The sordesdaemon exhales a spray of sewage that deals 8d6 Acid Damage|options:area-damage]{8d6 acid damage and 8d6 poison damage} in a 30ft Cone (Basic DC 40 Fortitude Saving Throw save).</p>\n<p>It can't use Retch of Foulness again for 1d4 rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Divine Innate Spells",
+      "type": "innate",
+      "bonus": 28,
+      "dc": 38,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 8,
+      "cantrips": [],
+      "lv1spells": [
+        {
+          "name": "Detect Alignment (At Will) (Good Only)",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft emanation",
+          "targets": "",
+          "save": "",
+          "description": "<p>Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful. You detect auras of that alignment. You receive no information beyond presence or absence. You can choose not to detect creatures or effects you're aware have that alignment.</p>\n<p>Only creatures of 6th level or higher-unless divine spellcasters, undead, or beings from the Outer Sphere-have alignment auras.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You learn each aura's location and strength.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "nJsNcaSTO2fdeZHz"
+        }
+      ],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [
+        {
+          "name": "Dimension Door (At Will)",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "yLWlmhmOztmNTDmd"
+        }
+      ],
+      "lv5spells": [
+        {
+          "name": "Cloudkill (At Will)",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "death",
+            "manipulate",
+            "poison"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "Basic fortitude",
+          "description": "<p>You conjure a poisonous fog. This functions as Mist, except the area moves 10 feet away from you each round. You deal 6d8 poison damage to each breathing creature that starts its turn in the spell's area. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "8rZciZP1Mbjm3tYQ"
+        },
+        {
+          "name": "Dimension Door",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "1 mile",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "lBM2KOSdEGLIyH2g"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [
+        {
+          "name": "Horrid Wilting",
+          "type": "spell",
+          "level": 8,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "500 feet",
+          "area": "",
+          "targets": "any number of living creatures",
+          "save": "Basic fortitude",
+          "description": "<p>You pull the moisture from the targets' bodies, dealing 10d10 void damage. Creatures made of water (such as water elementals) and plant creatures use the outcome for one degree of success worse than the result of their saving throw. Creatures whose bodies contain no significant moisture (such as earth elementals) are immune to horrid wilting.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "blSYbcYvup6PmxxZ"
+        },
+        {
+          "name": "Spiritual Epidemic",
+          "type": "spell",
+          "level": 8,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "curse",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You curse the target, sapping its spirit and leaving a contagious trap in its essence. The target must attempt a Will save. Any creature that casts a divine or occult spell on the target while it's affected is targeted by spiritual epidemic and must also attempt a Will save. The curse continues to spread in this way.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Enfeebled 2 and Stupefied 2 for 1 round.</p>\n<p><strong>Failure</strong> The target is Enfeebled 2 and Stupefied 2 for 1 minute and Enfeebled 1 and Stupefied 1 permanently.</p>\n<p><strong>Critical Failure</strong> The target is Enfeebled 2 and Stupefied 3 for 1 minute and Enfeebled 2 and Stupefied 2 permanently.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "mtCDi5ZYBV8THTCv"
+        }
+      ],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 1,
+        "max": 1
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 1,
+        "max": 1
+      },
+      "lv5slots": {
+        "current": 2,
+        "max": 2
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 2,
+        "max": 2
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Religion, DC 34"
+}

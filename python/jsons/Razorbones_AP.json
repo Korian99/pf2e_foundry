@@ -1,0 +1,244 @@
+{
+  "initiative": 0,
+  "initiativebonus": 34,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Razorbones AP",
+  "type": "Creature",
+  "level": 20,
+  "traits": [
+    "Unique",
+    "Large",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder #206: Bring the House Down",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 34,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Necril"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 38,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 36,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 10
+  },
+  "dexterity": {
+    "value": 7
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 6
+  },
+  "charisma": {
+    "value": 6
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Ectoplasmic Filaments",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within the razorbones' reach uses a manipulate action or a move action or leaves a square during a move action it's using</p><hr /><p><strong>Effect</strong> A filament of black, oily ectoplasm lashes out at the triggering creature, dealing (4d8+18) Slashing Damage damage (Basic DC 42 Reflex Saving Throw save). If the filament deals damage, the razorbones gains 8d8 temporary Hit Points as blood flows back along its bones to sheathe them in glisten red fluid.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Eerie Flexibility",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A razorbones can shift and adjust its mass to fit into smaller areas, allowing it to fit through tight spaces as if it were a Medium creature. While Squeezing, it can move at its full speed.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 45,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 35,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 32,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 430,
+    "max": 430,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "paralyzed",
+    "unconscious",
+    "poison",
+    "death-effects",
+    "disease",
+    "bleed"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "bludgeoning",
+      "value": 20
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 38,
+      "traits": [
+        "agile",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "persistent bleed"
+        },
+        {
+          "roll": "4d6+18",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "persistent bleed"
+        },
+        {
+          "roll": "(4d6+18)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "improved-grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Hurled Bone",
+      "bonus": 38,
+      "traits": [
+        "brutal"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d4+18",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d4+18)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Gnaw",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The razorbones has Grabbed a foe</p><hr /><p><strong>Effect</strong> The razorbones gnaws and chews on the grabbed target with its many skulls, dealing (4d6+18) Piercing Damage damage (Basic DC 42 Fortitude Saving Throw save). On a critical failure, the creature is also Drained 1 (or increases an existing drained condition by 1, to a maximum of Drained 4) from the grievous gnawing.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Skeletal Storm",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The razorbones makes a single claw Strike against every creature in reach. These attacks count toward the razorbones' multiple attack penalty, but the multiple attack penalty doesn't increase until after the razorbones makes all its attacks.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sprawled Bones",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p>Until the next time it acts, the razorbones appears as a sprawling mass of bones. It has an automatic result of 56 on Deception checks and DCs to pass as a grisly but seemingly harmless mess.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Improved Grab",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Improved Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with as a free action. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead spend an action to use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 40"
+}

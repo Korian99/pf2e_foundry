@@ -1,0 +1,258 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Rootridden AP",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder #203: Shepherd of Decay",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 16,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Necril",
+    "Wildsong"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Rooted",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A rootridden is bonded to a specific root network. If it's more than 300 feet from this network for at least 1 minute, it becomes Sickened 2 until it's again within 300 feet of the root network for at least 1 minute.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Walk the Roots",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The rootridden ignores the effects of difficult terrain caused by plants and fungi.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 120,
+    "max": 120,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "poison",
+    "unconscious",
+    "paralyzed"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Root Spawn",
+      "actions": null,
+      "traits": [
+        "primal",
+        "unholy"
+      ],
+      "description": "<p>A living creature slain by a rootridden that had a lower level than the rootridden rises as a new rootridden after 1d10 rounds, on its turn. This new rootridden is under the command of the rootridden that created it. If the creator is destroyed, any rootridden it created in the past 24 hours are destroyed as well, immediately collapsing into inert plant matter.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 20,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+8",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+8)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tendril",
+      "bonus": 20,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+8)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "root-rot-poison"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Spit",
+      "bonus": 20,
+      "traits": [
+        "deadly-d10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d8",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d8)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Root Rot Poison",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 26 Fortitude Saving Throw;</p>\n<p><strong>Maximum Duration</strong> 8 rounds</p>\n<p><strong>Stage 1</strong> 3d6 Poison Damage damage and Off-Guard (1 round)</p>\n<p><strong>Stage 2</strong> 3d6 Poison Damage damage and Slowed 1 (1 round)</p>\n<p><strong>Stage 3</strong> 4d6 Poison Damage damage and Slowed 2 (1 round)</p>\n<p><strong>Stage 4</strong> 4d6 Poison Damage damage and Paralyzed (1 round)</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 24"
+}

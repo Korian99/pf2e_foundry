@@ -1,0 +1,204 @@
+{
+  "initiative": 0,
+  "initiativebonus": 7,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Shocker Lizard OLD",
+  "type": "Creature",
+  "level": 2,
+  "traits": [
+    "Common",
+    "Small",
+    "Animal"
+  ],
+  "source": "Pathfinder Bestiary 2",
+  "remaster": false,
+  "senses": [
+    "Low light vision",
+    "greater electrolocation 20 feet"
+  ],
+  "perception": {
+    "value": 7,
+    "note": "Low light vision, greater electrolocation 20 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Greater Electrolocation",
+      "actions": null,
+      "traits": [
+        "electricity"
+      ],
+      "description": "<p>A shocker lizard can sense minute electrical charges in living creatures, which it can use as a precise sense at a range of 20 feet. This distance increases to 100 feet against any creature that has used an electricity effect within the last minute.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 32,
+    "max": 32,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "electricity"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "35 ft, climb 15ft, swim 15ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+3",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+3)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Shock",
+      "bonus": 10,
+      "traits": [
+        "nonlethal"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Amplify Voltage",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A shocker lizard within 20 feet makes a shock Strike or uses Discharge</p>\n<hr />\n<p><strong>Effect</strong> The shocker lizard lends some of its electrical power to the nearby lizard. This either causes the other lizard's shock Strike to lose the nonlethal trait or increases the DC of its Discharge to 20.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Discharge",
+      "actions": 2,
+      "traits": [
+        "electricity"
+      ],
+      "description": "<p>The shocker lizard releases a blast of lightning from its body. Creatures within a 10ft Emanation take 3d6 Electricity Damage damage (Basic DC 18 Reflex Saving Throw save).</p>\n<p>The shocker lizard can't use Discharge for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Shocking Burst",
+      "actions": 3,
+      "traits": [
+        "electricity",
+        "primal"
+      ],
+      "description": "<p>The shocker lizard hunkers down and begins to spark with electricity, which it releases in a 10ft Emanation that deals 3d8 Electricity Damage damage (Basic DC 18 Reflex Saving Throw save).</p>\n<p>The shocker lizard can't use Shocking Burst again for 1 minute.</p>\n<p>Up to four shocker lizards can combine their Shocking Bursts. In this case, the lizards can delay the release of their electricity until any other shocker lizard within 30 feet completes its Shocking Burst. The combined Shocking Bursts create an emanation with the combined area from all participating shocker lizards. For each additional shocker lizard that joins the burst, the damage increases by 3d8 and the save DC increases by 1 (to a maximum of four lizards dealing 12d8 damage with a DC 21 save).</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 16"
+}

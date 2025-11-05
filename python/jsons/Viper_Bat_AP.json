@@ -1,0 +1,260 @@
+{
+  "initiative": 0,
+  "initiativebonus": 15,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Viper Bat AP",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Uncommon",
+    "huge",
+    "Beast"
+  ],
+  "source": "Pathfinder #214: The Broken Palace",
+  "remaster": true,
+  "senses": [
+    "darkvision"
+  ],
+  "perception": {
+    "value": 15,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo",
+    "Common",
+    "Necril",
+    "Sakvroth"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "occultism",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 4
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 115,
+    "max": 115,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "mental",
+      "value": 5
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Oily Coils",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A viper bat gains a +4 circumstance bonus on Escape checks and to its Fortitude DC against attempts to Grapple them.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Stench",
+      "actions": null,
+      "traits": [
+        "aura",
+        "olfactory"
+      ],
+      "description": "<p>30 feet, DC 16 Fortitude Saving Throw. Undead are immune to viper bat stench.</p><hr /><p><details><summary>See rules...</summary>\n<p><p>A creature entering the aura or starting its turn in the area must succeed at a Fortitude save or become Sickened 1 (plus Slowed 1 as long as it's sickened on a critical failure). A creature that succeeds at its save or recovers from being sickened is temporarily immune to all stench auras for 1 minute.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, fly 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 18,
+      "traits": [
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "poison"
+        },
+        {
+          "roll": "2d8+8",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "poison"
+        },
+        {
+          "roll": "(2d8+8)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Spit Poison",
+      "bonus": 16,
+      "traits": [
+        "poison"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8",
+          "type": "poison"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8)*2",
+          "type": "poison"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Digest Mind",
+      "actions": null,
+      "traits": [
+        "curse",
+        "incapacitation",
+        "mental",
+        "occult"
+      ],
+      "description": "<p>Each time a swallowed creature begins their turn, they are affected by this horrific curse. If a creature escapes being swallowed whole before reaching stage 5, it recovers fully from this curse at the start of its next turn.</p>\n<p><strong>Saving Throw</strong> DC 25 Will Saving Throw</p>\n<p><strong>Stage 1</strong> Stupefied 1 (1 round)</p>\n<p><strong>Stage 2</strong> Stupefied 2 and Slowed 1 (1 round)</p>\n<p><strong>Stage 3</strong> Stupefied 3 and slowed 1 (1 round)</p>\n<p><strong>Stage 4</strong> stupefied 3 and Slowed 2 (1 round)</p>\n<p><strong>Stage 5</strong> the target's intellect is permanently reduced below that of an animal, and it treats its Charisma, Intelligence, and Wisdom modifiers as –5; it loses all abilities that require mental faculties, including spellcasting (unlimited duration).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Flick Oil",
+      "actions": 2,
+      "traits": [
+        "primal"
+      ],
+      "description": "<p>The viper bat flicks its coils, spraying rancid black oil in a 30ft Type:cone. A creature in the area becomes Clumsy 1 and Sickened 1 for 1 minute if they fail a DC 25 Fortitude Saving Throw save (Clumsy 2 and Sickened 2 on a critical failure). The viper bat can't Flick Oil for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swallow Whole",
+      "actions": 1,
+      "traits": [
+        "attack"
+      ],
+      "description": "<p>Medium, digest mind, Rupture 20</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster attempts to swallow a creature of the listed size or smaller that it has grabbed or restrained in its jaws or mouth. If a swallowed creature is of the maximum size listed, the monster can't use Swallow Whole again. If the creature is smaller than the maximum, the monster can usually swallow more creatures; the GM determines the maximum. The monster attempts an athletics|defense:reflex check opposed by the grabbed creature's Reflex DC. If it succeeds, it swallows the creature. The monster's mouth or jaws no longer grab a creature it has swallowed, so the monster is free to use them to Strike or Grab once again. The monster can't attack creatures it has swallowed.</p>\n<p>A swallowed creature is Grabbed, is Slowed 1, and has to hold its breath or start suffocating. The swallowed creature takes the listed amount of damage when first swallowed and at the end of each of its turns while it's swallowed. If the victim Escapes this ability's grabbed condition, it exits through the monster's mouth. This frees any other creature grabbed in the monster's mouth or jaws. A swallowed creature can attack the monster that has swallowed it, but only with unarmed attacks or with weapons of light Bulk or less. The swallowing creature is Off-Guard against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the swallowed creature cuts itself free. A creature that gets free by either Escaping or cutting itself free can immediately breathe and exits the swallowing monster's space.</p>\n<p>Effect: Engulf and Swallow Whole</p>\n<p>If the monster dies, a swallowed creature can be freed by creatures adjacent to the corpse if they spend a combined total of 3 actions cutting the monster open with a weapon or unarmed attack that deals piercing or slashing damage.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 23"
+}

@@ -1,0 +1,262 @@
+{
+  "initiative": 0,
+  "initiativebonus": 13,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Serpentfolk Granitescale AP OLD",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Evil",
+    "Humanoid",
+    "Mutant",
+    "Serpentfolk"
+  ],
+  "source": "Pathfinder #170: Spoken on the Song Wind",
+  "remaster": false,
+  "senses": [
+    "Darkvision",
+    "Scent 30ft imprecise"
+  ],
+  "perception": {
+    "value": 13,
+    "note": "Darkvision, Scent 30ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo",
+    "Common",
+    "telepathy 100 feet"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [
+    {
+      "name": "Javelin",
+      "quantity": 5,
+      "description": "<p>This thin spear is well balanced for throwing but is not designed for melee use.</p>",
+      "level": 0,
+      "price": "1 sp",
+      "traits": [
+        "thrown"
+      ]
+    },
+    {
+      "name": "Longspear",
+      "quantity": 1,
+      "description": "<p>This very long spear, sometimes called a pike, is purely for thrusting rather than throwing. Used by many soldiers and city watch for crowd control and defense against charging enemies, it must be wielded with two hands.</p>",
+      "level": 0,
+      "price": "5 sp",
+      "traits": [
+        "reach"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 24,
+    "note": "(22 with shed scales)",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+2 status to Will vs. mental",
+  "hp": {
+    "value": 120,
+    "max": 120,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "type": "poison",
+      "value": 8
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "+2 Status to Will vs. Mental",
+      "actions": null,
+      "traits": [],
+      "description": "",
+      "collapsed": false
+    },
+    {
+      "name": "Attack of Opportunity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Chipping Scales",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The granitescale takes piercing or slashing damage</p>\n<hr />\n<p><strong>Effect</strong> The granitescale twists to take the blow on their hardest scales, which they shed to reduce the incoming force. The granitescale reduces the damage by 10, but their AC is reduced by 2 for 1 day, when the shed scales regrow.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Longspear",
+      "bonus": 17,
+      "traits": [
+        "reach"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+6",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+6)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fangs",
+      "bonus": 17,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d8+6",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+6)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "serpentfolk-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Javelin",
+      "bonus": 16,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d6+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Rattling Spear",
+      "actions": 1,
+      "traits": [
+        "auditory",
+        "emotion",
+        "mental"
+      ],
+      "description": "<p><strong>Requirements</strong> The granitescale's last action was a successful spear Strike</p>\n<hr />\n<p><strong>Effect</strong> The granitescale rattles the base of their spear, attempting an Intimidation check to Demoralize all enemies within 30 feet (compare the granitescale's Intimidation check result to the targets' Will DCs individually).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Serpentfolk Venom",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> Basic DC 22 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 1d4 Poison Damage damage and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> 2d4 Poison Damage damage and enfeebled 1 (1 round)</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 22"
+}

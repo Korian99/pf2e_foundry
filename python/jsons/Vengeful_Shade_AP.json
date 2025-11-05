@@ -1,0 +1,318 @@
+{
+  "initiative": 0,
+  "initiativebonus": 22,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Vengeful Shade AP",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Unique",
+    "Medium",
+    "Ghost",
+    "Incorporeal",
+    "Spirit",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder #218: Titanbane",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 22,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "intimidation",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "Dhuraxilis Lore",
+      "modifier": 22,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": 3
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 7
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Site Bound",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The vengeful shade can't pass beyond the city limits of Pol-Dhuraxilis.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 140,
+    "max": 140,
+    "note": "rejuvenation, void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "force",
+        "ghost-touch",
+        "spirit",
+        "vitality"
+      ],
+      "type": "all-damage",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Rejuvenation",
+      "actions": null,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p>The vengeful shade can't move on to the afterlife until Ekriathe's current incarnation, Iapholi, either dies or makes amends to the shade.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "None ft, fly 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 23,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+13",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+13)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [
+        "miserable-remorse"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Cries of Vengeance",
+      "actions": null,
+      "traits": [],
+      "description": "<p>With every triumph, a chorus of hate-filled shouts erupts from the vengeful shade. Whenever the shade critically succeeds on a Strike, and whenever a creature critically fails a saving throw against the shade's Frightful Moan or Miserable Remorse, the shade gains a Disruption Point. The shade loses a Disruption Point whenever a creature critically succeeds at an attack roll against the shade and whenever the shade critically fails a saving throw.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Frightful Moan",
+      "actions": 1,
+      "traits": [
+        "auditory",
+        "divine",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>The ghost laments its fate, forcing each living creature within 30 feet to attempt a DC 29 Will Saving Throw save. On a failure, a creature becomes Frightened 2 (or Frightened 3 on a critical failure). On a success, a creature is temporarily immune to this ghost's frightful moan for 1 minute.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Miserable Remorse",
+      "actions": null,
+      "traits": [
+        "divine",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>A creature damaged by the shade's claw Strike is overcome with feelings of remorse and must attempt a DC 29 Will Saving Throw save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Stupefied 1 for 1 round.</p>\n<p><strong>Failure</strong> The creature is stupefied 1 for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature is Stunned 1 for 1 round.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Divine Innate Spells",
+      "type": "innate",
+      "bonus": 21,
+      "dc": 29,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 4,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [
+        {
+          "name": "Nightmare",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "illusion",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "1 day",
+          "range": "planetary",
+          "area": "",
+          "targets": "1 creature you know by name",
+          "save": "will",
+          "description": "<p>You send disturbing nightmares to your target. The next time the target falls asleep, it must attempt a Will save. If you know the target only by name and have never met them, the target gets a +4 circumstance bonus to the Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target suffers no adverse effects and is temporarily immune for 1 week.</p>\n<p><strong>Success</strong> The target experiences the nightmares but suffers no adverse effects other than unpleasant memories.</p>\n<p><strong>Failure</strong> The target experiences the nightmares and awakens Fatigued.</p>\n<p><strong>Critical Failure</strong> The target experiences the nightmares, awakens Fatigued, and is Drained 2 until it is no longer Fatigued.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "SpP3oE1lVaH2all6"
+        }
+      ],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Occultism or Religion, DC 27"
+}

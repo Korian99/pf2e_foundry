@@ -1,0 +1,244 @@
+{
+  "initiative": 0,
+  "initiativebonus": 18,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Spore Thrall AP",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Rare",
+    "Medium",
+    "Elf",
+    "Fungus",
+    "Humanoid"
+  ],
+  "source": "Pathfinder #211: The Secret of Deathstalk Tower",
+  "remaster": true,
+  "senses": [
+    "Low light vision"
+  ],
+  "perception": {
+    "value": 18,
+    "note": "Low light vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Chthonian",
+    "Common",
+    "Elven"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 3
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Elven Curve Blade",
+      "quantity": 1,
+      "description": "<p>Essentially a longer version of the scimitar, this traditional elven weapon has a thinner blade than its cousin.</p>",
+      "level": 0,
+      "price": "4 gp",
+      "traits": [
+        "elf",
+        "finesse",
+        "forceful"
+      ]
+    },
+    {
+      "name": "Composite Shortbow",
+      "quantity": 1,
+      "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>",
+      "level": 1,
+      "price": "14 gp",
+      "traits": [
+        "deadly-d10",
+        "propulsive"
+      ]
+    },
+    {
+      "name": "Leather Armor",
+      "quantity": 1,
+      "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 175,
+    "max": 175,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Spore Burst",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p>When a spore thrall is reduced to 0 Hit Points by damage other than cold damage, they burst in an explosion of toxic green spores. All creatures in a 15ft Type:emanation around the spore thrall take 10d6 Poison Damage damage (Basic DC 26 Fortitude Saving Throw save).</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Elven Curve Blade",
+      "bonus": 22,
+      "traits": [
+        "finesse",
+        "forceful",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+6",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+6)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Composite Shortbow",
+      "bonus": 22,
+      "traits": [
+        "deadly-d10",
+        "magical",
+        "propulsive",
+        "reload-0"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Hunt Prey",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p>The spore thrall designates a single creature they can see or hear as their prey. They gain a +2 circumstance bonus to Perception checks when they Seek their prey and ignore the penalty for making ranged attacks within their second range increment against the prey they're hunting. If the spore thrall uses Hunt Prey against a creature when they already have one designated, the previous creature loses the designation. The designation lasts for 24 hours.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Precise Aim",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>A spore thrall deals an additional 2d6 precision damage against a creature they've designated as their hunted prey.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature or Society, DC 27"
+}

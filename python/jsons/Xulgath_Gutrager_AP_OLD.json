@@ -1,0 +1,238 @@
+{
+  "initiative": 0,
+  "initiativebonus": 19,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Xulgath Gutrager AP OLD",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Common",
+    "Medium",
+    "Chaotic",
+    "Evil",
+    "Humanoid",
+    "Xulgath"
+  ],
+  "source": "Pathfinder #154: Siege of the Dinosaurs",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 19,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Draconic",
+    "Sakvroth"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 7
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": -1
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 190,
+    "max": 190,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "type": "acid",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Caustic Fog",
+      "actions": null,
+      "traits": [
+        "acid",
+        "aura"
+      ],
+      "description": "<p>10 feet. Whenever a gutrager is within another xulgath's stench aura, a fog appears around the gutrager; creatures in the fog (including the gutrager) can see as normal, but they are Concealed from creatures outside the fog. Non-xulgaths that begin their turn in the fog take 2d6 Acid Damage damage. Strong winds suppress this ability.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Self-Detonate",
+      "actions": 2,
+      "traits": [
+        "acid"
+      ],
+      "description": "<p><strong>Requirements</strong> The gutrager has 45 or fewer HP</p>\n<hr />\n<p><strong>Effect</strong> The gutrager compresses its gut and explodes in a burst of viscera, dying instantly and dealing 8d8 Acid Damage damage to creatures and unattended objects in a 20ft Emanation centered on the gutrager (Basic DC 31 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "40 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 21,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+8",
+          "type": "piercing"
+        },
+        {
+          "roll": "2d6",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+8)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 23,
+      "traits": [
+        "agile",
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+8",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+8)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Bile Jet",
+      "bonus": 23,
+      "traits": [
+        "acid"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d8+7",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d8+7)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Corrosive Kiss",
+      "actions": 2,
+      "traits": [
+        "acid"
+      ],
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The gutrager propels its esophagus out of its body to deliver an acidic blow. It makes an unarmed Strike against a creature or unattended object within 30 feet with a +23 attack bonus.</p>\n<p>On a hit, the target takes (2d6+8) Bludgeoning Damage damage plus 4d6 Acid Damage damage.</p>\n<p>On a critical hit, the target also takes 2d6 Persistent,acid Damage damage.</p>\n<p>The gutrager is Clumsy 1 for 1 round as it re-coils its esophagus.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 27"
+}

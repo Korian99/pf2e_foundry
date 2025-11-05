@@ -1,0 +1,143 @@
+{
+  "initiative": 0,
+  "initiativebonus": 17,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Scroll Shock Trap OLD",
+  "type": "Hazard",
+  "level": 9,
+  "traits": [
+    "Common",
+    "Medium",
+    "Mechanical",
+    "Trap"
+  ],
+  "source": "Pathfinder Adventure: The Slithering",
+  "remaster": false,
+  "stealth": {
+    "value": 17,
+    "note": "(expert) or @Check[perception|dc:29|traits:action:seek] (expert) to spot the control panel"
+  },
+  "description": "<p>Five scroll symbols shoot electricity bolts around the room.</p>",
+  "disable": "<p>DC 25 Thievery  (expert) or Dispel Magic (3rd rank; counteract DC 24)</p>\n<p>DC 29 Thievery  (master) to disable the entire trap from the hidden control panel beneath the central slab.</p>",
+  "reset": "<p>The trap deactivates 1 round after it has no target creatures and resets after 1 minute.</p>",
+  "routine": "<p>(5 actions) Each disabled symbol reduces the trap's number of actions by 1.</p>\n<p>For each of its actions, a different symbol shoots an electricity bolt at a random creature in the room. The trap doesn't take multiple attack penalties.</p>",
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Symbol Stats (Each)",
+      "actions": null,
+      "traits": [],
+      "description": "<p><strong>Hardness</strong> 16</p>\n<p><strong>HP</strong> 64 (BT 32)</p>\n<p><strong>Resistances</strong> Electricity 15</p>\n<p><strong>Immunities</strong> Critical Hits, Object Immunities, Precision Damage</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Control Panel Stats",
+      "actions": null,
+      "traits": [],
+      "description": "<p><strong>Hardness</strong> 18</p>\n<p><strong>HP</strong> 72 (BT 36)</p>\n<p><strong>Resistances</strong> Electricity 15</p>\n<p><strong>Immunities</strong> Critical Hits, Object Immunities, Precision Damage</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Charge",
+      "actions": -1,
+      "traits": [
+        "arcane"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature without an Aspis Consortium badge approaches within 5 feet of a slab</p>\n<hr />\n<p><strong>Effect</strong> Both double doors leading out of the room shut and lock. While the trap is active, the doors must be battered open (Hardness 18; Panel HP 72 [BT 36]; DC 29 Athletics  to Force Open). The closest symbol to the triggering creature shoots an electricity bolt attack at it. The trap then rolls initiative.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "No Multiple Attack Penalty",
+      "actions": null,
+      "traits": [],
+      "description": "",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 28,
+    "note": null,
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "hardness": {
+    "value": 16
+  },
+  "fortitude": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 64,
+    "max": 64,
+    "note": "See Symbol and Panel Stats",
+    "modifications": []
+  },
+  "immunities": [
+    "critical-hits",
+    "precision"
+  ],
+  "resistances": [
+    {
+      "type": "electricity",
+      "value": 15
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "",
+  "strikes": [
+    {
+      "type": "ranged",
+      "name": "Electrical Bolt",
+      "bonus": 21,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d6+2",
+          "type": "electricity"
+        },
+        {
+          "roll": "1d6",
+          "type": "persistent electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+2)*2",
+          "type": "electricity"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "persistent electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [],
+  "spellcastingEntries": [],
+  "recallKnowledge": ", DC 26"
+}

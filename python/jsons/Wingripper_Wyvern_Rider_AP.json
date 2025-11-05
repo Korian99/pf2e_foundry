@@ -1,0 +1,253 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Wingripper Wyvern Rider AP",
+  "type": "Creature",
+  "level": 9,
+  "traits": [
+    "Rare",
+    "Medium",
+    "Humanoid",
+    "Orc"
+  ],
+  "source": "Pathfinder #209: Destroyer's Doom",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 16,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Orcish"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 16,
+      "note": [
+        "to Command their wyvern 20"
+      ],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [
+    {
+      "name": "Falchion",
+      "quantity": 1,
+      "description": "<p>This weapon is a heavier, two-handed version of the curved-bladed scimitar. It is weighted toward the blade's end, making it a powerful slashing weapon.</p>",
+      "level": 0,
+      "price": "3 gp",
+      "traits": [
+        "forceful",
+        "sweep"
+      ]
+    },
+    {
+      "name": "Composite Shortbow",
+      "quantity": 1,
+      "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>",
+      "level": 0,
+      "price": "14 gp",
+      "traits": [
+        "deadly-d10",
+        "propulsive"
+      ]
+    },
+    {
+      "name": "Hide Armor",
+      "quantity": 1,
+      "description": "<p>A mix of furs, sturdy hide, and sometimes molded boiled leather, this armor provides protection due to its layers of leather, though its bulkiness slows the wearer down and decreases mobility.</p>",
+      "level": 0,
+      "price": "2 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 130,
+    "max": 130,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Ferocity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its Wounded value increases by 1. When it is Wounded 3, it can no longer use this ability</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Wyvern Bond",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A wyvern rider automatically succeeds at checks to Command an Animal for a wyvern they're mounted on. While mounted, the wyvern acts on their turn.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Falchion",
+      "bonus": 20,
+      "traits": [
+        "forceful",
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+6",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+6)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Composite Shortbow",
+      "bonus": 22,
+      "traits": [
+        "deadly-d10",
+        "propulsive",
+        "reload-0"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+9",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+9)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Terrifying Strike",
+      "actions": 2,
+      "traits": [
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>The wyvern rider attempts a weapon Strike against a target, shouting threats and curses. If it hits, the target must succeed at a DC 28 Will Saving Throw save or be Frightened 2 (Frightened 4 on a critical failure).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Weapon Adept",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The wyvern rider can Swap between their falchion and composite shortbow, then Strike with the weapon they switched to.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Wyvern's Swoop",
+      "actions": 2,
+      "traits": [
+        "flourish"
+      ],
+      "description": "<p><strong>Requirements</strong> The wyvern rider is mounting their wyvern</p><hr /><p><strong>Effect</strong> The wyvern rider Commands their mount to Stride twice. At any point during this movement, they can Strike one enemy within reach or within the first range increment of their ranged weapon, with a +1 circumstance bonus to their attack roll. If they begin this movement at a higher point than their target, they deal an additional die of damage with this Strike.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 26"
+}

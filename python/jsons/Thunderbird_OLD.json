@@ -1,0 +1,280 @@
+{
+  "initiative": 0,
+  "initiativebonus": 22,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Thunderbird OLD",
+  "type": "Creature",
+  "level": 11,
+  "traits": [
+    "Uncommon",
+    "Gargantuan",
+    "Air",
+    "Beast",
+    "Electricity"
+  ],
+  "source": "Pathfinder Bestiary 2",
+  "remaster": false,
+  "senses": [
+    "Darkvision",
+    "stormsight"
+  ],
+  "perception": {
+    "value": 22,
+    "note": "Darkvision, stormsight",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Sussuran"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 8
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 7
+  },
+  "intelligence": {
+    "value": 3
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Stormsight",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Wind, precipitation, and clouds don't impair a thunderbird's vision; it ignores the Concealed condition from storms, mist, precipitation, and the like.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 31,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 200,
+    "max": 200,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "electricity"
+  ],
+  "resistances": [
+    {
+      "type": "sonic",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Reactive Shock",
+      "actions": -1,
+      "traits": [
+        "move"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature enters the thunderbird's reach or uses a move action within their reach</p>\n<hr />\n<p><strong>Effect</strong> A lightning bolt dancing on the thunderbird's body leaps onto the creature, dealing 8d6 Electricity Damage damage (Basic DC 30 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Storm Aura",
+      "actions": null,
+      "traits": [
+        "air",
+        "aura",
+        "concentrate",
+        "move",
+        "primal",
+        "water"
+      ],
+      "description": "<p>100 feet. The thunderbird is surrounded by a cyclone of wind and driving rain. This area is greater difficult terrain for flying creatures, who must successfully Maneuver in Flight (DC 27) or be blown 30 feet away from the thunderbird. Creatures on the ground must succeed at a DC 27 Reflex Saving Throw save to perform any move action and are knocked Prone on a critical failure.</p>\n<p>The driving rain in the storm aura imposes a -2 circumstance penalty on Perception checks and extinguishes smaller flames.</p>\n<p>A thunderbird can deactivate or activate the storm aura as a free action with the concentrate trait.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, fly 80ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Beak",
+      "bonus": 24,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+12",
+          "type": "piercing"
+        },
+        {
+          "roll": "3d6",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+12)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(3d6)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Talon",
+      "bonus": 24,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+12",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+12)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Thunderbolt",
+      "bonus": 23,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "3d6",
+          "type": "electricity"
+        },
+        {
+          "roll": "3d6",
+          "type": "sonic"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6)*2",
+          "type": "electricity"
+        },
+        {
+          "roll": "(3d6)*2",
+          "type": "sonic"
+        }
+      ],
+      "effects": [
+        "thunderstrike"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Lightning Blast",
+      "actions": 2,
+      "traits": [
+        "primal"
+      ],
+      "description": "<p>The thunderbird spreads their wings and blasts their foe with thunderous bolts of lightning. Each creature in a 30ft Emanation takes 6d6 Electricity Damage|options:area-damage]{6d6 electricity damage and 6d6 sonic damage} (Basic DC 30 Reflex Saving Throw save). The thunderbird can't use Lightning Blast for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Stormflight",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A thunderbird can move in wind with ease. They don't treat wind as difficult terrain or need to Maneuver in Flight in high winds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Thunderstrike",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A creature that takes damage from a thunderbird's thunderbolt Strike must succeed at a DC 28 Fortitude Saving Throw save or be knocked Prone and Deafened for 1 round.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 28"
+}

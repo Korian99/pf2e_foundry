@@ -1,0 +1,200 @@
+{
+  "initiative": 0,
+  "initiativebonus": 9,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Sporeborn Skull AP OLD",
+  "type": "Creature",
+  "level": 2,
+  "traits": [
+    "Common",
+    "tiny",
+    "Evil",
+    "Fungus",
+    "Mindless",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder #193: Mantle of Gold",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 9,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Necril"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 8,
+      "note": [
+        "to Maneuver in Flight 10"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 5,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 30,
+    "max": 30,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "acid"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "vitality",
+      "value": 3
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Spore Explosion",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When destroyed, a sporeborn skull explodes in a blast of bone and toxic spores that deals 1d6 Piercing Damage]{1d6 piercing damage plus 1d6 poison} damage to each adjacent creature (Basic DC 18 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Stir the Spores",
+      "actions": -1,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Frequency</strong> once per 1d4 #recharge stir the spores rounds</p>\n<p><strong>Trigger</strong> The sporeborn skull takes bludgeoning, piercing, or slashing damage</p>\n<hr />\n<p><strong>Effect</strong> The impact scatters spores onto all creatures within 5 feet, making them Sickened 1 (DC 18 Fortitude Saving Throw negates).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "15 ft, fly 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Forehead",
+      "bonus": 10,
+      "traits": [
+        "finesse"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+3",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "1d6",
+          "type": "poison"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+3)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "poison"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Spittle",
+      "bonus": 10,
+      "traits": [
+        "acid",
+        "agile"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d12+2",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d12+2)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature or Religion, DC 16"
+}

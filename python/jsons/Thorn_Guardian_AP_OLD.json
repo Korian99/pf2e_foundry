@@ -1,0 +1,177 @@
+{
+  "initiative": 0,
+  "initiativebonus": 27,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Thorn Guardian AP OLD",
+  "type": "Creature",
+  "level": 16,
+  "traits": [
+    "Rare",
+    "Small",
+    "Construct",
+    "Mindless"
+  ],
+  "source": "Pathfinder #174: Shadows of the Ancients",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 27,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 33,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 9
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 39,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 30,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 35,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 330,
+    "max": 330,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "critical-hits",
+    "grabbed",
+    "precision",
+    "prone"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Attack of Opportunity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Extra Reaction",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A thorn guardian gains an additional reaction each turn but can use this extra reaction only to Retaliate.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Retaliate",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within the thorn guardian's reach attacks the guardian's ward</p>\n<hr />\n<p><strong>Effect</strong> The thorn guardian makes a briar Strike against the triggering creature. If it hits, it deals an additional 2d6 Bleed Damage.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft, fly 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Briar",
+      "bonus": 30,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "3d12+12",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+12)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Bond with Ward",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "move"
+      ],
+      "description": "<p><strong>Requirements</strong> The thorn guardian is adjacent to its ward</p><hr />\n<p><strong>Effect</strong> The thorn guardian enters its ward's space and encases the creature. This doesn't interfere with its ward's senses or actions. The thorn guardian occupies the same space as its ward and moves with its ward.</p>\n<p>While worn, the thorn guardian establishes a constant Share Life effect with its ward. Attacks that target the thorn guardian target the ward instead but use the higher AC or saving throw values between the thorn guardian and the ward. Area effects apply to both the thorn guardian and the ward, as normal for an area effect.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Fly Free",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "move"
+      ],
+      "description": "<p><strong>Requirements</strong> The thorn guardian is Bonded with its Ward</p><hr /><p><strong>Effect</strong> The thorn guardian removes itself from the ward and enters an adjacent space.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Interpose",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The thorn guardian is Bonded with or adjacent to its ward</p>\n<hr />\n<p><strong>Effect</strong> The thorn guardian interposes itself between the ward and its foes, granting its ward a +2 circumstance bonus to AC until the start of the thorn guardian's next turn.</p>\n<p>Effect: Interpose</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Crafting, DC 35"
+}

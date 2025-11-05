@@ -1,0 +1,195 @@
+{
+  "initiative": 0,
+  "initiativebonus": 14,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Pyronite Ooze AP OLD",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Rare",
+    "Large",
+    "Mindless",
+    "Ooze"
+  ],
+  "source": "Pathfinder #180: The Smoking Gun",
+  "remaster": false,
+  "senses": [
+    "Tremorsense 60ft imprecise"
+  ],
+  "perception": {
+    "value": 14,
+    "note": "Tremorsense 60ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": -5
+  },
+  "constitution": {
+    "value": 7
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": -5
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 350,
+    "max": 350,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bludgeoning",
+    "critical-hits",
+    "fire",
+    "precision",
+    "unconscious",
+    "visual"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Constant Explosions",
+      "actions": null,
+      "traits": [
+        "aura",
+        "fire"
+      ],
+      "description": "<p>5 feet. 4d6 Fire Damage, Basic DC 29 Reflex Saving Throw. This aura can't cause other pyronite oozes to split.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rejoin",
+      "actions": null,
+      "traits": [],
+      "description": "<p>If two or more Medium pyronite oozes end their turn in adjacent spaces, they merge into a Large pyronite ooze, combining their current Hit Points.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Split",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When a Large pyronite ooze is hit by an attack that would deal bludgeoning or fire damage and it has 10 or more HP, it explodes, dealing 6d6 Fire Damage damage to creatures in a 10-foot radius (Basic DC 29 Reflex Saving Throw). This explosion can't cause other pyronite oozes to split. After exploding, the ooze splits into two Medium pyronite oozes, each with half the original's HP, which each fly through the air and land 15 feet from the original ooze in a random direction. If no space is unoccupied where the ooze would land, it automatically pushes creatures and objects out of the way to fill a space (the GM decides if an object or creature is too big or sturdy to push).</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, climb 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Pseudopod",
+      "bonus": 23,
+      "traits": [
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+10)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Blast",
+      "bonus": 21,
+      "traits": [
+        "fire"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+3",
+          "type": "fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+3)*2",
+          "type": "fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Exploding Split",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The pyronite ooze is Large</p>\n<hr />\n<p><strong>Effect</strong> The pyronite ooze explodes in a violent conflagration, dealing 3d6 Fire Damage|options:area-damage]{3d6 fire and 3d6 bludgeoning damage} to all creatures in a 30-foot radius (Basic DC 29 Reflex Saving Throw). This explosion can't cause other pyronite oozes to split. After exploding, the ooze splits into two Medium pyronite oozes (see above), but this splitting doesn't deal additional damage.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism, DC 27"
+}

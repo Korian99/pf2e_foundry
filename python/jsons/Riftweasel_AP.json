@@ -1,0 +1,451 @@
+{
+  "initiative": 0,
+  "initiativebonus": 34,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Riftweasel AP",
+  "type": "Creature",
+  "level": 19,
+  "traits": [
+    "Rare",
+    "Medium",
+    "Beast",
+    "Fiend"
+  ],
+  "source": "Pathfinder #212: A Voice in the Blight",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "Scent 120ft precise",
+    "Tremorsense 60ft precise"
+  ],
+  "perception": {
+    "value": 34,
+    "note": "Darkvision, Scent 120ft precise, Tremorsense 60ft precise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Chthonian"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 34,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 37,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 34,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 34,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 36,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 10
+  },
+  "dexterity": {
+    "value": 7
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 3
+  },
+  "wisdom": {
+    "value": 7
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 44,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 30,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 34,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 32,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 355,
+    "max": 355,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "disease",
+    "poison"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Lithe",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A riftweasel can fit through tight spaces as if it were a Tiny creature. When Squeezing, it moves at its full speed.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Tenacious Grip",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature Escapes from the riftweasel's grapple</p><hr /><p><strong>Effect</strong> The riftweasel twists its body to maintain its grasp, and attempts to Grapple the target before they can actually escape. It takes a –5 circumstance penalty to this attempt.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, burrow 20ft, fly 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 35,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d10+15",
+          "type": "piercing"
+        },
+        {
+          "roll": "2d6",
+          "type": "persistent bleed"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d10+15)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "persistent bleed"
+        }
+      ],
+      "effects": [
+        "improved-grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Burst from the Dead",
+      "actions": 1,
+      "traits": [
+        "emotion",
+        "fear",
+        "mental",
+        "move"
+      ],
+      "description": "<p><strong>Requirements</strong> The riftweasel is inside of a carcass</p><hr /><p><strong>Effect</strong> The riftweasel emerges in a gory burst from the carcass, appearing in any space adjacent to the remains. As it bursts out, it shrieks and splatters decay all about it; the riftweasel attempts to Demoralize an observed creature. The riftweasel doesn't take any penalty to this check for not speaking during the attempt, and if it critically succeeds, the target is also Sickened 1 by fragments of gore and putrescence splattered onto it by the unsettling display.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Carrion Eater",
+      "actions": 1,
+      "traits": [
+        "manipulate"
+      ],
+      "description": "<p>The riftweasel consumes flesh from an adjacent dead creature and regains 10d6 Healing Damage Hit Points. It can regain Hit Points from any given corpse only once.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Hide in Carcass",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The riftweasel Burrows into the carcass of a Large or larger adjacent creature, then Hides. As long as it remains inside a carcass, it can sense the surrounding area via tremorsense, and gains greater cover. A riftweasel doesn't need to hold its breath while burrowed into a carcass.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Snap Neck",
+      "actions": 1,
+      "traits": [
+        "incapacitation",
+        "manipulate"
+      ],
+      "description": "<p>The riftweasel wrenches at the head of a Medium or smaller creature it has Grabbed or Restrained; the creature must attempt a DC 41 Fortitude Saving Throw save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes 2d10 Bludgeoning Damage damage.</p>\n<p><strong>Failure</strong> The creature takes 4d10 Bludgeoning Damage damage and is Paralyzed for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes 8d10 Bludgeoning Damage damage and is permanently paralyzed.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Improved Grab",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Improved Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with as a free action. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead spend an action to use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Occult Innate Spells",
+      "type": "innate",
+      "bonus": 30,
+      "dc": 38,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 9,
+      "cantrips": [
+        {
+          "name": "Daze",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental",
+            "nonlethal"
+          ],
+          "castingTime": "2",
+          "duration": "1 round",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "Basic will",
+          "description": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals 1d6 mental damage, with a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "MZOGFbNgjxMcJlri"
+        }
+      ],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [
+        {
+          "name": "Talking Corpse",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "10 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 corpse",
+          "save": "will",
+          "description": "<p>You grant the target corpse a semblance of life, which it uses to speak the answers to three questions posed to it. This spell calls on the physical body's latent memories rather than summoning back the deceased's spirit, so the corpse must be mostly intact for the spell to function. The more damage the corpse has taken, the more inaccurate or patchwork its answers are, and it must have a throat and mouth to speak at all. If anyone has previously cast this spell on the corpse in the last week, the spell automatically fails. The corpse can attempt a Will save to resist answering the questions using the statistics of the original creature at its time of death, with the following effects.</p>\n<hr /><p><strong>Critical Success</strong> The target can lie or refuse to answer your questions, and the target's spirit haunts you for 24 hours, bothering you and causing you to be unable to gain any rest for that time.</p>\n<p><strong>Success</strong> The target can provide false information or refuse to answer your questions.</p>\n<p><strong>Failure</strong> The target must answer truthfully, but its answers can be brief, cryptic, and repetitive. It can still mislead you or attempt to stall so that the spell's duration runs out before you can ask all your questions.</p>\n<p><strong>Critical Failure</strong> As failure, but the target's answers are more direct and less repetitive, though still cryptic. It takes a -2 status penalty to Deception checks to deceive or mislead you.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "zHKaz9KWFUuLOL14"
+        },
+        {
+          "name": "Vision of Death",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "death",
+            "emotion",
+            "fear",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 living creature",
+          "save": "will",
+          "description": "<p>You force the target to see a vision of its own death. It takes 8d6 Mental Damage damage with a Will save. If the target is reduced to 0 HP by this spell, its vision becomes reality and kills it instantly.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage and is Frightened 1.</p>\n<p><strong>Failure</strong> The target takes full damage and is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target takes double damage, is Frightened 4 and is Fleeing for as long as it's frightened.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "7yFNlUoFBMLggyV6"
+        },
+        {
+          "name": "Synaptic Pulse",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "incapacitation",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "1 round",
+          "range": "",
+          "area": "30ft emanation",
+          "targets": "",
+          "save": "will",
+          "description": "<p>You emit a pulsating mental blast that penetrates the minds of all enemies in the area. Each enemy in the area must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Stunned 1.</p>\n<p><strong>Failure</strong> The creature is Stunned 2.</p>\n<p><strong>Critical Failure</strong> The creature is Stunned for 1 round.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "2LhfsygijtIyyfO2"
+        }
+      ],
+      "lv9spells": [
+        {
+          "name": "Paralyze",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 9,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "incapacitation",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You block the target's motor impulses before they can leave its mind, threatening to freeze the target in place. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Stunned 1.</p>\n<p><strong>Failure</strong> The target is Paralyzed for 1 round.</p>\n<p><strong>Critical Failure</strong> The target is Paralyzed for 4 rounds. At the end of each of its turns, it can attempt a new Will save to reduce the remaining duration by 1 round, or end it entirely on a critical success.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> You can target up to 10 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "JReXtkROD0Sgd2p6"
+        },
+        {
+          "name": "Fly (Constant)",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 9,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "5 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can soar through the air, gaining a fly Speed equal to its Speed or 20 feet, whichever is greater.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration increases to 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "HObQBlRLdl6oq1D7"
+        }
+      ],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Arcana or Nature or Religion, DC 39"
+}

@@ -1,0 +1,188 @@
+{
+  "initiative": 0,
+  "initiativebonus": 9,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Slithering Pit OLD",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Rare",
+    "Medium",
+    "Mindless",
+    "Ooze"
+  ],
+  "source": "Pathfinder Bestiary 3",
+  "remaster": false,
+  "senses": [
+    "Tremorsense 60ft imprecise"
+  ],
+  "perception": {
+    "value": 9,
+    "note": "Tremorsense 60ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": -5
+  },
+  "constitution": {
+    "value": 7
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": -5
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Transparent",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A slithering pit is so clear it's difficult to spot. A successful DC 30 Perception  check is required to notice a stationary slithering pit, and a creature must be Searching to attempt this check.</p>\n<p>A creature that walks into the pit's space might fall into any pit currently in effect due to Dimensional Pit.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 14,
+    "note": "(10 from inside the Dimensional Pit)",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 220,
+    "max": 220,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "acid",
+    "critical-hits",
+    "precision",
+    "unconscious",
+    "visual"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Breach Vulnerability",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Ingesting an extradimensional space like that found in a <em>bag of holding</em> deals 6d8 Force Damage damage to the slithering pit and its occupants. The slithering pit then immediately uses Out You Go.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "10 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Pseudopod",
+      "bonus": 18,
+      "traits": [
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+9",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+9)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "improved-grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Dimensional Pit",
+      "actions": 2,
+      "traits": [
+        "extradimensional",
+        "occult"
+      ],
+      "description": "<p>The slithering pit opens an extradimensional, 20-foot-deep pit that covers its own space and all adjacent squares unless they're walls or similar blocking terrain.</p>\n<p>Any other creature occupying or entering pit spaces must succeed at a DC 22 Reflex Saving Throw save or fall into the pit, taking damage from the fall (typically 10 bludgeoning damage). Any creature Grabbed by the ooze falls in and is no longer grabbed, even if it was outside the pit squares.</p>\n<p>While a dimensional pit is open, the slithering pit is Immobilized, can't be forced to move, and can make pseudopod Strikes originating from the walls of the pit. A creature that starts its turn at the bottom of the pit takes 2d6 Acid Damage damage. Climbing the walls of the pit requires a DC 22 Athletics  check.</p>\n<p>When the slithering pit dies, the dimensional pit closes and creatures inside are ejected, with the effects of Out You Go.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Flurry of Pods",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The slithering pit makes a single pseudopod Strike against each target within range it doesn't already have Grabbed. These attacks count toward the slithering pit's multiple attack penalty, but the penalty doesn't increase until after all of these attacks.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Out You Go",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The slithering pit closes all pit spaces it created using Dimensional Pit, ejecting all its occupants onto the ground into random free spaces where the pit opened. Each occupant takes 4d6 Bludgeoning Damage damage (Basic DC 22 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Improved Grab",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Improved Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with as a free action. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead spend an action to use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism, DC 23"
+}

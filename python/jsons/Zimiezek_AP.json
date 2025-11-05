@@ -1,0 +1,531 @@
+{
+  "initiative": 0,
+  "initiativebonus": 33,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Zimiezek AP",
+  "type": "Creature",
+  "level": 18,
+  "traits": [
+    "Rare",
+    "Large",
+    "Aberration",
+    "Fiend",
+    "Unholy"
+  ],
+  "source": "Pathfinder #206: Bring the House Down",
+  "remaster": true,
+  "senses": [
+    "Greater darkvision"
+  ],
+  "perception": {
+    "value": 33,
+    "note": "Greater darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Chthonian",
+    "Common",
+    "Daemonic",
+    "Diabolic",
+    "Utopian"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 32,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 34,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "society",
+      "modifier": 31,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 33,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "Duskfathom Lore",
+      "modifier": 31,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 7
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": 5
+  },
+  "wisdom": {
+    "value": 9
+  },
+  "charisma": {
+    "value": 6
+  },
+  "items": [
+    {
+      "name": "Shortsword",
+      "quantity": 1,
+      "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
+      "level": 0,
+      "price": "9 sp",
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile-s"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 41,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 31,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 335,
+    "max": 335,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "poison"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Darting Legs",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The zimiezek is targeted with an attack</p><hr /><p><strong>Effect</strong> The Zimiezek gains a +2 circumstance bonus to AC against the triggering attack.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p>The zimiezek gains two extra reactions on their turn that they can only use to make Reactive Strikes.</p><hr /><p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "40 ft, climb 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Shortsword",
+      "bonus": 35,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "reach-10",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "acid"
+        },
+        {
+          "roll": "3d6+14",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d6",
+          "type": "spirit"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "acid"
+        },
+        {
+          "roll": "(3d6+14)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "spirit"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Bite",
+      "bonus": 33,
+      "traits": [
+        "finesse",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6",
+          "type": "poison"
+        },
+        {
+          "roll": "3d10+14",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6)*2",
+          "type": "poison"
+        },
+        {
+          "roll": "(3d10+14)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "zimiezek-infection"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Web",
+      "bonus": 33,
+      "traits": [],
+      "damageRolls": [],
+      "critRolls": [],
+      "effects": [
+        "web-restraints"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Web Restraints",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A creature hit by the zimiezek's web Strike is Restrained either to a surface or tethered to the zimiezek until it Escapes. The zimiezek gains a +2 circumstance bonus to Trip options=web restraints a tethered target and can Interact with the tether to pull a target 15 feet toward them.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Zimiezek Infection",
+      "actions": null,
+      "traits": [
+        "disease",
+        "virulent"
+      ],
+      "description": "<p>Anadis are immune</p>\n<p><strong>Saving Throw</strong> DC 37 Fortitude Saving Throw</p>\n<p><strong>Stage 1</strong> Clumsy 1 (1 day)</p>\n<p><strong>Stage 2</strong> Clumsy 2 (eight spider legs start to grow out of your back; 1 day)</p>\n<p><strong>Stage 3</strong> clumsy 2, Drained 1 (venomous fangs grow from your mouth, 1 day)</p>\n<p><strong>Stage 4</strong> clumsy 2, drained 1, Slowed 1 (sticky webbing exudes from your flesh, 1 day)</p>\n<p><strong>Stage 5</strong> Unconscious (you become cocooned in webbing, during which you have no need for food and water, 1 week)</p>\n<p><strong>Stage 6</strong> death (and a brand new zimiezek emerges from your cocooned body)</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Occult Innate Spells",
+      "type": "innate",
+      "bonus": 29,
+      "dc": 37,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 9,
+      "cantrips": [
+        {
+          "name": "Telekinetic Hand",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to ",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 unattended object of light Bulk or less",
+          "save": "",
+          "description": "<p>You create a floating, magical hand, either invisible or ghostlike, that grasps the target object and levitates it slowly up to 20 feet in any direction. When you Sustain the spell, you can move the object an additional 20 feet. If the object is in the air when the spell ends, the object falls.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (5th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (7th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 2 or less.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Ht92AjlFD047nGyv"
+        },
+        {
+          "name": "Telekinetic Projectile",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal 2d6 bludgeoning, piercing, or slashing damage—as appropriate for the object you hurled. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "03U2AjtOX5AF4Z2w"
+        }
+      ],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [
+        {
+          "name": "Translocate (At Will)",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "mSvGHjDANXhdzxCw"
+        }
+      ],
+      "lv5spells": [
+        {
+          "name": "Translocate",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "P70MgWLZWwxzxKKN"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [
+        {
+          "name": "Web",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 9,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "10ft burst",
+          "targets": "",
+          "save": "reflex",
+          "description": "<p>You create a sticky web in the area that impedes creatures' movement. Squares filled with the web are difficult terrain. Each time a creature in the web begins to use a move action or enters the web during a move action it's using, it must attempt an athletics check or Reflex save against your spell DC to avoid taking a circumstance penalty to its Speeds or becoming Immobilized. A creature that gets out of the web ceases to take a circumstance penalty to its Speed from the web. Each square can be cleared of the web by a single attack or effect that deals at least 5 slashing damage or 1 fire damage. A square has AC 5, and it automatically fails its saving throws.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected, and it doesn't need to attempt further Athletics checks or saving throws against the web this turn. If it used an Athletics check, it clears the web from every square it leaves during its movement.</p>\n<p><strong>Success</strong> The creature is unaffected during its action. If it used an Athletics check, it clears the web from every square it leaves during its movement.</p>\n<p><strong>Failure</strong> The creature takes a –10-foot circumstance penalty to its Speeds until the start of its next turn.</p>\n<p><strong>Critical Failure</strong> The creature is immobilized until the start of its next turn, after which it takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape to remove its immobilized condition.</p><hr /><p><strong>Heightened (4th)</strong> The spell's area increases to a 20ft Burst, and its range increases to 60 feet.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "weuzVC5YoshS31tW"
+        },
+        {
+          "name": "Web",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 9,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "10ft burst",
+          "targets": "",
+          "save": "reflex",
+          "description": "<p>You create a sticky web in the area that impedes creatures' movement. Squares filled with the web are difficult terrain. Each time a creature in the web begins to use a move action or enters the web during a move action it's using, it must attempt an athletics check or Reflex save against your spell DC to avoid taking a circumstance penalty to its Speeds or becoming Immobilized. A creature that gets out of the web ceases to take a circumstance penalty to its Speed from the web. Each square can be cleared of the web by a single attack or effect that deals at least 5 slashing damage or 1 fire damage. A square has AC 5, and it automatically fails its saving throws.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected, and it doesn't need to attempt further Athletics checks or saving throws against the web this turn. If it used an Athletics check, it clears the web from every square it leaves during its movement.</p>\n<p><strong>Success</strong> The creature is unaffected during its action. If it used an Athletics check, it clears the web from every square it leaves during its movement.</p>\n<p><strong>Failure</strong> The creature takes a –10-foot circumstance penalty to its Speeds until the start of its next turn.</p>\n<p><strong>Critical Failure</strong> The creature is immobilized until the start of its next turn, after which it takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape to remove its immobilized condition.</p><hr /><p><strong>Heightened (4th)</strong> The spell's area increases to a 20ft Burst, and its range increases to 60 feet.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "weuzVC5YoshS31tW"
+        },
+        {
+          "name": "Web",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 9,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "10ft burst",
+          "targets": "",
+          "save": "reflex",
+          "description": "<p>You create a sticky web in the area that impedes creatures' movement. Squares filled with the web are difficult terrain. Each time a creature in the web begins to use a move action or enters the web during a move action it's using, it must attempt an athletics check or Reflex save against your spell DC to avoid taking a circumstance penalty to its Speeds or becoming Immobilized. A creature that gets out of the web ceases to take a circumstance penalty to its Speed from the web. Each square can be cleared of the web by a single attack or effect that deals at least 5 slashing damage or 1 fire damage. A square has AC 5, and it automatically fails its saving throws.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected, and it doesn't need to attempt further Athletics checks or saving throws against the web this turn. If it used an Athletics check, it clears the web from every square it leaves during its movement.</p>\n<p><strong>Success</strong> The creature is unaffected during its action. If it used an Athletics check, it clears the web from every square it leaves during its movement.</p>\n<p><strong>Failure</strong> The creature takes a –10-foot circumstance penalty to its Speeds until the start of its next turn.</p>\n<p><strong>Critical Failure</strong> The creature is immobilized until the start of its next turn, after which it takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape to remove its immobilized condition.</p><hr /><p><strong>Heightened (4th)</strong> The spell's area increases to a 20ft Burst, and its range increases to 60 feet.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "weuzVC5YoshS31tW"
+        }
+      ],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Occultism or Religion, DC 38"
+}

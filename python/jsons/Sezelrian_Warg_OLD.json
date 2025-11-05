@@ -1,0 +1,224 @@
+{
+  "initiative": 0,
+  "initiativebonus": 14,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Sezelrian Warg OLD",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Unique",
+    "Large",
+    "Beast",
+    "Evil"
+  ],
+  "source": "Pathfinder Society Scenario #5-15: Cleansing the Flame",
+  "remaster": false,
+  "senses": [
+    "Darkvision",
+    "Scent 30ft imprecise"
+  ],
+  "perception": {
+    "value": 14,
+    "note": "Darkvision, Scent 30ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Orcish"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 13,
+      "note": [
+        "in snow 16"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 70,
+    "max": 70,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "fire"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "cold",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Avenging Bite",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within the reach of the Sezelrian warg's jaws attacks one of the warg's allies</p>\n<hr />\n<p><strong>Effect</strong> The Sezelrian warg makes a jaws Strike against the triggering creature.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Buck",
+      "actions": -1,
+      "traits": [],
+      "description": "<p>DC 21 Reflex Saving Throw</p>\n<p><details><summary>See rules...</summary>\n<p><hr />\n<p>Most monsters that serve as mounts can attempt to buck off unwanted or annoying riders, but most mounts will not use this reaction against a trusted creature unless the mounts are spooked or mistreated.</p>\n<p><strong>Trigger</strong> A creature Mounts or uses the Command an Animal action while riding the monster.</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature must succeed at a Reflex saving throw against the listed DC or fall off the creature and land Prone. If the save is a critical failure, the triggering creature also takes 1d6 Bludgeoning Damage damage in addition to the normal damage for the fall.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "40 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 15,
+      "traits": [
+        "fire",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d10+6",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d6",
+          "type": "fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d10+6)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "fire"
+        }
+      ],
+      "effects": [
+        "knockdown"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Breath Weapon",
+      "actions": 2,
+      "traits": [
+        "fire",
+        "primal"
+      ],
+      "description": "<p>The Sezelrian warg breathes a cloud of smoky fire in a 15ft Cone that deals 5d8 Fire Damage damage (Basic DC 23 Reflex Saving Throw save). The Sezelrian warg cannot use Breath Weapon for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Pack Attack",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The Sezelrian warg's Strikes deal 1d6 extra damage to creatures within the reach of at least two of the warg's allies.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Knockdown",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Trip the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 20"
+}

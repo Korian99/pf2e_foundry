@@ -1,0 +1,179 @@
+{
+  "initiative": 0,
+  "initiativebonus": 8,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Umbo AP OLD",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Rare",
+    "Medium",
+    "Evil",
+    "Fungus"
+  ],
+  "source": "Pathfinder #169: Kindled Magic",
+  "remaster": false,
+  "senses": [
+    "Darkvision",
+    "Scent 30ft imprecise"
+  ],
+  "perception": {
+    "value": 8,
+    "note": "Darkvision, Scent 30ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Sakvroth",
+    "telepathy 100 feet (myceloids and those afflicted by purple pox only)"
+  ],
+  "skills": [
+    {
+      "name": "stealth",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 50,
+    "max": 50,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "slashing",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Spore Pop",
+      "actions": null,
+      "traits": [],
+      "description": "<p>If Umbo is reduced to 0 HP by a critical hit, he pops, forcing him to immediately Emit Spores, even if he has already used the ability that day.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 11,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+3)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "purple-pox"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Emit Spores",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Umbo expels spores in a 10ft Burst centered on a corner of his own space. This cloud lasts until the start of the myceloid's next turn. Each creature that is in the cloud or enters it is exposed to purple pox.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Purple Pox",
+      "actions": null,
+      "traits": [
+        "disease"
+      ],
+      "description": "<p>Myceloids are immune</p>\n<p><strong>Saving Throw</strong> DC 18 Fortitude Saving Throw</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Stage 1</strong> 1d6 Poison Damage damage and Stupefied 1 (1 day)</p>\n<p><strong>Stage 2</strong> 4d6 Poison Damage damage, Stupefied 3, and the creature is compelled to seek out the nearest myceloid colony-this compulsion is a mental emotion effect (1 day)</p>\n<p><strong>Stage 3</strong> The creature dies. Over 24 hours, its corpse becomes bloated and bursts, releasing a new, fully grown myceloid.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spore Domination",
+      "actions": 2,
+      "traits": [
+        "emotion",
+        "incapacitation",
+        "mental",
+        "primal"
+      ],
+      "description": "<p>Umbo targets one creature affected by purple pox within 30 feet. That creature must attempt a DC 18 Will Saving Throw save. It is then temporarily immune to spore domination for 10 minutes.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> Until the end of its next turn, the target is helpful to myceloids and can't take hostile actions against them. If attacked by Umbo, the target is freed from this effect at the end of Umbo's turn.</p>\n<p><strong>Failure</strong> As success, but for 1 minute.</p>\n<p><strong>Critical Failure</strong> As success, but until the purple pox is cured.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 18"
+}

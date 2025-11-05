@@ -1,0 +1,362 @@
+{
+  "initiative": 0,
+  "initiativebonus": 20,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Saggorak Poltergeist AP OLD",
+  "type": "Creature",
+  "level": 12,
+  "traits": [
+    "Rare",
+    "Medium",
+    "Evil",
+    "Incorporeal",
+    "Lawful",
+    "Spirit",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder #148: Fires of the Haunted City",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 20,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Dwarven",
+    "Necril"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 7
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Site Bound",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The Saggorak poltergeist cannot travel more than 120 feet from area <strong>F2</strong>.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 180,
+    "max": 180,
+    "note": "rejuventation",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "force",
+        "ghost-touch",
+        "vitality"
+      ],
+      "type": "all-damage",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Natural Invisibility",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A poltergeist is naturally Invisible. It becomes visible only when it uses Frighten.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rejuvenation",
+      "actions": null,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p>When a ghost is destroyed, it re-forms after 2d4 days within the location it's bound to, fully healed. A ghost can be permanently destroyed only if someone determines the reason for its existence and sets right whatever prevents the spirit from resting.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Telekinetic Defense",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature approaches within 10 feet of the poltergeist.</p>\n<hr />\n<p><strong>Effect</strong> The poltergeist makes a telekinetic object Strike against the triggering creature.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft, fly 30ft",
+  "strikes": [
+    {
+      "type": "ranged",
+      "name": "Telekinetic Object",
+      "bonus": 27,
+      "traits": [
+        "magical",
+        "occult"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d12",
+          "type": "untyped"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d12)*2",
+          "type": "untyped"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Frighten",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "emotion",
+        "fear",
+        "incapacitation",
+        "mental"
+      ],
+      "description": "<p><strong>Requirement</strong> The poltergeist must be Invisible.</p>\n<hr />\n<p><strong>Effect</strong> The poltergeist becomes visible, appearing as a skeletal, ghostlike humanoid. Each creature within 30 feet must attempt a DC 33 Will Saving Throw save, becoming Frightened 2 on a failure. On a critical failure, it's also Fleeing for as long as it's frightened. On a success, the creature is temporarily immune for 1 minute.</p>\n<p>At the start of its next turn, the poltergeist becomes invisible again.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Telekinetic Storm",
+      "actions": 2,
+      "traits": [
+        "concentrate",
+        "occult"
+      ],
+      "description": "<p>The poltergeist telekinetically throws numerous small and jagged chunks of stone rubble, either spreading them out among multiple foes or directing them at one target.</p>\n<ul>\n<li>When this effect is spread out among multiple foes, the poltergeist makes a telekinetic object Strike at a -2 penalty against each creature within 30 feet. These count as one attack for the poltergeist's multiple attack penalty, and the penalty doesn't increase until after all the attacks.</li>\n<li>When this effect has only one target, the poltergeist makes a telekinetic object Strike against the target, and the damage increases to 6d12. It deals 2d12 Untyped Damage damage on a failure, and no damage on a critical failure.</li>\n</ul>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Occult Innate Spells",
+      "type": "innate",
+      "bonus": 27,
+      "dc": 33,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 6,
+      "cantrips": [
+        {
+          "name": "Mage Hand",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to ",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 unattended object of light Bulk or less",
+          "save": "",
+          "description": "<p>You create a single magical hand, either invisible or ghostlike, that grasps the target object and moves it slowly up to 20 feet. Because you're levitating the object, you can move it in any direction. When you Sustain the Spell, you can move the object an additional 20 feet. If the object is in the air when the spell ends, the object falls.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (5th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (7th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 2 or less.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "VhDLd9XvmM0vmHw2"
+        }
+      ],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [
+        {
+          "name": "Telekinetic Maneuver (At Will)",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "force",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>With a rush of telekinetic power, you move a foe or something they carry. You can attempt to Disarm, Shove, or Trip the target using a spell attack roll instead of an Athletics check.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "edOwB8VQ6gUQ1xnZ"
+        },
+        {
+          "name": "Telekinetic Haul (At Will)",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to 1 minute",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 unattended object of up to 80 Bulk with no dimension longer than 20 feet",
+          "save": "",
+          "description": "<p>You move the target up to 20 feet, potentially suspending it in midair. When you Sustain the Spell, you can do so again, or you can choose a different eligible target to move.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "ou3LZoiUQhZ13e1n"
+        }
+      ],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Occultism or Religion, DC 30"
+}

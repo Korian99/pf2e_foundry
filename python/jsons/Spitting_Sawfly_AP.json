@@ -1,0 +1,218 @@
+{
+  "initiative": 0,
+  "initiativebonus": 19,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Spitting Sawfly AP",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Rare",
+    "Medium",
+    "Beast",
+    "Mutant",
+    "Wood"
+  ],
+  "source": "Pathfinder #203: Shepherd of Decay",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "wood scent (precise) 30 feet"
+  ],
+  "perception": {
+    "value": 19,
+    "note": "Darkvision, wood scent (precise) 30 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Wood Scent (Precise) 30 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A spitting sawfly can smell plants and wood as a precise scent at the listed range.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 30,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 175,
+    "max": 175,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "acid"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "poison",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "20 ft, climb 20ft, fly 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Mandibles",
+      "bonus": 22,
+      "traits": [
+        "finesse",
+        "poison"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+10",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+10)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "seizing-venom"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Acid Spit",
+      "bonus": 22,
+      "traits": [
+        "poison"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d8",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d8)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [
+        "seizing-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Consume Essence",
+      "actions": 1,
+      "traits": [
+        "healing",
+        "manipulate",
+        "primal"
+      ],
+      "description": "<p><strong>Frequency</strong> once per day;</p>\n<p><strong>Requirements</strong> The spitting sawfly is adjacent to a creature with the wood trait or to a coiled conifer</p><hr /><p><strong>Effect</strong> The sawfly feasts upon the targeted creature or the coiled conifer's sap, regaining 5d6 Healing Damage{5d6 Hit Points}. A targeted creature must attempt a DC 29 Fortitude Saving Throw save or become Drained 1 (Drained 2 on a critical failure).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Creeping Sprout",
+      "actions": null,
+      "traits": [
+        "disease"
+      ],
+      "description": "<p>A creature afflicted with creeping sprout is treated by the spitting sawfly as if it has the wood trait</p>\n<p><strong>Saving Throw</strong> DC 29 Fortitude Saving Throw;</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1d4 days)</p>\n<p><strong>Stage 2</strong> Drained 1 (1d4 days);</p>\n<p><strong>Stage 3</strong> 12d6 Acid Damage damage, creeping cone swarm emerges (disease ends)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Plant Spores",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The spitting sawfly plants spores in an adjacent creature that's Paralyzed or Unconscious, exposing it to creeping sprout disease.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Seizing Venom",
+      "actions": null,
+      "traits": [
+        "incapacitation",
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 29 Fortitude Saving Throw;</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> Off-Guard and Slowed 1 (1 round)</p>\n<p><strong>Stage 2</strong> off-guard and Slowed 2 (1 round)</p>\n<p><strong>Stage 3</strong> Paralyzed (1 round)</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 27"
+}

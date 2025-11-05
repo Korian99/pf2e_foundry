@@ -1,0 +1,253 @@
+{
+  "initiative": 0,
+  "initiativebonus": 36,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Second Spawn AP",
+  "type": "Creature",
+  "level": 21,
+  "traits": [
+    "Rare",
+    "Gargantuan",
+    "Demon",
+    "Elemental",
+    "Fiend",
+    "Unholy",
+    "Wood"
+  ],
+  "source": "Pathfinder #212: A Voice in the Blight",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 36,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Chthonian",
+    "Muan",
+    "Telepathy 100 feet"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 39,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 36,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 35,
+      "note": [
+        "in forests 39"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 10
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 10
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 7
+  },
+  "charisma": {
+    "value": 6
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 45,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 39,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 36,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 500,
+    "max": 500,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "bludgeoning",
+      "value": 20
+    },
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "piercing",
+      "value": 20
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "axe-vulnerability",
+      "value": 20
+    },
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 20
+    },
+    {
+      "exceptions": [],
+      "type": "holy",
+      "value": 20
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Spray Sap",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The second spawn takes damage</p><hr /><p><strong>Effect</strong> A spray of bloody sap spurts from the second spawn's wound, targeting a creature within 30 feet of the second spawn's choice. That creature takes 10d6 Poison Damage damage (Basic DC 41 Fortitude Saving Throw save) and is exposed to corrupting sap.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Branch",
+      "bonus": 39,
+      "traits": [
+        "reach-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d12+18",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d12+18)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "improved-knockdown"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Spirit Splinter",
+      "bonus": 39,
+      "traits": [
+        "brutal",
+        "propulsive",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d4+13",
+          "type": "piercing"
+        },
+        {
+          "roll": "2d6",
+          "type": "spirit"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d4+13)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "spirit"
+        }
+      ],
+      "effects": [
+        "corrupting-sap"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Corrupting Sap",
+      "actions": null,
+      "traits": [
+        "divine",
+        "incapacitation",
+        "mental"
+      ],
+      "description": "<p>The first time in a round a creature is exposed to the second spawn's corrupting sap, the creature must attempt a DC 44 Will Saving Throw save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected, and is temporarily immune to corrupting sap for 1 minute.</p>\n<p><strong>Success</strong> Intrusive fiendish thoughts and cruel urges well up in the creature's mind, causing the creature to become Off-Guard until the end of its next turn.</p>\n<p><strong>Failure</strong> The creature is Confused for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is controlled by the second spawn for 1 minute.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Improved Knockdown",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Improved Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Trip the creature as a free action. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature or Religion, DC 42"
+}

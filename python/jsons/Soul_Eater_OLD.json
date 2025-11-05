@@ -1,0 +1,223 @@
+{
+  "initiative": 0,
+  "initiativebonus": 15,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Soul Eater OLD",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Evil",
+    "Fiend",
+    "Unholy"
+  ],
+  "source": "Pathfinder Bestiary 2",
+  "remaster": false,
+  "senses": [
+    "Greater darkvision"
+  ],
+  "perception": {
+    "value": 15,
+    "note": "Greater darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Daemonic"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 17,
+      "note": [
+        "in darkness or smoke 19"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "Abaddon Lore",
+      "modifier": 12,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 0
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Caster Link",
+      "actions": null,
+      "traits": [
+        "detection",
+        "divine"
+      ],
+      "description": "<p>A conjured soul eater forms a mental link with its conjurer. While both are on the same plane, the soul eater knows the location of its conjurer per its find target ability. If the soul eater's target dies before the soul eater can drain its soul, or if the soul eater is defeated (but not destroyed) by the target, the soul eater returns to its conjurer and tries to kill them.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Find Target",
+      "actions": null,
+      "traits": [
+        "detection",
+        "divine"
+      ],
+      "description": "<p>When a soul eater is conjured to the Material Plane to find a specific creature, it gains the benefits of a 5th-rank Locate spell that isn't blocked by lead or running water. The conjurer must have seen the target and must speak the target's name while conjuring the soul eater in order to grant this ability.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 80,
+    "max": 80,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "critical-hits",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "type": "physical",
+      "value": 10
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [],
+  "speed": "25 ft, fly 60ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 19,
+      "traits": [
+        "agile",
+        "finesse",
+        "unarmed",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+3",
+          "type": "slashing"
+        },
+        {
+          "roll": "2d6",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+3)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [
+        "mind-numbing-touch"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Drain Soul",
+      "actions": 3,
+      "traits": [
+        "death",
+        "divine",
+        "manipulate"
+      ],
+      "description": "<p><strong>Requirements</strong> The soul eater is adjacent to a Dying creature</p>\n<hr />\n<p><strong>Effect</strong> The soul eater attempts to devour the dying creature's soul. The creature must attempt a DC 25 Will Saving Throw save. A creature that dies as a result of Drain Soul can't be restored to life except by a spell or ritual of 8th rank or higher. If the soul eater that used Drain Soul on a creature is slain within 100 feet of that creature's corpse and the creature has been dead no longer than 1 minute, the creature's soul returns to its body and is restored to life, leaving the creature Unconscious and dying 1 but no longer Doomed.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature becomes Doomed 1, or increases its doomed value by 1 if it was already doomed.</p>\n<p><strong>Failure</strong> As success, but Doomed 2.</p>\n<p><strong>Critical Failure</strong> As success, but Doomed 3.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Mind-Numbing Touch",
+      "actions": null,
+      "traits": [
+        "curse",
+        "divine"
+      ],
+      "description": "<p>When a soul eater hits a creature with its claw Strike, the creature must succeed at a DC 23 Fortitude Saving Throw save or become Stupefied 1 (Stupefied 2 on a critical failure).</p>\n<p>Further damage dealt by the soul eater increases the stupefied value by 1 on a failed save, to a maximum of stupefied 4. This condition value decreases by 1 each time the creature gets a full night's rest. As long as the creature is stupefied by a soul eater, rest does not decrease any Doomed value that creature might have.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 23"
+}

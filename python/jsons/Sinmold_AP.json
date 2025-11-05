@@ -1,0 +1,248 @@
+{
+  "initiative": 0,
+  "initiativebonus": 22,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Sinmold AP",
+  "type": "Creature",
+  "level": 12,
+  "traits": [
+    "Rare",
+    "Large",
+    "Fiend",
+    "Fungus",
+    "Ooze",
+    "Unholy"
+  ],
+  "source": "Pathfinder #210: Whispers in the Dirt",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "Lifesense 60ft imprecise"
+  ],
+  "perception": {
+    "value": 22,
+    "note": "Darkvision, Lifesense 60ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Chthonian",
+    "Draconic",
+    "Empyrean",
+    "Telepathy 100 feet"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 13,
+      "note": [
+        "in fungal terrain 25"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": -5
+  },
+  "constitution": {
+    "value": 7
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 300,
+    "max": 300,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "acid",
+    "bleed",
+    "critical-hits",
+    "disease",
+    "precision"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "cold-iron",
+      "value": 10
+    },
+    {
+      "exceptions": [],
+      "type": "holy",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Desperation Vulnerability",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Sinmolds are aware that they're in a vulnerable state as formless \"newborn fiends\" and are desperate to become stronger before they become prey to more powerful demons. Whenever the sinmold is in a combat encounter and ends its turn without dealing damage to another creature, the sinmold takes 3d6 Mental Damage damage and becomes Frightened 1.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Digestion",
+      "actions": null,
+      "traits": [
+        "healing"
+      ],
+      "description": "<p>The first time in a round when the sinmold damages a creature with Engulf, the sinmold immediately restores Hit Points equal to the damage dealt, gaining Hit Points in excess of its maximum as temporary Hit Points that last for 1 hour. As long as the sinmold possesses these temporary Hit Points, its surface hardens, and its AC increases to 30.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, climb 30ft, swim 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Pseudopod",
+      "bonus": 24,
+      "traits": [
+        "magical",
+        "unarmed",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+12",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "2d6",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+12)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tendril",
+      "bonus": 24,
+      "traits": [
+        "agile",
+        "magical",
+        "reach-10",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+12",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+12)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "sinmold-infestation"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Engulf",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>DC 32 Reflex Saving Throw, 3d10 Acid Damage damage plus digestion, Escape dc=32, Rupture 18</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of any creatures in its path. Any creature of the monster's size or smaller whose space the monster moves through can attempt a Reflex save with the listed DC to avoid being engulfed. A creature unable to act automatically critically fails this save. If a creature succeeds at its save, it can choose to be either pushed aside (out of the monster's path) or pushed in front of the monster to the end of the monster's movement. The monster can attempt to Engulf the same creature only once in a single use of Engulf. The monster can contain as many creatures as can fit in its space.</p>\n<p>A creature that fails its save is pulled into the monster's body. It is Grabbed, is Slowed 1, and has to hold its breath or start suffocating. The creature takes the listed amount of damage when first engulfed and at the end of each of its turns while it's engulfed. An engulfed creature can get free by Escaping against the listed escape DC. An engulfed creature can attack the monster engulfing it, but only with unarmed attacks or with weapons of light Bulk or less. The engulfing creature is Off-Guard against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the engulfed creature cuts itself free.\n<p>Effect: Engulf and Swallow Whole</p>\n<p>A creature that gets free by either method can immediately breathe and exits the swallowing monster's space.</p>\n<p>If the monster dies, all creatures it has engulfed are automatically released as the monster's form loses cohesion.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sinmold Infestation",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 32 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 2d8 Poison Damage damage (1 round)</p>\n<p><strong>Stage 2</strong> 3d8 Poison Damage damage and can hear the thoughts of root rotters within 30 feet as an imprecise sense (1 round)</p>\n<p><strong>Stage 3</strong> as stage 2, but 4d8 Poison Damage damage and Doomed 1 (1 round)</p>\n<p><strong>Stage 4</strong> as stage 3, and arise as a root rotter upon death (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spore Purge",
+      "actions": 1,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Requirements</strong> The sinmold has temporary Hit Points from digestion</p><hr /><p><strong>Effect</strong> The sinmold loses all temporary Hit Points and releases any creatures it currently has engulfed, pushing them into the nearest unoccupied spaces. It releases a cloud of spores from its body, dealing 5d8 Poison Damage damage (Basic DC 29 Fortitude Saving Throw save) in a 20ft Type:emanation. Any creature that fails this save also must attempt a save against sinmold infestation.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion or Nature or Occultism, DC 30"
+}

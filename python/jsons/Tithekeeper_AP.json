@@ -1,0 +1,211 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Tithekeeper AP",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Rare",
+    "Large",
+    "Construct",
+    "Mindless"
+  ],
+  "source": "Pathfinder #210: Whispers in the Dirt",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 16,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": -5
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Eyes Behind the Mask",
+      "actions": null,
+      "traits": [
+        "scrying"
+      ],
+      "description": "<p>A creature wearing the mask and garb of a priest of Razmir that outranks the tithekeeper's mask and ribbon rank can spend an hour Interacting with the tithekeeper's mask to connect with it. The creature's mask becomes an invested item that allows them to see and hear as though peering through the tithekeeper's mask. The creature must use a 3-action activity envisioning the tithekeeper to activate the scrying effect, and the effect can be Dismissed. Multiple creatures can create connections to the tithekeeper's mask simultaneously, and a creature can have connections to multiple tithekeepers with just one mask. Each connection ends after a week but can be renewed at any time.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 220,
+    "max": 220,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Accept Tithe",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature drops or offers at least 750 gp in valuables within 15 feet of the tithekeeper</p><hr /><p><strong>Effect</strong> The tithekeeper quickly uses its feet to scoop the valuables into its vault and is now indifferent toward the triggering creature unless that creature uses hostile actions against it or its allies.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, climb 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Body",
+      "bonus": 23,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d12+13",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+13)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Foot",
+      "bonus": 23,
+      "traits": [
+        "reach-15",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+13",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+13)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "improved-grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Capacity for Punishment",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The tithekeeper can have up to six creatures impaled and Grabbed with its feet at once.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Impale",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The tithekeeper has Grabbed a creature</p><hr /><p><strong>Effect</strong> The tithekeeper stabs the target with a spike for (2d8+13) Piercing Damage damage (Basic DC 29 Reflex Saving Throw save). It no longer has to spend an action to extend the duration for the target it has grabbed. The target moves with the tithekeeper and takes 1d8 Persistent,bleed Damage damage until it Escapes.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Locked Vault",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The tithekeeper's body is a locked vault containing any tithes given to it. The vault's Pick Lock DC is 29 and Force Open DC is 33.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rip Off",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The tithekeeper has Impaled a creature</p><hr /><p><strong>Effect</strong> The tithekeeper tears the creature loose from its spiky feet, releasing it. The creature takes 4d10 Slashing Damage damage (Basic DC 29 Fortitude Saving Throw save) and is no longer Grabbed. On a failed save, the creature also takes 2d8 Persistent,bleed Damage damage.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Trample",
+      "actions": 3,
+      "traits": [],
+      "description": "<p>Medium or smaller, body, Basic DC 29 Reflex Saving Throw</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Improved Grab",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Improved Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with as a free action. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead spend an action to use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Crafting, DC 27"
+}

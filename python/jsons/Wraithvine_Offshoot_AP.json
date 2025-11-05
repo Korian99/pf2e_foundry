@@ -1,0 +1,242 @@
+{
+  "initiative": 0,
+  "initiativebonus": 11,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Wraithvine Offshoot AP",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Common",
+    "Small",
+    "Plant",
+    "Wraithvine"
+  ],
+  "source": "Pathfinder #201: Pactbreaker",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "Lifesense 30ft imprecise",
+    "blood scent"
+  ],
+  "perception": {
+    "value": 11,
+    "note": "Darkvision, Lifesense 30ft imprecise, blood scent",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Fey"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 12,
+      "note": [
+        "in vegetation 20"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Blood Scent",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A mandragora can smell creatures with blood as an imprecise sense at a range of 30 feet, and it can smell demons, fey, and sorcerers with blood as a precise sense at a range of 30 feet.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 60,
+    "max": 60,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "type": "bludgeoning",
+      "value": 5
+    },
+    {
+      "type": "electricity",
+      "value": 5
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Vulnerability to Supernatural Darkness",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Whenever a mandragora begins its turn in an area of magical darkness, it is Slowed 1 on that turn.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, burrow 10ft, climb 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 14,
+      "traits": [
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Thorny Vine",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "finesse",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4+4",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+4)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "mandragora-venom"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Piercing Shriek",
+      "actions": 1,
+      "traits": [
+        "auditory",
+        "mental",
+        "primal"
+      ],
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The mandragora emits an unsettling shriek. Each non-mandragora creature within 30 feet must attempt a DC 25 Will Saving Throw save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Sickened 1.</p>\n<p><strong>Failure</strong> The creature is Sickened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Sickened 2 and Slowed 1. As long as the creature remains sickened, this slowed condition value can't be reduced below 1.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Vitality Drain",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The wraithvine offshoot has a creature Grabbed</p>\n<hr />\n<p><strong>Effect</strong> The offshoot drains blood or ichor from the creature it has grabbed, dealing 2d6 Untyped Damage damage. If the creature has the plant trait, the offshoot gains temporary Hit Points equal to the damage dealt. A creature that has its vitality drained by an offshoot is Drained 1 until it receives healing of any kind or amount.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Wraithvine Venom",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 21 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 1d6 Poison Damage damage and Stupefied 1 (1 round)</p>\n<p><strong>Stage 2</strong> 1d6 Poison Damage damage, Confused, and Stupefied 1 (1 round)</p>\n<p><strong>Stage 3</strong> 2d6 Poison Damage damage, Confused, and Stupefied 1 (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 19"
+}

@@ -1,0 +1,277 @@
+{
+  "initiative": 0,
+  "initiativebonus": 24,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Quoppopak Mummy AP OLD",
+  "type": "Creature",
+  "level": 13,
+  "traits": [
+    "Rare",
+    "Large",
+    "Evil",
+    "Mummy",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder #191: The Destiny War",
+  "remaster": false,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 24,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 27,
+      "note": [
+        "to Escape 30"
+      ],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 8
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 32,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 260,
+    "max": 260,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Attack of Opportunity (Tentacle Only)",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Despair",
+      "actions": null,
+      "traits": [
+        "aura",
+        "divine",
+        "emotion",
+        "fear",
+        "incapacitation",
+        "mental"
+      ],
+      "description": "<p>30 feet. Living creatures are Frightened 1 while in a mummy guardian's despair aura. They can't naturally recover from this fear while in the area but recover instantly once they leave the area. When a creature first enters the area, it must succeed at a DC 30 Will Saving Throw save (after taking the penalty from being frightened) or be Paralyzed for 1 round. The creature is then temporarily immune for 24 hours.</p>\n<p>Effect: Despair</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "10 ft, swim 35ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Beak",
+      "bonus": 27,
+      "traits": [
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+14",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+14)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "oil-rot"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tentacle",
+      "bonus": 27,
+      "traits": [
+        "agile",
+        "reach-15",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+14",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+14)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "grab",
+        "oil-rot"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Ventral Tube",
+      "bonus": 27,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "persistent bleed"
+        },
+        {
+          "roll": "3d6+14",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "persistent bleed"
+        },
+        {
+          "roll": "(3d6+14)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "oil-rot"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Ignite Oil",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The quoppopak mummy takes fire damage while it is above water</p>\n<hr />\n<p><strong>Effect</strong> The oil coating the mummy ignites. This fire does no additional damage to the mummy but does cause its melee Strikes to inflict an additional 1d6 Fire Damage damage. At the end of its turn, the mummy attempts a DC 10 Flat ; on a success, the fire goes out. The fire also goes out immediately if the mummy submerges in water.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Oil Rot",
+      "actions": null,
+      "traits": [
+        "curse",
+        "disease",
+        "divine"
+      ],
+      "description": "<p>This disease and any damage from it can't be healed until this curse is removed. As the disease progresses, the creature's flesh grows leathery, while a foul-smelling oily layer spreads from painful splits in the dried skin. A creature killed by oil rot melts into a puddle of foul-smelling oil and can be resurrected only by a 7th-rank resurrect ritual or similar magic</p>\n<p><strong>Saving Throw</strong> DC 33 Fortitude Saving Throw</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> 10d6 Void Damage damage and Clumsy 2 (1 day)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Tentacle Stab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The quoppopak makes two tentacle Strikes against the same creature. These Strikes deal piercing damage instead of bludgeoning, and the quoppopak can't Grab with them. Its multiple attack penalty doesn't increase until after both attacks.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Water Glide",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The quoppopak can stand and move on the surface of water or other liquids without falling through. It can go underwater if it wishes, but it must Swim to do so.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 31"
+}
