@@ -1149,6 +1149,7 @@
                 "bulk": {
                     "value": 1
                 },
+                "category": "coin",
                 "containerId": null,
                 "description": {
                     "value": ""
@@ -1175,15 +1176,14 @@
                     }
                 },
                 "publication": {
-                    "license": "OGL",
-                    "remaster": false,
-                    "title": "Pathfinder Core Rulebook"
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
                 },
                 "quantity": 5,
                 "rules": [],
                 "size": "med",
                 "slug": "silver-pieces",
-                "stackGroup": "coins",
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -1360,6 +1360,11 @@
             "name": "Sling",
             "sort": 0,
             "system": {
+                "ammo": {
+                    "baseType": "sling-bullets",
+                    "builtIn": false,
+                    "capacity": 1
+                },
                 "baseItem": "sling",
                 "bonus": {
                     "value": 0
@@ -1444,31 +1449,17 @@
             "name": "Sling Bullets",
             "sort": 381250,
             "system": {
-                "baseItem": null,
+                "baseItem": "sling-bullets",
                 "bulk": {
                     "value": 0.1
                 },
-                "category": "ammo",
                 "containerId": null,
-                "damage": null,
+                "craftableAs": null,
                 "description": {
                     "value": "<p>These are small metal balls, typically either iron or lead, designed to be used as ammunition in slings.</p>"
                 },
-                "equipped": {
-                    "carryType": "worn",
-                    "handsHeld": 0
-                },
-                "hardness": 0,
-                "hp": {
-                    "max": 0,
-                    "value": 0
-                },
                 "level": {
                     "value": 0
-                },
-                "material": {
-                    "grade": null,
-                    "type": null
                 },
                 "price": {
                     "per": 10,
@@ -1485,13 +1476,11 @@
                 "rules": [],
                 "size": "med",
                 "slug": "sling-bullets",
-                "stackGroup": "slingBullets",
                 "traits": {
                     "rarity": "common",
-                    "value": []
-                },
-                "usage": {
-                    "value": "held-in-one-hand"
+                    "value": [
+                        "consumable"
+                    ]
                 },
                 "uses": {
                     "autoDestroy": true,
@@ -1499,7 +1488,7 @@
                     "value": 1
                 }
             },
-            "type": "consumable"
+            "type": "ammo"
         },
         {
             "_id": "wI4KSnSnh5zr4ecD",
@@ -1845,6 +1834,7 @@
                 "bulk": {
                     "value": 1
                 },
+                "category": "coin",
                 "containerId": null,
                 "description": {
                     "value": ""
@@ -1871,15 +1861,14 @@
                     }
                 },
                 "publication": {
-                    "license": "OGL",
-                    "remaster": false,
-                    "title": "Pathfinder Core Rulebook"
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
                 },
                 "quantity": 16,
                 "rules": [],
                 "size": "med",
                 "slug": "gold-pieces",
-                "stackGroup": "coins",
                 "traits": {
                     "rarity": "common",
                     "value": []

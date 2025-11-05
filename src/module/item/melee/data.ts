@@ -11,6 +11,7 @@ import type { EffectAreaShape } from "@item/types.ts";
 import { EFFECT_AREA_SHAPES } from "@item/values.ts";
 import type { WeaponMaterialData } from "@item/weapon/data.ts";
 import type { WeaponPropertyRuneType } from "@item/weapon/types.ts";
+import { getLegacyRangeData } from "@module/migration/migrations/949-npc-range-data.ts";
 import { damageCategoriesUnique } from "@scripts/config/damage.ts";
 import type { DamageCategoryUnique, DamageType } from "@system/damage/types.ts";
 import { LaxArrayField, RecordField, SlugField } from "@system/schema-data-fields.ts";
@@ -29,6 +30,8 @@ type MeleeFlags = ItemFlagsPF2e & {
 };
 
 class MeleeSystemData extends ItemSystemModel<MeleePF2e, NPCAttackSystemSchema> {
+    static override LOCALIZATION_PREFIXES = [...super.LOCALIZATION_PREFIXES, "PF2E.Item.NPCAttack"];
+
     declare material: WeaponMaterialData;
 
     /** Weapon property runes (or rather the effects thereof) added via rule element */
@@ -108,6 +111,29 @@ class MeleeSystemData extends ItemSystemModel<MeleePF2e, NPCAttackSystemSchema> 
                     new fields.StringField({ required: true, nullable: false, blank: false, initial: undefined }),
                 ),
             }),
+            range: new fields.SchemaField(
+                {
+                    increment: new fields.NumberField({
+                        required: true,
+                        integer: true,
+                        min: 5,
+                        step: 5,
+                        max: 500,
+                        nullable: true,
+                        initial: null,
+                    }),
+                    max: new fields.NumberField({
+                        required: true,
+                        integer: true,
+                        min: 5,
+                        step: 5,
+                        max: 500,
+                        nullable: true,
+                        initial: null,
+                    }),
+                },
+                { required: true, nullable: true, initial: null },
+            ),
         };
     }
 
@@ -115,11 +141,26 @@ class MeleeSystemData extends ItemSystemModel<MeleePF2e, NPCAttackSystemSchema> 
         super.prepareBaseData();
         if (this.action !== "strike") this.area ??= { type: "burst", value: 5 };
     }
+
+    static override migrateData<T extends foundry.abstract.DataModel>(
+        this: ConstructorOf<T>,
+        source: Record<string, unknown>,
+    ): MeleeSystemSource {
+        const migrated = super.migrateData<MeleeSystemData>(source);
+        const rangeData = getLegacyRangeData(migrated.traits.value);
+        if (rangeData) {
+            migrated.range ??= { increment: rangeData.increment, max: rangeData.max };
+            migrated.traits.value = migrated.traits.value.filter((t) => !/^(?:range-increment|range)-\d+$/.test(t));
+        }
+        return migrated;
+    }
 }
 
 interface MeleeSystemData
     extends ItemSystemModel<MeleePF2e, NPCAttackSystemSchema>,
-        Omit<fields.ModelPropsFromSchema<NPCAttackSystemSchema>, "description"> {}
+        Omit<fields.ModelPropsFromSchema<NPCAttackSystemSchema>, "description"> {
+    traits: NPCAttackTraits;
+}
 
 type NPCAttackSystemSchema = Omit<ItemSystemSchema, "traits"> & {
     traits: fields.SchemaField<{
@@ -161,6 +202,17 @@ type NPCAttackSystemSchema = Omit<ItemSystemSchema, "traits"> & {
     attackEffects: fields.SchemaField<{
         value: fields.ArrayField<fields.StringField<string, string, true, false, false>>;
     }>;
+    range: fields.SchemaField<
+        {
+            increment: fields.NumberField<number, number, true, true, true>;
+            max: fields.NumberField<number, number, true, true, true>;
+        },
+        { increment: number | null; max: number | null },
+        { increment: number | null; max: number | null },
+        true,
+        true,
+        true
+    >;
 };
 
 type EffectAreaSchema = {
