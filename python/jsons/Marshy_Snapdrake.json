@@ -1,0 +1,258 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Marshy Snapdrake",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Elemental",
+    "Plant",
+    "Wood"
+  ],
+  "source": "Pathfinder Society Scenario #7-07: Draconic Folly",
+  "remaster": true,
+  "senses": [],
+  "perception": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Arboreal",
+    "Common",
+    "Muan",
+    "can't speak any language"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "performance",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 144,
+    "max": 144,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "axe-vulnerability",
+      "value": 10
+    },
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Alluring Scent",
+      "actions": null,
+      "traits": [
+        "aura",
+        "olfactory",
+        "plant",
+        "primal"
+      ],
+      "description": "<p>30 feet. A creature that enters the emanation must attempt a DC 25 Will Saving Throw save. On a failure, the target is Fascinated by the snapdrake and must use at least 1 action on its next turn to Stride closer to the snapdrake. On a success, the target is immune to the snapdrake's alluring scent for 1 hour.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Strike (Tail Scythe Only)",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, fly 50ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fangs",
+      "bonus": 14,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d12+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "grab",
+        "marshy-snapdrake-pollen"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail Scythe",
+      "bonus": 16,
+      "traits": [
+        "deadly-d10",
+        "finesse",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+6",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+6)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Greater Marsh Passage",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The marshy snapdrake ignores difficult terrain and greater difficult terrain from marshy ground and fungi</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Marshy Snapdrake Pollen",
+      "actions": null,
+      "traits": [
+        "plant",
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 25 Fortitude Saving Throw;</p>\n<p><strong>Maximum Duration</strong> 8 rounds</p>\n<p><strong>Stage 1</strong> 1d6 Poison Damage damage plus Dazzled 1 (1 round)</p>\n<p><strong>Stage 2</strong> 1d6 Poison Damage damage plus dazzled 1 and Sickened 1 (2 rounds)</p>\n<p><strong>Stage 3</strong> 2d6 Poison Damage damage plus Confused and sickened 1 (2 rounds)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Speed Surge",
+      "actions": 1,
+      "traits": [
+        "move"
+      ],
+      "description": "<p><strong>Frequency</strong> 3 times per day</p><hr /><p><strong>Effect</strong> The marshy snapdrake Strides or Flies up to twice its Speed</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spray Pollen",
+      "actions": 2,
+      "traits": [
+        "arcane",
+        "plant",
+        "poison"
+      ],
+      "description": "<p>The marshy snapdrake breathes a blast of pollen in a 40ft Type:cone Creatures caught in the blast must succeed at a DC 25 Reflex Saving Throw save or be exposed to marshy snapdrake pollen The marshy snapdrake can't use Spray Pollen again for 1d6 #recharge spray pollen rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature or Nature, DC 24"
+}

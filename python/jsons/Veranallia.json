@@ -278,6 +278,13 @@
       ],
       "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The veranallia spends a minute to encase a creature that has been dead for no more than a year in a cocoon. After 24 hours, the creature is restored to life, and the cocoon explodes in a shower of colorful blossoms. If the veranallia's chooses, Rebirth can change the creature's ancestry or heritage, typically into an nephilim.</p>",
       "collapsed": false
+    },
+    {
+      "name": "Improved Grab",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Improved Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with as a free action. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead spend an action to use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
     }
   ],
   "spellcastingEntries": [
@@ -343,7 +350,7 @@
           "area": "40ft burst",
           "targets": "",
           "save": "",
-          "description": "<p>Dense, twitching creepers sprout from every surface and fill any bodies of water in the area. Any creature moving on the land, or Climbing or Swimming within the creepers, takes a -10-foot circumstance penalty to its Speeds while in the area. Once per round, you can Sustain the spell to make a vine lash out from any square within the expanse of creepers. This vine has a 15-foot reach. Make a melee spell attack roll against the target; on a success, the vine pulls the target into the creepers and makes it Immobilized for 1 round or until the creature Escapes (against your spell DC), whichever comes first.</p>\n<p></p>",
+          "description": "<p>Dense, twitching creepers sprout from every surface and fill any bodies of water in the area. Any creature moving on the land, or Climbing or Swimming within the creepers, takes a –10-foot circumstance penalty to its Speeds while in the area. Once per round, you can Sustain the spell to make a vine lash out from any square within the expanse of creepers. This vine has a 15-foot reach. Make a melee spell attack roll against the target; on a success, the vine pulls the target into the creepers and makes it Immobilized for 1 round or until the creature Escapes (against your spell DC), whichever comes first.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -510,6 +517,32 @@
           "id": "r9Vti0pP2In1fPgO"
         },
         {
+          "name": "Regenerate",
+          "type": "spell",
+          "level": 7,
+          "heightenedLevel": 9,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "healing",
+            "manipulate",
+            "vitality"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing living creature",
+          "save": "",
+          "description": "<p>An infusion of vital energy grants a creature continuous healing. The target temporarily gains regeneration 15, which restores 15 Hit Points to it at the start of each of its turns. While it has regeneration, the target can't die from taking Hit Point damage and its Dying condition can't increase to a value that would kill it (this stops most creatures' dying condition at dying 3), though if its Wounded value becomes 4 or higher, it stays Unconscious until its wounds are treated. If the target takes acid or fire damage, its regeneration deactivates until after the end of its next turn.</p>\n<p>Each time the creature regains Hit Points from regeneration, it also regrows one damaged or ruined organ (if any). During the spell's duration, the creature can also reattach severed body parts by spending an Interact action to hold the body part to the area it was severed from.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (9th)</strong> The regeneration increases to 20.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "r7jklHq5DEK3sMRb"
+        },
+        {
           "name": "Nature's Enmity",
           "type": "spell",
           "level": 9,
@@ -534,32 +567,6 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "V36tT2G4lUfNUNVI"
-        },
-        {
-          "name": "Regenerate",
-          "type": "spell",
-          "level": 9,
-          "heightenedLevel": 9,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "healing",
-            "manipulate",
-            "vitality"
-          ],
-          "castingTime": "2",
-          "duration": "1 minute",
-          "range": "touch",
-          "area": "",
-          "targets": "1 willing living creature",
-          "save": "",
-          "description": "<p>An infusion of vitality energy grants a creature continuous healing. The target temporarily gains regeneration 15, which restores 15 Hit Points to it at the start of each of its turns. While it has regeneration, the target can't die from damage and its Dying condition can't increase to a value that would kill it (this stops most creatures from going beyond dying 3), though if its Wounded value becomes 4 or higher, it stays Unconscious until its wounds are treated. If the target takes acid or fire damage, its regeneration deactivates until after the end of its next turn. Each time the creature regains Hit Points from regeneration, it also regrows one damaged or ruined organ (if any). During the spell's duration, the creature can also reattach severed body parts by spending an Interact action to hold the body part to the area it was severed from.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The regeneration increases to 20.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "tyjmT6FqntX2DtkL"
         },
         {
           "name": "Wrathful Storm",
@@ -688,7 +695,7 @@
           "area": "40ft burst",
           "targets": "",
           "save": "",
-          "description": "<p><strong>Area</strong> 40-foot-radius burst around an immobile altar, shrine, or fixture of your deity</p>\n<p><strong>Secondary Casters</strong> 2, must be worshippers of your religion</p>\n<hr />\n<p>You consecrate a site to your deity, chanting praises and creating a sacred space. While within the area, worshippers of your deity gain a +1 status bonus to attack rolls, skill checks, saving throws, and Perception checks, and creatures anathema to your deity (such as undead for Pharasma or Sarenrae) take a -1 status penalty to those rolls. If your deity's divine sanctification allows you to choose holy or unholy, you can choose to make the consecrated site holy or unholy as well. If the deity's sanctification <span class=\"fontstyle2\">must </span>be holy or unholy, you must make the site match that sanctification. Strikes made by worshippers of your deity within the area gain the site's sanctification trait, if any.</p>\n<hr />\n<p><strong>Critical Success</strong> The consecration succeeds, and it either lasts for 10 years instead of 1 or covers an area with twice the radius. Occasionally, with your deity's favor, this might produce an even more amazing effect, such as a permanently consecrated area or the effect covering an entire cathedral.</p>\n<p><strong>Success</strong> The consecration succeeds.</p>\n<p><strong>Failure</strong> The consecration fails.</p>\n<p><strong>Critical Failure</strong> The consecration fails spectacularly and angers your deity, who sends a sign of displeasure. For at least 1 year, further attempts to consecrate the site fail.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The consecrated area also gains the effects of the Planar Seal spell, but the effect doesn't attempt to counteract teleportation by worshippers of your deity. The cost increases to 200 gp × the spell rank.</p>",
+          "description": "<p><strong>Area</strong> 40-foot-radius burst around an immobile altar, shrine, or fixture of your deity</p>\n<p><strong>Secondary Casters</strong> 2, must be worshippers of your religion</p><hr /><p>You consecrate a site to your deity, chanting praises and creating a sacred space. While within the area, worshippers of your deity gain a +1 status bonus to attack rolls, skill checks, saving throws, and Perception checks, and creatures anathema to your deity (such as undead for Pharasma or Sarenrae) take a -1 status penalty to those rolls. If your deity's divine sanctification allows you to choose holy or unholy, you can choose to make the consecrated site holy or unholy as well. If the deity's sanctification <em>must</em> be holy or unholy, you must make the site match that sanctification. Strikes made by worshippers of your deity within the area gain the site's sanctification trait, if any.</p><hr /><p><strong>Critical Success</strong> The consecration succeeds, and it either lasts for 10 years instead of 1 or covers an area with twice the radius. Occasionally, with your deity's favor, this might produce an even more amazing effect, such as a permanently consecrated area or the effect covering an entire cathedral.</p>\n<p><strong>Success</strong> The consecration succeeds.</p>\n<p><strong>Failure</strong> The consecration fails.</p>\n<p><strong>Critical Failure</strong> The consecration fails spectacularly and angers your deity, who sends a sign of displeasure. For at least 1 year, further attempts to consecrate the site fail.</p><hr /><p><strong>Heightened (7th)</strong> The consecrated area also gains the effects of the Planar Seal spell, but the effect doesn't attempt to counteract teleportation by worshippers of your deity. The cost increases to 200 gp × the spell rank.</p>",
           "cast": false,
           "cost": "rare incense and offerings worth a total value of 20 gp × the spell rank",
           "primaryCheck": "Religion",

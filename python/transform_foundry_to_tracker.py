@@ -280,7 +280,7 @@ def get_common_1(npc, foundry_json):
     npc["strikes"] = []
     for item in foundry_json["items"]:
         if item["type"] == "melee" or item["type"] == "ranged":
-            range_attack = item["system"]["weaponType"]["value"] if "weaponType" in item["system"] else item["type"]
+            range_attack = "ranged" if item["system"]["range"] is not None else item["type"]
             strike = {
                 "type": range_attack,
                 "name": item["name"],
