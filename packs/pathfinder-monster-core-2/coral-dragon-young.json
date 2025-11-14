@@ -123,7 +123,7 @@
         {
             "_id": "81uvvmVvvInpmJ6T",
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "+2 status to all saves vs. primal",
+            "name": "+2 Status to All Saves vs. Primal",
             "sort": 400000,
             "system": {
                 "actionType": {
@@ -299,7 +299,7 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The dragon exhales a pressurized jet of water that deals @Damage[9d6[bludgeoning]|options:area-damage] damage in an @Template[type:line|distance:80] (@Check[reflex|dc:26|basic] save). Creatures that critically fail their Reflex save against the Hydraulic Breath are pushed back 10 feet and knocked @UUID[Compendium.pf2e.conditionitems.Item.Prone]. The dragon can't use Hydraulic Breath again for [[/gmr 1d4 #Recharge Hydraulic Breath]]{1d4 rounds}.</p>"
+                    "value": "<p>The dragon exhales a pressurized jet of water that deals @Damage[9d6[bludgeoning]|options:area-damage] damage in an @Template[type:line|distance:80] (@Check[reflex|dc:26|basic|options:area-effect,forced-movement,inflicts:prone] save). Creatures that critically fail their Reflex save against the Hydraulic Breath are pushed back 10 feet and knocked @UUID[Compendium.pf2e.conditionitems.Item.Prone]. The dragon can't use Hydraulic Breath again for [[/gmr 1d4 #Recharge Hydraulic Breath]]{1d4 rounds}.</p>"
                 },
                 "publication": {
                     "license": "OGL",
@@ -349,6 +349,70 @@
                         "extradimensional",
                         "primal"
                     ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "yYFi3crXCv9v6Uy2",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
+            },
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "name": "Grab",
+            "sort": 1100000,
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 1
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Monster Core"
+                },
+                "rules": [],
+                "slug": "grab",
+                "traits": {
+                    "value": []
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "rOhaFMmWov4EDSMQ",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu"
+            },
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "name": "Knockdown",
+            "sort": 1200000,
+            "system": {
+                "actionType": {
+                    "value": "action"
+                },
+                "actions": {
+                    "value": 1
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Knockdown]</p>"
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Monster Core"
+                },
+                "rules": [],
+                "slug": "knockdown",
+                "traits": {
+                    "value": []
                 }
             },
             "type": "action"

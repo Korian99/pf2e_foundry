@@ -43,9 +43,13 @@
             "type": "spellcastingEntry"
         },
         {
-            "_id": "yuZfFbjl98Zkucsy",
-            "img": "icons/magic/fire/flame-burning-earth-orange.webp",
-            "name": "Produce Flame",
+            "_id": "qHLcLpLfz6bKqwdj",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.spells-srd.Item.6DfLZBl8wKIV03Iq"
+            },
+            "folder": "D7UVaOiB40wTR6kv",
+            "img": "icons/magic/fire/explosion-embers-evade-silhouette.webp",
+            "name": "Ignition",
             "sort": 200000,
             "system": {
                 "area": null,
@@ -54,7 +58,7 @@
                 },
                 "counteraction": false,
                 "damage": {
-                    "0": {
+                    "cQDyW0QpjJ38MlSi": {
                         "applyMod": false,
                         "category": null,
                         "formula": "2d4",
@@ -67,7 +71,7 @@
                 },
                 "defense": null,
                 "description": {
-                    "value": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and @Damage[(@item.level)d4[persistent,fire]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>"
+                    "value": "<p>You snap your fingers and point at a target, which begins to smolder. Make a spell attack roll against the target's AC, dealing 2d4 fire damage on a hit. If the target is within your melee reach, you can choose to make a melee spell attack with the flame instead of a ranged spell attack, which increases all the spell's damage dice to d6s.</p><hr /><p><strong>Critical Success</strong> The target takes double damage and 1d4 persistent fire damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p><hr /><p><strong>Heightened (+1)</strong> The initial damage increases by 1d4 and the persistent fire damage on a critical hit increases by 1d4.</p>\n<p>@Damage[(@item.rank)d4[persistent,fire]]{Scaling Persistent Fire Damage}</p>\n<p>@Damage[(@item.rank)d6[persistent,fire]]{Scaling Persistent Fire Damage (Melee)}</p>"
                 },
                 "duration": {
                     "sustained": false,
@@ -75,7 +79,7 @@
                 },
                 "heightening": {
                     "damage": {
-                        "0": "1d4"
+                        "cQDyW0QpjJ38MlSi": "1d4"
                     },
                     "interval": 1,
                     "type": "interval"
@@ -86,17 +90,49 @@
                 "location": {
                     "value": "Mu6RmJmoPp5iM9ld"
                 },
+                "overlays": {
+                    "eOCNn2ohYAvsYZjn": {
+                        "_id": "eOCNn2ohYAvsYZjn",
+                        "overlayType": "override",
+                        "sort": 1,
+                        "system": {
+                            "defense": null
+                        }
+                    },
+                    "xYyA7CV1GaFTRjBQ": {
+                        "_id": "xYyA7CV1GaFTRjBQ",
+                        "name": "Ignition (Melee)",
+                        "overlayType": "override",
+                        "sort": 2,
+                        "system": {
+                            "damage": {
+                                "cQDyW0QpjJ38MlSi": {
+                                    "formula": "2d6"
+                                }
+                            },
+                            "defense": null,
+                            "heightening": {
+                                "damage": {
+                                    "cQDyW0QpjJ38MlSi": "1d6"
+                                }
+                            },
+                            "range": {
+                                "value": "touch"
+                            }
+                        }
+                    }
+                },
                 "publication": {
-                    "license": "OGL",
-                    "remaster": false,
-                    "title": "Pathfinder Core Rulebook"
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Player Core"
                 },
                 "range": {
                     "value": "30 feet"
                 },
                 "requirements": "",
                 "rules": [],
-                "slug": "produce-flame",
+                "slug": "ignition",
                 "target": {
                     "value": "1 creature"
                 },
@@ -122,10 +158,14 @@
         },
         {
             "_id": "eRnSGx9tKMwZStVB",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.yd3kEK21YknZLlcT"
+            },
             "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-bombs/alchemists-fire.webp",
             "name": "Alchemist's Fire (Lesser)",
             "sort": 300000,
             "system": {
+                "ammo": null,
                 "baseItem": "alchemical-bomb",
                 "bonus": {
                     "value": 0
@@ -217,10 +257,14 @@
         },
         {
             "_id": "4AvXZLUev2qkKWHo",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.rQWaJhI5Bko5x14Z"
+            },
             "img": "systems/pf2e/icons/equipment/weapons/dagger.webp",
             "name": "Dagger",
             "sort": 400000,
             "system": {
+                "ammo": null,
                 "baseItem": "dagger",
                 "bonus": {
                     "value": 0
@@ -304,6 +348,9 @@
         },
         {
             "_id": "E4JsJBj2njW8z65n",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.ewQZ0VeL38v3qFnN"
+            },
             "img": "icons/equipment/chest/breastplate-layered-leather-studded-brown.webp",
             "name": "Studded Leather Armor",
             "sort": 500000,
@@ -369,6 +416,9 @@
         },
         {
             "_id": "7FgPojTX7HEIApDW",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.qCEOZ6109Yo34tRx"
+            },
             "img": "icons/sundries/books/book-tooled-brass-brown.webp",
             "name": "Formula Book (Blank)",
             "sort": 600000,
@@ -424,6 +474,9 @@
         },
         {
             "_id": "dS32srus27PqNXWU",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.4ftXXUCBHcf4b0MH"
+            },
             "img": "icons/tools/laboratory/vials-blue-pink.webp",
             "name": "Alchemist's Toolkit",
             "sort": 700000,
@@ -479,6 +532,9 @@
         },
         {
             "_id": "TBb4xlsElcMbTZ1P",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.UlIxxLm71UdRgCFE"
+            },
             "img": "icons/commodities/stone/geode-raw-tan.webp",
             "name": "Flint and Steel",
             "sort": 800000,
@@ -534,6 +590,9 @@
         },
         {
             "_id": "qZDyd8KGBqXEYFHU",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.TZUskLT7yvP7N2co"
+            },
             "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-elixirs/elixir-of-life.webp",
             "name": "Lesser Elixir of Life",
             "sort": 900000,
@@ -606,6 +665,9 @@
         },
         {
             "_id": "eF4sqCqXrBkfqjib",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.MoBlVd36uD9xVvZC"
+            },
             "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-tools/smokestick.webp",
             "name": "Smoke Ball (Lesser)",
             "sort": 1000000,

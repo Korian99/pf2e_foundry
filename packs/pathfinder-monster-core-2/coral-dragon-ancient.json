@@ -124,7 +124,7 @@
         {
             "_id": "Yiei1c0o3eTFwLUa",
             "img": "systems/pf2e/icons/actions/Passive.webp",
-            "name": "+2 status to all saves vs. primal",
+            "name": "+2 Status to All Saves vs. Primal",
             "sort": 400000,
             "system": {
                 "actionType": {
@@ -340,7 +340,7 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The dragon exhales a pressurized jet of water that deals @Damage[18d6[bludgeoning]|options:area-damage] damage in an @Template[type:line|distance:120] (@Check[reflex|dc:38|basic] save). Creatures that critically fail their Reflex save against the Hydraulic Breath are pushed back 10 feet and knocked @UUID[Compendium.pf2e.conditionitems.Item.Prone]. The dragon can't use Hydraulic Breath again for [[/gmr 1d4 #Recharge Hydraulic Breath]]{1d4 rounds}.</p>"
+                    "value": "<p>The dragon exhales a pressurized jet of water that deals @Damage[18d6[bludgeoning]|options:area-damage] damage in an @Template[type:line|distance:120] (@Check[reflex|dc:38|basic|options:area-effect,forced-movement,inflicts:prone] save). Creatures that critically fail their Reflex save against the Hydraulic Breath are pushed back 10 feet and knocked @UUID[Compendium.pf2e.conditionitems.Item.Prone]. The dragon can't use Hydraulic Breath again for [[/gmr 1d4 #Recharge Hydraulic Breath]]{1d4 rounds}.</p>"
                 },
                 "publication": {
                     "license": "OGL",
@@ -429,6 +429,38 @@
                         "extradimensional",
                         "primal"
                     ]
+                }
+            },
+            "type": "action"
+        },
+        {
+            "_id": "OZLuQyz46ZEwHaYh",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.LbnsT8yXchHMQT3t"
+            },
+            "img": "systems/pf2e/icons/actions/FreeAction.webp",
+            "name": "Improved Knockdown",
+            "sort": 1300000,
+            "system": {
+                "actionType": {
+                    "value": "free"
+                },
+                "actions": {
+                    "value": null
+                },
+                "category": "offensive",
+                "description": {
+                    "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ImprovedKnockdown]</p>"
+                },
+                "publication": {
+                    "license": "ORC",
+                    "remaster": true,
+                    "title": "Pathfinder Monster Core"
+                },
+                "rules": [],
+                "slug": "improved-knockdown",
+                "traits": {
+                    "value": []
                 }
             },
             "type": "action"

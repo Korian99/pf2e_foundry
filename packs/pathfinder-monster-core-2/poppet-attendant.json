@@ -4,10 +4,14 @@
     "items": [
         {
             "_id": "W1znP0gDW88Ps2PU",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.IF6qUrR3i030v0dH"
+            },
             "img": "systems/pf2e/icons/equipment/weapons/shears.webp",
             "name": "Shears",
             "sort": 100000,
             "system": {
+                "ammo": null,
                 "baseItem": "shears",
                 "bonus": {
                     "value": 0
@@ -90,6 +94,9 @@
         },
         {
             "_id": "PoMXV9R9xcO8aP8D",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.UCH4myuFnokGv0vF"
+            },
             "img": "systems/pf2e/icons/equipment/weapons/sling.webp",
             "name": "Sling",
             "sort": 200000,
@@ -177,6 +184,9 @@
         },
         {
             "_id": "vKRlfMDzsXHbgevQ",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.y34yjumCFakrbtdw"
+            },
             "img": "systems/pf2e/icons/equipment/adventuring-gear/artisan-tools.webp",
             "name": "Artisan's Toolkit",
             "sort": 300000,
@@ -231,6 +241,9 @@
         },
         {
             "_id": "dYcmg8qnMtfYVByY",
+            "_stats": {
+                "compendiumSource": "Compendium.pf2e.equipment-srd.Item.vLGDUFrg4yGzpTQX"
+            },
             "img": "icons/tools/smithing/anvil.webp",
             "name": "Repair Toolkit",
             "sort": 400000,
@@ -318,7 +331,9 @@
                 "slug": "sling-bullets",
                 "traits": {
                     "rarity": "common",
-                    "value": []
+                    "value": [
+                        "consumable"
+                    ]
                 },
                 "uses": {
                     "autoDestroy": true,
@@ -471,7 +486,7 @@
                 },
                 "category": "interaction",
                 "description": {
-                    "value": "<p>The poppet attendant looks like an ordinary doll, fooling others into leaving them alone. When they’re in their place of business, the poppet attendant can Hide without cover or concealment. Once a creature realizes that the poppet attendant is alive, the attendant can’t Hide from them in this way again.</p>"
+                    "value": "<p>The poppet attendant looks like an ordinary doll, fooling others into leaving them alone. When they're in their place of business, the poppet attendant can [[/act hide]] without cover or concealment. Once a creature realizes that the poppet attendant is alive, the attendant can't Hide from them in this way again.</p>"
                 },
                 "publication": {
                     "license": "OGL",
@@ -509,7 +524,21 @@
                     "remaster": false,
                     "title": ""
                 },
-                "rules": [],
+                "rules": [
+                    {
+                        "key": "RollOption",
+                        "option": "pincushion",
+                        "toggleable": true
+                    },
+                    {
+                        "key": "Resistance",
+                        "predicate": [
+                            "pincushion"
+                        ],
+                        "type": "piercing",
+                        "value": 5
+                    }
+                ],
                 "slug": null,
                 "traits": {
                     "value": []
@@ -612,7 +641,24 @@
                 "value": 6
             }
         },
-        "skills": {},
+        "skills": {
+            "crafting": {
+                "base": 6,
+                "special": []
+            },
+            "deception": {
+                "base": 5,
+                "special": []
+            },
+            "diplomacy": {
+                "base": 5,
+                "special": []
+            },
+            "stealth": {
+                "base": 6,
+                "special": []
+            }
+        },
         "traits": {
             "rarity": "rare",
             "size": {
