@@ -1,3 +1,175 @@
+## 7.8.0
+
+### System Improvements
+
+- (Supe) Change temporary item icon to a stopwatch
+- (Supe) Convert Add/Remove Coins and Distribute Coins to Application V2
+- (Supe) Implement the credstick treasure category. Not used by any items yet.
+- (Supe) Limit quantity of backpacks with contents to 1
+- (Supe) Show a different warning if a weapon has ammo but not enough to fire
+- (Supe) Show icon for temporary items when reloading
+
+### Bugfixes
+
+- (DocSchlock) Fix weapon weakness and resistance
+- (In3luki) Fix invalid item `Documents` preventing all physical item updates
+- (kromko) Keep SF2e grade on item refresh
+- (stwlam) Abort double clicks of secret tokens
+- (stwlam) Fix updating prices of physical items when the currency changes
+- (Supe) Fix ancestry reach and speed resetting 0 to 5 when updating
+- (Supe) Fix PC area damage incorrectly using strike domains
+- (Supe) Fix posting ammo items to chat
+- (Supe) Fix rolling damage from chat after striking with an area fire weapon
+
+### Data Updates
+
+- (Ambrose, Mecha Maya, Rigo, Tikael) Add content from Draconic Codex
+- (Ambrose, Rigo) Set icons for all non-versatile heritages
+- (Ambrose) Add automation to Almiraj's Reactive Strike
+- (Ambrose) Add effect for Sandpoint Devil's Accursed Breath Critical Failure state
+- (Ambrose) Add missing frequency to Scars of Steel
+- (Ambrose) Add Rewrite Fate Grant Item RE's to Revenge of the Runelords Mythic Callings
+- (Ambrose) Fix capitalization on NPC At Will and Constant spells
+- (Ambrose) Fix Fiendbreaker's Recall Knowledge bonus type
+- (Ambrose) Fix incorrect uses of `item:type:melee` to `item:melee`
+- (Ambrose) Fix instances of inline damage for Bloodburn Censer from acid to poison
+- (Ambrose) Update localization for Improved Grab, Knockdown and Push
+- (Dire Weasel) Add effect for Cloak in Embers
+- (Dire Weasel) Add some inline links and roll options for Shemhazian
+- (Dire Weasel) Fix missing damage types on some inline rolls and update several old style inlines
+- (Dire Weasel) Fix Spirit Body and Ghostly Swoop resistance to be double vs. non-magical
+- (Dire Weasel) Tidy description formatting for Celestial Magic and Fiendish Magic
+- (Dire Weasel) Update Mitflit Vermin Cavalry, Requiem Dragons, and Hannis Drelev
+- (Dire Weasel) Update NPC Core Martial Artist Alternate Moves
+- (kromko) Fix Keep Pace's description becoming empty when added to a character
+- (kromko) Update Ultimate Skirmisher prerequisite to remaster
+- (rectulo) Fix description of runic skullcap
+- (Rigo) Add Accelerating, Amplifying, Rejuvenating, and Resilient Touch description addenda to Lay on Hands
+- (Rigo) Add area effect roll option to World Breaking Footfall saving throw
+- (Rigo) Add Cruelty feat automation
+- (Rigo) Add effect for Guiding Shot and Resounding Cascade
+- (Rigo) Add extra damage toggle to Desert Wind
+- (Rigo) Add missing elemental and bloodrager instinct resistances
+- (Rigo) Add missing spellcasting entry to MC2's Radiant Warden
+- (Rigo) Add missing traits to Sacred Ground inline healing
+- (Rigo) Add Note on successful grapple to Scalding Gauntlets
+- (Rigo) Add notes on qualifying melee and ranged Strikes to Sword and Pistol
+- (Rigo) Add resistance effect for Electric Counter
+- (Rigo) Add short-duration panache effect and implement it with several Swashbuckler feats
+- (Rigo) Add spell effect for Community Restoration's temporary Hit Points on self
+- (Rigo) Allow Manifest Will tradition to be changed and add basic support for occult patron
+- (Rigo) Automate Consume Power, Dodging Roll, Equitable Defense, and Flesh Wound
+- (Rigo) Automate Heal Mount's increased Lay on Hands healing
+- (Rigo) Don't allow duplicates with Leap the Falls's Grant Items
+- (Rigo) Fix selector in Helpful Reload effect's Flat Modifier and a typo in Manifest Will spell effect
+- (Rigo) Grant initial language and skill proficiencies to summoner via newly added Eidolon features
+- (Rigo) Reduce action cost of Turbulent Tide to 1-action
+- (Rigo) Replace `item:spell` with `item:type:spell` roll option in Flat Modifier predicates
+- (Rigo) Set bonus type on Pain Tolerance's Flat Modifier
+- (Tikael) Add custom icons to all ancestries and versatile heritages
+
+## Under the Hood
+
+- (stwlam) Make actor movement speeds compatibility warning less noisy
+- (stwlam) Minor performance improvement when testing predicates by keeping domains as sets until needed as array
+- (Supe) Minor performance improvement when adding/removing coins
+- (Supe) Remove coinLabel handlebars helper
+
+## 7.7.4
+
+### System Improvements
+
+- (Supe) Allow reloading while there is a depleted battery without having to eject first
+- (Supe) When reloading ammo, grey out and sort to bottom depleted batteries
+
+### Bugfixes
+
+- (stwlam) Fix treasure errors when using custom traits that no longer exist in the world
+- (Supe) Avoid deleting non-consumable magazines such as batteries when depleted
+- (Supe) Fix other players getting permission error notifications when updating certain items
+- (Supe) Set ammo quantity to 0 instead of deleting when multiple different types are loaded in the same weapon to prevent incorrect damage
+
+### Data Updates
+
+- (Ambrose) Correct Morlock Tinkerer's Club ranged attack traits to match Monster Core 2 update
+- (Dire Weasel) Fix some actor and item sources
+- (Dire Weasel) Remove Dismemberment Table's immunity to vitality damage
+- (Dire Weasel) Update automation for Vermlek and Animated Dragonstorm
+- (kromko) Fix Ancient Rune Dragon inline
+- (Tikael) Fix data errors from Return of the Runelords 2
+- (Tikael) Fix name of PFS actor to match source
+
+## 7.7.3
+
+### Bugfixes
+
+- (Supe) Add ammo to compendium browser item type filters
+- (Supe) Fix display of coinage value in the inventory
+- (Supe) Fix soldier weapon specialization
+- (Supe) Fix styling of description in loot sheet
+- (Supe) Fix thrown npc attacks being detected as melee instead of ranged
+
+### Data Updates
+
+- (Ambrose) Add Shobhad Longrifle rounds
+- (Ambrose) Correct instances of mis localized apostrophe/r-squo in en.json
+- (Ambrose) Detach effect from Soaring Flight feat
+- (Ambrose) Remove Spirit Damage Dice Rule Elements from Cacodaemon
+- (kromko) Fix some feat prerequisites
+
+## 7.7.2
+
+### System Improvements
+
+- (Supe) Add usage icons for auto fire and ranged alt usages
+- (Supe) Skip confirmation for eject ammo if shift is held
+
+### Bugfixes
+
+- (Abrault) Fix party attempting to roll inline checks meant for player characters
+- (stwlam) Add more data-type precautions for old treasure and npc attacks
+- (Supe) Add the infused trait to alchemical ammo
+- (Supe) Allow loading special ammo without a specific type
+- (Supe) Fix disabling auto destroy for non-magazine ammo
+- (Supe) Fix draw/sheathe of area weapons
+- (Supe) Fix localization of range tag in player strike
+- (Supe) Fix selectors and modifier adjustments for area and auto fire dcs
+- (Supe) Fix weapons embedded into shields
+- (Supe) Roll over magazine uses when loading partially used ammo in a stack
+- (Supe) Show area fire description instead of item description
+- (Supe) Show message when reloading during combat
+- (Supe) When deleting temporary items, also delete loaded ammo
+
+### Data Updates
+
+- (Ambrose) Add initiative note to Reflexive Stance
+- (Ambrose) Add missing action cost to Mythic Refocus and Crusader's Masquerade
+- (Ambrose) Add missing traits and descriptions to Perception Mastery
+- (Ambrose) Add scaling damage to Rouse the Forest's Fury
+- (Ambrose) Clean text on Uvuko's deity entry and Tern flock abilities
+- (Ambrose) Link Innovations article from Inventor Class Journals to Inventor Dedication and restrict Weapon Innovation Advanced Martial Profiency
+- (Ambrose) Remove self reference from Sudden Charge
+- (Ambrose) Update Push to use Shove Action Macro
+- (Dire Weasel) Add invested trait to Moonsilver Necklace
+- (Dire Weasel) Fix some `compendiumSource`s for RoE NPCs
+- (Dire Weasel) Fix Strategic Stance's success aura size
+- (Dire Weasel) Remove duplicate data in Tanagaar's description
+- (Dire Weasel) Update Control Water area description
+- (Dire Weasel) Update some NPC senses to structured data
+- (kromko) Fix some feat prerequisites
+- (kromko) Remove a link to Heroic Recovery effect from Martyr RE
+- (kromko) Remove Gecko's Grip prerequisites
+- (Rigo) Add description alterations to Fortunate Blow, Targeting Strike, Shield of Faith, and Unrivaled Analysis
+- (Rigo) Add effect for Defiant Banner, Pennant of Victory, Shielded Recovery, Unsteadying Strike, Fortunate Blow, Spike Skin, and Targeting strike
+- (Rigo) Add frequency data to Pennant of Victory
+- (Rigo) Add modifier upgrade to Observational Analysis
+- (Rigo) Correct typo on Adamant Sentinel's Destructive Strike ability
+- (Rigo) Replace Energy Shot Choice Set with Roll Option dropdown
+- (SpartanCPA) Correct Note trigger on Rogue and Swashbuckler evasion features
+- (Supe) Migrate several incorrect uses of strike-damage selectors
+- (Tikael) Add item bonus to Greater Inflammation Flask
+- (Tikael) Fix Overwatch Field effect
+
 ## 7.7.1
 
 ### Bugfixes

@@ -1206,6 +1206,9 @@ class CharacterPF2e<TParent extends TokenDocumentPF2e | null = TokenDocumentPF2e
             meleeOrRanged,
             "area-damage",
             "area-effect",
+            `item:proficiency:rank:${proficiencyRank}`,
+            // @todo migrate away:
+            PROFICIENCY_RANK_OPTION[proficiencyRank],
             ...weaponRollOptions,
         ];
 
@@ -1215,7 +1218,7 @@ class CharacterPF2e<TParent extends TokenDocumentPF2e | null = TokenDocumentPF2e
         const handsAvailable = !weapon.system.graspingAppendage || handsReallyFree > 0;
 
         return {
-            slug: identifier,
+            slug: weaponSlug,
             type: action,
             attackRollType: actionLabel,
             label: weapon.name,
@@ -1534,9 +1537,8 @@ class CharacterPF2e<TParent extends TokenDocumentPF2e | null = TokenDocumentPF2e
                 params.consumeAmmo = weapon.system.ammo?.builtIn ? false : (params.consumeAmmo ?? expend > 0);
 
                 if (params.consumeAmmo && expend > ammoRemaining) {
-                    ui.notifications.warn(
-                        game.i18n.format("PF2E.Strike.Ranged.NoAmmo", { weapon: weapon.name, actor: this.name }),
-                    );
+                    const message = ammoRemaining ? "PF2E.Strike.Ranged.InsufficientAmmo" : "PF2E.Strike.Ranged.NoAmmo";
+                    ui.notifications.warn(game.i18n.format(message, { weapon: weapon.name, actor: this.name }));
                     return null;
                 }
                 const targetToken = params.getFormula

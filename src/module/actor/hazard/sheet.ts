@@ -18,7 +18,7 @@ export class HazardSheetPF2e extends ActorSheetPF2e<HazardPF2e> {
             scrollY: ["section.content"],
             width: 710,
             height: 680,
-            template: "systems/pf2e/templates/actors/hazard/sheet.hbs",
+            template: `${SYSTEM_ROOT}/templates/actors/hazard/sheet.hbs`,
         };
     }
 
@@ -99,6 +99,7 @@ export class HazardSheetPF2e extends ActorSheetPF2e<HazardPF2e> {
                     : null;
 
             results.push({
+                label: attack.label,
                 description,
                 damageFormula: String(await attack.damage?.({ getFormula: true })),
                 breakdown: attack.type === "strike" ? attack.breakdown : attack.statistic.dc.breakdown,

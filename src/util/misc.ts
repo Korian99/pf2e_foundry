@@ -70,14 +70,16 @@ let intlNumberFormat: Intl.NumberFormat;
  * @param options.zeroIsNegative Treat zero as a negative value
  */
 function signedInteger(value: number, { emptyStringZero = false, zeroIsNegative = false } = {}): string {
-    if (value === 0 && emptyStringZero) return "";
-    const nf = (intlNumberFormat ??= new Intl.NumberFormat(game.i18n.lang, {
+    if (value === 0) {
+        if (emptyStringZero) return "";
+        value = zeroIsNegative ? -0 : 0;
+    }
+    const formatter = (intlNumberFormat ??= new Intl.NumberFormat("en-US", {
         maximumFractionDigits: 0,
         signDisplay: "always",
+        useGrouping: false,
     }));
-    const maybeNegativeZero = zeroIsNegative && value === 0 ? -0 : value;
-
-    return nf.format(maybeNegativeZero);
+    return formatter.format(value);
 }
 
 const wordCharacter = String.raw`[\p{Alphabetic}\p{Mark}\p{Decimal_Number}\p{Join_Control}]`;
@@ -158,34 +160,6 @@ function getActionTypeLabel(
         default:
             return null;
     }
-}
-
-const actionImgMap: Record<string, ImageFilePath> = {
-    0: "systems/pf2e/icons/actions/FreeAction.webp",
-    free: "systems/pf2e/icons/actions/FreeAction.webp",
-    1: "systems/pf2e/icons/actions/OneAction.webp",
-    2: "systems/pf2e/icons/actions/TwoActions.webp",
-    3: "systems/pf2e/icons/actions/ThreeActions.webp",
-    "1 or 2": "systems/pf2e/icons/actions/OneTwoActions.webp",
-    "1 to 3": "systems/pf2e/icons/actions/OneThreeActions.webp",
-    "2 or 3": "systems/pf2e/icons/actions/TwoThreeActions.webp",
-    reaction: "systems/pf2e/icons/actions/Reaction.webp",
-    passive: "systems/pf2e/icons/actions/Passive.webp",
-};
-
-function getActionIcon(actionType: string | ActionCost | null, fallback: ImageFilePath): ImageFilePath;
-function getActionIcon(actionType: string | ActionCost | null, fallback: ImageFilePath | null): ImageFilePath | null;
-function getActionIcon(actionType: string | ActionCost | null): ImageFilePath;
-function getActionIcon(
-    action: string | ActionCost | null,
-    fallback: ImageFilePath | null = "systems/pf2e/icons/actions/Empty.webp",
-): ImageFilePath | null {
-    if (action === null) return actionImgMap.passive;
-    const value = typeof action !== "object" ? action : action.type === "action" ? action.value : action.type;
-    const sanitized = String(value ?? "")
-        .toLowerCase()
-        .trim();
-    return actionImgMap[sanitized] ?? fallback;
 }
 
 const actionGlyphMap: Record<string, string> = {
@@ -405,7 +379,6 @@ export {
     ErrorPF2e,
     fontAwesomeIcon,
     getActionGlyph,
-    getActionIcon,
     getActionTypeLabel,
     groupBy,
     isImageFilePath,

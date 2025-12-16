@@ -37,6 +37,7 @@ interface ExtractArgs {
     packDb: string;
     disablePresort?: boolean;
     logWarnings?: boolean;
+    system: SystemId;
 }
 
 class PackExtractor {
@@ -82,7 +83,7 @@ class PackExtractor {
         this.disablePresort = !!params.disablePresort;
 
         this.tempDataPath = path.resolve(process.cwd(), "packs-temp");
-        this.dataPath = path.resolve(process.cwd(), "packs");
+        this.dataPath = path.resolve(process.cwd(), "packs", params.system);
         this.packsMetadata = systemJSON.packs as unknown as CompendiumMetadata[];
     }
 
@@ -93,7 +94,6 @@ class PackExtractor {
         }
 
         const packsPath = path.join(process.cwd(), "dist", "packs");
-
         if (!fs.existsSync(packsPath)) {
             throw Error("`dist/` directory not found! Build first if you haven't.");
         }
@@ -477,6 +477,11 @@ class PackExtractor {
                                 withToken.prototypeToken.texture = {
                                     src: withToken.img.replace("Full", "") as ImageFilePath,
                                 };
+                                const scale = docSource.prototypeToken.texture?.scaleX ?? 1;
+                                if (scale !== 1) {
+                                    withToken.prototypeToken.texture.scaleX = scale;
+                                    withToken.prototypeToken.texture.scaleY = scale;
+                                }
                             }
                             // If using dynamic ring, preserve enabled status and subject texture
                             if (ringSetting?.enabled) {
