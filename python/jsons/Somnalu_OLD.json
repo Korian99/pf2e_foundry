@@ -270,7 +270,7 @@
       "name": "Improved Grab",
       "actions": 0,
       "traits": [],
-      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Improved Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with as a free action. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead spend an action to use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> The monster's last action was a successful Strike that lists Improved Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with as a free action. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Improved Grab as an action and choose one creature it's grabbing or restraining with an appendage that has Improved Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
       "collapsed": false
     }
   ],
@@ -278,7 +278,7 @@
     {
       "name": "Occult Innate Spells",
       "type": "innate",
-      "bonus": 28,
+      "bonus": 0,
       "dc": 36,
       "focusPoints": {
         "current": 0,
@@ -290,9 +290,6 @@
       "lv2spells": [],
       "lv3spells": [],
       "lv4spells": [
-        "darkness (at will)",
-        "silence (at will)",
-        "sleep (at will)",
         {
           "name": "Sleep (At Will)",
           "type": "spell",
@@ -318,7 +315,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "ZdB8HBhIYYCMAwPG"
+          "id": "H3nTHf2tY5FRLurY"
         },
         {
           "name": "Darkness (At Will)",
@@ -343,7 +340,7 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "ATvpnUNC9TmOERjc"
+          "id": "SK5P9sETDNPurvYY"
         },
         {
           "name": "Silence (At Will)",
@@ -353,7 +350,8 @@
           "timesPrepared": 1,
           "traits": [
             "illusion",
-            "manipulate"
+            "manipulate",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "1 minute",
@@ -361,17 +359,16 @@
           "area": "",
           "targets": "1 willing creature",
           "save": "",
-          "description": "<p>The target makes no sound, preventing creatures from noticing it using hearing or other senses alone. The target can't use sonic attacks, nor can it use actions with the auditory trait. This prevents it from casting spells that include verbal components.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell effect emanates from the touched creature, silencing all sound in or passing through a 10- foot radius and preventing any auditory and sonic effects in the affected area. While within the radius, creatures are subject to the same effects as the target. Depending upon the position of the effect, a creature might notice the lack of sound reaching it (blocking off the noise coming from a party, for example).</p>",
+          "description": "<p>The target makes no sound, preventing creatures from noticing it using hearing alone. The target can't use sonic attacks, nor can it use actions with the auditory trait. This prevents it from casting spells due to the magical words involved in casting, with the exception of subtle spells.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell creates an aura in a 10-foot emanation around the touched creature, silencing all sound in or passing through it. While within the aura, creatures are subject to the same effects as the target. Depending upon the position of the effect, a creature might notice the lack of sound reaching it (blocking off the noise coming from a party, for example).</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "1HaGmqbHqz5lRIKV"
+          "id": "8IyvaCeWH0G9ku5Z"
         }
       ],
       "lv5spells": [
-        "strange geometry (×3; Pathfinder Advanced Player's Guide226)",
         {
           "name": "Strange Geometry",
           "type": "spell",
@@ -386,16 +383,16 @@
           "castingTime": "3",
           "duration": "1 minute",
           "range": "60 feet",
-          "area": "",
+          "area": "10ft cube",
           "targets": "",
           "save": "will",
-          "description": "<p>You cause the areas to appear to swell, bend, and break, twisting together in a bizarre spatial geometry. The cubes of the spell's area can't be adjacent to one another. A creature must attempt a Will save if it's in one of the cubes when you Cast the Spell, or if it later enters one of the areas, with the following effects. A creature interacting with the illusion can also attempt a Will save to disbelieve the illusion, as normal.</p>\n<hr />\n<p><strong>Success</strong> The creature disbelieves the illusion.</p>\n<p><strong>Failure</strong> All terrain in the cubes is difficult terrain for the creature, including the air if the creature is flying, walls if it's climbing, and so on. When the creature would exit one of the cubes, it exits from one randomly determined by the GM. This is a teleportation effect. It can exit from any edge of that cube it chooses. When selecting a random cube, the GM excludes any that don't match the creature's terrain; for instance, if the creature were exiting along the ground, the GM would exclude any cube that didn't have an exit on the ground.</p>",
+          "description": "<p><strong>Area</strong> 4 cubes, each 10 feet on a side</p>\n<p>You cause the areas to appear to swell, bend, and break, twisting together in a bizarre spatial geometry. The cubes of the spell's area can't be adjacent to one another. A creature must attempt a Will save if it's in one of the cubes when you Cast the Spell, or if it later enters one of the areas, with the following effects. A creature interacting with the illusion can also attempt a Will save to disbelieve the illusion, as normal.</p><hr /><p><strong>Success</strong> The creature disbelieves the illusion.</p>\n<p><strong>Failure</strong> All terrain in the cubes is difficult terrain for the creature, including the air if the creature is flying, walls if it's climbing, and so on. When the creature would exit one of the cubes, it exits from one randomly determined by the GM. This is a teleportation effect. It can exit from any edge of that cube it chooses. When selecting a random cube, the GM excludes any that don't match the creature's terrain; for instance, if the creature were exiting along the ground, the GM would exclude any cube that didn't have an exit on the ground.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "UfaTaa8AZAEoSthx"
+          "id": "MJYJBo8c9AViW0Jo"
         },
         {
           "name": "Strange Geometry",
@@ -411,16 +408,16 @@
           "castingTime": "3",
           "duration": "1 minute",
           "range": "60 feet",
-          "area": "",
+          "area": "10ft cube",
           "targets": "",
           "save": "will",
-          "description": "<p>You cause the areas to appear to swell, bend, and break, twisting together in a bizarre spatial geometry. The cubes of the spell's area can't be adjacent to one another. A creature must attempt a Will save if it's in one of the cubes when you Cast the Spell, or if it later enters one of the areas, with the following effects. A creature interacting with the illusion can also attempt a Will save to disbelieve the illusion, as normal.</p>\n<hr />\n<p><strong>Success</strong> The creature disbelieves the illusion.</p>\n<p><strong>Failure</strong> All terrain in the cubes is difficult terrain for the creature, including the air if the creature is flying, walls if it's climbing, and so on. When the creature would exit one of the cubes, it exits from one randomly determined by the GM. This is a teleportation effect. It can exit from any edge of that cube it chooses. When selecting a random cube, the GM excludes any that don't match the creature's terrain; for instance, if the creature were exiting along the ground, the GM would exclude any cube that didn't have an exit on the ground.</p>",
+          "description": "<p><strong>Area</strong> 4 cubes, each 10 feet on a side</p>\n<p>You cause the areas to appear to swell, bend, and break, twisting together in a bizarre spatial geometry. The cubes of the spell's area can't be adjacent to one another. A creature must attempt a Will save if it's in one of the cubes when you Cast the Spell, or if it later enters one of the areas, with the following effects. A creature interacting with the illusion can also attempt a Will save to disbelieve the illusion, as normal.</p><hr /><p><strong>Success</strong> The creature disbelieves the illusion.</p>\n<p><strong>Failure</strong> All terrain in the cubes is difficult terrain for the creature, including the air if the creature is flying, walls if it's climbing, and so on. When the creature would exit one of the cubes, it exits from one randomly determined by the GM. This is a teleportation effect. It can exit from any edge of that cube it chooses. When selecting a random cube, the GM excludes any that don't match the creature's terrain; for instance, if the creature were exiting along the ground, the GM would exclude any cube that didn't have an exit on the ground.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "UfaTaa8AZAEoSthx"
+          "id": "MJYJBo8c9AViW0Jo"
         },
         {
           "name": "Strange Geometry",
@@ -436,47 +433,68 @@
           "castingTime": "3",
           "duration": "1 minute",
           "range": "60 feet",
-          "area": "",
+          "area": "10ft cube",
           "targets": "",
           "save": "will",
-          "description": "<p>You cause the areas to appear to swell, bend, and break, twisting together in a bizarre spatial geometry. The cubes of the spell's area can't be adjacent to one another. A creature must attempt a Will save if it's in one of the cubes when you Cast the Spell, or if it later enters one of the areas, with the following effects. A creature interacting with the illusion can also attempt a Will save to disbelieve the illusion, as normal.</p>\n<hr />\n<p><strong>Success</strong> The creature disbelieves the illusion.</p>\n<p><strong>Failure</strong> All terrain in the cubes is difficult terrain for the creature, including the air if the creature is flying, walls if it's climbing, and so on. When the creature would exit one of the cubes, it exits from one randomly determined by the GM. This is a teleportation effect. It can exit from any edge of that cube it chooses. When selecting a random cube, the GM excludes any that don't match the creature's terrain; for instance, if the creature were exiting along the ground, the GM would exclude any cube that didn't have an exit on the ground.</p>",
+          "description": "<p><strong>Area</strong> 4 cubes, each 10 feet on a side</p>\n<p>You cause the areas to appear to swell, bend, and break, twisting together in a bizarre spatial geometry. The cubes of the spell's area can't be adjacent to one another. A creature must attempt a Will save if it's in one of the cubes when you Cast the Spell, or if it later enters one of the areas, with the following effects. A creature interacting with the illusion can also attempt a Will save to disbelieve the illusion, as normal.</p><hr /><p><strong>Success</strong> The creature disbelieves the illusion.</p>\n<p><strong>Failure</strong> All terrain in the cubes is difficult terrain for the creature, including the air if the creature is flying, walls if it's climbing, and so on. When the creature would exit one of the cubes, it exits from one randomly determined by the GM. This is a teleportation effect. It can exit from any edge of that cube it chooses. When selecting a random cube, the GM excludes any that don't match the creature's terrain; for instance, if the creature were exiting along the ground, the GM would exclude any cube that didn't have an exit on the ground.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "UfaTaa8AZAEoSthx"
+          "id": "MJYJBo8c9AViW0Jo"
         }
       ],
       "lv6spells": [
-        "lure dream (×2; page 89)",
-        "vibrant pattern",
-        "vibrant pattern",
         {
-          "name": "Vibrant Pattern",
+          "name": "Lure Dream",
           "type": "spell",
           "level": 6,
           "heightenedLevel": 6,
           "timesPrepared": 2,
           "traits": [
-            "illusion",
-            "incapacitation",
-            "manipulate",
-            "visual"
+            "concentrate",
+            "dream",
+            "manipulate"
           ],
-          "castingTime": "2",
+          "castingTime": "3",
           "duration": "Sustained up to 1 minute",
-          "range": "120 feet",
-          "area": "10ft burst",
+          "range": "30 feet",
+          "area": "",
           "targets": "",
-          "save": "will",
-          "description": "<p>You create a pattern of lights that pulses with intensity. Creatures are Dazzled while inside the pattern. In addition, a creature must attempt a Will saving throw if it's inside the pattern when you cast it, enters the pattern, ends its turn within the pattern, or uses a Seek or Interact action on the pattern. A creature currently Blinded by the pattern doesn't need to attempt new saving throws.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is Blinded by the pattern. If it exits the pattern, it can attempt a new save to recover from the Blinded condition at the end of each of its turns, to a maximum duration of 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is Blinded for 1 minute.</p>",
+          "save": "",
+          "description": "<p>You reach out to the dream realm, beckoning an animate dream to your side. This works like Summon Animal, except you summon an Animate Dream.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Jvar5uiFbHpH0k3h"
+          "id": "xIqz5Bh9c7F4tSmr"
+        },
+        {
+          "name": "Lure Dream",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 2,
+          "traits": [
+            "concentrate",
+            "dream",
+            "manipulate"
+          ],
+          "castingTime": "3",
+          "duration": "Sustained up to 1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You reach out to the dream realm, beckoning an animate dream to your side. This works like Summon Animal, except you summon an Animate Dream.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "xIqz5Bh9c7F4tSmr"
         },
         {
           "name": "Vibrant Pattern",
@@ -488,6 +506,7 @@
             "illusion",
             "incapacitation",
             "manipulate",
+            "subtle",
             "visual"
           ],
           "castingTime": "2",
@@ -502,12 +521,38 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Jvar5uiFbHpH0k3h"
+          "id": "nA9FpxXDu7w1IpSw"
+        },
+        {
+          "name": "Vibrant Pattern",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 2,
+          "traits": [
+            "illusion",
+            "incapacitation",
+            "manipulate",
+            "subtle",
+            "visual"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to 1 minute",
+          "range": "120 feet",
+          "area": "10ft burst",
+          "targets": "",
+          "save": "will",
+          "description": "<p>You create a pattern of lights that pulses with intensity. Creatures are Dazzled while inside the pattern. In addition, a creature must attempt a Will saving throw if it's inside the pattern when you cast it, enters the pattern, ends its turn within the pattern, or uses a Seek or Interact action on the pattern. A creature currently Blinded by the pattern doesn't need to attempt new saving throws.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is Blinded by the pattern. If it exits the pattern, it can attempt a new save to recover from the Blinded condition at the end of each of its turns, to a maximum duration of 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is Blinded for 1 minute.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "nA9FpxXDu7w1IpSw"
         }
       ],
       "lv7spells": [],
       "lv8spells": [
-        "hypnopompic terrors",
         {
           "name": "Hypnopompic Terrors",
           "type": "spell",
@@ -529,13 +574,13 @@
           "area": "",
           "targets": "up to 10 creatures",
           "save": "will",
-          "description": "<p>You send a wave of nightmarish visions crashing over your targets, leaving them Paralyzed by fear. These visions inflict real wounds on vulnerable targets, dealing 6d12 mental damage. If you target a sleeping creature, it wakes up as it attempts the save but takes one degree of success worse than the result it rolled on its save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Frightened 2 and takes half the mental damage.</p>\n<p><strong>Failure</strong> The target is frightened 2, is Paralyzed for 1 round, and takes the full mental damage.</p>\n<p><strong>Critical Failure</strong> The target is frightened 2, is paralyzed for 2 rounds, and takes double the mental damage.</p>",
+          "description": "<p>You send a wave of nightmarish visions crashing over your targets, leaving them paralyzed by fear. These visions inflict real wounds on vulnerable targets, dealing 6d12 mental damage. If you target a sleeping creature, it wakes up as it attempts the save but takes one degree of success worse than the result it rolled on its save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Frightened 2 and takes half the mental damage.</p>\n<p><strong>Failure</strong> The target is frightened 2, is Paralyzed for 1 round, and takes the full mental damage.</p>\n<p><strong>Critical Failure</strong> The target is frightened 2, is paralyzed for 2 rounds, and takes double the mental damage.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Z01hZCfuTLnsAbVB"
+          "id": "GEu7Rgt392YD5DKv"
         }
       ],
       "lv9spells": [],
@@ -554,24 +599,24 @@
         "max": 0
       },
       "lv4slots": {
-        "current": 3,
-        "max": 3
+        "current": 0,
+        "max": 0
       },
       "lv5slots": {
-        "current": 1,
-        "max": 1
+        "current": 0,
+        "max": 0
       },
       "lv6slots": {
-        "current": 4,
-        "max": 4
+        "current": 0,
+        "max": 0
       },
       "lv7slots": {
         "current": 0,
         "max": 0
       },
       "lv8slots": {
-        "current": 1,
-        "max": 1
+        "current": 0,
+        "max": 0
       },
       "lv9slots": {
         "current": 0,

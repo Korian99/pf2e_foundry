@@ -1,0 +1,496 @@
+{
+  "initiative": 0,
+  "initiativebonus": 33,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Bog Archdragon",
+  "type": "Creature",
+  "level": 19,
+  "traits": [
+    "Uncommon",
+    "Gargantuan",
+    "Amphibious",
+    "Dragon",
+    "Primal"
+  ],
+  "source": "Pathfinder Lost Omens Draconic Codex",
+  "remaster": true,
+  "senses": [
+    "Greater darkvision",
+    "Scent 60ft imprecise",
+    "Tremorsense 120ft imprecise"
+  ],
+  "perception": {
+    "value": 33,
+    "note": "Greater darkvision, Scent 60ft imprecise, Tremorsense 120ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo",
+    "Common",
+    "Draconic",
+    "Necril"
+  ],
+  "skills": [
+    {
+      "name": "arcana",
+      "modifier": 33,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 37,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 37,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 33,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "society",
+      "modifier": 33,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 40,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 37,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 11
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": 5
+  },
+  "wisdom": {
+    "value": 6
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "At-Will Spells",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>The monster can cast its at-will spells any number of times without using up spell slots.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 42,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 34,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+2 status to all saves vs. primal",
+  "hp": {
+    "value": 415,
+    "max": 415,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "acid",
+    "paralyzed",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Frightful Presence",
+      "actions": null,
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>90 feet DC 41 Will Saving Throw</p><hr /><p><details><summary>See rules...</summary>\n<p><p>A creature that first enters the area must attempt a Will save.</p>\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to this monster's Frightful Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by the presence.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 4.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rise Up",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature walks on top of an ancient bog dragon who is burrowed into the mud or peat below</p>\n<p><strong>Requirements</strong> Initiative has not yet been rolled</p><hr /><p><strong>Effect</strong> The bog dragon automatically notices the creature and Burrows before rolling initiative.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Tail Lash",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within reach of the dragon's tail makes a Strike or attempts a skill check as part of an attack action</p><hr /><p><strong>Effect</strong> The dragon Strikes with their tail at the triggering creature with a –2 penalty. If the Strike hits, the creature takes a –2 circumstance penalty to the triggering roll.</p>\n<p>Effect: Tail Lash</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "50 ft, burrow 40ft, fly 120ft, swim 60ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 36,
+      "traits": [
+        "magical",
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d12+20",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d12+20)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "bog-rot",
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 36,
+      "traits": [
+        "agile",
+        "magical",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d6+20",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d6+20)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 34,
+      "traits": [
+        "magical",
+        "reach-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d8+20",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d8+20)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "knockdown"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Bog Rot",
+      "actions": null,
+      "traits": [
+        "acid",
+        "disease",
+        "primal"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 38 Fortitude Saving Throw</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> 3d6 Acid Damage damage and Clumsy 1 (1 day)</p>\n<p><strong>Stage 3</strong> 4d6 Acid Damage damage, clumsy 1, and a –5-foot status penalty to Speed (1 day)</p>\n<p><strong>Stage 4</strong> 5d6 Acid Damage damage, Clumsy 2, and a –10-foot status penalty to Speed (1 day)</p>\n<p><strong>Stage 5</strong> death</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Draconic Frenzy",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The dragon makes two claw Strikes and one tail Strike in any order.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Draconic Momentum",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The dragon recharges their Nidorous Breath whenever they score a critical hit with a Strike.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Drag Beneath the Muck",
+      "actions": 3,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The bog archdragon is in a swamp and doesn't have a creature Grabbed or Restrained in their jaws</p><hr /><p><strong>Effect</strong> The dragon Burrows, and if they end their movement directly under a creature, they make a jaws Strike against that creature, who is Off-Guard against the attack.</p>\n<p>If the Strike is successful, the dragon makes an Athletics check to grapple the target with their jaws; like Grab, this check doesn't use or contribute to the archdragon's multiple attack penalty.</p>\n<p>The dragon then Burrows again; any creature they have grabbed or restrained in their jaws moves with them.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Nidorous Breath",
+      "actions": 2,
+      "traits": [
+        "acid",
+        "primal"
+      ],
+      "description": "<p>The dragon belches a boiling spray of fermenting stomach acid that deals 14d8 Acid Damage damage and 2d6 Persistent,acid Damage damage in a 60ft Type:cone (Basic DC 41 Reflex Saving Throw save). They can't use Nidorous Breath again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Slain to Serve",
+      "actions": null,
+      "traits": [
+        "downtime"
+      ],
+      "description": "<p>A bog dragon can perform a special ritual over the body of a humanoid creature slain by bog rot to raise it as a humanoid intelligent undead.</p>\n<p>This functions like a 10th-rank Create Undead ritual, except that it takes only 8 hours, the bog dragon doesn't require any secondary casters, and they don't need to pay a cost.</p>\n<p>If the bog dragon critically fails the ritual's skill check, they get a failure instead.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swallow Whole",
+      "actions": 1,
+      "traits": [
+        "attack"
+      ],
+      "description": "<p>Large, (3d12+11) Acid Damage plus Bog Rot, Rupture [35]</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster attempts to swallow a creature of the listed size or smaller that it has grabbed or restrained in its jaws or mouth. If a swallowed creature is of the maximum size listed, the monster can't use Swallow Whole again. If the creature is smaller than the maximum, the monster can usually swallow more creatures; the GM determines the maximum. The monster attempts an athletics|defense:reflex check opposed by the grabbed creature's Reflex DC. If it succeeds, it swallows the creature. The monster's mouth or jaws no longer grab a creature it has swallowed, so the monster is free to use them to Strike or Grab once again. The monster can't attack creatures it has swallowed.</p>\n<p>A swallowed creature is Grabbed, is Slowed 1, and has to hold its breath or start suffocating. The swallowed creature takes the listed amount of damage when first swallowed and at the end of each of its turns while it's swallowed. If the victim Escapes this ability's grabbed condition, it exits through the monster's mouth. This frees any other creature grabbed in the monster's mouth or jaws. A swallowed creature can attack the monster that has swallowed it, but only with unarmed attacks or with weapons of light Bulk or less. The swallowing creature is Off-Guard against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the swallowed creature cuts itself free. A creature that gets free by either Escaping or cutting itself free can immediately breathe and exits the swallowing monster's space.</p>\n<p>Effect: Engulf and Swallow Whole</p>\n<p>If the monster dies, a swallowed creature can be freed by creatures adjacent to the corpse if they spend a combined total of 3 actions cutting the monster open with a weapon or unarmed attack that deals piercing or slashing damage.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swamp Passage",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The bog dragon ignores difficult terrain caused by swamp terrain features.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Knockdown",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Trip the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Primal Innate Spells",
+      "type": "innate",
+      "bonus": 33,
+      "dc": 41,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 8,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [
+        {
+          "name": "Acid Grip (At Will)",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "acid",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "Basic reflex",
+          "description": "<p>An ephemeral, taloned hand grips the target, burning it with magical acid. The target takes 2d8 acid damage plus floor(@item.level/2)d6 Persistent,acid Damage damage depending on its Reflex save. A creature taking persistent damage from this spell takes a –10-foot status penalty to its Speeds. </p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and no persistent damage, and the claw moves it up to 5 feet in a direction of your choice.</p>\n<p><strong>Failure</strong> The creature takes full damage and persistent damage, and the claw moves it up to 10 feet in a direction of your choice.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and full persistent damage, and the claw moves it up to 20 feet in a direction of your choice.</p><hr /><p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the persistent acid damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "XSVEbXDLsCMGyUgN"
+        }
+      ],
+      "lv7spells": [
+        {
+          "name": "Summon Undead (At Will)",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "summon"
+          ],
+          "castingTime": "3",
+          "duration": "Sustained up to 1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You summon a creature that has the undead trait and whose level is -1 to fight for you.</p>\n<hr />\n<p><strong>Heightened</strong> As listed in the summon trait.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Yj81nIWYcRWcyRWs"
+        }
+      ],
+      "lv8spells": [
+        {
+          "name": "Earthquake",
+          "type": "spell",
+          "level": 8,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "earth",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 round",
+          "range": "500 feet",
+          "area": "60ft burst",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>You shake the ground, topple creatures into fissures, and collapse structures. The GM might add additional effects in certain areas. Cliffs might collapse, causing creatures to fall, or a lake might drain as fissures open up below its surface, leaving a morass of quicksand.</p><ul><li><strong>Shaking Ground</strong> The ground is difficult terrain, and creatures on it take a -2 circumstance penalty to attack rolls, AC, and skill checks. </li><li><strong>Fissures</strong> Each creature on the ground must attempt a Reflex save at the start of its turn to keep its footing and avoid falling into 40-foot-deep fissures that open beneath it. The fissures are permanent, and their sides require successful Basic DC 15 Athletics  to Climb.</li><li><strong>Collapse</strong> Structures and ceilings might collapse. The GM rolls a flat check for each (Basic DC 16 Flat  for a sturdy structure, Basic DC 14 Flat  for an average structure and most natural formations, Basic DC 9 Flat  for a shoddy structure, all adjusted higher or lower as the GM sees fit). A collapse deals 11d6 bludgeoning damage to each creature caught in it with a basic Reflex save. A creature falls Prone unless it critically succeeds and falls into a fissure if it critically fails.</li></ul><hr /><p><strong>Heightened (10th)</strong> You create a massive earthquake that can devastate a settlement. The range increases to half a mile and the area to a quarter-mile burst.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "WKsTCVDlZtn0Y9DD"
+        }
+      ],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Arcana, DC 39"
+}

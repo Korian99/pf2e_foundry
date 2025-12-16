@@ -280,7 +280,7 @@ def get_common_1(npc, foundry_json):
     npc["strikes"] = []
     for item in foundry_json["items"]:
         if item["type"] == "melee" or item["type"] == "ranged":
-            range_attack = "ranged" if item["system"]["range"] is not None else item["type"]
+            range_attack = "ranged" if item["system"].get("range", None) is not None else item["type"]
             strike = {
                 "type": range_attack,
                 "name": item["name"],
@@ -378,11 +378,10 @@ def npc_data(foundry_json):
             for special in data["special"]:
                 specials.append(special["label"]+" " + str(special["base"]))
         return specials
-
     npc["skills"] = [
         {
             "name": name,
-            "modifier": data["base"],
+            "modifier": data.get("base"),
             "note": get_special(data),
             "usedAttribute": attr,
             "modifications": []
@@ -390,6 +389,7 @@ def npc_data(foundry_json):
         for name, data in sys.get("skills", {}).items()
         for attr in [  # attribute mapping and lore by default
             skills.get(name, "intelligence")]
+        if data != {}
     ]
     npc["skills"].extend(
         lores

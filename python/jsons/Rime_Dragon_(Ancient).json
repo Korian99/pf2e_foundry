@@ -1,0 +1,432 @@
+{
+  "initiative": 0,
+  "initiativebonus": 29,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Rime Dragon (Ancient)",
+  "type": "Creature",
+  "level": 15,
+  "traits": [
+    "Uncommon",
+    "huge",
+    "Cold",
+    "Dragon",
+    "Primal"
+  ],
+  "source": "Pathfinder Lost Omens Draconic Codex",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "Scent 60ft imprecise",
+    "snow vision"
+  ],
+  "perception": {
+    "value": 29,
+    "note": "Darkvision, Scent 60ft imprecise, snow vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Jotun",
+    "Thalassic"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 30,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 29,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "occultism",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 26,
+      "note": [
+        "in arctic terrain 30"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 29,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "Architecture Lore",
+      "modifier": 28,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "Arctic Lore",
+      "modifier": 28,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 8
+  },
+  "intelligence": {
+    "value": 5
+  },
+  "wisdom": {
+    "value": 6
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Arctic Hunter",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A rime dragon's natural camouflage allows them to Hide in arctic terrain without cover. A rime dragon also ignores difficult terrain and greater difficult terrain from ice and snow and doesn't risk falling when crossing ice.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Snow Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Snow doesn't impair the rime dragon's vision; they ignore concealment from snowfall.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 37,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 32,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 275,
+    "max": 275,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "cold",
+    "paralyzed",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Radiate Cold",
+      "actions": null,
+      "traits": [
+        "aura",
+        "cold",
+        "primal"
+      ],
+      "description": "<p>15 feet. The adult rime dragon's presence lowers the temperature around them. A creature who enters or begins their turn in the aura must attempt a DC 33 Fortitude Saving Throw save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature begins to shiver as the biting cold affects it. It takes a –5-foot status penalty to its Speeds until the end of its next turn.</p>\n<p><strong>Failure</strong> The creature's body temperature begins to drop. It takes a –10-foot status penalty to their Speeds and is Enfeebled 1 until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> Ice begins to form on the creature. It's Immobilized (Escape dc=33) and Enfeebled 2 until the end of their its turn.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "60 ft, fly 120ft, swim 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 28,
+      "traits": [
+        "cold",
+        "magical",
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6",
+          "type": "cold"
+        },
+        {
+          "roll": "3d10+15",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6)*2",
+          "type": "cold"
+        },
+        {
+          "roll": "(3d10+15)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 28,
+      "traits": [
+        "agile",
+        "cold",
+        "magical",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6",
+          "type": "cold"
+        },
+        {
+          "roll": "3d8+15",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6)*2",
+          "type": "cold"
+        },
+        {
+          "roll": "(3d8+15)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 26,
+      "traits": [
+        "cold",
+        "magical",
+        "reach-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6",
+          "type": "cold"
+        },
+        {
+          "roll": "3d12+15",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6)*2",
+          "type": "cold"
+        },
+        {
+          "roll": "(3d12+15)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Blizzard Breath",
+      "actions": 2,
+      "traits": [
+        "cold",
+        "primal"
+      ],
+      "description": "<p>The dragon breathes out a gust of frost and ice that deals 12d8 Cold Damage damage in a 40ft Type:cone (Basic DC 36 Reflex Saving Throw save). They can't use Blizzard Breath again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Draconic Frenzy",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The dragon makes two claw Strikes and one tail Strike in any order.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Draconic Momentum",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The dragon recharges their Blizzard Breath whenever they score a critical hit with a Strike.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Piercing Ice",
+      "actions": 1,
+      "traits": [
+        "cold",
+        "concentrate",
+        "primal"
+      ],
+      "description": "<p><strong>Requirements</strong> The dragon has temporary Hit Points from Rime Shield</p><hr /><p><strong>Effect</strong> The dragon launches the collected ice shards from its scales in a 5ft Type:emanation, dealing 6d6 Piercing Damage|options:area-damage] damage (Basic DC 36 Reflex Saving Throw save). The dragon then loses the AC bonus and temporary Hit Points from Rime Shield.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rime Shield",
+      "actions": 0,
+      "traits": [
+        "cold",
+        "primal"
+      ],
+      "description": "<p><strong>Requirements</strong> The rime dragon's last action was to Fly at least 40 feet</p><hr /><p><strong>Effect</strong> Water vapor collected on the dragon's scales quickly freezes over. The dragon gains a +2 circumstance bonus to AC and 15 temporary Hit Points that last until the end of the dragon's next turn.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Primal Innate Spells",
+      "type": "innate",
+      "bonus": 0,
+      "dc": 36,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 7,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [
+        {
+          "name": "Wall of Ice",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "cold",
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You sculpt an ice barrier that blocks sight and, once shattered, freezes foes. You create either a 1-foot-thick wall of ice in a straight line up to 60 feet long and 10 feet high (the wall doesn't have to be vertical, but it must be anchored on both sides to a solid surface) or a 1-foot-thick, 10-foot radius hemisphere of ice. The ice that makes up the wall is opaque. If you wish, the wall can be of a smaller length, height, or radius.</p>\n<p>You must create the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost. Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 10, and 40 Hit Points, and it's immune to critical hits, cold damage, and precision damage. A section also has weakness 15 to fire; a section of the wall destroyed by fire melts, evaporating into water and steam. A section destroyed by means other than fire leaves behind a chilling mass of ice that is difficult terrain and deals 2d6 cold damage to any creature passing through it.</p><hr /><p><strong>Heightened (+2)</strong> The Hit Points of each section of the wall increase by 10, and the cold damage dealt to creatures crossing a destroyed section increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "oGgMpSd5v7cMdtqO"
+        }
+      ],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Arcana, DC 34"
+}

@@ -1,0 +1,379 @@
+{
+  "initiative": 0,
+  "initiativebonus": 14,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Lesser Marsh Giant",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Common",
+    "Large",
+    "Amphibious",
+    "Giant",
+    "Humanoid",
+    "Water"
+  ],
+  "source": "Pathfinder Society Scenario #7-07: Draconic Folly",
+  "remaster": true,
+  "senses": [
+    "Low light vision"
+  ],
+  "perception": {
+    "value": 14,
+    "note": "Low light vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo",
+    "Common",
+    "Jotun",
+    "Thalassic"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [
+    {
+      "name": "Gaff",
+      "quantity": 1,
+      "description": "<p>Many marsh giants fight with oversized gaffs-lengths of wood with a single metal spike affixed to the tip. Used often by fisherfolk to land fish, marsh giants use their gaffs as weapons.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": [
+        "trip",
+        "versatile-p"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 105,
+    "max": 105,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "35 ft, swim 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Gaff",
+      "bonus": 17,
+      "traits": [
+        "magical",
+        "reach-10",
+        "trip",
+        "versatile-p"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+10)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+10)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Spit",
+      "bonus": 17,
+      "traits": [
+        "primal",
+        "water"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d6",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d6)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Drowning Hook",
+      "actions": 1,
+      "traits": [
+        "primal",
+        "water"
+      ],
+      "description": "<p><strong>Requirements</strong> A creature is Prone within the marsh giant's reach</p><hr /><p><strong>Effect</strong> The marsh giant uses its gaff to push the creature down as water bubbles up below it. The target becomes submerged in water until they are no longer prone and must hold their breath if they cannot breathe water. They take 2d10 Bludgeoning Damage damage (Basic DC 21 Fortitude Saving Throw save) and lose 3 rounds worth of air if they fail the save.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Twist the Hook",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The marsh giant makes a melee Strike with its gaff. If it hits, it twists and yanks the gaff to knock the target Prone and create an awful wound, dealing 2d4 Persistent,bleed Damage damage to the creature.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Occult Innate Spells",
+      "type": "innate",
+      "bonus": 13,
+      "dc": 21,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 5,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [
+        {
+          "name": "Augury",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "prediction"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You gain a vague glimpse of the future. During the casting of this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveal the GM's best guess among the following outcomes: good, bad, mixed (the results will be a mix of good and bad), and nothing (there won't be particularly good or bad results).</p>\n<p>The GM rolls a secret DC 6 Flat . On a failure, the result is always \"nothing.\" This makes it impossible to tell whether a \"nothing\" result is accurate. If anyone asks about the same topic as the first casting of <em>augury</em> during an additional casting, the GM uses the secret roll result from the first casting. If circumstances change, though, it's possible to get a different result.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Yde51S9ffNgHJlgB"
+        },
+        {
+          "name": "Mist",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p>You call forth a cloud of mist. All creatures within the mist become Concealed, and all creatures outside the mist become concealed to creatures within it. You can Dismiss the cloud.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "M9OmJbde6QeKYhrF"
+        }
+      ],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [
+        {
+          "name": "Mariner's Curse",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "curse",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You afflict the target with the curse of the roiling, unforgiving sea. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target becomes Sickened 1. Reducing its sickened condition to 0 ends the curse.</p>\n<p><strong>Failure</strong> The target becomes sickened 1 and can't reduce its sickened condition below 1 while the curse remains. The curse can be lifted by 4th-rank Cleanse Affliction or similar magic. Whenever the target is sickened and on the water at least a mile from shore, it is also Slowed 1.</p>\n<p><strong>Critical Failure</strong> As failure, but the target becomes Sickened 2.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "j34Fi56CTrZXtEGG"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Society, DC 22"
+}

@@ -1,0 +1,198 @@
+{
+  "initiative": 0,
+  "initiativebonus": 22,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Elemental Tsunami AP",
+  "type": "Creature",
+  "level": 11,
+  "traits": [
+    "Common",
+    "huge",
+    "Aquatic",
+    "Elemental",
+    "Water"
+  ],
+  "source": "Pathfinder #220: Crypt of Runes",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 22,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Thalassic"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Waterbound",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When not touching water, the elemental tsunami is Slowed 1 and can't use reactions.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 31,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 195,
+    "max": 195,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Vortex",
+      "actions": null,
+      "traits": [
+        "aura",
+        "water"
+      ],
+      "description": "<p>50 feet.</p>\n<p>Water in the area that is in the same body of water as the elemental tsunami is difficult terrain for Swimming creatures that don't have the water trait.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "35 ft, swim 100ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Wave",
+      "bonus": 24,
+      "traits": [
+        "reach-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+12",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+12)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "mindwarp-ink",
+        "push-or-pull-10-feet"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Drench",
+      "actions": 1,
+      "traits": [
+        "primal",
+        "water"
+      ],
+      "description": "<p>The elemental puts out all fires in a 20ft Emanation.</p>\n<p>It extinguishes all non-magical fires automatically and attempts to counteract magical fires (+20 counteract modifier).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Mindwarp Ink",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A creature damaged by an elemental tsunami in area <strong>A6</strong> must attempt a DC 31 Will Saving Throw save to resist being Stupefied 1 (or Stupefied 2 on a critical failure).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Surge",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The elemental tsunami momentarily expands to fill the area of its vortex. Creatures within the aura take (5d12+6) Bludgeoning Damage damage with a Basic DC 31 Fortitude Saving Throw save. A creature that fails this save is pushed 20 feet.</p>\n<p>The elemental tsunami then shrinks to its normal space and can't Surge again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Push or Pull 10 feet",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The elemental tsunami can choose whether to push or pull the creature on a succesful hit.</p>\n<hr />\n<p><strong>Push</strong> ◆</p>\n<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Push in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Shove the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Push lists a distance, change the distance the creature is pushed on a success to that distance.</p></p></details></p>\n<hr />\n<p><strong>Pull</strong> ◆</p>\n<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a success with a Strike that lists Pull in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Reposition the creature, moving it closer to the monster. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Pull lists a distance, change the distance the creature is pulled on a success to that distance.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 28"
+}

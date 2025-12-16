@@ -1,0 +1,835 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Brine Dragon (Young, Spellcaster)",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Common",
+    "Large",
+    "Aquatic",
+    "Dragon",
+    "Elemental",
+    "Primal",
+    "Water"
+  ],
+  "source": "Pathfinder Lost Omens Draconic Codex",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "aquatic echolocation 120 feet"
+  ],
+  "perception": {
+    "value": 16,
+    "note": "Darkvision, aquatic echolocation 120 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Thalassic"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "society",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "Settlement Lore (one settlement the dragon controls)",
+      "modifier": 14,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 3
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Aquatic Echolocation",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A brine dragon can use their hearing as a precise sense at the listed range, but only underwater.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+2 status to all saves vs. primal",
+  "hp": {
+    "value": 170,
+    "max": 170,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "paralyzed",
+    "sleep",
+    "clumsy",
+    "controlled"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "acid",
+      "value": 5
+    },
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "force",
+      "value": 5
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "+2 to Sense Motive",
+      "actions": null,
+      "traits": [],
+      "description": "",
+      "collapsed": false
+    },
+    {
+      "name": "Regent's Glower",
+      "actions": -1,
+      "traits": [
+        "emotion",
+        "fear",
+        "mental",
+        "primal"
+      ],
+      "description": "<p><strong>Trigger</strong> The dragon is critically hit with a melee attack</p><hr /><p><strong>Effect</strong> The dragon focuses their weighty gaze upon their assailant, filling their foe with dread. The triggering creature takes 4d6 Mental Damage damage with a Basic DC 26 Will Saving Throw save. Any creature who fails the save also becomes Frightened 1 (Frightened 2 on a critical failure).</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, fly 90ft, swim 120ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 20,
+      "traits": [
+        "magical",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+9",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+9)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "benthic-bite"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "magical",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+9",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+9)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 18,
+      "traits": [
+        "magical",
+        "reach-15",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+9",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+9)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Caustic Spit",
+      "bonus": 18,
+      "traits": [
+        "acid"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+3",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+3)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Benthic Bite",
+      "actions": null,
+      "traits": [
+        "primal"
+      ],
+      "description": "<p>A creature who takes damage from a brine dragon's jaws Strike must succeed at a DC 26 Fortitude Saving Throw save or be Enfeebled 1 for 1 round.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Crushing Breath",
+      "actions": 2,
+      "traits": [
+        "primal"
+      ],
+      "description": "<p>The dragon spews a 50ft Type:line of pressurized water that deals 8d6 Bludgeoning Damage damage with a Basic DC 26 Reflex Saving Throw save. A creature that fails the save is also Clumsy 1 (Clumsy 2 on a critical failure) for 1 minute. The dragon can't use Crushing Breath again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Pressurized Pool",
+      "actions": 2,
+      "traits": [
+        "primal"
+      ],
+      "description": "<p>The dragon expels a 10ft Type:burst of pressurized water within 120 feet that lasts for 1 minute. A creature other than a brine dragon that enters or begins their turn within a burst must succeed at a DC 26 Fortitude Saving Throw save or become encumbered until the beginning of their next turn.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Primal Prepared Spells",
+      "type": "prepared",
+      "bonus": 18,
+      "dc": 26,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 4,
+      "cantrips": [
+        {
+          "name": "Caustic Blast",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "acid",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "5ft burst",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>You fling a large glob of acid that immediately detonates, spraying nearby creatures. Creatures in the area take 1d8 acid damage with a basic Reflex save; on a critical failure, the creature also takes (1+floor((@item.rank -1)/2)) Persistent,acid Damage damage.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The initial damage increases by 1d8, and the persistent damage on a critical failure increases by 1.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "M4fGaCXITX4Qb37h"
+        },
+        {
+          "name": "Detect Magic",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft emanation",
+          "targets": "",
+          "save": "",
+          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "ZsTHwHpNtbiaEsru"
+        },
+        {
+          "name": "Guidance",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate"
+          ],
+          "castingTime": "1",
+          "duration": "until the start of your next turn",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You ask for the guidance of supernatural entities, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n<p></p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Fns0v6GQWkYwrDNU"
+        },
+        {
+          "name": "Read Aura",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "1 minute",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 object",
+          "save": "",
+          "description": "<p>You focus on the target object, opening your mind to perceive magical auras. When the casting is complete, you know whether that item is magical. You or anyone you advise about the aura gains a +2 circumstance bonus to Identify Magic on the item. If the object is illusory, you detect this only if the effect's rank is lower than the rank of your <em>read aura</em> spell.</p>\n<p></p><hr /><p><strong>Heightened (3rd)</strong> You can target up to 10 objects.</p>\n<p><strong>Heightened (6th)</strong> You can target any number of objects.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "JSZNppav7FxFMcKb"
+        },
+        {
+          "name": "Spout",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "5ft cube",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>Water blasts upward, coming out of the ground, rising from a pool, or even manifesting from thin air. Any creatures in the area take 2d4 bludgeoning damage, with a basic Reflex saving throw. A creature that critically fails its save is disoriented by the explosion of water, becoming Off-Guard until the end of your next turn.</p>\n<p>You can change this spell's area to a 5ft Burst, provided you center the burst in a body of water. This body of water can be as small as a pond or creek, but not as small as a puddle or bathtub.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "kOedMCJqwAbeo1BO"
+        }
+      ],
+      "lv1spells": [
+        {
+          "name": "Air Bubble",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "air",
+            "concentrate"
+          ],
+          "castingTime": "reaction",
+          "duration": "1 minute",
+          "range": "60 feet",
+          "area": "",
+          "targets": "the triggering creature",
+          "save": "",
+          "description": "<p><strong>Trigger</strong> A creature within range enters an environment where it can't breathe.</p>\n<p>A bubble of pure air appears around the target's head, allowing it to breathe normally. The effect ends as soon as the target returns to an environment where it can breathe normally.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "RcZQdqo9BtgwKv4K"
+        },
+        {
+          "name": "Create Water",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "0 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>As you cup your hands, water begins to flow forth from them. You create 2 gallons of water. If no one drinks it, it evaporates after 1 day.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "pcszBzraVLSl30lc"
+        },
+        {
+          "name": "Hydraulic Push",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature or unattended object",
+          "save": "",
+          "description": "<p>You call forth a powerful blast of pressurized water that bludgeons the target and knocks it back. Make a ranged spell attack roll.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes 6d6 bludgeoning damage and is knocked back 10 feet.</p>\n<p><strong>Success</strong> The target takes 3d6 bludgeoning damage and is knocked back 5 feet.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The bludgeoning damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "peWrMW6E9oaSLiC0"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Acid Grip",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "acid",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "Basic reflex",
+          "description": "<p>An ephemeral, taloned hand grips the target, burning it with magical acid. The target takes 2d8 acid damage plus floor(@item.level/2)d6 Persistent,acid Damage damage depending on its Reflex save. A creature taking persistent damage from this spell takes a –10-foot status penalty to its Speeds. </p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and no persistent damage, and the claw moves it up to 5 feet in a direction of your choice.</p>\n<p><strong>Failure</strong> The creature takes full damage and persistent damage, and the claw moves it up to 10 feet in a direction of your choice.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and full persistent damage, and the claw moves it up to 20 feet in a direction of your choice.</p><hr /><p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the persistent acid damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "CiXhCQPCoYJpgZ5v"
+        },
+        {
+          "name": "Darkness",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "darkness",
+            "manipulate"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create a shroud of darkness that prevents light from penetrating or emanating within the area. Light does not enter the area and any non-magical light sources, such as a torch or lantern, do not emanate any light while inside the area, even if their light radius would extend beyond the darkness. This also suppresses magical light of your darkness spell's rank or lower. Light can't pass through, so creatures in the area can't see outside. From outside, it appears as a globe of pure darkness.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> Even creatures with darkvision (but not greater darkvision) can barely see through the darkness. They treat targets seen through the darkness as Concealed.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "KuokmMbSYVCLLaUC"
+        },
+        {
+          "name": "Water Breathing",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "1 minute",
+          "duration": "1 hour",
+          "range": "30 feet",
+          "area": "",
+          "targets": "up to 5 creatures",
+          "save": "",
+          "description": "<p>The targets can breathe underwater.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The duration increases to 8 hours.</p>\n<p><strong>Heightened (4th)</strong> The duration increases to until your next daily preparations.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "8WXKRiOrLY29MmHT"
+        }
+      ],
+      "lv3spells": [
+        {
+          "name": "Aqueous Orb",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to 1 minute",
+          "range": "60 feet",
+          "area": "",
+          "targets": "",
+          "save": "reflex",
+          "description": "<p>A sphere of water 10 feet in diameter forms in an unoccupied space in range, either on the ground or on the surface of a liquid.</p>\n<p>When you Cast this Spell and each time you Sustain it, you can roll the orb, moving it up to 10 feet along the ground or the surface of a liquid.</p>\n<p>The orb can move through the spaces of any creatures or obstacles that wouldn't stop the flow of water. It extinguishes non-magical fires it moves through of its size or smaller, and it attempts to counteract any magical fires it moves through. If it fails to counteract a given fire, it can't counteract that fire for the duration of the spell.</p>\n<p>The orb can engulf Large or smaller creatures it moves through, and it can contain as many creatures as fit in its space. The orb can try to engulf the same creature only once per turn, even if you roll it onto a creature's space more than once. Any Large or smaller creature whose space the orb tries to move through can attempt a Reflex save.</p>\n<hr />\n<p><strong>Success</strong> The creature can either let the orb pass (remaining in its space or moving out of the orb's path into a space of the creature's choice) or allow itself to be pushed in front of the orb to the end of the orb's movement.</p>\n<p><strong>Failure</strong> The creature is engulfed in the orb. It moves along with the orb and must hold its breath or begin suffocating (unless it can breathe in water). An engulfed Medium or smaller creature and anyone trying to affect that creature follow the normal rules for aquatic battles. An engulfed Large creature is usually big enough that parts of it stick out from the water, and it can reach out of the water. The creature can get free either by Swimming with a successful athletics|traits:action:swim|dc:10 check or by Escaping against your spell DC. A freed creature exits the orb's space and can immediately breathe.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature can't Swim to get free.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "MToyQ5Rpt0vYWuMo"
+        },
+        {
+          "name": "Feet to Fins",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "morph"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>The target's feet transform into fins, improving mobility in the water but reducing it on land. The target gains a swim Speed equal to its normal land Speed, but its land Speed becomes 5 feet.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The spell lasts until your next daily preparations.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "ORwSOxjKVGoypxK6"
+        },
+        {
+          "name": "Slow",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "fortitude",
+          "description": "<p>You dilate the flow of time around the target, slowing its actions.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Slowed 1 for 1 round.</p>\n<p><strong>Failure</strong> The target is Slowed 1 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Slowed 2 for 1 minute.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "6AIIs5jBgbojPqny"
+        }
+      ],
+      "lv4spells": [
+        {
+          "name": "Crashing Wave",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft cone",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>You summon a crashing wave that sweeps away from you. You deal 6d6 bludgeoning damage to creatures in the area. The water also extinguishes non-magical fires in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "5GxdfNph2k6VWD6r"
+        },
+        {
+          "name": "Hydraulic Torrent",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "60ft line",
+          "targets": "",
+          "save": "Basic fortitude",
+          "description": "<p>A swirling torrent of water manifests along a straight line, battering creatures and unattended objects in its path and possibly pushing them away from you. The torrent deals 8d6 bludgeoning damage. Each creature in the area must attempt a basic Fortitude save; unattended objects automatically fail. Creatures and objects that fail are also knocked back 5 feet (10 feet on a critical failure).</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "14atjVF0cSo9q3ZO"
+        },
+        {
+          "name": "Unfettered Movement",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature touched",
+          "save": "",
+          "description": "<p>You repel effects that would hinder a creature or slow its movement. While under this spell's effect, the target ignores effects that would give them a circumstance penalty to Speed. When they attempt to Escape an effect that has them Immobilized, Grabbed, or Restrained, they automatically succeed unless the effect is magical and of a higher rank than the <em>unfettered movement</em> spell.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "7mgBOmNgKjyiaBsU"
+        }
+      ],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv2slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv3slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv4slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Arcana or Arcana or Nature, DC 24"
+}

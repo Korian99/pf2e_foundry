@@ -1,0 +1,221 @@
+{
+  "initiative": 0,
+  "initiativebonus": 17,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Ogre Hunter",
+  "type": "Creature",
+  "level": 9,
+  "traits": [
+    "Common",
+    "Large",
+    "Giant",
+    "Humanoid"
+  ],
+  "source": "Pathfinder Society Scenario #7-07: Draconic Folly",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 17,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Jotun"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 0
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [
+    {
+      "name": "Ogre Hook",
+      "quantity": 1,
+      "description": "<p>Ogres are known for using immense, curved picks called ogre hooks.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": [
+        "deadly-d10",
+        "trip"
+      ]
+    },
+    {
+      "name": "Trident",
+      "quantity": 6,
+      "description": "<p>This three-pronged, spear-like weapon typically has a 4-foot shaft. Like a spear, it can be wielded with one hand or thrown.</p>",
+      "level": 0,
+      "price": "1 gp",
+      "traits": [
+        "thrown-20"
+      ]
+    },
+    {
+      "name": "Breastplate",
+      "quantity": 1,
+      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.Half Plate] armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
+      "level": 0,
+      "price": "8 gp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 180,
+    "max": 180,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Always Ready for a Scufe",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature gets in melee range of the ogre hunter</p><hr /><p><strong>Effect</strong> The ogre hunter draws a melee weapon.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Ogre Hook",
+      "bonus": 22,
+      "traits": [
+        "deadly-d10",
+        "magical",
+        "trip"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d10+14",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d10+14)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Trident",
+      "bonus": 15,
+      "traits": [
+        "thrown-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+14",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+14)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Hunting Throw",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The ogre hunter makes a ranged strike with their trident within 60 feet without ranged penalties. If the strike hits, it has enough force to knock the target Prone. If the strike was a critical success, the target is also Immobilized by the trident.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 26"
+}

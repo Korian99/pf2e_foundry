@@ -1,0 +1,103 @@
+{
+  "initiative": 0,
+  "initiativebonus": 35,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Covetous Corridor AP",
+  "type": "Hazard",
+  "level": 18,
+  "traits": [
+    "Unique",
+    "Large",
+    "Magical"
+  ],
+  "source": "Pathfinder #220: Crypt of Runes",
+  "remaster": true,
+  "stealth": {
+    "value": 35,
+    "note": "(master)"
+  },
+  "description": "<p>Statues depicting the runelords of envy steal magic from intruders.</p>",
+  "disable": "<p>DC 45 Arcana  (master) to unweave the magic surrounding a statue, DC 48 Athletics  (expert) to wrest a statue's implement from its hands, DC 48 Thievery  (expert) to slip an implement free, or Dispel Magic (9th rank; counteract DC 36) to counteract the magic that empowers the statue. Increase the DCs to disable the Belimarius statue by 2. Each statue must be disabled or counteracted separately, and disabling the Belimarius statue or all nine other statues permanently disables the hazard.</p>",
+  "reset": "<p>The hazard resets automatically if not disabled.</p>",
+  "routine": "<p>(4 actions) The hazard uses Steal Magic twice. Once the implements of at least three runelord statues are charged, the hazard uses its next available action to Transfer Magic. If the hazard starts its turn with the Belimarius statue charged, the hazard uses its reaction to Empower Barrier. A disabled runelord statue can't use Steal Magic. If the Belimarius statue is disabled, the hazard can't use Transfer Magic or Empower Barrier.</p>",
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 39,
+    "note": null,
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "hardness": {
+    "value": 29
+  },
+  "fortitude": {
+    "value": 33,
+    "note": null,
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 27,
+    "note": null,
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 36,
+    "note": null,
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 100,
+    "max": 100,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "critical-hits",
+    "precision"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "",
+  "strikes": [],
+  "offensiveAbilities": [
+    {
+      "name": "Covet Magic",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A magic item or active spell effect enters the corridor</p><hr /><p><strong>Effect</strong> A randomly determined statue uses the hazard's Steal Magic action. The hazard then rolls initiative.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Steal Magic",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>Roll a D10 to determine which statue activates, rerolling a result of 10 or any result that would indicate a disabled statue or a statue that is already charged. The indicated statue casts Detonate Magic with a +32 bonus to its counteract check. The spell targets the closest magic item within 120 feet, prioritizing the highest-ranking magic item and targeting spell effects only if no magic item is within range. On a success or critical success, the statue gathers the dispersed energy into its implement, charging it.</p>\n<p>While the statue's implement remains charged, any creature who is at least an expert in DC 44 Arcana , DC 44 Nature , DC 44 Occultism , or DC 44 Religion  can use a 2-action activity with the concentrate trait to attempt a DC 44 check using that skill. On a success or critical success, they return the magic to its original source, causing it to reactivate. Removing an implement from its statue prevents the statue from using Transfer Magic but doesn't prevent a creature from restoring the charge to its source.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Transfer Magic",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The implements of at least three runelord statues are charged</p><hr /><p><strong>Effect</strong> Three statues with charged implements transfer their charges to the Belimarius statue. While the Belimarius statue holds at least one charge, a creature can transfer charges from its implement as described in Steal Magic, except the DC of the skill check increases to DC 46; success returns the stolen magic to the appropriate items.</p>\n<p>DC 46 Arcana , DC 46 Nature , DC 46 Occultism , or DC 46 Religion </p>",
+      "collapsed": false
+    },
+    {
+      "name": "Empower Barrier",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The hazard starts its turn, and the Belimarius statue holds at least one charge</p><hr /><p><strong>Effect</strong> The Belimarius statue transfers all charges from its implement into the force barrier separating the corridor from area <strong>B3</strong>. For every charge the statue transfers, the force barrier gains 10 temporary Hit Points that last for 1 hour. (If the force barrier has been destroyed, the statue instead expends the first charge to cast a 6th-rank Wall of Force, with any remaining charges granting the barrier temporary Hit Points.) Charges transferred to the force barrier are lost forever and can't be returned to items they were stolen from.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": ", DC 38"
+}

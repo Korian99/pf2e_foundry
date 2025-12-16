@@ -1,0 +1,388 @@
+{
+  "initiative": 0,
+  "initiativebonus": 39,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Cinder Archdragon",
+  "type": "Creature",
+  "level": 22,
+  "traits": [
+    "Rare",
+    "Gargantuan",
+    "Dragon",
+    "Fire",
+    "Primal"
+  ],
+  "source": "Pathfinder Lost Omens Draconic Codex",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "Scent 60ft imprecise",
+    "smoke vision"
+  ],
+  "perception": {
+    "value": 39,
+    "note": "Darkvision, Scent 60ft imprecise, smoke vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Draconic",
+    "Pyric"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 43,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 40,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 42,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 40,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 42,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 10
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 8
+  },
+  "intelligence": {
+    "value": 6
+  },
+  "wisdom": {
+    "value": 7
+  },
+  "charisma": {
+    "value": 8
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Smoke Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Smoke doesn't impair a cinder dragon's vision; they ignore the Concealed condition from smoke.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 47,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 38,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 34,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 36,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 525,
+    "max": 525,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "fire",
+    "paralyzed",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 20
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Boiling Blood",
+      "actions": -1,
+      "traits": [
+        "fire"
+      ],
+      "description": "<p><strong>Trigger</strong> The dragon is critically hit with a melee attack</p><hr /><p><strong>Effect</strong> The dragon's superheated blood spills onto the attacker. The target takes 12d6 Fire Damage damage (Basic DC 45 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Dragon Heat",
+      "actions": null,
+      "traits": [],
+      "description": "<p>5 feet, 5d6 Fire Damage damage (Basic DC 40 Reflex Saving Throw save)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Frightful Presence",
+      "actions": null,
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>90 feet DC 42 Will Saving Throw</p><hr /><p><details><summary>See rules...</summary>\n<p><p>A creature that first enters the area must attempt a Will save.</p>\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to this monster's Frightful Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by the presence.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 4.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Strike (Jaws only)",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "70 ft, fly 210ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 41,
+      "traits": [
+        "fire",
+        "magical",
+        "reach-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6",
+          "type": "persistent fire"
+        },
+        {
+          "roll": "4d12+16",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6)*2",
+          "type": "persistent fire"
+        },
+        {
+          "roll": "(4d12+16)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Horn",
+      "bonus": 39,
+      "traits": [
+        "magical",
+        "reach-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d12+20",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+20)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 41,
+      "traits": [
+        "agile",
+        "magical",
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d10+16",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d10+16)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 39,
+      "traits": [
+        "magical",
+        "reach-25"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d8+16",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d8+16)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Wing",
+      "bonus": 39,
+      "traits": [
+        "agile",
+        "magical",
+        "reach-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d8+16",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d8+16)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "All Becomes Flame",
+      "actions": 1,
+      "traits": [
+        "curse",
+        "fire",
+        "primal"
+      ],
+      "description": "<p>The dragon curses a creature within 60 feet to have its magic replaced with primordial flames. The creature must attempt a DC 43 Will Saving Throw save. Regardless of the result, the target becomes temporarily immune for 1 day.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is cursed for 1 round. While cursed, any damage the cursed creature would deal by any means becomes fire damage, regardless of the original damage type. The cursed creature can temporarily suppress the curse for 1 round as an action.</p>\n<p><strong>Failure</strong> As success, but the curse's duration is 1 hour.</p>\n<p><strong>Critical Failure</strong> As success, but the curse's duration is 1 day.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Blazing Wind",
+      "actions": 3,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The dragon is able to use their Pyre Breath</p><hr /><p><strong>Effect</strong> The dragon Flies up to their Speed in a straight line. At the end of their movement, a superheated gale blows out ahead of them in a 200ft Type:line that's 20 feet wide. Structures and vehicles might collapse or catch fire in the whirling inferno, as earthquake. In addition, any creature in the area must attempt a DC 45 Fortitude Saving Throw save. This ability counts as a use of the dragon's Pyre Breath.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes 8d6 Fire Damage damage.</p>\n<p><strong>Failure</strong> The creature takes 16d6 Fire Damage damage and is knocked Prone.</p>\n<p><strong>Critical Failure</strong> As failure, plus metal items are superheated and wooden items catch fire. The object takes 5d6 Persistent,fire Damage damage, as does the creature wearing or holding it, though they can drop or take off the item to avoid taking the damage.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Draconic Frenzy",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The dragon makes two claw Strikes and one wing Strike in any order.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Draconic Momentum",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The dragon recharges their Pyre Breath whenever they score a critical hit with a Strike.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Pyre Breath",
+      "actions": 2,
+      "traits": [
+        "fire",
+        "primal"
+      ],
+      "description": "<p>The dragon breathes a blast of flame that deals 22d6 Fire Damage damage in a 70ft Type:cone (Basic DC 45 Reflex Saving Throw save). Creatures that critically fail their save catch fire, taking 2d6 Persistent,fire Damage damage. The area then fills with black smoke for 1 minute. This has the effects of mist, except it fills the cone's area. The dragon can't use Pyre Breath again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Stoke the Flames",
+      "actions": 1,
+      "traits": [
+        "fire",
+        "primal"
+      ],
+      "description": "<p>The dragon intensifies nearby fires. Every foe within 60 feet that is taking persistent fire damage takes 5d6 Fire Damage damage.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana, DC 44"
+}

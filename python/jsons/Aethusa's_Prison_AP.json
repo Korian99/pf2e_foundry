@@ -1,0 +1,109 @@
+{
+  "initiative": 0,
+  "initiativebonus": 32,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Aethusa's Prison AP",
+  "type": "Hazard",
+  "level": 16,
+  "traits": [
+    "Unique",
+    "Large",
+    "Arcane",
+    "Environmental"
+  ],
+  "source": "Pathfinder #220: Crypt of Runes",
+  "remaster": true,
+  "stealth": {
+    "value": 32,
+    "note": "(master)"
+  },
+  "description": "<p>A roiling sphere of chromatic energy floats above a pedestal marked with arcane symbols.</p>",
+  "disable": "<p>DC 42 Nature  (legendary) or DC 45 Crafting  (master) to remove an immunity the prison currently has to one of the following damage types: acid, cold, electricity, or fire (this effect lasts until the prison uses its Energy Immunity reaction to regain that immunity); DC 42 Arcana  (master) to fortify the pedestal's containment runes, preventing the prison from using its Chromatic Eruption action for 1 round and causing it to suffer feedback that inflicts 20 Untyped Damage damage (this damage bypasses the prison's hardness and immunities); DC 42 Thievery  (master) or Dispel Magic (8th rank; counteract DC 34) to suppress the pedestal's containment runes for 1 round, preventing the prison from using its Self-Repair action and causing it to suffer feedback that inflicts 20 Untyped Damage damage (this damage bypasses the prison's hardness and immunities). Unlike most hazards, Aethusa's prison can't be disabled, but it can be destroyed by reducing it to 0 Hit Points.</p>",
+  "reset": "<p>The trap deactivates and then resets automatically when it repairs to its maximum Hit Points.</p>",
+  "routine": "<p>(2 actions) The prison uses its first action to Self-Repair. If the hazard has less than its maximum Hit Points, it then uses its Chromatic Eruption action.</p>",
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 39,
+    "note": null,
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "hardness": {
+    "value": 25
+  },
+  "fortitude": {
+    "value": 33,
+    "note": null,
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 25,
+    "note": null,
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 0,
+    "note": null,
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 106,
+    "max": 106,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "",
+  "strikes": [],
+  "offensiveAbilities": [
+    {
+      "name": "Lockdown Protocol",
+      "actions": -1,
+      "traits": [
+        "arcane"
+      ],
+      "description": "<p><strong>Trigger</strong> The prison takes any damage</p><hr /><p><strong>Effect</strong> The prison uses its Chromatic Eruption action as part of this reaction, then gains immunity to the triggering damage type until the hazard resets. The hazard then rolls initiative.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Self-Repair",
+      "actions": 1,
+      "traits": [
+        "arcane"
+      ],
+      "description": "<p>The prison regains 30 Healing Damage Hit Points. Then, if the prison is at maximum Hit Points, the hazard deactivates and immediately resets.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Chromatic Eruption",
+      "actions": 1,
+      "traits": [
+        "arcane"
+      ],
+      "description": "<p><strong>Requirements</strong> The prison has less than its maximum Hit Points</p><hr /><p><strong>Effect</strong> Tendrils of uncontained magical energy lash at creatures in a 20ft Type:emanation, dealing 10d6 Untyped Damage damage (Basic DC 37 Reflex Saving Throw save) of a randomly determined type. Roll 1d4: 1–acid, 2–cold, 3–electricity, 4–fire.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Energy Immunity",
+      "actions": -1,
+      "traits": [
+        "arcane"
+      ],
+      "description": "<p><strong>Trigger</strong> The prison takes acid, cold, electricity, or fire damage</p><hr /><p><strong>Effect</strong> The prison takes the damage but then gains immunity to the triggering damage type until the hazard resets.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": ", DC 35"
+}

@@ -1,0 +1,1153 @@
+{
+  "initiative": 0,
+  "initiativebonus": 29,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Bog Dragon (Ancient, Spellcaster)",
+  "type": "Creature",
+  "level": 16,
+  "traits": [
+    "Uncommon",
+    "Gargantuan",
+    "Amphibious",
+    "Dragon",
+    "Primal"
+  ],
+  "source": "Pathfinder Lost Omens Draconic Codex",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "Scent 60ft imprecise",
+    "Tremorsense 120ft imprecise"
+  ],
+  "perception": {
+    "value": 29,
+    "note": "Darkvision, Scent 60ft imprecise, Tremorsense 120ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo",
+    "Common",
+    "Draconic",
+    "Necril"
+  ],
+  "skills": [
+    {
+      "name": "arcana",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 32,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 32,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "society",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 32,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 10
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": 5
+  },
+  "wisdom": {
+    "value": 6
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 38,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 30,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+2 status to all saves vs. primal",
+  "hp": {
+    "value": 335,
+    "max": 335,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "acid",
+    "paralyzed",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Frightful Presence",
+      "actions": null,
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>90 feet DC 37 Will Saving Throw</p><hr /><p><details><summary>See rules...</summary>\n<p><p>A creature that first enters the area must attempt a Will save.</p>\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to this monster's Frightful Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by the presence.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 4.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rise Up",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature walks on top of an ancient bog dragon who is burrowed into the mud or peat below</p>\n<p><strong>Requirements</strong> Initiative has not yet been rolled</p><hr /><p><strong>Effect</strong> The bog dragon automatically notices the creature and Burrows before rolling initiative.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Tail Lash",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within reach of the dragon's tail makes a Strike or attempts a skill check as part of an attack action</p><hr /><p><strong>Effect</strong> The dragon Strikes with their tail at the triggering creature with a –2 penalty. If the Strike hits, the creature takes a –2 circumstance penalty to the triggering roll.</p>\n<p>Effect: Tail Lash</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "40 ft, burrow 30ft, fly 100ft, swim 60ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 32,
+      "traits": [
+        "magical",
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d12+18",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+18)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "bog-rot",
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 32,
+      "traits": [
+        "agile",
+        "magical",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+18",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+18)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 30,
+      "traits": [
+        "magical",
+        "reach-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+18",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+18)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "knockdown"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Bog Rot",
+      "actions": null,
+      "traits": [
+        "acid",
+        "disease",
+        "primal"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 34 Fortitude Saving Throw</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> 3d6 Acid Damage damage and Clumsy 1 (1 day)</p>\n<p><strong>Stage 3</strong> 4d6 Acid Damage damage, clumsy 1, and a –5-foot status penalty to Speed (1 day)</p>\n<p><strong>Stage 4</strong> 5d6 Acid Damage damage, Clumsy 2, and a –10-foot status penalty to Speed (1 day)</p>\n<p><strong>Stage 5</strong> death</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Draconic Frenzy",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The dragon makes two claw Strikes and one tail Strike in any order.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Draconic Momentum",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The dragon recharges their Nidorous Breath whenever they score a critical hit with a Strike.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Nidorous Breath",
+      "actions": 2,
+      "traits": [
+        "acid",
+        "primal"
+      ],
+      "description": "<p>The dragon belches a boiling spray of fermenting stomach acid that deals 12d8 Acid Damage damage and 2d6 Persistent,acid Damage damage in a 60ft Type:cone (Basic DC 37 Reflex Saving Throw save). They can't use Nidorous Breath again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Slain to Serve",
+      "actions": null,
+      "traits": [
+        "downtime"
+      ],
+      "description": "<p>A bog dragon can perform a special ritual over the body of a humanoid creature slain by bog rot to raise it as a humanoid intelligent undead.</p>\n<p>This functions like a 8th-rank Create Undead ritual, except that it takes only 8 hours, the bog dragon doesn't require any secondary casters, and they don't need to pay a cost.</p>\n<p>If the bog dragon critically fails the ritual's skill check, they get a failure instead.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swallow Whole",
+      "actions": 1,
+      "traits": [
+        "attack"
+      ],
+      "description": "<p>Large, (3d12+10) Acid Damage plus Bog Rot, Rupture [33]</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster attempts to swallow a creature of the listed size or smaller that it has grabbed or restrained in its jaws or mouth. If a swallowed creature is of the maximum size listed, the monster can't use Swallow Whole again. If the creature is smaller than the maximum, the monster can usually swallow more creatures; the GM determines the maximum. The monster attempts an athletics|defense:reflex check opposed by the grabbed creature's Reflex DC. If it succeeds, it swallows the creature. The monster's mouth or jaws no longer grab a creature it has swallowed, so the monster is free to use them to Strike or Grab once again. The monster can't attack creatures it has swallowed.</p>\n<p>A swallowed creature is Grabbed, is Slowed 1, and has to hold its breath or start suffocating. The swallowed creature takes the listed amount of damage when first swallowed and at the end of each of its turns while it's swallowed. If the victim Escapes this ability's grabbed condition, it exits through the monster's mouth. This frees any other creature grabbed in the monster's mouth or jaws. A swallowed creature can attack the monster that has swallowed it, but only with unarmed attacks or with weapons of light Bulk or less. The swallowing creature is Off-Guard against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the swallowed creature cuts itself free. A creature that gets free by either Escaping or cutting itself free can immediately breathe and exits the swallowing monster's space.</p>\n<p>Effect: Engulf and Swallow Whole</p>\n<p>If the monster dies, a swallowed creature can be freed by creatures adjacent to the corpse if they spend a combined total of 3 actions cutting the monster open with a weapon or unarmed attack that deals piercing or slashing damage.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swamp Passage",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The bog dragon ignores difficult terrain caused by swamp terrain features.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Knockdown",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Trip the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Primal Prepared Spells",
+      "type": "prepared",
+      "bonus": 29,
+      "dc": 37,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 8,
+      "cantrips": [
+        {
+          "name": "Caustic Blast",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "acid",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "5ft burst",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>You fling a large glob of acid that immediately detonates, spraying nearby creatures. Creatures in the area take 1d8 acid damage with a basic Reflex save; on a critical failure, the creature also takes (1+floor((@item.rank -1)/2)) Persistent,acid Damage damage.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The initial damage increases by 1d8, and the persistent damage on a critical failure increases by 1.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "0uHylLHf26fMOLxV"
+        },
+        {
+          "name": "Detect Magic",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft emanation",
+          "targets": "",
+          "save": "",
+          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "vL8AhqdI6KmlgS4G"
+        },
+        {
+          "name": "Know the Way",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>In your mind's eye, you magically reorient yourself. You immediately know which direction is north (if it exists at your current location), and you can choose a location you were at within the last 24 hours and learn what direction it lies.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can choose a location you were at within the last week.</p>\n<p><strong>Heightened (7th)</strong> You can choose a location you were at regardless of how long ago you were there.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "ivodbiinOztE8qXh"
+        },
+        {
+          "name": "Tangle Vine",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate",
+            "plant",
+            "wood"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>A vine appears from thin air, flicking from your hand and lashing itself to the target. Attempt a spell attack roll against the target.</p>\n<p></p>\n<hr />\n<p><strong>Critical Success</strong> The target gains the Immobilized condition and takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty and the immobilized condition.</p>\n<p><strong>Success</strong> The target takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty.</p>\n<p><strong>Failure</strong> The target is unaffected.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The effects last for 2 rounds.</p>\n<p><strong>Heightened (4th)</strong> The effects last for 1 minute.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "CkOVDX2pPz8ln8Fb"
+        },
+        {
+          "name": "Tremor Signs",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "earth",
+            "manipulate",
+            "subtle"
+          ],
+          "castingTime": "1",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You send a series of tremors, no longer than a short sentence of speech, toward your target. If the target is within range and connected to the same body of earth as you, the vibrations reach the target through the ground. You need neither line of sight nor line of effect, so a target on another floor of a building is a valid target.</p>\n<p>The target can give a brief, vibrational response as a reaction, or as a free action on their next turn, but they must be within range to do so. If they respond, their response is delivered to you through tremors you feel, as with the original message. The tremors impart a clear meaning only if you and the target know that meaning, such as three tremors for a specific warning, two for another. Neither of you can impart a nuanced or new meaning using this spell.</p>\n<p>A creature that has tremorsense can feel the vibrations from this spell if the creature is within range of the vibrations at any point during their journey to any target.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell can target up to 5 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "AcdgwZHfXzNZIzvo"
+        }
+      ],
+      "lv1spells": [
+        {
+          "name": "Fear",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "emotion",
+            "fear",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Frightened 1.</p>\n<p><strong>Failure</strong> The target is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target is Frightened 3 and Fleeing for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "f2FyAvjTWCrVFcNv"
+        },
+        {
+          "name": "Mud Pit",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "earth",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "60 feet",
+          "area": "15ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p>Thick, clinging mud covers the ground, 1 foot deep. The mud is difficult terrain.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "wzdiQrszEqQtrgtj"
+        },
+        {
+          "name": "Vanishing Tracks",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You obscure the tracks you leave behind. The DC of checks to Track you gains a +4 status bonus or is equal to your spell DC, whichever results in a higher DC.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The duration increases to 8 hours.</p>\n<p><strong>Heightened (4th)</strong> The duration increases to 8 hours. The spell has a range of 20 feet and an area of a 20-foot-emanation, affecting up to 10 creatures of your choice within that area.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "enorEUIsgV7f28jg"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Mist",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p>You call forth a cloud of mist. All creatures within the mist become Concealed, and all creatures outside the mist become concealed to creatures within it. You can Dismiss the cloud.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "QJEQrLtEgZUZYGBF"
+        },
+        {
+          "name": "Sudden Blight",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "Basic fortitude",
+          "description": "<p>You accelerate the processes of decay in the area. Each living creature in the area takes 2d10 void damage with a basic Fortitude save. A creature afflicted by a disease takes a –2 circumstance penalty to this save. You can also direct the blight to rot all Small and Tiny non-creature plants in the area, eliminating non-magical undergrowth and any resulting difficult terrain, cover, and concealment. <em>Sudden blight</em> attempts to counteract any magical effect on the plants before withering them.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "8OdRfchLdiIsDTxX"
+        },
+        {
+          "name": "Vomit Swarm",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft cone",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>You belch forth a swarm of magical vermin. You evoke and shape the creatures from your own imagination, allowing you to change the appearance of the creatures (typically a mix of centipedes, roaches, wasps, and worms), but this doesn't change the effect of the spell. The vermin swarm over anyone in the area, their bites and stings dealing 2d8 piercing damage (basic Reflex save). A creature that fails its saving throw also becomes Sickened 1. Once the spell ends, the swarm disappears.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "u1410FHMEIWFJFUE"
+        }
+      ],
+      "lv3spells": [
+        {
+          "name": "Aqueous Orb",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to 1 minute",
+          "range": "60 feet",
+          "area": "",
+          "targets": "",
+          "save": "reflex",
+          "description": "<p>A sphere of water 10 feet in diameter forms in an unoccupied space in range, either on the ground or on the surface of a liquid.</p>\n<p>When you Cast this Spell and each time you Sustain it, you can roll the orb, moving it up to 10 feet along the ground or the surface of a liquid.</p>\n<p>The orb can move through the spaces of any creatures or obstacles that wouldn't stop the flow of water. It extinguishes non-magical fires it moves through of its size or smaller, and it attempts to counteract any magical fires it moves through. If it fails to counteract a given fire, it can't counteract that fire for the duration of the spell.</p>\n<p>The orb can engulf Large or smaller creatures it moves through, and it can contain as many creatures as fit in its space. The orb can try to engulf the same creature only once per turn, even if you roll it onto a creature's space more than once. Any Large or smaller creature whose space the orb tries to move through can attempt a Reflex save.</p>\n<hr />\n<p><strong>Success</strong> The creature can either let the orb pass (remaining in its space or moving out of the orb's path into a space of the creature's choice) or allow itself to be pushed in front of the orb to the end of the orb's movement.</p>\n<p><strong>Failure</strong> The creature is engulfed in the orb. It moves along with the orb and must hold its breath or begin suffocating (unless it can breathe in water). An engulfed Medium or smaller creature and anyone trying to affect that creature follow the normal rules for aquatic battles. An engulfed Large creature is usually big enough that parts of it stick out from the water, and it can reach out of the water. The creature can get free either by Swimming with a successful athletics|traits:action:swim|dc:10 check or by Escaping against your spell DC. A freed creature exits the orb's space and can immediately breathe.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature can't Swim to get free.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "W7q8G4B28cT7a04B"
+        },
+        {
+          "name": "Earthbind",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "earth",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 flying creature",
+          "save": "fortitude",
+          "description": "<p>Using the weight of earth, you hamper a target's flight, with effects based on its Fortitude save. If the creature reaches the ground safely, it doesn't take falling damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target falls safely up to 120 feet.</p>\n<p><strong>Failure</strong> The target falls safely up to 120 feet. If it hits the ground, it can't Fly, levitate, or otherwise leave the ground for 1 round.</p>\n<p><strong>Critical Failure</strong> The target falls safely up to 120 feet. If it hits the ground, it can't Fly, levitate, or otherwise leave the ground for 1 minute.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "sdSvteTBgvg9aCYp"
+        },
+        {
+          "name": "Wall of Thorns",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "plant",
+            "wood"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "60 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You grow a wall of thorny brambles from the ground. You create a 5-foot-thick wall of brambles and thorns in a straight line up to 60 feet long and 10 feet high. You must create the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost. The wall stands vertically. If you wish, the wall can be of a shorter length or height. Everything on each side of the wall has cover from creatures on the opposite side, and the wall's spaces are difficult terrain. For every move action a creature uses to enter at least one of the wall's spaces, that creature takes 3d4 piercing damage.</p>\n<p>Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 10, and 20 Hit Points. It's immune to critical hits and precision damage. A destroyed section can be moved through freely.</p><hr /><p><strong>Heightened (+1)</strong> The Hit Points of each section of the wall increase by 5, and the piercing damage increases by 1d4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "qnqR7vy3VdPILTd3"
+        }
+      ],
+      "lv4spells": [
+        {
+          "name": "Hydraulic Torrent",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "60ft line",
+          "targets": "",
+          "save": "Basic fortitude",
+          "description": "<p>A swirling torrent of water manifests along a straight line, battering creatures and unattended objects in its path and possibly pushing them away from you. The torrent deals 8d6 bludgeoning damage. Each creature in the area must attempt a basic Fortitude save; unattended objects automatically fail. Creatures and objects that fail are also knocked back 5 feet (10 feet on a critical failure).</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "9SPIpo1owQoqGVZf"
+        },
+        {
+          "name": "Misty Memory",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "1 minute",
+          "duration": "Sustained up to 10 minutes",
+          "range": "",
+          "area": "",
+          "targets": "1 body of water of at least 5 square feet",
+          "save": "",
+          "description": "<p>Some say water holds memories or impressions of the past, and you can raise those memories to the surface to glimpse recent events. When you Cast the Spell, you fix your mind on an amount of time in the past, up to 24 hours ago. A mist rises from the target body of water, filling a 30ft Burst and coalescing into a misty scene of the events that took place at that time within 60 feet of the water.</p>\n<p>Any creature who can see the area can observe the images produced, which are a translucent white color and detailed enough to show a silhouette, outline, or contour of creatures and objects that passed through the area and the motions they took. Fine details, such as facial features or written letters, are too precise for the mist to form, and the scene is silent.</p>\n<p>You can Sustain the spell to cause the mist to play events backward or forward, with each minute spent Sustaining corresponding to a minute of playback.</p>\n<p>Strong winds from a magical source can disrupt this spell if the effect succeeds at a counteract check against your spell DC.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Fv9bLxI1tB1zZWjs"
+        },
+        {
+          "name": "Vapor Form",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "air",
+            "concentrate",
+            "manipulate",
+            "polymorph"
+          ],
+          "castingTime": "2",
+          "duration": "5 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>The target transforms into a vaporous state. In this state, the target is amorphous. It loses any item bonus to AC and all other effects and bonuses from armor, and it uses its proficiency modifier for unarmored defense. It gains resistance 8 to physical damage and is immune to precision damage. It can't cast spells, activate items, or use actions that have the attack or manipulate trait. It gains a fly Speed of 10 feet and can slip through tiny cracks. The target can Dismiss the spell.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "ATxvHiay6ffU5R38"
+        }
+      ],
+      "lv5spells": [
+        {
+          "name": "Control Water",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "500 feet",
+          "area": "",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>By imposing your will upon the water, you can raise or lower the level of water in the chosen area by 10 feet. Creatures that have the water trait and that are in the area when you Cast the Spell must attempt a Fortitude save, with the effects of the Slow spell.</p>\n<p><strong>Area</strong> 50 feet long by 50 feet wide</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "pM6FAIoUti7Q2g9o"
+        },
+        {
+          "name": "Corrosive Muck",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "acid",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p><strong>Area</strong> all squares in two 10-foot bursts.</p><hr /><p>You create two puddles of acidic slime that hinders the movement of anyone who walks through them. The area of each pool becomes greater difficult terrain. Each round that a creature starts its turn in one of the pools or enters a pool during a move action it's using, it takes 8d6 acid damage with a basic Reflex save. A creature that critically fails its saving throw also takes 1d6 Acid,persistent Damage. As normal, if a Large or larger creature starts its turn in both pools, it takes the damage only once.</p><hr /><p><strong>Heightened (+2)</strong> Create an additional 10-foot burst.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "6UrH0EW68uUm0uKF"
+        },
+        {
+          "name": "Toxic Cloud",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "death",
+            "manipulate",
+            "poison"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "Basic fortitude",
+          "description": "<p>You conjure a poisonous fog. This functions as Mist, except the area moves 10 feet away from you each round. You deal 6d8 poison damage to each breathing creature that starts its turn in the spell's area. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "KWwOuB3kHyHZjEq1"
+        }
+      ],
+      "lv6spells": [
+        {
+          "name": "Blinding Fury",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "curse",
+            "emotion",
+            "incapacitation",
+            "mental"
+          ],
+          "castingTime": "reaction",
+          "duration": "varies",
+          "range": "60 feet",
+          "area": "",
+          "targets": "The triggering creature",
+          "save": "will",
+          "description": "<p><strong>Trigger</strong> A creature damages you.</p><hr /><p>You curse the target with your outrage at being attacked. The effect is determined by the target's Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target can't Observe you until the end of its turn, and if you're currently observed by it, you become Hidden to it.</p>\n<p><strong>Failure</strong> As success, and for 1 minute, every time the target damages you, it can't observe you until the end of its turn.</p>\n<p><strong>Critical Failure</strong> As success, and for an unlimited duration, the first time each round the target damages a creature, it can't observe that creature until the end of its turn. If it damages several creatures at once, the creature it can't perceive is chosen randomly among those creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "MKtUXm7VepHrkT8v"
+        },
+        {
+          "name": "Tangling Creepers",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "plant",
+            "wood"
+          ],
+          "castingTime": "3",
+          "duration": "10 minutes",
+          "range": "500 feet",
+          "area": "40ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p>Dense, twitching creepers sprout from every surface and fill any bodies of water in the area. Any creature moving on the land, or Climbing or Swimming within the creepers, takes a –10-foot circumstance penalty to its Speeds while in the area. Once per round, you can Sustain the spell to make a vine lash out from any square within the expanse of creepers. This vine has a 15-foot reach. Make a melee spell attack roll against the target; on a success, the vine pulls the target into the creepers and makes it Immobilized for 1 round or until the creature Escapes (against your spell DC), whichever comes first.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "TWgwKvyCqNbfIqF3"
+        },
+        {
+          "name": "Tree of Seasons",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "plant",
+            "wood"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "60 feet",
+          "area": "",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>You cause a Small tree to instantly sprout in an unoccupied space on the ground. Four seedpods grow from the tree, each filled with the magic of a different one of the four seasons. A creature can Interact to pluck one of the pods, and can then either throw it up to 30 feet as part of the same action or do so with a separate Interact action later. When thrown, a pod explodes in a 5ft Burst, dealing 6d6 damage with a basic Reflex save against your spell DC. The damage type depends on the season of the pod: electricity for spring, fire for summer, poison for autumn, or cold for winter. When the spell ends, the tree withers away and any remaining pods rot, leaving behind non-magical seeds.</p>\n<p>(@item.level)d6 Cold Damage</p>\n<p>(@item.level)d6 Electricity Damage</p>\n<p>(@item.level)d6 Fire Damage</p>\n<p>(@item.level)d6 Poison Damage</p><hr /><p><strong>Heightened (+1)</strong> The burst's damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "XmbDwlfhncOD2YIT"
+        }
+      ],
+      "lv7spells": [
+        {
+          "name": "Execute",
+          "type": "spell",
+          "level": 7,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "death",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "Basic fortitude",
+          "description": "<p>You point at a creature and invoke the demise of all things. The target takes 70 void damage with a basic Fortitude save. If the target is undead or otherwise has void healing, the spell loses the death and void traits and gains the vitality trait, and the target takes 70 vitality damage with a basic Fortitude save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 10.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "raRxKrGAB6hEdbUf"
+        },
+        {
+          "name": "Mask of Terror",
+          "type": "spell",
+          "level": 7,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "emotion",
+            "fear",
+            "illusion",
+            "manipulate",
+            "mental",
+            "visual"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>The target appears to be a gruesome and terrifying creature. The effect is unique to each observer, so a human viewing the target might see a demon with bloody fangs, but a demon observing the target might see a glowing angelic visage.</p>\n<p>When any creature attempts a hostile action against the target, the creature must attempt a Will save. It is then temporarily immune until the end of its next turn.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature becomes Frightened 2 before using its action.</p>\n<p><strong>Critical Failure</strong> The creature becomes Frightened 2, and its action fails and is wasted.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 5 creatures. If a creature uses a hostile action or reaction that affects multiple targets simultaneously, it needs to attempt only one save against <em>mask of terror</em>.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "0LFS91OgT2amMmS9"
+        },
+        {
+          "name": "Regenerate",
+          "type": "spell",
+          "level": 7,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "healing",
+            "manipulate",
+            "vitality"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing living creature",
+          "save": "",
+          "description": "<p>An infusion of vital energy grants a creature continuous healing. The target temporarily gains regeneration 15, which restores 15 Hit Points to it at the start of each of its turns. While it has regeneration, the target can't die from taking Hit Point damage and its Dying condition can't increase to a value that would kill it (this stops most creatures' dying condition at dying 3), though if its Wounded value becomes 4 or higher, it stays Unconscious until its wounds are treated. If the target takes acid or fire damage, its regeneration deactivates until after the end of its next turn.</p>\n<p>Each time the creature regains Hit Points from regeneration, it also regrows one damaged or ruined organ (if any). During the spell's duration, the creature can also reattach severed body parts by spending an Interact action to hold the body part to the area it was severed from.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (9th)</strong> The regeneration increases to 20.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "S13qDVzR9VUVc9uN"
+        }
+      ],
+      "lv8spells": [
+        {
+          "name": "Acid Grip",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "acid",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "Basic reflex",
+          "description": "<p>An ephemeral, taloned hand grips the target, burning it with magical acid. The target takes 2d8 acid damage plus floor(@item.level/2)d6 Persistent,acid Damage damage depending on its Reflex save. A creature taking persistent damage from this spell takes a –10-foot status penalty to its Speeds. </p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and no persistent damage, and the claw moves it up to 5 feet in a direction of your choice.</p>\n<p><strong>Failure</strong> The creature takes full damage and persistent damage, and the claw moves it up to 10 feet in a direction of your choice.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and full persistent damage, and the claw moves it up to 20 feet in a direction of your choice.</p><hr /><p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the persistent acid damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "3mizpuzBxKURlPp0"
+        },
+        {
+          "name": "Desiccate",
+          "type": "spell",
+          "level": 8,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "500 feet",
+          "area": "",
+          "targets": "any number of living creatures",
+          "save": "Basic fortitude",
+          "description": "<p>You pull the moisture from the targets' bodies, dealing 10d10 void damage. Creatures made of water (such as water elementals) and plant creatures use the outcome for one degree of success worse than the result of their saving throw. Creatures whose bodies contain no significant moisture (such as earth elementals) are immune to desiccate.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "aLQZrsuabqNSIAon"
+        },
+        {
+          "name": "Earthquake",
+          "type": "spell",
+          "level": 8,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "earth",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 round",
+          "range": "500 feet",
+          "area": "60ft burst",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>You shake the ground, topple creatures into fissures, and collapse structures. The GM might add additional effects in certain areas. Cliffs might collapse, causing creatures to fall, or a lake might drain as fissures open up below its surface, leaving a morass of quicksand.</p><ul><li><strong>Shaking Ground</strong> The ground is difficult terrain, and creatures on it take a -2 circumstance penalty to attack rolls, AC, and skill checks. </li><li><strong>Fissures</strong> Each creature on the ground must attempt a Reflex save at the start of its turn to keep its footing and avoid falling into 40-foot-deep fissures that open beneath it. The fissures are permanent, and their sides require successful Basic DC 15 Athletics  to Climb.</li><li><strong>Collapse</strong> Structures and ceilings might collapse. The GM rolls a flat check for each (Basic DC 16 Flat  for a sturdy structure, Basic DC 14 Flat  for an average structure and most natural formations, Basic DC 9 Flat  for a shoddy structure, all adjusted higher or lower as the GM sees fit). A collapse deals 11d6 bludgeoning damage to each creature caught in it with a basic Reflex save. A creature falls Prone unless it critically succeeds and falls into a fissure if it critically fails.</li></ul><hr /><p><strong>Heightened (10th)</strong> You create a massive earthquake that can devastate a settlement. The range increases to half a mile and the area to a quarter-mile burst.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "t2VV22CYj88teIHZ"
+        }
+      ],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv2slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv3slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv4slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv5slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv6slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv7slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv8slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Arcana, DC 35"
+}

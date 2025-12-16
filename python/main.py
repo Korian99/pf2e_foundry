@@ -40,22 +40,26 @@ def main():
             # continue
 
         # transform
-        tracker_json = transform_foundry_to_tracker(foundry_data)
-        if tracker_json:
-            if "Pathfinder #" in tracker_json["source"]:
-                tracker_json["name"] += " AP"
-            if not tracker_json["remaster"]:
-                tracker_json["name"] += " OLD"
-            creature_name = tracker_json.get("name")
-            # safe filename
-            out_name = creature_name.replace(" ", "_").replace(
-                "/", "_").replace('"', "'")+".json"
-            out_path = jsons_dir / out_name
-            database_json.append(
-                {"name": tracker_json["name"], "level": tracker_json["level"]})
-            with open(out_path, "w", encoding="utf-8") as f:
-                json.dump(tracker_json, f, indent=2, ensure_ascii=False)
-
+        try:
+            tracker_json = transform_foundry_to_tracker(foundry_data)
+            if tracker_json:
+                if "Pathfinder #" in tracker_json["source"]:
+                    tracker_json["name"] += " AP"
+                if not tracker_json["remaster"]:
+                    tracker_json["name"] += " OLD"
+                creature_name = tracker_json.get("name")
+                # safe filename
+                out_name = creature_name.replace(" ", "_").replace(
+                    "/", "_").replace('"', "'")+".json"
+                out_path = jsons_dir / out_name
+                database_json.append(
+                    {"name": tracker_json["name"], "level": tracker_json["level"]})
+                with open(out_path, "w", encoding="utf-8") as f:
+                    json.dump(tracker_json, f, indent=2, ensure_ascii=False)
+        except Exception as e:
+            print(e)
+            print(creature_name)
+            raise e
     out_path = BASE_DIR / "database_index_new.json"
     with open(out_path, "w", encoding="utf-8") as f:
         sorted_database = sorted(

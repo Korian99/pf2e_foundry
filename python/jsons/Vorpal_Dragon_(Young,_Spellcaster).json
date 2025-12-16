@@ -1,0 +1,758 @@
+{
+  "initiative": 0,
+  "initiativebonus": 18,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Vorpal Dragon (Young, Spellcaster)",
+  "type": "Creature",
+  "level": 9,
+  "traits": [
+    "Common",
+    "Large",
+    "Arcane",
+    "Dragon",
+    "Metal"
+  ],
+  "source": "Pathfinder Lost Omens Draconic Codex",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "Scent 60ft imprecise"
+  ],
+  "perception": {
+    "value": 18,
+    "note": "Darkvision, Scent 60ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo",
+    "Common",
+    "Draconic",
+    "Fey",
+    "Talican"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "arcana",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 4
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 150,
+    "max": 150,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "confused",
+    "doomed",
+    "sleep",
+    "paralyzed"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Cutting Rebuke",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within reach of the dragon's chin blade that the dragon can see makes a Strike against the dragon</p><hr /><p><strong>Effect</strong> The dragon makes a chin blade Strike against the triggering creature.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "35 ft, fly 100ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Chin Blade",
+      "bonus": 21,
+      "traits": [
+        "magical",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+10",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+10)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "vorpal-binding"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 21,
+      "traits": [
+        "agile",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+10",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+10)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 19,
+      "traits": [
+        "magical",
+        "reach-15",
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+10",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+10)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Pinion",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "magical",
+        "propulsive",
+        "versatile-p"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+7",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+7)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Feast of Blood",
+      "actions": 2,
+      "traits": [
+        "arcane",
+        "void"
+      ],
+      "description": "<p>The dragon inhales sharply, pulling blood from wounds and into the dragon's maw. Each creature in a 10ft Type:emanation takes their current persistent bleed damage plus 6d6 Void Damage damage (Basic DC 28 Will Saving Throw save). The dragon gains temporary Hit Points equal to half the greatest amount of void damage dealt to a single creature this way. The dragon can't use Feast of Blood again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Vorpal Binding",
+      "actions": null,
+      "traits": [
+        "arcane"
+      ],
+      "description": "<p>The vorpal dragon beheads its foes—sometimes without killing them. A vorpal dragon's chin blade Strikes count as having the vorpal weapon property rune for the purpose of weaknesses. Whenever the vorpal dragon critically succeeds on a chin blade Strike, it deals an additional 2d6 Persistent,bleed Damage damage, which can be ended normally.</p>\n<p>When a vorpal dragon rolls a natural 20 on a chin blade Strike, the target must attempt a DC 28 Fortitude Saving Throw save; this has the incapacitation trait. On a failure, the creature is beheaded. A creature beheaded this way does not automatically die; instead, their head and body live on, disconnected but mystically linked, with the head controlling the body from afar. A beheaded creature is Clumsy 2 and Dazzled as they attempt to coordinate movements from an unusual perspective, or Clumsy 4 and Blinded and Deafened if their head can't perceive their body from its location. These conditions are suppressed if the body holds its head, and don't apply to actions performed exclusively by the head, mind, or voice. If the body is killed, the head can live on, but destroying the head kills the body as well. This effect can be reversed by taking a 2-action activity, which has the manipulate trait, to firmly reattach the severed head to the correct body. Whether attaching the severed head to a different headless body is effective is at the GM's discretion.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Arcane Prepared Spells",
+      "type": "prepared",
+      "bonus": 20,
+      "dc": 28,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 4,
+      "cantrips": [
+        {
+          "name": "Detect Magic",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft emanation",
+          "targets": "",
+          "save": "",
+          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Tyj4HTfo9cbDtEwm"
+        },
+        {
+          "name": "Live Wire",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "electricity",
+            "manipulate",
+            "metal"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You conjure up a length of sharp copper filament humming with electrical current that strikes out at your foe. The wire deals 1d4 slashing damage and 1d4 electricity damage, depending on your spell attack roll against the target's AC.</p><hr /><p><strong>Critical Success</strong> The target takes double damage and (ceil(@item.rank / 2))d4 Persistent,electricity Damage damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p>\n<p><strong>Failure</strong> The target takes the electricity damage, but not the slashing damage.</p>\n<p><strong>Critical Failure</strong> The target is unaffected.</p><hr /><p><strong>Heightened (+2)</strong> The slashing damage, initial electricity damage, and persistent electricity damage on a critical hit each increase by 1d4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "3m6mD3XcKjj4L68K"
+        },
+        {
+          "name": "Message",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "auditory",
+            "concentrate",
+            "illusion",
+            "linguistic",
+            "mental",
+            "subtle"
+          ],
+          "castingTime": "1",
+          "duration": "see below",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You mouth words quietly, but instead of coming out of your mouth, they're transferred directly to the ears of the target. While others can't hear your words any better than if you normally mouthed them, the target can hear your words as if they were standing next to you. The target can give a brief response as a reaction, or as a free action on their next turn if they wish, but they must be able to see you and be within range to do so. If they respond, their response is delivered directly to your ear, just like the original message.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The spell's range increases to 500 feet.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "VTuKqfvb5SjUDTcn"
+        },
+        {
+          "name": "Read Aura",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "1 minute",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 object",
+          "save": "",
+          "description": "<p>You focus on the target object, opening your mind to perceive magical auras. When the casting is complete, you know whether that item is magical. You or anyone you advise about the aura gains a +2 circumstance bonus to Identify Magic on the item. If the object is illusory, you detect this only if the effect's rank is lower than the rank of your <em>read aura</em> spell.</p>\n<p></p><hr /><p><strong>Heightened (3rd)</strong> You can target up to 10 objects.</p>\n<p><strong>Heightened (6th)</strong> You can target any number of objects.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "47IaZRxezgLY4Hnd"
+        },
+        {
+          "name": "Telekinetic Hand",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to ",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 unattended object of light Bulk or less",
+          "save": "",
+          "description": "<p>You create a floating, magical hand, either invisible or ghostlike, that grasps the target object and levitates it slowly up to 20 feet in any direction. When you Sustain the spell, you can move the object an additional 20 feet. If the object is in the air when the spell ends, the object falls.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (5th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (7th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 2 or less.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "AxG6YduxGJ1Fyarj"
+        }
+      ],
+      "lv1spells": [
+        {
+          "name": "Alarm",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "8 hours",
+          "range": "touch",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p>You ward an area to alert you when creatures enter without your permission. When you cast alarm, select a password. Whenever a Small or larger corporeal creature enters the spell's area without speaking the password, alarm sends your choice of a mental alert (in which case the spell gains the mental trait) or an audible alarm with the sound and volume of a hand bell (in which case the spell gains the auditory trait). Either option automatically awakens you, and the bell allows each creature in the area to attempt a DC 15 Perception  check to wake up. A creature aware of the alarm must succeed at a Stealth check against the spell's DC or trigger the spell when moving into the area.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can specify a trigger for which types of creatures sound the alarm spell.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "jTR1Jdty4BS1Kq4S"
+        },
+        {
+          "name": "Sure Strike",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "fortune"
+          ],
+          "castingTime": "1",
+          "duration": "until the end of your turn",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>The next time you make an attack roll before the end of your turn, roll it twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden. You are then temporarily immune to <em>sure strike</em> for 10 minutes.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "5L7P7iQrLjbqtk3R"
+        },
+        {
+          "name": "Sure Strike",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "fortune"
+          ],
+          "castingTime": "1",
+          "duration": "until the end of your turn",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>The next time you make an attack roll before the end of your turn, roll it twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden. You are then temporarily immune to <em>sure strike</em> for 10 minutes.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "5L7P7iQrLjbqtk3R"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Create Food",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "1 hour",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create enough food to feed six Medium creatures for a day. This food is bland and unappealing, but it is nourishing. After 1 day, if no one has eaten the food, it decays and becomes inedible. Most Small creatures eat one-quarter as much as a Medium creature (one-sixteenth as much for most Tiny creatures), and most Large creatures eat 10 times as much (100 times as much for Huge creatures and so on).</p>\n<hr />\n<p><strong>Heightened (4th)</strong> You can feed 12 Medium creatures.</p>\n<p><strong>Heightened (6th)</strong> You can feed 50 Medium creatures.</p>\n<p><strong>Heightened (8th)</strong> You can feed 200 Medium creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "gy0jYgNalUHzS2Je"
+        },
+        {
+          "name": "Revealing Light",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "light",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "120 feet",
+          "area": "10ft burst",
+          "targets": "",
+          "save": "reflex",
+          "description": "<p>A wave of magical light washes over the area. You choose the appearance of the light, such as colorful, heatless flames or sparkling motes. A creature affected by <em>revealing light</em> is Dazzled. If the creature was Invisible, it becomes Concealed instead. If the creature was already concealed for any other reason, it is no longer concealed.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The light affects the creature for 2 rounds.</p>\n<p><strong>Failure</strong> The light affects the creature for 1 minute.</p>\n<p><strong>Critical Failure</strong> The light affects the creature for 10 minutes.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "2hgwmeEP1Ha9nqgf"
+        },
+        {
+          "name": "Ventriloquism",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "auditory",
+            "concentrate",
+            "illusion",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>Whenever you speak or make any other sound vocally, you can make your vocalization seem to originate from somewhere else within 60 feet, and you can change that apparent location freely as you vocalize. Any creature that hears the sound can attempt to disbelieve your illusion.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The spell's duration increases to 1 hour, and you can also change the tone, quality, and other aspects of your voice. Before a creature can attempt to disbelieve your illusion, it must actively attempt a Perception check or otherwise use actions to interact with the sound.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "5O5mRLFDLeT0fGyj"
+        }
+      ],
+      "lv3spells": [
+        {
+          "name": "Clairaudience",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "scrying"
+          ],
+          "castingTime": "1 minute",
+          "duration": "10 minutes",
+          "range": "500 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create an Invisible floating ear at a location within range (even if it's outside your line of sight or line of effect). It can't move, but you can hear through the ear as if using your normal auditory senses.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "i5QdSui0psQiV8jJ"
+        },
+        {
+          "name": "Mending",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "non-magical object of light Bulk or less",
+          "save": "",
+          "description": "<p>You repair the target item. You restore 5 Hit Points per spell rank to the target, potentially removing the Broken condition if this repairs it past the item's Broken Threshold. You can't replace lost pieces or repair an object that's been completely destroyed.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You can target a non-magical object of 1 Bulk or less.</p>\n<p><strong>Heightened (3rd)</strong> You can target a non-magical object of 2 Bulk or less, or a magical object of 1 Bulk or less.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "7WXlnyiK3qLlP68X"
+        },
+        {
+          "name": "Slow",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "fortitude",
+          "description": "<p>You dilate the flow of time around the target, slowing its actions.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Slowed 1 for 1 round.</p>\n<p><strong>Failure</strong> The target is Slowed 1 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Slowed 2 for 1 minute.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "nFIo7yo9FtKSl0tB"
+        }
+      ],
+      "lv4spells": [
+        {
+          "name": "Clairvoyance",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "scrying"
+          ],
+          "castingTime": "1 minute",
+          "duration": "10 minutes",
+          "range": "500 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create an Invisible floating eye at a location within range (even if it's outside your line of sight or line of effect). The eye can't move, but you can see in all directions from that point as if using your normal visual senses.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "GgGzuxjyzVrNRaMW"
+        },
+        {
+          "name": "Unfettered Movement",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature touched",
+          "save": "",
+          "description": "<p>You repel effects that would hinder a creature or slow its movement. While under this spell's effect, the target ignores effects that would give them a circumstance penalty to Speed. When they attempt to Escape an effect that has them Immobilized, Grabbed, or Restrained, they automatically succeed unless the effect is magical and of a higher rank than the <em>unfettered movement</em> spell.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "bHumhoUUvY2aGmk0"
+        }
+      ],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv2slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv3slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv4slots": {
+        "current": 2,
+        "max": 2
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Arcana, DC 26"
+}
