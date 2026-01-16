@@ -1,0 +1,56 @@
+{
+    "_id": "etCe8dSuMyv1uS1O",
+    "folder": "dtLNkCrLlkTx8vnw",
+    "img": "systems/sf2e/icons/default-icons/feats-sf2e.webp",
+    "name": "Network Shield",
+    "system": {
+        "actionType": {
+            "value": "reaction"
+        },
+        "actions": {
+            "value": null
+        },
+        "category": "class",
+        "description": {
+            "value": "<p><strong>Trigger</strong> You're hit by an attack.</p><hr /><p>You condense the energy of your vitality network into a shield. YThe triggering attack reduces your vitality network's Hit Points instead of your own, up to twice your level. Any remaining damage after your Vitality Network is reduced to 0 Hit Points is dealt to you instead.</p>"
+        },
+        "level": {
+            "value": 6
+        },
+        "prerequisites": {
+            "value": []
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Starfinder Player Core"
+        },
+        "rules": [
+            {
+                "key": "RollOption",
+                "option": "network-shield",
+                "toggleable": true
+            },
+            {
+                "key": "Resistance",
+                "predicate": [
+                    "network-shield"
+                ],
+                "type": "all-damage",
+                "value": "2*@actor.level"
+            }
+        ],
+        "subfeatures": {
+            "proficiencies": {},
+            "senses": {},
+            "suppressedFeatures": []
+        },
+        "traits": {
+            "rarity": "common",
+            "value": [
+                "mystic"
+            ]
+        }
+    },
+    "type": "feat"
+}

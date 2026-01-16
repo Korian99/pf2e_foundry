@@ -183,20 +183,83 @@ const RARE_LANGUAGES = [
     "yithian",
 ] as const;
 
-const LANGUAGES_BY_RARITY = {
-    common: COMMON_LANGUAGES,
-    uncommon: UNCOMMON_LANGUAGES,
-    rare: RARE_LANGUAGES,
-    secret: ["wildsong"] as const,
-};
+const COMMON_SF_LANGUAGES = [
+    "akitonian",
+    "brethedan",
+    "castrovelian",
+    "diasporan",
+    "draconic",
+    "eoxian",
+    "kasatha",
+    "pact-common",
+    "pahtra",
+    "trinary",
+    "vercite",
+    "vesk",
+] as const;
 
-const LANGUAGES: Language[] = ["common", ...COMMON_LANGUAGES, ...UNCOMMON_LANGUAGES, ...RARE_LANGUAGES, "wildsong"];
+const UNCOMMON_SF_LANGUAGES = [
+    "aballonian",
+    "aklo",
+    "chthonian",
+    "diabolic",
+    "empyrean",
+    "jinsul",
+    "kalo",
+    "kasatha",
+    "khizar",
+    "kothama",
+    "kucharn",
+    "lashunta",
+    "morandomandranan",
+    "muan",
+    "necril",
+    "orbian",
+    "orcish",
+    "petran",
+    "prelurian",
+    "pyric",
+    "sarcesian",
+    "sarcesian-signed",
+    "shadowtongue",
+    "shirren",
+    "shobhad",
+    "sussuran",
+    "talican",
+    "thalassic",
+    "triaxian",
+    "vlaka",
+    "ysoki",
+] as const;
+
+const LANGUAGES_BY_RARITY =
+    SYSTEM_ID === "pf2e"
+        ? {
+              common: COMMON_LANGUAGES,
+              uncommon: UNCOMMON_LANGUAGES,
+              rare: RARE_LANGUAGES,
+              secret: ["wildsong"] as const,
+          }
+        : {
+              common: ["pact-common"],
+              uncommon: UNCOMMON_SF_LANGUAGES,
+              rare: [],
+              secret: [] as const,
+          };
+
+const DEFAULT_COMMON_LANGUAGE = SYSTEM_ID === "pf2e" ? "taldane" : "pact-common";
+
+const LANGUAGES: Language[] =
+    SYSTEM_ID === "pf2e"
+        ? ["common", ...COMMON_LANGUAGES, ...UNCOMMON_LANGUAGES, ...RARE_LANGUAGES, "wildsong"]
+        : ["common", ...COMMON_SF_LANGUAGES, ...UNCOMMON_SF_LANGUAGES];
 LANGUAGES.sort();
 
 const LANGUAGE_RARITIES = ["common", "uncommon", "rare", "secret"] as const;
 
 export {
     ALLIANCES,
+    DEFAULT_COMMON_LANGUAGE,
     LANGUAGE_RARITIES,
     LANGUAGES,
     LANGUAGES_BY_RARITY,

@@ -1,5 +1,5 @@
 import type { Language } from "@actor/creature/index.ts";
-import { LANGUAGES_BY_RARITY, LANGUAGE_RARITIES } from "@actor/creature/values.ts";
+import { DEFAULT_COMMON_LANGUAGE, LANGUAGES_BY_RARITY, LANGUAGE_RARITIES } from "@actor/creature/values.ts";
 import { AttributeString } from "@actor/types.ts";
 import type { ModelPropsFromSchema, SetField, StringField } from "@common/data/fields.d.mts";
 import { BaseArmorType } from "@item/armor/types.ts";
@@ -90,7 +90,7 @@ class LanguageSettings extends foundry.abstract.DataModel<null, LanguageSettings
                 (l): l is LanguageNotCommon => l !== "common" && !nonCommonLanguages.has(l),
             ),
         );
-        this.homebrew = new Set(game.settings.get("pf2e", "homebrew.languages").map((t) => t.id));
+        this.homebrew = new Set(game.settings.get(SYSTEM_ID, "homebrew.languages").map((t) => t.id));
     }
 
     static override defineSchema(): LanguageSettingsSchema {
@@ -112,7 +112,7 @@ class LanguageSettings extends foundry.abstract.DataModel<null, LanguageSettings
                 required: true,
                 nullable: true,
                 blank: false,
-                initial: "taldane",
+                initial: DEFAULT_COMMON_LANGUAGE,
             }),
             uncommon: languageSetField([...LANGUAGES_BY_RARITY.uncommon]),
             rare: languageSetField([...LANGUAGES_BY_RARITY.rare]),

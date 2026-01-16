@@ -60,7 +60,7 @@ class MeleePF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extends Ite
         // If this changes, the melee sheet and range item alterations must be changed in response
         const data = this.system.range;
         return data?.max
-            ? (data as RangeData) // typescript fails to detect that data.max is not null and so we must cast
+            ? { increment: null, max: data.max }
             : data?.increment
               ? { increment: data.increment, max: data.increment * 6 }
               : null;
@@ -107,7 +107,7 @@ class MeleePF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extends Ite
 
     /** The linked inventory weapon, if this melee item was spawned from one */
     get linkedWeapon(): WeaponPF2e<ActorPF2e> | null {
-        const item = this.actor?.items.get(this.flags.pf2e.linkedWeapon ?? "");
+        const item = this.actor?.items.get(this.flags[SYSTEM_ID].linkedWeapon ?? "");
         return item?.isOfType("weapon") ? item : null;
     }
 

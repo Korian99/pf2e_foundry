@@ -113,7 +113,7 @@
                 "compendiumSource": "Compendium.pf2e.spells-srd.Item.Seaah9amXg70RKw2"
             },
             "img": "icons/magic/water/wave-water-blue.webp",
-            "name": "Water Walk  (constant)",
+            "name": "Water Walk (constant)",
             "sort": 300000,
             "system": {
                 "area": null,
@@ -679,9 +679,10 @@
                         "outcome": [
                             "criticalSuccess"
                         ],
-                        "selector": "attack",
-                        "text": "{item|system.description.value}",
-                        "title": "{item|name}"
+                        "selector": "strike-attack-roll",
+                        "text": "{item|description}",
+                        "title": "{item|name}",
+                        "visibility": "owner"
                     }
                 ],
                 "slug": null,

@@ -1,4 +1,5 @@
 import "./global.ts";
+import "./migration-global.ts";
 
 import type { ActorSourcePF2e } from "@actor/data/index.ts";
 import { ACTOR_TYPES } from "@actor/values.ts";
@@ -13,7 +14,7 @@ import fs from "fs-extra";
 import path from "path";
 import * as R from "remeda";
 import "./lib/foundry-utils.ts";
-import { getFilesRecursively } from "./lib/helpers.ts";
+import { getPackJSONPaths } from "./lib/helpers.ts";
 import type { PackEntry } from "./lib/types.ts";
 
 import { Migration937RemoveInvalidAuraTraits } from "@module/migration/migrations/937-remove-invalid-aura-traits.ts";
@@ -30,6 +31,7 @@ import { Migration950AmmoConsumableToAmmoAmmo } from "@module/migration/migratio
 import { Migration951TreasureCategories } from "@module/migration/migrations/951-treasure-categories.ts";
 import { Migration952AmmoTraitsAndOptions } from "@module/migration/migrations/952-ammo-traits-options.ts";
 import { Migration953NotStrikeDamage } from "@module/migration/migrations/953-not-strike-damage.ts";
+import { Migration954ExplicitBleedImmunity } from "@module/migration/migrations/954-explicit-bleed-immunity.ts";
 
 const migrations: MigrationBase[] = [
     new Migration937RemoveInvalidAuraTraits(),
@@ -46,9 +48,8 @@ const migrations: MigrationBase[] = [
     new Migration951TreasureCategories(),
     new Migration952AmmoTraitsAndOptions(),
     new Migration953NotStrikeDamage(),
+    new Migration954ExplicitBleedImmunity(),
 ];
-
-const packsDataPath = path.resolve(process.cwd(), "packs");
 
 type CompendiumSource = CompendiumDocument["_source"];
 
@@ -95,13 +96,12 @@ function jsonStringifyOrder(obj: object): string {
     return `${newJson}\n`;
 }
 
-async function getAllFiles(directory: string = packsDataPath, allEntries: string[] = []): Promise<string[]> {
-    const packs = fs.readdirSync(directory);
-    for (const pack of packs) {
-        console.log(`Collecting data for "${pack}"`);
-        allEntries.push(...getFilesRecursively(path.join(directory, pack)));
+async function getAllFiles(allEntries: string[] = []): Promise<string[]> {
+    const packDirs = fs.readdirSync(path.resolve("packs", SYSTEM_ID));
+    for (const packDir of packDirs) {
+        console.log(`Collecting data for "${packDir}"`);
+        allEntries.push(...getPackJSONPaths(packDir, SYSTEM_ID));
     }
-
     return allEntries;
 }
 
@@ -128,12 +128,10 @@ function setDefaults(source: PackEntry) {
 
 async function migrate() {
     const allEntries = await getAllFiles();
-
     const migrationRunner = new MigrationRunnerBase(migrations);
 
     for (const filePath of allEntries) {
         const content = await fs.readFile(filePath, { encoding: "utf-8" });
-
         let source:
             | ActorSourcePF2e
             | ItemSourcePF2e
@@ -163,7 +161,6 @@ async function migrate() {
                 if (isActorData(source)) {
                     const update = await migrationRunner.getUpdatedActor(source, migrationRunner.migrations);
                     update.items = update.items.map((i) => fu.mergeObject({}, i, { performDeletions: true }));
-
                     pruneDefaults(source);
                     pruneDefaults(update);
 
@@ -171,7 +168,6 @@ async function migrate() {
                 } else if (isItemData(source)) {
                     source.system.slug = sluggify(source.name);
                     const update = await migrationRunner.getUpdatedItem(source, migrationRunner.migrations);
-
                     pruneDefaults(source);
                     pruneDefaults(update);
 

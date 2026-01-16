@@ -174,11 +174,13 @@ const armorCategories: Record<ArmorCategory, string> = {
 };
 
 const armorGroups: Record<ArmorGroup, string> = {
-    composite: "PF2E.ArmorGroupComposite",
+    ceramic: "PF2E.ArmorGroupCeramic",
     chain: "PF2E.ArmorGroupChain",
     cloth: "PF2E.ArmorGroupCloth",
+    composite: "PF2E.ArmorGroupComposite",
     leather: "PF2E.ArmorGroupLeather",
     plate: "PF2E.ArmorGroupPlate",
+    polymer: "PF2E.ArmorGroupPolymer",
     skeletal: "PF2E.ArmorGroupSkeletal",
     wood: "PF2E.ArmorGroupWood",
 };
@@ -227,9 +229,21 @@ const weaponGroups: Record<WeaponGroup, string> = {
     ...meleeWeaponGroups,
     bomb: "PF2E.WeaponGroupBomb",
     bow: "PF2E.WeaponGroupBow",
+    corrosive: "PF2E.WeaponGroupCorrosive",
     crossbow: "PF2E.WeaponGroupCrossbow",
+    cryo: "PF2E.WeaponGroupCryo",
     firearm: "PF2E.WeaponGroupFirearm",
+    flame: "PF2E.WeaponGroupFlame",
+    grenade: "PF2E.WeaponGroupGrenade",
+    laser: "PF2E.WeaponGroupLaser",
+    mental: "PF2E.WeaponGroupMental",
+    plasma: "PF2E.WeaponGroupPlasma",
+    poison: "PF2E.WeaponGroupPoison",
+    projectile: "PF2E.WeaponGroupProjectile",
+    shock: "PF2E.WeaponGroupShock",
     sling: "PF2E.WeaponGroupSling",
+    sniper: "PF2E.WeaponGroupSniper",
+    sonic: "PF2E.WeaponGroupSonic",
 };
 
 // Creature and Equipment Sizes
@@ -395,7 +409,8 @@ const DEFAULT_AMMO_STACK_GROUPS: Partial<Record<string, keyof typeof STACK_DEFIN
 interface BaseAmmoTypeData {
     parent: string | null;
     label: string;
-    magazine: boolean;
+    /** False if not a magazine type, or a default value to use for "infinite ammo" */
+    magazine: false | number;
     stackGroup: keyof typeof STACK_DEFINITIONS | null;
     weapon: string | null; // The associated base weapon or weapon slug (if any)
 }
@@ -425,16 +440,27 @@ const ammoTypes = {
             },
         ],
     ),
-    ...R.mapToObj(["magazine", "battery", "chem-tank"] as const, (slug) => [
-        slug,
-        {
-            parent: null,
-            label: `PF2E.Item.Ammo.Base.${slug}`,
-            magazine: true,
-            stackGroup: null,
-            weapon: null,
-        },
-    ]),
+    magazine: {
+        parent: null,
+        label: `PF2E.Item.Ammo.Base.magazine`,
+        magazine: 5,
+        stackGroup: null,
+        weapon: null,
+    },
+    battery: {
+        parent: null,
+        label: `PF2E.Item.Ammo.Base.battery`,
+        magazine: 10,
+        stackGroup: null,
+        weapon: null,
+    },
+    "chem-tank": {
+        parent: null,
+        label: `PF2E.Item.Ammo.Base.chem-tank`,
+        magazine: 8,
+        stackGroup: null,
+        weapon: null,
+    },
     // Include all rounds
     ...R.mapToObj(round5Firearms, (baseWeapon) => [
         `rounds-${baseWeapon}`,
@@ -470,7 +496,7 @@ const ammoTypes = {
         {
             parent: "magazine",
             label: `PF2E.Item.Ammo.Base.${baseWeapon}-magazine`,
-            magazine: true,
+            magazine: 5,
             stackGroup: null,
             weapon: baseWeapon,
         },
@@ -478,21 +504,21 @@ const ammoTypes = {
     "8-round-magazine": {
         parent: "magazine",
         label: `PF2E.Item.Ammo.Base.8-round-magazine`,
-        magazine: true,
+        magazine: 8,
         stackGroup: null,
         weapon: "barricade-buster",
     },
     "magazine-with-6-pellets": {
         parent: "magazine",
         label: `PF2E.Item.Ammo.Base.magazine-with-6-pellets`,
-        magazine: true,
+        magazine: 6,
         stackGroup: null,
         weapon: "air-repeater",
     },
     "magazine-with-8-pellets": {
         parent: "magazine",
         label: `PF2E.Item.Ammo.Base.magazine-with-8-pellets`,
-        magazine: true,
+        magazine: 8,
         stackGroup: null,
         weapon: "long-air-repeater",
     },
@@ -513,13 +539,38 @@ const ammoTypes = {
     },
 } satisfies Record<string, BaseAmmoTypeData>;
 
+const skills: Record<SkillSlug, { label: string; attribute: AttributeString }> = {
+    acrobatics: { label: "PF2E.Skill.Acrobatics", attribute: "dex" },
+    arcana: { label: "PF2E.Skill.Arcana", attribute: "int" },
+    athletics: { label: "PF2E.Skill.Athletics", attribute: "str" },
+    crafting: { label: "PF2E.Skill.Crafting", attribute: "int" },
+    deception: { label: "PF2E.Skill.Deception", attribute: "cha" },
+    diplomacy: { label: "PF2E.Skill.Diplomacy", attribute: "cha" },
+    intimidation: { label: "PF2E.Skill.Intimidation", attribute: "cha" },
+    medicine: { label: "PF2E.Skill.Medicine", attribute: "wis" },
+    nature: { label: "PF2E.Skill.Nature", attribute: "wis" },
+    occultism: { label: "PF2E.Skill.Occultism", attribute: "int" },
+    performance: { label: "PF2E.Skill.Performance", attribute: "cha" },
+    religion: { label: "PF2E.Skill.Religion", attribute: "wis" },
+    society: { label: "PF2E.Skill.Society", attribute: "int" },
+    stealth: { label: "PF2E.Skill.Stealth", attribute: "dex" },
+    survival: { label: "PF2E.Skill.Survival", attribute: "wis" },
+    thievery: { label: "PF2E.Skill.Thievery", attribute: "dex" },
+    ...(SYSTEM_ID === "sf2e"
+        ? {
+              computers: { label: "PF2E.Skill.Computers", attribute: "int" },
+              piloting: { label: "PF2E.Skill.Piloting", attribute: "dex" },
+          }
+        : {}),
+};
+
 export const PF2ECONFIG = {
     defaultPartyId: "xxxPF2ExPARTYxxx",
     chatDamageButtonShieldToggle: false,
 
     statusEffects: {
         lastIconTheme: "default" as StatusEffectIconTheme,
-        iconDir: `${SYSTEM_ROOT}/icons/conditions/`,
+        iconDir: `systems/${SYSTEM_ID}/icons/conditions/`,
         conditions: tokenHUDConditions,
     },
 
@@ -764,40 +815,60 @@ export const PF2ECONFIG = {
         ritual: "PF2E.PreparationTypeRitual",
     },
 
-    spellcastingItems: {
-        scroll: {
-            name: "PF2E.Item.Consumable.Category.scroll",
-            nameTemplate: "PF2E.Item.Physical.FromSpell.Scroll",
-            compendiumUuids: {
-                1: "Compendium.pf2e.equipment-srd.Item.RjuupS9xyXDLgyIr",
-                2: "Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx",
-                3: "Compendium.pf2e.equipment-srd.Item.ZmefGBXGJF3CFDbn",
-                4: "Compendium.pf2e.equipment-srd.Item.QSQZJ5BC3DeHv153",
-                5: "Compendium.pf2e.equipment-srd.Item.tjLvRWklAylFhBHQ",
-                6: "Compendium.pf2e.equipment-srd.Item.4sGIy77COooxhQuC",
-                7: "Compendium.pf2e.equipment-srd.Item.fomEZZ4MxVVK3uVu",
-                8: "Compendium.pf2e.equipment-srd.Item.iPki3yuoucnj7bIt",
-                9: "Compendium.pf2e.equipment-srd.Item.cFHomF3tty8Wi1e5",
-                10: "Compendium.pf2e.equipment-srd.Item.o1XIHJ4MJyroAHfF",
-            },
-        },
-        wand: {
-            name: "PF2E.Item.Consumable.Category.wand",
-            nameTemplate: "PF2E.Item.Physical.FromSpell.Wand",
-            compendiumUuids: {
-                1: "Compendium.pf2e.equipment-srd.Item.UJWiN0K3jqVjxvKk",
-                2: "Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD",
-                3: "Compendium.pf2e.equipment-srd.Item.wrDmWkGxmwzYtfiA",
-                4: "Compendium.pf2e.equipment-srd.Item.Sn7v9SsbEDMUIwrO",
-                5: "Compendium.pf2e.equipment-srd.Item.5BF7zMnrPYzyigCs",
-                6: "Compendium.pf2e.equipment-srd.Item.kiXh4SUWKr166ZeM",
-                7: "Compendium.pf2e.equipment-srd.Item.nmXPj9zuMRQBNT60",
-                8: "Compendium.pf2e.equipment-srd.Item.Qs8RgNH6thRPv2jt",
-                9: "Compendium.pf2e.equipment-srd.Item.Fgv722039TVM5JTc",
-                10: null,
-            },
-        },
-    },
+    spellcastingItems:
+        SYSTEM_ID === "pf2e"
+            ? {
+                  scroll: {
+                      name: "PF2E.Item.Consumable.Category.scroll",
+                      nameTemplate: "PF2E.Item.Physical.FromSpell.Scroll",
+                      compendiumUuids: {
+                          1: "Compendium.pf2e.equipment-srd.Item.RjuupS9xyXDLgyIr",
+                          2: "Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx",
+                          3: "Compendium.pf2e.equipment-srd.Item.ZmefGBXGJF3CFDbn",
+                          4: "Compendium.pf2e.equipment-srd.Item.QSQZJ5BC3DeHv153",
+                          5: "Compendium.pf2e.equipment-srd.Item.tjLvRWklAylFhBHQ",
+                          6: "Compendium.pf2e.equipment-srd.Item.4sGIy77COooxhQuC",
+                          7: "Compendium.pf2e.equipment-srd.Item.fomEZZ4MxVVK3uVu",
+                          8: "Compendium.pf2e.equipment-srd.Item.iPki3yuoucnj7bIt",
+                          9: "Compendium.pf2e.equipment-srd.Item.cFHomF3tty8Wi1e5",
+                          10: "Compendium.pf2e.equipment-srd.Item.o1XIHJ4MJyroAHfF",
+                      },
+                  },
+                  wand: {
+                      name: "PF2E.Item.Consumable.Category.wand",
+                      nameTemplate: "PF2E.Item.Physical.FromSpell.Wand",
+                      compendiumUuids: {
+                          1: "Compendium.pf2e.equipment-srd.Item.UJWiN0K3jqVjxvKk",
+                          2: "Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD",
+                          3: "Compendium.pf2e.equipment-srd.Item.wrDmWkGxmwzYtfiA",
+                          4: "Compendium.pf2e.equipment-srd.Item.Sn7v9SsbEDMUIwrO",
+                          5: "Compendium.pf2e.equipment-srd.Item.5BF7zMnrPYzyigCs",
+                          6: "Compendium.pf2e.equipment-srd.Item.kiXh4SUWKr166ZeM",
+                          7: "Compendium.pf2e.equipment-srd.Item.nmXPj9zuMRQBNT60",
+                          8: "Compendium.pf2e.equipment-srd.Item.Qs8RgNH6thRPv2jt",
+                          9: "Compendium.pf2e.equipment-srd.Item.Fgv722039TVM5JTc",
+                          10: null,
+                      },
+                  },
+              }
+            : {
+                  "spell-gem": {
+                      name: "PF2E.Item.Consumable.Category.spell-gem",
+                      nameTemplate: "PF2E.Item.Physical.FromSpell.spell-gem",
+                      compendiumUuids: {
+                          1: "Compendium.sf2e.equipment.Item.R6LuVXimv1Hh8ehE",
+                          2: "Compendium.sf2e.equipment.Item.p5DYjh3sCSjzrBBg",
+                          3: "Compendium.sf2e.equipment.Item.Nwl7YydQ0r8cAhw7",
+                          4: "Compendium.sf2e.equipment.Item.88IBM9viOjJ0kJbm",
+                          5: "Compendium.sf2e.equipment.Item.BVCQFla90m2JDepV",
+                          6: "Compendium.sf2e.equipment.Item.9PAmdF8UqVQKXWPA",
+                          7: "Compendium.sf2e.equipment.Item.JgvLQeWK45OxFrx0",
+                          8: "Compendium.sf2e.equipment.Item.Vt6VVUXFf1boNs3P",
+                          9: "Compendium.sf2e.equipment.Item.8nNTrkf4ZCqkApNT",
+                          10: "Compendium.sf2e.equipment.Item.ulNSlan9Q5j1ozPI",
+                      },
+                  },
+              },
 
     attitude: {
         hostile: "PF2E.Attitudes.Hostile",
@@ -809,24 +880,7 @@ export const PF2ECONFIG = {
 
     ammoTypes,
 
-    skills: Object.freeze({
-        acrobatics: { label: "PF2E.Skill.Acrobatics", attribute: "dex" },
-        arcana: { label: "PF2E.Skill.Arcana", attribute: "int" },
-        athletics: { label: "PF2E.Skill.Athletics", attribute: "str" },
-        crafting: { label: "PF2E.Skill.Crafting", attribute: "int" },
-        deception: { label: "PF2E.Skill.Deception", attribute: "cha" },
-        diplomacy: { label: "PF2E.Skill.Diplomacy", attribute: "cha" },
-        intimidation: { label: "PF2E.Skill.Intimidation", attribute: "cha" },
-        medicine: { label: "PF2E.Skill.Medicine", attribute: "wis" },
-        nature: { label: "PF2E.Skill.Nature", attribute: "wis" },
-        occultism: { label: "PF2E.Skill.Occultism", attribute: "int" },
-        performance: { label: "PF2E.Skill.Performance", attribute: "cha" },
-        religion: { label: "PF2E.Skill.Religion", attribute: "wis" },
-        society: { label: "PF2E.Skill.Society", attribute: "int" },
-        stealth: { label: "PF2E.Skill.Stealth", attribute: "dex" },
-        survival: { label: "PF2E.Skill.Survival", attribute: "wis" },
-        thievery: { label: "PF2E.Skill.Thievery", attribute: "dex" },
-    }) satisfies Record<SkillSlug, { label: string; attribute: AttributeString }>,
+    skills: Object.freeze(skills),
 
     featCategories,
 

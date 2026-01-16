@@ -28,8 +28,8 @@ export interface ItemTransferData {
 
 export class ItemTransfer implements ItemTransferData {
     #templatePaths = {
-        flavor: `./${SYSTEM_ROOT}/templates/chat/action/flavor.hbs`,
-        content: `./${SYSTEM_ROOT}/templates/chat/action/content.hbs`,
+        flavor: `./systems/${SYSTEM_ID}/templates/chat/action/flavor.hbs`,
+        content: `./systems/${SYSTEM_ID}/templates/chat/action/content.hbs`,
     };
 
     source: ItemTransferData["source"];
@@ -47,7 +47,7 @@ export class ItemTransfer implements ItemTransferData {
     }
 
     async request(): Promise<void> {
-        const gamemaster = game.users.find((u) => u.isGM && u.active);
+        const gamemaster = game.users.activeGM;
         if (!gamemaster) {
             const source = this.#getSource();
             const target = this.#getTarget();

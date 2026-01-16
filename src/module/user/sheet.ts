@@ -1,3 +1,4 @@
+import type { UserSettingsPF2e } from "./data.ts";
 import type { UserPF2e } from "./document.ts";
 
 /** Player-specific settings, stored as flags on each User */
@@ -6,7 +7,7 @@ class UserConfigPF2e extends fa.sheets.UserConfig<UserPF2e> {
 
     static override PARTS = {
         tabs: { template: "templates/generic/tab-navigation.hbs" },
-        main: { template: `${SYSTEM_ROOT}/templates/user/sheet.hbs` },
+        main: { template: `systems/${SYSTEM_ID}/templates/user/sheet.hbs` },
         // Add a new main part, which embeds the original form part
         ...super.PARTS,
     };
@@ -15,7 +16,7 @@ class UserConfigPF2e extends fa.sheets.UserConfig<UserPF2e> {
         primary: {
             tabs: [
                 { id: "core", icon: "fa-solid fa-user", label: "PACKAGECONFIG.Core" },
-                { id: "pf2e", icon: "action-glyph", label: "PF2E.Pathfinder" },
+                { id: "pf2e", icon: "action-glyph", label: "PF2E.SystemNameShort" },
             ],
             initial: "core",
         },
@@ -40,6 +41,8 @@ class UserConfigPF2e extends fa.sheets.UserConfig<UserPF2e> {
             tabs: context.tabs ?? this._prepareTabs("primary"),
             activeTab: this.tabGroups.primary,
             characterWidget: createAdjustedCharacterWidget,
+            systemId: SYSTEM_ID,
+            settings: this.document.flags[SYSTEM_ID].settings,
         });
     }
 }
@@ -47,6 +50,8 @@ class UserConfigPF2e extends fa.sheets.UserConfig<UserPF2e> {
 interface UserConfigRenderContextPF2e extends fa.sheets.UserConfigRenderContext<UserPF2e> {
     tabs: Record<string, fa.ApplicationTab>;
     activeTab: string;
+    systemId: SystemId;
+    settings: UserSettingsPF2e;
 }
 
 export { UserConfigPF2e };
